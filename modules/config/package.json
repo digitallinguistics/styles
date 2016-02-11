@@ -1,9 +1,14 @@
 {
   "name": "config",
-  "version": "0.1.0",
+  "bugs": "https://github.com/digitallinguistics/assets/issues",
+  "version": "0.2.0-alpha",
   "description": "A config template for use across DLx projects.",
   "main": "config.js",
   "keywords": [ "DLx" ],
   "author": "Daniel W. Hieber",
-  "license": "MIT"
+  "license": "MIT",
+  "engines": {
+    "node": "5.x"
+  },
+  "private": true
 }
