@@ -1,7 +1,7 @@
 {
   "name": "dlx-config",
   "bugs": "https://github.com/digitallinguistics/assets/issues",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A config template for use across DLx projects.",
   "main": "config.js",
   "keywords": [
