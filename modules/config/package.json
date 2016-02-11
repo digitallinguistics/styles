@@ -1,5 +1,5 @@
 {
-  "name": "config",
+  "name": "dlx-config",
   "bugs": "https://github.com/digitallinguistics/assets/issues",
   "version": "1.0.0",
   "description": "A config template for use across DLx projects.",
