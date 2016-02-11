@@ -1,4 +1,3 @@
-
 module.exports = hostname => {
 
   const config = {};
@@ -11,36 +10,34 @@ module.exports = hostname => {
     // config.host is the hostname for this app
     if (!process.env.WEBSITE_HOSTNAME) {
       global.env = 'local';
-      this.host = `localhost:${this.host}`;
+      this.host = `localhost:${this.port}`;
+    } else if (process.env.WEBSITE_HOSTNAME === 'dlx-dev.azurewebsites.net') {
+      global.env = 'development';
+      this.host = process.env.WEBSITE_HOSTNAME;
     } else {
-      if (process.env.WEBSITE_HOSTNAME === 'dlx-dev.azurewebsites.net') {
-        global.env = 'development';
-        this.host = process.env.WEBSITE_HOSTNAME;
-      } else {
-        global.env = 'production';
-        this.host = hostname;
-      }
+      global.env = 'production';
+      this.host = hostname;
     }
 
     // Whether the environment is `local`, `development` (the dev server), or `production`
     this.env = global.env;
 
     // The protocol-relative URL for this app.
-    this.baseUrl = `//${exports.host}/`;
+    this.baseUrl = `//${this.host}/`;
 
     // Determines which protocol to use based on the environment.
     this.protocol = global.env === 'local' ? 'http' : 'https';
 
     // The absolute URL for this app.
-    this.url = `${this.protocol}:${this.baseUrl}/`;
+    this.url = `${this.protocol}:${this.baseUrl}`;
 
     // Maps a path to a protocol-relative URL. NB: The base URL ends in a trailing slash, as does the returned URL.
-    this.mapBaseUrl = path => (exports.baseUrl + path).replace(/\/$/, '') + '/';
+    this.mapBaseUrl = pathname => this.baseUrl + pathname.replace(/^\//, '').replace(/\/$/, '') + '/';
 
     // Maps a path to an absolute URL. NB: The absolute URL ends in a trailing slash, as does the returned URL.
-    this.mapUrl = path => (exports.url + path).replace(/\/$/, '') + '/';
+    this.mapUrl = pathname => this.url + pathname.replace(/^\//, '').replace(/\/$/, '') + '/';
 
-    this.package = require('../package.json');
+    this.package = require('./package.json');
 
   }).call(config);
 

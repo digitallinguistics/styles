@@ -4,11 +4,19 @@
   "version": "0.2.0-alpha",
   "description": "A config template for use across DLx projects.",
   "main": "config.js",
-  "keywords": [ "DLx" ],
+  "keywords": [
+    "DLx"
+  ],
   "author": "Daniel W. Hieber",
   "license": "MIT",
   "engines": {
     "node": "5.x"
   },
-  "private": true
+  "scripts": {
+    "test": "node test/jasmine.js"
+  },
+  "private": true,
+  "devDependencies": {
+    "jasmine": "^2.4.1"
+  }
 }
