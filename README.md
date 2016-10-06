@@ -1,2 +1,9 @@
-# DLx Assets
-This repository contains images, branding, and other assets for use across DLx projects, as well as linters for adhering to the DLx [style guidelines](https://github.com/digitallinguistics/dlx-org/wiki/Style-Guidelines).
+# DLx Styles
+This repository contains various style guides, branding, and pattern libraries for DLx projects.
+
+## Contents
+* [branding assets]()
+* [CSS style guide]()
+* [CSS stylesheet]()
+* [JavaScript style guide]()
+* [pattern library]()
