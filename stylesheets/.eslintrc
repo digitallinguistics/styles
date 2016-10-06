@@ -1,10 +1,15 @@
 {
 
   "parserOptions": {
-    "ecmaVersion": 7
+    "ecmaVersion": 7,
+    "ecmaFeatures": {
+      "impliedStrict": true
+    },
+    "sourceType": "module"
   },
 
   "env": {
+    "browser": true,
     "es6": true,
     "jasmine": true,
     "node": true
@@ -37,7 +42,7 @@
     "comma-style": ["error", "last"],
     "complexity": "off",
     "computed-property-spacing": ["error", "never"],
-    "consistent-return": "error",
+    "consistent-return": "warn",
     "consistent-this": "off",
     "constructor-super": "error",
     "curly": ["error", "multi-line", "consistent"],
@@ -46,7 +51,7 @@
     "dot-notation": ["error", { "allowKeywords": true }],
     "eqeqeq": ["warn", "always"],
     "eol-last": "error",
-    "func-names": ["error", "always"],
+    "func-names": ["warn", "always"],
     "func-style": ["error", "expression", { "allowArrowFunctions": true }],
     "generator-star-spacing": ["error", { "before": false, "after": true }],
     "global-require": "warn",
@@ -76,10 +81,16 @@
       "allowArrayEnd": false
     }],
     "max-depth": "warn",
-    "max-len": ["warn", { "code": 100, "ignoreUrls": true }],
+    "max-len": ["warn", {
+      "code": 100,
+      "ignoreComments": true,
+      "ignoreStrings": true,
+      "ignoreTemplateLiterals": true,
+      "ignoreUrls": true
+    }],
     "max-lines": "off",
     "max-nested-callbacks": ["warn", 2],
-    "max-params": ["warn", 3],
+    "max-params": ["warn", 4],
     "max-statements": ["warn", 10],
     "max-statements-per-line": ["warn", { "max": 2 }],
     "multiline-ternary": "off",
@@ -92,7 +103,7 @@
     "newline-after-var": ["warn", "always"],
     "newline-before-return": "off",
     "newline-per-chained-call": ["warn", { "ignoreChainWithDepth": 2 }],
-    "no-alert": "error",
+    "no-alert": "warn",
     "no-array-constructor": "warn",
     "no-bitwise": "warn",
     "no-caller": "error",
@@ -150,11 +161,19 @@
     "no-lone-blocks": "error",
     "no-lonely-if": "warn",
     "no-loop-func": "error",
-    "no-magic-numbers": "warn",
+    "no-magic-numbers": ["warn", {
+      "ignoreArrayIndexes": true,
+      "ignore": [0, 1, 2, 200, 400, 404, 409, 500]
+    }],
     "no-mixed-operators": ["warn", { "allowSamePrecedence": true }],
     "no-mixed-requires": ["error", { "allowCall": true }],
     "no-mixed-spaces-and-tabs": "error",
-    "no-multi-spaces": "error",
+    "no-multi-spaces": ["error", {
+      "exceptions": {
+        "AssignmentExpression": true,
+        "VariableDeclarator": true
+      }
+    }],
     "no-multi-str": "error",
     "no-multiple-empty-lines": ["warn", { "max": 2 }],
     "no-native-reassign": "error",
@@ -199,7 +218,7 @@
     "no-trailing-spaces": ["error", { "skipBlankLines": false }],
     "no-undef": ["error", { "typeof": true }],
     "no-undef-init": "error",
-    "no-undefined": "error",
+    "no-undefined": "warn",
     "no-underscore-dangle": "error",
     "no-unexpected-multiline": "error",
     "no-unmodified-loop-condition": "warn",
@@ -221,7 +240,9 @@
     "no-warning-comments": "warn",
     "no-whitespace-before-property": "error",
     "no-with": "warn",
-    "object-curly-newline": ["warn", { "multiline": true }],
+    "object-curly-newline": ["warn", {
+      "minProperties": 2,
+    }],
     "object-curly-spacing": ["error", "always", {
       "objectsInObjects": true,
       "arraysInObjects": true
@@ -231,7 +252,12 @@
     "one-var": ["error", "never"],
     "one-var-declaration-per-line": "off",
     "operator-assignment": ["error", "always"],
-    "operator-linebreak": ["error", "before"],
+    "operator-linebreak": ["error", "before", {
+      "overrides": {
+        "?": "ignore",
+        ":": "ignore"
+      }
+    }],
     "padded-blocks": "off",
     "prefer-arrow-callback": ["error", {
       "allowNamedFunctions": true,
@@ -269,7 +295,7 @@
     "sort-vars": ["warn", { "ignoreCase": true }],
     "space-before-blocks": ["error", "always"],
     "space-before-function-paren": ["error", {
-      "anonymous": "always",
+      "anonymous": "never",
       "named": "never"
     }],
     "space-in-parens": ["error", "never"],
