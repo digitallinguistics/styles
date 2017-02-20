@@ -16,7 +16,7 @@
     "store": "node build/store.js"
   },
   "devDependencies": {
-    "flexbox-reset": "^1.0.0",
+    "flexbox-reset": "^1.1.2",
     "less": "^2.7.2"
   },
   "private": true
