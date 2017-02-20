@@ -1,0 +1,85 @@
+// a style library for DLx projects
+
+@errorRed: #ca3c3c;
+@wugbotBlue: #3399ff;
+
+@black-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7);
+@gray-shadow: 2px 2px 2px #ccc;
+
+.boldBlue { color: @wugbotBlue; font-weight: bold; }
+
+.bulleted {
+  list-style: disc inside none;
+  li { display: list-item; }
+}
+
+.button {
+  .wide-padded;
+  background-color: rgba(51, 153, 255, 0.8);
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  &:hover, &:focus {
+    background-image: linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
+  }
+  &:active {
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.15) inset, 0 0 6px rgba(0,0,0,0.20) inset;
+  }
+  &:disabled {
+    background-image: none;
+    box-shadow: none;
+    cursor: not-allowed;
+    opacity: 0.40;
+  }
+}
+
+.code {
+  background-color: rgba(0, 0, 0, 0.04);
+  border-radius: 3px;
+  font-family: 'Fira Mono';
+  font-size: 0.75rem;
+  padding: 0.25rem;
+}
+
+.field {
+  .padded;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 3px #ddd;
+  &:focus {
+    border-color: @wugbotBlue;
+    &:invalid { border-color: #e9322d; color: #b94a48; }
+  }
+  &[disabled] {
+    background-color: #eaeded;
+    color: #cad2d3;
+    cursor: not-allowed;
+  }
+}
+
+.header {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+.link {
+  border-bottom: 1px solid white;
+  color: @wugbotBlue;
+  &:link { color: @wugbotBlue; }
+  &:visited { color: @wugbotBlue; }
+  &:hover { border-bottom: 1px solid @wugbotBlue; }
+  &:active { color: @wugbotBlue; }
+}
+
+.padded { padding: 0.25em 0.5rem; }
+
+.page-padded { padding: 0.5rem 0.75rem; }
+
+.row { flex-direction: row; }
+
+.small { font-size: 80%; }
+
+.wide-padded { padding: 0.5em 1em; }
