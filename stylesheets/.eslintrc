@@ -201,7 +201,7 @@
     "no-process-env": "off",
     "no-process-exit": "error",
     "no-proto": "error",
-    "no-prototype-builtins": "warn",
+    "no-prototype-builtins": "off",
     "no-redeclare": "error",
     "no-regex-spaces": "error",
     "no-return-assign": ["error", "always"],
@@ -303,7 +303,7 @@
     "semi": ["error", "always"],
     "semi-spacing": ["error", { "before": false, "after": true }],
     "sort-imports": "warn",
-    "sort-keys": ["warn", "asc"],
+    "sort-keys": ["warn", "asc", { "caseSensitive": false, "natural": true }],
     "sort-vars": ["warn", { "ignoreCase": true }],
     "space-before-blocks": ["error", "always"],
     "space-before-function-paren": ["error", {

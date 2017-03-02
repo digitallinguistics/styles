@@ -7,7 +7,7 @@ const storage = require('azure-storage').createBlobService();
 const copyReset = () => new Promise((resolve, reject) => {
 
   const rs = fs.createReadStream('node_modules/flexbox-reset/flexbox-reset.less');
-  const ws = fs.createWriteStream('less/flexbox-reset.less');
+  const ws = fs.createWriteStream('less/reset.less');
 
   rs.on('error', reject);
   ws.on('error', reject);
