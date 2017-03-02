@@ -1,12 +1,13 @@
 // a style library for DLx projects
 
 @errorRed: #ca3c3c;
-@wugbotBlue: #3399ff;
+@dlxBlue: #3399ff;
+@wugbotBlue: #6FD1F6;
 
 @black-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7);
 @gray-shadow: 2px 2px 2px #ccc;
 
-.boldBlue { color: @wugbotBlue; font-weight: bold; }
+.boldBlue { color: @dlxBlue; font-weight: bold; }
 
 .bulleted {
   list-style: disc inside none;
@@ -49,7 +50,7 @@
   border-radius: 5px;
   box-shadow: inset 0 1px 3px #ddd;
   &:focus {
-    border-color: @wugbotBlue;
+    border-color: @dlxBlue;
     &:invalid { border-color: #e9322d; color: #b94a48; }
   }
   &[disabled] {
@@ -67,11 +68,11 @@
 
 .link {
   border-bottom: 1px solid white;
-  color: @wugbotBlue;
-  &:link { color: @wugbotBlue; }
-  &:visited { color: @wugbotBlue; }
-  &:hover { border-bottom: 1px solid @wugbotBlue; }
-  &:active { color: @wugbotBlue; }
+  color: @dlxBlue;
+  &:link { color: @dlxBlue; }
+  &:visited { color: @dlxBlue; }
+  &:hover { border-bottom: 1px solid @dlxBlue; }
+  &:active { color: @dlxBlue; }
 }
 
 .padded { padding: 0.25em 0.5rem; }
