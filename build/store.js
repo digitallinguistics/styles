@@ -1,3 +1,5 @@
+/* eslint-disable no-console */
+
 require('../../credentials/styles');
 
 const fs      = require('fs');
@@ -13,6 +15,40 @@ const copyReset = () => new Promise((resolve, reject) => {
   ws.on('error', reject);
   ws.on('finish', resolve);
   rs.pipe(ws);
+
+});
+
+const storeCss = () => new Promise((resolve, reject) => {
+
+  fs.readdir('css', 'utf8', (err, filenames) => {
+
+    if (err) reject(err);
+
+    Promise.all(filenames.map(filename => new Promise((resolve, reject) => {
+
+      const contentSettings = {
+        contentEncoding: 'utf8',
+        contentType:     'text/css',
+      };
+
+      const cb = err => {
+        if (err) reject(err);
+        else resolve();
+      };
+
+      storage.createBlockBlobFromLocalFile(
+        'css',
+        filename,
+        `css/${filename}`,
+        { contentSettings },
+        cb
+      );
+
+    })))
+    .then(resolve)
+    .catch(reject);
+
+  });
 
 });
 
@@ -35,6 +71,37 @@ const storeEslint = () => new Promise((resolve, reject) => {
     { contentSettings },
     cb
   );
+
+});
+
+const storeFonts = () => new Promise((resolve, reject) => {
+
+  fs.readdir('fonts', 'utf8', (err, filenames) => {
+
+    if (err) reject(err);
+
+    Promise.all(filenames.map(filename => new Promise((resolve, reject) => {
+
+      const contentSettings = { contentType: 'font/ttf' };
+
+      const cb = err => {
+        if (err) reject(err);
+      };
+
+      storage.createBlockBlobFromLocalFile(
+        'fonts',
+        filename,
+        `fonts/${filename}`,
+        { contentSettings },
+        cb
+      );
+
+    })))
+    .then(resolve)
+    .catch(reject);
+
+  });
+
 
 });
 
@@ -64,40 +131,6 @@ const storeImages = () => new Promise((resolve, reject) => {
         'img',
         filename,
         `img/${filename}`,
-        { contentSettings },
-        cb
-      );
-
-    })))
-    .then(resolve)
-    .catch(reject);
-
-  });
-
-});
-
-const storeCss = () => new Promise((resolve, reject) => {
-
-  fs.readdir('css', 'utf8', (err, filenames) => {
-
-    if (err) reject(err);
-
-    Promise.all(filenames.map(filename => new Promise((resolve, reject) => {
-
-      const contentSettings = {
-        contentEncoding: 'utf8',
-        contentType:     'text/css',
-      };
-
-      const cb = err => {
-        if (err) reject(err);
-        else resolve();
-      };
-
-      storage.createBlockBlobFromLocalFile(
-        'css',
-        filename,
-        `css/${filename}`,
         { contentSettings },
         cb
       );
@@ -144,15 +177,12 @@ const storeLess = () => new Promise((resolve, reject) => {
 
 });
 
-copyReset()
-.then(() => console.log('reset.less copied'))
-.then(storeEslint)
-.then(() => console.log('.eslintrc uploaded'))
-.then(storeImages)
-.then(() => console.log('Images uploaded'))
-.then(storeLess)
-.then(() => console.log('LESS files uploaded'))
-.then(storeCss)
-.then(() => console.log('CSS files uploaded'))
-.then(() => console.log('All files uploaded'))
+Promise.all([
+  copyReset().then(() => console.log('reset.less copied')),
+  storeEslint().then(() => console.log('.eslintrc uploaded')),
+  storeFonts().then(() => console.log('Fonts uploaded')),
+  storeImages().then(() => console.log('Images uploaded')),
+  storeLess().then(() => console.log('LESS files uploaded')),
+  storeCss().then(() => console.log('CSS files uploaded')),
+]).then(() => console.log('All files uploaded'))
 .catch(console.error);

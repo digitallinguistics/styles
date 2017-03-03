@@ -1,6 +1,6 @@
 {
 
-  // eslint v3.12.0
+  // eslint v3.16.1
 
   "parserOptions": {
     "ecmaVersion": 2017,
@@ -176,6 +176,7 @@
     "no-mixed-operators": ["warn", { "allowSamePrecedence": true }],
     "no-mixed-requires": ["error", { "allowCall": true }],
     "no-mixed-spaces-and-tabs": "error",
+    "no-multi-assign": "warn",
     "no-multi-spaces": ["error", {
       "exceptions": {
         "AssignmentExpression": true,
@@ -213,7 +214,7 @@
     "no-shadow": ["warn", {
       "builtinGlobals": true,
       "hoist": "all",
-      "allow": ["err"]
+      "allow": ["err", "resolve", "reject"]
     }],
     "no-shadow-restricted-names": "error",
     "no-sparse-arrays": "warn",
@@ -277,7 +278,16 @@
       "destructuring": "any",
       "ignoreReadBeforeAssign": false
     }],
+    "prefer-destructuring": ["warn", {
+      "array": false,
+      "object": true,
+    }, {
+      "enforceForRenamedProperties": false
+    }],
     "prefer-numeric-literals": "warn",
+    "prefer-promise-reject-errors": ["warn", {
+      "allowEmptyReject": true,
+    }],
     "prefer-rest-params": "error",
     "prefer-spread": "error",
     "prefer-template": "error",
@@ -316,6 +326,7 @@
     "spaced-comment": ["error", "always", { "markers": ["*"] }],
     "symbol-description": "error",
     "template-curly-spacing": ["warn", "never"],
+    "template-tag-spacing": ["error", "never"],
     "unicode-bom": ["error", "never"],
     "use-isnan": "error",
     "valid-typeof": "error",
