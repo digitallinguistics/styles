@@ -23,11 +23,18 @@
 
     <h1 class=patterns-h1>DLx Pattern Library</h1>
 
-    <section>
+    <nav>
+      <ul class=bulleted>
+        <li><a class=link href=#variables>Variables</a></li>
+        <li><a class=link href=#colors>Colors</a></li>
+      </ul>
+    </nav>
+
+    <section id=variables>
 
       <h2 class=patterns-h2>Variables</h2>
 
-      <p>The following LESS variables are available:</p>
+      <p>The following LESS variables are available (click to copy):</p>
 
       <ul class=bulleted>
         <li><p><code>@cdn</code>: <code>https://cdn.digitallinguistics.io</code></p></li>
@@ -35,43 +42,17 @@
 
     </section>
 
-    <section>
+    <section id=colors>
 
       <h2 class=patterns-h2>Colors</h2>
 
-      <p>The following colors are available as LESS variables:</p>
-
-      <div class=color>
-        <pre><code>@wugblue</code></pre>
-        <div class='swatch wugblue-background'>#6FD1F6</div>
-        <p>The color of the wug logo.</p>
-      </div>
+      <p>The following colors are available as LESS variables and classes. Click on the color to copy it to the clipboard. The class to set the font color follows the pattern <code>.{color}</code>, and the class to set the backround color follows the pattern <code>.{color}-background</code>, e.g. <code>.wugblue</code> and <code>.wugblue-background</code> respectively.</p>
 
       <section>
 
         <div class=color>
-          <pre><code>@verydarkblue</code></pre>
-          <div class='swatch verydarkblue-background'>#017CF2;</div>
-        </div>
-
-        <div class=color>
-          <pre><code>@darkblue</code></pre>
-          <div class='swatch darkblue-background'>#0F89FF;</div>
-        </div>
-
-        <div class=color>
-          <pre><code>@blue</code></pre>
-          <div class='swatch blue-background'>#3399ff;</div>
-        </div>
-
-        <div class=color>
-          <pre><code>@lightblue</code></pre>
-          <div class='swatch lightblue-background'>#5CAFFF;</div>
-        </div>
-
-        <div class=color>
-          <pre><code>@verylightblue</code></pre>
-          <div class='swatch verylightblue-background'>#88C4FE;</div>
+          <span><code>@wugblue</code><p>(The color of the wug logo.)</p></span>
+          <span><code class='swatch wugblue-background'>#6FD1F6</code></span>
         </div>
 
       </section>
@@ -79,8 +60,28 @@
       <section>
 
         <div class=color>
-          <pre><code>@gray</code></pre>
-          <div class='swatch gray-background'>#F5F2F0;</div>
+          <span><code>@verydarkblue</code></span>
+          <span><code class='swatch verydarkblue-background'>#017CF2</code></span>
+        </div>
+
+        <div class=color>
+          <span><code>@darkblue</code></span>
+          <span><code class='swatch darkblue-background'>#0F89FF</code></span>
+        </div>
+
+        <div class=color>
+          <span><code>@blue</code></span>
+          <span><code class='swatch blue-background'>#3399FF</code></span>
+        </div>
+
+        <div class=color>
+          <span><code>@lightblue</code></span>
+          <span><code class='swatch lightblue-background'>#5CAFFF</code></span>
+        </div>
+
+        <div class=color>
+          <span><code>@verylightblue</code></span>
+          <span><code class='swatch verylightblue-background'>#88C4FE</code></span>
         </div>
 
       </section>
@@ -88,28 +89,8 @@
       <section>
 
         <div class=color>
-          <pre><code>@verylightgreen</code></pre>
-          <div class='swatch verylightgreen-background'>#7FFED1;</div>
-        </div>
-
-        <div class=color>
-          <pre><code>@lightgreen</code></pre>
-          <div class='swatch lightgreen-background'>#4FFFC1;</div>
-        </div>
-
-        <div class=color>
-          <pre><code>@green</code></pre>
-          <div class='swatch green-background'>#23FFB1;</div>
-        </div>
-
-        <div class=color>
-          <pre><code>@darkgreen</code></pre>
-          <div class='swatch darkgreen-background'>#00FFA5;</div>
-        </div>
-
-        <div class=color>
-          <pre><code>@verydarkgreen</code></pre>
-          <div class='swatch verydarkgreen-background'>#00F39D;</div>
+          <span><code>@gray</code></span>
+          <span><code class='swatch gray-background'>#F5F2F0</code></span>
         </div>
 
       </section>
@@ -117,52 +98,28 @@
       <section>
 
         <div class=color>
-          <pre><code>@verylightorange</code></pre>
-          <div class='swatch verylightorange-background'>#FFA97F;</div>
+          <span><code>@verylightgreen</code></span>
+          <span><code class='swatch verylightgreen-background'>#7FFED1</code></span>
         </div>
 
         <div class=color>
-          <pre><code>@lightorange</code></pre>
-          <div class='swatch lightorange-background'>#FF884F;</div>
+          <span><code>@lightgreen</code></span>
+          <span><code class='swatch lightgreen-background'>#4FFFC1</code></span>
         </div>
 
         <div class=color>
-          <pre><code>@orange</code></pre>
-          <div class='swatch orange-background'>#FF6A23;</div>
+          <span><code>@green</code></span>
+          <span><code class='swatch green-background'>#23FFB1</code></span>
         </div>
 
         <div class=color>
-          <pre><code>@darkorange</code></pre>
-          <div class='swatch darkorange-background'>#FF5300;</div>
-        </div>
-
-      </section>
-
-      <section>
-
-        <div class=color>
-          <pre><code>@verylightpurple</code></pre>
-          <div class='swatch verylightpurple-background'>#9791FE;</div>
+          <span><code>@darkgreen</code></span>
+          <span><code class='swatch darkgreen-background'>#00FFA5</code></span>
         </div>
 
         <div class=color>
-          <pre><code>@lightpurple</code></pre>
-          <div class='swatch lightpurple-background'>#7068FF;</div>
-        </div>
-
-        <div class=color>
-          <pre><code>@purple</code></pre>
-          <div class='swatch purple-background'>#4D42FF;</div>
-        </div>
-
-        <div class=color>
-          <pre><code>@darkpurple</code></pre>
-          <div class='swatch darkpurple-background'>#2A1DFF;</div>
-        </div>
-
-        <div class=color>
-          <pre><code>@verydarkpurple</code></pre>
-          <div class='swatch verydarkpurple-background'>#1002F4;</div>
+          <span><code>@verydarkgreen</code></span>
+          <span><code class='swatch verydarkgreen-background'>#00F39D</code></span>
         </div>
 
       </section>
@@ -170,28 +127,23 @@
       <section>
 
         <div class=color>
-          <pre><code>@verylightred</code></pre>
-          <div class='swatch verylightred-background'>#FF9797;</div>
+          <span><code>@verylightorange</code></span>
+          <span><code class='swatch verylightorange-background'>#FFA97F</code></span>
         </div>
 
         <div class=color>
-          <pre><code>@lightred</code></pre>
-          <div class='swatch lightred-background'>#E96363;</div>
+          <span><code>@lightorange</code></span>
+          <span><code class='swatch lightorange-background'>#FF884F</code></span>
         </div>
 
         <div class=color>
-          <pre><code>@red</code></pre>
-          <div class='swatch red-background'>#CA3C3C;</div>
+          <span><code>@orange</code></span>
+          <span><code class='swatch orange-background'>#FF6A23</code></span>
         </div>
 
         <div class=color>
-          <pre><code>@darkred</code></pre>
-          <div class='swatch darkred-background'>#AA1F1F;</div>
-        </div>
-
-        <div class=color>
-          <pre><code>@verydarkred</code></pre>
-          <div class='swatch verydarkred-background'>#830505;</div>
+          <span><code>@darkorange</code></span>
+          <span><code class='swatch darkorange-background'>#FF5300</code></span>
         </div>
 
       </section>
@@ -199,18 +151,99 @@
       <section>
 
         <div class=color>
-          <pre><code>@lightblue-transparent</code></pre>
-          <div class='swatch lightblue-transparent'>rgba(92, 175, 255, 0.2);</div>
+          <span><code>@verylightpurple</code></span>
+          <span><code class='swatch verylightpurple-background'>#9791FE</code></span>
         </div>
 
         <div class=color>
-          <pre><code>@verylightblue-transparent</code></pre>
-          <div class='swatch verylightblue-transparent'>rgba(136, 196, 254, 0.2);</div>
+          <span><code>@lightpurple</code></span>
+          <span><code class='swatch lightpurple-background'>#7068FF</code></span>
+        </div>
+
+        <div class=color>
+          <span><code>@purple</code></span>
+          <span><code class='swatch purple-background'>#4D42FF</code></span>
+        </div>
+
+        <div class=color>
+          <span><code>@darkpurple</code></span>
+          <span><code class='swatch darkpurple-background'>#2A1DFF</code></span>
+        </div>
+
+        <div class=color>
+          <span><code>@verydarkpurple</code></span>
+          <span><code class='swatch verydarkpurple-background'>#1002F4</code></span>
+        </div>
+
+      </section>
+
+      <section>
+
+        <div class=color>
+          <span><code>@verylightred</code></span>
+          <span><code class='swatch verylightred-background'>#FF9797</code></span>
+        </div>
+
+        <div class=color>
+          <span><code>@lightred</code></span>
+          <span><code class='swatch lightred-background'>#E96363</code></span>
+        </div>
+
+        <div class=color>
+          <span><code>@red</code></span>
+          <span><code class='swatch red-background'>#CA3C3C</code></span>
+        </div>
+
+        <div class=color>
+          <span><code>@darkred</code></span>
+          <span><code class='swatch darkred-background'>#AA1F1F</code></span>
+        </div>
+
+        <div class=color>
+          <span><code>@verydarkred</code></span>
+          <span><code class='swatch verydarkred-background'>#830505</code></span>
+        </div>
+
+      </section>
+
+      <section>
+
+        <div class=color>
+          <span><code>@lightblue-transparent</code></span>
+          <span><code class='swatch lightblue-transparent'>rgba(92, 175, 255, 0.2)</code></span>
+        </div>
+
+        <div class=color>
+          <span><code>@verylightblue-transparent</code></span>
+          <span><code class='swatch verylightblue-transparent'>rgba(136, 196, 254, 0.2)</code></span>
         </div>
 
       </section>
 
     </section>
+
+    <script type=text/javascript>
+
+      const colors = document.getElementById('colors');
+
+      const copyHex = target => {
+
+        const selection = window.getSelection();
+        const range     = new Range;
+
+        range.selectNodeContents(target);
+        selection.removeAllRanges();
+        selection.addRange(range);
+        document.execCommand('copy');
+        selection.removeAllRanges();
+
+      };
+
+      colors.addEventListener('click', ev => {
+        if (ev.target.classList.contains('swatch')) copyHex(ev.target);
+      });
+
+    </script>
 
   </body>
 

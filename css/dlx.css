@@ -11,7 +11,7 @@
   color: #0F89FF;
 }
 .blue {
-  color: #3399ff;
+  color: #3399FF;
 }
 .lightblue {
   color: #5CAFFF;
@@ -21,12 +21,15 @@
 }
 .verydarkblue-background {
   background-color: #017CF2;
+  color: white;
 }
 .darkblue-background {
   background-color: #0F89FF;
+  color: white;
 }
 .blue-background {
-  background-color: #3399ff;
+  background-color: #3399FF;
+  color: white;
 }
 .lightblue-background {
   background-color: #5CAFFF;
@@ -93,6 +96,7 @@
 }
 .darkorange-background {
   background-color: #FF5300;
+  color: white;
 }
 .verylightpurple {
   color: #9791FE;
@@ -114,15 +118,19 @@
 }
 .lightpurple-background {
   background-color: #7068FF;
+  color: white;
 }
 .purple-background {
   background-color: #4D42FF;
+  color: white;
 }
 .darkpurple-background {
   background-color: #2A1DFF;
+  color: white;
 }
 .verydarkpurple-background {
   background-color: #1002F4;
+  color: white;
 }
 .verylightred {
   color: #FF9797;
@@ -147,12 +155,15 @@
 }
 .red-background {
   background-color: #CA3C3C;
+  color: white;
 }
 .darkred-background {
   background-color: #AA1F1F;
+  color: white;
 }
 .verydarkred-background {
   background-color: #830505;
+  color: white;
 }
 .lightblue-transparent {
   background-color: rgba(92, 175, 255, 0.2);
@@ -160,13 +171,17 @@
 .verylightblue-transparent {
   background-color: rgba(136, 196, 254, 0.2);
 }
+body {
+  box-sizing: border-box;
+  font-family: 'Fira Sans';
+  line-height: 1.5em;
+}
 .bulleted {
   list-style: disc outside none;
   margin-left: 1.5em;
 }
 .bulleted li {
   display: list-item;
-  padding: 0.5em 0em;
 }
 code {
   background-color: #F5F2F0;
@@ -175,21 +190,23 @@ code {
   font-size: 0.75em;
   font-style: normal;
   padding: 0.25em;
-  white-space: pre-wrap;
+}
+p > code {
+  white-space: pre;
 }
 .link {
-  color: #3399ff;
-  border-bottom: 1px solid white;
+  color: #3399FF;
+  border-bottom: 0.075em solid white;
 }
 .link:link {
-  color: #3399ff;
+  color: #3399FF;
 }
 .link:visited {
-  color: #3399ff;
+  color: #3399FF;
 }
 .link:hover {
-  border-bottom: 1px solid #3399ff;
+  border-bottom: 0.075em solid #3399FF;
 }
 .link:active {
-  color: #3399ff;
+  color: #3399FF;
 }

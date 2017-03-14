@@ -1,22 +1,36 @@
-html {
-  font-family: 'Fira Sans';
-}
-
 body {
-
-  box-sizing: border-box;
   padding: 2rem;
-
 }
 
 .color {
 
+  align-items: center;
   flex-direction: row;
+  padding: 0.25em 0em;
 
-  pre {
+  span {
+    display: flex;
+    align-items: flex-start;
     width: 15em;
   }
 
+}
+
+#colors {
+
+  p {
+    padding: 0.5em 0em;
+  }
+
+  section {
+    padding: 0.5em 1em;
+  }
+
+}
+
+#colors section {
+  align-items: center;
+  padding: 0.5em 1em;
 }
 
 .patterns-h1,
@@ -32,4 +46,9 @@ body {
 
 .patterns-h2 {
   font-size: 2em;
+}
+
+.swatch {
+  cursor: pointer;
+  padding: 0.5em 1em;
 }
