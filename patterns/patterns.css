@@ -1,0 +1,12 @@
+html {
+  font-family: 'Fira Sans';
+}
+body {
+  box-sizing: border-box;
+  padding: 2rem;
+}
+.patterns-h1 {
+  font-size: 3em;
+  padding: 1em;
+  text-align: center;
+}
