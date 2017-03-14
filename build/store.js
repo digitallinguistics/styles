@@ -6,18 +6,6 @@ const fs      = require('fs');
 const path    = require('path');
 const storage = require('azure-storage').createBlobService();
 
-const copyReset = () => new Promise((resolve, reject) => {
-
-  const rs = fs.createReadStream('node_modules/flexbox-reset/flexbox-reset.less');
-  const ws = fs.createWriteStream('less/reset.less');
-
-  rs.on('error', reject);
-  ws.on('error', reject);
-  ws.on('finish', resolve);
-  rs.pipe(ws);
-
-});
-
 const storeCss = () => new Promise((resolve, reject) => {
 
   fs.readdir('css', 'utf8', (err, filenames) => {
@@ -178,7 +166,6 @@ const storeLess = () => new Promise((resolve, reject) => {
 });
 
 Promise.all([
-  copyReset().then(() => console.log('reset.less copied')),
   storeEslint().then(() => console.log('.eslintrc uploaded')),
   storeFonts().then(() => console.log('Fonts uploaded')),
   storeImages().then(() => console.log('Images uploaded')),

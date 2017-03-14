@@ -12,6 +12,7 @@
   "repository": "https://github.com/digitallinguistics/styles.git",
   "scripts": {
     "build": "npm run less & npm run store",
+    "copy-reset": "cp node_modules/flexbox-reset/flexbox-reset.less less/reset.less",
     "less": "node build/less.js",
     "store": "node build/store.js"
   },

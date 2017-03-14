@@ -8,8 +8,7 @@
 @lightblue:       #5CAFFF;
 @verylightblue:   #88C4FE;
 
-@lightblue-transparent:     rgba(92, 175, 255, 0.2);
-@verylightblue-transparent: rgba(136, 196, 254, 0.2);
+@gray:            #F5F2F0;
 
 @verylightgreen:  #7FFED1;
 @lightgreen:      #4FFFC1;
@@ -33,3 +32,35 @@
 @red:             #CA3C3C;
 @darkred:         #AA1F1F;
 @verydarkred:     #830505;
+
+@lightblue-transparent:     rgba(92, 175, 255, 0.2);
+@verylightblue-transparent: rgba(136, 196, 254, 0.2);
+
+.bulleted {
+
+  list-style: disc outside none;
+
+  li {
+    display: list-item;
+  }
+
+}
+
+code {
+  background-color: @gray;
+  border-radius: 3px;
+  font-family: 'Fira Mono', 'Monaco', 'Courier New', monospace;
+  font-size: 0.75em;
+  font-style: normal;
+  padding: 0.25em;
+  white-space: pre-wrap;
+}
+
+.link {
+  border-bottom: 1px solid white;
+  color: @blue;
+  &:link { color: @blue; }
+  &:visited { color: @blue; }
+  &:hover { border-bottom: 1px solid @blue; }
+  &:active { color: @blue; }
+}

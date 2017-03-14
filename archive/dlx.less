@@ -1,18 +1,7 @@
 // a style library for DLx projects
 
-@errorRed: #ca3c3c;
-@dlxBlue: #3399ff;
-@wugbotBlue: #6FD1F6;
-
 @black-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7);
 @gray-shadow: 2px 2px 2px #ccc;
-
-.boldBlue { color: @dlxBlue; font-weight: bold; }
-
-.bulleted {
-  list-style: disc inside none;
-  li { display: list-item; }
-}
 
 .button {
   .wide-padded;
@@ -35,14 +24,6 @@
   }
 }
 
-.code {
-  background-color: rgba(0, 0, 0, 0.04);
-  border-radius: 3px;
-  font-family: 'Fira Mono';
-  font-size: 0.75rem;
-  padding: 0.25rem;
-}
-
 .field {
   .padded;
   background-color: white;
@@ -59,28 +40,3 @@
     cursor: not-allowed;
   }
 }
-
-.header {
-  font-size: 1.5rem;
-  font-weight: bold;
-  padding: 0.5rem;
-}
-
-.link {
-  border-bottom: 1px solid white;
-  color: @dlxBlue;
-  &:link { color: @dlxBlue; }
-  &:visited { color: @dlxBlue; }
-  &:hover { border-bottom: 1px solid @dlxBlue; }
-  &:active { color: @dlxBlue; }
-}
-
-.padded { padding: 0.25em 0.5rem; }
-
-.page-padded { padding: 0.5rem 0.75rem; }
-
-.row { flex-direction: row; }
-
-.small { font-size: 80%; }
-
-.wide-padded { padding: 0.5em 1em; }
