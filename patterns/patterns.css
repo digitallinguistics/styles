@@ -5,8 +5,20 @@ body {
   box-sizing: border-box;
   padding: 2rem;
 }
-.patterns-h1 {
-  font-size: 3em;
+.color {
+  flex-direction: row;
+}
+.color pre {
+  width: 15em;
+}
+.patterns-h1,
+.patterns-h2 {
   padding: 1em;
   text-align: center;
+}
+.patterns-h1 {
+  font-size: 3em;
+}
+.patterns-h2 {
+  font-size: 2em;
 }

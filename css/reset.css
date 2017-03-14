@@ -127,6 +127,29 @@ tt,
 var {
   display: inline;
 }
+blockquote,
+button,
+caption,
+dd,
+dt,
+figcaption,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+legend,
+option,
+output,
+p,
+pre,
+select,
+summary,
+textarea {
+  display: block;
+}
 a,
 a:link,
 a:visited,
