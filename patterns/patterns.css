@@ -4,21 +4,18 @@ body {
 .color {
   align-items: center;
   flex-direction: row;
+  justify-content: space-between;
   padding: 0.25em 0em;
 }
 .color span {
-  display: flex;
   align-items: flex-start;
-  width: 15em;
+  display: flex;
 }
 #colors p {
   padding: 0.5em 0em;
 }
 #colors section {
-  padding: 0.5em 1em;
-}
-#colors section {
-  align-items: center;
+  align-items: stretch;
   padding: 0.5em 1em;
 }
 .patterns-h1,
