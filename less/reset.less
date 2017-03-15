@@ -14,14 +14,13 @@ dl, dt, dd, ol, ul, li,
 button, caption, input, fieldset, form, label, legend, table, textarea, tbody, tfoot, thead, tr, th, td,
 // semantic elements
 article, aside, audio, canvas, details, embed, figure, figcaption, footer, header, hgroup, main, mark, menu, nav, option, output, ruby, section, select, summary, time, video {
-  border:          none;
+  border:          0;
   border-collapse: collapse;
   display:         flex;
   flex-direction:  column;
   font:            inherit;
-  line-height:     inherit;
   margin:          0;
-  outline:         none;
+  outline:         0;
   padding:         0;
   text-decoration: none;
   vertical-align:  baseline;
@@ -46,12 +45,12 @@ a, a:link, a:visited, a:hover, a:active {
 
 // set defaults for body
 body {
-  background-color: white;
+  background: white;
+  color: black;
   font-stretch: normal;
   font-style: normal;
   font-variant: normal;
   font-weight: normal;
-  line-height: 1;
   min-height: 100vh;
 }
 
@@ -64,6 +63,10 @@ blockquote, q {
   }
 }
 
+:focus {
+  outline: 0;
+}
+
 // remove styling from lists
 ol, ul {
   list-style: none;
@@ -71,6 +74,7 @@ ol, ul {
 
 // set default table styling
 table {
+  border-spacing: 0;
   display: table;
 }
 
