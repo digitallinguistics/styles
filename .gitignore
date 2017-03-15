@@ -36,3 +36,4 @@ node_modules
 .jshintrc
 credentials.js
 Thumbs.db
+nodemon.json

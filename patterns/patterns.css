@@ -16,20 +16,17 @@ body {
 }
 #colors section {
   align-items: stretch;
+  max-width: 30rem;
   padding: 0.5em 1em;
 }
-.patterns-h1,
-.patterns-h2 {
-  padding: 1em;
-  text-align: center;
-}
-.patterns-h1 {
-  font-size: 3em;
-}
-.patterns-h2 {
-  font-size: 2em;
+.rendered {
+  align-items: flex-start;
 }
 .swatch {
   cursor: pointer;
   padding: 0.5em 1em;
+}
+.button-example .rendered button,
+.button-example .rendered input[type=button] {
+  margin: 0.25em 0em;
 }

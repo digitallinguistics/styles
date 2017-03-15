@@ -10,6 +10,7 @@ const renderTemplate = (pattern, description, html) => {
   const clone  = template.content.cloneNode(true);
   const regexp = new RegExp(`class='?${pattern}`);
   if (regexp.test(html)) pattern = `.${pattern}`;
+  clone.querySelector('.pattern').classList.add(`${pattern}-example`);
   clone.querySelector('.pattern-title').innerHTML       = pattern;
   clone.querySelector('.pattern-description').innerHTML = description;
   clone.querySelector('.example').textContent           = html;
@@ -17,9 +18,14 @@ const renderTemplate = (pattern, description, html) => {
   patterns.appendChild(clone);
 };
 
-const loadExample = ([pattern, description]) => fetch(`examples/${pattern}.html`)
-.then(res => res.text())
-.then(text => renderTemplate(pattern, description, text));
+const loadExample = entry => {
+  // cannot use destructuring here: not supported in Edge
+  const pattern = entry[0];
+  const description = entry[1];
+  return fetch(`examples/${pattern}.html`)
+  .then(res => res.text())
+  .then(text => renderTemplate(pattern, description, text));
+};
 
 Object.entries(examples)
 .map(loadExample)
