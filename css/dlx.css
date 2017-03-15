@@ -176,6 +176,9 @@ body {
   font-family: 'Fira Sans';
   line-height: 1.5;
 }
+abbr {
+  font-style: italic;
+}
 .bulleted {
   list-style: disc outside none;
   margin-left: 1.5em;
@@ -189,9 +192,8 @@ code {
   font-family: 'Fira Mono', 'Monaco', 'Courier New', monospace;
   font-size: 0.75em;
   font-style: normal;
+  overflow-x: auto;
   padding: 0.25em;
-}
-p > code {
   white-space: pre;
 }
 .link {

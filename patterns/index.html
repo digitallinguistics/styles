@@ -21,18 +21,20 @@
 
   <body>
 
-    <h1 class=patterns-h1>DLx Pattern Library</h1>
+    <h1>DLx Pattern Library</h1>
 
     <nav>
       <ul class=bulleted>
         <li><a class=link href=#variables>Variables</a></li>
         <li><a class=link href=#colors>Colors</a></li>
+        <li><a class=link href=#typography>Typography</a></li>
+        <li><a class=link href=#patterns>Patterns</a></li>
       </ul>
     </nav>
 
     <section id=variables>
 
-      <h2 class=patterns-h2>Variables</h2>
+      <h2>Variables</h2>
 
       <p>The following LESS variables are available (click to copy):</p>
 
@@ -41,10 +43,11 @@
       </ul>
 
     </section>
+    <!-- END variables -->
 
     <section id=colors>
 
-      <h2 class=patterns-h2>Colors</h2>
+      <h2>Colors</h2>
 
       <p>The following colors are available as LESS variables and classes. Click on the color to copy it to the clipboard. The class to set the font color follows the pattern <code>.{color}</code>, and the class to set the backround color follows the pattern <code>.{color}-background</code>, e.g. <code>.wugblue</code> and <code>.wugblue-background</code> respectively.</p>
 
@@ -221,29 +224,75 @@
       </section>
 
     </section>
+    <!-- END colors -->
 
-    <script type=text/javascript>
+    <section id=typography>
 
-      const colors = document.getElementById('colors');
+      <h1>Typography</h1>
 
-      const copyHex = target => {
+      <p class=hanging-indent><strong>Fira Sans Light</strong> (<em>not</em> Fira Sans Regular) is the default font used throughout DLx tools, with a line height of 1.5.</p>
+      <p class=hanging-indent style="font-style: italic;"><strong>Fira Sans Light Italic</strong> is used for italics.</p>
+      <p class=hanging-indent style="font-weight: bold;"><strong>Fira Sans Medium</strong> (<em>not</em> Fira Sans Bold) is used for bold styling.</p>
+      <p class=hanging-indent style="font-style: italic; font-weight: bold;"><strong>Fira Sans Medium Italic</strong> is used for the combination of bold and italics.</p>
+      <p class=hanging-indent style="font-family: 'Fira Mono';"><strong>Fira Mono</strong> is used for monospaced code blocks.</p>
+      <p class=hanging-indent style="font-family: 'Fira Mono'; font-weight: bold;"><strong>Fira Mono Bold</strong> is used for emphasized or bolded code.</p>
 
-        const selection = window.getSelection();
-        const range     = new Range;
+    </section>
 
-        range.selectNodeContents(target);
-        selection.removeAllRanges();
-        selection.addRange(range);
-        document.execCommand('copy');
-        selection.removeAllRanges();
+    <section id=patterns>
 
-      };
+      <h1>Patterns</h1>
 
-      colors.addEventListener('click', ev => {
-        if (ev.target.classList.contains('swatch')) copyHex(ev.target);
-      });
+    </section>
 
-    </script>
+    <section>
+      <h1>To Add</h1>
+      <ul>
+        <li>button</li>
+        <li>cite</li>
+        <li>code</li>
+        <li>dfn</li>
+        <li>em</li>
+        <li>.field</li>
+        <li>.hanging-indent</li>
+        <li>input (each subtype)</li>
+        <li>legend</li>
+        <li>.link</li>
+        <li>.numbered</li>
+        <li>option</li>
+        <li>.page-title</li>
+        <li>.reference</li>
+        <li>.reference-list</li>
+        <li>.section-header</li>
+        <li>select</li>
+        <li>strong</li>
+        <li>.subsection-header</li>
+      </ul>
+    </section>
+
+    <template id=template>
+      <section class=pattern>
+
+        <header>
+          <h1><code class=pattern-title></code></h1>
+          <p class=pattern-description></p>
+        </header>
+
+        <div>
+          <h1>Example Markup</h1>
+          <code class=example></code>
+        </div>
+
+        <div>
+          <h1>Live Example</h1>
+          <div class=rendered></div>
+        </div>
+
+      </section>
+    </template>
+
+    <script src=examples.js charset=utf-8></script>
+    <script src=index.js charset=utf-8></script>
 
   </body>
 
