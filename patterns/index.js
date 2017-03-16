@@ -1,17 +1,28 @@
 /* eslint-env browser */
 
-/* global examples */
+/* global examples, hljs */
 
 const nav      = document.getElementById('nav');
 const patterns = document.getElementById('patterns');
 const template = document.getElementById('template');
 
 // load examples
-const renderTemplate = (pattern, description, html) => {
+function loadExample(entry) {
+  // cannot use destructuring here: not supported in Edge
+  const pattern = entry[0];
+  const description = entry[1];
+  return fetch(`examples/${pattern}.html`)
+  .then(res => res.text())
+  .then(text => renderTemplate(pattern, description, text));
+}
+
+function renderTemplate(pattern, description, html) {
   const clone   = template.content.cloneNode(true);
+  const markup  = clone.querySelector('.markup');
   const regexp  = new RegExp(`class='?${pattern}`);
   const section = clone.querySelector('.pattern');
-  section.id = pattern;
+  markup.textContent = html;
+  section.id         = pattern;
   section.classList.add(`${pattern}-example`);
   const opt = document.createElement('option');
   opt.value = pattern;
@@ -20,20 +31,11 @@ const renderTemplate = (pattern, description, html) => {
   opt.innerHTML = pattern;
   clone.querySelector('.pattern-title > code').innerHTML = pattern;
   clone.querySelector('.pattern-description').innerHTML  = description;
-  clone.querySelector('.markup').textContent             = html;
   clone.querySelector('.rendered').innerHTML             = html;
-  patterns.appendChild(clone);
   nav.appendChild(opt);
-};
-
-const loadExample = entry => {
-  // cannot use destructuring here: not supported in Edge
-  const pattern = entry[0];
-  const description = entry[1];
-  return fetch(`examples/${pattern}.html`)
-  .then(res => res.text())
-  .then(text => renderTemplate(pattern, description, text));
-};
+  patterns.appendChild(clone);
+  hljs.highlightBlock(markup);
+}
 
 Object.entries(examples)
 .map(loadExample)
