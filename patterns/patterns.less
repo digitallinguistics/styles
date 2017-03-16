@@ -1,5 +1,23 @@
+@import (reference) '../less/dlx.less';
+
 body {
+
+  align-items: center;
   padding: 2rem;
+
+  > label {
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 1em;
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+
+  > section {
+    max-width: 700px;
+  }
+
 }
 
 .color {
@@ -16,34 +34,69 @@ body {
 
 }
 
-#colors {
+#colors > section {
+  align-items: stretch;
+  max-width: 30rem;
+  padding: 0.5em 1em;
+}
 
-  p {
-    padding: 0.5em 0em;
-  }
-
-  section {
-    align-items: stretch;
-    max-width: 30rem;
-    padding: 0.5em 1em;
-  }
-
+.markup,
+.rendered,
+{
+  margin: 0.5em 1em;
+  padding: 1em;
 }
 
 .rendered {
   align-items: flex-start;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.page-title {
+  text-align: center;
+}
+
+.pattern > div {
+  margin-bottom: 1em;
+}
+
+.pattern-description {
+  padding: 0.5em 0em;
+}
+
+#patterns > section {
+
+  padding: 0.5em 1em;
+
+  .pattern-title.subsection-header {
+    border-bottom: 1px solid black;
+    margin-bottom: 0.25em;
+    padding-bottom: 0.5em;
+  }
+
 }
 
 .swatch {
+  border: none;
   cursor: pointer;
   padding: 0.5em 1em;
 }
 
+#typography p {
+  padding: 0.5em 1em;
+}
+
 // styling for specific patterns
-.button-example .rendered {
+.button-example {
   button,
   input[type=button],
   {
-    margin: 0.25em 0em;
+    margin: 0.5em;
   }
+}
+
+.field-example input {
+  margin: 0.5em;
+  width: 80%;
 }

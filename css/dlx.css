@@ -242,6 +242,7 @@ cite {
 }
 code {
   background-color: #F5F2F0;
+  border: 1px solid black;
   border-radius: 5px;
   font-family: 'Fira Mono', 'Monaco', 'Courier New', monospace;
   font-size: 0.75em;
@@ -1034,6 +1035,9 @@ tt > a:visited:active,
 var > a:visited:active {
   color: #4D42FF;
 }
+.minor-header {
+  font-size: 1.25em;
+}
 .numbered {
   counter-reset: numbered;
   list-style: none;
@@ -1102,6 +1106,7 @@ var > a:visited:active {
 select {
   border: 1px solid black;
   border-radius: 5px;
+  padding: 0.25em;
 }
 strong {
   color: #017CF2;
@@ -1111,6 +1116,10 @@ strong {
   font-size: 1.5em;
   padding-bottom: 0.25em;
   padding-top: 0.5em;
+}
+.subsubsection-header {
+  font-size: 1.5em;
+  font-style: italic;
 }
 textarea {
   background-color: white;

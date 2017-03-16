@@ -21,7 +21,17 @@
 
   <body>
 
-    <h1>DLx Pattern Library</h1>
+    <label>
+      <span>Jump to …</span>
+      <select id=nav>
+        <option value=variables>Variables</option>
+        <option value=colors>Colors</option>
+        <option value=typography>Typography</option>
+        <option value=patterns>Patterns</option>
+      </select>
+    </label>
+
+    <h1 class=page-title>DLx Pattern Library</h1>
 
     <nav>
       <ul class=bulleted>
@@ -34,9 +44,9 @@
 
     <section id=variables>
 
-      <h2>Variables</h2>
+      <h1 class=section-header>Variables</h2>
 
-      <p>The following LESS variables are available (click to copy):</p>
+      <p>The following LESS variables are available:</p>
 
       <ul class=bulleted>
         <li><p><code>@cdn</code>: <code>https://cdn.digitallinguistics.io</code></p></li>
@@ -47,7 +57,7 @@
 
     <section id=colors>
 
-      <h2>Colors</h2>
+      <h1 class=section-header>Colors</h2>
 
       <p>The following colors are available as LESS variables and classes. Click on the color to copy it to the clipboard. The class to set the font color follows the pattern <code>.{color}</code>, and the class to set the backround color follows the pattern <code>.{color}-background</code>, e.g. <code>.wugblue</code> and <code>.wugblue-background</code> respectively.</p>
 
@@ -233,7 +243,7 @@
 
     <section id=typography>
 
-      <h1>Typography</h1>
+      <h1 class=section-header>Typography</h1>
 
       <p class=hanging-indent><strong>Fira Sans Light</strong> (<em>not</em> Fira Sans Regular) is the default font used throughout DLx tools, with a line height of 1.5.</p>
       <p class=hanging-indent style="font-style: italic;"><strong>Fira Sans Light Italic</strong> is used for italics.</p>
@@ -246,7 +256,7 @@
 
     <section id=patterns>
 
-      <h1>Patterns</h1>
+      <h1 class=section-header>Patterns</h1>
 
     </section>
 
@@ -254,17 +264,17 @@
       <section class=pattern>
 
         <header>
-          <h1><code class=pattern-title></code></h1>
+          <h1 class='pattern-title subsection-header'><code></code></h1>
           <p class=pattern-description></p>
         </header>
 
         <div>
-          <h1>Example Markup</h1>
-          <code class=example></code>
+          <h1 class=minor-header>Example Markup</h1>
+          <code class=markup></code>
         </div>
 
         <div>
-          <h1>Live Example</h1>
+          <h1 class=minor-header>Live Example</h1>
           <div class=rendered></div>
         </div>
 

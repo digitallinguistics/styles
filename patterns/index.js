@@ -2,20 +2,28 @@
 
 /* global examples */
 
+const nav      = document.getElementById('nav');
 const patterns = document.getElementById('patterns');
 const template = document.getElementById('template');
 
 // load examples
 const renderTemplate = (pattern, description, html) => {
-  const clone  = template.content.cloneNode(true);
-  const regexp = new RegExp(`class='?${pattern}`);
-  if (regexp.test(html)) pattern = `.${pattern}`;
-  clone.querySelector('.pattern').classList.add(`${pattern}-example`);
-  clone.querySelector('.pattern-title').innerHTML       = pattern;
-  clone.querySelector('.pattern-description').innerHTML = description;
-  clone.querySelector('.example').textContent           = html;
-  clone.querySelector('.rendered').innerHTML            = html;
+  const clone   = template.content.cloneNode(true);
+  const regexp  = new RegExp(`class='?${pattern}`);
+  const section = clone.querySelector('.pattern');
+  section.id = pattern;
+  section.classList.add(`${pattern}-example`);
+  const opt = document.createElement('option');
+  opt.value = pattern;
+  if (regexp.test(html)) pattern = `.${pattern}`
+  else pattern = `&lt;${pattern}&gt;`;
+  opt.innerHTML = pattern;
+  clone.querySelector('.pattern-title > code').innerHTML = pattern;
+  clone.querySelector('.pattern-description').innerHTML  = description;
+  clone.querySelector('.markup').textContent             = html;
+  clone.querySelector('.rendered').innerHTML             = html;
   patterns.appendChild(clone);
+  nav.appendChild(opt);
 };
 
 const loadExample = entry => {
@@ -50,4 +58,8 @@ const copyHex = target => {
 
 colors.addEventListener('click', ev => {
   if (ev.target.classList.contains('swatch')) copyHex(ev.target);
+});
+
+nav.addEventListener('change', ev => {
+  window.location = `#${ev.target.value}`;
 });

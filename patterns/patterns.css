@@ -1,5 +1,17 @@
 body {
+  align-items: center;
   padding: 2rem;
+}
+body > label {
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 1em;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+body > section {
+  max-width: 700px;
 }
 .color {
   align-items: center;
@@ -11,22 +23,51 @@ body {
   align-items: flex-start;
   display: flex;
 }
-#colors p {
-  padding: 0.5em 0em;
-}
-#colors section {
+#colors > section {
   align-items: stretch;
   max-width: 30rem;
   padding: 0.5em 1em;
 }
+.markup,
+.rendered {
+  margin: 0.5em 1em;
+  padding: 1em;
+}
 .rendered {
   align-items: flex-start;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.page-title {
+  text-align: center;
+}
+.pattern > div {
+  margin-bottom: 1em;
+}
+.pattern-description {
+  padding: 0.5em 0em;
+}
+#patterns > section {
+  padding: 0.5em 1em;
+}
+#patterns > section .pattern-title.subsection-header {
+  border-bottom: 1px solid black;
+  margin-bottom: 0.25em;
+  padding-bottom: 0.5em;
 }
 .swatch {
+  border: none;
   cursor: pointer;
   padding: 0.5em 1em;
 }
-.button-example .rendered button,
-.button-example .rendered input[type=button] {
-  margin: 0.25em 0em;
+#typography p {
+  padding: 0.5em 1em;
+}
+.button-example button,
+.button-example input[type=button] {
+  margin: 0.5em;
+}
+.field-example input {
+  margin: 0.5em;
+  width: 80%;
 }
