@@ -5,5 +5,6 @@
   "events": {
     "restart": "npm run less & npm run patterns"
   },
+  "exec": "node ../utilities/node/server.js",
   "ext": "js json less"
 }
