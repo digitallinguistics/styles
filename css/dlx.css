@@ -180,7 +180,7 @@
 }
 body {
   box-sizing: border-box;
-  font-family: 'Fira Sans';
+  font-family: 'Fira Sans', 'Arial', sans-serif;
   line-height: 1.5;
 }
 abbr {
@@ -664,7 +664,7 @@ label input {
 }
 .link {
   color: #3399FF;
-  border-bottom: 0.075em solid white;
+  border-bottom: 0.075em solid transparent;
 }
 .link:link {
   color: #3399FF;
@@ -733,7 +733,7 @@ time > a,
 tt > a,
 var > a {
   color: #3399FF;
-  border-bottom: 0.075em solid white;
+  border-bottom: 0.075em solid transparent;
 }
 blockquote > a:link,
 button > a:link,
@@ -1056,7 +1056,7 @@ var > a:visited:active {
 }
 .reference-list a {
   color: #3399FF;
-  border-bottom: 0.075em solid white;
+  border-bottom: 0.075em solid transparent;
 }
 .reference-list a:link {
   color: #3399FF;
@@ -1142,4 +1142,95 @@ textarea[disabled] {
   background-color: #eaeded;
   color: #cad2d3;
   cursor: not-allowed;
+}
+.tooltip {
+  position: relative;
+}
+.tooltip::after {
+  background-color: #00F39D;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px #ccc;
+  content: attr(title);
+  font-size: smaller;
+  left: 0.5em;
+  opacity: 0;
+  position: absolute;
+  top: 115%;
+  transition: all 0.3s ease;
+  width: 300px;
+  z-index: 2;
+}
+.tooltip:hover::after,
+.tooltip:focus::after {
+  opacity: 1;
+  padding: 0.5em 1em;
+}
+blockquote > .tooltip,
+button > .tooltip,
+caption > .tooltip,
+dd > .tooltip,
+dt > .tooltip,
+figcaption > .tooltip,
+h1 > .tooltip,
+h2 > .tooltip,
+h3 > .tooltip,
+h4 > .tooltip,
+h5 > .tooltip,
+h6 > .tooltip,
+input > .tooltip,
+legend > .tooltip,
+option > .tooltip,
+output > .tooltip,
+p > .tooltip,
+pre > .tooltip,
+select > .tooltip,
+summary > .tooltip,
+textarea > .tooltip,
+abbr > .tooltip,
+acronym > .tooltip,
+b > .tooltip,
+bdo > .tooltip,
+big > .tooltip,
+br > .tooltip,
+cite > .tooltip,
+code > .tooltip,
+del > .tooltip,
+dfn > .tooltip,
+em > .tooltip,
+i > .tooltip,
+ins > .tooltip,
+kbd > .tooltip,
+mark > .tooltip,
+q > .tooltip,
+samp > .tooltip,
+s > .tooltip,
+small > .tooltip,
+span > .tooltip,
+strike > .tooltip,
+strong > .tooltip,
+sub > .tooltip,
+sup > .tooltip,
+time > .tooltip,
+tt > .tooltip,
+var > .tooltip {
+  text-decoration: underline dotted #00F39D;
+}
+.white-link {
+  border-bottom: 0.075em solid transparent;
+  color: white;
+}
+.white-link:link {
+  color: white;
+}
+.white-link:visited {
+  color: white;
+}
+.white-link:hover {
+  border-bottom: 0.075em solid white;
+}
+.white-link:visited:hover {
+  border-bottom: 0.075em solid white;
+}
+.white-link:active {
+  color: white;
 }

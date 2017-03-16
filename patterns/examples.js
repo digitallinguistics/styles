@@ -48,6 +48,10 @@ const examples = {
 
   textarea:               'Uses the <code>&lt;.field&gt;</code> style',
 
+  tooltip:                'Adding the <code>.tooltip</code> class to any element will make a tooltip display on hover or when the element is focused. The content of the tooltip is contained in the <code>title</code> attribute for that element. Note that tooltips do not work on <code>&lt;input&gt;</code> elements - place the <code>.tooltip</code> class on the <code>&lt;label&gt;</code> instead.',
+
+  'white-link':           'A white link rather than the standard blue. Used for dark backgrounds.',
+
 };
 
 window.examples = examples;

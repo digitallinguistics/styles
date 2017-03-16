@@ -87,3 +87,7 @@ body > section {
   margin: 0.5em;
   width: 80%;
 }
+.white-link-example .rendered p {
+  background-color: #3399FF;
+  padding: 0.5em;
+}
