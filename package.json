@@ -14,11 +14,13 @@
     "build": "npm run less & npm run store",
     "copy-reset": "cp node_modules/flexbox-reset/flexbox-reset.less less/reset.less",
     "less": "node build/less.js",
-    "patterns": "lessc patterns/patterns.less patterns/patterns.css & babel patterns/patterns.js -o patterns/index.js",
+    "patterns": "lessc patterns/patterns.less patterns/patterns.css & browserify patterns/polyfill.js -o patterns/index.js -t babelify",
     "store": "node build/store.js"
   },
   "devDependencies": {
+    "babel-polyfill": "^6.23.0",
     "babel-preset-env": "^1.2.2",
+    "babelify": "^7.3.0",
     "flexbox-reset": "^1.1.2",
     "less": "^2.7.2"
   },
