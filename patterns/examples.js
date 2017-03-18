@@ -18,7 +18,7 @@ const examples = {
 
   field:                  'Styles an element as a form field. This style is automatically applied to various form elements, such as the <code>&lt;input type=text&gt;</code> element.',
 
-  fieldset:               'Used for grouping inputs together under a heading (<code>&lt;legend&gt;</code>)',
+  fieldset:               'Used for grouping inputs together under a heading (<code>&lt;legend&gt;</code>). Remember that flexbox does not work well with <code>&lt;fieldset&gt;</code>, so you may need to wrap the items inside <code>&lt;fieldset&gt;</code> in a <code>&lt;div&gt;</code>.',
 
   hanging:                'For blocks of text with a hanging indent.',
 

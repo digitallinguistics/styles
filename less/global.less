@@ -1,0 +1,151 @@
+/*
+This file contains DLx styles that are applied by default, without the need for specifiying them explicitly using CSS classes. This file also applies the flexbox-reset styling.
+ */
+
+// NB: The import order is important
+@import './node_modules/flexbox-reset/flexbox-reset.less';
+@import (reference) 'less/colors.less';
+@import (reference) 'less/classes.less';
+
+abbr {
+  font-style: italic;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Fira Sans', 'Calibri', 'DejaVu Sans', 'Verdana', 'Arial', 'Helvetica', sans-serif;
+  line-height: 1.5;
+}
+
+button {
+  .button;
+}
+
+cite {
+  font-style: italic;
+}
+
+code {
+  .gray-background;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-family: 'Fira Mono', 'Monaco', 'DejaVu Mono', 'Courier New', monospace;
+  font-size: 0.75em;
+  font-style: normal;
+  overflow-x: auto;
+  padding: 0.25em;
+  white-space: pre;
+}
+
+dfn {
+  font-style: italic;
+}
+
+em {
+  font-style: italic;
+}
+
+fieldset legend {
+  font-weight: bold;
+}
+
+input[type=button] {
+  .button;
+}
+
+input[type=color] {
+  display: block;
+}
+
+input[type=date] {
+  .field;
+}
+
+input[type=datetime] {
+  .field;
+}
+
+input[type=datetime-local] {
+  .field;
+}
+
+input[type=email] {
+  .field;
+}
+
+input[type=month] {
+  .field;
+}
+
+input[type=number] {
+  .field;
+}
+
+input[type=password] {
+  .field;
+}
+
+input[type=reset] {
+  .button;
+  .superdarkgreen-background;
+}
+
+input[type=search] {
+  .field;
+}
+
+input[type=submit] {
+  .button;
+}
+
+input[type=tel] {
+  .field;
+}
+
+input[type=text] {
+  .field;
+  display: flex;
+}
+
+input[type=time] {
+  .field;
+}
+
+input[type=url] {
+  .field;
+}
+
+input[type=week] {
+  .field;
+}
+
+label {
+
+  align-items: center;
+  flex-direction: row;
+
+  span {
+    font-size: smaller;
+    font-weight: bold;
+  }
+
+  input {
+    margin: 0.5em;
+  }
+
+}
+
+select {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 0.25em;
+}
+
+strong {
+  color: @verydarkblue;
+  font-weight: bold;
+}
+
+textarea {
+  .field;
+}

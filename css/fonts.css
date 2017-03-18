@@ -1,3 +1,6 @@
+/*
+This file declares @font-face rules for each of the fonts used in DLx projects
+ */
 @font-face {
   font-family: 'Fira Sans';
   src: local('Fira Sans'), url('https://cdn.digitallinguistics.io/fonts/FiraSans-Light.woff2') format('woff2'), url('https://cdn.digitallinguistics.io/fonts/FiraSans-Light.woff') format('woff'), url('https://cdn.digitallinguistics.io/fonts/FiraSans-Light.ttf') format('truetype');
@@ -33,4 +36,16 @@
   src: local('Fira Mono Bold'), url('https://cdn.digitallinguistics.io/fonts/FiraMono-Bold.woff2') format('woff2'), url('https://cdn.digitallinguistics.io/fonts/FiraMono-Bold.woff') format('woff'), url('https://cdn.digitallinguistics.io/fonts/FiraMono-Bold.ttf') format('truetype');
   font-style: normal;
   font-weight: bold;
+}
+@font-face {
+  font-family: 'Gentium Plus';
+  src: local('Gentium Plus Regular'), url('https://cdn.digitallinguistics.io/fonts/GentiumPlus-R.woff2') format('woff2'), url('https://cdn.digitallinguistics.io/fonts/GentiumPlus-R.woff') format('woff'), url('https://cdn.digitallinguistics.io/fonts/GentiumPlus-R.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Gentium Plus';
+  src: local('Gentium Plus Italic'), url('https://cdn.digitallinguistics.io/fonts/GentiumPlus-I.woff2') format('woff2'), url('https://cdn.digitallinguistics.io/fonts/GentiumPlus-I.woff') format('woff'), url('https://cdn.digitallinguistics.io/fonts/GentiumPlus-I.ttf') format('truetype');
+  font-style: italic;
+  font-weight: normal;
 }

@@ -1,0 +1,783 @@
+/*
+This file contains DLx styles that need to be explicitly specified using classes
+ */
+.wugblue {
+  color: #6FD1F6;
+}
+.wugblue-background {
+  background-color: #6FD1F6;
+}
+.verydarkblue {
+  color: #017CF2;
+}
+.darkblue {
+  color: #0F89FF;
+}
+.blue {
+  color: #3399FF;
+}
+.lightblue {
+  color: #5CAFFF;
+}
+.verylightblue {
+  color: #88C4FE;
+}
+.verydarkblue-background {
+  background-color: #017CF2;
+  color: white;
+}
+.darkblue-background {
+  background-color: #0F89FF;
+  color: white;
+}
+.blue-background {
+  background-color: #3399FF;
+  color: white;
+}
+.lightblue-background {
+  background-color: #5CAFFF;
+}
+.verylightblue-background {
+  background-color: #88C4FE;
+}
+.gray {
+  color: #F5F2F0;
+}
+.gray-background {
+  background-color: #F5F2F0;
+}
+.verylightgreen {
+  color: #7FFED1;
+}
+.lightgreen {
+  color: #4FFFC1;
+}
+.green {
+  color: #23FFB1;
+}
+.darkgreen {
+  color: #00FFA5;
+}
+.verydarkgreen {
+  color: #00F39D;
+}
+.superdarkgreen {
+  color: #00AB6E;
+}
+.verylightgreen-background {
+  background-color: #7FFED1;
+}
+.lightgreen-background {
+  background-color: #4FFFC1;
+}
+.green-background {
+  background-color: #23FFB1;
+}
+.darkgreen-background {
+  background-color: #00FFA5;
+}
+.verydarkgreen-background {
+  background-color: #00F39D;
+}
+.superdarkgreen-background {
+  background-color: #00AB6E;
+  color: white;
+}
+.verylightorange {
+  color: #FFA97F;
+}
+.lightorange {
+  color: #FF884F;
+}
+.orange {
+  color: #FF6A23;
+}
+.darkorange {
+  color: #FF5300;
+}
+.verylightorange-background {
+  background-color: #FFA97F;
+}
+.lightorange-background {
+  background-color: #FF884F;
+}
+.orange-background {
+  background-color: #FF6A23;
+}
+.darkorange-background {
+  background-color: #FF5300;
+  color: white;
+}
+.verylightpurple {
+  color: #9791FE;
+}
+.lightpurple {
+  color: #7068FF;
+}
+.purple {
+  color: #4D42FF;
+}
+.darkpurple {
+  color: #2A1DFF;
+}
+.verydarkpurple {
+  color: #1002F4;
+}
+.verylightpurple-background {
+  background-color: #9791FE;
+}
+.lightpurple-background {
+  background-color: #7068FF;
+  color: white;
+}
+.purple-background {
+  background-color: #4D42FF;
+  color: white;
+}
+.darkpurple-background {
+  background-color: #2A1DFF;
+  color: white;
+}
+.verydarkpurple-background {
+  background-color: #1002F4;
+  color: white;
+}
+.verylightred {
+  color: #FF9797;
+}
+.lightred {
+  color: #E96363;
+}
+.red {
+  color: #CA3C3C;
+}
+.darkred {
+  color: #AA1F1F;
+}
+.verydarkred {
+  color: #830505;
+}
+.verylightred-background {
+  background-color: #FF9797;
+}
+.lightred-background {
+  background-color: #E96363;
+}
+.red-background {
+  background-color: #CA3C3C;
+  color: white;
+}
+.darkred-background {
+  background-color: #AA1F1F;
+  color: white;
+}
+.verydarkred-background {
+  background-color: #830505;
+  color: white;
+}
+.lightblue-transparent {
+  background-color: rgba(92, 175, 255, 0.2);
+}
+.verylightblue-transparent {
+  background-color: rgba(136, 196, 254, 0.2);
+}
+.bulleted {
+  list-style: disc outside none;
+  margin-left: 1.5em;
+}
+.bulleted li {
+  display: list-item;
+}
+.button {
+  background-color: #3399FF;
+  color: white;
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.15), transparent);
+  border-radius: 5px;
+  box-shadow: inset -1px -1px 2px 0px rgba(0, 0, 0, 0.15), 1px 1px 2px #ccc;
+  cursor: pointer;
+  padding: 0.25em 0.5em;
+}
+.button:active {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
+}
+.button:hover,
+.button:focus {
+  background-image: linear-gradient(135deg, transparent, rgba(0, 0, 0, 0.15));
+}
+.button:disabled {
+  background-image: none;
+  box-shadow: none;
+  cursor: not-allowed;
+  opacity: 0.40;
+}
+.field {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 2px #ddd;
+  cursor: text;
+  padding: 0.125em 0.25em;
+}
+.field:focus {
+  border-color: #3399FF;
+  box-shadow: inset 0px 1px 2px #3399FF;
+}
+.field:focus:invalid {
+  border-color: #AA1F1F;
+  box-shadow: inset 0px 1px 2px #AA1F1F;
+  color: #CA3C3C;
+}
+.field[disabled] {
+  background-color: #eaeded;
+  color: #cad2d3;
+  cursor: not-allowed;
+}
+.hanging {
+  margin-left: 1em;
+  text-indent: -1em;
+}
+.link {
+  color: #3399FF;
+  border-bottom: 0.075em solid transparent;
+}
+.link:link {
+  color: #3399FF;
+}
+.link:visited {
+  color: #4D42FF;
+}
+.link:hover {
+  border-bottom: 0.075em solid #3399FF;
+}
+.link:active {
+  color: #3399FF;
+}
+.link:visited:hover {
+  border-bottom: 0.075em solid #4D42FF;
+}
+.link:visited:active {
+  color: #4D42FF;
+}
+blockquote > a,
+button > a,
+caption > a,
+dd > a,
+dt > a,
+figcaption > a,
+h1 > a,
+h2 > a,
+h3 > a,
+h4 > a,
+h5 > a,
+h6 > a,
+input > a,
+legend > a,
+option > a,
+output > a,
+p > a,
+pre > a,
+select > a,
+summary > a,
+textarea > a,
+abbr > a,
+acronym > a,
+b > a,
+bdo > a,
+big > a,
+br > a,
+cite > a,
+code > a,
+del > a,
+dfn > a,
+em > a,
+i > a,
+ins > a,
+kbd > a,
+mark > a,
+q > a,
+samp > a,
+s > a,
+small > a,
+span > a,
+strike > a,
+strong > a,
+sub > a,
+sup > a,
+time > a,
+tt > a,
+var > a {
+  color: #3399FF;
+  border-bottom: 0.075em solid transparent;
+}
+blockquote > a:link,
+button > a:link,
+caption > a:link,
+dd > a:link,
+dt > a:link,
+figcaption > a:link,
+h1 > a:link,
+h2 > a:link,
+h3 > a:link,
+h4 > a:link,
+h5 > a:link,
+h6 > a:link,
+input > a:link,
+legend > a:link,
+option > a:link,
+output > a:link,
+p > a:link,
+pre > a:link,
+select > a:link,
+summary > a:link,
+textarea > a:link,
+abbr > a:link,
+acronym > a:link,
+b > a:link,
+bdo > a:link,
+big > a:link,
+br > a:link,
+cite > a:link,
+code > a:link,
+del > a:link,
+dfn > a:link,
+em > a:link,
+i > a:link,
+ins > a:link,
+kbd > a:link,
+mark > a:link,
+q > a:link,
+samp > a:link,
+s > a:link,
+small > a:link,
+span > a:link,
+strike > a:link,
+strong > a:link,
+sub > a:link,
+sup > a:link,
+time > a:link,
+tt > a:link,
+var > a:link {
+  color: #3399FF;
+}
+blockquote > a:visited,
+button > a:visited,
+caption > a:visited,
+dd > a:visited,
+dt > a:visited,
+figcaption > a:visited,
+h1 > a:visited,
+h2 > a:visited,
+h3 > a:visited,
+h4 > a:visited,
+h5 > a:visited,
+h6 > a:visited,
+input > a:visited,
+legend > a:visited,
+option > a:visited,
+output > a:visited,
+p > a:visited,
+pre > a:visited,
+select > a:visited,
+summary > a:visited,
+textarea > a:visited,
+abbr > a:visited,
+acronym > a:visited,
+b > a:visited,
+bdo > a:visited,
+big > a:visited,
+br > a:visited,
+cite > a:visited,
+code > a:visited,
+del > a:visited,
+dfn > a:visited,
+em > a:visited,
+i > a:visited,
+ins > a:visited,
+kbd > a:visited,
+mark > a:visited,
+q > a:visited,
+samp > a:visited,
+s > a:visited,
+small > a:visited,
+span > a:visited,
+strike > a:visited,
+strong > a:visited,
+sub > a:visited,
+sup > a:visited,
+time > a:visited,
+tt > a:visited,
+var > a:visited {
+  color: #4D42FF;
+}
+blockquote > a:hover,
+button > a:hover,
+caption > a:hover,
+dd > a:hover,
+dt > a:hover,
+figcaption > a:hover,
+h1 > a:hover,
+h2 > a:hover,
+h3 > a:hover,
+h4 > a:hover,
+h5 > a:hover,
+h6 > a:hover,
+input > a:hover,
+legend > a:hover,
+option > a:hover,
+output > a:hover,
+p > a:hover,
+pre > a:hover,
+select > a:hover,
+summary > a:hover,
+textarea > a:hover,
+abbr > a:hover,
+acronym > a:hover,
+b > a:hover,
+bdo > a:hover,
+big > a:hover,
+br > a:hover,
+cite > a:hover,
+code > a:hover,
+del > a:hover,
+dfn > a:hover,
+em > a:hover,
+i > a:hover,
+ins > a:hover,
+kbd > a:hover,
+mark > a:hover,
+q > a:hover,
+samp > a:hover,
+s > a:hover,
+small > a:hover,
+span > a:hover,
+strike > a:hover,
+strong > a:hover,
+sub > a:hover,
+sup > a:hover,
+time > a:hover,
+tt > a:hover,
+var > a:hover {
+  border-bottom: 0.075em solid #3399FF;
+}
+blockquote > a:active,
+button > a:active,
+caption > a:active,
+dd > a:active,
+dt > a:active,
+figcaption > a:active,
+h1 > a:active,
+h2 > a:active,
+h3 > a:active,
+h4 > a:active,
+h5 > a:active,
+h6 > a:active,
+input > a:active,
+legend > a:active,
+option > a:active,
+output > a:active,
+p > a:active,
+pre > a:active,
+select > a:active,
+summary > a:active,
+textarea > a:active,
+abbr > a:active,
+acronym > a:active,
+b > a:active,
+bdo > a:active,
+big > a:active,
+br > a:active,
+cite > a:active,
+code > a:active,
+del > a:active,
+dfn > a:active,
+em > a:active,
+i > a:active,
+ins > a:active,
+kbd > a:active,
+mark > a:active,
+q > a:active,
+samp > a:active,
+s > a:active,
+small > a:active,
+span > a:active,
+strike > a:active,
+strong > a:active,
+sub > a:active,
+sup > a:active,
+time > a:active,
+tt > a:active,
+var > a:active {
+  color: #3399FF;
+}
+blockquote > a:visited:hover,
+button > a:visited:hover,
+caption > a:visited:hover,
+dd > a:visited:hover,
+dt > a:visited:hover,
+figcaption > a:visited:hover,
+h1 > a:visited:hover,
+h2 > a:visited:hover,
+h3 > a:visited:hover,
+h4 > a:visited:hover,
+h5 > a:visited:hover,
+h6 > a:visited:hover,
+input > a:visited:hover,
+legend > a:visited:hover,
+option > a:visited:hover,
+output > a:visited:hover,
+p > a:visited:hover,
+pre > a:visited:hover,
+select > a:visited:hover,
+summary > a:visited:hover,
+textarea > a:visited:hover,
+abbr > a:visited:hover,
+acronym > a:visited:hover,
+b > a:visited:hover,
+bdo > a:visited:hover,
+big > a:visited:hover,
+br > a:visited:hover,
+cite > a:visited:hover,
+code > a:visited:hover,
+del > a:visited:hover,
+dfn > a:visited:hover,
+em > a:visited:hover,
+i > a:visited:hover,
+ins > a:visited:hover,
+kbd > a:visited:hover,
+mark > a:visited:hover,
+q > a:visited:hover,
+samp > a:visited:hover,
+s > a:visited:hover,
+small > a:visited:hover,
+span > a:visited:hover,
+strike > a:visited:hover,
+strong > a:visited:hover,
+sub > a:visited:hover,
+sup > a:visited:hover,
+time > a:visited:hover,
+tt > a:visited:hover,
+var > a:visited:hover {
+  border-bottom: 0.075em solid #4D42FF;
+}
+blockquote > a:visited:active,
+button > a:visited:active,
+caption > a:visited:active,
+dd > a:visited:active,
+dt > a:visited:active,
+figcaption > a:visited:active,
+h1 > a:visited:active,
+h2 > a:visited:active,
+h3 > a:visited:active,
+h4 > a:visited:active,
+h5 > a:visited:active,
+h6 > a:visited:active,
+input > a:visited:active,
+legend > a:visited:active,
+option > a:visited:active,
+output > a:visited:active,
+p > a:visited:active,
+pre > a:visited:active,
+select > a:visited:active,
+summary > a:visited:active,
+textarea > a:visited:active,
+abbr > a:visited:active,
+acronym > a:visited:active,
+b > a:visited:active,
+bdo > a:visited:active,
+big > a:visited:active,
+br > a:visited:active,
+cite > a:visited:active,
+code > a:visited:active,
+del > a:visited:active,
+dfn > a:visited:active,
+em > a:visited:active,
+i > a:visited:active,
+ins > a:visited:active,
+kbd > a:visited:active,
+mark > a:visited:active,
+q > a:visited:active,
+samp > a:visited:active,
+s > a:visited:active,
+small > a:visited:active,
+span > a:visited:active,
+strike > a:visited:active,
+strong > a:visited:active,
+sub > a:visited:active,
+sup > a:visited:active,
+time > a:visited:active,
+tt > a:visited:active,
+var > a:visited:active {
+  color: #4D42FF;
+}
+.minor-header {
+  font-size: 1.25em;
+}
+.numbered {
+  counter-reset: numbered;
+  list-style: none;
+}
+.numbered li {
+  counter-increment: numbered;
+  display: list-item;
+}
+.numbered li::before {
+  content: counter(numbered) '.';
+  font-weight: bold;
+  padding: 0.5em;
+}
+.page-title {
+  font-size: 2.5em;
+}
+.reference-list a {
+  color: #3399FF;
+  border-bottom: 0.075em solid transparent;
+}
+.reference-list a:link {
+  color: #3399FF;
+}
+.reference-list a:visited {
+  color: #4D42FF;
+}
+.reference-list a:hover {
+  border-bottom: 0.075em solid #3399FF;
+}
+.reference-list a:active {
+  color: #3399FF;
+}
+.reference-list a:visited:hover {
+  border-bottom: 0.075em solid #4D42FF;
+}
+.reference-list a:visited:active {
+  color: #4D42FF;
+}
+.reference-list h1 {
+  font-size: 1.75em;
+  font-weight: bold;
+  padding-bottom: 0.25em;
+  padding-top: 0.5em;
+}
+.reference-list ol,
+.reference-list ul {
+  list-style: disc outside none;
+  padding: 0.5em 0em;
+  padding-left: 1.5em;
+}
+.reference-list li {
+  display: list-item;
+  padding: 0.25em 0em;
+}
+.reference-list li p {
+  display: block;
+  margin-left: 1.5em;
+  text-indent: -1.5em;
+}
+.section-header {
+  font-size: 1.75em;
+  font-weight: bold;
+  padding-bottom: 0.25em;
+  padding-top: 0.5em;
+}
+.subsection-header {
+  font-size: 1.5em;
+  padding-bottom: 0.25em;
+  padding-top: 0.5em;
+}
+.subsubsection-header {
+  font-size: 1.5em;
+  font-style: italic;
+}
+.tooltip {
+  position: relative;
+}
+.tooltip::after {
+  background-color: #00F39D;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px #ccc;
+  content: attr(title);
+  font-size: smaller;
+  left: 0.5em;
+  opacity: 0;
+  position: absolute;
+  top: 115%;
+  transition: all 0.3s ease;
+  width: 300px;
+  z-index: 2;
+}
+.tooltip:hover::after,
+.tooltip:focus::after {
+  opacity: 1;
+  padding: 0.5em 1em;
+}
+blockquote > .tooltip,
+button > .tooltip,
+caption > .tooltip,
+dd > .tooltip,
+dt > .tooltip,
+figcaption > .tooltip,
+h1 > .tooltip,
+h2 > .tooltip,
+h3 > .tooltip,
+h4 > .tooltip,
+h5 > .tooltip,
+h6 > .tooltip,
+input > .tooltip,
+legend > .tooltip,
+option > .tooltip,
+output > .tooltip,
+p > .tooltip,
+pre > .tooltip,
+select > .tooltip,
+summary > .tooltip,
+textarea > .tooltip,
+abbr > .tooltip,
+acronym > .tooltip,
+b > .tooltip,
+bdo > .tooltip,
+big > .tooltip,
+br > .tooltip,
+cite > .tooltip,
+code > .tooltip,
+del > .tooltip,
+dfn > .tooltip,
+em > .tooltip,
+i > .tooltip,
+ins > .tooltip,
+kbd > .tooltip,
+mark > .tooltip,
+q > .tooltip,
+samp > .tooltip,
+s > .tooltip,
+small > .tooltip,
+span > .tooltip,
+strike > .tooltip,
+strong > .tooltip,
+sub > .tooltip,
+sup > .tooltip,
+time > .tooltip,
+tt > .tooltip,
+var > .tooltip {
+  text-decoration: underline dotted #00F39D;
+}
+.unicode {
+  font-family: 'Gentium Plus', 'Charis SIL', 'Doulos SIL', 'Andika', 'Lucida Sans Unicode', 'Times New Roman', 'Georgia', serif;
+  font-size: 1.15em;
+}
+.white-link {
+  border-bottom: 0.075em solid transparent;
+  color: white;
+}
+.white-link:link {
+  color: white;
+}
+.white-link:visited {
+  color: white;
+}
+.white-link:hover {
+  border-bottom: 0.075em solid white;
+}
+.white-link:visited:hover {
+  border-bottom: 0.075em solid white;
+}
+.white-link:active {
+  color: white;
+}

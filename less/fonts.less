@@ -1,3 +1,7 @@
+/*
+This file declares @font-face rules for each of the fonts used in DLx projects
+ */
+
 @cdn: 'https://cdn.digitallinguistics.io';
 
 // Fira Sans
@@ -66,4 +70,27 @@
     url('@{cdn}/fonts/FiraMono-Bold.ttf') format('truetype');
   font-style: normal;
   font-weight: bold;
+}
+
+// Gentium Plus
+@font-face {
+  font-family: 'Gentium Plus';
+  src:
+    local('Gentium Plus Regular'),
+    url('@{cdn}/fonts/GentiumPlus-R.woff2') format('woff2'),
+    url('@{cdn}/fonts/GentiumPlus-R.woff') format('woff'),
+    url('@{cdn}/fonts/GentiumPlus-R.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Gentium Plus';
+  src:
+    local('Gentium Plus Italic'),
+    url('@{cdn}/fonts/GentiumPlus-I.woff2') format('woff2'),
+    url('@{cdn}/fonts/GentiumPlus-I.woff') format('woff'),
+    url('@{cdn}/fonts/GentiumPlus-I.ttf') format('truetype');
+  font-style: italic;
+  font-weight: normal;
 }

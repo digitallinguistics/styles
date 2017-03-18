@@ -1,6 +1,6 @@
 {
 
-  // eslint v3.17.1
+  // ESLint 3.17.1
 
   "parserOptions": {
     "ecmaVersion": 2017,
@@ -289,13 +289,13 @@
     }],
     "prefer-destructuring": ["warn", {
       "array": false,
-      "object": true,
+      "object": true
     }, {
       "enforceForRenamedProperties": false
     }],
     "prefer-numeric-literals": "warn",
     "prefer-promise-reject-errors": ["warn", {
-      "allowEmptyReject": true,
+      "allowEmptyReject": true
     }],
     "prefer-rest-params": "error",
     "prefer-spread": "error",
@@ -321,7 +321,10 @@
     "rest-spread-spacing": ["error", "never"],
     "semi": ["error", "always"],
     "semi-spacing": ["error", { "before": false, "after": true }],
-    "sort-imports": ["warn", { ignoreCase: true }],
+    "sort-imports": ["warn", {
+      "ignoreCase": true,
+      "memberSyntaxSortOrder": ["none", "all", "single", "multiple"]
+    }],
     "sort-keys": ["warn", "asc", { "caseSensitive": false, "natural": true }],
     "sort-vars": ["warn", { "ignoreCase": true }],
     "space-before-blocks": ["error", "always"],

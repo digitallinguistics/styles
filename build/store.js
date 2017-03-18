@@ -70,7 +70,18 @@ const storeFonts = () => new Promise((resolve, reject) => {
 
     Promise.all(filenames.map(filename => new Promise((resolve, reject) => {
 
-      const contentSettings = { contentType: 'font/ttf' };
+      const ext = path.parse(filename).ext;
+
+      let contentType;
+
+      switch (ext) {
+        case '.ttf': contentType = 'font/ttf'; break;
+        case '.woff': contentType = 'font/woff'; break;
+        case '.woff2': contentType = 'font/woff2'; break;
+        default: contentType = undefined;
+      }
+
+      const contentSettings = { contentType };
 
       const cb = err => {
         if (err) reject(err);
