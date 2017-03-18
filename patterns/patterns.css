@@ -1,7 +1,4 @@
 /*
-This file bundles together all the DLx stylesheets into a single LESS/CSS file. NB: The import order is important.
- */
-/*
 This file declares @font-face rules for each of the fonts used in DLx projects
  */
 @font-face {
@@ -966,6 +963,21 @@ tt > a:visited:active,
 var > a:visited:active {
   color: #4D42FF;
 }
+.main-nav ul {
+  background-color: #3399FF;
+  color: white;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 1.25rem;
+  justify-content: space-around;
+}
+.main-nav ul li {
+  flex-grow: 1;
+}
+.main-nav ul a {
+  text-align: center;
+  padding: 0.5em;
+}
 .minor-header {
   font-size: 1.25em;
 }
@@ -1134,7 +1146,7 @@ var > .tooltip {
   text-decoration: underline dotted #00F39D;
 }
 .unicode {
-  font-family: 'Gentium Plus', 'Charis SIL', 'Doulos SIL', 'Andika', 'Lucida Sans Unicode', 'Times New Roman', 'Georgia', serif;
+  font-family: 'Gentium Plus', 'Charis SIL', 'Doulos SIL', 'Cambria', 'Andika', 'Lucida Sans Unicode', 'Times New Roman', 'Georgia', serif;
   font-size: 1.15em;
 }
 .white-link {
@@ -1422,7 +1434,7 @@ code {
   background-color: #F5F2F0;
   border: 1px solid black;
   border-radius: 5px;
-  font-family: 'Fira Mono', 'Monaco', 'DejaVu Mono', 'Courier New', monospace;
+  font-family: 'Consolas', 'Fira Mono', 'Monaco', 'DejaVu Mono', 'Courier New', monospace;
   font-size: 0.75em;
   font-style: normal;
   overflow-x: auto;
@@ -2160,6 +2172,9 @@ body > section {
 .field-example input {
   margin: 0.5em;
   width: 80%;
+}
+.main-nav-example .rendered {
+  align-items: stretch;
 }
 .white-link-example .rendered p {
   background-color: #3399FF;

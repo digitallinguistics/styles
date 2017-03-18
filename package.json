@@ -11,7 +11,7 @@
   },
   "repository": "https://github.com/digitallinguistics/styles.git",
   "scripts": {
-    "build": "npm run less & npm run patterns & npm run store",
+    "build": "npm run less & npm run patterns",
     "less": "node build/less.js",
     "patterns": "lessc patterns/patterns.less patterns/patterns.css & browserify patterns/polyfill.js -o patterns/index.js -t babelify",
     "store": "node build/store.js"

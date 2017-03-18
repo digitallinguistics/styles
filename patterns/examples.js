@@ -28,6 +28,8 @@ const examples = {
 
   link:                   'The <code>.link</code> class is not automatically applied to anchor elements (<code>&lt;a&gt;</code>). It is, however, automatically applied to any anchor element that sits inside another inline element, such as <code>&lt;abbr&gt;</code> or <code>&lt;strong&gt;</code>, and to any element that sits inside an element whose content is usually inline, such as <code>&lt;p&gt;</code> or <code>&lt;h1&gt;</code>.',
 
+  'main-nav':             'The main navigation bar at the top of the page. Hover effects are not added.',
+
   'minor-header':         'For minor headers (level below sub-subsection)',
 
   numbered:               'For numbered lists. Because DLx often uses ordered lists where list styling is not wanted, the <code>.numbered</code> class is not automatically applied to <code>&lt;ol&gt;</code> elements, and must be applied manually.',
