@@ -14,7 +14,7 @@ Three LESS stylesheets and their accompanying CSS output are available in the `l
 - `colors.less`: LESS variables for each of the colors used in the DLx color schemes
 - `dlx.less`: A bundled version of all the DLx styles. Will apply all global styles, and make all classes and LESS variables available.
 - `fonts.less`: Font declarations for the various fonts used by DLx.
-- `global.less`: Global styles that get applied without needing to explicitly add a class to the element. Includes styling from [`flexbox-reset`](https://www.npmjs.com/package/flexbox-reset).
+- `global.less`: Global styles that get applied without needing to explicitly add a class to the element. Includes styling from [`flexbox-reset`](https://www.npmjs.com/package/flexbox-reset). Does not include `@font-face` rules, colors, or classes (see `dlx.less` for a file which bundles all of these).
 
 # Fonts
 All fonts used by DLx projects may be found in the `/fonts` folder, and are available on the CDN at `https://cdn.digitallinguistics.io/fonts/{font}`.

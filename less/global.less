@@ -2,10 +2,12 @@
 This file contains DLx styles that are applied by default, without the need for specifiying them explicitly using CSS classes. This file also applies the flexbox-reset styling.
  */
 
+@cdn: 'https://cdn.digitallinguistics.io/';
+
 // NB: The import order is important
-@import './node_modules/flexbox-reset/flexbox-reset.less';
-@import (reference) 'less/colors.less';
-@import (reference) 'less/classes.less';
+@import 'https://raw.githubusercontent.com/dwhieb/flexbox-reset/master/flexbox-reset.less';
+@import (reference) '@{cdn}/less/colors.less';
+@import (reference) '@{cdn}/less/classes.less';
 
 abbr {
   font-style: italic;

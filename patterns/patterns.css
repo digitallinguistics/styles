@@ -666,6 +666,306 @@ tt > a:visited:active,
 var > a:visited:active {
   color: #4D42FF;
 }
+blockquote > a:link,
+button > a:link,
+caption > a:link,
+dd > a:link,
+dt > a:link,
+figcaption > a:link,
+h1 > a:link,
+h2 > a:link,
+h3 > a:link,
+h4 > a:link,
+h5 > a:link,
+h6 > a:link,
+input > a:link,
+legend > a:link,
+option > a:link,
+output > a:link,
+p > a:link,
+pre > a:link,
+select > a:link,
+summary > a:link,
+textarea > a:link,
+abbr > a:link,
+acronym > a:link,
+b > a:link,
+bdo > a:link,
+big > a:link,
+br > a:link,
+cite > a:link,
+code > a:link,
+del > a:link,
+dfn > a:link,
+em > a:link,
+i > a:link,
+ins > a:link,
+kbd > a:link,
+mark > a:link,
+q > a:link,
+samp > a:link,
+s > a:link,
+small > a:link,
+span > a:link,
+strike > a:link,
+strong > a:link,
+sub > a:link,
+sup > a:link,
+time > a:link,
+tt > a:link,
+var > a:link {
+  color: #3399FF;
+}
+blockquote > a:visited,
+button > a:visited,
+caption > a:visited,
+dd > a:visited,
+dt > a:visited,
+figcaption > a:visited,
+h1 > a:visited,
+h2 > a:visited,
+h3 > a:visited,
+h4 > a:visited,
+h5 > a:visited,
+h6 > a:visited,
+input > a:visited,
+legend > a:visited,
+option > a:visited,
+output > a:visited,
+p > a:visited,
+pre > a:visited,
+select > a:visited,
+summary > a:visited,
+textarea > a:visited,
+abbr > a:visited,
+acronym > a:visited,
+b > a:visited,
+bdo > a:visited,
+big > a:visited,
+br > a:visited,
+cite > a:visited,
+code > a:visited,
+del > a:visited,
+dfn > a:visited,
+em > a:visited,
+i > a:visited,
+ins > a:visited,
+kbd > a:visited,
+mark > a:visited,
+q > a:visited,
+samp > a:visited,
+s > a:visited,
+small > a:visited,
+span > a:visited,
+strike > a:visited,
+strong > a:visited,
+sub > a:visited,
+sup > a:visited,
+time > a:visited,
+tt > a:visited,
+var > a:visited {
+  color: #4D42FF;
+}
+blockquote > a:hover,
+button > a:hover,
+caption > a:hover,
+dd > a:hover,
+dt > a:hover,
+figcaption > a:hover,
+h1 > a:hover,
+h2 > a:hover,
+h3 > a:hover,
+h4 > a:hover,
+h5 > a:hover,
+h6 > a:hover,
+input > a:hover,
+legend > a:hover,
+option > a:hover,
+output > a:hover,
+p > a:hover,
+pre > a:hover,
+select > a:hover,
+summary > a:hover,
+textarea > a:hover,
+abbr > a:hover,
+acronym > a:hover,
+b > a:hover,
+bdo > a:hover,
+big > a:hover,
+br > a:hover,
+cite > a:hover,
+code > a:hover,
+del > a:hover,
+dfn > a:hover,
+em > a:hover,
+i > a:hover,
+ins > a:hover,
+kbd > a:hover,
+mark > a:hover,
+q > a:hover,
+samp > a:hover,
+s > a:hover,
+small > a:hover,
+span > a:hover,
+strike > a:hover,
+strong > a:hover,
+sub > a:hover,
+sup > a:hover,
+time > a:hover,
+tt > a:hover,
+var > a:hover {
+  border-bottom: 0.075em solid #3399FF;
+}
+blockquote > a:active,
+button > a:active,
+caption > a:active,
+dd > a:active,
+dt > a:active,
+figcaption > a:active,
+h1 > a:active,
+h2 > a:active,
+h3 > a:active,
+h4 > a:active,
+h5 > a:active,
+h6 > a:active,
+input > a:active,
+legend > a:active,
+option > a:active,
+output > a:active,
+p > a:active,
+pre > a:active,
+select > a:active,
+summary > a:active,
+textarea > a:active,
+abbr > a:active,
+acronym > a:active,
+b > a:active,
+bdo > a:active,
+big > a:active,
+br > a:active,
+cite > a:active,
+code > a:active,
+del > a:active,
+dfn > a:active,
+em > a:active,
+i > a:active,
+ins > a:active,
+kbd > a:active,
+mark > a:active,
+q > a:active,
+samp > a:active,
+s > a:active,
+small > a:active,
+span > a:active,
+strike > a:active,
+strong > a:active,
+sub > a:active,
+sup > a:active,
+time > a:active,
+tt > a:active,
+var > a:active {
+  color: #3399FF;
+}
+blockquote > a:visited:hover,
+button > a:visited:hover,
+caption > a:visited:hover,
+dd > a:visited:hover,
+dt > a:visited:hover,
+figcaption > a:visited:hover,
+h1 > a:visited:hover,
+h2 > a:visited:hover,
+h3 > a:visited:hover,
+h4 > a:visited:hover,
+h5 > a:visited:hover,
+h6 > a:visited:hover,
+input > a:visited:hover,
+legend > a:visited:hover,
+option > a:visited:hover,
+output > a:visited:hover,
+p > a:visited:hover,
+pre > a:visited:hover,
+select > a:visited:hover,
+summary > a:visited:hover,
+textarea > a:visited:hover,
+abbr > a:visited:hover,
+acronym > a:visited:hover,
+b > a:visited:hover,
+bdo > a:visited:hover,
+big > a:visited:hover,
+br > a:visited:hover,
+cite > a:visited:hover,
+code > a:visited:hover,
+del > a:visited:hover,
+dfn > a:visited:hover,
+em > a:visited:hover,
+i > a:visited:hover,
+ins > a:visited:hover,
+kbd > a:visited:hover,
+mark > a:visited:hover,
+q > a:visited:hover,
+samp > a:visited:hover,
+s > a:visited:hover,
+small > a:visited:hover,
+span > a:visited:hover,
+strike > a:visited:hover,
+strong > a:visited:hover,
+sub > a:visited:hover,
+sup > a:visited:hover,
+time > a:visited:hover,
+tt > a:visited:hover,
+var > a:visited:hover {
+  border-bottom: 0.075em solid #4D42FF;
+}
+blockquote > a:visited:active,
+button > a:visited:active,
+caption > a:visited:active,
+dd > a:visited:active,
+dt > a:visited:active,
+figcaption > a:visited:active,
+h1 > a:visited:active,
+h2 > a:visited:active,
+h3 > a:visited:active,
+h4 > a:visited:active,
+h5 > a:visited:active,
+h6 > a:visited:active,
+input > a:visited:active,
+legend > a:visited:active,
+option > a:visited:active,
+output > a:visited:active,
+p > a:visited:active,
+pre > a:visited:active,
+select > a:visited:active,
+summary > a:visited:active,
+textarea > a:visited:active,
+abbr > a:visited:active,
+acronym > a:visited:active,
+b > a:visited:active,
+bdo > a:visited:active,
+big > a:visited:active,
+br > a:visited:active,
+cite > a:visited:active,
+code > a:visited:active,
+del > a:visited:active,
+dfn > a:visited:active,
+em > a:visited:active,
+i > a:visited:active,
+ins > a:visited:active,
+kbd > a:visited:active,
+mark > a:visited:active,
+q > a:visited:active,
+samp > a:visited:active,
+s > a:visited:active,
+small > a:visited:active,
+span > a:visited:active,
+strike > a:visited:active,
+strong > a:visited:active,
+sub > a:visited:active,
+sup > a:visited:active,
+time > a:visited:active,
+tt > a:visited:active,
+var > a:visited:active {
+  color: #4D42FF;
+}
 .minor-header {
   font-size: 1.25em;
 }
@@ -688,6 +988,24 @@ var > a:visited:active {
 .reference-list a {
   color: #3399FF;
   border-bottom: 0.075em solid transparent;
+}
+.reference-list a:link {
+  color: #3399FF;
+}
+.reference-list a:visited {
+  color: #4D42FF;
+}
+.reference-list a:hover {
+  border-bottom: 0.075em solid #3399FF;
+}
+.reference-list a:active {
+  color: #3399FF;
+}
+.reference-list a:visited:hover {
+  border-bottom: 0.075em solid #4D42FF;
+}
+.reference-list a:visited:active {
+  color: #4D42FF;
 }
 .reference-list a:link {
   color: #3399FF;
@@ -1084,6 +1402,19 @@ button:disabled {
   cursor: not-allowed;
   opacity: 0.40;
 }
+button:active {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
+}
+button:hover,
+button:focus {
+  background-image: linear-gradient(135deg, transparent, rgba(0, 0, 0, 0.15));
+}
+button:disabled {
+  background-image: none;
+  box-shadow: none;
+  cursor: not-allowed;
+  opacity: 0.40;
+}
 cite {
   font-style: italic;
 }
@@ -1129,6 +1460,19 @@ input[type=button]:disabled {
   cursor: not-allowed;
   opacity: 0.40;
 }
+input[type=button]:active {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
+}
+input[type=button]:hover,
+input[type=button]:focus {
+  background-image: linear-gradient(135deg, transparent, rgba(0, 0, 0, 0.15));
+}
+input[type=button]:disabled {
+  background-image: none;
+  box-shadow: none;
+  cursor: not-allowed;
+  opacity: 0.40;
+}
 input[type=color] {
   display: block;
 }
@@ -1139,6 +1483,20 @@ input[type=date] {
   box-shadow: inset 0 1px 2px #ddd;
   cursor: text;
   padding: 0.125em 0.25em;
+}
+input[type=date]:focus {
+  border-color: #3399FF;
+  box-shadow: inset 0px 1px 2px #3399FF;
+}
+input[type=date]:focus:invalid {
+  border-color: #AA1F1F;
+  box-shadow: inset 0px 1px 2px #AA1F1F;
+  color: #CA3C3C;
+}
+input[type=date][disabled] {
+  background-color: #eaeded;
+  color: #cad2d3;
+  cursor: not-allowed;
 }
 input[type=date]:focus {
   border-color: #3399FF;
@@ -1176,6 +1534,20 @@ input[type=datetime][disabled] {
   color: #cad2d3;
   cursor: not-allowed;
 }
+input[type=datetime]:focus {
+  border-color: #3399FF;
+  box-shadow: inset 0px 1px 2px #3399FF;
+}
+input[type=datetime]:focus:invalid {
+  border-color: #AA1F1F;
+  box-shadow: inset 0px 1px 2px #AA1F1F;
+  color: #CA3C3C;
+}
+input[type=datetime][disabled] {
+  background-color: #eaeded;
+  color: #cad2d3;
+  cursor: not-allowed;
+}
 input[type=datetime-local] {
   background-color: white;
   border: 1px solid #ccc;
@@ -1183,6 +1555,20 @@ input[type=datetime-local] {
   box-shadow: inset 0 1px 2px #ddd;
   cursor: text;
   padding: 0.125em 0.25em;
+}
+input[type=datetime-local]:focus {
+  border-color: #3399FF;
+  box-shadow: inset 0px 1px 2px #3399FF;
+}
+input[type=datetime-local]:focus:invalid {
+  border-color: #AA1F1F;
+  box-shadow: inset 0px 1px 2px #AA1F1F;
+  color: #CA3C3C;
+}
+input[type=datetime-local][disabled] {
+  background-color: #eaeded;
+  color: #cad2d3;
+  cursor: not-allowed;
 }
 input[type=datetime-local]:focus {
   border-color: #3399FF;
@@ -1220,6 +1606,20 @@ input[type=email][disabled] {
   color: #cad2d3;
   cursor: not-allowed;
 }
+input[type=email]:focus {
+  border-color: #3399FF;
+  box-shadow: inset 0px 1px 2px #3399FF;
+}
+input[type=email]:focus:invalid {
+  border-color: #AA1F1F;
+  box-shadow: inset 0px 1px 2px #AA1F1F;
+  color: #CA3C3C;
+}
+input[type=email][disabled] {
+  background-color: #eaeded;
+  color: #cad2d3;
+  cursor: not-allowed;
+}
 input[type=month] {
   background-color: white;
   border: 1px solid #ccc;
@@ -1227,6 +1627,20 @@ input[type=month] {
   box-shadow: inset 0 1px 2px #ddd;
   cursor: text;
   padding: 0.125em 0.25em;
+}
+input[type=month]:focus {
+  border-color: #3399FF;
+  box-shadow: inset 0px 1px 2px #3399FF;
+}
+input[type=month]:focus:invalid {
+  border-color: #AA1F1F;
+  box-shadow: inset 0px 1px 2px #AA1F1F;
+  color: #CA3C3C;
+}
+input[type=month][disabled] {
+  background-color: #eaeded;
+  color: #cad2d3;
+  cursor: not-allowed;
 }
 input[type=month]:focus {
   border-color: #3399FF;
@@ -1264,6 +1678,20 @@ input[type=number][disabled] {
   color: #cad2d3;
   cursor: not-allowed;
 }
+input[type=number]:focus {
+  border-color: #3399FF;
+  box-shadow: inset 0px 1px 2px #3399FF;
+}
+input[type=number]:focus:invalid {
+  border-color: #AA1F1F;
+  box-shadow: inset 0px 1px 2px #AA1F1F;
+  color: #CA3C3C;
+}
+input[type=number][disabled] {
+  background-color: #eaeded;
+  color: #cad2d3;
+  cursor: not-allowed;
+}
 input[type=password] {
   background-color: white;
   border: 1px solid #ccc;
@@ -1271,6 +1699,20 @@ input[type=password] {
   box-shadow: inset 0 1px 2px #ddd;
   cursor: text;
   padding: 0.125em 0.25em;
+}
+input[type=password]:focus {
+  border-color: #3399FF;
+  box-shadow: inset 0px 1px 2px #3399FF;
+}
+input[type=password]:focus:invalid {
+  border-color: #AA1F1F;
+  box-shadow: inset 0px 1px 2px #AA1F1F;
+  color: #CA3C3C;
+}
+input[type=password][disabled] {
+  background-color: #eaeded;
+  color: #cad2d3;
+  cursor: not-allowed;
 }
 input[type=password]:focus {
   border-color: #3399FF;
@@ -1309,6 +1751,19 @@ input[type=reset]:disabled {
   cursor: not-allowed;
   opacity: 0.40;
 }
+input[type=reset]:active {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
+}
+input[type=reset]:hover,
+input[type=reset]:focus {
+  background-image: linear-gradient(135deg, transparent, rgba(0, 0, 0, 0.15));
+}
+input[type=reset]:disabled {
+  background-image: none;
+  box-shadow: none;
+  cursor: not-allowed;
+  opacity: 0.40;
+}
 input[type=search] {
   background-color: white;
   border: 1px solid #ccc;
@@ -1316,6 +1771,20 @@ input[type=search] {
   box-shadow: inset 0 1px 2px #ddd;
   cursor: text;
   padding: 0.125em 0.25em;
+}
+input[type=search]:focus {
+  border-color: #3399FF;
+  box-shadow: inset 0px 1px 2px #3399FF;
+}
+input[type=search]:focus:invalid {
+  border-color: #AA1F1F;
+  box-shadow: inset 0px 1px 2px #AA1F1F;
+  color: #CA3C3C;
+}
+input[type=search][disabled] {
+  background-color: #eaeded;
+  color: #cad2d3;
+  cursor: not-allowed;
 }
 input[type=search]:focus {
   border-color: #3399FF;
@@ -1353,6 +1822,19 @@ input[type=submit]:disabled {
   cursor: not-allowed;
   opacity: 0.40;
 }
+input[type=submit]:active {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
+}
+input[type=submit]:hover,
+input[type=submit]:focus {
+  background-image: linear-gradient(135deg, transparent, rgba(0, 0, 0, 0.15));
+}
+input[type=submit]:disabled {
+  background-image: none;
+  box-shadow: none;
+  cursor: not-allowed;
+  opacity: 0.40;
+}
 input[type=tel] {
   background-color: white;
   border: 1px solid #ccc;
@@ -1360,6 +1842,20 @@ input[type=tel] {
   box-shadow: inset 0 1px 2px #ddd;
   cursor: text;
   padding: 0.125em 0.25em;
+}
+input[type=tel]:focus {
+  border-color: #3399FF;
+  box-shadow: inset 0px 1px 2px #3399FF;
+}
+input[type=tel]:focus:invalid {
+  border-color: #AA1F1F;
+  box-shadow: inset 0px 1px 2px #AA1F1F;
+  color: #CA3C3C;
+}
+input[type=tel][disabled] {
+  background-color: #eaeded;
+  color: #cad2d3;
+  cursor: not-allowed;
 }
 input[type=tel]:focus {
   border-color: #3399FF;
@@ -1398,6 +1894,20 @@ input[type=text][disabled] {
   color: #cad2d3;
   cursor: not-allowed;
 }
+input[type=text]:focus {
+  border-color: #3399FF;
+  box-shadow: inset 0px 1px 2px #3399FF;
+}
+input[type=text]:focus:invalid {
+  border-color: #AA1F1F;
+  box-shadow: inset 0px 1px 2px #AA1F1F;
+  color: #CA3C3C;
+}
+input[type=text][disabled] {
+  background-color: #eaeded;
+  color: #cad2d3;
+  cursor: not-allowed;
+}
 input[type=time] {
   background-color: white;
   border: 1px solid #ccc;
@@ -1405,6 +1915,20 @@ input[type=time] {
   box-shadow: inset 0 1px 2px #ddd;
   cursor: text;
   padding: 0.125em 0.25em;
+}
+input[type=time]:focus {
+  border-color: #3399FF;
+  box-shadow: inset 0px 1px 2px #3399FF;
+}
+input[type=time]:focus:invalid {
+  border-color: #AA1F1F;
+  box-shadow: inset 0px 1px 2px #AA1F1F;
+  color: #CA3C3C;
+}
+input[type=time][disabled] {
+  background-color: #eaeded;
+  color: #cad2d3;
+  cursor: not-allowed;
 }
 input[type=time]:focus {
   border-color: #3399FF;
@@ -1442,6 +1966,20 @@ input[type=url][disabled] {
   color: #cad2d3;
   cursor: not-allowed;
 }
+input[type=url]:focus {
+  border-color: #3399FF;
+  box-shadow: inset 0px 1px 2px #3399FF;
+}
+input[type=url]:focus:invalid {
+  border-color: #AA1F1F;
+  box-shadow: inset 0px 1px 2px #AA1F1F;
+  color: #CA3C3C;
+}
+input[type=url][disabled] {
+  background-color: #eaeded;
+  color: #cad2d3;
+  cursor: not-allowed;
+}
 input[type=week] {
   background-color: white;
   border: 1px solid #ccc;
@@ -1449,6 +1987,20 @@ input[type=week] {
   box-shadow: inset 0 1px 2px #ddd;
   cursor: text;
   padding: 0.125em 0.25em;
+}
+input[type=week]:focus {
+  border-color: #3399FF;
+  box-shadow: inset 0px 1px 2px #3399FF;
+}
+input[type=week]:focus:invalid {
+  border-color: #AA1F1F;
+  box-shadow: inset 0px 1px 2px #AA1F1F;
+  color: #CA3C3C;
+}
+input[type=week][disabled] {
+  background-color: #eaeded;
+  color: #cad2d3;
+  cursor: not-allowed;
 }
 input[type=week]:focus {
   border-color: #3399FF;
@@ -1491,6 +2043,20 @@ textarea {
   box-shadow: inset 0 1px 2px #ddd;
   cursor: text;
   padding: 0.125em 0.25em;
+}
+textarea:focus {
+  border-color: #3399FF;
+  box-shadow: inset 0px 1px 2px #3399FF;
+}
+textarea:focus:invalid {
+  border-color: #AA1F1F;
+  box-shadow: inset 0px 1px 2px #AA1F1F;
+  color: #CA3C3C;
+}
+textarea[disabled] {
+  background-color: #eaeded;
+  color: #cad2d3;
+  cursor: not-allowed;
 }
 textarea:focus {
   border-color: #3399FF;

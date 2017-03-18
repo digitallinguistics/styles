@@ -2,7 +2,9 @@
 This file bundles together all the DLx stylesheets into a single LESS/CSS file. NB: The import order is important.
  */
 
-@import 'less/fonts.less';
-@import 'less/colors.less';
-@import 'less/classes.less';
-@import 'less/global.less';
+@path:  'https://cdn.digitallinguistics.io/less';
+
+@import '@{path}/fonts.less';
+@import '@{path}/colors.less';
+@import '@{path}/classes.less';
+@import '@{path}/global.less';
