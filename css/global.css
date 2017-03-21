@@ -214,6 +214,9 @@ thead {
 tr {
   display: table-row;
 }
+* {
+  box-sizing: border-box;
+}
 abbr {
   font-style: italic;
 }
@@ -225,11 +228,32 @@ body {
 button {
   background-color: #3399FF;
   color: white;
+  align-items: center;
   background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.15), transparent);
   border-radius: 5px;
   box-shadow: inset -1px -1px 2px 0px rgba(0, 0, 0, 0.15), 1px 1px 2px #ccc;
   cursor: pointer;
   padding: 0.25em 0.5em;
+  text-align: center;
+}
+button a {
+  border-bottom: 0.075em solid transparent;
+  color: white;
+}
+button a:link {
+  color: white;
+}
+button a:visited {
+  color: white;
+}
+button a:hover {
+  border-bottom: 0.075em solid white;
+}
+button a:visited:hover {
+  border-bottom: 0.075em solid white;
+}
+button a:active {
+  color: white;
 }
 button:active {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
@@ -267,14 +291,42 @@ em {
 fieldset legend {
   font-weight: bold;
 }
+i {
+  font-style: italic;
+}
+i[lang] {
+  font-family: 'Gentium Plus', 'Charis SIL', 'Doulos SIL', 'Cambria', 'Andika', 'Lucida Sans Unicode', 'Times New Roman', 'Georgia', serif;
+  font-size: 1.15em;
+}
 input[type=button] {
   background-color: #3399FF;
   color: white;
+  align-items: center;
   background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.15), transparent);
   border-radius: 5px;
   box-shadow: inset -1px -1px 2px 0px rgba(0, 0, 0, 0.15), 1px 1px 2px #ccc;
   cursor: pointer;
   padding: 0.25em 0.5em;
+  text-align: center;
+}
+input[type=button] a {
+  border-bottom: 0.075em solid transparent;
+  color: white;
+}
+input[type=button] a:link {
+  color: white;
+}
+input[type=button] a:visited {
+  color: white;
+}
+input[type=button] a:hover {
+  border-bottom: 0.075em solid white;
+}
+input[type=button] a:visited:hover {
+  border-bottom: 0.075em solid white;
+}
+input[type=button] a:active {
+  color: white;
 }
 input[type=button]:active {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
@@ -448,12 +500,33 @@ input[type=password][disabled] {
 }
 input[type=reset] {
   background-color: #3399FF;
+  align-items: center;
   background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.15), transparent);
   border-radius: 5px;
   box-shadow: inset -1px -1px 2px 0px rgba(0, 0, 0, 0.15), 1px 1px 2px #ccc;
   cursor: pointer;
   padding: 0.25em 0.5em;
+  text-align: center;
   background-color: #00AB6E;
+  color: white;
+}
+input[type=reset] a {
+  border-bottom: 0.075em solid transparent;
+  color: white;
+}
+input[type=reset] a:link {
+  color: white;
+}
+input[type=reset] a:visited {
+  color: white;
+}
+input[type=reset] a:hover {
+  border-bottom: 0.075em solid white;
+}
+input[type=reset] a:visited:hover {
+  border-bottom: 0.075em solid white;
+}
+input[type=reset] a:active {
   color: white;
 }
 input[type=reset]:active {
@@ -468,6 +541,25 @@ input[type=reset]:disabled {
   box-shadow: none;
   cursor: not-allowed;
   opacity: 0.40;
+}
+input[type=reset] a {
+  border-bottom: 0.075em solid transparent;
+  color: white;
+}
+input[type=reset] a:link {
+  color: white;
+}
+input[type=reset] a:visited {
+  color: white;
+}
+input[type=reset] a:hover {
+  border-bottom: 0.075em solid white;
+}
+input[type=reset] a:visited:hover {
+  border-bottom: 0.075em solid white;
+}
+input[type=reset] a:active {
+  color: white;
 }
 input[type=search] {
   background-color: white;
@@ -494,11 +586,32 @@ input[type=search][disabled] {
 input[type=submit] {
   background-color: #3399FF;
   color: white;
+  align-items: center;
   background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.15), transparent);
   border-radius: 5px;
   box-shadow: inset -1px -1px 2px 0px rgba(0, 0, 0, 0.15), 1px 1px 2px #ccc;
   cursor: pointer;
   padding: 0.25em 0.5em;
+  text-align: center;
+}
+input[type=submit] a {
+  border-bottom: 0.075em solid transparent;
+  color: white;
+}
+input[type=submit] a:link {
+  color: white;
+}
+input[type=submit] a:visited {
+  color: white;
+}
+input[type=submit] a:hover {
+  border-bottom: 0.075em solid white;
+}
+input[type=submit] a:visited:hover {
+  border-bottom: 0.075em solid white;
+}
+input[type=submit] a:active {
+  color: white;
 }
 input[type=submit]:active {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;

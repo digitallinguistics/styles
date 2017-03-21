@@ -9,6 +9,10 @@ This file contains DLx styles that are applied by default, without the need for 
 @import (reference) '@{cdn}/less/colors.less';
 @import (reference) '@{cdn}/less/classes.less';
 
+* {
+  box-sizing: border-box;
+}
+
 abbr {
   font-style: italic;
 }
@@ -49,6 +53,14 @@ em {
 
 fieldset legend {
   font-weight: bold;
+}
+
+i {
+  font-style: italic;
+}
+
+i[lang] {
+  .unicode;
 }
 
 input[type=button] {

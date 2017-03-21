@@ -26,12 +26,69 @@ This file contains DLx styles that need to be explicitly specified using classes
   background-color: #017CF2;
   color: white;
 }
+.verydarkblue-background a {
+  border-bottom: 0.075em solid transparent;
+  color: white;
+}
+.verydarkblue-background a:link {
+  color: white;
+}
+.verydarkblue-background a:visited {
+  color: white;
+}
+.verydarkblue-background a:hover {
+  border-bottom: 0.075em solid white;
+}
+.verydarkblue-background a:visited:hover {
+  border-bottom: 0.075em solid white;
+}
+.verydarkblue-background a:active {
+  color: white;
+}
 .darkblue-background {
   background-color: #0F89FF;
   color: white;
 }
+.darkblue-background a {
+  border-bottom: 0.075em solid transparent;
+  color: white;
+}
+.darkblue-background a:link {
+  color: white;
+}
+.darkblue-background a:visited {
+  color: white;
+}
+.darkblue-background a:hover {
+  border-bottom: 0.075em solid white;
+}
+.darkblue-background a:visited:hover {
+  border-bottom: 0.075em solid white;
+}
+.darkblue-background a:active {
+  color: white;
+}
 .blue-background {
   background-color: #3399FF;
+  color: white;
+}
+.blue-background a {
+  border-bottom: 0.075em solid transparent;
+  color: white;
+}
+.blue-background a:link {
+  color: white;
+}
+.blue-background a:visited {
+  color: white;
+}
+.blue-background a:hover {
+  border-bottom: 0.075em solid white;
+}
+.blue-background a:visited:hover {
+  border-bottom: 0.075em solid white;
+}
+.blue-background a:active {
   color: white;
 }
 .lightblue-background {
@@ -83,6 +140,25 @@ This file contains DLx styles that need to be explicitly specified using classes
   background-color: #00AB6E;
   color: white;
 }
+.superdarkgreen-background a {
+  border-bottom: 0.075em solid transparent;
+  color: white;
+}
+.superdarkgreen-background a:link {
+  color: white;
+}
+.superdarkgreen-background a:visited {
+  color: white;
+}
+.superdarkgreen-background a:hover {
+  border-bottom: 0.075em solid white;
+}
+.superdarkgreen-background a:visited:hover {
+  border-bottom: 0.075em solid white;
+}
+.superdarkgreen-background a:active {
+  color: white;
+}
 .verylightorange {
   color: #FFA97F;
 }
@@ -108,6 +184,25 @@ This file contains DLx styles that need to be explicitly specified using classes
   background-color: #FF5300;
   color: white;
 }
+.darkorange-background a {
+  border-bottom: 0.075em solid transparent;
+  color: white;
+}
+.darkorange-background a:link {
+  color: white;
+}
+.darkorange-background a:visited {
+  color: white;
+}
+.darkorange-background a:hover {
+  border-bottom: 0.075em solid white;
+}
+.darkorange-background a:visited:hover {
+  border-bottom: 0.075em solid white;
+}
+.darkorange-background a:active {
+  color: white;
+}
 .verylightpurple {
   color: #9791FE;
 }
@@ -130,16 +225,92 @@ This file contains DLx styles that need to be explicitly specified using classes
   background-color: #7068FF;
   color: white;
 }
+.lightpurple-background a {
+  border-bottom: 0.075em solid transparent;
+  color: white;
+}
+.lightpurple-background a:link {
+  color: white;
+}
+.lightpurple-background a:visited {
+  color: white;
+}
+.lightpurple-background a:hover {
+  border-bottom: 0.075em solid white;
+}
+.lightpurple-background a:visited:hover {
+  border-bottom: 0.075em solid white;
+}
+.lightpurple-background a:active {
+  color: white;
+}
 .purple-background {
   background-color: #4D42FF;
+  color: white;
+}
+.purple-background a {
+  border-bottom: 0.075em solid transparent;
+  color: white;
+}
+.purple-background a:link {
+  color: white;
+}
+.purple-background a:visited {
+  color: white;
+}
+.purple-background a:hover {
+  border-bottom: 0.075em solid white;
+}
+.purple-background a:visited:hover {
+  border-bottom: 0.075em solid white;
+}
+.purple-background a:active {
   color: white;
 }
 .darkpurple-background {
   background-color: #2A1DFF;
   color: white;
 }
+.darkpurple-background a {
+  border-bottom: 0.075em solid transparent;
+  color: white;
+}
+.darkpurple-background a:link {
+  color: white;
+}
+.darkpurple-background a:visited {
+  color: white;
+}
+.darkpurple-background a:hover {
+  border-bottom: 0.075em solid white;
+}
+.darkpurple-background a:visited:hover {
+  border-bottom: 0.075em solid white;
+}
+.darkpurple-background a:active {
+  color: white;
+}
 .verydarkpurple-background {
   background-color: #1002F4;
+  color: white;
+}
+.verydarkpurple-background a {
+  border-bottom: 0.075em solid transparent;
+  color: white;
+}
+.verydarkpurple-background a:link {
+  color: white;
+}
+.verydarkpurple-background a:visited {
+  color: white;
+}
+.verydarkpurple-background a:hover {
+  border-bottom: 0.075em solid white;
+}
+.verydarkpurple-background a:visited:hover {
+  border-bottom: 0.075em solid white;
+}
+.verydarkpurple-background a:active {
   color: white;
 }
 .verylightred {
@@ -167,12 +338,69 @@ This file contains DLx styles that need to be explicitly specified using classes
   background-color: #CA3C3C;
   color: white;
 }
+.red-background a {
+  border-bottom: 0.075em solid transparent;
+  color: white;
+}
+.red-background a:link {
+  color: white;
+}
+.red-background a:visited {
+  color: white;
+}
+.red-background a:hover {
+  border-bottom: 0.075em solid white;
+}
+.red-background a:visited:hover {
+  border-bottom: 0.075em solid white;
+}
+.red-background a:active {
+  color: white;
+}
 .darkred-background {
   background-color: #AA1F1F;
   color: white;
 }
+.darkred-background a {
+  border-bottom: 0.075em solid transparent;
+  color: white;
+}
+.darkred-background a:link {
+  color: white;
+}
+.darkred-background a:visited {
+  color: white;
+}
+.darkred-background a:hover {
+  border-bottom: 0.075em solid white;
+}
+.darkred-background a:visited:hover {
+  border-bottom: 0.075em solid white;
+}
+.darkred-background a:active {
+  color: white;
+}
 .verydarkred-background {
   background-color: #830505;
+  color: white;
+}
+.verydarkred-background a {
+  border-bottom: 0.075em solid transparent;
+  color: white;
+}
+.verydarkred-background a:link {
+  color: white;
+}
+.verydarkred-background a:visited {
+  color: white;
+}
+.verydarkred-background a:hover {
+  border-bottom: 0.075em solid white;
+}
+.verydarkred-background a:visited:hover {
+  border-bottom: 0.075em solid white;
+}
+.verydarkred-background a:active {
   color: white;
 }
 .lightblue-transparent {
@@ -191,11 +419,32 @@ This file contains DLx styles that need to be explicitly specified using classes
 .button {
   background-color: #3399FF;
   color: white;
+  align-items: center;
   background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.15), transparent);
   border-radius: 5px;
   box-shadow: inset -1px -1px 2px 0px rgba(0, 0, 0, 0.15), 1px 1px 2px #ccc;
   cursor: pointer;
   padding: 0.25em 0.5em;
+  text-align: center;
+}
+.button a {
+  border-bottom: 0.075em solid transparent;
+  color: white;
+}
+.button a:link {
+  color: white;
+}
+.button a:visited {
+  color: white;
+}
+.button a:hover {
+  border-bottom: 0.075em solid white;
+}
+.button a:visited:hover {
+  border-bottom: 0.075em solid white;
+}
+.button a:active {
+  color: white;
 }
 .button:active {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
@@ -617,6 +866,25 @@ var > a:visited:active {
   font-size: 1.25rem;
   justify-content: space-around;
 }
+.main-nav ul a {
+  border-bottom: 0.075em solid transparent;
+  color: white;
+}
+.main-nav ul a:link {
+  color: white;
+}
+.main-nav ul a:visited {
+  color: white;
+}
+.main-nav ul a:hover {
+  border-bottom: 0.075em solid white;
+}
+.main-nav ul a:visited:hover {
+  border-bottom: 0.075em solid white;
+}
+.main-nav ul a:active {
+  color: white;
+}
 .main-nav ul li {
   flex-grow: 1;
 }
@@ -642,6 +910,7 @@ var > a:visited:active {
 }
 .page-title {
   font-size: 2.5em;
+  text-align: center;
 }
 .reference-list a {
   color: #3399FF;
@@ -712,16 +981,18 @@ var > a:visited:active {
   font-size: smaller;
   left: 0.5em;
   opacity: 0;
+  padding: 0;
   position: absolute;
   top: 115%;
   transition: all 0.3s ease;
   width: 300px;
-  z-index: 2;
+  z-index: -2;
 }
 .tooltip:hover::after,
 .tooltip:focus::after {
   opacity: 1;
   padding: 0.5em 1em;
+  z-index: 2;
 }
 blockquote > .tooltip,
 button > .tooltip,

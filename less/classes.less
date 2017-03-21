@@ -17,9 +17,24 @@ This file contains DLx styles that need to be explicitly specified using classes
 .lightblue                  { color:            @lightblue; }
 .verylightblue              { color:            @verylightblue; }
 
-.verydarkblue-background    { background-color: @verydarkblue; color: white; }
-.darkblue-background        { background-color: @darkblue; color: white; }
-.blue-background            { background-color: @blue; color: white; }
+.verydarkblue-background {
+  background-color: @verydarkblue;
+  color: white;
+  a { .white-link; }
+}
+
+.darkblue-background {
+  background-color: @darkblue;
+  color: white;
+  a { .white-link; }
+}
+
+.blue-background {
+  background-color: @blue;
+  color: white;
+  a { .white-link; }
+}
+
 .lightblue-background       { background-color: @lightblue; }
 .verylightblue-background   { background-color: @verylightblue; }
 
@@ -38,7 +53,12 @@ This file contains DLx styles that need to be explicitly specified using classes
 .green-background           { background-color: @green; }
 .darkgreen-background       { background-color: @darkgreen; }
 .verydarkgreen-background   { background-color: @verydarkgreen; }
-.superdarkgreen-background  { background-color: @superdarkgreen; color: white; }
+
+.superdarkgreen-background {
+  background-color: @superdarkgreen;
+  color: white;
+  a { .white-link; }
+}
 
 .verylightorange            { color:            @verylightorange; }
 .lightorange                { color:            @lightorange; }
@@ -48,7 +68,12 @@ This file contains DLx styles that need to be explicitly specified using classes
 .verylightorange-background { background-color: @verylightorange; }
 .lightorange-background     { background-color: @lightorange; }
 .orange-background          { background-color: @orange; }
-.darkorange-background      { background-color: @darkorange; color: white; }
+
+.darkorange-background {
+  background-color: @darkorange;
+  color: white;
+  a { .white-link; }
+}
 
 .verylightpurple            { color:            @verylightpurple; }
 .lightpurple                { color:            @lightpurple; }
@@ -57,10 +82,30 @@ This file contains DLx styles that need to be explicitly specified using classes
 .verydarkpurple             { color:            @verydarkpurple; }
 
 .verylightpurple-background { background-color: @verylightpurple; }
-.lightpurple-background     { background-color: @lightpurple; color: white; }
-.purple-background          { background-color: @purple; color: white; }
-.darkpurple-background      { background-color: @darkpurple; color: white; }
-.verydarkpurple-background  { background-color: @verydarkpurple; color: white; }
+
+.lightpurple-background {
+  background-color: @lightpurple;
+  color: white;
+  a { .white-link; }
+}
+
+.purple-background {
+  background-color: @purple;
+  color: white;
+  a { .white-link; }
+}
+
+.darkpurple-background {
+  background-color: @darkpurple;
+  color: white;
+  a { .white-link; }
+}
+
+.verydarkpurple-background {
+  background-color: @verydarkpurple;
+  color: white;
+  a { .white-link; }
+}
 
 .verylightred               { color:            @verylightred; }
 .lightred                   { color:            @lightred; }
@@ -70,9 +115,24 @@ This file contains DLx styles that need to be explicitly specified using classes
 
 .verylightred-background    { background-color: @verylightred; }
 .lightred-background        { background-color: @lightred; }
-.red-background             { background-color: @red; color: white; }
-.darkred-background         { background-color: @darkred; color: white; }
-.verydarkred-background     { background-color: @verydarkred; color: white; }
+
+.red-background {
+  background-color: @red;
+  color: white;
+  a { .white-link; }
+}
+
+.darkred-background {
+  background-color: @darkred;
+  color: white;
+  a { .white-link; }
+}
+
+.verydarkred-background {
+  background-color: @verydarkred;
+  color: white;
+  a { .white-link; }
+}
 
 .lightblue-transparent      { background-color: @lightblue-transparent; }
 .verylightblue-transparent  { background-color: @verylightblue-transparent; }
@@ -92,11 +152,13 @@ This file contains DLx styles that need to be explicitly specified using classes
 .button {
 
   .blue-background;
+  align-items: center;
   background-image: linear-gradient(135deg, rgba(255,255,255,0.15), transparent);
   border-radius: 5px;
   box-shadow: inset -1px -1px 2px 0px rgba(0,0,0,0.15), 1px 1px 2px #ccc;
   cursor: pointer;
   padding: 0.25em 0.5em;
+  text-align: center;
 
   &:active {
     box-shadow: 0 0 0 1px rgba(0,0,0,0.15) inset, 0 0 6px rgba(0,0,0,0.2) inset;
@@ -215,6 +277,7 @@ This file contains DLx styles that need to be explicitly specified using classes
 
 .page-title {
   font-size: 2.5em;
+  text-align: center;
 }
 
 .reference-list {
@@ -272,11 +335,12 @@ This file contains DLx styles that need to be explicitly specified using classes
     font-size: smaller;
     left: 0.5em;
     opacity: 0;
+    padding: 0;
     position: absolute;
     top: 115%;
     transition: all 0.3s ease;
     width: 300px;
-    z-index: 2;
+    z-index: -2;
   }
 
   &:hover::after,
@@ -284,6 +348,7 @@ This file contains DLx styles that need to be explicitly specified using classes
   {
     opacity: 1;
     padding: 0.5em 1em;
+    z-index: 2;
   }
 
 }
