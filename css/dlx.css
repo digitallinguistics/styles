@@ -1634,16 +1634,18 @@ var > a:visited:active {
   font-size: smaller;
   left: 0.5em;
   opacity: 0;
+  padding: 0;
   position: absolute;
   top: 115%;
   transition: all 0.3s ease;
   width: 300px;
-  z-index: 2;
+  z-index: -2;
 }
 .tooltip:hover::after,
 .tooltip:focus::after {
   opacity: 1;
   padding: 0.5em 1em;
+  z-index: 2;
 }
 blockquote > .tooltip,
 button > .tooltip,
@@ -2140,6 +2142,13 @@ em {
 }
 fieldset legend {
   font-weight: bold;
+}
+i {
+  font-style: italic;
+}
+i[lang] {
+  font-family: 'Gentium Plus', 'Charis SIL', 'Doulos SIL', 'Cambria', 'Andika', 'Lucida Sans Unicode', 'Times New Roman', 'Georgia', serif;
+  font-size: 1.15em;
 }
 input[type=button] {
   background-color: #3399FF;
@@ -3208,9 +3217,6 @@ label {
 label span {
   font-size: smaller;
   font-weight: bold;
-}
-label input {
-  margin: 0.5em;
 }
 select {
   border: 1px solid black;

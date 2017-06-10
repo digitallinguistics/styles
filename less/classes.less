@@ -232,23 +232,23 @@ This file contains DLx styles that need to be explicitly specified using classes
     }
   }
 
-.main-nav ul {
+.main-nav {
+  ul {
+    .blue-background;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 1.25rem;
+    justify-content: space-around;
 
-  .blue-background;
-  flex-direction: row;
-  flex-wrap: wrap;
-  font-size: 1.25rem;
-  justify-content: space-around;
+    li {
+      flex-grow: 1;
+    }
 
-  li {
-    flex-grow: 1;
+    a {
+      text-align: center;
+      padding: 0.5em;
+    }
   }
-
-  a {
-    text-align: center;
-    padding: 0.5em;
-  }
-
 }
 
 .minor-header {

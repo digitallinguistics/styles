@@ -745,9 +745,6 @@ label span {
   font-size: smaller;
   font-weight: bold;
 }
-label input {
-  margin: 0.5em;
-}
 select {
   border: 1px solid black;
   border-radius: 5px;
