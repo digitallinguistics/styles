@@ -2,20 +2,23 @@
 This file contains DLx styles that are applied by default, without the need for specifiying them explicitly using CSS classes. This file also applies the flexbox-reset styling.
  */
 
-@cdn: 'https://cdn.digitallinguistics.io/';
-
-// NB: The import order is important
-@import 'https://raw.githubusercontent.com/dwhieb/flexbox-reset/master/flexbox-reset.less';
-@import (reference) '@{cdn}/less/colors.less';
-@import (reference) '@{cdn}/less/classes.less';
+@import 'https://cdn.digitallinguistics.io/less/dlx.less';
 
 * {
   box-sizing: border-box;
 }
 
-abbr {
-  font-style: italic;
+// <a>
+// elements whose contents are typically inline
+blockquote, button, caption, dd, dt, figcaption, h1, h2, h3, h4, h5, h6, input, legend, option, output, p, pre, select, summary, textarea,
+// inline elements
+abbr, acronym, b, bdo, big, br, cite, code, del, dfn, em, i, ins, kbd, mark, q, samp, s, small, span, strike, strong, sub, sup, time, tt, var, {
+  > a {
+    .link;
+  }
 }
+
+abbr { .abbr; }
 
 body {
   box-sizing: border-box;
@@ -23,139 +26,36 @@ body {
   line-height: 1.5;
 }
 
-button {
-  .button;
-}
+button { .button; }
 
-cite {
-  font-style: italic;
-}
+cite { .cite; }
 
-code {
-  .gray-background;
-  border: 1px solid black;
-  border-radius: 5px;
-  font-family: 'Consolas', 'Fira Mono', 'Monaco', 'DejaVu Mono', 'Courier New', monospace;
-  font-size: 0.75em;
-  font-style: normal;
-  overflow-x: auto;
-  padding: 0.25em;
-  white-space: pre;
-}
+code { .code; }
 
-dfn {
-  font-style: italic;
-}
+dfn { .dfn; }
 
-em {
-  font-style: italic;
-}
+em { .emphasized; }
 
-fieldset legend {
-  font-weight: bold;
-}
+fieldset { .fieldset; }
 
-i {
-  font-style: italic;
-}
+input { .input; }
 
-i[lang] {
-  .unicode;
-}
+i { .italic; }
 
-input[type=button] {
-  .button;
-}
+label { .label; }
 
-input[type=color] {
-  display: block;
-}
+select { .select; }
 
-input[type=date] {
-  .field;
-}
+strong { .strong; }
 
-input[type=datetime] {
-  .field;
-}
+textarea { .textarea; }
 
-input[type=datetime-local] {
-  .field;
-}
-
-input[type=email] {
-  .field;
-}
-
-input[type=month] {
-  .field;
-}
-
-input[type=number] {
-  .field;
-}
-
-input[type=password] {
-  .field;
-}
-
-input[type=reset] {
-  .button;
-  .superdarkgreen-background;
-}
-
-input[type=search] {
-  .field;
-}
-
-input[type=submit] {
-  .button;
-}
-
-input[type=tel] {
-  .field;
-}
-
-input[type=text] {
-  .field;
-  display: flex;
-}
-
-input[type=time] {
-  .field;
-}
-
-input[type=url] {
-  .field;
-}
-
-input[type=week] {
-  .field;
-}
-
-label {
-
-  align-items: center;
-  flex-direction: row;
-
-  span {
-    font-size: smaller;
-    font-weight: bold;
+// .tooltip
+// elements whose contents are typically inline
+blockquote, button, caption, dd, dt, figcaption, h1, h2, h3, h4, h5, h6, input, legend, option, output, p, pre, select, summary, textarea,
+// inline elements
+abbr, acronym, b, bdo, big, br, cite, code, del, dfn, em, i, ins, kbd, mark, q, samp, s, small, span, strike, strong, sub, sup, time, tt, var, {
+  > .tooltip {
+    text-decoration: underline dotted @verydarkgreen;
   }
-
-}
-
-select {
-  border: 1px solid black;
-  border-radius: 5px;
-  padding: 0.25em;
-}
-
-strong {
-  color: @verydarkblue;
-  font-weight: bold;
-}
-
-textarea {
-  .field;
 }

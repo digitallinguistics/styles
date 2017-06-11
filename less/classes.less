@@ -2,8 +2,8 @@
 This file contains DLx styles that need to be explicitly specified using classes
  */
 
- // VARIABLES
- @cdn:  'https://cdn.digitallinguistics.io';
+// VARIABLES
+@cdn: 'https://cdn.digitallinguistics.io';
 
 @import (reference) '@{cdn}/less/colors.less';
 
@@ -20,19 +20,19 @@ This file contains DLx styles that need to be explicitly specified using classes
 .verydarkblue-background {
   background-color: @verydarkblue;
   color: white;
-  a { .white-link; }
+  a { .link-white; }
 }
 
 .darkblue-background {
   background-color: @darkblue;
   color: white;
-  a { .white-link; }
+  a { .link-white; }
 }
 
 .blue-background {
   background-color: @blue;
   color: white;
-  a { .white-link; }
+  a { .link-white; }
 }
 
 .lightblue-background       { background-color: @lightblue; }
@@ -57,7 +57,7 @@ This file contains DLx styles that need to be explicitly specified using classes
 .superdarkgreen-background {
   background-color: @superdarkgreen;
   color: white;
-  a { .white-link; }
+  a { .link-white; }
 }
 
 .verylightorange            { color:            @verylightorange; }
@@ -72,7 +72,7 @@ This file contains DLx styles that need to be explicitly specified using classes
 .darkorange-background {
   background-color: @darkorange;
   color: white;
-  a { .white-link; }
+  a { .link-white; }
 }
 
 .verylightpurple            { color:            @verylightpurple; }
@@ -86,25 +86,25 @@ This file contains DLx styles that need to be explicitly specified using classes
 .lightpurple-background {
   background-color: @lightpurple;
   color: white;
-  a { .white-link; }
+  a { .link-white; }
 }
 
 .purple-background {
   background-color: @purple;
   color: white;
-  a { .white-link; }
+  a { .link-white; }
 }
 
 .darkpurple-background {
   background-color: @darkpurple;
   color: white;
-  a { .white-link; }
+  a { .link-white; }
 }
 
 .verydarkpurple-background {
   background-color: @verydarkpurple;
   color: white;
-  a { .white-link; }
+  a { .link-white; }
 }
 
 .verylightred               { color:            @verylightred; }
@@ -119,25 +119,29 @@ This file contains DLx styles that need to be explicitly specified using classes
 .red-background {
   background-color: @red;
   color: white;
-  a { .white-link; }
+  a { .link-white; }
 }
 
 .darkred-background {
   background-color: @darkred;
   color: white;
-  a { .white-link; }
+  a { .link-white; }
 }
 
 .verydarkred-background {
   background-color: @verydarkred;
   color: white;
-  a { .white-link; }
+  a { .link-white; }
 }
 
 .lightblue-transparent      { background-color: @lightblue-transparent; }
 .verylightblue-transparent  { background-color: @verylightblue-transparent; }
 
 // PATTERNS
+.abbr {
+  font-style: italic;
+}
+
 .bulleted {
 
   list-style: disc outside none;
@@ -177,6 +181,30 @@ This file contains DLx styles that need to be explicitly specified using classes
 
 }
 
+.cite {
+  font-style: italic;
+}
+
+.code {
+  .gray-background;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-family: 'Consolas', 'Fira Mono', 'Monaco', 'DejaVu Mono', 'Courier New', monospace;
+  font-size: 0.75em;
+  font-style: normal;
+  overflow-x: auto;
+  padding: 0.25em;
+  white-space: pre;
+}
+
+.dfn {
+  font-style: italic;
+}
+
+.emphasized {
+  font-style: italic;
+}
+
 .field {
 
   background-color: white;
@@ -207,9 +235,130 @@ This file contains DLx styles that need to be explicitly specified using classes
 
 }
 
+.fieldset {
+  legend {
+    font-weight: bold;
+  }
+}
+
+.h-minor {
+  font-size: 1.25em;
+}
+
+.h-section {
+  font-size: 1.75em;
+  font-weight: bold;
+  padding-bottom: 0.25em;
+  padding-top: 0.5em;
+}
+
+.h-subsection {
+  font-size: 1.5em;
+  padding-bottom: 0.25em;
+  padding-top: 0.5em;
+}
+
+.h-subsubsection {
+  font-size: 1.5em;
+  font-style: italic;
+}
+
 .hanging {
   margin-left: 1em;
   text-indent: -1em;
+}
+
+.input {
+
+  &[type=button] {
+    .button;
+  }
+
+  &[type=color] {
+    display: block;
+  }
+
+  &[type=date] {
+    .field;
+  }
+
+  &[type=datetime] {
+    .field;
+  }
+
+  &[type=datetime-local] {
+    .field;
+  }
+
+  &[type=email] {
+    .field;
+  }
+
+  &[type=month] {
+    .field;
+  }
+
+  &[type=number] {
+    .field;
+  }
+
+  &[type=password] {
+    .field;
+  }
+
+  &[type=reset] {
+    .button;
+    .superdarkgreen-background;
+  }
+
+  &[type=search] {
+    .field;
+  }
+
+  &[type=submit] {
+    .button;
+  }
+
+  &[type=tel] {
+    .field;
+  }
+
+  &[type=text] {
+    .field;
+    display: flex;
+  }
+
+  &[type=time] {
+    .field;
+  }
+
+  &[type=url] {
+    .field;
+  }
+
+  &[type=week] {
+    .field;
+  }
+
+}
+
+.italic {
+  font-style: italic;
+  &[lang] {
+    .unicode;
+  }
+}
+
+.label {
+
+  align-items: center;
+  flex-direction: row;
+
+  span {
+    font-size: smaller;
+    font-weight: bold;
+  }
+
 }
 
 .link {
@@ -223,16 +372,17 @@ This file contains DLx styles that need to be explicitly specified using classes
   &:visited:active { .purple; }
 }
 
-  // elements whose contents are typically inline
-  blockquote, button, caption, dd, dt, figcaption, h1, h2, h3, h4, h5, h6, input, legend, option, output, p, pre, select, summary, textarea,
-  // inline elements
-  abbr, acronym, b, bdo, big, br, cite, code, del, dfn, em, i, ins, kbd, mark, q, samp, s, small, span, strike, strong, sub, sup, time, tt, var, {
-    > a {
-      .link;
-    }
-  }
+.link-white {
+  border-bottom: 0.075em solid transparent;
+  color: white;
+  &:link { color: white; }
+  &:visited { color: white; }
+  &:hover { border-bottom: 0.075em solid white; }
+  &:visited:hover { border-bottom: 0.075em solid white; }
+  &:active { color: white; }
+}
 
-.main-nav {
+.nav {
   ul {
     .blue-background;
     flex-direction: row;
@@ -249,10 +399,6 @@ This file contains DLx styles that need to be explicitly specified using classes
       padding: 0.5em;
     }
   }
-}
-
-.minor-header {
-  font-size: 1.25em;
 }
 
 .numbered {
@@ -283,7 +429,8 @@ This file contains DLx styles that need to be explicitly specified using classes
 .reference-list {
 
   a { .link; }
-  h1 { .section-header; }
+
+  h1 { .h-section; }
 
   ol, ul {
     list-style: disc outside none;
@@ -305,22 +452,19 @@ This file contains DLx styles that need to be explicitly specified using classes
 
 }
 
-.section-header {
-  font-size: 1.75em;
+.select {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 0.25em;
+}
+
+.strong {
+  color: @verydarkblue;
   font-weight: bold;
-  padding-bottom: 0.25em;
-  padding-top: 0.5em;
 }
 
-.subsection-header {
-  font-size: 1.5em;
-  padding-bottom: 0.25em;
-  padding-top: 0.5em;
-}
-
-.subsubsection-header {
-  font-size: 1.5em;
-  font-style: italic;
+.textarea {
+  .field;
 }
 
 .tooltip {
@@ -353,26 +497,7 @@ This file contains DLx styles that need to be explicitly specified using classes
 
 }
 
-  // elements whose contents are typically inline
-  blockquote, button, caption, dd, dt, figcaption, h1, h2, h3, h4, h5, h6, input, legend, option, output, p, pre, select, summary, textarea,
-  // inline elements
-  abbr, acronym, b, bdo, big, br, cite, code, del, dfn, em, i, ins, kbd, mark, q, samp, s, small, span, strike, strong, sub, sup, time, tt, var, {
-    > .tooltip {
-      text-decoration: underline dotted @verydarkgreen;
-    }
-  }
-
 .unicode {
   font-family: 'Gentium Plus', 'Charis SIL', 'Doulos SIL', 'Cambria', 'Andika', 'Lucida Sans Unicode', 'Times New Roman', 'Georgia', serif;
   font-size: 1.15em;
-}
-
-.white-link {
-  border-bottom: 0.075em solid transparent;
-  color: white;
-  &:link { color: white; }
-  &:visited { color: white; }
-  &:hover { border-bottom: 0.075em solid white; }
-  &:visited:hover { border-bottom: 0.075em solid white; }
-  &:active { color: white; }
 }

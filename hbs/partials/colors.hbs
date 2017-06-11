@@ -1,6 +1,6 @@
 <section id=colors>
 
-  <h1 class=header-section>Colors</h2>
+  <h1 class=h-section>Colors</h2>
 
   <p>The following colors are available as LESS variables and classes. Click on the color to copy it to the clipboard. To set the font color, use <code>.{color}</code> (e.g. <code>.wugblue</code>). To set the background color, use <code>.{color}-background</code>, (e.g. <code>.wugblue-background</code>).</p>
 
@@ -8,7 +8,7 @@
     <section>
       {{#each this}}
         <div class=color>
-          <span><code>@{{name}}</code>{{#if note}}<p>({{note}})</p>{{/if}}</span>
+          <span><code>@{{name}}</code>{{#if note}}<p>({{{note}}})</p>{{/if}}</span>
           <span><code class='swatch {{name}}-background'>#{{hex}}</code></span></div>
       {{/each}}
     </section>

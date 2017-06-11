@@ -39,7 +39,7 @@
     <p>See the <a href=https://github.com/digitallinguistics/styles#readme>GitHub repository</a> for instructions on how to use DLx styles in your code.</p>
 
     <nav>
-      <h2 class=header-section>Contents</h2>
+      <h2 class=h-section>Contents</h2>
       <ul class=bulleted>
         <li><a class=link href=#variables>Variables</a></li>
         <li><a class=link href=#typography>Typography</a></li>
@@ -50,7 +50,7 @@
 
     <section id=variables>
     
-      <h1 class=header-section>Variables</h2>
+      <h1 class=h-section>Variables</h2>
     
       <p>The following LESS variables are available:</p>
     
@@ -62,7 +62,7 @@
 
     <section id=typography>
     
-      <h1 class=header-section>Typography</h1>
+      <h1 class=h-section>Typography</h1>
     
       <p class=hanging-indent><strong>Fira Sans Light</strong> (<em>not</em> Fira Sans Regular) is the default font used throughout DLx tools, with a line height of 1.5.</p>
       <p class=hanging-indent style="font-style: italic;"><strong>Fira Sans Light Italic</strong> is used for italics.</p>
@@ -78,7 +78,7 @@
 
     <section id=colors>
     
-      <h1 class=header-section>Colors</h2>
+      <h1 class=h-section>Colors</h2>
     
       <p>The following colors are available as LESS variables and classes. Click on the color to copy it to the clipboard. To set the font color, use <code>.{color}</code> (e.g. <code>.wugblue</code>). To set the background color, use <code>.{color}-background</code>, (e.g. <code>.wugblue-background</code>).</p>
     
@@ -106,7 +106,7 @@
         </section>
         <section>
             <div class=color>
-              <span><code>@gray</code></span>
+              <span><code>@gray</code><p>(Also available in colors.less as <code>@gray</code>.)</p></span>
               <span><code class='swatch gray-background'>#F5F2F0</code></span></div>
         </section>
         <section>
@@ -196,7 +196,7 @@
 
     <section id=icons>
     
-      <h1 class=header-section>Icons</h1>
+      <h1 class=h-section>Icons</h1>
     
       <p>Each of the following icons is available in the <code>/img</code> folder, and can be linked to via the DLx CDN at <code>https://cdn.digitallinguistics.io/img/{filename}</code>. Some are available in multiple formats. Most icons are black by default, but for some there are versions in different colors as well, following the format <code>{filename}.{color}.{ext}</code>. For icons available in different sizes, the size is indicated by appending the dimensions to the filename, after an underscore, e.g. <code>tunnel_64x64.png</code>. DLx uses <a href=https://materialdesignicons.com/>Material Design Icons</a> for many of its icons.</p>
     
@@ -224,7 +224,7 @@
 
     <section id=patterns>
     
-      <h1 class=header-section>Patterns</h1>
+      <h1 class=h-section>Patterns</h1>
     
         <section id=abbr-pattern class='pattern abbr-example'>
     
@@ -234,7 +234,7 @@
           </header>
     
           <div>
-            <h1 class=header-minor>Example Markup</h1>
+            <h1 class=h-minor>Example Markup</h1>
             <pre><code class=markup>
     &lt;p&gt;
       &lt;dfn class&#x3D;dfn&gt;Digital Linguistics&lt;/dfn&gt; (&lt;abbr class&#x3D;abbr&gt;DLx&lt;/abbr&gt;) is the science of managing linguistic data, digitally. This is an example of a paragraph with an abbreviation tag.
@@ -243,7 +243,7 @@
           </div>
     
           <div>
-            <h1 class=header-minor>Live Example</h1>
+            <h1 class=h-minor>Live Example</h1>
             <div class=rendered><p>
       <dfn class=dfn>Digital Linguistics</dfn> (<abbr class=abbr>DLx</abbr>) is the science of managing linguistic data, digitally. This is an example of a paragraph with an abbreviation tag.
     </p>
@@ -259,7 +259,7 @@
           </header>
     
           <div>
-            <h1 class=header-minor>Example Markup</h1>
+            <h1 class=h-minor>Example Markup</h1>
             <pre><code class=markup>
     &lt;ul class&#x3D;bulleted&gt;
       &lt;li&gt;This is the first list item.&lt;/li&gt;
@@ -270,7 +270,7 @@
           </div>
     
           <div>
-            <h1 class=header-minor>Live Example</h1>
+            <h1 class=h-minor>Live Example</h1>
             <div class=rendered><ul class=bulleted>
       <li>This is the first list item.</li>
       <li>This is the second list item.</li>
@@ -288,7 +288,7 @@
           </header>
     
           <div>
-            <h1 class=header-minor>Example Markup</h1>
+            <h1 class=h-minor>Example Markup</h1>
             <pre><code class=markup>
     &lt;button class&#x3D;button type&#x3D;button&gt;Button&lt;/button&gt;
     &lt;button class&#x3D;button type&#x3D;button disabled&gt;Disabled Button&lt;/button&gt;
@@ -299,7 +299,7 @@
           </div>
     
           <div>
-            <h1 class=header-minor>Live Example</h1>
+            <h1 class=h-minor>Live Example</h1>
             <div class=rendered><button class=button type=button>Button</button>
     <button class=button type=button disabled>Disabled Button</button>
     <button class=button type=button class=red-background>Red Button</button>
@@ -317,7 +317,7 @@
           </header>
     
           <div>
-            <h1 class=header-minor>Example Markup</h1>
+            <h1 class=h-minor>Example Markup</h1>
             <pre><code class=markup>
     &lt;p&gt;
       In his review of &lt;cite class&#x3D;cite&gt;Endangered languages and new technologies&lt;/cite&gt;, Hieber (2015) mentions certain concepts in Digital Linguistics.
@@ -326,7 +326,7 @@
           </div>
     
           <div>
-            <h1 class=header-minor>Live Example</h1>
+            <h1 class=h-minor>Live Example</h1>
             <div class=rendered><p>
       In his review of <cite class=cite>Endangered languages and new technologies</cite>, Hieber (2015) mentions certain concepts in Digital Linguistics.
     </p>
@@ -342,7 +342,7 @@
           </header>
     
           <div>
-            <h1 class=header-minor>Example Markup</h1>
+            <h1 class=h-minor>Example Markup</h1>
             <pre><code class=markup>
     &lt;p&gt;
       This is an example of a paragraph with &lt;code class&#x3D;code&gt;inline code&lt;/code&gt;. Below is an example of a standalone code block.
@@ -362,7 +362,7 @@
           </div>
     
           <div>
-            <h1 class=header-minor>Live Example</h1>
+            <h1 class=h-minor>Live Example</h1>
             <div class=rendered><p>
       This is an example of a paragraph with <code class=code>inline code</code>. Below is an example of a standalone code block.
     </p>
@@ -389,7 +389,7 @@
           </header>
     
           <div>
-            <h1 class=header-minor>Example Markup</h1>
+            <h1 class=h-minor>Example Markup</h1>
             <pre><code class=markup>
     &lt;p&gt;
       &lt;dfn class&#x3D;dfn&gt;Digital Linguistics&lt;/dfn&gt; (&lt;abbr class&#x3D;abbr&gt;DLx&lt;/abbr&gt;) is the science of managing linguistic data, digitally.
@@ -398,7 +398,7 @@
           </div>
     
           <div>
-            <h1 class=header-minor>Live Example</h1>
+            <h1 class=h-minor>Live Example</h1>
             <div class=rendered><p>
       <dfn class=dfn>Digital Linguistics</dfn> (<abbr class=abbr>DLx</abbr>) is the science of managing linguistic data, digitally.
     </p>
@@ -414,7 +414,7 @@
           </header>
     
           <div>
-            <h1 class=header-minor>Example Markup</h1>
+            <h1 class=h-minor>Example Markup</h1>
             <pre><code class=markup>
     &lt;p&gt;
       &lt;em class&#x3D;emphasized&gt;These words&lt;/em&gt; are emphasized.
@@ -423,7 +423,7 @@
           </div>
     
           <div>
-            <h1 class=header-minor>Live Example</h1>
+            <h1 class=h-minor>Live Example</h1>
             <div class=rendered><p>
       <em class=emphasized>These words</em> are emphasized.
     </p>
@@ -439,7 +439,7 @@
           </header>
     
           <div>
-            <h1 class=header-minor>Example Markup</h1>
+            <h1 class=h-minor>Example Markup</h1>
             <pre><code class=markup>
     &lt;input class&#x3D;field type&#x3D;text value&#x3D;&#x27;This text input has been styled with the .field class&#x27;&gt;
     &lt;input class&#x3D;field type&#x3D;text disabled value&#x3D;&#x27;This text input is disabled&#x27;&gt;
@@ -448,7 +448,7 @@
           </div>
     
           <div>
-            <h1 class=header-minor>Live Example</h1>
+            <h1 class=h-minor>Live Example</h1>
             <div class=rendered><input class=field type=text value='This text input has been styled with the .field class'>
     <input class=field type=text disabled value='This text input is disabled'>
     <input class=field type=text pattern=aaa value='This text input is invalid'>
@@ -464,7 +464,7 @@
           </header>
     
           <div>
-            <h1 class=header-minor>Example Markup</h1>
+            <h1 class=h-minor>Example Markup</h1>
             <pre><code class=markup>
     &lt;fieldset class&#x3D;fieldset&gt;
     
@@ -490,7 +490,7 @@
           </div>
     
           <div>
-            <h1 class=header-minor>Live Example</h1>
+            <h1 class=h-minor>Live Example</h1>
             <div class=rendered><fieldset class=fieldset>
     
       <legend>Colors</legend>
@@ -523,7 +523,7 @@
           </header>
     
           <div>
-            <h1 class=header-minor>Example Markup</h1>
+            <h1 class=h-minor>Example Markup</h1>
             <pre><code class=markup>
     &lt;p class&#x3D;hanging&gt;
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -532,7 +532,7 @@
           </div>
     
           <div>
-            <h1 class=header-minor>Live Example</h1>
+            <h1 class=h-minor>Live Example</h1>
             <div class=rendered><p class=hanging>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
@@ -548,15 +548,15 @@
           </header>
     
           <div>
-            <h1 class=header-minor>Example Markup</h1>
+            <h1 class=h-minor>Example Markup</h1>
             <pre><code class=markup>
-    &lt;h1 class&#x3D;header-minor&gt;Minor Header&lt;/h1&gt;
+    &lt;h1 class&#x3D;h-minor&gt;Minor Header&lt;/h1&gt;
     </code></pre>
           </div>
     
           <div>
-            <h1 class=header-minor>Live Example</h1>
-            <div class=rendered><h1 class=header-minor>Minor Header</h1>
+            <h1 class=h-minor>Live Example</h1>
+            <div class=rendered><h1 class=h-minor>Minor Header</h1>
     </div>
           </div>
     
@@ -569,15 +569,15 @@
           </header>
     
           <div>
-            <h1 class=header-minor>Example Markup</h1>
+            <h1 class=h-minor>Example Markup</h1>
             <pre><code class=markup>
-    &lt;h1 class&#x3D;header-section&gt;Section Header&lt;/h1&gt;
+    &lt;h1 class&#x3D;h-section&gt;Section Header&lt;/h1&gt;
     </code></pre>
           </div>
     
           <div>
-            <h1 class=header-minor>Live Example</h1>
-            <div class=rendered><h1 class=header-section>Section Header</h1>
+            <h1 class=h-minor>Live Example</h1>
+            <div class=rendered><h1 class=h-section>Section Header</h1>
     </div>
           </div>
     
@@ -590,15 +590,15 @@
           </header>
     
           <div>
-            <h1 class=header-minor>Example Markup</h1>
+            <h1 class=h-minor>Example Markup</h1>
             <pre><code class=markup>
-    &lt;h1 class&#x3D;header-subsection&gt;Subsection Header&lt;/h1&gt;
+    &lt;h1 class&#x3D;h-subsection&gt;Subsection Header&lt;/h1&gt;
     </code></pre>
           </div>
     
           <div>
-            <h1 class=header-minor>Live Example</h1>
-            <div class=rendered><h1 class=header-subsection>Subsection Header</h1>
+            <h1 class=h-minor>Live Example</h1>
+            <div class=rendered><h1 class=h-subsection>Subsection Header</h1>
     </div>
           </div>
     
@@ -611,15 +611,15 @@
           </header>
     
           <div>
-            <h1 class=header-minor>Example Markup</h1>
+            <h1 class=h-minor>Example Markup</h1>
             <pre><code class=markup>
-    &lt;h1 class&#x3D;header-subsubsection&gt;Sub-Subsection Header&lt;/h1&gt;
+    &lt;h1 class&#x3D;h-subsubsection&gt;Sub-Subsection Header&lt;/h1&gt;
     </code></pre>
           </div>
     
           <div>
-            <h1 class=header-minor>Live Example</h1>
-            <div class=rendered><h1 class=header-subsubsection>Sub-Subsection Header</h1>
+            <h1 class=h-minor>Live Example</h1>
+            <div class=rendered><h1 class=h-subsubsection>Sub-Subsection Header</h1>
     </div>
           </div>
     
@@ -632,7 +632,7 @@
           </header>
     
           <div>
-            <h1 class=header-minor>Example Markup</h1>
+            <h1 class=h-minor>Example Markup</h1>
             <pre><code class=markup>
     &lt;label class&#x3D;label&gt;
       &lt;span&gt;Button&lt;/span&gt;
@@ -758,7 +758,7 @@
           </div>
     
           <div>
-            <h1 class=header-minor>Live Example</h1>
+            <h1 class=h-minor>Live Example</h1>
             <div class=rendered><label class=label>
       <span>Button</span>
       <input class=input type=button value=Button>
@@ -891,7 +891,7 @@
           </header>
     
           <div>
-            <h1 class=header-minor>Example Markup</h1>
+            <h1 class=h-minor>Example Markup</h1>
             <pre><code class=markup>
     &lt;label class&#x3D;label&gt;
       &lt;span&gt;Label with &lt;code&gt;&amp;lt;span&amp;gt;&lt;/code&gt;&lt;/span&gt;
@@ -906,7 +906,7 @@
           </div>
     
           <div>
-            <h1 class=header-minor>Live Example</h1>
+            <h1 class=h-minor>Live Example</h1>
             <div class=rendered><label class=label>
       <span>Label with <code>&lt;span&gt;</code></span>
       <input class=input type=text>
@@ -928,7 +928,7 @@
           </header>
     
           <div>
-            <h1 class=header-minor>Example Markup</h1>
+            <h1 class=h-minor>Example Markup</h1>
             <pre><code class=markup>
     &lt;a href&#x3D;#&gt;
       &lt;p&gt;This is a &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; tag wrapped in an &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt; tag. It does not have link styling.&lt;/p&gt;
@@ -945,7 +945,7 @@
           </div>
     
           <div>
-            <h1 class=header-minor>Live Example</h1>
+            <h1 class=h-minor>Live Example</h1>
             <div class=rendered><a href=#>
       <p>This is a <code>&lt;p&gt;</code> tag wrapped in an <code>&lt;a&gt;</code> tag. It does not have link styling.</p>
     </a>
@@ -969,7 +969,7 @@
           </header>
     
           <div>
-            <h1 class=header-minor>Example Markup</h1>
+            <h1 class=h-minor>Example Markup</h1>
             <pre><code class=markup>
     &lt;p&gt;
       This is an example of the &lt;a class&#x3D;link-white href&#x3D;#&gt;.link-white&lt;/a&gt; styling, useful for links on dark backgrounds.
@@ -978,7 +978,7 @@
           </div>
     
           <div>
-            <h1 class=header-minor>Live Example</h1>
+            <h1 class=h-minor>Live Example</h1>
             <div class=rendered><p>
       This is an example of the <a class=link-white href=#>.link-white</a> styling, useful for links on dark backgrounds.
     </p>
@@ -994,7 +994,7 @@
           </header>
     
           <div>
-            <h1 class=header-minor>Example Markup</h1>
+            <h1 class=h-minor>Example Markup</h1>
             <pre><code class=markup>
     &lt;nav class&#x3D;nav&gt;
       &lt;ul&gt;
@@ -1007,7 +1007,7 @@
           </div>
     
           <div>
-            <h1 class=header-minor>Live Example</h1>
+            <h1 class=h-minor>Live Example</h1>
             <div class=rendered><nav class=nav>
       <ul>
         <li><a href=#main-nav>Nav Link 1</a></li>
@@ -1027,7 +1027,7 @@
           </header>
     
           <div>
-            <h1 class=header-minor>Example Markup</h1>
+            <h1 class=h-minor>Example Markup</h1>
             <pre><code class=markup>
     &lt;ol class&#x3D;numbered&gt;
       &lt;li&gt;List Item 1&lt;/li&gt;
@@ -1038,7 +1038,7 @@
           </div>
     
           <div>
-            <h1 class=header-minor>Live Example</h1>
+            <h1 class=h-minor>Live Example</h1>
             <div class=rendered><ol class=numbered>
       <li>List Item 1</li>
       <li>List Item 2</li>
@@ -1056,7 +1056,7 @@
           </header>
     
           <div>
-            <h1 class=header-minor>Example Markup</h1>
+            <h1 class=h-minor>Example Markup</h1>
             <pre><code class=markup>
     &lt;h1 class&#x3D;page-page&gt;
       Page Title
@@ -1065,7 +1065,7 @@
           </div>
     
           <div>
-            <h1 class=header-minor>Live Example</h1>
+            <h1 class=h-minor>Live Example</h1>
             <div class=rendered><h1 class=page-page>
       Page Title
     </h1>
@@ -1081,7 +1081,7 @@
           </header>
     
           <div>
-            <h1 class=header-minor>Example Markup</h1>
+            <h1 class=h-minor>Example Markup</h1>
             <pre><code class=markup>
     &lt;section class&#x3D;reference-list&gt;
     
@@ -1106,7 +1106,7 @@
           </div>
     
           <div>
-            <h1 class=header-minor>Live Example</h1>
+            <h1 class=h-minor>Live Example</h1>
             <div class=rendered><section class=reference-list>
     
       <h1>Reference List</h1>
@@ -1138,7 +1138,7 @@
           </header>
     
           <div>
-            <h1 class=header-minor>Example Markup</h1>
+            <h1 class=h-minor>Example Markup</h1>
             <pre><code class=markup>
     &lt;select class&#x3D;select&gt;
       &lt;option&gt;Option 1&lt;/option&gt;
@@ -1149,7 +1149,7 @@
           </div>
     
           <div>
-            <h1 class=header-minor>Live Example</h1>
+            <h1 class=h-minor>Live Example</h1>
             <div class=rendered><select class=select>
       <option>Option 1</option>
       <option>Option 2</option>
@@ -1167,7 +1167,7 @@
           </header>
     
           <div>
-            <h1 class=header-minor>Example Markup</h1>
+            <h1 class=h-minor>Example Markup</h1>
             <pre><code class=markup>
     &lt;p&gt;
       This is a paragraph with some &lt;strong class&#x3D;strong&gt;strongly emphasized&lt;/strong&gt; text.
@@ -1176,7 +1176,7 @@
           </div>
     
           <div>
-            <h1 class=header-minor>Live Example</h1>
+            <h1 class=h-minor>Live Example</h1>
             <div class=rendered><p>
       This is a paragraph with some <strong class=strong>strongly emphasized</strong> text.
     </p>
@@ -1192,14 +1192,14 @@
           </header>
     
           <div>
-            <h1 class=header-minor>Example Markup</h1>
+            <h1 class=h-minor>Example Markup</h1>
             <pre><code class=markup>
     &lt;textarea class&#x3D;textarea placeholder&#x3D;&#x27;This is a textarea&#x27;&gt;&lt;/textarea&gt;
     </code></pre>
           </div>
     
           <div>
-            <h1 class=header-minor>Live Example</h1>
+            <h1 class=h-minor>Live Example</h1>
             <div class=rendered><textarea class=textarea placeholder='This is a textarea'></textarea>
     </div>
           </div>
@@ -1213,7 +1213,7 @@
           </header>
     
           <div>
-            <h1 class=header-minor>Example Markup</h1>
+            <h1 class=h-minor>Example Markup</h1>
             <pre><code class=markup>
     &lt;p&gt;
       This is an example of an &lt;span class&#x3D;tooltip title&#x3D;&#x27;This is the inline tooltip.&#x27;&gt;inline tooltip&lt;/span&gt;.
@@ -1227,7 +1227,7 @@
           </div>
     
           <div>
-            <h1 class=header-minor>Live Example</h1>
+            <h1 class=h-minor>Live Example</h1>
             <div class=rendered><p>
       This is an example of an <span class=tooltip title='This is the inline tooltip.'>inline tooltip</span>.
     </p>

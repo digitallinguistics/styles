@@ -7,10 +7,11 @@ A pattern library demonstrating all the styles in the DLx stylesheet, along with
 ## LESS / CSS
 Three LESS stylesheets and their accompanying CSS output are available in this repo's `less` and `css` folders. These are each made available on the DLx CDN and may be linked to at `https://cdn.digitallinguistics.io/less/{filename}` or `https://cdn.digitallinguistics.io/css/{filename}`.
 
-- `reset.less`:   A CSS reset that should be applied before any DLx styles. If you prefer not to use this reset, certain DLx classes will require extra styling (typically setting them to `display: flex;`). Uses the [`flexbox-reset` library][2].
-- `fonts.less`:   Font declarations for the various fonts used by DLx.
-- `colors.less`:  LESS variables for each of the colors used in the DLx color schemes.
-- `classes.less`: All the DLx styles, as classes
+- `variables.less`: A collection of useful LESS variables
+- `reset.less`:     A CSS reset that should be applied before any DLx styles. If you prefer not to use this reset, certain DLx classes will require extra styling (typically setting them to `display: flex;`). Uses the [`flexbox-reset` library][2].
+- `fonts.less`:     Font declarations for the various fonts used by DLx.
+- `colors.less`:    LESS variables for each of the colors used in the DLx color schemes.
+- `classes.less`:   All the DLx styles, as classes
 
 You can also use `dlx.less` or `global.less`, which bundle all of the above files together. The `dlx.less` file simply declares the classes and fonts, while the `global.less` file applies those classes globally. For example, `dlx.less` will make a `.link` class available for you to use in your code, but `global.less` will apply the `.link` style to all `<a>` elements as appropriate, so you do not need to explicitly add `class=link` to your `<a>` elements.
 

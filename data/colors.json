@@ -34,7 +34,8 @@
   "gray": [
     {
       "name": "gray",
-      "hex": "F5F2F0"
+      "hex": "F5F2F0",
+      "note": "Also available in colors.less as <code>@gray</code>."
     }
   ],
 
