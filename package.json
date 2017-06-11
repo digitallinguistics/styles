@@ -16,7 +16,8 @@
   },
   "private": true,
   "dependencies": {
-    "flexbox-reset": "^2.0.0"
+    "flexbox-reset": "^2.0.0",
+    "highlight.js": "^9.12.0"
   },
   "devDependencies": {
     "babel-core": "^6.25.0",
