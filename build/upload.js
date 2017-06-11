@@ -87,7 +87,7 @@ const storeLint = async () => {
 };
 
 Promise.all([
-  storeFonts(),
+  // storeFonts(),
   storeImages(),
   storeLessFiles(),
   storeLint(),
