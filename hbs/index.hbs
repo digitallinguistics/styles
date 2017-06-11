@@ -28,7 +28,7 @@
         <option value=typography>Typography</option>
         <option value=icons>Icons</option>
         <option value=patterns>Patterns</option>
-        {{#each patterns}}<option value={{@key}}>{{@key}}</option>{{/each}}
+        {{#each patterns}}<option value={{@key}}-pattern>{{@key}}</option>{{/each}}
       </select>
 
     </label>
@@ -38,13 +38,15 @@
     <nav>
       <ul class=bulleted>
         <li><a class=link href=#variables>Variables</a></li>
-        <li><a class=link href=#colors>Colors</a></li>
         <li><a class=link href=#typography>Typography</a></li>
+        <li><a class=link href=#colors>Colors</a></li>
         <li><a class=link href=#patterns>Patterns</a></li>
       </ul>
     </nav>
 
     {{> variables}}
+
+    {{> typography}}
 
     {{> colors}}
 
@@ -52,7 +54,7 @@
 
     {{> patterns}}
 
-    {{!-- <script src=js/patterns.js></script> --}}
+    <script src=js/patterns.js></script>
     <script src=js/highlight.js></script>
 
     <script>

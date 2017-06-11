@@ -28,7 +28,7 @@
         <option value=typography>Typography</option>
         <option value=icons>Icons</option>
         <option value=patterns>Patterns</option>
-        <option value=abbr>abbr</option><option value=bulleted>bulleted</option><option value=button>button</option><option value=cite>cite</option><option value=code>code</option><option value=dfn>dfn</option><option value=em>em</option><option value=field>field</option><option value=fieldset>fieldset</option><option value=hanging>hanging</option><option value=header-minor>header-minor</option><option value=header-section>header-section</option><option value=header-subsection>header-subsection</option><option value=header-subsubsection>header-subsubsection</option><option value=input>input</option><option value=label>label</option><option value=link>link</option><option value=link-white>link-white</option><option value=nav>nav</option><option value=numbered>numbered</option><option value=page-title>page-title</option><option value=reference-list>reference-list</option><option value=select>select</option><option value=strong>strong</option><option value=textarea>textarea</option><option value=tooltip>tooltip</option>
+        <option value=abbr-pattern>abbr</option><option value=bulleted-pattern>bulleted</option><option value=button-pattern>button</option><option value=cite-pattern>cite</option><option value=code-pattern>code</option><option value=dfn-pattern>dfn</option><option value=em-pattern>em</option><option value=field-pattern>field</option><option value=fieldset-pattern>fieldset</option><option value=hanging-pattern>hanging</option><option value=header-minor-pattern>header-minor</option><option value=header-section-pattern>header-section</option><option value=header-subsection-pattern>header-subsection</option><option value=header-subsubsection-pattern>header-subsubsection</option><option value=input-pattern>input</option><option value=label-pattern>label</option><option value=link-pattern>link</option><option value=link-white-pattern>link-white</option><option value=nav-pattern>nav</option><option value=numbered-pattern>numbered</option><option value=page-title-pattern>page-title</option><option value=reference-list-pattern>reference-list</option><option value=select-pattern>select</option><option value=strong-pattern>strong</option><option value=textarea-pattern>textarea</option><option value=tooltip-pattern>tooltip</option>
       </select>
 
     </label>
@@ -38,8 +38,8 @@
     <nav>
       <ul class=bulleted>
         <li><a class=link href=#variables>Variables</a></li>
-        <li><a class=link href=#colors>Colors</a></li>
         <li><a class=link href=#typography>Typography</a></li>
+        <li><a class=link href=#colors>Colors</a></li>
         <li><a class=link href=#patterns>Patterns</a></li>
       </ul>
     </nav>
@@ -53,6 +53,22 @@
       <ul class=bulleted>
         <li><p><code>@cdn</code>: <code>https://cdn.digitallinguistics.io</code></p></li>
       </ul>
+    
+    </section>
+
+    <section id=typography>
+    
+      <h1 class=header-section>Typography</h1>
+    
+      <p class=hanging-indent><strong>Fira Sans Light</strong> (<em>not</em> Fira Sans Regular) is the default font used throughout DLx tools, with a line height of 1.5.</p>
+      <p class=hanging-indent style="font-style: italic;"><strong>Fira Sans Light Italic</strong> is used for italics.</p>
+      <p class=hanging-indent style="font-weight: bold;"><strong>Fira Sans Medium</strong> (<em>not</em> Fira Sans Bold) is used for bold styling.</p>
+      <p class=hanging-indent style="font-style: italic; font-weight: bold;"><strong>Fira Sans Medium Italic</strong> is used for the combination of bold and italics.</p>
+      <p class=hanging-indent style="font-family: 'Fira Mono';"><strong>Fira Mono</strong> is used for monospaced code blocks.</p>
+      <p class=hanging-indent style="font-family: 'Fira Mono'; font-weight: bold;"><strong>Fira Mono Bold</strong> is used for emphasized or bolded code.</p>
+      <p class='hanging-indent unicode'><strong>Gentium Plus Regular</strong> is used for text that needs to support Unicode characters, such as data input fields.</p>
+      <p class='hanging-indent unicode' style="font-style: italic;"><strong>Gentium Plus Italic</strong> is used for italicized text that requires Unicode support, such as inline citation of data.</p>
+      <p class=hanging-indent>Gentium Fonts are also enlarged slightly so that <span class=unicode>they can be used inline</span> in stretches of Fira Sans text without too much of a size disparity.</p>
     
     </section>
 
@@ -206,7 +222,7 @@
     
       <h1 class=section-header>Patterns</h1>
     
-        <section id=abbr class='pattern abbr-example'>
+        <section id=abbr-pattern class='pattern abbr-example'>
     
           <header>
             <h1 class='pattern-title header-subsection'><code>abbr</code></h1>
@@ -217,7 +233,7 @@
             <h1 class=header-minor>Example Markup</h1>
             <pre><code class=markup>
     &lt;p&gt;
-      &lt;dfn&gt;Digital Linguistics&lt;/dfn&gt; (&lt;abbr&gt;DLx&lt;/abbr&gt;) is the science of managing linguistic data, digitally. This is an example of a paragraph with an abbreviation tag.
+      &lt;dfn class&#x3D;dfn&gt;Digital Linguistics&lt;/dfn&gt; (&lt;abbr class&#x3D;abbr&gt;DLx&lt;/abbr&gt;) is the science of managing linguistic data, digitally. This is an example of a paragraph with an abbreviation tag.
     &lt;/p&gt;
     </code></pre>
           </div>
@@ -225,13 +241,13 @@
           <div>
             <h1 class=header-minor>Live Example</h1>
             <div class=rendered><p>
-      <dfn>Digital Linguistics</dfn> (<abbr>DLx</abbr>) is the science of managing linguistic data, digitally. This is an example of a paragraph with an abbreviation tag.
+      <dfn class=dfn>Digital Linguistics</dfn> (<abbr class=abbr>DLx</abbr>) is the science of managing linguistic data, digitally. This is an example of a paragraph with an abbreviation tag.
     </p>
     </div>
           </div>
     
         </section>
-        <section id=bulleted class='pattern bulleted-example'>
+        <section id=bulleted-pattern class='pattern bulleted-example'>
     
           <header>
             <h1 class='pattern-title header-subsection'><code>bulleted</code></h1>
@@ -260,7 +276,7 @@
           </div>
     
         </section>
-        <section id=button class='pattern button-example'>
+        <section id=button-pattern class='pattern button-example'>
     
           <header>
             <h1 class='pattern-title header-subsection'><code>button</code></h1>
@@ -270,26 +286,26 @@
           <div>
             <h1 class=header-minor>Example Markup</h1>
             <pre><code class=markup>
-    &lt;button type&#x3D;button&gt;Button&lt;/button&gt;
-    &lt;button type&#x3D;button disabled&gt;Disabled Button&lt;/button&gt;
-    &lt;button type&#x3D;button class&#x3D;red-background&gt;Red Button&lt;/button&gt;
+    &lt;button class&#x3D;button type&#x3D;button&gt;Button&lt;/button&gt;
+    &lt;button class&#x3D;button type&#x3D;button disabled&gt;Disabled Button&lt;/button&gt;
+    &lt;button class&#x3D;button type&#x3D;button class&#x3D;red-background&gt;Red Button&lt;/button&gt;
     
-    &lt;input type&#x3D;button value&#x3D;&#x27;input[type&#x3D;button]&#x27;&gt;
+    &lt;input class&#x3D;button type&#x3D;button value&#x3D;&#x27;input[type&#x3D;button]&#x27;&gt;
     </code></pre>
           </div>
     
           <div>
             <h1 class=header-minor>Live Example</h1>
-            <div class=rendered><button type=button>Button</button>
-    <button type=button disabled>Disabled Button</button>
-    <button type=button class=red-background>Red Button</button>
+            <div class=rendered><button class=button type=button>Button</button>
+    <button class=button type=button disabled>Disabled Button</button>
+    <button class=button type=button class=red-background>Red Button</button>
     
-    <input type=button value='input[type=button]'>
+    <input class=button type=button value='input[type=button]'>
     </div>
           </div>
     
         </section>
-        <section id=cite class='pattern cite-example'>
+        <section id=cite-pattern class='pattern cite-example'>
     
           <header>
             <h1 class='pattern-title header-subsection'><code>cite</code></h1>
@@ -300,7 +316,7 @@
             <h1 class=header-minor>Example Markup</h1>
             <pre><code class=markup>
     &lt;p&gt;
-      In his review of &lt;cite&gt;Endangered languages and new technologies&lt;/cite&gt;, Hieber (2015) mentions certain concepts in Digital Linguistics.
+      In his review of &lt;cite class&#x3D;cite&gt;Endangered languages and new technologies&lt;/cite&gt;, Hieber (2015) mentions certain concepts in Digital Linguistics.
     &lt;/p&gt;
     </code></pre>
           </div>
@@ -308,13 +324,13 @@
           <div>
             <h1 class=header-minor>Live Example</h1>
             <div class=rendered><p>
-      In his review of <cite>Endangered languages and new technologies</cite>, Hieber (2015) mentions certain concepts in Digital Linguistics.
+      In his review of <cite class=cite>Endangered languages and new technologies</cite>, Hieber (2015) mentions certain concepts in Digital Linguistics.
     </p>
     </div>
           </div>
     
         </section>
-        <section id=code class='pattern code-example'>
+        <section id=code-pattern class='pattern code-example'>
     
           <header>
             <h1 class='pattern-title header-subsection'><code>code</code></h1>
@@ -325,10 +341,10 @@
             <h1 class=header-minor>Example Markup</h1>
             <pre><code class=markup>
     &lt;p&gt;
-      This is an example of a paragraph with &lt;code&gt;inline code&lt;/code&gt;. Below is an example of a standalone code block.
+      This is an example of a paragraph with &lt;code class&#x3D;code&gt;inline code&lt;/code&gt;. Below is an example of a standalone code block.
     &lt;/p&gt;
     
-    &lt;code&gt;
+    &lt;code class&#x3D;code&gt;
     {
       &quot;dateCreated&quot;: &quot;2017-03-13T02:36:22.123Z&quot;,
       &quot;dateModified&quot;: &quot;2017-03-13T04:51:26.134Z&quot;,
@@ -344,10 +360,10 @@
           <div>
             <h1 class=header-minor>Live Example</h1>
             <div class=rendered><p>
-      This is an example of a paragraph with <code>inline code</code>. Below is an example of a standalone code block.
+      This is an example of a paragraph with <code class=code>inline code</code>. Below is an example of a standalone code block.
     </p>
     
-    <code>
+    <code class=code>
     {
       "dateCreated": "2017-03-13T02:36:22.123Z",
       "dateModified": "2017-03-13T04:51:26.134Z",
@@ -361,7 +377,7 @@
           </div>
     
         </section>
-        <section id=dfn class='pattern dfn-example'>
+        <section id=dfn-pattern class='pattern dfn-example'>
     
           <header>
             <h1 class='pattern-title header-subsection'><code>dfn</code></h1>
@@ -372,7 +388,7 @@
             <h1 class=header-minor>Example Markup</h1>
             <pre><code class=markup>
     &lt;p&gt;
-      &lt;dfn&gt;Digital Linguistics&lt;/dfn&gt; (&lt;abbr&gt;DLx&lt;/abbr&gt;) is the science of managing linguistic data, digitally.
+      &lt;dfn class&#x3D;dfn&gt;Digital Linguistics&lt;/dfn&gt; (&lt;abbr class&#x3D;abbr&gt;DLx&lt;/abbr&gt;) is the science of managing linguistic data, digitally.
     &lt;/p&gt;
     </code></pre>
           </div>
@@ -380,13 +396,13 @@
           <div>
             <h1 class=header-minor>Live Example</h1>
             <div class=rendered><p>
-      <dfn>Digital Linguistics</dfn> (<abbr>DLx</abbr>) is the science of managing linguistic data, digitally.
+      <dfn class=dfn>Digital Linguistics</dfn> (<abbr class=abbr>DLx</abbr>) is the science of managing linguistic data, digitally.
     </p>
     </div>
           </div>
     
         </section>
-        <section id=em class='pattern em-example'>
+        <section id=em-pattern class='pattern em-example'>
     
           <header>
             <h1 class='pattern-title header-subsection'><code>em</code></h1>
@@ -397,7 +413,7 @@
             <h1 class=header-minor>Example Markup</h1>
             <pre><code class=markup>
     &lt;p&gt;
-      &lt;em&gt;These words&lt;/em&gt; are emphasized.
+      &lt;em class&#x3D;emphasized&gt;These words&lt;/em&gt; are emphasized.
     &lt;/p&gt;
     </code></pre>
           </div>
@@ -405,13 +421,13 @@
           <div>
             <h1 class=header-minor>Live Example</h1>
             <div class=rendered><p>
-      <em>These words</em> are emphasized.
+      <em class=emphasized>These words</em> are emphasized.
     </p>
     </div>
           </div>
     
         </section>
-        <section id=field class='pattern field-example'>
+        <section id=field-pattern class='pattern field-example'>
     
           <header>
             <h1 class='pattern-title header-subsection'><code>field</code></h1>
@@ -436,7 +452,7 @@
           </div>
     
         </section>
-        <section id=fieldset class='pattern fieldset-example'>
+        <section id=fieldset-pattern class='pattern fieldset-example'>
     
           <header>
             <h1 class='pattern-title header-subsection'><code>fieldset</code></h1>
@@ -446,7 +462,7 @@
           <div>
             <h1 class=header-minor>Example Markup</h1>
             <pre><code class=markup>
-    &lt;fieldset&gt;
+    &lt;fieldset class&#x3D;fieldset&gt;
     
       &lt;legend&gt;Colors&lt;/legend&gt;
     
@@ -471,7 +487,7 @@
     
           <div>
             <h1 class=header-minor>Live Example</h1>
-            <div class=rendered><fieldset>
+            <div class=rendered><fieldset class=fieldset>
     
       <legend>Colors</legend>
     
@@ -495,7 +511,7 @@
           </div>
     
         </section>
-        <section id=hanging class='pattern hanging-example'>
+        <section id=hanging-pattern class='pattern hanging-example'>
     
           <header>
             <h1 class='pattern-title header-subsection'><code>hanging</code></h1>
@@ -520,7 +536,7 @@
           </div>
     
         </section>
-        <section id=header-minor class='pattern header-minor-example'>
+        <section id=header-minor-pattern class='pattern header-minor-example'>
     
           <header>
             <h1 class='pattern-title header-subsection'><code>header-minor</code></h1>
@@ -541,7 +557,7 @@
           </div>
     
         </section>
-        <section id=header-section class='pattern header-section-example'>
+        <section id=header-section-pattern class='pattern header-section-example'>
     
           <header>
             <h1 class='pattern-title header-subsection'><code>header-section</code></h1>
@@ -562,7 +578,7 @@
           </div>
     
         </section>
-        <section id=header-subsection class='pattern header-subsection-example'>
+        <section id=header-subsection-pattern class='pattern header-subsection-example'>
     
           <header>
             <h1 class='pattern-title header-subsection'><code>header-subsection</code></h1>
@@ -583,7 +599,7 @@
           </div>
     
         </section>
-        <section id=header-subsubsection class='pattern header-subsubsection-example'>
+        <section id=header-subsubsection-pattern class='pattern header-subsubsection-example'>
     
           <header>
             <h1 class='pattern-title header-subsection'><code>header-subsubsection</code></h1>
@@ -604,7 +620,7 @@
           </div>
     
         </section>
-        <section id=input class='pattern input-example'>
+        <section id=input-pattern class='pattern input-example'>
     
           <header>
             <h1 class='pattern-title header-subsection'><code>input</code></h1>
@@ -614,256 +630,256 @@
           <div>
             <h1 class=header-minor>Example Markup</h1>
             <pre><code class=markup>
-    &lt;label&gt;
+    &lt;label class&#x3D;label&gt;
       &lt;span&gt;Button&lt;/span&gt;
-      &lt;input type&#x3D;button value&#x3D;Button&gt;
+      &lt;input class&#x3D;input type&#x3D;button value&#x3D;Button&gt;
     &lt;/label&gt;
     
-    &lt;label&gt;
+    &lt;label class&#x3D;label&gt;
       &lt;span&gt;Checkbox&lt;/span&gt;
-      &lt;input type&#x3D;checkbox&gt;
+      &lt;input class&#x3D;input type&#x3D;checkbox&gt;
     &lt;/label&gt;
     
-    &lt;label&gt;
+    &lt;label class&#x3D;label&gt;
       &lt;span&gt;Color&lt;/span&gt;
-      &lt;input type&#x3D;color&gt;
+      &lt;input class&#x3D;input type&#x3D;color&gt;
     &lt;/label&gt;
     
-    &lt;label&gt;
+    &lt;label class&#x3D;label&gt;
       &lt;span&gt;Date&lt;/span&gt;
-      &lt;input type&#x3D;date&gt;
+      &lt;input class&#x3D;input type&#x3D;date&gt;
     &lt;/label&gt;
     
-    &lt;label&gt;
+    &lt;label class&#x3D;label&gt;
       &lt;span&gt;Datetime&lt;/span&gt;
-      &lt;input type&#x3D;datetime&gt;
+      &lt;input class&#x3D;input type&#x3D;datetime&gt;
     &lt;/label&gt;
     
-    &lt;label&gt;
+    &lt;label class&#x3D;label&gt;
       &lt;span&gt;Datetime Local&lt;/span&gt;
-      &lt;input type&#x3D;datetime-local&gt;
+      &lt;input class&#x3D;input type&#x3D;datetime-local&gt;
     &lt;/label&gt;
     
-    &lt;label&gt;
+    &lt;label class&#x3D;label&gt;
       &lt;span&gt;Email&lt;/span&gt;
-      &lt;input type&#x3D;email value&#x3D;name@domain.com&gt;
+      &lt;input class&#x3D;input type&#x3D;email value&#x3D;name@domain.com&gt;
     &lt;/label&gt;
     
-    &lt;label&gt;
+    &lt;label class&#x3D;label&gt;
       &lt;span&gt;File&lt;/span&gt;
-      &lt;input type&#x3D;file&gt;
+      &lt;input class&#x3D;input type&#x3D;file&gt;
     &lt;/label&gt;
     
-    &lt;label&gt;
+    &lt;label class&#x3D;label&gt;
       &lt;span&gt;Hidden&lt;/span&gt;
-      &lt;input type&#x3D;hidden value&#x3D;&#x27;This input is hidden&#x27;&gt;
+      &lt;input class&#x3D;input type&#x3D;hidden value&#x3D;&#x27;This input is hidden&#x27;&gt;
     &lt;/label&gt;
     
-    &lt;label&gt;
+    &lt;label class&#x3D;label&gt;
       &lt;span&gt;Image&lt;/span&gt;
-      &lt;input type&#x3D;image src&#x3D;../img/tunnel.svg&gt;
+      &lt;input class&#x3D;input type&#x3D;image src&#x3D;img/tunnel.svg&gt;
     &lt;/label&gt;
     
-    &lt;label&gt;
+    &lt;label class&#x3D;label&gt;
       &lt;span&gt;Month&lt;/span&gt;
-      &lt;input type&#x3D;month&gt;
+      &lt;input class&#x3D;input type&#x3D;month&gt;
     &lt;/label&gt;
     
-    &lt;label&gt;
+    &lt;label class&#x3D;label&gt;
       &lt;span&gt;Number&lt;/span&gt;
-      &lt;input type&#x3D;number value&#x3D;1000&gt;
+      &lt;input class&#x3D;input type&#x3D;number value&#x3D;1000&gt;
     &lt;/label&gt;
     
-    &lt;label&gt;
+    &lt;label class&#x3D;label&gt;
       &lt;span&gt;Password&lt;/span&gt;
-      &lt;input type&#x3D;password value&#x3D;password&gt;
+      &lt;input class&#x3D;input type&#x3D;password value&#x3D;password&gt;
     &lt;/label&gt;
     
     &lt;fieldset&gt;
-      &lt;label&gt;
+      &lt;label class&#x3D;label&gt;
         &lt;span&gt;Radio 1&lt;/span&gt;
-        &lt;input type&#x3D;radio name&#x3D;radio&gt;
+        &lt;input class&#x3D;input type&#x3D;radio name&#x3D;radio&gt;
       &lt;/label&gt;
-      &lt;label&gt;
+      &lt;label class&#x3D;label&gt;
         &lt;span&gt;Radio 2&lt;/span&gt;
-        &lt;input type&#x3D;radio name&#x3D;radio&gt;
+        &lt;input class&#x3D;input type&#x3D;radio name&#x3D;radio&gt;
       &lt;/label&gt;
     &lt;/fieldset&gt;
     
-    &lt;label&gt;
+    &lt;label class&#x3D;label&gt;
       &lt;span&gt;Range&lt;/span&gt;
-      &lt;input type&#x3D;range&gt;
+      &lt;input class&#x3D;input type&#x3D;range&gt;
     &lt;/label&gt;
     
-    &lt;label&gt;
+    &lt;label class&#x3D;label&gt;
       &lt;span&gt;Reset&lt;/span&gt;
-      &lt;input type&#x3D;reset value&#x3D;Reset&gt;
+      &lt;input class&#x3D;input type&#x3D;reset value&#x3D;Reset&gt;
     &lt;/label&gt;
     
-    &lt;label&gt;
+    &lt;label class&#x3D;label&gt;
       &lt;span&gt;Search&lt;/span&gt;
-      &lt;input type&#x3D;search value&#x3D;Search&gt;
+      &lt;input class&#x3D;input type&#x3D;search value&#x3D;Search&gt;
     &lt;/label&gt;
     
-    &lt;label&gt;
+    &lt;label class&#x3D;label&gt;
       &lt;span&gt;Submit&lt;/span&gt;
-      &lt;input type&#x3D;submit value&#x3D;Submit&gt;
+      &lt;input class&#x3D;input type&#x3D;submit value&#x3D;Submit&gt;
     &lt;/label&gt;
     
-    &lt;label&gt;
+    &lt;label class&#x3D;label&gt;
       &lt;span&gt;Telephone&lt;/span&gt;
-      &lt;input type&#x3D;tel value&#x3D;&#x27;A telephone input&#x27;&gt;
+      &lt;input class&#x3D;input type&#x3D;tel value&#x3D;&#x27;A telephone input&#x27;&gt;
     &lt;/label&gt;
     
-    &lt;label&gt;
+    &lt;label class&#x3D;label&gt;
       &lt;span&gt;Text&lt;/span&gt;
-      &lt;input type&#x3D;text value&#x3D;&#x27;A text input&#x27;&gt;
+      &lt;input class&#x3D;input type&#x3D;text value&#x3D;&#x27;A text input&#x27;&gt;
     &lt;/label&gt;
     
-    &lt;label&gt;
+    &lt;label class&#x3D;label&gt;
       &lt;span&gt;Time&lt;/span&gt;
-      &lt;input type&#x3D;time&gt;
+      &lt;input class&#x3D;input type&#x3D;time&gt;
     &lt;/label&gt;
     
-    &lt;label&gt;
+    &lt;label class&#x3D;label&gt;
       &lt;span&gt;URL&lt;/span&gt;
-      &lt;input type&#x3D;url&gt;
+      &lt;input class&#x3D;input type&#x3D;url&gt;
     &lt;/label&gt;
     
-    &lt;label&gt;
+    &lt;label class&#x3D;label&gt;
       &lt;span&gt;Week&lt;/span&gt;
-      &lt;input type&#x3D;week&gt;
+      &lt;input class&#x3D;input type&#x3D;week&gt;
     &lt;/label&gt;
     </code></pre>
           </div>
     
           <div>
             <h1 class=header-minor>Live Example</h1>
-            <div class=rendered><label>
+            <div class=rendered><label class=label>
       <span>Button</span>
-      <input type=button value=Button>
+      <input class=input type=button value=Button>
     </label>
     
-    <label>
+    <label class=label>
       <span>Checkbox</span>
-      <input type=checkbox>
+      <input class=input type=checkbox>
     </label>
     
-    <label>
+    <label class=label>
       <span>Color</span>
-      <input type=color>
+      <input class=input type=color>
     </label>
     
-    <label>
+    <label class=label>
       <span>Date</span>
-      <input type=date>
+      <input class=input type=date>
     </label>
     
-    <label>
+    <label class=label>
       <span>Datetime</span>
-      <input type=datetime>
+      <input class=input type=datetime>
     </label>
     
-    <label>
+    <label class=label>
       <span>Datetime Local</span>
-      <input type=datetime-local>
+      <input class=input type=datetime-local>
     </label>
     
-    <label>
+    <label class=label>
       <span>Email</span>
-      <input type=email value=name@domain.com>
+      <input class=input type=email value=name@domain.com>
     </label>
     
-    <label>
+    <label class=label>
       <span>File</span>
-      <input type=file>
+      <input class=input type=file>
     </label>
     
-    <label>
+    <label class=label>
       <span>Hidden</span>
-      <input type=hidden value='This input is hidden'>
+      <input class=input type=hidden value='This input is hidden'>
     </label>
     
-    <label>
+    <label class=label>
       <span>Image</span>
-      <input type=image src=../img/tunnel.svg>
+      <input class=input type=image src=img/tunnel.svg>
     </label>
     
-    <label>
+    <label class=label>
       <span>Month</span>
-      <input type=month>
+      <input class=input type=month>
     </label>
     
-    <label>
+    <label class=label>
       <span>Number</span>
-      <input type=number value=1000>
+      <input class=input type=number value=1000>
     </label>
     
-    <label>
+    <label class=label>
       <span>Password</span>
-      <input type=password value=password>
+      <input class=input type=password value=password>
     </label>
     
     <fieldset>
-      <label>
+      <label class=label>
         <span>Radio 1</span>
-        <input type=radio name=radio>
+        <input class=input type=radio name=radio>
       </label>
-      <label>
+      <label class=label>
         <span>Radio 2</span>
-        <input type=radio name=radio>
+        <input class=input type=radio name=radio>
       </label>
     </fieldset>
     
-    <label>
+    <label class=label>
       <span>Range</span>
-      <input type=range>
+      <input class=input type=range>
     </label>
     
-    <label>
+    <label class=label>
       <span>Reset</span>
-      <input type=reset value=Reset>
+      <input class=input type=reset value=Reset>
     </label>
     
-    <label>
+    <label class=label>
       <span>Search</span>
-      <input type=search value=Search>
+      <input class=input type=search value=Search>
     </label>
     
-    <label>
+    <label class=label>
       <span>Submit</span>
-      <input type=submit value=Submit>
+      <input class=input type=submit value=Submit>
     </label>
     
-    <label>
+    <label class=label>
       <span>Telephone</span>
-      <input type=tel value='A telephone input'>
+      <input class=input type=tel value='A telephone input'>
     </label>
     
-    <label>
+    <label class=label>
       <span>Text</span>
-      <input type=text value='A text input'>
+      <input class=input type=text value='A text input'>
     </label>
     
-    <label>
+    <label class=label>
       <span>Time</span>
-      <input type=time>
+      <input class=input type=time>
     </label>
     
-    <label>
+    <label class=label>
       <span>URL</span>
-      <input type=url>
+      <input class=input type=url>
     </label>
     
-    <label>
+    <label class=label>
       <span>Week</span>
-      <input type=week>
+      <input class=input type=week>
     </label>
     </div>
           </div>
     
         </section>
-        <section id=label class='pattern label-example'>
+        <section id=label-pattern class='pattern label-example'>
     
           <header>
             <h1 class='pattern-title header-subsection'><code>label</code></h1>
@@ -873,34 +889,34 @@
           <div>
             <h1 class=header-minor>Example Markup</h1>
             <pre><code class=markup>
-    &lt;label&gt;
+    &lt;label class&#x3D;label&gt;
       &lt;span&gt;Label with &lt;code&gt;&amp;lt;span&amp;gt;&lt;/code&gt;&lt;/span&gt;
-      &lt;input type&#x3D;text&gt;
+      &lt;input class&#x3D;input type&#x3D;text&gt;
     &lt;/label&gt;
     
-    &lt;label&gt;
+    &lt;label class&#x3D;label&gt;
       Label without &lt;code&gt;&amp;lt;span&amp;gt;&lt;/code&gt;
-      &lt;input type&#x3D;text&gt;
+      &lt;input class&#x3D;input type&#x3D;text&gt;
     &lt;/label&gt;
     </code></pre>
           </div>
     
           <div>
             <h1 class=header-minor>Live Example</h1>
-            <div class=rendered><label>
+            <div class=rendered><label class=label>
       <span>Label with <code>&lt;span&gt;</code></span>
-      <input type=text>
+      <input class=input type=text>
     </label>
     
-    <label>
+    <label class=label>
       Label without <code>&lt;span&gt;</code>
-      <input type=text>
+      <input class=input type=text>
     </label>
     </div>
           </div>
     
         </section>
-        <section id=link class='pattern link-example'>
+        <section id=link-pattern class='pattern link-example'>
     
           <header>
             <h1 class='pattern-title header-subsection'><code>link</code></h1>
@@ -911,15 +927,15 @@
             <h1 class=header-minor>Example Markup</h1>
             <pre><code class=markup>
     &lt;a href&#x3D;#&gt;
-      &lt;p&gt;This is a &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; tag wrapped in an &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt; tag. It does not get link styling.&lt;/p&gt;
+      &lt;p&gt;This is a &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; tag wrapped in an &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt; tag. It does not have link styling.&lt;/p&gt;
     &lt;/a&gt;
     
     &lt;p&gt;
-      &lt;a href&#x3D;#&gt;This is an &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt; tag inside of a &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; tag. It gets link styling.&lt;/a&gt;
+      &lt;a class&#x3D;link href&#x3D;#&gt;This is an &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt; tag inside of a &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; tag. It gets link styling.&lt;/a&gt;
     &lt;/p&gt;
     
     &lt;p&gt;
-      &lt;a href&#x3D;&quot;#&quot;&gt;This&lt;/a&gt; shows a link around a single word, inside a &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; tag.
+      &lt;a class&#x3D;link href&#x3D;&quot;#&quot;&gt;This&lt;/a&gt; shows a link around a single word, inside a &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; tag.
     &lt;/p&gt;
     </code></pre>
           </div>
@@ -927,21 +943,21 @@
           <div>
             <h1 class=header-minor>Live Example</h1>
             <div class=rendered><a href=#>
-      <p>This is a <code>&lt;p&gt;</code> tag wrapped in an <code>&lt;a&gt;</code> tag. It does not get link styling.</p>
+      <p>This is a <code>&lt;p&gt;</code> tag wrapped in an <code>&lt;a&gt;</code> tag. It does not have link styling.</p>
     </a>
     
     <p>
-      <a href=#>This is an <code>&lt;a&gt;</code> tag inside of a <code>&lt;p&gt;</code> tag. It gets link styling.</a>
+      <a class=link href=#>This is an <code>&lt;a&gt;</code> tag inside of a <code>&lt;p&gt;</code> tag. It gets link styling.</a>
     </p>
     
     <p>
-      <a href="#">This</a> shows a link around a single word, inside a <code>&lt;p&gt;</code> tag.
+      <a class=link href="#">This</a> shows a link around a single word, inside a <code>&lt;p&gt;</code> tag.
     </p>
     </div>
           </div>
     
         </section>
-        <section id=link-white class='pattern link-white-example'>
+        <section id=link-white-pattern class='pattern link-white-example'>
     
           <header>
             <h1 class='pattern-title header-subsection'><code>link-white</code></h1>
@@ -966,7 +982,7 @@
           </div>
     
         </section>
-        <section id=nav class='pattern nav-example'>
+        <section id=nav-pattern class='pattern nav-example'>
     
           <header>
             <h1 class='pattern-title header-subsection'><code>nav</code></h1>
@@ -999,7 +1015,7 @@
           </div>
     
         </section>
-        <section id=numbered class='pattern numbered-example'>
+        <section id=numbered-pattern class='pattern numbered-example'>
     
           <header>
             <h1 class='pattern-title header-subsection'><code>numbered</code></h1>
@@ -1028,7 +1044,7 @@
           </div>
     
         </section>
-        <section id=page-title class='pattern page-title-example'>
+        <section id=page-title-pattern class='pattern page-title-example'>
     
           <header>
             <h1 class='pattern-title header-subsection'><code>page-title</code></h1>
@@ -1053,7 +1069,7 @@
           </div>
     
         </section>
-        <section id=reference-list class='pattern reference-list-example'>
+        <section id=reference-list-pattern class='pattern reference-list-example'>
     
           <header>
             <h1 class='pattern-title header-subsection'><code>reference-list</code></h1>
@@ -1110,7 +1126,7 @@
           </div>
     
         </section>
-        <section id=select class='pattern select-example'>
+        <section id=select-pattern class='pattern select-example'>
     
           <header>
             <h1 class='pattern-title header-subsection'><code>select</code></h1>
@@ -1120,7 +1136,7 @@
           <div>
             <h1 class=header-minor>Example Markup</h1>
             <pre><code class=markup>
-    &lt;select&gt;
+    &lt;select class&#x3D;select&gt;
       &lt;option&gt;Option 1&lt;/option&gt;
       &lt;option&gt;Option 2&lt;/option&gt;
       &lt;option&gt;Option 3&lt;/option&gt;
@@ -1130,7 +1146,7 @@
     
           <div>
             <h1 class=header-minor>Live Example</h1>
-            <div class=rendered><select>
+            <div class=rendered><select class=select>
       <option>Option 1</option>
       <option>Option 2</option>
       <option>Option 3</option>
@@ -1139,7 +1155,7 @@
           </div>
     
         </section>
-        <section id=strong class='pattern strong-example'>
+        <section id=strong-pattern class='pattern strong-example'>
     
           <header>
             <h1 class='pattern-title header-subsection'><code>strong</code></h1>
@@ -1150,7 +1166,7 @@
             <h1 class=header-minor>Example Markup</h1>
             <pre><code class=markup>
     &lt;p&gt;
-      This is a paragraph with some &lt;strong&gt;strongly emphasized&lt;/strong&gt; text.
+      This is a paragraph with some &lt;strong class&#x3D;strong&gt;strongly emphasized&lt;/strong&gt; text.
     &lt;/p&gt;
     </code></pre>
           </div>
@@ -1158,13 +1174,13 @@
           <div>
             <h1 class=header-minor>Live Example</h1>
             <div class=rendered><p>
-      This is a paragraph with some <strong>strongly emphasized</strong> text.
+      This is a paragraph with some <strong class=strong>strongly emphasized</strong> text.
     </p>
     </div>
           </div>
     
         </section>
-        <section id=textarea class='pattern textarea-example'>
+        <section id=textarea-pattern class='pattern textarea-example'>
     
           <header>
             <h1 class='pattern-title header-subsection'><code>textarea</code></h1>
@@ -1174,18 +1190,18 @@
           <div>
             <h1 class=header-minor>Example Markup</h1>
             <pre><code class=markup>
-    &lt;textarea placeholder&#x3D;&#x27;This is a textarea&#x27;&gt;&lt;/textarea&gt;
+    &lt;textarea class&#x3D;textarea placeholder&#x3D;&#x27;This is a textarea&#x27;&gt;&lt;/textarea&gt;
     </code></pre>
           </div>
     
           <div>
             <h1 class=header-minor>Live Example</h1>
-            <div class=rendered><textarea placeholder='This is a textarea'></textarea>
+            <div class=rendered><textarea class=textarea placeholder='This is a textarea'></textarea>
     </div>
           </div>
     
         </section>
-        <section id=tooltip class='pattern tooltip-example'>
+        <section id=tooltip-pattern class='pattern tooltip-example'>
     
           <header>
             <h1 class='pattern-title header-subsection'><code>tooltip</code></h1>
@@ -1223,6 +1239,7 @@
     
     </section>
 
+    <script src=js/patterns.js></script>
     <script src=js/highlight.js></script>
 
     <script>
