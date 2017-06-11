@@ -3,7 +3,7 @@
     "patterns/index.js"
   ],
   "events": {
-    "restart": "npm run less & npm run patterns"
+    "restart": "yarn run build"
   },
   "exec": "node ../utilities/node/server.js",
   "ext": "js json less"

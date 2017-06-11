@@ -11,17 +11,18 @@
   },
   "repository": "https://github.com/digitallinguistics/styles.git",
   "scripts": {
-    "build": "npm run less & npm run patterns",
-    "less": "node build/less.js",
-    "patterns": "lessc patterns/patterns.less patterns/patterns.css & browserify patterns/polyfill.js -o patterns/index.js -t babelify",
-    "store": "node build/store.js"
+    "build": "webpack",
+    "upload": "node build/upload.js"
+  },
+  "private": true,
+  "dependencies": {
+    "flexbox-reset": "^2.0.0"
   },
   "devDependencies": {
-    "babel-polyfill": "^6.23.0",
-    "babel-preset-env": "^1.2.2",
-    "babelify": "^7.3.0",
-    "flexbox-reset": "^2.0.0",
-    "less": "^2.7.2"
-  },
-  "private": true
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.0.0",
+    "babel-preset-env": "^1.5.2",
+    "less": "^2.7.2",
+    "webpack": "^2.6.1"
+  }
 }

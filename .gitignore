@@ -35,4 +35,5 @@ node_modules
 # Custom
 .jshintrc
 credentials.js
+nodemon.json
 Thumbs.db
