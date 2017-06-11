@@ -2,6 +2,7 @@
 <html lang=en>
 
   <head>
+
     <meta charset=utf-8>
     <title>DLx Pattern Library</title>
     <meta name=author content='Daniel W. Hieber'>
@@ -35,7 +36,10 @@
 
     <h1 class=page-title>DLx Pattern Library</h1>
 
+    <p>See the <a href=https://github.com/digitallinguistics/styles#readme>GitHub repository</a> for instructions on how to use DLx styles in your code.</p>
+
     <nav>
+      <h2 class=header-section>Contents</h2>
       <ul class=bulleted>
         <li><a class=link href=#variables>Variables</a></li>
         <li><a class=link href=#typography>Typography</a></li>
@@ -46,7 +50,7 @@
 
     <section id=variables>
     
-      <h1 class=section-header>Variables</h2>
+      <h1 class=header-section>Variables</h2>
     
       <p>The following LESS variables are available:</p>
     
@@ -220,13 +224,13 @@
 
     <section id=patterns>
     
-      <h1 class=section-header>Patterns</h1>
+      <h1 class=header-section>Patterns</h1>
     
         <section id=abbr-pattern class='pattern abbr-example'>
     
           <header>
             <h1 class='pattern-title header-subsection'><code>abbr</code></h1>
-            <p class=pattern-description>Default styling for &lt;code&gt;&amp;lt;abbr&amp;gt;&lt;/code&gt; tags, which should be used on the first mention of an abbreviation. It is often accompanied by a &lt;code&gt;&amp;lt;dfn&amp;gt;&lt;/code&gt; tag in the same paragraph.</p>
+            <p class=pattern-description>Default styling for <code>&lt;abbr&gt;</code> tags, which should be used on the first mention of an abbreviation. It is often accompanied by a <code>&lt;dfn&gt;</code> tag in the same paragraph.</p>
           </header>
     
           <div>
@@ -251,7 +255,7 @@
     
           <header>
             <h1 class='pattern-title header-subsection'><code>bulleted</code></h1>
-            <p class=pattern-description>In DLx projects, lists are often used semantically rather than stylistically, e.g. a phrase includes a list of words. As such, lists have no styling by default, and list styling needs to be explicitly set with the &lt;code&gt;.bulleted&lt;/code&gt; or &lt;code&gt;.numbered&lt;/code&gt; styles.</p>
+            <p class=pattern-description>In DLx projects, lists are often used semantically rather than stylistically, e.g. a phrase includes a list of words. As such, lists have no styling by default, and list styling needs to be explicitly set with the <code>.bulleted</code> or <code>.numbered</code> styles.</p>
           </header>
     
           <div>
@@ -309,7 +313,7 @@
     
           <header>
             <h1 class='pattern-title header-subsection'><code>cite</code></h1>
-            <p class=pattern-description>The &lt;code&gt;&amp;lt;cite&amp;gt;&lt;/code&gt; element is used for titles of publications, etc.</p>
+            <p class=pattern-description>The <code>&lt;cite&gt;</code> element is used for titles of publications, etc.</p>
           </header>
     
           <div>
@@ -334,7 +338,7 @@
     
           <header>
             <h1 class='pattern-title header-subsection'><code>code</code></h1>
-            <p class=pattern-description>The &lt;code&gt;&amp;lt;code&amp;gt;&lt;/code&gt; element is used for both inline and standalone code blocks.</p>
+            <p class=pattern-description>The <code>&lt;code&gt;</code> element is used for both inline and standalone code blocks.</p>
           </header>
     
           <div>
@@ -381,7 +385,7 @@
     
           <header>
             <h1 class='pattern-title header-subsection'><code>dfn</code></h1>
-            <p class=pattern-description>A &lt;code&gt;&amp;lt;dfn&amp;gt;&lt;/code&gt; tag is used the first time an element is defined. The definition of the term should be given in the surrounding text.</p>
+            <p class=pattern-description>A <code>&lt;dfn&gt;</code> tag is used the first time an element is defined. The definition of the term should be given in the surrounding text.</p>
           </header>
     
           <div>
@@ -431,7 +435,7 @@
     
           <header>
             <h1 class='pattern-title header-subsection'><code>field</code></h1>
-            <p class=pattern-description>Styles an element as a form field. This style is automatically applied to various form elements, such as the &lt;code&gt;&amp;lt;input type&#x3D;text&amp;gt;&lt;/code&gt; element.</p>
+            <p class=pattern-description>Styles an element as a form field. This style is automatically applied to various form elements, such as the <code>&lt;input type=text&gt;</code> element.</p>
           </header>
     
           <div>
@@ -456,7 +460,7 @@
     
           <header>
             <h1 class='pattern-title header-subsection'><code>fieldset</code></h1>
-            <p class=pattern-description>Used for grouping inputs together under a heading (&lt;code&gt;&amp;lt;legend&amp;gt;&lt;/code&gt;). Remember that flexbox does not work well with &lt;code&gt;&amp;lt;fieldset&amp;gt;&lt;/code&gt;, so you may need to wrap the items inside &lt;code&gt;&amp;lt;fieldset&amp;gt;&lt;/code&gt; in a &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;.</p>
+            <p class=pattern-description>Used for grouping inputs together under a heading (<code>&lt;legend&gt;</code>). Remember that flexbox does not work well with <code>&lt;fieldset&gt;</code>, so you may need to wrap the items inside <code>&lt;fieldset&gt;</code> in a <code>&lt;div&gt;</code>.</p>
           </header>
     
           <div>
@@ -883,7 +887,7 @@
     
           <header>
             <h1 class='pattern-title header-subsection'><code>label</code></h1>
-            <p class=pattern-description>Label elements. If the text inside the element is wrapped in a &lt;code&gt;&amp;lt;span&amp;gt;&lt;/code&gt; element, that text will be styled as well.</p>
+            <p class=pattern-description>Label elements. If the text inside the element is wrapped in a <code>&lt;span&gt;</code> element, that text will be styled as well.</p>
           </header>
     
           <div>
@@ -920,7 +924,7 @@
     
           <header>
             <h1 class='pattern-title header-subsection'><code>link</code></h1>
-            <p class=pattern-description>The &lt;code&gt;.link&lt;/code&gt; class is not automatically applied to anchor elements (&lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt;). It is, however, automatically applied to any anchor element that sits inside another inline element, such as &lt;code&gt;&amp;lt;abbr&amp;gt;&lt;/code&gt; or &lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt;, and to any element that sits inside an element whose content is usually inline, such as &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; or &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt;.</p>
+            <p class=pattern-description>The <code>.link</code> class is not automatically applied to anchor elements (<code>&lt;a&gt;</code>). It is, however, automatically applied to any anchor element that sits inside another inline element, such as <code>&lt;abbr&gt;</code> or <code>&lt;strong&gt;</code>, and to any element that sits inside an element whose content is usually inline, such as <code>&lt;p&gt;</code> or <code>&lt;h1&gt;</code>.</p>
           </header>
     
           <div>
@@ -1019,7 +1023,7 @@
     
           <header>
             <h1 class='pattern-title header-subsection'><code>numbered</code></h1>
-            <p class=pattern-description>For numbered lists. Because DLx often uses ordered lists where list styling is not wanted, the &lt;code&gt;.numbered&lt;/code&gt; class is not automatically applied to &lt;code&gt;&amp;lt;ol&amp;gt;&lt;/code&gt; elements, and must be applied manually.</p>
+            <p class=pattern-description>For numbered lists. Because DLx often uses ordered lists where list styling is not wanted, the <code>.numbered</code> class is not automatically applied to <code>&lt;ol&gt;</code> elements, and must be applied manually.</p>
           </header>
     
           <div>
@@ -1073,7 +1077,7 @@
     
           <header>
             <h1 class='pattern-title header-subsection'><code>reference-list</code></h1>
-            <p class=pattern-description>Styling for a bibliographic reference list. Note that each reference should be wrapped in a &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; tag inside of a &lt;code&gt;&amp;lt;li&amp;gt;&lt;/code&gt; tag.</p>
+            <p class=pattern-description>Styling for a bibliographic reference list. Note that each reference should be wrapped in a <code>&lt;p&gt;</code> tag inside of a <code>&lt;li&gt;</code> tag.</p>
           </header>
     
           <div>
@@ -1130,7 +1134,7 @@
     
           <header>
             <h1 class='pattern-title header-subsection'><code>select</code></h1>
-            <p class=pattern-description>Default styling for &lt;code&gt;&amp;lt;select&amp;gt;&lt;/code&gt; elements.</p>
+            <p class=pattern-description>Default styling for <code>&lt;select&gt;</code> elements.</p>
           </header>
     
           <div>
@@ -1159,7 +1163,7 @@
     
           <header>
             <h1 class='pattern-title header-subsection'><code>strong</code></h1>
-            <p class=pattern-description>Used to draw the reader&#x27;s attention to a term or concept.</p>
+            <p class=pattern-description>Used to draw the reader's attention to a term or concept.</p>
           </header>
     
           <div>
@@ -1184,7 +1188,7 @@
     
           <header>
             <h1 class='pattern-title header-subsection'><code>textarea</code></h1>
-            <p class=pattern-description>Uses the &lt;code&gt;&amp;lt;.field&amp;gt;&lt;/code&gt; style</p>
+            <p class=pattern-description>Uses the <code>&lt;.field&gt;</code> style</p>
           </header>
     
           <div>
@@ -1205,7 +1209,7 @@
     
           <header>
             <h1 class='pattern-title header-subsection'><code>tooltip</code></h1>
-            <p class=pattern-description>Adding the &lt;code&gt;.tooltip&lt;/code&gt; class to any element will make a tooltip display on hover or when the element is focused. The content of the tooltip is contained in the &lt;code&gt;title&lt;/code&gt; attribute for that element. Note that tooltips do not work on &lt;code&gt;&amp;lt;input&amp;gt;&lt;/code&gt; elements - place the &lt;code&gt;.tooltip&lt;/code&gt; class on the &lt;code&gt;&amp;lt;label&amp;gt;&lt;/code&gt; instead.</p>
+            <p class=pattern-description>Adding the <code>.tooltip</code> class to any element will make a tooltip display on hover or when the element is focused. The content of the tooltip is contained in the <code>title</code> attribute for that element. Note that tooltips do not work on <code>&lt;input&gt;</code> elements - place the <code>.tooltip</code> class on the <code>&lt;label&gt;</code> instead.</p>
           </header>
     
           <div>
