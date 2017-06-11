@@ -11,7 +11,7 @@
   },
   "repository": "https://github.com/digitallinguistics/styles.git",
   "scripts": {
-    "build": "webpack",
+    "build": "node build/compile.js",
     "upload": "node build/upload.js"
   },
   "private": true,

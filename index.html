@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html lang=en>
+
+  <head>
+    <meta charset=utf-8>
+    <title>DLx Pattern Library</title>
+    <meta name=author content='Daniel W. Hieber'>
+    <meta name=description content='The Digital Linguistics (DLx) pattern library'>
+    <meta name=keywords content='digital linguistics, dlx, linguistics, language, documentation, description, revitalization'>
+    <meta name=viewport content='width=device-width, initial-scale=1'>
+
+    <link href=img/wugbot.ico rel='shortcut icon' type=image/x-icon>
+
+    <link rel=stylesheet href=css/patterns.css>
+    <link rel=stylesheet href=css/atom-one-light.css>
+
+  </head>
+
+  <body>
+
+    <label>
+
+      <span>Jump to …</span>
+
+      <select id=nav>
+        <option value=variables>Variables</option>
+        <option value=colors>Colors</option>
+        <option value=typography>Typography</option>
+        <option value=icons>Icons</option>
+        <option value=patterns>Patterns</option>
+        <option value=abbr>abbr</option><option value=bulleted>bulleted</option><option value=button>button</option><option value=cite>cite</option><option value=code>code</option><option value=dfn>dfn</option><option value=em>em</option><option value=field>field</option><option value=fieldset>fieldset</option><option value=hanging>hanging</option><option value=header-minor>header-minor</option><option value=header-section>header-section</option><option value=header-subsection>header-subsection</option><option value=header-subsubsection>header-subsubsection</option><option value=input>input</option><option value=label>label</option><option value=link>link</option><option value=link-white>link-white</option><option value=nav>nav</option><option value=numbered>numbered</option><option value=page-title>page-title</option><option value=reference-list>reference-list</option><option value=select>select</option><option value=strong>strong</option><option value=textarea>textarea</option><option value=tooltip>tooltip</option>
+      </select>
+
+    </label>
+
+    <h1 class=page-title>DLx Pattern Library</h1>
+
+    <nav>
+      <ul class=bulleted>
+        <li><a class=link href=#variables>Variables</a></li>
+        <li><a class=link href=#colors>Colors</a></li>
+        <li><a class=link href=#typography>Typography</a></li>
+        <li><a class=link href=#patterns>Patterns</a></li>
+      </ul>
+    </nav>
+
+    <section id=variables>
+    
+      <h1 class=section-header>Variables</h2>
+    
+      <p>The following LESS variables are available:</p>
+    
+      <ul class=bulleted>
+        <li><p><code>@cdn</code>: <code>https://cdn.digitallinguistics.io</code></p></li>
+      </ul>
+    
+    </section>
+
+    <section id=colors>
+    
+      <h1 class=header-section>Colors</h2>
+    
+      <p>The following colors are available as LESS variables and classes. Click on the color to copy it to the clipboard. To set the font color, use <code>.{color}</code> (e.g. <code>.wugblue</code>). To set the background color, use <code>.{color}-background</code>, (e.g. <code>.wugblue-background</code>).</p>
+    
+        <section>
+            <div class=color>
+              <span><code>@wugblue</code><p>(The color of the wug logo.)</p></span>
+              <span><code class='swatch wugblue-background'>#6FD1F6</code></span></div>
+        </section>
+        <section>
+            <div class=color>
+              <span><code>@verydarkblue</code></span>
+              <span><code class='swatch verydarkblue-background'>#017CF2</code></span></div>
+            <div class=color>
+              <span><code>@darkblue</code></span>
+              <span><code class='swatch darkblue-background'>#0F89FF</code></span></div>
+            <div class=color>
+              <span><code>@blue</code></span>
+              <span><code class='swatch blue-background'>#3399FF</code></span></div>
+            <div class=color>
+              <span><code>@lightblue</code></span>
+              <span><code class='swatch lightblue-background'>#5CAFFF</code></span></div>
+            <div class=color>
+              <span><code>@verylightblue</code></span>
+              <span><code class='swatch verylightblue-background'>#88C4FE</code></span></div>
+        </section>
+        <section>
+            <div class=color>
+              <span><code>@gray</code></span>
+              <span><code class='swatch gray-background'>#F5F2F0</code></span></div>
+        </section>
+        <section>
+            <div class=color>
+              <span><code>@verylightgreen</code></span>
+              <span><code class='swatch verylightgreen-background'>#7FFED1</code></span></div>
+            <div class=color>
+              <span><code>@lightgreen</code></span>
+              <span><code class='swatch lightgreen-background'>#4FFFC1</code></span></div>
+            <div class=color>
+              <span><code>@green</code></span>
+              <span><code class='swatch green-background'>#23FFB1</code></span></div>
+            <div class=color>
+              <span><code>@darkgreen</code></span>
+              <span><code class='swatch darkgreen-background'>#00FFA5</code></span></div>
+            <div class=color>
+              <span><code>@verydarkgreen</code></span>
+              <span><code class='swatch verydarkgreen-background'>#00F39D</code></span></div>
+            <div class=color>
+              <span><code>@superdarkgreen</code></span>
+              <span><code class='swatch superdarkgreen-background'>#00AB6E</code></span></div>
+        </section>
+        <section>
+            <div class=color>
+              <span><code>@verylightorange</code></span>
+              <span><code class='swatch verylightorange-background'>#FFA97F</code></span></div>
+            <div class=color>
+              <span><code>@lightorange</code></span>
+              <span><code class='swatch lightorange-background'>#FF884F</code></span></div>
+            <div class=color>
+              <span><code>@orange</code></span>
+              <span><code class='swatch orange-background'>#FF6A23</code></span></div>
+            <div class=color>
+              <span><code>@darkorange</code></span>
+              <span><code class='swatch darkorange-background'>#FF5300</code></span></div>
+        </section>
+        <section>
+            <div class=color>
+              <span><code>@verylightpurple</code></span>
+              <span><code class='swatch verylightpurple-background'>#9791FE</code></span></div>
+            <div class=color>
+              <span><code>@lightpurple</code></span>
+              <span><code class='swatch lightpurple-background'>#7068FF</code></span></div>
+            <div class=color>
+              <span><code>@purple</code></span>
+              <span><code class='swatch purple-background'>#4D42FF</code></span></div>
+            <div class=color>
+              <span><code>@darkpurple</code></span>
+              <span><code class='swatch darkpurple-background'>#2A1DFF</code></span></div>
+            <div class=color>
+              <span><code>@verydarkpurple</code></span>
+              <span><code class='swatch verydarkpurple-background'>#1002F4</code></span></div>
+        </section>
+        <section>
+            <div class=color>
+              <span><code>@verylightred</code></span>
+              <span><code class='swatch verylightred-background'>#FF9797</code></span></div>
+            <div class=color>
+              <span><code>@lightred</code></span>
+              <span><code class='swatch lightred-background'>#E96363</code></span></div>
+            <div class=color>
+              <span><code>@red</code></span>
+              <span><code class='swatch red-background'>#CA3C3C</code></span></div>
+            <div class=color>
+              <span><code>@darkred</code></span>
+              <span><code class='swatch darkred-background'>#AA1F1F</code></span></div>
+            <div class=color>
+              <span><code>@verydarkred</code></span>
+              <span><code class='swatch verydarkred-background'>#830505</code></span></div>
+        </section>
+    
+      <section>
+    
+        <div class=color>
+          <span><code>@lightblue-transparent</code></span>
+          <span><code class='swatch lightblue-transparent'>rgba(92, 175, 255, 0.2)</code></span>
+        </div>
+    
+        <div class=color>
+          <span><code>@verylightblue-transparent</code></span>
+          <span><code class='swatch verylightblue-transparent'>rgba(136, 196, 254, 0.2)</code></span>
+        </div>
+    
+      </section>
+    
+    </section>
+
+    <section id=icons>
+    
+      <h1 class=header-section>Icons</h1>
+    
+      <p>Each of the following icons is available in the <code>/img</code> folder, and can be linked to via the DLx CDN at <code>https://cdn.digitallinguistics.io/img/{filename}</code>. Some are available in multiple formats. Most icons are black by default, but for some there are versions in different colors as well, following the format <code>{filename}.{color}.{ext}</code>. For icons available in different sizes, the size is indicated by appending the dimensions to the filename, after an underscore, e.g. <code>tunnel_64x64.png</code>. DLx uses <a href=https://materialdesignicons.com/>Material Design Icons</a> for many of its icons.</p>
+    
+      <ul>
+          <li><img src=img/blog.svg alt="blog icon">Blog icon</li>
+          <li><img src=img/box.svg alt="box icon">The box icon is the logo for the DLx app</li>
+          <li><img src=img/browse.svg alt="browse icon">The browse icon is the logo for the DLx data explorer</li>
+          <li><img src=img/code.svg alt="programming code icon">Icon representing programming code, e.g. indicating an area with raw JSON data, etc.</li>
+          <li><img src=img/computer.svg alt="computer icon">The computer icon is used for areas concerning developers</li>
+          <li><img src=img/info.svg alt="info icon">The info icon is used for About pages or to indicate where additional information is available</li>
+          <li><img src=img/menu.svg alt="menuicon">A basic menu / navigation icon</li>
+          <li><img src=img/language.svg alt="language icon">This icon is used to represent the concept of a language</li>
+          <li><img src=img/octicon.svg alt="GitHub octicon">The GitHub Octicon logo</li>
+          <li><img src=img/question.svg alt="question icon">The question icon is used for questions/help pages</li>
+          <li><img src=img/tools.svg alt="tools icon">A generic tools icon</li>
+          <li><img src=img/tools.color.svg alt="color tools icon">The tools icon is used as the logo for the Tools section of the DLx app</li>
+          <li><img src=img/tunnel.svg alt="JSON tunnel icon">The JSON tunnel icon is the de facto logo for DLx</li>
+          <li><img src=img/wug.svg alt="a wug">The blue wug is part of DLx branding, and can be used creatively wherever appropriate</li>
+          <li><img src=img/wugbot.svg alt="a wugbot">The wugbot icon is another de facto logo for DLx, part of DLx branding, and can be used creatively wherever appropriate</li>
+          <li><img class=favicon src=img/tunnel.ico alt="JSON tunnel favicon">The JSON tunnel icon as a favicon</li>
+          <li><img class=favicon src=img/wugbot.ico alt="wugbot favicon">The wugbot icon as a favicon</li>
+      </ul>
+    
+    </section>
+
+    <section id=patterns>
+    
+      <h1 class=section-header>Patterns</h1>
+    
+        <section id=abbr class='pattern abbr-example'>
+    
+          <header>
+            <h1 class='pattern-title header-subsection'><code>abbr</code></h1>
+            <p class=pattern-description>Default styling for &lt;code&gt;&amp;lt;abbr&amp;gt;&lt;/code&gt; tags, which should be used on the first mention of an abbreviation. It is often accompanied by a &lt;code&gt;&amp;lt;dfn&amp;gt;&lt;/code&gt; tag in the same paragraph.</p>
+          </header>
+    
+          <div>
+            <h1 class=header-minor>Example Markup</h1>
+            <code class=markup>
+    &lt;p&gt;
+      &lt;dfn&gt;Digital Linguistics&lt;/dfn&gt; (&lt;abbr&gt;DLx&lt;/abbr&gt;) is the science of managing linguistic data, digitally. This is an example of a paragraph with an abbreviation tag.
+    &lt;/p&gt;
+    
+            </code>
+          </div>
+    
+          <div>
+            <h1 class=header-minor>Live Example</h1>
+            <div class=rendered><p>
+      <dfn>Digital Linguistics</dfn> (<abbr>DLx</abbr>) is the science of managing linguistic data, digitally. This is an example of a paragraph with an abbreviation tag.
+    </p>
+    </div>
+          </div>
+    
+        </section>
+        <section id=bulleted class='pattern bulleted-example'>
+    
+          <header>
+            <h1 class='pattern-title header-subsection'><code>bulleted</code></h1>
+            <p class=pattern-description>In DLx projects, lists are often used semantically rather than stylistically, e.g. a phrase includes a list of words. As such, lists have no styling by default, and list styling needs to be explicitly set with the &lt;code&gt;.bulleted&lt;/code&gt; or &lt;code&gt;.numbered&lt;/code&gt; styles.</p>
+          </header>
+    
+          <div>
+            <h1 class=header-minor>Example Markup</h1>
+            <code class=markup>
+    &lt;ul class&#x3D;bulleted&gt;
+      &lt;li&gt;This is the first list item.&lt;/li&gt;
+      &lt;li&gt;This is the second list item.&lt;/li&gt;
+      &lt;li&gt;This is the third list item.&lt;/li&gt;
+    &lt;/ul&gt;
+    
+            </code>
+          </div>
+    
+          <div>
+            <h1 class=header-minor>Live Example</h1>
+            <div class=rendered><ul class=bulleted>
+      <li>This is the first list item.</li>
+      <li>This is the second list item.</li>
+      <li>This is the third list item.</li>
+    </ul>
+    </div>
+          </div>
+    
+        </section>
+        <section id=button class='pattern button-example'>
+    
+          <header>
+            <h1 class='pattern-title header-subsection'><code>button</code></h1>
+            <p class=pattern-description>A basic button. This is applied automatically to buttons, but may also be applied using the .button class to any element.</p>
+          </header>
+    
+          <div>
+            <h1 class=header-minor>Example Markup</h1>
+            <code class=markup>
+    &lt;button type&#x3D;button&gt;Button&lt;/button&gt;
+    &lt;button type&#x3D;button disabled&gt;Disabled Button&lt;/button&gt;
+    &lt;button type&#x3D;button class&#x3D;red-background&gt;Red Button&lt;/button&gt;
+    
+    &lt;input type&#x3D;button value&#x3D;&#x27;input[type&#x3D;button]&#x27;&gt;
+    
+            </code>
+          </div>
+    
+          <div>
+            <h1 class=header-minor>Live Example</h1>
+            <div class=rendered><button type=button>Button</button>
+    <button type=button disabled>Disabled Button</button>
+    <button type=button class=red-background>Red Button</button>
+    
+    <input type=button value='input[type=button]'>
+    </div>
+          </div>
+    
+        </section>
+        <section id=cite class='pattern cite-example'>
+    
+          <header>
+            <h1 class='pattern-title header-subsection'><code>cite</code></h1>
+            <p class=pattern-description>The &lt;code&gt;&amp;lt;cite&amp;gt;&lt;/code&gt; element is used for titles of publications, etc.</p>
+          </header>
+    
+          <div>
+            <h1 class=header-minor>Example Markup</h1>
+            <code class=markup>
+    &lt;p&gt;
+      In his review of &lt;cite&gt;Endangered languages and new technologies&lt;/cite&gt;, Hieber (2015) mentions certain concepts in Digital Linguistics.
+    &lt;/p&gt;
+    
+            </code>
+          </div>
+    
+          <div>
+            <h1 class=header-minor>Live Example</h1>
+            <div class=rendered><p>
+      In his review of <cite>Endangered languages and new technologies</cite>, Hieber (2015) mentions certain concepts in Digital Linguistics.
+    </p>
+    </div>
+          </div>
+    
+        </section>
+        <section id=code class='pattern code-example'>
+    
+          <header>
+            <h1 class='pattern-title header-subsection'><code>code</code></h1>
+            <p class=pattern-description>The &lt;code&gt;&amp;lt;code&amp;gt;&lt;/code&gt; element is used for both inline and standalone code blocks.</p>
+          </header>
+    
+          <div>
+            <h1 class=header-minor>Example Markup</h1>
+            <code class=markup>
+    &lt;p&gt;
+      This is an example of a paragraph with &lt;code&gt;inline code&lt;/code&gt;. Below is an example of a standalone code block.
+    &lt;/p&gt;
+    
+    &lt;code&gt;{
+      &quot;dateCreated&quot;: &quot;2017-03-13T02:36:22.123Z&quot;,
+      &quot;dateModified&quot;: &quot;2017-03-13T04:51:26.134Z&quot;,
+      &quot;name&quot;: {
+        &quot;eng&quot;: &quot;Chitimacha&quot;,
+        &quot;ctm&quot;: &quot;Sitimaxa&quot;
+      }
+    }&lt;/code&gt;
+    
+            </code>
+          </div>
+    
+          <div>
+            <h1 class=header-minor>Live Example</h1>
+            <div class=rendered><p>
+      This is an example of a paragraph with <code>inline code</code>. Below is an example of a standalone code block.
+    </p>
+    
+    <code>{
+      "dateCreated": "2017-03-13T02:36:22.123Z",
+      "dateModified": "2017-03-13T04:51:26.134Z",
+      "name": {
+        "eng": "Chitimacha",
+        "ctm": "Sitimaxa"
+      }
+    }</code>
+    </div>
+          </div>
+    
+        </section>
+        <section id=dfn class='pattern dfn-example'>
+    
+          <header>
+            <h1 class='pattern-title header-subsection'><code>dfn</code></h1>
+            <p class=pattern-description>A &lt;code&gt;&amp;lt;dfn&amp;gt;&lt;/code&gt; tag is used the first time an element is defined. The definition of the term should be given in the surrounding text.</p>
+          </header>
+    
+          <div>
+            <h1 class=header-minor>Example Markup</h1>
+            <code class=markup>
+    &lt;p&gt;
+      &lt;dfn&gt;Digital Linguistics&lt;/dfn&gt; (&lt;abbr&gt;DLx&lt;/abbr&gt;) is the science of managing linguistic data, digitally.
+    &lt;/p&gt;
+    
+            </code>
+          </div>
+    
+          <div>
+            <h1 class=header-minor>Live Example</h1>
+            <div class=rendered><p>
+      <dfn>Digital Linguistics</dfn> (<abbr>DLx</abbr>) is the science of managing linguistic data, digitally.
+    </p>
+    </div>
+          </div>
+    
+        </section>
+        <section id=em class='pattern em-example'>
+    
+          <header>
+            <h1 class='pattern-title header-subsection'><code>em</code></h1>
+            <p class=pattern-description>Used for standard emphasis within text.</p>
+          </header>
+    
+          <div>
+            <h1 class=header-minor>Example Markup</h1>
+            <code class=markup>
+    &lt;p&gt;
+      &lt;em&gt;These words&lt;/em&gt; are emphasized.
+    &lt;/p&gt;
+    
+            </code>
+          </div>
+    
+          <div>
+            <h1 class=header-minor>Live Example</h1>
+            <div class=rendered><p>
+      <em>These words</em> are emphasized.
+    </p>
+    </div>
+          </div>
+    
+        </section>
+        <section id=field class='pattern field-example'>
+    
+          <header>
+            <h1 class='pattern-title header-subsection'><code>field</code></h1>
+            <p class=pattern-description>Styles an element as a form field. This style is automatically applied to various form elements, such as the &lt;code&gt;&amp;lt;input type&#x3D;text&amp;gt;&lt;/code&gt; element.</p>
+          </header>
+    
+          <div>
+            <h1 class=header-minor>Example Markup</h1>
+            <code class=markup>
+    &lt;input class&#x3D;field type&#x3D;text value&#x3D;&#x27;This text input has been styled with the .field class&#x27;&gt;
+    &lt;input class&#x3D;field type&#x3D;text disabled value&#x3D;&#x27;This text input is disabled&#x27;&gt;
+    &lt;input class&#x3D;field type&#x3D;text pattern&#x3D;aaa value&#x3D;&#x27;This text input is invalid&#x27;&gt;
+    
+            </code>
+          </div>
+    
+          <div>
+            <h1 class=header-minor>Live Example</h1>
+            <div class=rendered><input class=field type=text value='This text input has been styled with the .field class'>
+    <input class=field type=text disabled value='This text input is disabled'>
+    <input class=field type=text pattern=aaa value='This text input is invalid'>
+    </div>
+          </div>
+    
+        </section>
+        <section id=fieldset class='pattern fieldset-example'>
+    
+          <header>
+            <h1 class='pattern-title header-subsection'><code>fieldset</code></h1>
+            <p class=pattern-description>Used for grouping inputs together under a heading (&lt;code&gt;&amp;lt;legend&amp;gt;&lt;/code&gt;). Remember that flexbox does not work well with &lt;code&gt;&amp;lt;fieldset&amp;gt;&lt;/code&gt;, so you may need to wrap the items inside &lt;code&gt;&amp;lt;fieldset&amp;gt;&lt;/code&gt; in a &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;.</p>
+          </header>
+    
+          <div>
+            <h1 class=header-minor>Example Markup</h1>
+            <code class=markup>
+    &lt;fieldset&gt;
+    
+      &lt;legend&gt;Colors&lt;/legend&gt;
+    
+      &lt;label&gt;
+        &lt;span&gt;Blue&lt;/span&gt;
+        &lt;input type&#x3D;radio name&#x3D;color&gt;
+      &lt;/label&gt;
+    
+      &lt;label&gt;
+        &lt;span&gt;Green&lt;/span&gt;
+        &lt;input type&#x3D;radio name&#x3D;color&gt;
+      &lt;/label&gt;
+    
+      &lt;label&gt;
+        &lt;span&gt;Yellow&lt;/span&gt;
+        &lt;input type&#x3D;radio name&#x3D;color&gt;
+      &lt;/label&gt;
+    
+    &lt;/fieldset&gt;
+    
+            </code>
+          </div>
+    
+          <div>
+            <h1 class=header-minor>Live Example</h1>
+            <div class=rendered><fieldset>
+    
+      <legend>Colors</legend>
+    
+      <label>
+        <span>Blue</span>
+        <input type=radio name=color>
+      </label>
+    
+      <label>
+        <span>Green</span>
+        <input type=radio name=color>
+      </label>
+    
+      <label>
+        <span>Yellow</span>
+        <input type=radio name=color>
+      </label>
+    
+    </fieldset>
+    </div>
+          </div>
+    
+        </section>
+        <section id=hanging class='pattern hanging-example'>
+    
+          <header>
+            <h1 class='pattern-title header-subsection'><code>hanging</code></h1>
+            <p class=pattern-description>For blocks of text with a hanging indent.</p>
+          </header>
+    
+          <div>
+            <h1 class=header-minor>Example Markup</h1>
+            <code class=markup>
+    &lt;p class&#x3D;hanging&gt;
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    &lt;/p&gt;
+    
+            </code>
+          </div>
+    
+          <div>
+            <h1 class=header-minor>Live Example</h1>
+            <div class=rendered><p class=hanging>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    </div>
+          </div>
+    
+        </section>
+        <section id=header-minor class='pattern header-minor-example'>
+    
+          <header>
+            <h1 class='pattern-title header-subsection'><code>header-minor</code></h1>
+            <p class=pattern-description>For minor headers (level below sub-subsection)</p>
+          </header>
+    
+          <div>
+            <h1 class=header-minor>Example Markup</h1>
+            <code class=markup>
+    &lt;h1 class&#x3D;header-minor&gt;Minor Header&lt;/h1&gt;
+    
+            </code>
+          </div>
+    
+          <div>
+            <h1 class=header-minor>Live Example</h1>
+            <div class=rendered><h1 class=header-minor>Minor Header</h1>
+    </div>
+          </div>
+    
+        </section>
+        <section id=header-section class='pattern header-section-example'>
+    
+          <header>
+            <h1 class='pattern-title header-subsection'><code>header-section</code></h1>
+            <p class=pattern-description>Section headers</p>
+          </header>
+    
+          <div>
+            <h1 class=header-minor>Example Markup</h1>
+            <code class=markup>
+    &lt;h1 class&#x3D;header-section&gt;Section Header&lt;/h1&gt;
+    
+            </code>
+          </div>
+    
+          <div>
+            <h1 class=header-minor>Live Example</h1>
+            <div class=rendered><h1 class=header-section>Section Header</h1>
+    </div>
+          </div>
+    
+        </section>
+        <section id=header-subsection class='pattern header-subsection-example'>
+    
+          <header>
+            <h1 class='pattern-title header-subsection'><code>header-subsection</code></h1>
+            <p class=pattern-description>Subsection headers</p>
+          </header>
+    
+          <div>
+            <h1 class=header-minor>Example Markup</h1>
+            <code class=markup>
+    &lt;h1 class&#x3D;header-subsection&gt;Subsection Header&lt;/h1&gt;
+    
+            </code>
+          </div>
+    
+          <div>
+            <h1 class=header-minor>Live Example</h1>
+            <div class=rendered><h1 class=header-subsection>Subsection Header</h1>
+    </div>
+          </div>
+    
+        </section>
+        <section id=header-subsubsection class='pattern header-subsubsection-example'>
+    
+          <header>
+            <h1 class='pattern-title header-subsection'><code>header-subsubsection</code></h1>
+            <p class=pattern-description>Sub-subsection headers</p>
+          </header>
+    
+          <div>
+            <h1 class=header-minor>Example Markup</h1>
+            <code class=markup>
+    &lt;h1 class&#x3D;header-subsubsection&gt;Sub-Subsection Header&lt;/h1&gt;
+    
+            </code>
+          </div>
+    
+          <div>
+            <h1 class=header-minor>Live Example</h1>
+            <div class=rendered><h1 class=header-subsubsection>Sub-Subsection Header</h1>
+    </div>
+          </div>
+    
+        </section>
+        <section id=input class='pattern input-example'>
+    
+          <header>
+            <h1 class='pattern-title header-subsection'><code>input</code></h1>
+            <p class=pattern-description>Default styles are added for each of the various input types.</p>
+          </header>
+    
+          <div>
+            <h1 class=header-minor>Example Markup</h1>
+            <code class=markup>
+    &lt;label&gt;
+      &lt;span&gt;Button&lt;/span&gt;
+      &lt;input type&#x3D;button value&#x3D;Button&gt;
+    &lt;/label&gt;
+    
+    &lt;label&gt;
+      &lt;span&gt;Checkbox&lt;/span&gt;
+      &lt;input type&#x3D;checkbox&gt;
+    &lt;/label&gt;
+    
+    &lt;label&gt;
+      &lt;span&gt;Color&lt;/span&gt;
+      &lt;input type&#x3D;color&gt;
+    &lt;/label&gt;
+    
+    &lt;label&gt;
+      &lt;span&gt;Date&lt;/span&gt;
+      &lt;input type&#x3D;date&gt;
+    &lt;/label&gt;
+    
+    &lt;label&gt;
+      &lt;span&gt;Datetime&lt;/span&gt;
+      &lt;input type&#x3D;datetime&gt;
+    &lt;/label&gt;
+    
+    &lt;label&gt;
+      &lt;span&gt;Datetime Local&lt;/span&gt;
+      &lt;input type&#x3D;datetime-local&gt;
+    &lt;/label&gt;
+    
+    &lt;label&gt;
+      &lt;span&gt;Email&lt;/span&gt;
+      &lt;input type&#x3D;email value&#x3D;name@domain.com&gt;
+    &lt;/label&gt;
+    
+    &lt;label&gt;
+      &lt;span&gt;File&lt;/span&gt;
+      &lt;input type&#x3D;file&gt;
+    &lt;/label&gt;
+    
+    &lt;label&gt;
+      &lt;span&gt;Hidden&lt;/span&gt;
+      &lt;input type&#x3D;hidden value&#x3D;&#x27;This input is hidden&#x27;&gt;
+    &lt;/label&gt;
+    
+    &lt;label&gt;
+      &lt;span&gt;Image&lt;/span&gt;
+      &lt;input type&#x3D;image src&#x3D;../img/tunnel.svg&gt;
+    &lt;/label&gt;
+    
+    &lt;label&gt;
+      &lt;span&gt;Month&lt;/span&gt;
+      &lt;input type&#x3D;month&gt;
+    &lt;/label&gt;
+    
+    &lt;label&gt;
+      &lt;span&gt;Number&lt;/span&gt;
+      &lt;input type&#x3D;number value&#x3D;1000&gt;
+    &lt;/label&gt;
+    
+    &lt;label&gt;
+      &lt;span&gt;Password&lt;/span&gt;
+      &lt;input type&#x3D;password value&#x3D;password&gt;
+    &lt;/label&gt;
+    
+    &lt;fieldset&gt;
+      &lt;label&gt;
+        &lt;span&gt;Radio 1&lt;/span&gt;
+        &lt;input type&#x3D;radio name&#x3D;radio&gt;
+      &lt;/label&gt;
+      &lt;label&gt;
+        &lt;span&gt;Radio 2&lt;/span&gt;
+        &lt;input type&#x3D;radio name&#x3D;radio&gt;
+      &lt;/label&gt;
+    &lt;/fieldset&gt;
+    
+    &lt;label&gt;
+      &lt;span&gt;Range&lt;/span&gt;
+      &lt;input type&#x3D;range&gt;
+    &lt;/label&gt;
+    
+    &lt;label&gt;
+      &lt;span&gt;Reset&lt;/span&gt;
+      &lt;input type&#x3D;reset value&#x3D;Reset&gt;
+    &lt;/label&gt;
+    
+    &lt;label&gt;
+      &lt;span&gt;Search&lt;/span&gt;
+      &lt;input type&#x3D;search value&#x3D;Search&gt;
+    &lt;/label&gt;
+    
+    &lt;label&gt;
+      &lt;span&gt;Submit&lt;/span&gt;
+      &lt;input type&#x3D;submit value&#x3D;Submit&gt;
+    &lt;/label&gt;
+    
+    &lt;label&gt;
+      &lt;span&gt;Telephone&lt;/span&gt;
+      &lt;input type&#x3D;tel value&#x3D;&#x27;A telephone input&#x27;&gt;
+    &lt;/label&gt;
+    
+    &lt;label&gt;
+      &lt;span&gt;Text&lt;/span&gt;
+      &lt;input type&#x3D;text value&#x3D;&#x27;A text input&#x27;&gt;
+    &lt;/label&gt;
+    
+    &lt;label&gt;
+      &lt;span&gt;Time&lt;/span&gt;
+      &lt;input type&#x3D;time&gt;
+    &lt;/label&gt;
+    
+    &lt;label&gt;
+      &lt;span&gt;URL&lt;/span&gt;
+      &lt;input type&#x3D;url&gt;
+    &lt;/label&gt;
+    
+    &lt;label&gt;
+      &lt;span&gt;Week&lt;/span&gt;
+      &lt;input type&#x3D;week&gt;
+    &lt;/label&gt;
+    
+            </code>
+          </div>
+    
+          <div>
+            <h1 class=header-minor>Live Example</h1>
+            <div class=rendered><label>
+      <span>Button</span>
+      <input type=button value=Button>
+    </label>
+    
+    <label>
+      <span>Checkbox</span>
+      <input type=checkbox>
+    </label>
+    
+    <label>
+      <span>Color</span>
+      <input type=color>
+    </label>
+    
+    <label>
+      <span>Date</span>
+      <input type=date>
+    </label>
+    
+    <label>
+      <span>Datetime</span>
+      <input type=datetime>
+    </label>
+    
+    <label>
+      <span>Datetime Local</span>
+      <input type=datetime-local>
+    </label>
+    
+    <label>
+      <span>Email</span>
+      <input type=email value=name@domain.com>
+    </label>
+    
+    <label>
+      <span>File</span>
+      <input type=file>
+    </label>
+    
+    <label>
+      <span>Hidden</span>
+      <input type=hidden value='This input is hidden'>
+    </label>
+    
+    <label>
+      <span>Image</span>
+      <input type=image src=../img/tunnel.svg>
+    </label>
+    
+    <label>
+      <span>Month</span>
+      <input type=month>
+    </label>
+    
+    <label>
+      <span>Number</span>
+      <input type=number value=1000>
+    </label>
+    
+    <label>
+      <span>Password</span>
+      <input type=password value=password>
+    </label>
+    
+    <fieldset>
+      <label>
+        <span>Radio 1</span>
+        <input type=radio name=radio>
+      </label>
+      <label>
+        <span>Radio 2</span>
+        <input type=radio name=radio>
+      </label>
+    </fieldset>
+    
+    <label>
+      <span>Range</span>
+      <input type=range>
+    </label>
+    
+    <label>
+      <span>Reset</span>
+      <input type=reset value=Reset>
+    </label>
+    
+    <label>
+      <span>Search</span>
+      <input type=search value=Search>
+    </label>
+    
+    <label>
+      <span>Submit</span>
+      <input type=submit value=Submit>
+    </label>
+    
+    <label>
+      <span>Telephone</span>
+      <input type=tel value='A telephone input'>
+    </label>
+    
+    <label>
+      <span>Text</span>
+      <input type=text value='A text input'>
+    </label>
+    
+    <label>
+      <span>Time</span>
+      <input type=time>
+    </label>
+    
+    <label>
+      <span>URL</span>
+      <input type=url>
+    </label>
+    
+    <label>
+      <span>Week</span>
+      <input type=week>
+    </label>
+    </div>
+          </div>
+    
+        </section>
+        <section id=label class='pattern label-example'>
+    
+          <header>
+            <h1 class='pattern-title header-subsection'><code>label</code></h1>
+            <p class=pattern-description>Label elements. If the text inside the element is wrapped in a &lt;code&gt;&amp;lt;span&amp;gt;&lt;/code&gt; element, that text will be styled as well.</p>
+          </header>
+    
+          <div>
+            <h1 class=header-minor>Example Markup</h1>
+            <code class=markup>
+    &lt;label&gt;
+      &lt;span&gt;Label with &lt;code&gt;&amp;lt;span&amp;gt;&lt;/code&gt;&lt;/span&gt;
+      &lt;input type&#x3D;text&gt;
+    &lt;/label&gt;
+    
+    &lt;label&gt;
+      Label without &lt;code&gt;&amp;lt;span&amp;gt;&lt;/code&gt;
+      &lt;input type&#x3D;text&gt;
+    &lt;/label&gt;
+    
+            </code>
+          </div>
+    
+          <div>
+            <h1 class=header-minor>Live Example</h1>
+            <div class=rendered><label>
+      <span>Label with <code>&lt;span&gt;</code></span>
+      <input type=text>
+    </label>
+    
+    <label>
+      Label without <code>&lt;span&gt;</code>
+      <input type=text>
+    </label>
+    </div>
+          </div>
+    
+        </section>
+        <section id=link class='pattern link-example'>
+    
+          <header>
+            <h1 class='pattern-title header-subsection'><code>link</code></h1>
+            <p class=pattern-description>The &lt;code&gt;.link&lt;/code&gt; class is not automatically applied to anchor elements (&lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt;). It is, however, automatically applied to any anchor element that sits inside another inline element, such as &lt;code&gt;&amp;lt;abbr&amp;gt;&lt;/code&gt; or &lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt;, and to any element that sits inside an element whose content is usually inline, such as &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; or &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt;.</p>
+          </header>
+    
+          <div>
+            <h1 class=header-minor>Example Markup</h1>
+            <code class=markup>
+    &lt;a href&#x3D;#&gt;
+      &lt;p&gt;This is a &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; tag wrapped in an &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt; tag. It does not get link styling.&lt;/p&gt;
+    &lt;/a&gt;
+    
+    &lt;p&gt;
+      &lt;a href&#x3D;#&gt;This is an &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt; tag inside of a &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; tag. It gets link styling.&lt;/a&gt;
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+      &lt;a href&#x3D;&quot;#&quot;&gt;This&lt;/a&gt; shows a link around a single word, inside a &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; tag.
+    &lt;/p&gt;
+    
+            </code>
+          </div>
+    
+          <div>
+            <h1 class=header-minor>Live Example</h1>
+            <div class=rendered><a href=#>
+      <p>This is a <code>&lt;p&gt;</code> tag wrapped in an <code>&lt;a&gt;</code> tag. It does not get link styling.</p>
+    </a>
+    
+    <p>
+      <a href=#>This is an <code>&lt;a&gt;</code> tag inside of a <code>&lt;p&gt;</code> tag. It gets link styling.</a>
+    </p>
+    
+    <p>
+      <a href="#">This</a> shows a link around a single word, inside a <code>&lt;p&gt;</code> tag.
+    </p>
+    </div>
+          </div>
+    
+        </section>
+        <section id=link-white class='pattern link-white-example'>
+    
+          <header>
+            <h1 class='pattern-title header-subsection'><code>link-white</code></h1>
+            <p class=pattern-description>A white link rather than the standard blue. Used for dark backgrounds.</p>
+          </header>
+    
+          <div>
+            <h1 class=header-minor>Example Markup</h1>
+            <code class=markup>
+    &lt;p&gt;
+      This is an example of the &lt;a class&#x3D;link-white href&#x3D;#&gt;.link-white&lt;/a&gt; styling, useful for links on dark backgrounds.
+    &lt;/p&gt;
+    
+            </code>
+          </div>
+    
+          <div>
+            <h1 class=header-minor>Live Example</h1>
+            <div class=rendered><p>
+      This is an example of the <a class=link-white href=#>.link-white</a> styling, useful for links on dark backgrounds.
+    </p>
+    </div>
+          </div>
+    
+        </section>
+        <section id=nav class='pattern nav-example'>
+    
+          <header>
+            <h1 class='pattern-title header-subsection'><code>nav</code></h1>
+            <p class=pattern-description>The main navigation bar at the top of the page. Hover effects are not added.</p>
+          </header>
+    
+          <div>
+            <h1 class=header-minor>Example Markup</h1>
+            <code class=markup>
+    &lt;nav class&#x3D;nav&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href&#x3D;#main-nav&gt;Nav Link 1&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href&#x3D;#main-nav&gt;Nav Link 2&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href&#x3D;#main-nav&gt;Nav Link 3&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/nav&gt;
+    
+            </code>
+          </div>
+    
+          <div>
+            <h1 class=header-minor>Live Example</h1>
+            <div class=rendered><nav class=nav>
+      <ul>
+        <li><a href=#main-nav>Nav Link 1</a></li>
+        <li><a href=#main-nav>Nav Link 2</a></li>
+        <li><a href=#main-nav>Nav Link 3</a></li>
+      </ul>
+    </nav>
+    </div>
+          </div>
+    
+        </section>
+        <section id=numbered class='pattern numbered-example'>
+    
+          <header>
+            <h1 class='pattern-title header-subsection'><code>numbered</code></h1>
+            <p class=pattern-description>For numbered lists. Because DLx often uses ordered lists where list styling is not wanted, the &lt;code&gt;.numbered&lt;/code&gt; class is not automatically applied to &lt;code&gt;&amp;lt;ol&amp;gt;&lt;/code&gt; elements, and must be applied manually.</p>
+          </header>
+    
+          <div>
+            <h1 class=header-minor>Example Markup</h1>
+            <code class=markup>
+    &lt;ol class&#x3D;numbered&gt;
+      &lt;li&gt;List Item 1&lt;/li&gt;
+      &lt;li&gt;List Item 2&lt;/li&gt;
+      &lt;li&gt;List Item 3&lt;/li&gt;
+    &lt;/ol&gt;
+    
+            </code>
+          </div>
+    
+          <div>
+            <h1 class=header-minor>Live Example</h1>
+            <div class=rendered><ol class=numbered>
+      <li>List Item 1</li>
+      <li>List Item 2</li>
+      <li>List Item 3</li>
+    </ol>
+    </div>
+          </div>
+    
+        </section>
+        <section id=page-title class='pattern page-title-example'>
+    
+          <header>
+            <h1 class='pattern-title header-subsection'><code>page-title</code></h1>
+            <p class=pattern-description>For page titles</p>
+          </header>
+    
+          <div>
+            <h1 class=header-minor>Example Markup</h1>
+            <code class=markup>
+    &lt;h1 class&#x3D;page-page&gt;
+      Page Title
+    &lt;/h1&gt;
+    
+            </code>
+          </div>
+    
+          <div>
+            <h1 class=header-minor>Live Example</h1>
+            <div class=rendered><h1 class=page-page>
+      Page Title
+    </h1>
+    </div>
+          </div>
+    
+        </section>
+        <section id=reference-list class='pattern reference-list-example'>
+    
+          <header>
+            <h1 class='pattern-title header-subsection'><code>reference-list</code></h1>
+            <p class=pattern-description>Styling for a bibliographic reference list. Note that each reference should be wrapped in a &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; tag inside of a &lt;code&gt;&amp;lt;li&amp;gt;&lt;/code&gt; tag.</p>
+          </header>
+    
+          <div>
+            <h1 class=header-minor>Example Markup</h1>
+            <code class=markup>
+    &lt;section class&#x3D;reference-list&gt;
+    
+      &lt;h1&gt;Reference List&lt;/h1&gt;
+    
+      &lt;p&gt;This is a paragraph giving a short description of this reference list.&lt;/p&gt;
+    
+      &lt;ol&gt;
+    
+        &lt;li&gt;
+          &lt;p&gt;Hall, Patrick J. 2014. &lt;cite&gt;Serialization and hierarchy: From data to corpus in linguistic fieldwork&lt;/cite&gt;. M.A. thesis. Linguistics, University of California, Santa Barbara.&lt;/p&gt;
+        &lt;/li&gt;
+    
+        &lt;li&gt;
+          &lt;p&gt;Hieber, Daniel W. 2015. Review: Endangered languages &amp;amp; new technologies (Jones). &lt;cite&gt;Language Documentation &amp;amp; Conservation&lt;/cite&gt; 9: 344–350.&lt;/p&gt;
+        &lt;/li&gt;
+    
+      &lt;/ol&gt;
+    
+    &lt;/section&gt;
+    
+            </code>
+          </div>
+    
+          <div>
+            <h1 class=header-minor>Live Example</h1>
+            <div class=rendered><section class=reference-list>
+    
+      <h1>Reference List</h1>
+    
+      <p>This is a paragraph giving a short description of this reference list.</p>
+    
+      <ol>
+    
+        <li>
+          <p>Hall, Patrick J. 2014. <cite>Serialization and hierarchy: From data to corpus in linguistic fieldwork</cite>. M.A. thesis. Linguistics, University of California, Santa Barbara.</p>
+        </li>
+    
+        <li>
+          <p>Hieber, Daniel W. 2015. Review: Endangered languages &amp; new technologies (Jones). <cite>Language Documentation &amp; Conservation</cite> 9: 344–350.</p>
+        </li>
+    
+      </ol>
+    
+    </section>
+    </div>
+          </div>
+    
+        </section>
+        <section id=select class='pattern select-example'>
+    
+          <header>
+            <h1 class='pattern-title header-subsection'><code>select</code></h1>
+            <p class=pattern-description>Default styling for &lt;code&gt;&amp;lt;select&amp;gt;&lt;/code&gt; elements.</p>
+          </header>
+    
+          <div>
+            <h1 class=header-minor>Example Markup</h1>
+            <code class=markup>
+    &lt;select&gt;
+      &lt;option&gt;Option 1&lt;/option&gt;
+      &lt;option&gt;Option 2&lt;/option&gt;
+      &lt;option&gt;Option 3&lt;/option&gt;
+    &lt;/select&gt;
+    
+            </code>
+          </div>
+    
+          <div>
+            <h1 class=header-minor>Live Example</h1>
+            <div class=rendered><select>
+      <option>Option 1</option>
+      <option>Option 2</option>
+      <option>Option 3</option>
+    </select>
+    </div>
+          </div>
+    
+        </section>
+        <section id=strong class='pattern strong-example'>
+    
+          <header>
+            <h1 class='pattern-title header-subsection'><code>strong</code></h1>
+            <p class=pattern-description>Used to draw the reader&#x27;s attention to a term or concept.</p>
+          </header>
+    
+          <div>
+            <h1 class=header-minor>Example Markup</h1>
+            <code class=markup>
+    &lt;p&gt;
+      This is a paragraph with some &lt;strong&gt;strongly emphasized&lt;/strong&gt; text.
+    &lt;/p&gt;
+    
+            </code>
+          </div>
+    
+          <div>
+            <h1 class=header-minor>Live Example</h1>
+            <div class=rendered><p>
+      This is a paragraph with some <strong>strongly emphasized</strong> text.
+    </p>
+    </div>
+          </div>
+    
+        </section>
+        <section id=textarea class='pattern textarea-example'>
+    
+          <header>
+            <h1 class='pattern-title header-subsection'><code>textarea</code></h1>
+            <p class=pattern-description>Uses the &lt;code&gt;&amp;lt;.field&amp;gt;&lt;/code&gt; style</p>
+          </header>
+    
+          <div>
+            <h1 class=header-minor>Example Markup</h1>
+            <code class=markup>
+    &lt;textarea placeholder&#x3D;&#x27;This is a textarea&#x27;&gt;&lt;/textarea&gt;
+    
+            </code>
+          </div>
+    
+          <div>
+            <h1 class=header-minor>Live Example</h1>
+            <div class=rendered><textarea placeholder='This is a textarea'></textarea>
+    </div>
+          </div>
+    
+        </section>
+        <section id=tooltip class='pattern tooltip-example'>
+    
+          <header>
+            <h1 class='pattern-title header-subsection'><code>tooltip</code></h1>
+            <p class=pattern-description>Adding the &lt;code&gt;.tooltip&lt;/code&gt; class to any element will make a tooltip display on hover or when the element is focused. The content of the tooltip is contained in the &lt;code&gt;title&lt;/code&gt; attribute for that element. Note that tooltips do not work on &lt;code&gt;&amp;lt;input&amp;gt;&lt;/code&gt; elements - place the &lt;code&gt;.tooltip&lt;/code&gt; class on the &lt;code&gt;&amp;lt;label&amp;gt;&lt;/code&gt; instead.</p>
+          </header>
+    
+          <div>
+            <h1 class=header-minor>Example Markup</h1>
+            <code class=markup>
+    &lt;p&gt;
+      This is an example of an &lt;span class&#x3D;tooltip title&#x3D;&#x27;This is the inline tooltip.&#x27;&gt;inline tooltip&lt;/span&gt;.
+    &lt;/p&gt;
+    
+    &lt;label class&#x3D;tooltip title&#x3D;&#x27;This is a tooltip on a block element&#x27;&gt;
+      &lt;span&gt;Tooltip&lt;/span&gt;
+      &lt;input type&#x3D;text&gt;
+    &lt;/label&gt;
+    
+            </code>
+          </div>
+    
+          <div>
+            <h1 class=header-minor>Live Example</h1>
+            <div class=rendered><p>
+      This is an example of an <span class=tooltip title='This is the inline tooltip.'>inline tooltip</span>.
+    </p>
+    
+    <label class=tooltip title='This is a tooltip on a block element'>
+      <span>Tooltip</span>
+      <input type=text>
+    </label>
+    </div>
+          </div>
+    
+        </section>
+    
+    </section>
+
+    <script src=js/patterns.js></script>
+    <script src=js/highlight.js></script>
+
+  </body>
+
+</html>

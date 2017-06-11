@@ -1,10 +1,5 @@
 {
-  "ignore": [
-    "patterns/index.js"
-  ],
-  "events": {
-    "restart": "yarn run build"
-  },
-  "exec": "node ../utilities/node/server.js",
-  "ext": "js json less"
+  "exec": "yarn run build",
+  "ext": "hbs js json less",
+  "ignore": []
 }
