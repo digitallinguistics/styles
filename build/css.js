@@ -1,33 +1,26 @@
-const storeCss = () => new Promise((resolve, reject) => {
+/* eslint-disable
+  func-names,
+  no-console,
+  no-extra-parens,
+*/
 
-  fs.readdir('css', 'utf8', (err, filenames) => {
+require('../../credentials/styles');
 
-    if (err) reject(err);
+const fs      = require('fs');
+const storage = require('azure-storage').createBlobService();
+const util    = require('util');
 
-    Promise.all(filenames.map(filename => new Promise((resolve, reject) => {
+const storeFile = util.promisify(storage.createBlockBlobFromLocalFile).bind(storage);
 
-      const contentSettings = {
-        contentEncoding: 'utf8',
-        contentType:     'text/css',
-      };
+const contentSettings = {
+  contentEncoding: 'utf8',
+  contentType:     'text/css',
+};
 
-      const cb = err => {
-        if (err) reject(err);
-        else resolve();
-      };
+const storeCss = filename => storeFile(`css`, filename, `css/${filename}`, { contentSettings });
 
-      storage.createBlockBlobFromLocalFile(
-        'css',
-        filename,
-        `css/${filename}`,
-        { contentSettings },
-        cb
-      );
-
-    })))
-    .then(resolve)
-    .catch(reject);
-
-  });
-
-});
+(async function() {
+  const filenames = await util.promisify(fs.readdir)(`css`, `utf8`);
+  await Promise.all(filenames.map(storeCss));
+  console.log(` - CSS files uploaded`);
+}());
