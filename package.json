@@ -11,16 +11,17 @@
   },
   "repository": "https://github.com/digitallinguistics/styles.git",
   "scripts": {
-    "build": "node build/compile.js",
+    "build": "yarn run hbs & yarn run upload & yarn run less & yarn run css",
+    "css": "node build/css.js",
+    "hbs": "node build/hbs.js",
+    "less": "node build/less.js",
     "upload": "node build/upload.js"
   },
   "private": true,
-  "dependencies": {
-    "flexbox-reset": "^2.0.0"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "azure-storage": "^2.1.0",
     "handlebars": "^4.0.10",
-    "less": "^2.7.2",
-    "webpack": "^2.6.1"
+    "less": "^2.7.2"
   }
 }

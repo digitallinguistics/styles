@@ -409,6 +409,9 @@ This file contains DLx styles that need to be explicitly specified using classes
 .verylightblue-transparent {
   background-color: rgba(136, 196, 254, 0.2);
 }
+.abbr {
+  font-style: italic;
+}
 .bulleted {
   list-style: disc outside none;
   margin-left: 1.5em;
@@ -459,6 +462,26 @@ This file contains DLx styles that need to be explicitly specified using classes
   cursor: not-allowed;
   opacity: 0.40;
 }
+.cite {
+  font-style: italic;
+}
+.code {
+  background-color: #F5F2F0;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-family: 'Consolas', 'Fira Mono', 'Monaco', 'DejaVu Mono', 'Courier New', monospace;
+  font-size: 0.75em;
+  font-style: normal;
+  overflow-x: auto;
+  padding: 0.25em;
+  white-space: pre;
+}
+.dfn {
+  font-style: italic;
+}
+.emphasized {
+  font-style: italic;
+}
 .field {
   background-color: white;
   border: 1px solid #ccc;
@@ -481,9 +504,484 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: #cad2d3;
   cursor: not-allowed;
 }
+.fieldset legend {
+  font-weight: bold;
+}
+.h-minor {
+  font-size: 1.25em;
+}
+.h-section {
+  font-size: 1.75em;
+  font-weight: bold;
+  padding-bottom: 0.25em;
+  padding-top: 0.5em;
+}
+.h-subsection {
+  font-size: 1.5em;
+  padding-bottom: 0.25em;
+  padding-top: 0.5em;
+}
+.h-subsubsection {
+  font-size: 1.5em;
+  font-style: italic;
+}
 .hanging {
   margin-left: 1em;
   text-indent: -1em;
+}
+.input[type=button] {
+  background-color: #3399FF;
+  color: white;
+  align-items: center;
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.15), transparent);
+  border-radius: 5px;
+  box-shadow: inset -1px -1px 2px 0px rgba(0, 0, 0, 0.15), 1px 1px 2px #ccc;
+  cursor: pointer;
+  padding: 0.25em 0.5em;
+  text-align: center;
+}
+.input[type=button] a {
+  border-bottom: 0.075em solid transparent;
+  color: white;
+}
+.input[type=button] a:link {
+  color: white;
+}
+.input[type=button] a:visited {
+  color: white;
+}
+.input[type=button] a:hover {
+  border-bottom: 0.075em solid white;
+}
+.input[type=button] a:visited:hover {
+  border-bottom: 0.075em solid white;
+}
+.input[type=button] a:active {
+  color: white;
+}
+.input[type=button]:active {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
+}
+.input[type=button]:hover,
+.input[type=button]:focus {
+  background-image: linear-gradient(135deg, transparent, rgba(0, 0, 0, 0.15));
+}
+.input[type=button]:disabled {
+  background-image: none;
+  box-shadow: none;
+  cursor: not-allowed;
+  opacity: 0.40;
+}
+.input[type=color] {
+  display: block;
+}
+.input[type=date] {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 2px #ddd;
+  cursor: text;
+  padding: 0.125em 0.25em;
+}
+.input[type=date]:focus {
+  border-color: #3399FF;
+  box-shadow: inset 0px 1px 2px #3399FF;
+}
+.input[type=date]:focus:invalid {
+  border-color: #AA1F1F;
+  box-shadow: inset 0px 1px 2px #AA1F1F;
+  color: #CA3C3C;
+}
+.input[type=date][disabled] {
+  background-color: #eaeded;
+  color: #cad2d3;
+  cursor: not-allowed;
+}
+.input[type=datetime] {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 2px #ddd;
+  cursor: text;
+  padding: 0.125em 0.25em;
+}
+.input[type=datetime]:focus {
+  border-color: #3399FF;
+  box-shadow: inset 0px 1px 2px #3399FF;
+}
+.input[type=datetime]:focus:invalid {
+  border-color: #AA1F1F;
+  box-shadow: inset 0px 1px 2px #AA1F1F;
+  color: #CA3C3C;
+}
+.input[type=datetime][disabled] {
+  background-color: #eaeded;
+  color: #cad2d3;
+  cursor: not-allowed;
+}
+.input[type=datetime-local] {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 2px #ddd;
+  cursor: text;
+  padding: 0.125em 0.25em;
+}
+.input[type=datetime-local]:focus {
+  border-color: #3399FF;
+  box-shadow: inset 0px 1px 2px #3399FF;
+}
+.input[type=datetime-local]:focus:invalid {
+  border-color: #AA1F1F;
+  box-shadow: inset 0px 1px 2px #AA1F1F;
+  color: #CA3C3C;
+}
+.input[type=datetime-local][disabled] {
+  background-color: #eaeded;
+  color: #cad2d3;
+  cursor: not-allowed;
+}
+.input[type=email] {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 2px #ddd;
+  cursor: text;
+  padding: 0.125em 0.25em;
+}
+.input[type=email]:focus {
+  border-color: #3399FF;
+  box-shadow: inset 0px 1px 2px #3399FF;
+}
+.input[type=email]:focus:invalid {
+  border-color: #AA1F1F;
+  box-shadow: inset 0px 1px 2px #AA1F1F;
+  color: #CA3C3C;
+}
+.input[type=email][disabled] {
+  background-color: #eaeded;
+  color: #cad2d3;
+  cursor: not-allowed;
+}
+.input[type=month] {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 2px #ddd;
+  cursor: text;
+  padding: 0.125em 0.25em;
+}
+.input[type=month]:focus {
+  border-color: #3399FF;
+  box-shadow: inset 0px 1px 2px #3399FF;
+}
+.input[type=month]:focus:invalid {
+  border-color: #AA1F1F;
+  box-shadow: inset 0px 1px 2px #AA1F1F;
+  color: #CA3C3C;
+}
+.input[type=month][disabled] {
+  background-color: #eaeded;
+  color: #cad2d3;
+  cursor: not-allowed;
+}
+.input[type=number] {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 2px #ddd;
+  cursor: text;
+  padding: 0.125em 0.25em;
+}
+.input[type=number]:focus {
+  border-color: #3399FF;
+  box-shadow: inset 0px 1px 2px #3399FF;
+}
+.input[type=number]:focus:invalid {
+  border-color: #AA1F1F;
+  box-shadow: inset 0px 1px 2px #AA1F1F;
+  color: #CA3C3C;
+}
+.input[type=number][disabled] {
+  background-color: #eaeded;
+  color: #cad2d3;
+  cursor: not-allowed;
+}
+.input[type=password] {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 2px #ddd;
+  cursor: text;
+  padding: 0.125em 0.25em;
+}
+.input[type=password]:focus {
+  border-color: #3399FF;
+  box-shadow: inset 0px 1px 2px #3399FF;
+}
+.input[type=password]:focus:invalid {
+  border-color: #AA1F1F;
+  box-shadow: inset 0px 1px 2px #AA1F1F;
+  color: #CA3C3C;
+}
+.input[type=password][disabled] {
+  background-color: #eaeded;
+  color: #cad2d3;
+  cursor: not-allowed;
+}
+.input[type=reset] {
+  background-color: #3399FF;
+  align-items: center;
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.15), transparent);
+  border-radius: 5px;
+  box-shadow: inset -1px -1px 2px 0px rgba(0, 0, 0, 0.15), 1px 1px 2px #ccc;
+  cursor: pointer;
+  padding: 0.25em 0.5em;
+  text-align: center;
+  background-color: #00AB6E;
+  color: white;
+}
+.input[type=reset] a {
+  border-bottom: 0.075em solid transparent;
+  color: white;
+}
+.input[type=reset] a:link {
+  color: white;
+}
+.input[type=reset] a:visited {
+  color: white;
+}
+.input[type=reset] a:hover {
+  border-bottom: 0.075em solid white;
+}
+.input[type=reset] a:visited:hover {
+  border-bottom: 0.075em solid white;
+}
+.input[type=reset] a:active {
+  color: white;
+}
+.input[type=reset]:active {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
+}
+.input[type=reset]:hover,
+.input[type=reset]:focus {
+  background-image: linear-gradient(135deg, transparent, rgba(0, 0, 0, 0.15));
+}
+.input[type=reset]:disabled {
+  background-image: none;
+  box-shadow: none;
+  cursor: not-allowed;
+  opacity: 0.40;
+}
+.input[type=reset] a {
+  border-bottom: 0.075em solid transparent;
+  color: white;
+}
+.input[type=reset] a:link {
+  color: white;
+}
+.input[type=reset] a:visited {
+  color: white;
+}
+.input[type=reset] a:hover {
+  border-bottom: 0.075em solid white;
+}
+.input[type=reset] a:visited:hover {
+  border-bottom: 0.075em solid white;
+}
+.input[type=reset] a:active {
+  color: white;
+}
+.input[type=search] {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 2px #ddd;
+  cursor: text;
+  padding: 0.125em 0.25em;
+}
+.input[type=search]:focus {
+  border-color: #3399FF;
+  box-shadow: inset 0px 1px 2px #3399FF;
+}
+.input[type=search]:focus:invalid {
+  border-color: #AA1F1F;
+  box-shadow: inset 0px 1px 2px #AA1F1F;
+  color: #CA3C3C;
+}
+.input[type=search][disabled] {
+  background-color: #eaeded;
+  color: #cad2d3;
+  cursor: not-allowed;
+}
+.input[type=submit] {
+  background-color: #3399FF;
+  color: white;
+  align-items: center;
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.15), transparent);
+  border-radius: 5px;
+  box-shadow: inset -1px -1px 2px 0px rgba(0, 0, 0, 0.15), 1px 1px 2px #ccc;
+  cursor: pointer;
+  padding: 0.25em 0.5em;
+  text-align: center;
+}
+.input[type=submit] a {
+  border-bottom: 0.075em solid transparent;
+  color: white;
+}
+.input[type=submit] a:link {
+  color: white;
+}
+.input[type=submit] a:visited {
+  color: white;
+}
+.input[type=submit] a:hover {
+  border-bottom: 0.075em solid white;
+}
+.input[type=submit] a:visited:hover {
+  border-bottom: 0.075em solid white;
+}
+.input[type=submit] a:active {
+  color: white;
+}
+.input[type=submit]:active {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
+}
+.input[type=submit]:hover,
+.input[type=submit]:focus {
+  background-image: linear-gradient(135deg, transparent, rgba(0, 0, 0, 0.15));
+}
+.input[type=submit]:disabled {
+  background-image: none;
+  box-shadow: none;
+  cursor: not-allowed;
+  opacity: 0.40;
+}
+.input[type=tel] {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 2px #ddd;
+  cursor: text;
+  padding: 0.125em 0.25em;
+}
+.input[type=tel]:focus {
+  border-color: #3399FF;
+  box-shadow: inset 0px 1px 2px #3399FF;
+}
+.input[type=tel]:focus:invalid {
+  border-color: #AA1F1F;
+  box-shadow: inset 0px 1px 2px #AA1F1F;
+  color: #CA3C3C;
+}
+.input[type=tel][disabled] {
+  background-color: #eaeded;
+  color: #cad2d3;
+  cursor: not-allowed;
+}
+.input[type=text] {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 2px #ddd;
+  cursor: text;
+  padding: 0.125em 0.25em;
+  display: flex;
+}
+.input[type=text]:focus {
+  border-color: #3399FF;
+  box-shadow: inset 0px 1px 2px #3399FF;
+}
+.input[type=text]:focus:invalid {
+  border-color: #AA1F1F;
+  box-shadow: inset 0px 1px 2px #AA1F1F;
+  color: #CA3C3C;
+}
+.input[type=text][disabled] {
+  background-color: #eaeded;
+  color: #cad2d3;
+  cursor: not-allowed;
+}
+.input[type=time] {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 2px #ddd;
+  cursor: text;
+  padding: 0.125em 0.25em;
+}
+.input[type=time]:focus {
+  border-color: #3399FF;
+  box-shadow: inset 0px 1px 2px #3399FF;
+}
+.input[type=time]:focus:invalid {
+  border-color: #AA1F1F;
+  box-shadow: inset 0px 1px 2px #AA1F1F;
+  color: #CA3C3C;
+}
+.input[type=time][disabled] {
+  background-color: #eaeded;
+  color: #cad2d3;
+  cursor: not-allowed;
+}
+.input[type=url] {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 2px #ddd;
+  cursor: text;
+  padding: 0.125em 0.25em;
+}
+.input[type=url]:focus {
+  border-color: #3399FF;
+  box-shadow: inset 0px 1px 2px #3399FF;
+}
+.input[type=url]:focus:invalid {
+  border-color: #AA1F1F;
+  box-shadow: inset 0px 1px 2px #AA1F1F;
+  color: #CA3C3C;
+}
+.input[type=url][disabled] {
+  background-color: #eaeded;
+  color: #cad2d3;
+  cursor: not-allowed;
+}
+.input[type=week] {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 2px #ddd;
+  cursor: text;
+  padding: 0.125em 0.25em;
+}
+.input[type=week]:focus {
+  border-color: #3399FF;
+  box-shadow: inset 0px 1px 2px #3399FF;
+}
+.input[type=week]:focus:invalid {
+  border-color: #AA1F1F;
+  box-shadow: inset 0px 1px 2px #AA1F1F;
+  color: #CA3C3C;
+}
+.input[type=week][disabled] {
+  background-color: #eaeded;
+  color: #cad2d3;
+  cursor: not-allowed;
+}
+.italic {
+  font-style: italic;
+}
+.italic[lang] {
+  font-family: 'Gentium Plus', 'Charis SIL', 'Doulos SIL', 'Cambria', 'Andika', 'Lucida Sans Unicode', 'Times New Roman', 'Georgia', serif;
+  font-size: 1.15em;
+}
+.label {
+  align-items: center;
+  flex-direction: row;
+}
+.label span {
+  font-size: smaller;
+  font-weight: bold;
 }
 .link {
   color: #3399FF;
@@ -507,358 +1005,26 @@ This file contains DLx styles that need to be explicitly specified using classes
 .link:visited:active {
   color: #4D42FF;
 }
-blockquote > a,
-button > a,
-caption > a,
-dd > a,
-dt > a,
-figcaption > a,
-h1 > a,
-h2 > a,
-h3 > a,
-h4 > a,
-h5 > a,
-h6 > a,
-input > a,
-legend > a,
-option > a,
-output > a,
-p > a,
-pre > a,
-select > a,
-summary > a,
-textarea > a,
-abbr > a,
-acronym > a,
-b > a,
-bdo > a,
-big > a,
-br > a,
-cite > a,
-code > a,
-del > a,
-dfn > a,
-em > a,
-i > a,
-ins > a,
-kbd > a,
-mark > a,
-q > a,
-samp > a,
-s > a,
-small > a,
-span > a,
-strike > a,
-strong > a,
-sub > a,
-sup > a,
-time > a,
-tt > a,
-var > a {
-  color: #3399FF;
+.link-white {
   border-bottom: 0.075em solid transparent;
+  color: white;
 }
-blockquote > a:link,
-button > a:link,
-caption > a:link,
-dd > a:link,
-dt > a:link,
-figcaption > a:link,
-h1 > a:link,
-h2 > a:link,
-h3 > a:link,
-h4 > a:link,
-h5 > a:link,
-h6 > a:link,
-input > a:link,
-legend > a:link,
-option > a:link,
-output > a:link,
-p > a:link,
-pre > a:link,
-select > a:link,
-summary > a:link,
-textarea > a:link,
-abbr > a:link,
-acronym > a:link,
-b > a:link,
-bdo > a:link,
-big > a:link,
-br > a:link,
-cite > a:link,
-code > a:link,
-del > a:link,
-dfn > a:link,
-em > a:link,
-i > a:link,
-ins > a:link,
-kbd > a:link,
-mark > a:link,
-q > a:link,
-samp > a:link,
-s > a:link,
-small > a:link,
-span > a:link,
-strike > a:link,
-strong > a:link,
-sub > a:link,
-sup > a:link,
-time > a:link,
-tt > a:link,
-var > a:link {
-  color: #3399FF;
+.link-white:link {
+  color: white;
 }
-blockquote > a:visited,
-button > a:visited,
-caption > a:visited,
-dd > a:visited,
-dt > a:visited,
-figcaption > a:visited,
-h1 > a:visited,
-h2 > a:visited,
-h3 > a:visited,
-h4 > a:visited,
-h5 > a:visited,
-h6 > a:visited,
-input > a:visited,
-legend > a:visited,
-option > a:visited,
-output > a:visited,
-p > a:visited,
-pre > a:visited,
-select > a:visited,
-summary > a:visited,
-textarea > a:visited,
-abbr > a:visited,
-acronym > a:visited,
-b > a:visited,
-bdo > a:visited,
-big > a:visited,
-br > a:visited,
-cite > a:visited,
-code > a:visited,
-del > a:visited,
-dfn > a:visited,
-em > a:visited,
-i > a:visited,
-ins > a:visited,
-kbd > a:visited,
-mark > a:visited,
-q > a:visited,
-samp > a:visited,
-s > a:visited,
-small > a:visited,
-span > a:visited,
-strike > a:visited,
-strong > a:visited,
-sub > a:visited,
-sup > a:visited,
-time > a:visited,
-tt > a:visited,
-var > a:visited {
-  color: #4D42FF;
+.link-white:visited {
+  color: white;
 }
-blockquote > a:hover,
-button > a:hover,
-caption > a:hover,
-dd > a:hover,
-dt > a:hover,
-figcaption > a:hover,
-h1 > a:hover,
-h2 > a:hover,
-h3 > a:hover,
-h4 > a:hover,
-h5 > a:hover,
-h6 > a:hover,
-input > a:hover,
-legend > a:hover,
-option > a:hover,
-output > a:hover,
-p > a:hover,
-pre > a:hover,
-select > a:hover,
-summary > a:hover,
-textarea > a:hover,
-abbr > a:hover,
-acronym > a:hover,
-b > a:hover,
-bdo > a:hover,
-big > a:hover,
-br > a:hover,
-cite > a:hover,
-code > a:hover,
-del > a:hover,
-dfn > a:hover,
-em > a:hover,
-i > a:hover,
-ins > a:hover,
-kbd > a:hover,
-mark > a:hover,
-q > a:hover,
-samp > a:hover,
-s > a:hover,
-small > a:hover,
-span > a:hover,
-strike > a:hover,
-strong > a:hover,
-sub > a:hover,
-sup > a:hover,
-time > a:hover,
-tt > a:hover,
-var > a:hover {
-  border-bottom: 0.075em solid #3399FF;
+.link-white:hover {
+  border-bottom: 0.075em solid white;
 }
-blockquote > a:active,
-button > a:active,
-caption > a:active,
-dd > a:active,
-dt > a:active,
-figcaption > a:active,
-h1 > a:active,
-h2 > a:active,
-h3 > a:active,
-h4 > a:active,
-h5 > a:active,
-h6 > a:active,
-input > a:active,
-legend > a:active,
-option > a:active,
-output > a:active,
-p > a:active,
-pre > a:active,
-select > a:active,
-summary > a:active,
-textarea > a:active,
-abbr > a:active,
-acronym > a:active,
-b > a:active,
-bdo > a:active,
-big > a:active,
-br > a:active,
-cite > a:active,
-code > a:active,
-del > a:active,
-dfn > a:active,
-em > a:active,
-i > a:active,
-ins > a:active,
-kbd > a:active,
-mark > a:active,
-q > a:active,
-samp > a:active,
-s > a:active,
-small > a:active,
-span > a:active,
-strike > a:active,
-strong > a:active,
-sub > a:active,
-sup > a:active,
-time > a:active,
-tt > a:active,
-var > a:active {
-  color: #3399FF;
+.link-white:visited:hover {
+  border-bottom: 0.075em solid white;
 }
-blockquote > a:visited:hover,
-button > a:visited:hover,
-caption > a:visited:hover,
-dd > a:visited:hover,
-dt > a:visited:hover,
-figcaption > a:visited:hover,
-h1 > a:visited:hover,
-h2 > a:visited:hover,
-h3 > a:visited:hover,
-h4 > a:visited:hover,
-h5 > a:visited:hover,
-h6 > a:visited:hover,
-input > a:visited:hover,
-legend > a:visited:hover,
-option > a:visited:hover,
-output > a:visited:hover,
-p > a:visited:hover,
-pre > a:visited:hover,
-select > a:visited:hover,
-summary > a:visited:hover,
-textarea > a:visited:hover,
-abbr > a:visited:hover,
-acronym > a:visited:hover,
-b > a:visited:hover,
-bdo > a:visited:hover,
-big > a:visited:hover,
-br > a:visited:hover,
-cite > a:visited:hover,
-code > a:visited:hover,
-del > a:visited:hover,
-dfn > a:visited:hover,
-em > a:visited:hover,
-i > a:visited:hover,
-ins > a:visited:hover,
-kbd > a:visited:hover,
-mark > a:visited:hover,
-q > a:visited:hover,
-samp > a:visited:hover,
-s > a:visited:hover,
-small > a:visited:hover,
-span > a:visited:hover,
-strike > a:visited:hover,
-strong > a:visited:hover,
-sub > a:visited:hover,
-sup > a:visited:hover,
-time > a:visited:hover,
-tt > a:visited:hover,
-var > a:visited:hover {
-  border-bottom: 0.075em solid #4D42FF;
+.link-white:active {
+  color: white;
 }
-blockquote > a:visited:active,
-button > a:visited:active,
-caption > a:visited:active,
-dd > a:visited:active,
-dt > a:visited:active,
-figcaption > a:visited:active,
-h1 > a:visited:active,
-h2 > a:visited:active,
-h3 > a:visited:active,
-h4 > a:visited:active,
-h5 > a:visited:active,
-h6 > a:visited:active,
-input > a:visited:active,
-legend > a:visited:active,
-option > a:visited:active,
-output > a:visited:active,
-p > a:visited:active,
-pre > a:visited:active,
-select > a:visited:active,
-summary > a:visited:active,
-textarea > a:visited:active,
-abbr > a:visited:active,
-acronym > a:visited:active,
-b > a:visited:active,
-bdo > a:visited:active,
-big > a:visited:active,
-br > a:visited:active,
-cite > a:visited:active,
-code > a:visited:active,
-del > a:visited:active,
-dfn > a:visited:active,
-em > a:visited:active,
-i > a:visited:active,
-ins > a:visited:active,
-kbd > a:visited:active,
-mark > a:visited:active,
-q > a:visited:active,
-samp > a:visited:active,
-s > a:visited:active,
-small > a:visited:active,
-span > a:visited:active,
-strike > a:visited:active,
-strong > a:visited:active,
-sub > a:visited:active,
-sup > a:visited:active,
-time > a:visited:active,
-tt > a:visited:active,
-var > a:visited:active {
-  color: #4D42FF;
-}
-.main-nav ul {
+.nav ul {
   background-color: #3399FF;
   color: white;
   flex-direction: row;
@@ -866,34 +1032,31 @@ var > a:visited:active {
   font-size: 1.25rem;
   justify-content: space-around;
 }
-.main-nav ul a {
+.nav ul a {
   border-bottom: 0.075em solid transparent;
   color: white;
 }
-.main-nav ul a:link {
+.nav ul a:link {
   color: white;
 }
-.main-nav ul a:visited {
+.nav ul a:visited {
   color: white;
 }
-.main-nav ul a:hover {
+.nav ul a:hover {
   border-bottom: 0.075em solid white;
 }
-.main-nav ul a:visited:hover {
+.nav ul a:visited:hover {
   border-bottom: 0.075em solid white;
 }
-.main-nav ul a:active {
+.nav ul a:active {
   color: white;
 }
-.main-nav ul li {
+.nav ul li {
   flex-grow: 1;
 }
-.main-nav ul a {
+.nav ul a {
   text-align: center;
   padding: 0.5em;
-}
-.minor-header {
-  font-size: 1.25em;
 }
 .numbered {
   counter-reset: numbered;
@@ -955,20 +1118,36 @@ var > a:visited:active {
   margin-left: 1.5em;
   text-indent: -1.5em;
 }
-.section-header {
-  font-size: 1.75em;
+.select {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 0.25em;
+}
+.strong {
+  color: #017CF2;
   font-weight: bold;
-  padding-bottom: 0.25em;
-  padding-top: 0.5em;
 }
-.subsection-header {
-  font-size: 1.5em;
-  padding-bottom: 0.25em;
-  padding-top: 0.5em;
+.textarea {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 2px #ddd;
+  cursor: text;
+  padding: 0.125em 0.25em;
 }
-.subsubsection-header {
-  font-size: 1.5em;
-  font-style: italic;
+.textarea:focus {
+  border-color: #3399FF;
+  box-shadow: inset 0px 1px 2px #3399FF;
+}
+.textarea:focus:invalid {
+  border-color: #AA1F1F;
+  box-shadow: inset 0px 1px 2px #AA1F1F;
+  color: #CA3C3C;
+}
+.textarea[disabled] {
+  background-color: #eaeded;
+  color: #cad2d3;
+  cursor: not-allowed;
 }
 .tooltip {
   position: relative;
@@ -994,76 +1173,7 @@ var > a:visited:active {
   padding: 0.5em 1em;
   z-index: 2;
 }
-blockquote > .tooltip,
-button > .tooltip,
-caption > .tooltip,
-dd > .tooltip,
-dt > .tooltip,
-figcaption > .tooltip,
-h1 > .tooltip,
-h2 > .tooltip,
-h3 > .tooltip,
-h4 > .tooltip,
-h5 > .tooltip,
-h6 > .tooltip,
-input > .tooltip,
-legend > .tooltip,
-option > .tooltip,
-output > .tooltip,
-p > .tooltip,
-pre > .tooltip,
-select > .tooltip,
-summary > .tooltip,
-textarea > .tooltip,
-abbr > .tooltip,
-acronym > .tooltip,
-b > .tooltip,
-bdo > .tooltip,
-big > .tooltip,
-br > .tooltip,
-cite > .tooltip,
-code > .tooltip,
-del > .tooltip,
-dfn > .tooltip,
-em > .tooltip,
-i > .tooltip,
-ins > .tooltip,
-kbd > .tooltip,
-mark > .tooltip,
-q > .tooltip,
-samp > .tooltip,
-s > .tooltip,
-small > .tooltip,
-span > .tooltip,
-strike > .tooltip,
-strong > .tooltip,
-sub > .tooltip,
-sup > .tooltip,
-time > .tooltip,
-tt > .tooltip,
-var > .tooltip {
-  text-decoration: underline dotted #00F39D;
-}
 .unicode {
   font-family: 'Gentium Plus', 'Charis SIL', 'Doulos SIL', 'Cambria', 'Andika', 'Lucida Sans Unicode', 'Times New Roman', 'Georgia', serif;
   font-size: 1.15em;
-}
-.white-link {
-  border-bottom: 0.075em solid transparent;
-  color: white;
-}
-.white-link:link {
-  color: white;
-}
-.white-link:visited {
-  color: white;
-}
-.white-link:hover {
-  border-bottom: 0.075em solid white;
-}
-.white-link:visited:hover {
-  border-bottom: 0.075em solid white;
-}
-.white-link:active {
-  color: white;
 }
