@@ -1,0 +1,26 @@
+<section id=patterns>
+
+  <h1 class=section-header>Patterns</h1>
+
+  {{#each patterns}}
+    <section id={{@key}} class='pattern {{@key}}-example'>
+
+      <header>
+        <h1 class='pattern-title header-subsection'><code>{{@key}}</code></h1>
+        <p class=pattern-description>{{description}}</p>
+      </header>
+
+      <div>
+        <h1 class=header-minor>Example Markup</h1>
+        <code class=markup>{{html}}</code>
+      </div>
+
+      <div>
+        <h1 class=header-minor>Live Example</h1>
+        <div class=rendered>{{{html}}}</div>
+      </div>
+
+    </section>
+  {{/each}}
+
+</section>

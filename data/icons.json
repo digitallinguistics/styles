@@ -1,0 +1,89 @@
+[
+  {
+    "filename": "blog.svg",
+    "alt": "blog icon",
+    "description": "Blog icon"
+  },
+  {
+    "filename": "box.svg",
+    "alt": "box icon",
+    "description": "The box icon is the logo for the DLx app"
+  },
+  {
+    "filename": "browse.svg",
+    "alt": "browse icon",
+    "description": "The browse icon is the logo for the DLx data explorer"
+  },
+  {
+    "filename": "code.svg",
+    "alt": "programming code icon",
+    "description": "Icon representing programming code, e.g. indicating an area with raw JSON data, etc."
+  },
+  {
+    "filename": "computer.svg",
+    "alt": "computer icon",
+    "description": "The computer icon is used for areas concerning developers"
+  },
+  {
+    "filename": "info.svg",
+    "alt": "info icon",
+    "description": "The info icon is used for About pages or to indicate where additional information is available"
+  },
+  {
+    "filename": "menu.svg",
+    "alt": "menuicon",
+    "description": "A basic menu / navigation icon"
+  },
+  {
+    "filename": "language.svg",
+    "alt": "language icon",
+    "description": "This icon is used to represent the concept of a language"
+  },
+  {
+    "filename": "octicon.svg",
+    "alt": "GitHub octicon",
+    "description": "The GitHub Octicon logo"
+  },
+  {
+    "filename": "question.svg",
+    "alt": "question icon",
+    "description": "The question icon is used for questions/help pages"
+  },
+  {
+    "filename": "tools.svg",
+    "alt": "tools icon",
+    "description": "A generic tools icon"
+  },
+  {
+    "filename": "tools.color.svg",
+    "alt": "color tools icon",
+    "description": "The tools icon is used as the logo for the Tools section of the DLx app"
+  },
+  {
+    "filename": "tunnel.svg",
+    "alt": "JSON tunnel icon",
+    "description": "The JSON tunnel icon is the de facto logo for DLx"
+  },
+  {
+    "filename": "wug.svg",
+    "alt": "a wug",
+    "description": "The blue wug is part of DLx branding, and can be used creatively wherever appropriate"
+  },
+  {
+    "filename": "wugbot.svg",
+    "alt": "a wugbot",
+    "description": "The wugbot icon is another de facto logo for DLx, part of DLx branding, and can be used creatively wherever appropriate"
+  },
+  {
+    "filename": "tunnel.ico",
+    "alt": "JSON tunnel favicon",
+    "description": "The JSON tunnel icon as a favicon",
+    "class": "favicon"
+  },
+  {
+    "filename": "wugbot.ico",
+    "alt": "wugbot favicon",
+    "description": "The wugbot icon as a favicon",
+    "class": "favicon"
+  }
+]
