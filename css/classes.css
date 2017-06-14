@@ -473,7 +473,7 @@ This file contains DLx styles that need to be explicitly specified using classes
   font-size: 0.75em;
   font-style: normal;
   overflow-x: auto;
-  padding: 0.25em;
+  padding: 0.25em 0.5em;
   white-space: pre;
 }
 .dfn {
@@ -1064,11 +1064,16 @@ This file contains DLx styles that need to be explicitly specified using classes
 .numbered li {
   counter-increment: numbered;
   display: list-item;
+  position: relative;
+}
+.numbered li > * {
+  margin-left: 2.5rem;
 }
 .numbered li::before {
   content: counter(numbered) '.';
   font-weight: bold;
-  padding: 0.5em;
+  padding: 0rem 0.5em;
+  position: absolute;
 }
 .page-title {
   font-size: 2.5em;
@@ -1125,6 +1130,12 @@ This file contains DLx styles that need to be explicitly specified using classes
 .strong {
   color: #017CF2;
   font-weight: bold;
+}
+.summary {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  margin-left: -1em;
 }
 .textarea {
   background-color: white;

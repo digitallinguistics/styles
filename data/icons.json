@@ -85,5 +85,10 @@
     "alt": "wugbot favicon",
     "description": "The wugbot icon as a favicon",
     "class": "favicon"
+  },
+  {
+    "filename": "x-circle.svg",
+    "alt": "X with circle icon",
+    "description": "An exit/remove icon"
   }
 ]

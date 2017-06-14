@@ -40,19 +40,19 @@
     "description": "For blocks of text with a hanging indent."
   },
 
-  "header-minor": {
+  "h-minor": {
     "description": "For minor headers (level below sub-subsection)"
   },
 
-  "header-section": {
+  "h-section": {
     "description": "Section headers"
   },
 
-  "header-subsection": {
+  "h-subsection": {
     "description": "Subsection headers"
   },
 
-  "header-subsubsection": {
+  "h-subsubsection": {
     "description": "Sub-subsection headers"
   },
 
