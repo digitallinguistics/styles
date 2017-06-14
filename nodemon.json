@@ -1,5 +1,5 @@
 {
-  "exec": "yarn run build",
+  "exec": "yarn run hbs & yarn run upload & yarn run less",
   "ext": "hbs js json less",
   "ignore": []
 }

@@ -57,7 +57,11 @@
   },
 
   "input": {
-    "description": "Default styles are added for each of the various input types."
+    "description": "Adding the <code>.input</code> class to any <code>&lt;input&gt;</code> element will style that element according to its type."
+  },
+
+  "italic": {
+    "description": "Used for general italic styling. Other more semantic classes should be preferred over this one when possible."
   },
 
   "label": {
@@ -80,8 +84,20 @@
     "description": "For numbered lists. Because DLx often uses ordered lists where list styling is not wanted, the <code>.numbered</code> class is not automatically applied to <code>&lt;ol&gt;</code> elements, and must be applied manually."
   },
 
+  "orthographic": {
+    "description": "This class should be used when citing an orthographic representation of some data, e.g., when writing about writing systems."
+  },
+
   "page-title": {
     "description": "For page titles"
+  },
+
+  "phonemic": {
+    "description": "Used for phonemic representations of data."
+  },
+
+  "phonetic": {
+    "description": "Used for phonetic representations of data."
   },
 
   "reference-list": {
@@ -102,6 +118,10 @@
 
   "tooltip": {
     "description": "Adding the <code>.tooltip</code> class to any element will make a tooltip display on hover or when the element is focused. The content of the tooltip is contained in the <code>title</code> attribute for that element. Note that tooltips do not work on <code>&lt;input&gt;</code> elements - place the <code>.tooltip</code> class on the <code>&lt;label&gt;</code> instead."
+  },
+
+  "unicode": {
+    "description": "Used when a Unicode font is needed. More semantic styles such as <code>.phonetic</code> or <code>.phonemic</code> should be preferred over this one when possible."
   }
 
 }

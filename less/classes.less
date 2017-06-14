@@ -181,6 +181,11 @@ This file contains DLx styles that need to be explicitly specified using classes
 
 }
 
+.button-red {
+  .button;
+  .red-background;
+}
+
 .cite {
   font-style: italic;
 }
@@ -201,7 +206,7 @@ This file contains DLx styles that need to be explicitly specified using classes
   font-style: italic;
 }
 
-.emphasized {
+.em {
   font-style: italic;
 }
 
@@ -344,9 +349,6 @@ This file contains DLx styles that need to be explicitly specified using classes
 
 .italic {
   font-style: italic;
-  &[lang] {
-    .unicode;
-  }
 }
 
 .label {
@@ -409,24 +411,61 @@ This file contains DLx styles that need to be explicitly specified using classes
 
     counter-increment: numbered;
     display: list-item;
+    margin-left: 2.5rem;
     position: relative;
-
-    > * { margin-left: 2.5rem; }
 
     &::before {
       content: counter(numbered) '.';
       font-weight: bold;
       padding: 0rem 0.5em;
       position: absolute;
+      right: 5rem;
     }
 
   }
 
 }
 
+.orthographic {
+  .unicode;
+  &::before {
+    content: '<';
+    padding-right: 0.15em;
+  }
+  &::after  {
+    content: '>';
+    padding-left: 0.15em;
+  }
+}
+
 .page-title {
+  align-self: center;
   font-size: 2.5em;
   text-align: center;
+}
+
+.phonemic {
+  .unicode;
+  &::before {
+    content: '/';
+    padding-right: 0.15em;
+  }
+  &::after  {
+    content: '/';
+    padding-left: 0.15em;
+  }
+}
+
+.phonetic {
+  .unicode;
+  &::before {
+    content: '[';
+    padding-right: 0.15em;
+  }
+  &::after  {
+    content: ']';
+    padding-left: 0.15em;
+  }
 }
 
 .reference-list {
@@ -510,4 +549,5 @@ This file contains DLx styles that need to be explicitly specified using classes
 .unicode {
   font-family: 'Gentium Plus', 'Charis SIL', 'Doulos SIL', 'Cambria', 'Andika', 'Lucida Sans Unicode', 'Times New Roman', 'Georgia', serif;
   font-size: 1.15em;
+  line-height: 1;
 }

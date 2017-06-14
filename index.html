@@ -29,7 +29,7 @@
         <option value=typography>Typography</option>
         <option value=icons>Icons</option>
         <option value=patterns>Patterns</option>
-        <option value=abbr-pattern>abbr</option><option value=bulleted-pattern>bulleted</option><option value=button-pattern>button</option><option value=cite-pattern>cite</option><option value=code-pattern>code</option><option value=dfn-pattern>dfn</option><option value=em-pattern>em</option><option value=field-pattern>field</option><option value=fieldset-pattern>fieldset</option><option value=hanging-pattern>hanging</option><option value=h-minor-pattern>h-minor</option><option value=h-section-pattern>h-section</option><option value=h-subsection-pattern>h-subsection</option><option value=h-subsubsection-pattern>h-subsubsection</option><option value=input-pattern>input</option><option value=label-pattern>label</option><option value=link-pattern>link</option><option value=link-white-pattern>link-white</option><option value=nav-pattern>nav</option><option value=numbered-pattern>numbered</option><option value=page-title-pattern>page-title</option><option value=reference-list-pattern>reference-list</option><option value=select-pattern>select</option><option value=strong-pattern>strong</option><option value=textarea-pattern>textarea</option><option value=tooltip-pattern>tooltip</option>
+        <option value=abbr-pattern>abbr</option><option value=bulleted-pattern>bulleted</option><option value=button-pattern>button</option><option value=cite-pattern>cite</option><option value=code-pattern>code</option><option value=dfn-pattern>dfn</option><option value=em-pattern>em</option><option value=field-pattern>field</option><option value=fieldset-pattern>fieldset</option><option value=hanging-pattern>hanging</option><option value=h-minor-pattern>h-minor</option><option value=h-section-pattern>h-section</option><option value=h-subsection-pattern>h-subsection</option><option value=h-subsubsection-pattern>h-subsubsection</option><option value=input-pattern>input</option><option value=italic-pattern>italic</option><option value=label-pattern>label</option><option value=link-pattern>link</option><option value=link-white-pattern>link-white</option><option value=nav-pattern>nav</option><option value=numbered-pattern>numbered</option><option value=orthographic-pattern>orthographic</option><option value=page-title-pattern>page-title</option><option value=phonemic-pattern>phonemic</option><option value=phonetic-pattern>phonetic</option><option value=reference-list-pattern>reference-list</option><option value=select-pattern>select</option><option value=strong-pattern>strong</option><option value=textarea-pattern>textarea</option><option value=tooltip-pattern>tooltip</option><option value=unicode-pattern>unicode</option>
       </select>
 
     </label>
@@ -293,9 +293,9 @@
             <pre><code class=markup>
     &lt;button class&#x3D;button type&#x3D;button&gt;Button&lt;/button&gt;
     &lt;button class&#x3D;button type&#x3D;button disabled&gt;Disabled Button&lt;/button&gt;
-    &lt;button class&#x3D;button type&#x3D;button class&#x3D;red-background&gt;Red Button&lt;/button&gt;
+    &lt;button class&#x3D;button-red type&#x3D;button class&#x3D;red-background&gt;Red Button&lt;/button&gt;
     
-    &lt;input class&#x3D;button type&#x3D;button value&#x3D;&#x27;input[type&#x3D;button]&#x27;&gt;
+    &lt;input class&#x3D;button type&#x3D;button value&#x3D;&#x27;Input Button&#x27;&gt;
     </code></pre>
           </div>
     
@@ -303,9 +303,9 @@
             <h1 class=h-minor>Live Example</h1>
             <div class=rendered><button class=button type=button>Button</button>
     <button class=button type=button disabled>Disabled Button</button>
-    <button class=button type=button class=red-background>Red Button</button>
+    <button class=button-red type=button class=red-background>Red Button</button>
     
-    <input class=button type=button value='input[type=button]'>
+    <input class=button type=button value='Input Button'>
     </div>
           </div>
     
@@ -418,7 +418,7 @@
             <h1 class=h-minor>Example Markup</h1>
             <pre><code class=markup>
     &lt;p&gt;
-      &lt;em class&#x3D;emphasized&gt;These words&lt;/em&gt; are emphasized.
+      &lt;em class&#x3D;em&gt;These words&lt;/em&gt; are emphasized.
     &lt;/p&gt;
     </code></pre>
           </div>
@@ -426,7 +426,7 @@
           <div>
             <h1 class=h-minor>Live Example</h1>
             <div class=rendered><p>
-      <em class=emphasized>These words</em> are emphasized.
+      <em class=em>These words</em> are emphasized.
     </p>
     </div>
           </div>
@@ -629,7 +629,7 @@
     
           <header>
             <h1 class='pattern-title header-subsection'><code>input</code></h1>
-            <p class=pattern-description>Default styles are added for each of the various input types.</p>
+            <p class=pattern-description>Adding the <code>.input</code> class to any <code>&lt;input&gt;</code> element will style that element according to its type.</p>
           </header>
     
           <div>
@@ -884,6 +884,27 @@
           </div>
     
         </section>
+        <section id=italic-pattern class='pattern italic-example'>
+    
+          <header>
+            <h1 class='pattern-title header-subsection'><code>italic</code></h1>
+            <p class=pattern-description>Used for general italic styling. Other more semantic classes should be preferred over this one when possible.</p>
+          </header>
+    
+          <div>
+            <h1 class=h-minor>Example Markup</h1>
+            <pre><code class=markup>
+    &lt;p&gt;This shows an example of &lt;i class&#x3D;italic&gt;italicized text&lt;/i&gt;.&lt;/p&gt;
+    </code></pre>
+          </div>
+    
+          <div>
+            <h1 class=h-minor>Live Example</h1>
+            <div class=rendered><p>This shows an example of <i class=italic>italicized text</i>.</p>
+    </div>
+          </div>
+    
+        </section>
         <section id=label-pattern class='pattern label-example'>
     
           <header>
@@ -1049,6 +1070,27 @@
           </div>
     
         </section>
+        <section id=orthographic-pattern class='pattern orthographic-example'>
+    
+          <header>
+            <h1 class='pattern-title header-subsection'><code>orthographic</code></h1>
+            <p class=pattern-description>This class should be used when citing an orthographic representation of some data, e.g., when writing about writing systems.</p>
+          </header>
+    
+          <div>
+            <h1 class=h-minor>Example Markup</h1>
+            <pre><code class=markup>
+    &lt;p&gt;This is an example of a sentence with an &lt;span class&#x3D;orthographic&gt;orthographic representation&lt;/span&gt; of some text.&lt;/p&gt;
+    </code></pre>
+          </div>
+    
+          <div>
+            <h1 class=h-minor>Live Example</h1>
+            <div class=rendered><p>This is an example of a sentence with an <span class=orthographic>orthographic representation</span> of some text.</p>
+    </div>
+          </div>
+    
+        </section>
         <section id=page-title-pattern class='pattern page-title-example'>
     
           <header>
@@ -1059,7 +1101,7 @@
           <div>
             <h1 class=h-minor>Example Markup</h1>
             <pre><code class=markup>
-    &lt;h1 class&#x3D;page-page&gt;
+    &lt;h1 class&#x3D;page-title&gt;
       Page Title
     &lt;/h1&gt;
     </code></pre>
@@ -1067,9 +1109,51 @@
     
           <div>
             <h1 class=h-minor>Live Example</h1>
-            <div class=rendered><h1 class=page-page>
+            <div class=rendered><h1 class=page-title>
       Page Title
     </h1>
+    </div>
+          </div>
+    
+        </section>
+        <section id=phonemic-pattern class='pattern phonemic-example'>
+    
+          <header>
+            <h1 class='pattern-title header-subsection'><code>phonemic</code></h1>
+            <p class=pattern-description>Used for phonemic representations of data.</p>
+          </header>
+    
+          <div>
+            <h1 class=h-minor>Example Markup</h1>
+            <pre><code class=markup>
+    &lt;p&gt;This is an example of a &lt;span class&#x3D;phonemic&gt;fənimɪk&lt;/span&gt; representation of some data.&lt;/p&gt;
+    </code></pre>
+          </div>
+    
+          <div>
+            <h1 class=h-minor>Live Example</h1>
+            <div class=rendered><p>This is an example of a <span class=phonemic>fənimɪk</span> representation of some data.</p>
+    </div>
+          </div>
+    
+        </section>
+        <section id=phonetic-pattern class='pattern phonetic-example'>
+    
+          <header>
+            <h1 class='pattern-title header-subsection'><code>phonetic</code></h1>
+            <p class=pattern-description>Used for phonetic representations of data.</p>
+          </header>
+    
+          <div>
+            <h1 class=h-minor>Example Markup</h1>
+            <pre><code class=markup>
+    &lt;p&gt;This is an example of a &lt;span class&#x3D;phonetic&gt;fəˈnɛtik̚&lt;/span&gt; representation of some data.&lt;/p&gt;
+    </code></pre>
+          </div>
+    
+          <div>
+            <h1 class=h-minor>Live Example</h1>
+            <div class=rendered><p>This is an example of a <span class=phonetic>fəˈnɛtik̚</span> representation of some data.</p>
     </div>
           </div>
     
@@ -1237,6 +1321,27 @@
       <span>Tooltip</span>
       <input type=text>
     </label>
+    </div>
+          </div>
+    
+        </section>
+        <section id=unicode-pattern class='pattern unicode-example'>
+    
+          <header>
+            <h1 class='pattern-title header-subsection'><code>unicode</code></h1>
+            <p class=pattern-description>Used when a Unicode font is needed. More semantic styles such as <code>.phonetic</code> or <code>.phonemic</code> should be preferred over this one when possible.</p>
+          </header>
+    
+          <div>
+            <h1 class=h-minor>Example Markup</h1>
+            <pre><code class=markup>
+    &lt;p&gt;This shows an example of &lt;span class&#x3D;unicode&gt;some text in a Unicode font&lt;/span&gt;.&lt;/p&gt;
+    </code></pre>
+          </div>
+    
+          <div>
+            <h1 class=h-minor>Live Example</h1>
+            <div class=rendered><p>This shows an example of <span class=unicode>some text in a Unicode font</span>.</p>
     </div>
           </div>
     

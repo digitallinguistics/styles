@@ -462,6 +462,69 @@ This file contains DLx styles that need to be explicitly specified using classes
   cursor: not-allowed;
   opacity: 0.40;
 }
+.button-red {
+  background-color: #3399FF;
+  align-items: center;
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.15), transparent);
+  border-radius: 5px;
+  box-shadow: inset -1px -1px 2px 0px rgba(0, 0, 0, 0.15), 1px 1px 2px #ccc;
+  cursor: pointer;
+  padding: 0.25em 0.5em;
+  text-align: center;
+  background-color: #CA3C3C;
+  color: white;
+}
+.button-red a {
+  border-bottom: 0.075em solid transparent;
+  color: white;
+}
+.button-red a:link {
+  color: white;
+}
+.button-red a:visited {
+  color: white;
+}
+.button-red a:hover {
+  border-bottom: 0.075em solid white;
+}
+.button-red a:visited:hover {
+  border-bottom: 0.075em solid white;
+}
+.button-red a:active {
+  color: white;
+}
+.button-red:active {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
+}
+.button-red:hover,
+.button-red:focus {
+  background-image: linear-gradient(135deg, transparent, rgba(0, 0, 0, 0.15));
+}
+.button-red:disabled {
+  background-image: none;
+  box-shadow: none;
+  cursor: not-allowed;
+  opacity: 0.40;
+}
+.button-red a {
+  border-bottom: 0.075em solid transparent;
+  color: white;
+}
+.button-red a:link {
+  color: white;
+}
+.button-red a:visited {
+  color: white;
+}
+.button-red a:hover {
+  border-bottom: 0.075em solid white;
+}
+.button-red a:visited:hover {
+  border-bottom: 0.075em solid white;
+}
+.button-red a:active {
+  color: white;
+}
 .cite {
   font-style: italic;
 }
@@ -479,7 +542,7 @@ This file contains DLx styles that need to be explicitly specified using classes
 .dfn {
   font-style: italic;
 }
-.emphasized {
+.em {
   font-style: italic;
 }
 .field {
@@ -971,10 +1034,6 @@ This file contains DLx styles that need to be explicitly specified using classes
 .italic {
   font-style: italic;
 }
-.italic[lang] {
-  font-family: 'Gentium Plus', 'Charis SIL', 'Doulos SIL', 'Cambria', 'Andika', 'Lucida Sans Unicode', 'Times New Roman', 'Georgia', serif;
-  font-size: 1.15em;
-}
 .label {
   align-items: center;
   flex-direction: row;
@@ -1064,20 +1123,59 @@ This file contains DLx styles that need to be explicitly specified using classes
 .numbered li {
   counter-increment: numbered;
   display: list-item;
-  position: relative;
-}
-.numbered li > * {
   margin-left: 2.5rem;
+  position: relative;
 }
 .numbered li::before {
   content: counter(numbered) '.';
   font-weight: bold;
   padding: 0rem 0.5em;
   position: absolute;
+  right: 5rem;
+}
+.orthographic {
+  font-family: 'Gentium Plus', 'Charis SIL', 'Doulos SIL', 'Cambria', 'Andika', 'Lucida Sans Unicode', 'Times New Roman', 'Georgia', serif;
+  font-size: 1.15em;
+  line-height: 1;
+}
+.orthographic::before {
+  content: '<';
+  padding-right: 0.15em;
+}
+.orthographic::after {
+  content: '>';
+  padding-left: 0.15em;
 }
 .page-title {
+  align-self: center;
   font-size: 2.5em;
   text-align: center;
+}
+.phonemic {
+  font-family: 'Gentium Plus', 'Charis SIL', 'Doulos SIL', 'Cambria', 'Andika', 'Lucida Sans Unicode', 'Times New Roman', 'Georgia', serif;
+  font-size: 1.15em;
+  line-height: 1;
+}
+.phonemic::before {
+  content: '/';
+  padding-right: 0.15em;
+}
+.phonemic::after {
+  content: '/';
+  padding-left: 0.15em;
+}
+.phonetic {
+  font-family: 'Gentium Plus', 'Charis SIL', 'Doulos SIL', 'Cambria', 'Andika', 'Lucida Sans Unicode', 'Times New Roman', 'Georgia', serif;
+  font-size: 1.15em;
+  line-height: 1;
+}
+.phonetic::before {
+  content: '[';
+  padding-right: 0.15em;
+}
+.phonetic::after {
+  content: ']';
+  padding-left: 0.15em;
 }
 .reference-list a {
   color: #3399FF;
@@ -1186,4 +1284,5 @@ This file contains DLx styles that need to be explicitly specified using classes
 .unicode {
   font-family: 'Gentium Plus', 'Charis SIL', 'Doulos SIL', 'Cambria', 'Andika', 'Lucida Sans Unicode', 'Times New Roman', 'Georgia', serif;
   font-size: 1.15em;
+  line-height: 1;
 }
