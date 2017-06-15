@@ -64,6 +64,10 @@
     "description": "Used for general italic styling. Other more semantic classes should be preferred over this one when possible."
   },
 
+  "kbd": {
+    "description": "Used for indicating keyboard input."
+  },
+
   "label": {
     "description": "Label elements. If the text inside the element is wrapped in a <code>&lt;span&gt;</code> element, that text will be styled as well."
   },
