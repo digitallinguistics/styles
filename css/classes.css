@@ -1034,6 +1034,17 @@ This file contains DLx styles that need to be explicitly specified using classes
 .italic {
   font-style: italic;
 }
+.kbd {
+  background-color: #f7f7f7;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  color: #444;
+  padding: .25em .5em;
+  text-align: center;
+  text-shadow: 0 1px 0 #fff;
+  box-shadow: 0px 2px 0 #bbb, 0 3px 1px #999, 0 3px 0 #bbb, inset 0 1px 1px #fff, inset 0 -1px 3px #ccc;
+}
 .label {
   align-items: center;
   flex-direction: row;
