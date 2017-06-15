@@ -806,10 +806,11 @@ This file contains DLx styles that need to be explicitly specified using classes
   font-style: italic;
 }
 .code {
-  background-color: #F5F2F0;
+  background-color: #fafafa;
   border: 1px solid black;
   border-radius: 5px;
-  font-family: 'Consolas', 'Fira Mono', 'Monaco', 'DejaVu Mono', 'Courier New', monospace;
+  color: #383a42;
+  font-family: 'Fira Mono', 'Consolas', 'Monaco', 'DejaVu Mono', 'Courier New', monospace;
   font-size: 0.75em;
   font-style: normal;
   overflow-x: auto;
