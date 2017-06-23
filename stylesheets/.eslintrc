@@ -1,6 +1,6 @@
 {
 
-  // ESLint 3.17.1
+  // ESLint 4.0.0
 
   "parserOptions": {
     "ecmaVersion": 2017,
@@ -23,13 +23,21 @@
     "no-restricted-syntax": ["error"],
 
     "accessor-pairs": "warn",
-    "array-callback-return": "warn",
-    "arrow-body-style": ["warn", "as-needed"],
+    "array-bracket-newline": ["warn", {
+      "minItems": 4,
+      "multiline": true
+    }],
     "array-bracket-spacing": ["error", "never", {
       "singleValue": false,
       "objectsInArrays": false,
       "arraysInArrays": false
     }],
+    "array-callback-return": "warn",
+    "array-element-newline": ["warn", {
+      "minItems": 4,
+      "multiline": true
+    }],
+    "arrow-body-style": ["warn", "as-needed"],
     "arrow-parens": ["error", "as-needed"],
     "arrow-spacing": ["error", { "before": true, "after": true }],
     "block-scoped-var": "warn",
@@ -53,6 +61,7 @@
     "dot-notation": ["error", { "allowKeywords": true }],
     "eqeqeq": ["warn", "always"],
     "eol-last": "error",
+    "for-direction": "error",
     "func-call-spacing": ["error", "never"],
     "func-name-matching": ["error", "always"],
     "func-names": ["warn", "as-needed"],
@@ -85,7 +94,6 @@
       "allowArrayStart": false,
       "allowArrayEnd": false
     }],
-    "lines-around-directive": ["error", "always"],
     "max-depth": "warn",
     "max-len": ["warn", {
       "code": 100,
@@ -106,13 +114,12 @@
       "properties": true
     }],
     "new-parens": "off",
-    "newline-after-var": "off",
-    "newline-before-return": "off",
     "newline-per-chained-call": ["warn", { "ignoreChainWithDepth": 2 }],
     "no-alert": "warn",
     "no-array-constructor": "warn",
     "no-await-in-loop": "error",
     "no-bitwise": "warn",
+    "no-buffer-constructor": "error",
     "no-caller": "error",
     "no-case-declarations": "error",
     "no-catch-shadow": "error",
@@ -303,6 +310,7 @@
       }
     }],
     "padded-blocks": "off",
+    "padding-line-between-statements": "off",
     "prefer-arrow-callback": ["error", {
       "allowNamedFunctions": true,
       "allowUnboundThis": true
@@ -345,6 +353,7 @@
     "rest-spread-spacing": ["error", "never"],
     "semi": ["error", "always"],
     "semi-spacing": ["error", { "before": false, "after": true }],
+    "semi-style": ["error", "last"],
     "sort-imports": ["warn", {
       "ignoreCase": true,
       "memberSyntaxSortOrder": ["none", "all", "single", "multiple"]
@@ -360,6 +369,7 @@
     "space-infix-ops": "error",
     "space-unary-ops": ["error", { "words": true, "nonwords": false }],
     "spaced-comment": ["error", "always", { "markers": ["*"] }],
+    "switch-colon-spacing": ["error", { "after": true, "before": false }],
     "symbol-description": "error",
     "template-curly-spacing": ["warn", "never"],
     "template-tag-spacing": ["error", "never"],
