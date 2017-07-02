@@ -1,17 +1,11 @@
-/*
-This file declares @font-face rules for each of the fonts used in DLx projects
- */
-
-@fonts: 'https://cdn.digitallinguistics.io/fonts';
-
 // Fira Sans
 @font-face {
   font-family: 'Fira Sans';
   src:
-    local('Fira Sans'),
-    url('@{fonts}/FiraSans-Light.woff2') format('woff2'),
-    url('@{fonts}/FiraSans-Light.woff') format('woff'),
-    url('@{fonts}/FiraSans-Light.ttf') format('truetype');
+    local('Fira Sans Light'),
+    url('../fonts/FiraSans-Light.woff2') format('woff2'),
+    url('../fonts/FiraSans-Light.woff') format('woff');
+  font-display: fallback;
   font-style: normal;
   font-weight: normal;
 }
@@ -20,9 +14,9 @@ This file declares @font-face rules for each of the fonts used in DLx projects
   font-family: 'Fira Sans';
   src:
     local('Fira Sans Light Italic'),
-    url('@{fonts}/FiraSans-LightItalic.woff2') format('woff2'),
-    url('@{fonts}/FiraSans-LightItalic.woff') format('woff'),
-    url('@{fonts}/FiraSans-LightItalic.ttf') format('truetype');
+    url('../fonts/FiraSans-LightItalic.woff2') format('woff2'),
+    url('../fonts/FiraSans-LightItalic.woff') format('woff');
+  font-display: fallback;
   font-style: italic;
   font-weight: normal;
 }
@@ -31,9 +25,9 @@ This file declares @font-face rules for each of the fonts used in DLx projects
   font-family: 'Fira Sans';
   src:
     local('Fira Sans Medium'),
-    url('@{fonts}/FiraSans-Medium.woff2') format('woff2'),
-    url('@{fonts}/FiraSans-Medium.woff') format('woff'),
-    url('@{fonts}/FiraSans-Medium.ttf') format('truetype');
+    url('../fonts/FiraSans-Medium.woff2') format('woff2'),
+    url('../fonts/FiraSans-Medium.woff') format('woff');
+  font-display: fallback;
   font-style: normal;
   font-weight: bold;
 }
@@ -42,9 +36,9 @@ This file declares @font-face rules for each of the fonts used in DLx projects
   font-family: 'Fira Sans';
   src:
     local('Fira Sans Medium Italic'),
-    url('@{fonts}/FiraSans-MediumItalic.woff2') format('woff2'),
-    url('@{fonts}/FiraSans-MediumItalic.woff') format('woff'),
-    url('@{fonts}/FiraSans-MediumItalic.ttf') format('truetype');
+    url('../fonts/FiraSans-MediumItalic.woff2') format('woff2'),
+    url('../fonts/FiraSans-MediumItalic.woff') format('woff');
+  font-display: fallback;
   font-style: italic;
   font-weight: bold;
 }
@@ -54,9 +48,9 @@ This file declares @font-face rules for each of the fonts used in DLx projects
   font-family: 'Fira Mono';
   src:
     local('Fira Mono Regular'),
-    url('@{fonts}/FiraMono-Regular.woff2') format('woff2'),
-    url('@{fonts}/FiraMono-Regular.woff') format('woff'),
-    url('@{fonts}/FiraMono-Regular.ttf') format('truetype');
+    url('../fonts/FiraMono-Regular.woff2') format('woff2'),
+    url('../fonts/FiraMono-Regular.woff') format('woff');
+  font-display: fallback;
   font-style: normal;
   font-weight: normal;
 }
@@ -65,9 +59,9 @@ This file declares @font-face rules for each of the fonts used in DLx projects
   font-family: 'Fira Mono';
   src:
     local('Fira Mono Bold'),
-    url('@{fonts}/FiraMono-Bold.woff2') format('woff2'),
-    url('@{fonts}/FiraMono-Bold.woff') format('woff'),
-    url('@{fonts}/FiraMono-Bold.ttf') format('truetype');
+    url('../fonts/FiraMono-Bold.woff2') format('woff2'),
+    url('../fonts/FiraMono-Bold.woff') format('woff');
+  font-display: fallback;
   font-style: normal;
   font-weight: bold;
 }
@@ -77,9 +71,9 @@ This file declares @font-face rules for each of the fonts used in DLx projects
   font-family: 'Gentium Plus';
   src:
     local('Gentium Plus Regular'),
-    url('@{fonts}/GentiumPlus-R.woff2') format('woff2'),
-    url('@{fonts}/GentiumPlus-R.woff') format('woff'),
-    url('@{fonts}/GentiumPlus-R.ttf') format('truetype');
+    url('../fonts/GentiumPlus-R.woff2') format('woff2'),
+    url('../fonts/GentiumPlus-R.woff') format('woff');
+  font-display: swap;
   font-style: normal;
   font-weight: normal;
 }
@@ -88,9 +82,9 @@ This file declares @font-face rules for each of the fonts used in DLx projects
   font-family: 'Gentium Plus';
   src:
     local('Gentium Plus Italic'),
-    url('@{fonts}/GentiumPlus-I.woff2') format('woff2'),
-    url('@{fonts}/GentiumPlus-I.woff') format('woff'),
-    url('@{fonts}/GentiumPlus-I.ttf') format('truetype');
+    url('../fonts/GentiumPlus-I.woff2') format('woff2'),
+    url('../fonts/GentiumPlus-I.woff') format('woff');
+  font-display: swap;
   font-style: italic;
   font-weight: normal;
 }
