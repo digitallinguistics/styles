@@ -27,9 +27,13 @@ An ESLint style sheet for linting code written in JavaScript is available in `/s
 ## Build Process
 The build process requires first uploading the LESS files to the CDN, then once they are live, compiling them to CSS (because the LESS files themselves reference the CDN for imports), and then uploading the CSS files to the CDN.
 
+## Want to Contribute?
+Check out DLx's [general contributing guidelines][3].
+
 ## Maintainers
 This repo is maintained by:
 - Daniel W. Hieber ([dhieber@umail.ucsb.edu](mailto:dhieber@umail.ucsb.edu))
 
 [1]: https://styles.digitallinguistics.io/
 [2]: https://yarnpkg.com/en/package/flexbox-reset
+[3]: https://github.com/digitallinguistics/digitallinguistics.github.io/blob/master/CONTRIBUTING.md
