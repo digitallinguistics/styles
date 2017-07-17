@@ -1,0 +1,10 @@
+{
+  "defaultSeverity": "warning",
+  "rules": {
+    "color-hex-case": "upper",
+    "color-hex-length": null,
+    "color-named": "always-where-possible",
+    "color-no-hex": null,
+    "color-no-invalid-hex": true,
+  }
+}

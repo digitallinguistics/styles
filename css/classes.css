@@ -1141,9 +1141,9 @@ This file contains DLx styles that need to be explicitly specified using classes
 .numbered li::before {
   content: counter(numbered) '.';
   font-weight: bold;
+  margin-left: -2.5rem;
   padding: 0rem 0.5em;
   position: absolute;
-  right: 5rem;
 }
 .orthographic {
   font-family: 'Gentium Plus', 'Charis SIL', 'Doulos SIL', 'Cambria', 'Andika', 'Lucida Sans Unicode', 'Times New Roman', 'Georgia', serif;
@@ -1234,7 +1234,7 @@ This file contains DLx styles that need to be explicitly specified using classes
 }
 .select {
   border: 1px solid black;
-  border-radius: 5px;
+  border-radius: 0.25em;
   padding: 0.25em;
 }
 .strong {
