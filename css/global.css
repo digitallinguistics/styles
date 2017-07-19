@@ -350,7 +350,7 @@ This file contains DLx styles that need to be explicitly specified using classes
   --border-gray: 0.075em solid var(--gray);
   --border-radius: 0.35em;
   --shadow: 0.075em 0.075em 0.15em var(--gray);
-  --shadow-button: inset -0.075em -0.075em 0.15em 0em rgba(0, 0, 0, 0.15);
+  --shadow-button: inset -0.075em -0.075em 0.15em 0em rgba(0, 0, 0, 0.15), var(--shadow);
   --shadow-button-press: 0 0 0 0.075em rgba(0, 0, 0, 0.15) inset, 0 0 0.5em rgba(0, 0, 0, 0.2) inset;
   --shadow-inset: inset 0.075em 0.075em 0.15em var(--gray);
   --shadow-inset-blue: inset 0.075em 0.075em 0.15em var(--blue);
@@ -1585,8 +1585,9 @@ This file contains DLx styles that need to be explicitly specified using classes
   text-indent: -1.5em;
 }
 .select {
-  border: var(--border);
+  border: var(--border-gray);
   border-radius: 0.25em;
+  box-shadow: var(--shadow-button);
   padding: 0.25em;
 }
 .strong {
@@ -2491,8 +2492,9 @@ label span {
   font-weight: bold;
 }
 select {
-  border: var(--border);
+  border: var(--border-gray);
   border-radius: 0.25em;
+  box-shadow: var(--shadow-button);
   padding: 0.25em;
 }
 strong {
