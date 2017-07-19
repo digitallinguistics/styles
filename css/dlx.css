@@ -221,59 +221,87 @@ tr {
 }
 @font-face {
   font-family: 'Fira Sans';
-  src: local('Fira Sans Light'), url('../fonts/FiraSans-Light.woff2') format('woff2'), url('../fonts/FiraSans-Light.woff') format('woff');
+  src: local('Fira Sans Light'), url('https://digitallinguistics.blob.core.windows.net/fonts/fonts/FiraSans-Light.woff2') format('woff2'), url('https://digitallinguistics.blob.core.windows.net/fonts/fonts/FiraSans-Light.woff') format('woff');
   font-display: fallback;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 300;
 }
 @font-face {
   font-family: 'Fira Sans';
-  src: local('Fira Sans Light Italic'), url('../fonts/FiraSans-LightItalic.woff2') format('woff2'), url('../fonts/FiraSans-LightItalic.woff') format('woff');
+  src: local('Fira Sans Light Italic'), url('https://digitallinguistics.blob.core.windows.net/fonts/fonts/FiraSans-LightItalic.woff2') format('woff2'), url('https://digitallinguistics.blob.core.windows.net/fonts/fonts/FiraSans-LightItalic.woff') format('woff');
   font-display: fallback;
   font-style: italic;
-  font-weight: normal;
+  font-weight: 300;
 }
 @font-face {
   font-family: 'Fira Sans';
-  src: local('Fira Sans Medium'), url('../fonts/FiraSans-Medium.woff2') format('woff2'), url('../fonts/FiraSans-Medium.woff') format('woff');
+  src: local('Fira Sans Regular'), url('https://digitallinguistics.blob.core.windows.net/fonts/fonts/FiraSans-Regular.woff2') format('woff2'), url('https://digitallinguistics.blob.core.windows.net/fonts/fonts/FiraSans-Regular.woff') format('woff');
   font-display: fallback;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 400;
 }
 @font-face {
   font-family: 'Fira Sans';
-  src: local('Fira Sans Medium Italic'), url('../fonts/FiraSans-MediumItalic.woff2') format('woff2'), url('../fonts/FiraSans-MediumItalic.woff') format('woff');
+  src: local('Fira Sans Regular Italic'), url('https://digitallinguistics.blob.core.windows.net/fonts/fonts/FiraSans-RegularItalic.woff2') format('woff2'), url('https://digitallinguistics.blob.core.windows.net/fonts/fonts/FiraSans-RegularItalic.woff') format('woff');
   font-display: fallback;
   font-style: italic;
-  font-weight: bold;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Fira Sans';
+  src: local('Fira Sans Medium'), url('https://digitallinguistics.blob.core.windows.net/fonts/fonts/FiraSans-Medium.woff2') format('woff2'), url('https://digitallinguistics.blob.core.windows.net/fonts/fonts/FiraSans-Medium.woff') format('woff');
+  font-display: fallback;
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Fira Sans';
+  src: local('Fira Sans Medium Italic'), url('https://digitallinguistics.blob.core.windows.net/fonts/fonts/FiraSans-MediumItalic.woff2') format('woff2'), url('https://digitallinguistics.blob.core.windows.net/fonts/fonts/FiraSans-MediumItalic.woff') format('woff');
+  font-display: fallback;
+  font-style: italic;
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Fira Sans';
+  src: local('Fira Sans SemiBold'), url('https://digitallinguistics.blob.core.windows.net/fonts/FiraSans-SemiBold.woff2') format('woff2'), url('https://digitallinguistics.blob.core.windows.net/fonts/FiraSans-SemiBold.woff') format('woff');
+  font-display: fallback;
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Fira Sans';
+  src: local('Fira Sans SemiBold Italic'), url('https://digitallinguistics.blob.core.windows.net/fonts/FiraSans-SemiBoldItalic.woff2') format('woff2'), url('https://digitallinguistics.blob.core.windows.net/fonts/FiraSans-SemiBoldItalic.woff') format('woff');
+  font-display: fallback;
+  font-style: italic;
+  font-weight: 600;
 }
 @font-face {
   font-family: 'Fira Mono';
-  src: local('Fira Mono Regular'), url('../fonts/FiraMono-Regular.woff2') format('woff2'), url('../fonts/FiraMono-Regular.woff') format('woff');
+  src: local('Fira Mono Regular'), url('https://digitallinguistics.blob.core.windows.net/fonts/fonts/FiraMono-Regular.woff2') format('woff2'), url('https://digitallinguistics.blob.core.windows.net/fonts/fonts/FiraMono-Regular.woff') format('woff');
   font-display: fallback;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
 }
 @font-face {
   font-family: 'Fira Mono';
-  src: local('Fira Mono Bold'), url('../fonts/FiraMono-Bold.woff2') format('woff2'), url('../fonts/FiraMono-Bold.woff') format('woff');
+  src: local('Fira Mono Bold'), url('https://digitallinguistics.blob.core.windows.net/fonts/fonts/FiraMono-Bold.woff2') format('woff2'), url('https://digitallinguistics.blob.core.windows.net/fonts/fonts/FiraMono-Bold.woff') format('woff');
   font-display: fallback;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 600;
 }
 @font-face {
   font-family: 'Gentium Plus';
-  src: local('Gentium Plus Regular'), url('../fonts/GentiumPlus-R.woff2') format('woff2'), url('../fonts/GentiumPlus-R.woff') format('woff');
+  src: local('Gentium Plus Regular'), url('https://digitallinguistics.blob.core.windows.net/fonts/fonts/GentiumPlus-R.woff2') format('woff2'), url('https://digitallinguistics.blob.core.windows.net/fonts/fonts/GentiumPlus-R.woff') format('woff');
   font-display: swap;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
 }
 @font-face {
   font-family: 'Gentium Plus';
-  src: local('Gentium Plus Italic'), url('../fonts/GentiumPlus-I.woff2') format('woff2'), url('../fonts/GentiumPlus-I.woff') format('woff');
+  src: local('Gentium Plus Italic'), url('https://digitallinguistics.blob.core.windows.net/fonts/fonts/GentiumPlus-I.woff2') format('woff2'), url('https://digitallinguistics.blob.core.windows.net/fonts/fonts/GentiumPlus-I.woff') format('woff');
   font-display: swap;
   font-style: italic;
-  font-weight: normal;
+  font-weight: 400;
 }
 /*
 This file contains LESS variables for each of the colors in the DLx color schema
