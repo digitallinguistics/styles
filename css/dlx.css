@@ -2,9 +2,6 @@
 This file bundles together all the DLx stylesheets into a single LESS/CSS file. NB: The import order is important.
  */
 /*
-This file contains LESS variables for use in other LESS files
- */
-/*
 This file applies a CSS reset which uses flexbox styling as the default for most cases. See [flexbox-reset](https://github.com/dwhieb/flexbox-reset) for more information.
  */
 html,
@@ -63,6 +60,7 @@ fieldset,
 form,
 label,
 legend,
+output,
 table,
 textarea,
 tbody,
@@ -154,9 +152,11 @@ output,
 p,
 pre,
 select,
-summary,
 textarea {
   display: block;
+}
+[hidden] {
+  display: none;
 }
 a,
 a:link,
@@ -168,7 +168,7 @@ a:active {
   text-decoration: none;
 }
 body {
-  background: white;
+  background-color: transparent;
   color: black;
   font-stretch: normal;
   font-style: normal;
@@ -187,9 +187,6 @@ blockquote:after,
 q:after {
   content: '';
   content: none;
-}
-:focus {
-  outline: 0;
 }
 input[type=date],
 input[type=datetime-local],
@@ -280,32 +277,76 @@ tr {
 /*
 This file contains LESS variables for each of the colors in the DLx color schema
  */
+:root {
+  --wugblue: #6FD1F6;
+  --verydarkblue: #017CF2;
+  --darkblue: #0F89FF;
+  --blue: #3399FF;
+  --lightblue: #5CAFFF;
+  --verylightblue: #88C4FE;
+  --darkgray: gray;
+  --gray: #CCC;
+  --lightgray: #F5F2F0;
+  --verylightgreen: #7FFED1;
+  --lightgreen: #4FFFC1;
+  --green: #23FFB1;
+  --darkgreen: #00FFA5;
+  --verydarkgreen: #00F39D;
+  --superdarkgreen: #00AB6E;
+  --verylightorange: #FFA97F;
+  --lightorange: #FF884F;
+  --orange: #FF6A23;
+  --darkorange: #FF5300;
+  --verylightpurple: #9791FE;
+  --lightpurple: #7068FF;
+  --purple: #4D42FF;
+  --darkpurple: #2A1DFF;
+  --verydarkpurple: #1002F4;
+  --verylightred: #FF9797;
+  --lightred: #E96363;
+  --red: #CA3C3C;
+  --darkred: #AA1F1F;
+  --verydarkred: #830505;
+  --lightblue-transparent: rgba(92, 175, 255, 0.2);
+  --verylightblue-transparent: rgba(136, 196, 254, 0.2);
+}
 /*
 This file contains DLx styles that need to be explicitly specified using classes
  */
+:root {
+  --border: 0.075em solid black;
+  --border-gray: 0.075em solid var(--gray);
+  --border-radius: 0.35em;
+  --shadow: 0.075em 0.075em 0.15em var(--gray);
+  --shadow-button: inset -0.075em -0.075em 0.15em 0em rgba(0, 0, 0, 0.15);
+  --shadow-button-press: 0 0 0 0.075em rgba(0, 0, 0, 0.15) inset, 0 0 0.5em rgba(0, 0, 0, 0.2) inset;
+  --shadow-inset: inset 0.075em 0.075em 0.15em var(--gray);
+  --shadow-inset-blue: inset 0.075em 0.075em 0.15em var(--blue);
+  --shadow-inset-red: inset 0.075em 0.075em 0.15em var(--darkred);
+}
 .wugblue {
-  color: #6FD1F6;
+  color: var(--wugblue);
 }
 .wugblue-background {
-  background-color: #6FD1F6;
+  background-color: var(--wugblue);
 }
 .verydarkblue {
-  color: #017CF2;
+  color: var(--verydarkblue);
 }
 .darkblue {
-  color: #0F89FF;
+  color: var(--darkblue);
 }
 .blue {
-  color: #3399FF;
+  color: var(--blue);
 }
 .lightblue {
-  color: #5CAFFF;
+  color: var(--lightblue);
 }
 .verylightblue {
-  color: #88C4FE;
+  color: var(--verylightblue);
 }
 .verydarkblue-background {
-  background-color: #017CF2;
+  background-color: var(--verydarkblue);
   color: white;
 }
 .verydarkblue-background a {
@@ -328,7 +369,7 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: white;
 }
 .darkblue-background {
-  background-color: #0F89FF;
+  background-color: var(--darkblue);
   color: white;
 }
 .darkblue-background a {
@@ -351,7 +392,7 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: white;
 }
 .blue-background {
-  background-color: #3399FF;
+  background-color: var(--blue);
   color: white;
 }
 .blue-background a {
@@ -374,52 +415,52 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: white;
 }
 .lightblue-background {
-  background-color: #5CAFFF;
+  background-color: var(--lightblue);
 }
 .verylightblue-background {
-  background-color: #88C4FE;
+  background-color: var(--verylightblue);
 }
 .gray {
-  color: #F5F2F0;
+  color: var(--gray);
 }
 .gray-background {
-  background-color: #F5F2F0;
+  background-color: var(--gray);
 }
 .verylightgreen {
-  color: #7FFED1;
+  color: var(--verylightgreen);
 }
 .lightgreen {
-  color: #4FFFC1;
+  color: var(--lightgreen);
 }
 .green {
-  color: #23FFB1;
+  color: var(--green);
 }
 .darkgreen {
-  color: #00FFA5;
+  color: var(--darkgreen);
 }
 .verydarkgreen {
-  color: #00F39D;
+  color: var(--verydarkgreen);
 }
 .superdarkgreen {
-  color: #00AB6E;
+  color: var(--superdarkgreen);
 }
 .verylightgreen-background {
-  background-color: #7FFED1;
+  background-color: var(--verylightgreen);
 }
 .lightgreen-background {
-  background-color: #4FFFC1;
+  background-color: var(--lightgreen);
 }
 .green-background {
-  background-color: #23FFB1;
+  background-color: var(--green);
 }
 .darkgreen-background {
-  background-color: #00FFA5;
+  background-color: var(--darkgreen);
 }
 .verydarkgreen-background {
-  background-color: #00F39D;
+  background-color: var(--verydarkgreen);
 }
 .superdarkgreen-background {
-  background-color: #00AB6E;
+  background-color: var(--superdarkgreen);
   color: white;
 }
 .superdarkgreen-background a {
@@ -442,28 +483,28 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: white;
 }
 .verylightorange {
-  color: #FFA97F;
+  color: var(--verylightorange);
 }
 .lightorange {
-  color: #FF884F;
+  color: var(--lightorange);
 }
 .orange {
-  color: #FF6A23;
+  color: var(--orange);
 }
 .darkorange {
-  color: #FF5300;
+  color: var(--darkorange);
 }
 .verylightorange-background {
-  background-color: #FFA97F;
+  background-color: var(--verylightorange);
 }
 .lightorange-background {
-  background-color: #FF884F;
+  background-color: var(--lightorange);
 }
 .orange-background {
-  background-color: #FF6A23;
+  background-color: var(--orange);
 }
 .darkorange-background {
-  background-color: #FF5300;
+  background-color: var(--darkorange);
   color: white;
 }
 .darkorange-background a {
@@ -486,25 +527,25 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: white;
 }
 .verylightpurple {
-  color: #9791FE;
+  color: var(--verylightpurple);
 }
 .lightpurple {
-  color: #7068FF;
+  color: var(--lightpurple);
 }
 .purple {
-  color: #4D42FF;
+  color: var(--purple);
 }
 .darkpurple {
-  color: #2A1DFF;
+  color: var(--darkpurple);
 }
 .verydarkpurple {
-  color: #1002F4;
+  color: var(--verydarkpurple);
 }
 .verylightpurple-background {
-  background-color: #9791FE;
+  background-color: var(--verylightpurple);
 }
 .lightpurple-background {
-  background-color: #7068FF;
+  background-color: var(--lightpurple);
   color: white;
 }
 .lightpurple-background a {
@@ -527,7 +568,7 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: white;
 }
 .purple-background {
-  background-color: #4D42FF;
+  background-color: var(--purple);
   color: white;
 }
 .purple-background a {
@@ -550,7 +591,7 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: white;
 }
 .darkpurple-background {
-  background-color: #2A1DFF;
+  background-color: var(--darkpurple);
   color: white;
 }
 .darkpurple-background a {
@@ -573,7 +614,7 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: white;
 }
 .verydarkpurple-background {
-  background-color: #1002F4;
+  background-color: var(--verydarkpurple);
   color: white;
 }
 .verydarkpurple-background a {
@@ -596,28 +637,28 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: white;
 }
 .verylightred {
-  color: #FF9797;
+  color: var(--verylightred);
 }
 .lightred {
-  color: #E96363;
+  color: var(--lightred);
 }
 .red {
-  color: #CA3C3C;
+  color: var(--red);
 }
 .darkred {
-  color: #AA1F1F;
+  color: var(--darkred);
 }
 .verydarkred {
-  color: #830505;
+  color: var(--verydarkred);
 }
 .verylightred-background {
-  background-color: #FF9797;
+  background-color: var(--verylightred);
 }
 .lightred-background {
-  background-color: #E96363;
+  background-color: var(--lightred);
 }
 .red-background {
-  background-color: #CA3C3C;
+  background-color: var(--red);
   color: white;
 }
 .red-background a {
@@ -640,7 +681,7 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: white;
 }
 .darkred-background {
-  background-color: #AA1F1F;
+  background-color: var(--darkred);
   color: white;
 }
 .darkred-background a {
@@ -663,7 +704,7 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: white;
 }
 .verydarkred-background {
-  background-color: #830505;
+  background-color: var(--verydarkred);
   color: white;
 }
 .verydarkred-background a {
@@ -686,10 +727,10 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: white;
 }
 .lightblue-transparent {
-  background-color: rgba(92, 175, 255, 0.2);
+  background-color: var(--lightblue-transparent);
 }
 .verylightblue-transparent {
-  background-color: rgba(136, 196, 254, 0.2);
+  background-color: var(--verylightblue-transparent);
 }
 .abbr {
   font-style: italic;
@@ -702,12 +743,12 @@ This file contains DLx styles that need to be explicitly specified using classes
   display: list-item;
 }
 .button {
-  background-color: #3399FF;
+  background-color: var(--blue);
   color: white;
   align-items: center;
   background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.15), transparent);
-  border-radius: 5px;
-  box-shadow: inset -1px -1px 2px 0px rgba(0, 0, 0, 0.15), 1px 1px 2px #ccc;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-button);
   cursor: pointer;
   padding: 0.25em 0.5em;
   text-align: center;
@@ -732,7 +773,7 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: white;
 }
 .button:active {
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
+  box-shadow: var(--shadow-button-press);
 }
 .button:hover,
 .button:focus {
@@ -745,15 +786,15 @@ This file contains DLx styles that need to be explicitly specified using classes
   opacity: 0.40;
 }
 .button-red {
-  background-color: #3399FF;
+  background-color: var(--blue);
   align-items: center;
   background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.15), transparent);
-  border-radius: 5px;
-  box-shadow: inset -1px -1px 2px 0px rgba(0, 0, 0, 0.15), 1px 1px 2px #ccc;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-button);
   cursor: pointer;
   padding: 0.25em 0.5em;
   text-align: center;
-  background-color: #CA3C3C;
+  background-color: var(--red);
   color: white;
 }
 .button-red a {
@@ -776,7 +817,7 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: white;
 }
 .button-red:active {
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
+  box-shadow: var(--shadow-button-press);
 }
 .button-red:hover,
 .button-red:focus {
@@ -812,8 +853,8 @@ This file contains DLx styles that need to be explicitly specified using classes
 }
 .code {
   background-color: #fafafa;
-  border: 1px solid black;
-  border-radius: 5px;
+  border: var(--border);
+  border-radius: var(--border-radius);
   color: #383a42;
   font-family: 'Fira Mono', 'Consolas', 'Monaco', 'DejaVu Mono', 'Courier New', monospace;
   font-size: 0.75em;
@@ -830,20 +871,19 @@ This file contains DLx styles that need to be explicitly specified using classes
 }
 .field {
   background-color: white;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: inset 0 1px 2px #ddd;
-  cursor: text;
+  border: var(--border-gray);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-inset);
   padding: 0.125em 0.25em;
 }
 .field:focus {
-  border-color: #3399FF;
-  box-shadow: inset 0px 1px 2px #3399FF;
+  border-color: var(--blue);
+  box-shadow: var(--shadow-inset-blue);
 }
 .field:focus:invalid {
-  border-color: #AA1F1F;
-  box-shadow: inset 0px 1px 2px #AA1F1F;
-  color: #CA3C3C;
+  border-color: var(--darkred);
+  box-shadow: var(--shadow-inset-red);
+  color: var(--red);
 }
 .field[disabled] {
   background-color: #eaeded;
@@ -876,12 +916,12 @@ This file contains DLx styles that need to be explicitly specified using classes
   text-indent: -1em;
 }
 .input[type=button] {
-  background-color: #3399FF;
+  background-color: var(--blue);
   color: white;
   align-items: center;
   background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.15), transparent);
-  border-radius: 5px;
-  box-shadow: inset -1px -1px 2px 0px rgba(0, 0, 0, 0.15), 1px 1px 2px #ccc;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-button);
   cursor: pointer;
   padding: 0.25em 0.5em;
   text-align: center;
@@ -906,7 +946,7 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: white;
 }
 .input[type=button]:active {
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
+  box-shadow: var(--shadow-button-press);
 }
 .input[type=button]:hover,
 .input[type=button]:focus {
@@ -923,20 +963,19 @@ This file contains DLx styles that need to be explicitly specified using classes
 }
 .input[type=date] {
   background-color: white;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: inset 0 1px 2px #ddd;
-  cursor: text;
+  border: var(--border-gray);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-inset);
   padding: 0.125em 0.25em;
 }
 .input[type=date]:focus {
-  border-color: #3399FF;
-  box-shadow: inset 0px 1px 2px #3399FF;
+  border-color: var(--blue);
+  box-shadow: var(--shadow-inset-blue);
 }
 .input[type=date]:focus:invalid {
-  border-color: #AA1F1F;
-  box-shadow: inset 0px 1px 2px #AA1F1F;
-  color: #CA3C3C;
+  border-color: var(--darkred);
+  box-shadow: var(--shadow-inset-red);
+  color: var(--red);
 }
 .input[type=date][disabled] {
   background-color: #eaeded;
@@ -945,20 +984,19 @@ This file contains DLx styles that need to be explicitly specified using classes
 }
 .input[type=datetime] {
   background-color: white;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: inset 0 1px 2px #ddd;
-  cursor: text;
+  border: var(--border-gray);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-inset);
   padding: 0.125em 0.25em;
 }
 .input[type=datetime]:focus {
-  border-color: #3399FF;
-  box-shadow: inset 0px 1px 2px #3399FF;
+  border-color: var(--blue);
+  box-shadow: var(--shadow-inset-blue);
 }
 .input[type=datetime]:focus:invalid {
-  border-color: #AA1F1F;
-  box-shadow: inset 0px 1px 2px #AA1F1F;
-  color: #CA3C3C;
+  border-color: var(--darkred);
+  box-shadow: var(--shadow-inset-red);
+  color: var(--red);
 }
 .input[type=datetime][disabled] {
   background-color: #eaeded;
@@ -967,20 +1005,19 @@ This file contains DLx styles that need to be explicitly specified using classes
 }
 .input[type=datetime-local] {
   background-color: white;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: inset 0 1px 2px #ddd;
-  cursor: text;
+  border: var(--border-gray);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-inset);
   padding: 0.125em 0.25em;
 }
 .input[type=datetime-local]:focus {
-  border-color: #3399FF;
-  box-shadow: inset 0px 1px 2px #3399FF;
+  border-color: var(--blue);
+  box-shadow: var(--shadow-inset-blue);
 }
 .input[type=datetime-local]:focus:invalid {
-  border-color: #AA1F1F;
-  box-shadow: inset 0px 1px 2px #AA1F1F;
-  color: #CA3C3C;
+  border-color: var(--darkred);
+  box-shadow: var(--shadow-inset-red);
+  color: var(--red);
 }
 .input[type=datetime-local][disabled] {
   background-color: #eaeded;
@@ -989,20 +1026,19 @@ This file contains DLx styles that need to be explicitly specified using classes
 }
 .input[type=email] {
   background-color: white;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: inset 0 1px 2px #ddd;
-  cursor: text;
+  border: var(--border-gray);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-inset);
   padding: 0.125em 0.25em;
 }
 .input[type=email]:focus {
-  border-color: #3399FF;
-  box-shadow: inset 0px 1px 2px #3399FF;
+  border-color: var(--blue);
+  box-shadow: var(--shadow-inset-blue);
 }
 .input[type=email]:focus:invalid {
-  border-color: #AA1F1F;
-  box-shadow: inset 0px 1px 2px #AA1F1F;
-  color: #CA3C3C;
+  border-color: var(--darkred);
+  box-shadow: var(--shadow-inset-red);
+  color: var(--red);
 }
 .input[type=email][disabled] {
   background-color: #eaeded;
@@ -1011,20 +1047,19 @@ This file contains DLx styles that need to be explicitly specified using classes
 }
 .input[type=month] {
   background-color: white;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: inset 0 1px 2px #ddd;
-  cursor: text;
+  border: var(--border-gray);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-inset);
   padding: 0.125em 0.25em;
 }
 .input[type=month]:focus {
-  border-color: #3399FF;
-  box-shadow: inset 0px 1px 2px #3399FF;
+  border-color: var(--blue);
+  box-shadow: var(--shadow-inset-blue);
 }
 .input[type=month]:focus:invalid {
-  border-color: #AA1F1F;
-  box-shadow: inset 0px 1px 2px #AA1F1F;
-  color: #CA3C3C;
+  border-color: var(--darkred);
+  box-shadow: var(--shadow-inset-red);
+  color: var(--red);
 }
 .input[type=month][disabled] {
   background-color: #eaeded;
@@ -1033,20 +1068,19 @@ This file contains DLx styles that need to be explicitly specified using classes
 }
 .input[type=number] {
   background-color: white;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: inset 0 1px 2px #ddd;
-  cursor: text;
+  border: var(--border-gray);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-inset);
   padding: 0.125em 0.25em;
 }
 .input[type=number]:focus {
-  border-color: #3399FF;
-  box-shadow: inset 0px 1px 2px #3399FF;
+  border-color: var(--blue);
+  box-shadow: var(--shadow-inset-blue);
 }
 .input[type=number]:focus:invalid {
-  border-color: #AA1F1F;
-  box-shadow: inset 0px 1px 2px #AA1F1F;
-  color: #CA3C3C;
+  border-color: var(--darkred);
+  box-shadow: var(--shadow-inset-red);
+  color: var(--red);
 }
 .input[type=number][disabled] {
   background-color: #eaeded;
@@ -1055,20 +1089,19 @@ This file contains DLx styles that need to be explicitly specified using classes
 }
 .input[type=password] {
   background-color: white;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: inset 0 1px 2px #ddd;
-  cursor: text;
+  border: var(--border-gray);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-inset);
   padding: 0.125em 0.25em;
 }
 .input[type=password]:focus {
-  border-color: #3399FF;
-  box-shadow: inset 0px 1px 2px #3399FF;
+  border-color: var(--blue);
+  box-shadow: var(--shadow-inset-blue);
 }
 .input[type=password]:focus:invalid {
-  border-color: #AA1F1F;
-  box-shadow: inset 0px 1px 2px #AA1F1F;
-  color: #CA3C3C;
+  border-color: var(--darkred);
+  box-shadow: var(--shadow-inset-red);
+  color: var(--red);
 }
 .input[type=password][disabled] {
   background-color: #eaeded;
@@ -1076,15 +1109,15 @@ This file contains DLx styles that need to be explicitly specified using classes
   cursor: not-allowed;
 }
 .input[type=reset] {
-  background-color: #3399FF;
+  background-color: var(--blue);
   align-items: center;
   background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.15), transparent);
-  border-radius: 5px;
-  box-shadow: inset -1px -1px 2px 0px rgba(0, 0, 0, 0.15), 1px 1px 2px #ccc;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-button);
   cursor: pointer;
   padding: 0.25em 0.5em;
   text-align: center;
-  background-color: #00AB6E;
+  background-color: var(--superdarkgreen);
   color: white;
 }
 .input[type=reset] a {
@@ -1107,7 +1140,7 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: white;
 }
 .input[type=reset]:active {
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
+  box-shadow: var(--shadow-button-press);
 }
 .input[type=reset]:hover,
 .input[type=reset]:focus {
@@ -1140,20 +1173,19 @@ This file contains DLx styles that need to be explicitly specified using classes
 }
 .input[type=search] {
   background-color: white;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: inset 0 1px 2px #ddd;
-  cursor: text;
+  border: var(--border-gray);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-inset);
   padding: 0.125em 0.25em;
 }
 .input[type=search]:focus {
-  border-color: #3399FF;
-  box-shadow: inset 0px 1px 2px #3399FF;
+  border-color: var(--blue);
+  box-shadow: var(--shadow-inset-blue);
 }
 .input[type=search]:focus:invalid {
-  border-color: #AA1F1F;
-  box-shadow: inset 0px 1px 2px #AA1F1F;
-  color: #CA3C3C;
+  border-color: var(--darkred);
+  box-shadow: var(--shadow-inset-red);
+  color: var(--red);
 }
 .input[type=search][disabled] {
   background-color: #eaeded;
@@ -1161,12 +1193,12 @@ This file contains DLx styles that need to be explicitly specified using classes
   cursor: not-allowed;
 }
 .input[type=submit] {
-  background-color: #3399FF;
+  background-color: var(--blue);
   color: white;
   align-items: center;
   background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.15), transparent);
-  border-radius: 5px;
-  box-shadow: inset -1px -1px 2px 0px rgba(0, 0, 0, 0.15), 1px 1px 2px #ccc;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-button);
   cursor: pointer;
   padding: 0.25em 0.5em;
   text-align: center;
@@ -1191,7 +1223,7 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: white;
 }
 .input[type=submit]:active {
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
+  box-shadow: var(--shadow-button-press);
 }
 .input[type=submit]:hover,
 .input[type=submit]:focus {
@@ -1205,20 +1237,19 @@ This file contains DLx styles that need to be explicitly specified using classes
 }
 .input[type=tel] {
   background-color: white;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: inset 0 1px 2px #ddd;
-  cursor: text;
+  border: var(--border-gray);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-inset);
   padding: 0.125em 0.25em;
 }
 .input[type=tel]:focus {
-  border-color: #3399FF;
-  box-shadow: inset 0px 1px 2px #3399FF;
+  border-color: var(--blue);
+  box-shadow: var(--shadow-inset-blue);
 }
 .input[type=tel]:focus:invalid {
-  border-color: #AA1F1F;
-  box-shadow: inset 0px 1px 2px #AA1F1F;
-  color: #CA3C3C;
+  border-color: var(--darkred);
+  box-shadow: var(--shadow-inset-red);
+  color: var(--red);
 }
 .input[type=tel][disabled] {
   background-color: #eaeded;
@@ -1227,21 +1258,20 @@ This file contains DLx styles that need to be explicitly specified using classes
 }
 .input[type=text] {
   background-color: white;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: inset 0 1px 2px #ddd;
-  cursor: text;
+  border: var(--border-gray);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-inset);
   padding: 0.125em 0.25em;
   display: flex;
 }
 .input[type=text]:focus {
-  border-color: #3399FF;
-  box-shadow: inset 0px 1px 2px #3399FF;
+  border-color: var(--blue);
+  box-shadow: var(--shadow-inset-blue);
 }
 .input[type=text]:focus:invalid {
-  border-color: #AA1F1F;
-  box-shadow: inset 0px 1px 2px #AA1F1F;
-  color: #CA3C3C;
+  border-color: var(--darkred);
+  box-shadow: var(--shadow-inset-red);
+  color: var(--red);
 }
 .input[type=text][disabled] {
   background-color: #eaeded;
@@ -1250,20 +1280,19 @@ This file contains DLx styles that need to be explicitly specified using classes
 }
 .input[type=time] {
   background-color: white;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: inset 0 1px 2px #ddd;
-  cursor: text;
+  border: var(--border-gray);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-inset);
   padding: 0.125em 0.25em;
 }
 .input[type=time]:focus {
-  border-color: #3399FF;
-  box-shadow: inset 0px 1px 2px #3399FF;
+  border-color: var(--blue);
+  box-shadow: var(--shadow-inset-blue);
 }
 .input[type=time]:focus:invalid {
-  border-color: #AA1F1F;
-  box-shadow: inset 0px 1px 2px #AA1F1F;
-  color: #CA3C3C;
+  border-color: var(--darkred);
+  box-shadow: var(--shadow-inset-red);
+  color: var(--red);
 }
 .input[type=time][disabled] {
   background-color: #eaeded;
@@ -1272,20 +1301,19 @@ This file contains DLx styles that need to be explicitly specified using classes
 }
 .input[type=url] {
   background-color: white;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: inset 0 1px 2px #ddd;
-  cursor: text;
+  border: var(--border-gray);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-inset);
   padding: 0.125em 0.25em;
 }
 .input[type=url]:focus {
-  border-color: #3399FF;
-  box-shadow: inset 0px 1px 2px #3399FF;
+  border-color: var(--blue);
+  box-shadow: var(--shadow-inset-blue);
 }
 .input[type=url]:focus:invalid {
-  border-color: #AA1F1F;
-  box-shadow: inset 0px 1px 2px #AA1F1F;
-  color: #CA3C3C;
+  border-color: var(--darkred);
+  box-shadow: var(--shadow-inset-red);
+  color: var(--red);
 }
 .input[type=url][disabled] {
   background-color: #eaeded;
@@ -1294,20 +1322,19 @@ This file contains DLx styles that need to be explicitly specified using classes
 }
 .input[type=week] {
   background-color: white;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: inset 0 1px 2px #ddd;
-  cursor: text;
+  border: var(--border-gray);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-inset);
   padding: 0.125em 0.25em;
 }
 .input[type=week]:focus {
-  border-color: #3399FF;
-  box-shadow: inset 0px 1px 2px #3399FF;
+  border-color: var(--blue);
+  box-shadow: var(--shadow-inset-blue);
 }
 .input[type=week]:focus:invalid {
-  border-color: #AA1F1F;
-  box-shadow: inset 0px 1px 2px #AA1F1F;
-  color: #CA3C3C;
+  border-color: var(--darkred);
+  box-shadow: var(--shadow-inset-red);
+  color: var(--red);
 }
 .input[type=week][disabled] {
   background-color: #eaeded;
@@ -1318,15 +1345,15 @@ This file contains DLx styles that need to be explicitly specified using classes
   font-style: italic;
 }
 .kbd {
-  background-color: #f7f7f7;
+  background-color: #F7F7F7;
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
-  border: 1px solid #bbb;
-  border-radius: 6px;
+  border: 0.035em solid #BBB;
+  border-radius: var(--border-radius);
   color: #444;
-  padding: .25em .5em;
+  padding: 0.25em 0.5em;
   text-align: center;
-  text-shadow: 0 1px 0 #fff;
-  box-shadow: 0px 2px 0 #bbb, 0 3px 1px #999, 0 3px 0 #bbb, inset 0 1px 1px #fff, inset 0 -1px 3px #ccc;
+  text-shadow: 0em 0.075em 0em #FFF;
+  box-shadow: 0em 0.15em 0em #BBB, 0em 0.225em 0.075em #999, 0em 0.225em 0em #BBB, inset 0em 0.075em 0.075em #FFF, inset 0em -0.075em 0.225em #CCC;
 }
 .label {
   align-items: center;
@@ -1337,26 +1364,26 @@ This file contains DLx styles that need to be explicitly specified using classes
   font-weight: bold;
 }
 .link {
-  color: #3399FF;
+  color: var(--blue);
   border-bottom: 0.075em solid transparent;
 }
 .link:link {
-  color: #3399FF;
+  color: var(--blue);
 }
 .link:visited {
-  color: #4D42FF;
+  color: var(--purple);
 }
 .link:hover {
-  border-bottom: 0.075em solid #3399FF;
+  border-bottom: 0.075em solid var(--blue);
 }
 .link:active {
-  color: #3399FF;
+  color: var(--blue);
 }
 .link:visited:hover {
-  border-bottom: 0.075em solid #4D42FF;
+  border-bottom: 0.075em solid var(--purple);
 }
 .link:visited:active {
-  color: #4D42FF;
+  color: var(--purple);
 }
 .link-white {
   border-bottom: 0.075em solid transparent;
@@ -1378,7 +1405,7 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: white;
 }
 .nav ul {
-  background-color: #3399FF;
+  background-color: var(--blue);
   color: white;
   flex-direction: row;
   flex-wrap: wrap;
@@ -1472,26 +1499,26 @@ This file contains DLx styles that need to be explicitly specified using classes
   padding-left: 0.15em;
 }
 .reference-list a {
-  color: #3399FF;
+  color: var(--blue);
   border-bottom: 0.075em solid transparent;
 }
 .reference-list a:link {
-  color: #3399FF;
+  color: var(--blue);
 }
 .reference-list a:visited {
-  color: #4D42FF;
+  color: var(--purple);
 }
 .reference-list a:hover {
-  border-bottom: 0.075em solid #3399FF;
+  border-bottom: 0.075em solid var(--blue);
 }
 .reference-list a:active {
-  color: #3399FF;
+  color: var(--blue);
 }
 .reference-list a:visited:hover {
-  border-bottom: 0.075em solid #4D42FF;
+  border-bottom: 0.075em solid var(--purple);
 }
 .reference-list a:visited:active {
-  color: #4D42FF;
+  color: var(--purple);
 }
 .reference-list h1 {
   font-size: 1.75em;
@@ -1515,12 +1542,12 @@ This file contains DLx styles that need to be explicitly specified using classes
   text-indent: -1.5em;
 }
 .select {
-  border: 1px solid black;
+  border: var(--border);
   border-radius: 0.25em;
   padding: 0.25em;
 }
 .strong {
-  color: #017CF2;
+  color: var(--verydarkblue);
   font-weight: bold;
 }
 .summary {
@@ -1531,20 +1558,19 @@ This file contains DLx styles that need to be explicitly specified using classes
 }
 .textarea {
   background-color: white;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: inset 0 1px 2px #ddd;
-  cursor: text;
+  border: var(--border-gray);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-inset);
   padding: 0.125em 0.25em;
 }
 .textarea:focus {
-  border-color: #3399FF;
-  box-shadow: inset 0px 1px 2px #3399FF;
+  border-color: var(--blue);
+  box-shadow: var(--shadow-inset-blue);
 }
 .textarea:focus:invalid {
-  border-color: #AA1F1F;
-  box-shadow: inset 0px 1px 2px #AA1F1F;
-  color: #CA3C3C;
+  border-color: var(--darkred);
+  box-shadow: var(--shadow-inset-red);
+  color: var(--red);
 }
 .textarea[disabled] {
   background-color: #eaeded;
@@ -1555,9 +1581,9 @@ This file contains DLx styles that need to be explicitly specified using classes
   position: relative;
 }
 .tooltip::after {
-  background-color: #00F39D;
-  border-radius: 5px;
-  box-shadow: 1px 1px 3px #ccc;
+  background-color: var(--verydarkgreen);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
   content: attr(title);
   font-size: smaller;
   left: 0.5em;
@@ -1566,7 +1592,7 @@ This file contains DLx styles that need to be explicitly specified using classes
   position: absolute;
   top: 115%;
   transition: all 0.3s ease;
-  width: 300px;
+  width: 25em;
   z-index: -2;
 }
 .tooltip:hover::after,

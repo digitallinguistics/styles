@@ -8,8 +8,9 @@ This file contains LESS variables for each of the colors in the DLx color schema
   --blue: #3399FF;
   --lightblue: #5CAFFF;
   --verylightblue: #88C4FE;
-  --gray: #F5F2F0;
-  --grey: var(--gray);
+  --darkgray: gray;
+  --gray: #CCC;
+  --lightgray: #F5F2F0;
   --verylightgreen: #7FFED1;
   --lightgreen: #4FFFC1;
   --green: #23FFB1;

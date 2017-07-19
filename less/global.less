@@ -2,7 +2,7 @@
 This file contains DLx styles that are applied by default, without the need for specifiying them explicitly using CSS classes. This file also applies the flexbox-reset styling.
  */
 
-@import 'https://cdn.digitallinguistics.io/less/dlx.less';
+@import 'https://digitallinguistics.blob.core.windows.net/less/dlx.less';
 
 * {
   box-sizing: border-box;
@@ -57,6 +57,6 @@ blockquote, button, caption, dd, dt, figcaption, h1, h2, h3, h4, h5, h6, input, 
 // inline elements
 abbr, acronym, b, bdo, big, br, cite, code, del, dfn, em, i, ins, kbd, mark, q, samp, s, small, span, strike, strong, sub, sup, time, tt, var, {
   > .tooltip {
-    text-decoration: underline dotted @verydarkgreen;
+    text-decoration: underline dotted var(--verydarkgreen);
   }
 }

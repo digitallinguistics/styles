@@ -35,10 +35,15 @@ body {
 
 }
 
-#colors > section {
-  align-items: stretch;
-  max-width: 500px;
-  padding: 0.5em 1em;
+#colors {
+
+  align-items: center;
+
+  > section {
+    min-width: 30em;
+    padding: 0.5em 1em;
+  }
+
 }
 
 #icons {
@@ -78,8 +83,8 @@ body {
 
 .rendered {
   align-items: flex-start;
-  border: 1px solid black;
-  border-radius: 5px;
+  border: var(--border);
+  border-radius: var(--border-radius);
 }
 
 .page-title {
@@ -99,7 +104,7 @@ body {
   padding: 0.5em 1em;
 
   .pattern-title.subsection-header {
-    border-bottom: 1px solid black;
+    border-bottom: var(--border);
     margin-bottom: 0.25em;
     padding-bottom: 0.5em;
   }
@@ -135,6 +140,6 @@ body {
 }
 
 .link-white-example .rendered p {
-  background-color: @blue;
+  background-color: var(--blue);
   padding: 0.5em;
 }
