@@ -1,9 +1,18 @@
 {
   "title": "DLx Pattern Library",
-  "source": "less/",
+  "source": [
+    "components/",
+    "less/"
+  ],
   "destination": "docs/",
+  "homepage": "README.md",
   "builder": "node_modules/michelangelo/kss_styleguide/custom-template/",
-  "css": ["../css/patterns.css"],
+  "css": [
+    "../css/atom-one-light.css",
+    "../css/fonts.css",
+    "../css/colors.css",
+    "../css/classes.css"
+  ],
   "js": [
     "../js/highlight.js",
     "../js/patterns.js"

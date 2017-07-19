@@ -10,7 +10,10 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,300">
     <link rel="stylesheet" href="kss-assets/vendor/prism.css">
     <link rel="stylesheet" href="kss-assets/css/kss.css">
-    <link rel="stylesheet" href="../css/patterns.css">
+    <link rel="stylesheet" href="../css/atom-one-light.css">
+<link rel="stylesheet" href="../css/fonts.css">
+<link rel="stylesheet" href="../css/colors.css">
+<link rel="stylesheet" href="../css/classes.css">
 
   </head>
 
@@ -39,8 +42,14 @@
           </a>
         </li>
           <li class="kss-nav__item">
-            <a class="" href="section-colors.html">
+            <a class="" href="section-typography.html">
               <span class="kss-nav__ref">1</span>
+              <span class="kss-nav__name">Typography</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-colors.html">
+              <span class="kss-nav__ref">2</span>
               <span class="kss-nav__name">Colors</span>
             </a>
           </li>
@@ -51,12 +60,20 @@
 
     <!-- documentation. -->
     <section class="kss-documentation">
+        <article class="kss-markdown">
+          <h1 id="dlx-pattern-library">DLx Pattern Library</h1>
+<p>Welcome to the DLx Pattern Library, demonstrating all the CSS styles used across DLx projects, along with example HTML markup and usage notes.</p>
+<h2 id="less-css">LESS / CSS</h2>
+<p>LESS stylesheets and their accompanying CSS output are available in this repo&#39;s <code>less</code> and <code>css</code> folders respectively. These are each made available on the DLx CDN and may be linked to at <code>https://cdn.digitallinguistics.io/less/{filename}</code> or <code>https://cdn.digitallinguistics.io/css/{filename}</code>.</p>
+<ul>
+<li><code>reset.less</code> - A CSS reset that should be applied before any DLx styles. If you prefer not to use this reset, certain DLx classes will require extra styling (typically setting them to <code>display: flex;</code>). Uses the <a href="https://yarnpkg.com/en/package/flexbox-reset"><code>flexbox-reset</code> library</a>.</li>
+<li><code>fonts.less</code> - Font declarations for the various fonts used by DLx.</li>
+<li><code>colors.less</code> - CSS variables for each of the colors used in the DLx color schemes.</li>
+<li><code>classes.less</code> - All the DLx styles, as classes</li>
+</ul>
+<p>You can also use <code>dlx.less</code> or <code>global.less</code>, which bundle all of the above files together. The <code>dlx.less</code> file simply declares the classes and fonts, while the <code>global.less</code> file applies those classes globally. For example, <code>dlx.less</code> will make a <code>.link</code> class available for you to use in your code, but <code>global.less</code> will apply the <code>.link</code> style to all <code>&lt;a&gt;</code> elements as appropriate, so you do not need to explicitly add <code>class=link</code> to your <code>&lt;a&gt;</code> elements.</p>
 
-        <!--
-          display each section, in order.
-          the "root" element comes first in this loop, and can be detected using
-          the "#if @first" block as seen below.
-        -->
+        </article>
     </section>
     <!-- /documentation. -->
 
