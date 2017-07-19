@@ -74,6 +74,24 @@
                         <span class="kss-nav__name">Citation</span>
                       </a>
                     </li>
+                    <li class="kss-nav__item ">
+                      <a href="section-elements.html#kssref-elements-code">
+                        <span class="kss-nav__ref">3.4</span>
+                        <span class="kss-nav__name">Code Block</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item ">
+                      <a href="section-elements.html#kssref-elements-dfn">
+                        <span class="kss-nav__ref">3.5</span>
+                        <span class="kss-nav__name">Definition</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item ">
+                      <a href="section-elements.html#kssref-elements-em">
+                        <span class="kss-nav__ref">3.6</span>
+                        <span class="kss-nav__name">Emphasis</span>
+                      </a>
+                    </li>
                 </ul>
           </li>
           <li class="kss-nav__item">
@@ -117,7 +135,7 @@
             <section class="kss-section kss-section--depth-2" id="kssref-elements-abbr">
 
             <article class="kss-section__content">
-                <p class="kss-section__source">Source: <span>elements.less</span>, line <span>13</span></p>
+                <p class="kss-section__source">Source: <span>elements.less</span>, line <span>22</span></p>
 
               <a class="kss-section__permalink" href="#kssref-elements-abbr">
                 <h2 class="kss-section__item kss-section__item--depth-2">
@@ -153,7 +171,7 @@
             <section class="kss-section kss-section--depth-2" id="kssref-elements-button">
 
             <article class="kss-section__content">
-                <p class="kss-section__source">Source: <span>elements.less</span>, line <span>24</span></p>
+                <p class="kss-section__source">Source: <span>elements.less</span>, line <span>33</span></p>
 
               <a class="kss-section__permalink" href="#kssref-elements-button">
                 <h2 class="kss-section__item kss-section__item--depth-2">
@@ -223,7 +241,7 @@
             <section class="kss-section kss-section--depth-2" id="kssref-elements-cite">
 
             <article class="kss-section__content">
-                <p class="kss-section__source">Source: <span>elements.less</span>, line <span>72</span></p>
+                <p class="kss-section__source">Source: <span>elements.less</span>, line <span>81</span></p>
 
               <a class="kss-section__permalink" href="#kssref-elements-cite">
                 <h2 class="kss-section__item kss-section__item--depth-2">
@@ -251,6 +269,132 @@
                 <article class="kss-section__markup">
                   <pre><code class="language-markup">&lt;p&gt;
   In his review of &lt;cite class&#x3D;cite&gt;Endangered languages and new technologies&lt;/cite&gt;, Hieber (2015) mentions certain concepts in Digital Linguistics.
+&lt;/p&gt;
+</code></pre>
+                </article>
+
+            </section>
+            <section class="kss-section kss-section--depth-2" id="kssref-elements-code">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>elements.less</span>, line <span>92</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-elements-code">
+                <h2 class="kss-section__item kss-section__item--depth-2">
+                  <span class="kss-section__ref">3.4</span>
+                  <span class="kss-section__name">Code Block</span>
+                </h2>
+              </a>
+
+                <div class="kss-section__description"><p>The <code>&lt;code&gt;</code> element is used for both inline and standalone code blocks.</p>
+</div>
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Example</h1>
+
+
+                <div class="kss-modifiers__example"><p>
+  This is an example of a paragraph with <code class=code>inline code</code>. Below is an example of a standalone code block.
+</p>
+
+<code class=code>{
+  "dateCreated": "2017-03-13T02:36:22.123Z",
+  "dateModified": "2017-03-13T04:51:26.134Z",
+  "name": {
+    "eng": "Chitimacha",
+    "ctm": "Sitimaxa"
+  }
+}</code>
+</div>
+
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;p&gt;
+  This is an example of a paragraph with &lt;code class&#x3D;code&gt;inline code&lt;/code&gt;. Below is an example of a standalone code block.
+&lt;/p&gt;
+
+&lt;code class&#x3D;code&gt;{
+  &quot;dateCreated&quot;: &quot;2017-03-13T02:36:22.123Z&quot;,
+  &quot;dateModified&quot;: &quot;2017-03-13T04:51:26.134Z&quot;,
+  &quot;name&quot;: {
+    &quot;eng&quot;: &quot;Chitimacha&quot;,
+    &quot;ctm&quot;: &quot;Sitimaxa&quot;
+  }
+}&lt;/code&gt;
+</code></pre>
+                </article>
+
+            </section>
+            <section class="kss-section kss-section--depth-2" id="kssref-elements-dfn">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>elements.less</span>, line <span>113</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-elements-dfn">
+                <h2 class="kss-section__item kss-section__item--depth-2">
+                  <span class="kss-section__ref">3.5</span>
+                  <span class="kss-section__name">Definition</span>
+                </h2>
+              </a>
+
+                <div class="kss-section__description"><p>A <code>&lt;dfn&gt;</code> tag is used the first time an element is defined. The definition of the term should be given in the surrounding text.</p>
+</div>
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Example</h1>
+
+
+                <div class="kss-modifiers__example"><p>
+  <dfn class=dfn>Digital Linguistics</dfn> (<abbr class=abbr>DLx</abbr>) is the science of managing linguistic data, digitally.
+</p>
+</div>
+
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;p&gt;
+  &lt;dfn class&#x3D;dfn&gt;Digital Linguistics&lt;/dfn&gt; (&lt;abbr class&#x3D;abbr&gt;DLx&lt;/abbr&gt;) is the science of managing linguistic data, digitally.
+&lt;/p&gt;
+</code></pre>
+                </article>
+
+            </section>
+            <section class="kss-section kss-section--depth-2" id="kssref-elements-em">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>elements.less</span>, line <span>124</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-elements-em">
+                <h2 class="kss-section__item kss-section__item--depth-2">
+                  <span class="kss-section__ref">3.6</span>
+                  <span class="kss-section__name">Emphasis</span>
+                </h2>
+              </a>
+
+                <div class="kss-section__description"><p>Used for standard emphasis within text.</p>
+</div>
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Example</h1>
+
+
+                <div class="kss-modifiers__example"><p>
+  <em class=em>These words</em> are emphasized.
+</p>
+</div>
+
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;p&gt;
+  &lt;em class&#x3D;em&gt;These words&lt;/em&gt; are emphasized.
 &lt;/p&gt;
 </code></pre>
                 </article>

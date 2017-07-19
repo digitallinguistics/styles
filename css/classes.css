@@ -23,24 +23,6 @@ This file contains DLx styles that need to be explicitly specified using classes
   --underline-purple: 0.075em solid var(--purple);
   --underline-transparent: 0.075em solid transparent;
 }
-.code {
-  background-color: var(--codegray);
-  border: var(--border);
-  border-radius: var(--border-radius);
-  color: #383a42;
-  font-family: var(--font-mono);
-  font-size: 0.75em;
-  font-style: normal;
-  overflow-x: auto;
-  padding: var(--padding-text);
-  white-space: pre;
-}
-.dfn {
-  font-style: italic;
-}
-.em {
-  font-style: italic;
-}
 .field {
   background-color: white;
   border: var(--border-gray);

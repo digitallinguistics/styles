@@ -1,3 +1,45 @@
+blockquote .code,
+button .code,
+caption .code,
+dd .code,
+dt .code,
+figcaption .code,
+h1 .code,
+h2 .code,
+h3 .code,
+h4 .code,
+h5 .code,
+h6 .code,
+input .code,
+legend .code,
+option .code,
+output .code,
+p .code,
+pre .code,
+select .code,
+textarea .code,
+blockquote .link,
+button .link,
+caption .link,
+dd .link,
+dt .link,
+figcaption .link,
+h1 .link,
+h2 .link,
+h3 .link,
+h4 .link,
+h5 .link,
+h6 .link,
+input .link,
+legend .link,
+option .link,
+output .link,
+p .link,
+pre .link,
+select .link,
+textarea .link {
+  display: inline;
+}
 .abbr {
   font-style: italic;
 }
@@ -37,5 +79,24 @@
   color: white;
 }
 .cite {
+  font-style: italic;
+}
+.code {
+  background-color: var(--codegray);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  color: var(--codedarkgray);
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.75em;
+  font-style: normal;
+  overflow-x: auto;
+  padding: var(--padding-text);
+  white-space: pre;
+}
+.dfn {
+  font-style: italic;
+}
+.em {
   font-style: italic;
 }

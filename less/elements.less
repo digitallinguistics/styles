@@ -10,6 +10,15 @@
 // Styleguide Elements
 
 
+// for elements that can be either inline or standalone,
+// set them to inline when they occur inside block elements
+blockquote, button, caption, dd, dt, figcaption, h1, h2, h3, h4, h5, h6, input, legend, option, output, p, pre, select, textarea {
+  .code, .link {
+    display: inline;
+  }
+}
+
+
 // Abbreviation
 //
 // Default styling for `<abbr>` tags, which should be used on the first mention of an abbreviation. It is often accompanied by a `<dfn>` tag in the same paragraph.
@@ -77,5 +86,48 @@
 //
 // Styleguide Elements.cite
 .cite {
+  font-style: italic;
+}
+
+// Code Block
+//
+// The `<code>` element is used for both inline and standalone code blocks.
+//
+// Markup: code.hbs
+//
+// Styleguide Elements.code
+.code {
+  background-color: var(--codegray);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  color: var(--codedarkgray);
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.75em;
+  font-style: normal;
+  overflow-x: auto;
+  padding: var(--padding-text);
+  white-space: pre;
+}
+
+// Definition
+//
+// A `<dfn>` tag is used the first time an element is defined. The definition of the term should be given in the surrounding text.
+//
+// Markup: dfn.hbs
+//
+// Styleguide Elements.dfn
+.dfn {
+  font-style: italic;
+}
+
+// Emphasis
+//
+// Used for standard emphasis within text.
+//
+// Markup: em.hbs
+//
+// Styleguide Elements.em
+.em {
   font-style: italic;
 }

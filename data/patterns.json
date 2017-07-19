@@ -1,17 +1,5 @@
 {
 
-  "code": {
-    "description": "The <code>&lt;code&gt;</code> element is used for both inline and standalone code blocks."
-  },
-
-  "dfn": {
-    "description": "A <code>&lt;dfn&gt;</code> tag is used the first time an element is defined. The definition of the term should be given in the surrounding text."
-  },
-
-  "em": {
-    "description": "Used for standard emphasis within text."
-  },
-
   "field": {
     "description": "Styles an element as a form field. This style is automatically applied to various form elements, such as the <code>&lt;input type=text&gt;</code> element."
   },
