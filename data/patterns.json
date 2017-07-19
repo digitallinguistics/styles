@@ -120,10 +120,6 @@
     "description": "Uses the <code>&lt;.field&gt;</code> style"
   },
 
-  "tooltip": {
-    "description": "Adding the <code>.tooltip</code> class to any element will make a tooltip display on hover or when the element is focused. The content of the tooltip is contained in the <code>title</code> attribute for that element. Note that tooltips do not work on <code>&lt;input&gt;</code> elements - place the <code>.tooltip</code> class on the <code>&lt;label&gt;</code> instead."
-  },
-
   "unicode": {
     "description": "Used when a Unicode font is needed. More semantic styles such as <code>.phonetic</code> or <code>.phonemic</code> should be preferred over this one when possible."
   }

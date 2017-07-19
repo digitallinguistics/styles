@@ -440,14 +440,12 @@ This file contains DLx styles that need to be explicitly specified using classes
     counter-increment: numbered;
     display: list-item;
     margin-left: 2.5rem;
-    position: relative;
 
     &::before {
       content: counter(numbered) '.';
       font-weight: bold;
       margin-left: -2.5rem;
       padding: 0rem 0.5em;
-      position: absolute;
     }
 
   }
@@ -542,36 +540,6 @@ This file contains DLx styles that need to be explicitly specified using classes
 
 .textarea {
   .field;
-}
-
-.tooltip {
-
-  position: relative;
-
-  &::after {
-    .verydarkgreen-background;
-    border-radius: var(--border-radius);
-    box-shadow: var(--shadow);
-    content: attr(title);
-    font-size: smaller;
-    left: 0.5em;
-    opacity: 0;
-    padding: 0;
-    position: absolute;
-    top: 115%;
-    transition: all 0.3s ease;
-    width: 25em;
-    z-index: -2;
-  }
-
-  &:hover::after,
-  &:focus::after,
-  {
-    opacity: 1;
-    padding: 0.5em 1em;
-    z-index: 2;
-  }
-
 }
 
 .unicode {

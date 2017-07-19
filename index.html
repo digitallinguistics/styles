@@ -19,7 +19,7 @@
 
   <body>
 
-    <label>
+    <label for=nav>
 
       <span>Jump to …</span>
 
@@ -29,7 +29,7 @@
         <option value=typography>Typography</option>
         <option value=icons>Icons</option>
         <option value=patterns>Patterns</option>
-        <option value=abbr-pattern>abbr</option><option value=bulleted-pattern>bulleted</option><option value=button-pattern>button</option><option value=cite-pattern>cite</option><option value=code-pattern>code</option><option value=dfn-pattern>dfn</option><option value=em-pattern>em</option><option value=field-pattern>field</option><option value=fieldset-pattern>fieldset</option><option value=hanging-pattern>hanging</option><option value=h-minor-pattern>h-minor</option><option value=h-section-pattern>h-section</option><option value=h-subsection-pattern>h-subsection</option><option value=h-subsubsection-pattern>h-subsubsection</option><option value=input-pattern>input</option><option value=italic-pattern>italic</option><option value=kbd-pattern>kbd</option><option value=label-pattern>label</option><option value=link-pattern>link</option><option value=link-white-pattern>link-white</option><option value=nav-pattern>nav</option><option value=numbered-pattern>numbered</option><option value=orthographic-pattern>orthographic</option><option value=page-title-pattern>page-title</option><option value=phonemic-pattern>phonemic</option><option value=phonetic-pattern>phonetic</option><option value=reference-list-pattern>reference-list</option><option value=select-pattern>select</option><option value=strong-pattern>strong</option><option value=textarea-pattern>textarea</option><option value=tooltip-pattern>tooltip</option><option value=unicode-pattern>unicode</option>
+        <option value=abbr-pattern>abbr</option><option value=bulleted-pattern>bulleted</option><option value=button-pattern>button</option><option value=cite-pattern>cite</option><option value=code-pattern>code</option><option value=dfn-pattern>dfn</option><option value=em-pattern>em</option><option value=field-pattern>field</option><option value=fieldset-pattern>fieldset</option><option value=hanging-pattern>hanging</option><option value=h-minor-pattern>h-minor</option><option value=h-section-pattern>h-section</option><option value=h-subsection-pattern>h-subsection</option><option value=h-subsubsection-pattern>h-subsubsection</option><option value=input-pattern>input</option><option value=italic-pattern>italic</option><option value=kbd-pattern>kbd</option><option value=label-pattern>label</option><option value=link-pattern>link</option><option value=link-white-pattern>link-white</option><option value=nav-pattern>nav</option><option value=numbered-pattern>numbered</option><option value=orthographic-pattern>orthographic</option><option value=page-title-pattern>page-title</option><option value=phonemic-pattern>phonemic</option><option value=phonetic-pattern>phonetic</option><option value=reference-list-pattern>reference-list</option><option value=select-pattern>select</option><option value=strong-pattern>strong</option><option value=textarea-pattern>textarea</option><option value=unicode-pattern>unicode</option>
       </select>
 
     </label>
@@ -1307,41 +1307,6 @@
           <div>
             <h1 class=h-minor>Live Example</h1>
             <div class=rendered><textarea class=textarea placeholder='This is a textarea'></textarea>
-    </div>
-          </div>
-    
-        </section>
-        <section id=tooltip-pattern class='pattern tooltip-example'>
-    
-          <header>
-            <h1 class='pattern-title header-subsection'><code>tooltip</code></h1>
-            <p class=pattern-description>Adding the <code>.tooltip</code> class to any element will make a tooltip display on hover or when the element is focused. The content of the tooltip is contained in the <code>title</code> attribute for that element. Note that tooltips do not work on <code>&lt;input&gt;</code> elements - place the <code>.tooltip</code> class on the <code>&lt;label&gt;</code> instead.</p>
-          </header>
-    
-          <div>
-            <h1 class=h-minor>Example Markup</h1>
-            <pre><code class=markup>
-    &lt;p&gt;
-      This is an example of an &lt;span class&#x3D;tooltip title&#x3D;&#x27;This is the inline tooltip.&#x27;&gt;inline tooltip&lt;/span&gt;.
-    &lt;/p&gt;
-    
-    &lt;label class&#x3D;tooltip title&#x3D;&#x27;This is a tooltip on a block element&#x27;&gt;
-      &lt;span&gt;Tooltip&lt;/span&gt;
-      &lt;input type&#x3D;text&gt;
-    &lt;/label&gt;
-    </code></pre>
-          </div>
-    
-          <div>
-            <h1 class=h-minor>Live Example</h1>
-            <div class=rendered><p>
-      This is an example of an <span class=tooltip title='This is the inline tooltip.'>inline tooltip</span>.
-    </p>
-    
-    <label class=tooltip title='This is a tooltip on a block element'>
-      <span>Tooltip</span>
-      <input type=text>
-    </label>
     </div>
           </div>
     

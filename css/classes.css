@@ -1133,14 +1133,12 @@ This file contains DLx styles that need to be explicitly specified using classes
   counter-increment: numbered;
   display: list-item;
   margin-left: 2.5rem;
-  position: relative;
 }
 .numbered li::before {
   content: counter(numbered) '.';
   font-weight: bold;
   margin-left: -2.5rem;
   padding: 0rem 0.5em;
-  position: absolute;
 }
 .orthographic {
   font-family: 'Gentium Plus', 'Charis SIL', 'Doulos SIL', 'Cambria', 'Andika', 'Lucida Sans Unicode', 'Times New Roman', 'Georgia', serif;
@@ -1264,30 +1262,6 @@ This file contains DLx styles that need to be explicitly specified using classes
   background-color: #eaeded;
   color: #cad2d3;
   cursor: not-allowed;
-}
-.tooltip {
-  position: relative;
-}
-.tooltip::after {
-  background-color: var(--verydarkgreen);
-  border-radius: var(--border-radius);
-  box-shadow: var(--shadow);
-  content: attr(title);
-  font-size: smaller;
-  left: 0.5em;
-  opacity: 0;
-  padding: 0;
-  position: absolute;
-  top: 115%;
-  transition: all 0.3s ease;
-  width: 25em;
-  z-index: -2;
-}
-.tooltip:hover::after,
-.tooltip:focus::after {
-  opacity: 1;
-  padding: 0.5em 1em;
-  z-index: 2;
 }
 .unicode {
   font-family: 'Gentium Plus', 'Charis SIL', 'Doulos SIL', 'Cambria', 'Andika', 'Lucida Sans Unicode', 'Times New Roman', 'Georgia', serif;
