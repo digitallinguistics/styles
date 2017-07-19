@@ -1,0 +1,54 @@
+@import (reference) 'https://digitallinguistics.blob.core.windows.net/less/colors.less';
+@import (reference) 'https://digitallinguistics.blob.core.windows.net/less/variables.less';
+
+// Components
+//
+// Discrete, self-contained pieces of UI.
+//
+// Weight: 4
+//
+// Styleguide Components
+
+
+// Banner
+//
+// A site banner at the top of the page.
+//
+// Markup: banner.hbs
+//
+// Styleguide Components.banner
+.banner {
+
+  align-items: center;
+  background-color: var(--blue);
+  box-shadow: var(--shadow-deep);
+  color: white;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+
+  h1 {
+    font-size: 2em;
+    font-weight: 300;
+    padding: var(--padding-text);
+    white-space: nowrap;
+  }
+
+}
+
+// Bulleted List
+//
+// In DLx projects, lists are often used semantically rather than stylistically, e.g. a phrase includes a list of words. As such, lists have no styling by default, and list styling needs to be explicitly set with the <code>.bulleted</code> or <code>.numbered</code> styles.
+//
+// Markup: bulleted.hbs
+//
+// Styleguide Components.bulleted
+.bulleted {
+
+  list-style: disc outside none;
+
+  li {
+    display: list-item;
+  }
+
+}

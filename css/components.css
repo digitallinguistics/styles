@@ -1,0 +1,21 @@
+.banner {
+  align-items: center;
+  background-color: var(--blue);
+  box-shadow: var(--shadow-deep);
+  color: white;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.banner h1 {
+  font-size: 2em;
+  font-weight: 300;
+  padding: var(--padding-text);
+  white-space: nowrap;
+}
+.bulleted {
+  list-style: disc outside none;
+}
+.bulleted li {
+  display: list-item;
+}

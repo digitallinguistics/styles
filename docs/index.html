@@ -10,10 +10,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,300">
     <link rel="stylesheet" href="kss-assets/vendor/prism.css">
     <link rel="stylesheet" href="kss-assets/css/kss.css">
-    <link rel="stylesheet" href="../css/atom-one-light.css">
-<link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/fonts.css">
 <link rel="stylesheet" href="../css/colors.css">
-<link rel="stylesheet" href="../css/classes.css">
+<link rel="stylesheet" href="../css/variables.css">
+<link rel="stylesheet" href="../css/elements.css">
+<link rel="stylesheet" href="../css/components.css">
 <link rel="stylesheet" href="../css/patterns.css">
 
   </head>
@@ -43,21 +44,27 @@
           </a>
         </li>
           <li class="kss-nav__item">
-            <a class="" href="section-elements.html">
-              <span class="kss-nav__ref">1</span>
-              <span class="kss-nav__name">Elements</span>
-            </a>
-          </li>
-          <li class="kss-nav__item">
             <a class="" href="section-typography.html">
-              <span class="kss-nav__ref">2</span>
+              <span class="kss-nav__ref">1</span>
               <span class="kss-nav__name">Typography</span>
             </a>
           </li>
           <li class="kss-nav__item">
             <a class="" href="section-colors.html">
-              <span class="kss-nav__ref">3</span>
+              <span class="kss-nav__ref">2</span>
               <span class="kss-nav__name">Colors</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-elements.html">
+              <span class="kss-nav__ref">3</span>
+              <span class="kss-nav__name">Elements</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-components.html">
+              <span class="kss-nav__ref">4</span>
+              <span class="kss-nav__name">Components</span>
             </a>
           </li>
       </ul>
@@ -79,7 +86,11 @@
 </li>
 <li><p><code>colors.less</code> - CSS variables, classes for font colors, and classes for background colors, for each of the colors used in the DLx color schemes.</p>
 </li>
+<li><p><code>variables.less</code> - High-level CSS variable declarations that are reused across element and component styling, such as common settings for padding, box shadows, underlines, etc.</p>
+</li>
 <li><p><code>elements.less</code> - General element styling (as classes). For example, add the <code>.button</code> class to a <code>&lt;button&gt;</code> element to apply default button styling.</p>
+</li>
+<li><p><code>components.less</code> - Discrete, self-contained pieces of UI.</p>
 </li>
 <li><p><code>classes.less</code> - All the DLx styles, as classes</p>
 </li>
@@ -96,9 +107,7 @@
   <script src="kss-assets/vendor/jquery.js"></script>
   <script src="kss-assets/vendor/prism.js"></script>
   <script src="kss-assets/js/kss.js"></script>
-  <script src="../js/highlight.js"></script>
-<script src="../js/patterns.js"></script>
-
+  
   <!-- /scripts. -->
 
   </body>

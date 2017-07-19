@@ -10,10 +10,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,300">
     <link rel="stylesheet" href="kss-assets/vendor/prism.css">
     <link rel="stylesheet" href="kss-assets/css/kss.css">
-    <link rel="stylesheet" href="../css/atom-one-light.css">
-<link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/fonts.css">
 <link rel="stylesheet" href="../css/colors.css">
-<link rel="stylesheet" href="../css/classes.css">
+<link rel="stylesheet" href="../css/variables.css">
+<link rel="stylesheet" href="../css/elements.css">
+<link rel="stylesheet" href="../css/components.css">
 <link rel="stylesheet" href="../css/patterns.css">
 
   </head>
@@ -43,29 +44,47 @@
           </a>
         </li>
           <li class="kss-nav__item">
-            <a class="kss-state-active" href="section-elements.html">
-              <span class="kss-nav__ref">1</span>
-              <span class="kss-nav__name">Elements</span>
-            </a>
-                <ul class="kss-nav__subnav">
-                    <li class="kss-nav__item ">
-                      <a href="section-elements.html#kssref-elements-abbr">
-                        <span class="kss-nav__ref">1.1</span>
-                        <span class="kss-nav__name">Abbreviation</span>
-                      </a>
-                    </li>
-                </ul>
-          </li>
-          <li class="kss-nav__item">
             <a class="" href="section-typography.html">
-              <span class="kss-nav__ref">2</span>
+              <span class="kss-nav__ref">1</span>
               <span class="kss-nav__name">Typography</span>
             </a>
           </li>
           <li class="kss-nav__item">
             <a class="" href="section-colors.html">
-              <span class="kss-nav__ref">3</span>
+              <span class="kss-nav__ref">2</span>
               <span class="kss-nav__name">Colors</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="kss-state-active" href="section-elements.html">
+              <span class="kss-nav__ref">3</span>
+              <span class="kss-nav__name">Elements</span>
+            </a>
+                <ul class="kss-nav__subnav">
+                    <li class="kss-nav__item ">
+                      <a href="section-elements.html#kssref-elements-abbr">
+                        <span class="kss-nav__ref">3.1</span>
+                        <span class="kss-nav__name">Abbreviation</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item ">
+                      <a href="section-elements.html#kssref-elements-button">
+                        <span class="kss-nav__ref">3.2</span>
+                        <span class="kss-nav__name">Button</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item ">
+                      <a href="section-elements.html#kssref-elements-cite">
+                        <span class="kss-nav__ref">3.3</span>
+                        <span class="kss-nav__name">Citation</span>
+                      </a>
+                    </li>
+                </ul>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-components.html">
+              <span class="kss-nav__ref">4</span>
+              <span class="kss-nav__name">Components</span>
             </a>
           </li>
       </ul>
@@ -84,11 +103,11 @@
             <header class="kss-section kss-section--depth-1" id="kssref-elements">
 
             <article class="kss-section__content">
-                <p class="kss-section__source">Source: <span>elements.less</span>, line <span>1</span></p>
+                <p class="kss-section__source">Source: <span>elements.less</span>, line <span>4</span></p>
 
               <a class="kss-section__permalink" href="#kssref-elements">
                 <h1 class="kss-section__item kss-section__item--depth-1">
-                  <span class="kss-section__ref">1</span>
+                  <span class="kss-section__ref">3</span>
                   <span class="kss-section__name">Elements</span>
                 </h1>
               </a>
@@ -103,11 +122,11 @@
             <section class="kss-section kss-section--depth-2" id="kssref-elements-abbr">
 
             <article class="kss-section__content">
-                <p class="kss-section__source">Source: <span>elements.less</span>, line <span>7</span></p>
+                <p class="kss-section__source">Source: <span>elements.less</span>, line <span>13</span></p>
 
               <a class="kss-section__permalink" href="#kssref-elements-abbr">
                 <h2 class="kss-section__item kss-section__item--depth-2">
-                  <span class="kss-section__ref">1.1</span>
+                  <span class="kss-section__ref">3.1</span>
                   <span class="kss-section__name">Abbreviation</span>
                 </h2>
               </a>
@@ -136,6 +155,112 @@
                 </article>
 
             </section>
+            <section class="kss-section kss-section--depth-2" id="kssref-elements-button">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>elements.less</span>, line <span>24</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-elements-button">
+                <h2 class="kss-section__item kss-section__item--depth-2">
+                  <span class="kss-section__ref">3.2</span>
+                  <span class="kss-section__name">Button</span>
+                </h2>
+              </a>
+
+                <div class="kss-section__description"><p>A basic button.</p>
+</div>
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Examples</h1>
+
+                  <h2 class="kss-modifiers__name">Default styling</h2>
+
+                <div class="kss-modifiers__example"><button class="button {{modifier_class}}" type=button>Regular Button</button>
+<input class="button {{modifier_class}}" type=button value='Input Button'>
+</div>
+
+                  <h2 class="kss-modifiers__name">:active</h2>
+
+                  <p class="kss-modifiers__description">When the button is clicked</p>
+
+                  <div class="kss-modifiers__example"><button class="button pseudo-class-active" type=button>Regular Button</button>
+<input class="button pseudo-class-active" type=button value='Input Button'>
+</div>
+                  <h2 class="kss-modifiers__name">:disabled</h2>
+
+                  <p class="kss-modifiers__description">When the button is disabled</p>
+
+                  <div class="kss-modifiers__example"><button class="button pseudo-class-disabled" type=button>Regular Button</button>
+<input class="button pseudo-class-disabled" type=button value='Input Button'>
+</div>
+                  <h2 class="kss-modifiers__name">:focus</h2>
+
+                  <p class="kss-modifiers__description">When the button is focused</p>
+
+                  <div class="kss-modifiers__example"><button class="button pseudo-class-focus" type=button>Regular Button</button>
+<input class="button pseudo-class-focus" type=button value='Input Button'>
+</div>
+                  <h2 class="kss-modifiers__name">:hover</h2>
+
+                  <p class="kss-modifiers__description">When the user hovers over the button</p>
+
+                  <div class="kss-modifiers__example"><button class="button pseudo-class-hover" type=button>Regular Button</button>
+<input class="button pseudo-class-hover" type=button value='Input Button'>
+</div>
+                  <h2 class="kss-modifiers__name">.button-red</h2>
+
+                  <p class="kss-modifiers__description">A red button</p>
+
+                  <div class="kss-modifiers__example"><button class="button button-red" type=button>Regular Button</button>
+<input class="button button-red" type=button value='Input Button'>
+</div>
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;button class&#x3D;&quot;button {{modifier_class}}&quot; type&#x3D;button&gt;Regular Button&lt;/button&gt;
+&lt;input class&#x3D;&quot;button {{modifier_class}}&quot; type&#x3D;button value&#x3D;&#x27;Input Button&#x27;&gt;
+</code></pre>
+                </article>
+
+            </section>
+            <section class="kss-section kss-section--depth-2" id="kssref-elements-cite">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>elements.less</span>, line <span>72</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-elements-cite">
+                <h2 class="kss-section__item kss-section__item--depth-2">
+                  <span class="kss-section__ref">3.3</span>
+                  <span class="kss-section__name">Citation</span>
+                </h2>
+              </a>
+
+                <div class="kss-section__description"><p>The <code>&lt;cite&gt;</code> element is used for titles of publications, etc.</p>
+</div>
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Example</h1>
+
+
+                <div class="kss-modifiers__example"><p>
+  In his review of <cite class=cite>Endangered languages and new technologies</cite>, Hieber (2015) mentions certain concepts in Digital Linguistics.
+</p>
+</div>
+
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;p&gt;
+  In his review of &lt;cite class&#x3D;cite&gt;Endangered languages and new technologies&lt;/cite&gt;, Hieber (2015) mentions certain concepts in Digital Linguistics.
+&lt;/p&gt;
+</code></pre>
+                </article>
+
+            </section>
     </section>
     <!-- /documentation. -->
 
@@ -145,9 +270,7 @@
   <script src="kss-assets/vendor/jquery.js"></script>
   <script src="kss-assets/vendor/prism.js"></script>
   <script src="kss-assets/js/kss.js"></script>
-  <script src="../js/highlight.js"></script>
-<script src="../js/patterns.js"></script>
-
+  
   <!-- /scripts. -->
 
   </body>

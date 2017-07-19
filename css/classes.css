@@ -23,87 +23,6 @@ This file contains DLx styles that need to be explicitly specified using classes
   --underline-purple: 0.075em solid var(--purple);
   --underline-transparent: 0.075em solid transparent;
 }
-.abbr {
-  font-style: italic;
-}
-.banner {
-  align-items: center;
-  background-color: var(--blue);
-  box-shadow: var(--shadow-deep);
-  color: white;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-}
-.banner h1 {
-  font-size: 2em;
-  font-weight: 300;
-  padding: var(--padding-text);
-  white-space: nowrap;
-}
-.bulleted {
-  list-style: disc outside none;
-  margin-left: 1.5em;
-}
-.bulleted li {
-  display: list-item;
-}
-.button {
-  --link-color: white;
-  --link-color-visited: white;
-  background-color: var(--blue);
-  color: white;
-  align-items: center;
-  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.15), transparent);
-  border-radius: var(--border-radius);
-  box-shadow: var(--shadow-button);
-  cursor: pointer;
-  padding: var(--padding-text);
-  text-align: center;
-}
-.button:active {
-  box-shadow: var(--shadow-button-press);
-}
-.button:hover,
-.button:focus {
-  background-image: linear-gradient(135deg, transparent, rgba(0, 0, 0, 0.15));
-}
-.button:disabled {
-  background-image: none;
-  box-shadow: none;
-  cursor: not-allowed;
-  opacity: 0.40;
-}
-.button-red {
-  background-color: var(--blue);
-  align-items: center;
-  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.15), transparent);
-  border-radius: var(--border-radius);
-  box-shadow: var(--shadow-button);
-  cursor: pointer;
-  padding: var(--padding-text);
-  text-align: center;
-  --link-color: white;
-  --link-color-visited: white;
-  background-color: var(--red);
-  color: white;
-}
-.button-red:active {
-  box-shadow: var(--shadow-button-press);
-}
-.button-red:hover,
-.button-red:focus {
-  background-image: linear-gradient(135deg, transparent, rgba(0, 0, 0, 0.15));
-}
-.button-red:disabled {
-  background-image: none;
-  box-shadow: none;
-  cursor: not-allowed;
-  opacity: 0.40;
-}
-.cite {
-  font-style: italic;
-}
 .code {
   background-color: var(--codegray);
   border: var(--border);
@@ -167,32 +86,6 @@ This file contains DLx styles that need to be explicitly specified using classes
 .hanging {
   margin-left: 1em;
   text-indent: -1em;
-}
-.input[type=button] {
-  --link-color: white;
-  --link-color-visited: white;
-  background-color: var(--blue);
-  color: white;
-  align-items: center;
-  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.15), transparent);
-  border-radius: var(--border-radius);
-  box-shadow: var(--shadow-button);
-  cursor: pointer;
-  padding: var(--padding-text);
-  text-align: center;
-}
-.input[type=button]:active {
-  box-shadow: var(--shadow-button-press);
-}
-.input[type=button]:hover,
-.input[type=button]:focus {
-  background-image: linear-gradient(135deg, transparent, rgba(0, 0, 0, 0.15));
-}
-.input[type=button]:disabled {
-  background-image: none;
-  box-shadow: none;
-  cursor: not-allowed;
-  opacity: 0.40;
 }
 .input[type=color] {
   display: block;
@@ -345,31 +238,10 @@ This file contains DLx styles that need to be explicitly specified using classes
   cursor: not-allowed;
 }
 .input[type=reset] {
-  background-color: var(--blue);
-  align-items: center;
-  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.15), transparent);
-  border-radius: var(--border-radius);
-  box-shadow: var(--shadow-button);
-  cursor: pointer;
-  padding: var(--padding-text);
-  text-align: center;
   --link-color: white;
   --link-color-visited: white;
   background-color: var(--superdarkgreen);
   color: white;
-}
-.input[type=reset]:active {
-  box-shadow: var(--shadow-button-press);
-}
-.input[type=reset]:hover,
-.input[type=reset]:focus {
-  background-image: linear-gradient(135deg, transparent, rgba(0, 0, 0, 0.15));
-}
-.input[type=reset]:disabled {
-  background-image: none;
-  box-shadow: none;
-  cursor: not-allowed;
-  opacity: 0.40;
 }
 .input[type=search] {
   background-color: white;
@@ -391,32 +263,6 @@ This file contains DLx styles that need to be explicitly specified using classes
   background-color: #EAEDED;
   color: #CAD2D3;
   cursor: not-allowed;
-}
-.input[type=submit] {
-  --link-color: white;
-  --link-color-visited: white;
-  background-color: var(--blue);
-  color: white;
-  align-items: center;
-  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.15), transparent);
-  border-radius: var(--border-radius);
-  box-shadow: var(--shadow-button);
-  cursor: pointer;
-  padding: var(--padding-text);
-  text-align: center;
-}
-.input[type=submit]:active {
-  box-shadow: var(--shadow-button-press);
-}
-.input[type=submit]:hover,
-.input[type=submit]:focus {
-  background-image: linear-gradient(135deg, transparent, rgba(0, 0, 0, 0.15));
-}
-.input[type=submit]:disabled {
-  background-image: none;
-  box-shadow: none;
-  cursor: not-allowed;
-  opacity: 0.40;
 }
 .input[type=tel] {
   background-color: white;

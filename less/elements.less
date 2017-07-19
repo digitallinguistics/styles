@@ -1,8 +1,14 @@
+@import (reference) 'https://digitallinguistics.blob.core.windows.net/less/colors.less';
+@import (reference) 'https://digitallinguistics.blob.core.windows.net/less/variables.less';
+
 // Elements
 //
 // Basic styling for elements. These styles are not applied automatically, but rather need to be applied using the class with the same name as the element (e.g. apply the `.button` class to all `<button>` elements.)
 //
+// Weight: 3
+//
 // Styleguide Elements
+
 
 // Abbreviation
 //
@@ -12,5 +18,64 @@
 //
 // Styleguide Elements.abbr
 .abbr {
+  font-style: italic;
+}
+
+// Button
+//
+// A basic button.
+//
+// Markup: button.hbs
+//
+// :active      - When the button is clicked
+// :disabled    - When the button is disabled
+// :focus       - When the button is focused
+// :hover       - When the user hovers over the button
+// .button-red - A red button
+//
+// Styleguide Elements.button
+.button {
+
+  .blue-background;
+  align-items: center;
+  background-image: linear-gradient(135deg, rgba(255,255,255,0.15), transparent);
+  border: 0;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-button);
+  cursor: pointer;
+  font: inherit;
+  outline: 0;
+  padding: var(--padding-text);
+  text-align: center;
+
+  &:active {
+    --shadow-button: 0 0 0 0.075em rgba(0,0,0,0.15) inset, 0 0 0.5em rgba(0,0,0,0.2) inset;
+  }
+
+  &:hover, &:focus {
+    background-image: linear-gradient(135deg, transparent, rgba(0,0,0,0.15));
+  }
+
+  &:disabled {
+    background-image: none;
+    box-shadow: none;
+    cursor: not-allowed;
+    opacity: 0.40;
+  }
+
+  &-red {
+    .red-background;
+  }
+
+}
+
+// Citation
+//
+// The `<cite>` element is used for titles of publications, etc.
+//
+// Markup: cite.hbs
+//
+// Styleguide Elements.cite
+.cite {
   font-style: italic;
 }

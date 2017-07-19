@@ -9,14 +9,12 @@
   "homepage": "README.md",
   "builder": "node_modules/michelangelo/kss_styleguide/custom-template/",
   "css": [
-    "../css/atom-one-light.css",
     "../css/fonts.css",
     "../css/colors.css",
-    "../css/classes.css",
+    "../css/variables.css",
+    "../css/elements.css",
+    "../css/components.css",
     "../css/patterns.css"
   ],
-  "js": [
-    "../js/highlight.js",
-    "../js/patterns.js"
-  ]
+  "js": []
 }

@@ -35,77 +35,6 @@ This file contains DLx styles that need to be explicitly specified using classes
 }
 
 // PATTERNS
-.abbr {
-  font-style: italic;
-}
-
-.banner {
-
-  align-items: center;
-  background-color: var(--blue);
-  box-shadow: var(--shadow-deep);
-  color: white;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-
-  h1 {
-    font-size: 2em;
-    font-weight: 300;
-    padding: var(--padding-text);
-    white-space: nowrap;
-  }
-
-}
-
-.bulleted {
-
-  list-style: disc outside none;
-  margin-left: 1.5em;
-
-  li {
-    display: list-item;
-  }
-
-}
-
-.button {
-
-  .blue-background;
-  align-items: center;
-  background-image: linear-gradient(135deg, rgba(255,255,255,0.15), transparent);
-  border-radius: var(--border-radius);
-  box-shadow: var(--shadow-button);
-  cursor: pointer;
-  padding: var(--padding-text);
-  text-align: center;
-
-  &:active {
-    box-shadow: var(--shadow-button-press);
-  }
-
-  &:hover, &:focus {
-    background-image: linear-gradient(135deg, transparent, rgba(0,0,0,0.15));
-  }
-
-  &:disabled {
-    background-image: none;
-    box-shadow: none;
-    cursor: not-allowed;
-    opacity: 0.40;
-  }
-
-}
-
-.button-red {
-  .button;
-  .red-background;
-}
-
-.cite {
-  font-style: italic;
-}
-
 .code {
   background-color: var(--codegray);
   border: var(--border);
@@ -192,7 +121,7 @@ This file contains DLx styles that need to be explicitly specified using classes
 .input {
 
   &[type=button] {
-    .button;
+    // .button;
   }
 
   &[type=color] {
@@ -228,7 +157,7 @@ This file contains DLx styles that need to be explicitly specified using classes
   }
 
   &[type=reset] {
-    .button;
+    // .button;
     .superdarkgreen-background;
   }
 
@@ -237,7 +166,7 @@ This file contains DLx styles that need to be explicitly specified using classes
   }
 
   &[type=submit] {
-    .button;
+    // .button;
   }
 
   &[type=tel] {
@@ -453,6 +382,5 @@ This file contains DLx styles that need to be explicitly specified using classes
 .unicode {
   font-family: var(--font-unicode);
   font-size: 1.15em;
-  // QUESTION: Why was this here originally?
-  // line-height: 1;
+  // line-height: 1; // QUESTION: Why was this here originally?
 }

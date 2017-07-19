@@ -10,10 +10,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,300">
     <link rel="stylesheet" href="kss-assets/vendor/prism.css">
     <link rel="stylesheet" href="kss-assets/css/kss.css">
-    <link rel="stylesheet" href="../css/atom-one-light.css">
-<link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/fonts.css">
 <link rel="stylesheet" href="../css/colors.css">
-<link rel="stylesheet" href="../css/classes.css">
+<link rel="stylesheet" href="../css/variables.css">
+<link rel="stylesheet" href="../css/elements.css">
+<link rel="stylesheet" href="../css/components.css">
 <link rel="stylesheet" href="../css/patterns.css">
 
   </head>
@@ -43,21 +44,27 @@
           </a>
         </li>
           <li class="kss-nav__item">
-            <a class="" href="section-elements.html">
-              <span class="kss-nav__ref">1</span>
-              <span class="kss-nav__name">Elements</span>
-            </a>
-          </li>
-          <li class="kss-nav__item">
             <a class="" href="section-typography.html">
-              <span class="kss-nav__ref">2</span>
+              <span class="kss-nav__ref">1</span>
               <span class="kss-nav__name">Typography</span>
             </a>
           </li>
           <li class="kss-nav__item">
             <a class="" href="section-colors.html">
-              <span class="kss-nav__ref">3</span>
+              <span class="kss-nav__ref">2</span>
               <span class="kss-nav__name">Colors</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-elements.html">
+              <span class="kss-nav__ref">3</span>
+              <span class="kss-nav__name">Elements</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-components.html">
+              <span class="kss-nav__ref">4</span>
+              <span class="kss-nav__name">Components</span>
             </a>
           </li>
       </ul>
@@ -80,7 +87,7 @@
 
               <a class="kss-section__permalink" href="#kssref-typography-gentiumplus-italic">
                 <h3 class="kss-section__item kss-section__item--depth-3">
-                  <span class="kss-section__ref">2.3.2</span>
+                  <span class="kss-section__ref">1.3.2</span>
                   <span class="kss-section__name">Gentium Plus Regular Italic</span>
                 </h3>
               </a>
@@ -92,12 +99,12 @@
                 <h1 class="kss-modifiers__heading">Example</h1>
 
 
-                <div class="kss-modifiers__example"><p class=unicode style="font-style: italic;"><strong>Gentium Plus Regular Italic</strong> is used for italicized text that requires Unicode support, such as inline citation of data.</p></div>
+                <div class="kss-modifiers__example"><p style="font-family: 'Gentium Plus'; font-size: 1.15em; font-style: italic;"><strong>Gentium Plus Regular Italic</strong> is used for italicized text that requires Unicode support, such as inline citation of data. It should typically have <code>font-size: 1.15em;</code> so that it occupies the same line height as Fira Sans.</p></div>
 
               </article>
 
                 <article class="kss-section__markup">
-                  <pre><code class="language-markup">&lt;p class&#x3D;unicode style&#x3D;&quot;font-style: italic;&quot;&gt;&lt;strong&gt;Gentium Plus Regular Italic&lt;/strong&gt; is used for italicized text that requires Unicode support, such as inline citation of data.&lt;/p&gt;</code></pre>
+                  <pre><code class="language-markup">&lt;p style&#x3D;&quot;font-family: &#x27;Gentium Plus&#x27;; font-size: 1.15em; font-style: italic;&quot;&gt;&lt;strong&gt;Gentium Plus Regular Italic&lt;/strong&gt; is used for italicized text that requires Unicode support, such as inline citation of data. It should typically have &lt;code&gt;font-size: 1.15em;&lt;/code&gt; so that it occupies the same line height as Fira Sans.&lt;/p&gt;</code></pre>
                 </article>
 
             </header>
@@ -110,9 +117,7 @@
   <script src="kss-assets/vendor/jquery.js"></script>
   <script src="kss-assets/vendor/prism.js"></script>
   <script src="kss-assets/js/kss.js"></script>
-  <script src="../js/highlight.js"></script>
-<script src="../js/patterns.js"></script>
-
+  
   <!-- /scripts. -->
 
   </body>

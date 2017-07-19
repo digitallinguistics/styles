@@ -10,7 +10,11 @@ LESS stylesheets and their accompanying CSS output are available in this repo's 
 
   - `colors.less` - CSS variables, classes for font colors, and classes for background colors, for each of the colors used in the DLx color schemes.
 
+  - `variables.less` - High-level CSS variable declarations that are reused across element and component styling, such as common settings for padding, box shadows, underlines, etc.
+
   - `elements.less` - General element styling (as classes). For example, add the `.button` class to a `<button>` element to apply default button styling.
+
+  - `components.less` - Discrete, self-contained pieces of UI.
 
   - `classes.less` - All the DLx styles, as classes
 
