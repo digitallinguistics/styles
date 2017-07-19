@@ -423,6 +423,21 @@ This file contains DLx styles that need to be explicitly specified using classes
 .abbr {
   font-style: italic;
 }
+.banner {
+  align-items: center;
+  background-color: var(--blue);
+  box-shadow: 0rem 0.225em 0.225em var(--gray);
+  color: white;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.banner h1 {
+  font-size: 2em;
+  font-weight: 300;
+  padding: 0.25em 0.5em;
+  white-space: nowrap;
+}
 .bulleted {
   list-style: disc outside none;
   margin-left: 1.5em;
@@ -1121,6 +1136,7 @@ This file contains DLx styles that need to be explicitly specified using classes
 }
 .nav ul li {
   padding: 0.5em;
+  white-space: nowrap;
 }
 .nav ul a {
   text-align: center;

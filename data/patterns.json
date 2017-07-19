@@ -4,6 +4,10 @@
     "description": "Default styling for <code>&lt;abbr&gt;</code> tags, which should be used on the first mention of an abbreviation. It is often accompanied by a <code>&lt;dfn&gt;</code> tag in the same paragraph."
   },
 
+  "banner": {
+    "description": "A site banner at the top of the page."
+  },
+
   "bulleted": {
     "description": "In DLx projects, lists are often used semantically rather than stylistically, e.g. a phrase includes a list of words. As such, lists have no styling by default, and list styling needs to be explicitly set with the <code>.bulleted</code> or <code>.numbered</code> styles."
   },
@@ -81,7 +85,7 @@
   },
 
   "nav": {
-    "description": "The main navigation bar at the top of the page. Hover effects are not added."
+    "description": "A main navigation bar at the top of the page."
   },
 
   "numbered": {

@@ -151,6 +151,25 @@ This file contains DLx styles that need to be explicitly specified using classes
   font-style: italic;
 }
 
+.banner {
+
+  align-items: center;
+  background-color: var(--blue);
+  box-shadow: 0rem 0.225em 0.225em var(--gray);
+  color: white;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+
+  h1 {
+    font-size: 2em;
+    font-weight: 300;
+    padding: 0.25em 0.5em;
+    white-space: nowrap;
+  }
+
+}
+
 .bulleted {
 
   list-style: disc outside none;
@@ -413,7 +432,9 @@ This file contains DLx styles that need to be explicitly specified using classes
 }
 
 .nav {
+
   ul {
+
     .blue-background;
     flex-direction: row;
     flex-wrap: wrap;
@@ -422,12 +443,15 @@ This file contains DLx styles that need to be explicitly specified using classes
 
     li {
       padding: 0.5em;
+      white-space: nowrap;
     }
 
     a {
       text-align: center;
     }
+
   }
+
 }
 
 .numbered {
