@@ -9,12 +9,12 @@
   "homepage": "README.md",
   "builder": "node_modules/michelangelo/kss_styleguide/custom-template/",
   "css": [
-    "../css/fonts.css",
-    "../css/colors.css",
-    "../css/variables.css",
-    "../css/elements.css",
-    "../css/components.css",
-    "../css/patterns.css"
+    "../../css/fonts.css",
+    "../../css/colors.css",
+    "../../css/variables.css",
+    "../../css/elements.css",
+    "../../css/components.css",
+    "../../css/patterns.css"
   ],
   "js": []
 }
