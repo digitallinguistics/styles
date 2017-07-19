@@ -14,6 +14,9 @@ This file contains DLx styles that need to be explicitly specified using classes
   --font-mono: 'Fira Mono', 'Consolas', 'Monaco', 'DejaVu Mono', 'Courier New', monospace;
   --font-unicode: 'Gentium Plus', 'Charis SIL', 'Doulos SIL', 'Cambria', 'Andika', 'Lucida Sans Unicode', 'Times New Roman', 'Georgia', serif;
 
+  --link-color: var(--blue);
+  --link-color-visited: var(--purple);
+
   --padding-ipa: 0.15em;
   --padding-text: 0.25em 0.5em;
 
@@ -30,137 +33,6 @@ This file contains DLx styles that need to be explicitly specified using classes
   --underline-transparent: 0.075em solid transparent;
 
 }
-
-// COLOR CLASSES
-.wugblue                    { color:            var(--wugblue); }
-.wugblue-background         { background-color: var(--wugblue); }
-
-.verydarkblue               { color:            var(--verydarkblue); }
-.darkblue                   { color:            var(--darkblue); }
-.blue                       { color:            var(--blue); }
-.lightblue                  { color:            var(--lightblue); }
-.verylightblue              { color:            var(--verylightblue); }
-
-.verydarkblue-background {
-  background-color: var(--verydarkblue);
-  color: white;
-  a { .link-white; }
-}
-
-.darkblue-background {
-  background-color: var(--darkblue);
-  color: white;
-  a { .link-white; }
-}
-
-.blue-background {
-  background-color: var(--blue);
-  color: white;
-  a { .link-white; }
-}
-
-.lightblue-background       { background-color: var(--lightblue); }
-.verylightblue-background   { background-color: var(--verylightblue); }
-
-.gray                       { color:            var(--gray); }
-.gray-background            { background-color: var(--gray); }
-
-.verylightgreen             { color:            var(--verylightgreen); }
-.lightgreen                 { color:            var(--lightgreen); }
-.green                      { color:            var(--green); }
-.darkgreen                  { color:            var(--darkgreen); }
-.verydarkgreen              { color:            var(--verydarkgreen); }
-.superdarkgreen             { color:            var(--superdarkgreen); }
-
-.verylightgreen-background  { background-color: var(--verylightgreen); }
-.lightgreen-background      { background-color: var(--lightgreen); }
-.green-background           { background-color: var(--green); }
-.darkgreen-background       { background-color: var(--darkgreen); }
-.verydarkgreen-background   { background-color: var(--verydarkgreen); }
-
-.superdarkgreen-background {
-  background-color: var(--superdarkgreen);
-  color: white;
-  a { .link-white; }
-}
-
-.verylightorange            { color:            var(--verylightorange); }
-.lightorange                { color:            var(--lightorange); }
-.orange                     { color:            var(--orange); }
-.darkorange                 { color:            var(--darkorange); }
-
-.verylightorange-background { background-color: var(--verylightorange); }
-.lightorange-background     { background-color: var(--lightorange); }
-.orange-background          { background-color: var(--orange); }
-
-.darkorange-background {
-  background-color: var(--darkorange);
-  color: white;
-  a { .link-white; }
-}
-
-.verylightpurple            { color:            var(--verylightpurple); }
-.lightpurple                { color:            var(--lightpurple); }
-.purple                     { color:            var(--purple); }
-.darkpurple                 { color:            var(--darkpurple); }
-.verydarkpurple             { color:            var(--verydarkpurple); }
-
-.verylightpurple-background { background-color: var(--verylightpurple); }
-
-.lightpurple-background {
-  background-color: var(--lightpurple);
-  color: white;
-  a { .link-white; }
-}
-
-.purple-background {
-  background-color: var(--purple);
-  color: white;
-  a { .link-white; }
-}
-
-.darkpurple-background {
-  background-color: var(--darkpurple);
-  color: white;
-  a { .link-white; }
-}
-
-.verydarkpurple-background {
-  background-color: var(--verydarkpurple);
-  color: white;
-  a { .link-white; }
-}
-
-.verylightred               { color:            var(--verylightred); }
-.lightred                   { color:            var(--lightred); }
-.red                        { color:            var(--red); }
-.darkred                    { color:            var(--darkred); }
-.verydarkred                { color:            var(--verydarkred); }
-
-.verylightred-background    { background-color: var(--verylightred); }
-.lightred-background        { background-color: var(--lightred); }
-
-.red-background {
-  background-color: var(--red);
-  color: white;
-  a { .link-white; }
-}
-
-.darkred-background {
-  background-color: var(--darkred);
-  color: white;
-  a { .link-white; }
-}
-
-.verydarkred-background {
-  background-color: var(--verydarkred);
-  color: white;
-  a { .link-white; }
-}
-
-.lightblue-transparent      { background-color: var(--lightblue-transparent); }
-.verylightblue-transparent  { background-color: var(--verylightblue-transparent); }
-
 
 // PATTERNS
 .abbr {
@@ -427,24 +299,19 @@ This file contains DLx styles that need to be explicitly specified using classes
 }
 
 .link {
-  .blue;
+  color: var(--link-color);
   border-bottom: var(--underline-transparent);
-  &:link { .blue; }
-  &:visited { .purple; }
-  &:hover { border-bottom: var(--underline-blue); }
-  &:active { .blue; }
-  &:visited:hover { border-bottom: var(--underline-purple); }
-  &:visited:active { .purple; }
+  &:link { color: var(--link-color); }
+  &:visited { color: var(--link-color-visited); }
+  &:hover { border-bottom: var(--link-color); }
+  &:active { color: var(--link-color); }
+  &:visited:hover { border-bottom: var(--link-color-visited); }
+  &:visited:active { color: var(--link-color-visited); }
 }
 
 .link-white {
-  border-bottom: var(--underline-transparent);
-  color: white;
-  &:link { color: white; }
-  &:visited { color: white; }
-  &:hover { border-bottom: var(--underline-white); }
-  &:visited:hover { border-bottom: var(--underline-white); }
-  &:active { color: white; }
+  --link-color: white;
+  --link-color-visited: white;
 }
 
 .nav {

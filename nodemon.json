@@ -1,5 +1,5 @@
 {
-  "exec": "npm run kss",
+  "exec": "npm run build",
   "ext": "less",
   "ignore": []
 }

@@ -1,9 +1,5 @@
 {
 
-  "abbr": {
-    "description": "Default styling for <code>&lt;abbr&gt;</code> tags, which should be used on the first mention of an abbreviation. It is often accompanied by a <code>&lt;dfn&gt;</code> tag in the same paragraph."
-  },
-
   "banner": {
     "description": "A site banner at the top of the page."
   },

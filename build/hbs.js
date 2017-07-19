@@ -3,12 +3,11 @@
   no-extra-parens,
 */
 
-const colorGroups = require('../data/colors.json');
-const fs          = require('fs');
-const hbs         = require('handlebars');
-const icons       = require('../data/icons.json');
-const patterns    = require('../data/patterns.json');
-const util        = require('util');
+const fs       = require('fs');
+const hbs      = require('handlebars');
+const icons    = require('../data/icons.json');
+const patterns = require('../data/patterns.json');
+const util     = require('util');
 
 const readFile = file => util.promisify(fs.readFile)(file, `utf8`);
 
@@ -30,7 +29,6 @@ const registerPartial = async filename => {
   await Promise.all(Object.keys(patterns).map(getHtml));
 
   const data = {
-    colorGroups,
     icons,
     patterns,
   };

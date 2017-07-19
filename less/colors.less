@@ -10,6 +10,7 @@ This file contains LESS variables for each of the colors in the DLx color schema
 //
 // Styleguide Colors
 
+// VARIABLE DECLARATIONS
 :root {
 
   // Wug Blue
@@ -19,7 +20,7 @@ This file contains LESS variables for each of the colors in the DLx color schema
   // Weight: 1
   //
   // Styleguide Colors.Wug
-  --wugblue:                   #6FD1F6;
+  --wugblue: #6FD1F6;
 
   // Blue
   //
@@ -32,11 +33,11 @@ This file contains LESS variables for each of the colors in the DLx color schema
   // Weight: 2
   //
   // Styleguide Colors.Blue
-  --verydarkblue:              #017CF2;
-  --darkblue:                  #0F89FF;
-  --blue:                      #3399FF;
-  --lightblue:                 #5CAFFF;
-  --verylightblue:             #88C4FE;
+  --verydarkblue:  #017CF2;
+  --darkblue:      #0F89FF;
+  --blue:          #3399FF;
+  --lightblue:     #5CAFFF;
+  --verylightblue: #88C4FE;
 
   // Gray
   //
@@ -48,10 +49,10 @@ This file contains LESS variables for each of the colors in the DLx color schema
   // Weight: 3
   //
   // Styleguide Colors.Gray
-  --codegray:                  #FAFAFA;
-  --darkgray:                  gray;
-  --gray:                      #CCC;
-  --lightgray:                 #F5F2F0;
+  --codegray:  #FAFAFA;
+  --darkgray:  gray;
+  --gray:      #CCC;
+  --lightgray: #F5F2F0;
 
   // Green
   //
@@ -65,12 +66,12 @@ This file contains LESS variables for each of the colors in the DLx color schema
   // Weight: 4
   //
   // Styleguide Colors.Green
-  --verylightgreen:            #7FFED1;
-  --lightgreen:                #4FFFC1;
-  --green:                     #23FFB1;
-  --darkgreen:                 #00FFA5;
-  --verydarkgreen:             #00F39D;
-  --superdarkgreen:            #00AB6E;
+  --verylightgreen: #7FFED1;
+  --lightgreen:     #4FFFC1;
+  --green:          #23FFB1;
+  --darkgreen:      #00FFA5;
+  --verydarkgreen:  #00F39D;
+  --superdarkgreen: #00AB6E;
 
   // Orange
   //
@@ -82,10 +83,10 @@ This file contains LESS variables for each of the colors in the DLx color schema
   // Weight: 5
   //
   // Styleguide Colors.Orange
-  --verylightorange:           #FFA97F;
-  --lightorange:               #FF884F;
-  --orange:                    #FF6A23;
-  --darkorange:                #FF5300;
+  --verylightorange: #FFA97F;
+  --lightorange:     #FF884F;
+  --orange:          #FF6A23;
+  --darkorange:      #FF5300;
 
   // Purple
   //
@@ -98,11 +99,11 @@ This file contains LESS variables for each of the colors in the DLx color schema
   // Weight: 6
   //
   // Styleguide Colors.Purple
-  --verylightpurple:           #9791FE;
-  --lightpurple:               #7068FF;
-  --purple:                    #4D42FF;
-  --darkpurple:                #2A1DFF;
-  --verydarkpurple:            #1002F4;
+  --verylightpurple: #9791FE;
+  --lightpurple:     #7068FF;
+  --purple:          #4D42FF;
+  --darkpurple:      #2A1DFF;
+  --verydarkpurple:  #1002F4;
 
   // Red
   //
@@ -115,11 +116,11 @@ This file contains LESS variables for each of the colors in the DLx color schema
   // Weight: 7
   //
   // Styleguide Colors.Red
-  --verylightred:              #FF9797;
-  --lightred:                  #E96363;
-  --red:                       #CA3C3C;
-  --darkred:                   #AA1F1F;
-  --verydarkred:               #830505;
+  --verylightred: #FF9797;
+  --lightred:     #E96363;
+  --red:          #CA3C3C;
+  --darkred:      #AA1F1F;
+  --verydarkred:  #830505;
 
   // Transparent
   //
@@ -132,4 +133,224 @@ This file contains LESS variables for each of the colors in the DLx color schema
   --lightblue-transparent:     rgba(92, 175, 255, 0.2);
   --verylightblue-transparent: rgba(136, 196, 254, 0.2);
 
+}
+
+
+// CLASSES FOR FONT COLORS
+
+.wugblue         { color: var(--wugblue); }
+
+.verydarkblue    { color: var(--verydarkblue); }
+.darkblue        { color: var(--darkblue); }
+.blue            { color: var(--blue); }
+.lightblue       { color: var(--lightblue); }
+.verylightblue   { color: var(--verylightblue); }
+
+.codegray        { color: var(--codegray); } // same color as Atom One Light's background
+.darkgray        { color: var(--darkgray); }
+.gray            { color: var(--gray); }
+.lightgray       { color: var(--lightgray); }
+
+.verylightgreen  { color: var(--verylightgreen); }
+.lightgreen      { color: var(--lightgreen); }
+.green           { color: var(--green); }
+.darkgreen       { color: var(--darkgreen); }
+.verydarkgreen   { color: var(--verydarkgreen); }
+.superdarkgreen  { color: var(--superdarkgreen); }
+
+.verylightorange { color: var(--verylightorange); }
+.lightorange     { color: var(--lightorange); }
+.orange          { color: var(--orange); }
+.darkorange      { color: var(--darkorange); }
+
+.verylightpurple { color: var(--verylightpurple); }
+.lightpurple     { color: var(--lightpurple); }
+.purple          { color: var(--purple); }
+.darkpurple      { color: var(--darkpurple); }
+.verydarkpurple  { color: var(--verydarkpurple); }
+
+.verylightred    { color: var(--verylightred); }
+.lightred        { color: var(--lightred); }
+.red             { color: var(--red); }
+.darkred         { color: var(--darkred); }
+.verydarkred     { color: var(--verydarkred); }
+
+
+// CLASSES FOR BACKGROUND COLORS
+
+// Wug Blue
+.wugblue-background {
+  background-color: var(--wugblue);
+}
+
+// Blue
+.verydarkblue-background {
+  --link-color: white;
+  --link-color-visited: white;
+  background-color: var(--verydarkblue);
+  color: white;
+}
+
+.darkblue-background {
+  --link-color: white;
+  --link-color-visited: white;
+  background-color: var(--darkblue);
+  color: white;
+}
+
+.blue-background {
+  --link-color: white;
+  --link-color-visited: white;
+  background-color: var(--blue);
+  color: white;
+}
+
+.lightblue-background {
+  --link-color: white;
+  --link-color-visited: white;
+  background-color: var(--lightblue);
+  color: white;
+}
+
+.verylightblue-background {
+  background-color: var(--verylightblue);
+}
+
+.lightblue-transparent {
+  background-color: var(--lightblue-transparent);
+}
+
+.verylightblue-transparent {
+  background-color: var(--verylightblue-transparent);
+}
+
+// Gray
+.codegray-background {
+  background-color: var(--codegray);
+}
+
+.darkgray-background {
+  --link-color: white;
+  --link-color-visited: white;
+  background-color: var(--darkgray);
+  color: white;
+}
+
+.gray-background {
+  background-color: var(--gray);
+}
+
+.lightgray-background {
+  background-color: var(--lightgray);
+}
+
+// Green
+.verylightgreen-background {
+  background-color: var(--verylightgreen);
+}
+
+.lightgreen-background {
+  background-color: var(--lightgreen);
+}
+
+.green-background {
+  background-color: var(--green);
+}
+
+.darkgreen-background {
+  background-color: var(--darkgreen);
+}
+
+.verydarkgreen-background {
+  background-color: var(--verydarkgreen);
+}
+
+.superdarkgreen-background {
+  --link-color: white;
+  --link-color-visited: white;
+  background-color: var(--superdarkgreen);
+  color: white;
+}
+
+// Orange
+.verylightorange-background {
+  background-color: var(--verylightorange);
+}
+
+.lightorange-background {
+  background-color: var(--lightorange);
+}
+
+.orange-background {
+  background-color: var(--orange);
+}
+
+.darkorange-background {
+  --link-color: white;
+  --link-color-visited: white;
+  background-color: var(--darkorange);
+  color: white;
+}
+
+// Purple
+.verylightpurple-background {
+  background-color: var(--verylightpurple);
+}
+
+.lightpurple-background {
+  --link-color: white;
+  --link-color-visited: white;
+  background-color: var(--lightpurple);
+  color: white;
+}
+
+.purple-background {
+  --link-color: white;
+  --link-color-visited: white;
+  background-color: var(--purple);
+  color: white;
+}
+
+.darkpurple-background {
+  --link-color: white;
+  --link-color-visited: white;
+  background-color: var(--darkpurple);
+  color: white;
+}
+
+.verydarkpurple-background {
+  --link-color: white;
+  --link-color-visited: white;
+  background-color: var(--verydarkpurple);
+  color: white;
+}
+
+// Red
+.verylightred-background {
+  background-color: var(--verylightred);
+}
+
+.lightred-background {
+  background-color: var(--lightred);
+}
+
+.red-background {
+  --link-color: white;
+  --link-color-visited: white;
+  background-color: var(--red);
+  color: white;
+}
+
+.darkred-background {
+  --link-color: white;
+  --link-color-visited: white;
+  background-color: var(--darkred);
+  color: white;
+}
+
+.verydarkred-background {
+  --link-color: white;
+  --link-color-visited: white;
+  background-color: var(--verydarkred);
+  color: white;
 }

@@ -2,6 +2,7 @@
   "title": "DLx Pattern Library",
   "source": [
     "components/",
+    "elements/",
     "less/"
   ],
   "destination": "docs/",
@@ -11,7 +12,8 @@
     "../css/atom-one-light.css",
     "../css/fonts.css",
     "../css/colors.css",
-    "../css/classes.css"
+    "../css/classes.css",
+    "../css/patterns.css"
   ],
   "js": [
     "../js/highlight.js",

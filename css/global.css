@@ -350,34 +350,8 @@ This file contains LESS variables for each of the colors in the DLx color schema
   --lightblue-transparent: rgba(92, 175, 255, 0.2);
   --verylightblue-transparent: rgba(136, 196, 254, 0.2);
 }
-/*
-This file contains DLx styles that need to be explicitly specified using classes
- */
-:root {
-  --border: 0.075em solid black;
-  --border-gray: 0.075em solid var(--gray);
-  --border-radius: 0.35em;
-  --font: 'Fira Sans', 'Calibri', 'DejaVu Sans', 'Verdana', 'Arial', 'Helvetica', sans-serif;
-  --font-mono: 'Fira Mono', 'Consolas', 'Monaco', 'DejaVu Mono', 'Courier New', monospace;
-  --font-unicode: 'Gentium Plus', 'Charis SIL', 'Doulos SIL', 'Cambria', 'Andika', 'Lucida Sans Unicode', 'Times New Roman', 'Georgia', serif;
-  --padding-ipa: 0.15em;
-  --padding-text: 0.25em 0.5em;
-  --shadow: 0.075em 0.075em 0.15em var(--gray);
-  --shadow-button: inset -0.075em -0.075em 0.15em 0em rgba(0, 0, 0, 0.15), var(--shadow);
-  --shadow-button-press: 0 0 0 0.075em rgba(0, 0, 0, 0.15) inset, 0 0 0.5em rgba(0, 0, 0, 0.2) inset;
-  --shadow-deep: 0rem 0.225em 0.225em var(--gray);
-  --shadow-inset: inset 0.075em 0.075em 0.15em var(--gray);
-  --shadow-inset-blue: inset 0.075em 0.075em 0.15em var(--blue);
-  --shadow-inset-red: inset 0.075em 0.075em 0.15em var(--darkred);
-  --underline-blue: 0.075em solid var(--blue);
-  --underline-purple: 0.075em solid var(--purple);
-  --underline-transparent: 0.075em solid transparent;
-}
 .wugblue {
   color: var(--wugblue);
-}
-.wugblue-background {
-  background-color: var(--wugblue);
 }
 .verydarkblue {
   color: var(--verydarkblue);
@@ -394,86 +368,17 @@ This file contains DLx styles that need to be explicitly specified using classes
 .verylightblue {
   color: var(--verylightblue);
 }
-.verydarkblue-background {
-  background-color: var(--verydarkblue);
-  color: white;
+.codegray {
+  color: var(--codegray);
 }
-.verydarkblue-background a {
-  border-bottom: var(--underline-transparent);
-  color: white;
-}
-.verydarkblue-background a:link {
-  color: white;
-}
-.verydarkblue-background a:visited {
-  color: white;
-}
-.verydarkblue-background a:hover {
-  border-bottom: var(--underline-white);
-}
-.verydarkblue-background a:visited:hover {
-  border-bottom: var(--underline-white);
-}
-.verydarkblue-background a:active {
-  color: white;
-}
-.darkblue-background {
-  background-color: var(--darkblue);
-  color: white;
-}
-.darkblue-background a {
-  border-bottom: var(--underline-transparent);
-  color: white;
-}
-.darkblue-background a:link {
-  color: white;
-}
-.darkblue-background a:visited {
-  color: white;
-}
-.darkblue-background a:hover {
-  border-bottom: var(--underline-white);
-}
-.darkblue-background a:visited:hover {
-  border-bottom: var(--underline-white);
-}
-.darkblue-background a:active {
-  color: white;
-}
-.blue-background {
-  background-color: var(--blue);
-  color: white;
-}
-.blue-background a {
-  border-bottom: var(--underline-transparent);
-  color: white;
-}
-.blue-background a:link {
-  color: white;
-}
-.blue-background a:visited {
-  color: white;
-}
-.blue-background a:hover {
-  border-bottom: var(--underline-white);
-}
-.blue-background a:visited:hover {
-  border-bottom: var(--underline-white);
-}
-.blue-background a:active {
-  color: white;
-}
-.lightblue-background {
-  background-color: var(--lightblue);
-}
-.verylightblue-background {
-  background-color: var(--verylightblue);
+.darkgray {
+  color: var(--darkgray);
 }
 .gray {
   color: var(--gray);
 }
-.gray-background {
-  background-color: var(--gray);
+.lightgray {
+  color: var(--lightgray);
 }
 .verylightgreen {
   color: var(--verylightgreen);
@@ -493,44 +398,6 @@ This file contains DLx styles that need to be explicitly specified using classes
 .superdarkgreen {
   color: var(--superdarkgreen);
 }
-.verylightgreen-background {
-  background-color: var(--verylightgreen);
-}
-.lightgreen-background {
-  background-color: var(--lightgreen);
-}
-.green-background {
-  background-color: var(--green);
-}
-.darkgreen-background {
-  background-color: var(--darkgreen);
-}
-.verydarkgreen-background {
-  background-color: var(--verydarkgreen);
-}
-.superdarkgreen-background {
-  background-color: var(--superdarkgreen);
-  color: white;
-}
-.superdarkgreen-background a {
-  border-bottom: var(--underline-transparent);
-  color: white;
-}
-.superdarkgreen-background a:link {
-  color: white;
-}
-.superdarkgreen-background a:visited {
-  color: white;
-}
-.superdarkgreen-background a:hover {
-  border-bottom: var(--underline-white);
-}
-.superdarkgreen-background a:visited:hover {
-  border-bottom: var(--underline-white);
-}
-.superdarkgreen-background a:active {
-  color: white;
-}
 .verylightorange {
   color: var(--verylightorange);
 }
@@ -542,38 +409,6 @@ This file contains DLx styles that need to be explicitly specified using classes
 }
 .darkorange {
   color: var(--darkorange);
-}
-.verylightorange-background {
-  background-color: var(--verylightorange);
-}
-.lightorange-background {
-  background-color: var(--lightorange);
-}
-.orange-background {
-  background-color: var(--orange);
-}
-.darkorange-background {
-  background-color: var(--darkorange);
-  color: white;
-}
-.darkorange-background a {
-  border-bottom: var(--underline-transparent);
-  color: white;
-}
-.darkorange-background a:link {
-  color: white;
-}
-.darkorange-background a:visited {
-  color: white;
-}
-.darkorange-background a:hover {
-  border-bottom: var(--underline-white);
-}
-.darkorange-background a:visited:hover {
-  border-bottom: var(--underline-white);
-}
-.darkorange-background a:active {
-  color: white;
 }
 .verylightpurple {
   color: var(--verylightpurple);
@@ -590,101 +425,6 @@ This file contains DLx styles that need to be explicitly specified using classes
 .verydarkpurple {
   color: var(--verydarkpurple);
 }
-.verylightpurple-background {
-  background-color: var(--verylightpurple);
-}
-.lightpurple-background {
-  background-color: var(--lightpurple);
-  color: white;
-}
-.lightpurple-background a {
-  border-bottom: var(--underline-transparent);
-  color: white;
-}
-.lightpurple-background a:link {
-  color: white;
-}
-.lightpurple-background a:visited {
-  color: white;
-}
-.lightpurple-background a:hover {
-  border-bottom: var(--underline-white);
-}
-.lightpurple-background a:visited:hover {
-  border-bottom: var(--underline-white);
-}
-.lightpurple-background a:active {
-  color: white;
-}
-.purple-background {
-  background-color: var(--purple);
-  color: white;
-}
-.purple-background a {
-  border-bottom: var(--underline-transparent);
-  color: white;
-}
-.purple-background a:link {
-  color: white;
-}
-.purple-background a:visited {
-  color: white;
-}
-.purple-background a:hover {
-  border-bottom: var(--underline-white);
-}
-.purple-background a:visited:hover {
-  border-bottom: var(--underline-white);
-}
-.purple-background a:active {
-  color: white;
-}
-.darkpurple-background {
-  background-color: var(--darkpurple);
-  color: white;
-}
-.darkpurple-background a {
-  border-bottom: var(--underline-transparent);
-  color: white;
-}
-.darkpurple-background a:link {
-  color: white;
-}
-.darkpurple-background a:visited {
-  color: white;
-}
-.darkpurple-background a:hover {
-  border-bottom: var(--underline-white);
-}
-.darkpurple-background a:visited:hover {
-  border-bottom: var(--underline-white);
-}
-.darkpurple-background a:active {
-  color: white;
-}
-.verydarkpurple-background {
-  background-color: var(--verydarkpurple);
-  color: white;
-}
-.verydarkpurple-background a {
-  border-bottom: var(--underline-transparent);
-  color: white;
-}
-.verydarkpurple-background a:link {
-  color: white;
-}
-.verydarkpurple-background a:visited {
-  color: white;
-}
-.verydarkpurple-background a:hover {
-  border-bottom: var(--underline-white);
-}
-.verydarkpurple-background a:visited:hover {
-  border-bottom: var(--underline-white);
-}
-.verydarkpurple-background a:active {
-  color: white;
-}
 .verylightred {
   color: var(--verylightred);
 }
@@ -700,6 +440,120 @@ This file contains DLx styles that need to be explicitly specified using classes
 .verydarkred {
   color: var(--verydarkred);
 }
+.wugblue-background {
+  background-color: var(--wugblue);
+}
+.verydarkblue-background {
+  --link-color: white;
+  --link-color-visited: white;
+  background-color: var(--verydarkblue);
+  color: white;
+}
+.darkblue-background {
+  --link-color: white;
+  --link-color-visited: white;
+  background-color: var(--darkblue);
+  color: white;
+}
+.blue-background {
+  --link-color: white;
+  --link-color-visited: white;
+  background-color: var(--blue);
+  color: white;
+}
+.lightblue-background {
+  --link-color: white;
+  --link-color-visited: white;
+  background-color: var(--lightblue);
+  color: white;
+}
+.verylightblue-background {
+  background-color: var(--verylightblue);
+}
+.lightblue-transparent {
+  background-color: var(--lightblue-transparent);
+}
+.verylightblue-transparent {
+  background-color: var(--verylightblue-transparent);
+}
+.codegray-background {
+  background-color: var(--codegray);
+}
+.darkgray-background {
+  --link-color: white;
+  --link-color-visited: white;
+  background-color: var(--darkgray);
+  color: white;
+}
+.gray-background {
+  background-color: var(--gray);
+}
+.lightgray-background {
+  background-color: var(--lightgray);
+}
+.verylightgreen-background {
+  background-color: var(--verylightgreen);
+}
+.lightgreen-background {
+  background-color: var(--lightgreen);
+}
+.green-background {
+  background-color: var(--green);
+}
+.darkgreen-background {
+  background-color: var(--darkgreen);
+}
+.verydarkgreen-background {
+  background-color: var(--verydarkgreen);
+}
+.superdarkgreen-background {
+  --link-color: white;
+  --link-color-visited: white;
+  background-color: var(--superdarkgreen);
+  color: white;
+}
+.verylightorange-background {
+  background-color: var(--verylightorange);
+}
+.lightorange-background {
+  background-color: var(--lightorange);
+}
+.orange-background {
+  background-color: var(--orange);
+}
+.darkorange-background {
+  --link-color: white;
+  --link-color-visited: white;
+  background-color: var(--darkorange);
+  color: white;
+}
+.verylightpurple-background {
+  background-color: var(--verylightpurple);
+}
+.lightpurple-background {
+  --link-color: white;
+  --link-color-visited: white;
+  background-color: var(--lightpurple);
+  color: white;
+}
+.purple-background {
+  --link-color: white;
+  --link-color-visited: white;
+  background-color: var(--purple);
+  color: white;
+}
+.darkpurple-background {
+  --link-color: white;
+  --link-color-visited: white;
+  background-color: var(--darkpurple);
+  color: white;
+}
+.verydarkpurple-background {
+  --link-color: white;
+  --link-color-visited: white;
+  background-color: var(--verydarkpurple);
+  color: white;
+}
 .verylightred-background {
   background-color: var(--verylightred);
 }
@@ -707,79 +561,47 @@ This file contains DLx styles that need to be explicitly specified using classes
   background-color: var(--lightred);
 }
 .red-background {
+  --link-color: white;
+  --link-color-visited: white;
   background-color: var(--red);
   color: white;
 }
-.red-background a {
-  border-bottom: var(--underline-transparent);
-  color: white;
-}
-.red-background a:link {
-  color: white;
-}
-.red-background a:visited {
-  color: white;
-}
-.red-background a:hover {
-  border-bottom: var(--underline-white);
-}
-.red-background a:visited:hover {
-  border-bottom: var(--underline-white);
-}
-.red-background a:active {
-  color: white;
-}
 .darkred-background {
+  --link-color: white;
+  --link-color-visited: white;
   background-color: var(--darkred);
   color: white;
 }
-.darkred-background a {
-  border-bottom: var(--underline-transparent);
-  color: white;
-}
-.darkred-background a:link {
-  color: white;
-}
-.darkred-background a:visited {
-  color: white;
-}
-.darkred-background a:hover {
-  border-bottom: var(--underline-white);
-}
-.darkred-background a:visited:hover {
-  border-bottom: var(--underline-white);
-}
-.darkred-background a:active {
-  color: white;
-}
 .verydarkred-background {
+  --link-color: white;
+  --link-color-visited: white;
   background-color: var(--verydarkred);
   color: white;
 }
-.verydarkred-background a {
-  border-bottom: var(--underline-transparent);
-  color: white;
-}
-.verydarkred-background a:link {
-  color: white;
-}
-.verydarkred-background a:visited {
-  color: white;
-}
-.verydarkred-background a:hover {
-  border-bottom: var(--underline-white);
-}
-.verydarkred-background a:visited:hover {
-  border-bottom: var(--underline-white);
-}
-.verydarkred-background a:active {
-  color: white;
-}
-.lightblue-transparent {
-  background-color: var(--lightblue-transparent);
-}
-.verylightblue-transparent {
-  background-color: var(--verylightblue-transparent);
+/*
+This file contains DLx styles that need to be explicitly specified using classes
+ */
+:root {
+  --border: 0.075em solid black;
+  --border-gray: 0.075em solid var(--gray);
+  --border-radius: 0.35em;
+  --font: 'Fira Sans', 'Calibri', 'DejaVu Sans', 'Verdana', 'Arial', 'Helvetica', sans-serif;
+  --font-mono: 'Fira Mono', 'Consolas', 'Monaco', 'DejaVu Mono', 'Courier New', monospace;
+  --font-unicode: 'Gentium Plus', 'Charis SIL', 'Doulos SIL', 'Cambria', 'Andika', 'Lucida Sans Unicode', 'Times New Roman', 'Georgia', serif;
+  --link-color: var(--blue);
+  --link-color-visited: var(--purple);
+  --padding-ipa: 0.15em;
+  --padding-text: 0.25em 0.5em;
+  --shadow: 0.075em 0.075em 0.15em var(--gray);
+  --shadow-button: inset -0.075em -0.075em 0.15em 0em rgba(0, 0, 0, 0.15), var(--shadow);
+  --shadow-button-press: 0 0 0 0.075em rgba(0, 0, 0, 0.15) inset, 0 0 0.5em rgba(0, 0, 0, 0.2) inset;
+  --shadow-deep: 0rem 0.225em 0.225em var(--gray);
+  --shadow-inset: inset 0.075em 0.075em 0.15em var(--gray);
+  --shadow-inset-blue: inset 0.075em 0.075em 0.15em var(--blue);
+  --shadow-inset-red: inset 0.075em 0.075em 0.15em var(--darkred);
+  --underline-blue: 0.075em solid var(--blue);
+  --underline-purple: 0.075em solid var(--purple);
+  --underline-transparent: 0.075em solid transparent;
 }
 .abbr {
   font-style: italic;
@@ -807,6 +629,8 @@ This file contains DLx styles that need to be explicitly specified using classes
   display: list-item;
 }
 .button {
+  --link-color: white;
+  --link-color-visited: white;
   background-color: var(--blue);
   color: white;
   align-items: center;
@@ -816,25 +640,6 @@ This file contains DLx styles that need to be explicitly specified using classes
   cursor: pointer;
   padding: var(--padding-text);
   text-align: center;
-}
-.button a {
-  border-bottom: var(--underline-transparent);
-  color: white;
-}
-.button a:link {
-  color: white;
-}
-.button a:visited {
-  color: white;
-}
-.button a:hover {
-  border-bottom: var(--underline-white);
-}
-.button a:visited:hover {
-  border-bottom: var(--underline-white);
-}
-.button a:active {
-  color: white;
 }
 .button:active {
   box-shadow: var(--shadow-button-press);
@@ -858,26 +663,9 @@ This file contains DLx styles that need to be explicitly specified using classes
   cursor: pointer;
   padding: var(--padding-text);
   text-align: center;
+  --link-color: white;
+  --link-color-visited: white;
   background-color: var(--red);
-  color: white;
-}
-.button-red a {
-  border-bottom: var(--underline-transparent);
-  color: white;
-}
-.button-red a:link {
-  color: white;
-}
-.button-red a:visited {
-  color: white;
-}
-.button-red a:hover {
-  border-bottom: var(--underline-white);
-}
-.button-red a:visited:hover {
-  border-bottom: var(--underline-white);
-}
-.button-red a:active {
   color: white;
 }
 .button-red:active {
@@ -892,25 +680,6 @@ This file contains DLx styles that need to be explicitly specified using classes
   box-shadow: none;
   cursor: not-allowed;
   opacity: 0.40;
-}
-.button-red a {
-  border-bottom: var(--underline-transparent);
-  color: white;
-}
-.button-red a:link {
-  color: white;
-}
-.button-red a:visited {
-  color: white;
-}
-.button-red a:hover {
-  border-bottom: var(--underline-white);
-}
-.button-red a:visited:hover {
-  border-bottom: var(--underline-white);
-}
-.button-red a:active {
-  color: white;
 }
 .cite {
   font-style: italic;
@@ -980,6 +749,8 @@ This file contains DLx styles that need to be explicitly specified using classes
   text-indent: -1em;
 }
 .input[type=button] {
+  --link-color: white;
+  --link-color-visited: white;
   background-color: var(--blue);
   color: white;
   align-items: center;
@@ -989,25 +760,6 @@ This file contains DLx styles that need to be explicitly specified using classes
   cursor: pointer;
   padding: var(--padding-text);
   text-align: center;
-}
-.input[type=button] a {
-  border-bottom: var(--underline-transparent);
-  color: white;
-}
-.input[type=button] a:link {
-  color: white;
-}
-.input[type=button] a:visited {
-  color: white;
-}
-.input[type=button] a:hover {
-  border-bottom: var(--underline-white);
-}
-.input[type=button] a:visited:hover {
-  border-bottom: var(--underline-white);
-}
-.input[type=button] a:active {
-  color: white;
 }
 .input[type=button]:active {
   box-shadow: var(--shadow-button-press);
@@ -1181,26 +933,9 @@ This file contains DLx styles that need to be explicitly specified using classes
   cursor: pointer;
   padding: var(--padding-text);
   text-align: center;
+  --link-color: white;
+  --link-color-visited: white;
   background-color: var(--superdarkgreen);
-  color: white;
-}
-.input[type=reset] a {
-  border-bottom: var(--underline-transparent);
-  color: white;
-}
-.input[type=reset] a:link {
-  color: white;
-}
-.input[type=reset] a:visited {
-  color: white;
-}
-.input[type=reset] a:hover {
-  border-bottom: var(--underline-white);
-}
-.input[type=reset] a:visited:hover {
-  border-bottom: var(--underline-white);
-}
-.input[type=reset] a:active {
   color: white;
 }
 .input[type=reset]:active {
@@ -1215,25 +950,6 @@ This file contains DLx styles that need to be explicitly specified using classes
   box-shadow: none;
   cursor: not-allowed;
   opacity: 0.40;
-}
-.input[type=reset] a {
-  border-bottom: var(--underline-transparent);
-  color: white;
-}
-.input[type=reset] a:link {
-  color: white;
-}
-.input[type=reset] a:visited {
-  color: white;
-}
-.input[type=reset] a:hover {
-  border-bottom: var(--underline-white);
-}
-.input[type=reset] a:visited:hover {
-  border-bottom: var(--underline-white);
-}
-.input[type=reset] a:active {
-  color: white;
 }
 .input[type=search] {
   background-color: white;
@@ -1257,6 +973,8 @@ This file contains DLx styles that need to be explicitly specified using classes
   cursor: not-allowed;
 }
 .input[type=submit] {
+  --link-color: white;
+  --link-color-visited: white;
   background-color: var(--blue);
   color: white;
   align-items: center;
@@ -1266,25 +984,6 @@ This file contains DLx styles that need to be explicitly specified using classes
   cursor: pointer;
   padding: var(--padding-text);
   text-align: center;
-}
-.input[type=submit] a {
-  border-bottom: var(--underline-transparent);
-  color: white;
-}
-.input[type=submit] a:link {
-  color: white;
-}
-.input[type=submit] a:visited {
-  color: white;
-}
-.input[type=submit] a:hover {
-  border-bottom: var(--underline-white);
-}
-.input[type=submit] a:visited:hover {
-  border-bottom: var(--underline-white);
-}
-.input[type=submit] a:active {
-  color: white;
 }
 .input[type=submit]:active {
   box-shadow: var(--shadow-button-press);
@@ -1428,72 +1127,40 @@ This file contains DLx styles that need to be explicitly specified using classes
   font-weight: bold;
 }
 .link {
-  color: var(--blue);
+  color: var(--link-color);
   border-bottom: var(--underline-transparent);
 }
 .link:link {
-  color: var(--blue);
+  color: var(--link-color);
 }
 .link:visited {
-  color: var(--purple);
+  color: var(--link-color-visited);
 }
 .link:hover {
-  border-bottom: var(--underline-blue);
+  border-bottom: var(--link-color);
 }
 .link:active {
-  color: var(--blue);
+  color: var(--link-color);
 }
 .link:visited:hover {
-  border-bottom: var(--underline-purple);
+  border-bottom: var(--link-color-visited);
 }
 .link:visited:active {
-  color: var(--purple);
+  color: var(--link-color-visited);
 }
 .link-white {
-  border-bottom: var(--underline-transparent);
-  color: white;
-}
-.link-white:link {
-  color: white;
-}
-.link-white:visited {
-  color: white;
-}
-.link-white:hover {
-  border-bottom: var(--underline-white);
-}
-.link-white:visited:hover {
-  border-bottom: var(--underline-white);
-}
-.link-white:active {
-  color: white;
+  --link-color: white;
+  --link-color-visited: white;
 }
 .nav ul {
+  --link-color: white;
+  --link-color-visited: white;
   background-color: var(--blue);
   color: white;
   flex-direction: row;
   flex-wrap: wrap;
   font-size: 1.25em;
   justify-content: space-around;
-}
-.nav ul a {
-  border-bottom: var(--underline-transparent);
-  color: white;
-}
-.nav ul a:link {
-  color: white;
-}
-.nav ul a:visited {
-  color: white;
-}
-.nav ul a:hover {
-  border-bottom: var(--underline-white);
-}
-.nav ul a:visited:hover {
-  border-bottom: var(--underline-white);
-}
-.nav ul a:active {
-  color: white;
 }
 .nav ul li {
   padding: 0.5em;
@@ -1559,26 +1226,26 @@ This file contains DLx styles that need to be explicitly specified using classes
   padding-left: var(--padding-ipa);
 }
 .reference-list a {
-  color: var(--blue);
+  color: var(--link-color);
   border-bottom: var(--underline-transparent);
 }
 .reference-list a:link {
-  color: var(--blue);
+  color: var(--link-color);
 }
 .reference-list a:visited {
-  color: var(--purple);
+  color: var(--link-color-visited);
 }
 .reference-list a:hover {
-  border-bottom: var(--underline-blue);
+  border-bottom: var(--link-color);
 }
 .reference-list a:active {
-  color: var(--blue);
+  color: var(--link-color);
 }
 .reference-list a:visited:hover {
-  border-bottom: var(--underline-purple);
+  border-bottom: var(--link-color-visited);
 }
 .reference-list a:visited:active {
-  color: var(--purple);
+  color: var(--link-color-visited);
 }
 .reference-list h1 {
   font-size: 1.75em;
@@ -1693,7 +1360,7 @@ sup > a,
 time > a,
 tt > a,
 var > a {
-  color: var(--blue);
+  color: var(--link-color);
   border-bottom: var(--underline-transparent);
 }
 blockquote > a:link,
@@ -1744,7 +1411,7 @@ sup > a:link,
 time > a:link,
 tt > a:link,
 var > a:link {
-  color: var(--blue);
+  color: var(--link-color);
 }
 blockquote > a:visited,
 button > a:visited,
@@ -1794,7 +1461,7 @@ sup > a:visited,
 time > a:visited,
 tt > a:visited,
 var > a:visited {
-  color: var(--purple);
+  color: var(--link-color-visited);
 }
 blockquote > a:hover,
 button > a:hover,
@@ -1844,7 +1511,7 @@ sup > a:hover,
 time > a:hover,
 tt > a:hover,
 var > a:hover {
-  border-bottom: var(--underline-blue);
+  border-bottom: var(--link-color);
 }
 blockquote > a:active,
 button > a:active,
@@ -1894,7 +1561,7 @@ sup > a:active,
 time > a:active,
 tt > a:active,
 var > a:active {
-  color: var(--blue);
+  color: var(--link-color);
 }
 blockquote > a:visited:hover,
 button > a:visited:hover,
@@ -1944,7 +1611,7 @@ sup > a:visited:hover,
 time > a:visited:hover,
 tt > a:visited:hover,
 var > a:visited:hover {
-  border-bottom: var(--underline-purple);
+  border-bottom: var(--link-color-visited);
 }
 blockquote > a:visited:active,
 button > a:visited:active,
@@ -1994,7 +1661,7 @@ sup > a:visited:active,
 time > a:visited:active,
 tt > a:visited:active,
 var > a:visited:active {
-  color: var(--purple);
+  color: var(--link-color-visited);
 }
 abbr {
   font-style: italic;
@@ -2005,6 +1672,8 @@ body {
   line-height: 1.5;
 }
 button {
+  --link-color: white;
+  --link-color-visited: white;
   background-color: var(--blue);
   color: white;
   align-items: center;
@@ -2014,25 +1683,6 @@ button {
   cursor: pointer;
   padding: var(--padding-text);
   text-align: center;
-}
-button a {
-  border-bottom: var(--underline-transparent);
-  color: white;
-}
-button a:link {
-  color: white;
-}
-button a:visited {
-  color: white;
-}
-button a:hover {
-  border-bottom: var(--underline-white);
-}
-button a:visited:hover {
-  border-bottom: var(--underline-white);
-}
-button a:active {
-  color: white;
 }
 button:active {
   box-shadow: var(--shadow-button-press);
@@ -2072,6 +1722,8 @@ fieldset legend {
   font-weight: bold;
 }
 input[type=button] {
+  --link-color: white;
+  --link-color-visited: white;
   background-color: var(--blue);
   color: white;
   align-items: center;
@@ -2081,25 +1733,6 @@ input[type=button] {
   cursor: pointer;
   padding: var(--padding-text);
   text-align: center;
-}
-input[type=button] a {
-  border-bottom: var(--underline-transparent);
-  color: white;
-}
-input[type=button] a:link {
-  color: white;
-}
-input[type=button] a:visited {
-  color: white;
-}
-input[type=button] a:hover {
-  border-bottom: var(--underline-white);
-}
-input[type=button] a:visited:hover {
-  border-bottom: var(--underline-white);
-}
-input[type=button] a:active {
-  color: white;
 }
 input[type=button]:active {
   box-shadow: var(--shadow-button-press);
@@ -2273,26 +1906,9 @@ input[type=reset] {
   cursor: pointer;
   padding: var(--padding-text);
   text-align: center;
+  --link-color: white;
+  --link-color-visited: white;
   background-color: var(--superdarkgreen);
-  color: white;
-}
-input[type=reset] a {
-  border-bottom: var(--underline-transparent);
-  color: white;
-}
-input[type=reset] a:link {
-  color: white;
-}
-input[type=reset] a:visited {
-  color: white;
-}
-input[type=reset] a:hover {
-  border-bottom: var(--underline-white);
-}
-input[type=reset] a:visited:hover {
-  border-bottom: var(--underline-white);
-}
-input[type=reset] a:active {
   color: white;
 }
 input[type=reset]:active {
@@ -2307,25 +1923,6 @@ input[type=reset]:disabled {
   box-shadow: none;
   cursor: not-allowed;
   opacity: 0.40;
-}
-input[type=reset] a {
-  border-bottom: var(--underline-transparent);
-  color: white;
-}
-input[type=reset] a:link {
-  color: white;
-}
-input[type=reset] a:visited {
-  color: white;
-}
-input[type=reset] a:hover {
-  border-bottom: var(--underline-white);
-}
-input[type=reset] a:visited:hover {
-  border-bottom: var(--underline-white);
-}
-input[type=reset] a:active {
-  color: white;
 }
 input[type=search] {
   background-color: white;
@@ -2349,6 +1946,8 @@ input[type=search][disabled] {
   cursor: not-allowed;
 }
 input[type=submit] {
+  --link-color: white;
+  --link-color-visited: white;
   background-color: var(--blue);
   color: white;
   align-items: center;
@@ -2358,25 +1957,6 @@ input[type=submit] {
   cursor: pointer;
   padding: var(--padding-text);
   text-align: center;
-}
-input[type=submit] a {
-  border-bottom: var(--underline-transparent);
-  color: white;
-}
-input[type=submit] a:link {
-  color: white;
-}
-input[type=submit] a:visited {
-  color: white;
-}
-input[type=submit] a:hover {
-  border-bottom: var(--underline-white);
-}
-input[type=submit] a:visited:hover {
-  border-bottom: var(--underline-white);
-}
-input[type=submit] a:active {
-  color: white;
 }
 input[type=submit]:active {
   box-shadow: var(--shadow-button-press);
