@@ -1,5 +1,5 @@
 {
-  "exec": "npm run hbs & npm run upload & npm run less & npm run css",
-  "ext": "hbs js json less",
+  "exec": "npm run kss",
+  "ext": "less",
   "ignore": []
 }

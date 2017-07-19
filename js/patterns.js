@@ -19,3 +19,5 @@ colors.addEventListener(`click`, ev => {
 
 // nav menu
 nav.onchange = ev => { window.location = `#${ev.target.value}`; };
+
+hljs.initHighlightingOnLoad();

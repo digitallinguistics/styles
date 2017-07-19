@@ -1,0 +1,11 @@
+{
+  "title": "DLx Pattern Library",
+  "source": "less/",
+  "destination": "docs/",
+  "builder": "node_modules/michelangelo/kss_styleguide/custom-template/",
+  "css": ["../css/patterns.css"],
+  "js": [
+    "../js/highlight.js",
+    "../js/patterns.js"
+  ]
+}
