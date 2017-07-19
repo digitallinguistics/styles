@@ -5,12 +5,21 @@ This file contains DLx styles that need to be explicitly specified using classes
   --border: 0.075em solid black;
   --border-gray: 0.075em solid var(--gray);
   --border-radius: 0.35em;
+  --font: 'Fira Sans', 'Calibri', 'DejaVu Sans', 'Verdana', 'Arial', 'Helvetica', sans-serif;
+  --font-mono: 'Fira Mono', 'Consolas', 'Monaco', 'DejaVu Mono', 'Courier New', monospace;
+  --font-unicode: 'Gentium Plus', 'Charis SIL', 'Doulos SIL', 'Cambria', 'Andika', 'Lucida Sans Unicode', 'Times New Roman', 'Georgia', serif;
+  --padding-ipa: 0.15em;
+  --padding-text: 0.25em 0.5em;
   --shadow: 0.075em 0.075em 0.15em var(--gray);
   --shadow-button: inset -0.075em -0.075em 0.15em 0em rgba(0, 0, 0, 0.15), var(--shadow);
   --shadow-button-press: 0 0 0 0.075em rgba(0, 0, 0, 0.15) inset, 0 0 0.5em rgba(0, 0, 0, 0.2) inset;
+  --shadow-deep: 0rem 0.225em 0.225em var(--gray);
   --shadow-inset: inset 0.075em 0.075em 0.15em var(--gray);
   --shadow-inset-blue: inset 0.075em 0.075em 0.15em var(--blue);
   --shadow-inset-red: inset 0.075em 0.075em 0.15em var(--darkred);
+  --underline-blue: 0.075em solid var(--blue);
+  --underline-purple: 0.075em solid var(--purple);
+  --underline-transparent: 0.075em solid transparent;
 }
 .wugblue {
   color: var(--wugblue);
@@ -38,7 +47,7 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: white;
 }
 .verydarkblue-background a {
-  border-bottom: 0.075em solid transparent;
+  border-bottom: var(--underline-transparent);
   color: white;
 }
 .verydarkblue-background a:link {
@@ -48,10 +57,10 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: white;
 }
 .verydarkblue-background a:hover {
-  border-bottom: 0.075em solid white;
+  border-bottom: var(--underline-white);
 }
 .verydarkblue-background a:visited:hover {
-  border-bottom: 0.075em solid white;
+  border-bottom: var(--underline-white);
 }
 .verydarkblue-background a:active {
   color: white;
@@ -61,7 +70,7 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: white;
 }
 .darkblue-background a {
-  border-bottom: 0.075em solid transparent;
+  border-bottom: var(--underline-transparent);
   color: white;
 }
 .darkblue-background a:link {
@@ -71,10 +80,10 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: white;
 }
 .darkblue-background a:hover {
-  border-bottom: 0.075em solid white;
+  border-bottom: var(--underline-white);
 }
 .darkblue-background a:visited:hover {
-  border-bottom: 0.075em solid white;
+  border-bottom: var(--underline-white);
 }
 .darkblue-background a:active {
   color: white;
@@ -84,7 +93,7 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: white;
 }
 .blue-background a {
-  border-bottom: 0.075em solid transparent;
+  border-bottom: var(--underline-transparent);
   color: white;
 }
 .blue-background a:link {
@@ -94,10 +103,10 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: white;
 }
 .blue-background a:hover {
-  border-bottom: 0.075em solid white;
+  border-bottom: var(--underline-white);
 }
 .blue-background a:visited:hover {
-  border-bottom: 0.075em solid white;
+  border-bottom: var(--underline-white);
 }
 .blue-background a:active {
   color: white;
@@ -152,7 +161,7 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: white;
 }
 .superdarkgreen-background a {
-  border-bottom: 0.075em solid transparent;
+  border-bottom: var(--underline-transparent);
   color: white;
 }
 .superdarkgreen-background a:link {
@@ -162,10 +171,10 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: white;
 }
 .superdarkgreen-background a:hover {
-  border-bottom: 0.075em solid white;
+  border-bottom: var(--underline-white);
 }
 .superdarkgreen-background a:visited:hover {
-  border-bottom: 0.075em solid white;
+  border-bottom: var(--underline-white);
 }
 .superdarkgreen-background a:active {
   color: white;
@@ -196,7 +205,7 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: white;
 }
 .darkorange-background a {
-  border-bottom: 0.075em solid transparent;
+  border-bottom: var(--underline-transparent);
   color: white;
 }
 .darkorange-background a:link {
@@ -206,10 +215,10 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: white;
 }
 .darkorange-background a:hover {
-  border-bottom: 0.075em solid white;
+  border-bottom: var(--underline-white);
 }
 .darkorange-background a:visited:hover {
-  border-bottom: 0.075em solid white;
+  border-bottom: var(--underline-white);
 }
 .darkorange-background a:active {
   color: white;
@@ -237,7 +246,7 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: white;
 }
 .lightpurple-background a {
-  border-bottom: 0.075em solid transparent;
+  border-bottom: var(--underline-transparent);
   color: white;
 }
 .lightpurple-background a:link {
@@ -247,10 +256,10 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: white;
 }
 .lightpurple-background a:hover {
-  border-bottom: 0.075em solid white;
+  border-bottom: var(--underline-white);
 }
 .lightpurple-background a:visited:hover {
-  border-bottom: 0.075em solid white;
+  border-bottom: var(--underline-white);
 }
 .lightpurple-background a:active {
   color: white;
@@ -260,7 +269,7 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: white;
 }
 .purple-background a {
-  border-bottom: 0.075em solid transparent;
+  border-bottom: var(--underline-transparent);
   color: white;
 }
 .purple-background a:link {
@@ -270,10 +279,10 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: white;
 }
 .purple-background a:hover {
-  border-bottom: 0.075em solid white;
+  border-bottom: var(--underline-white);
 }
 .purple-background a:visited:hover {
-  border-bottom: 0.075em solid white;
+  border-bottom: var(--underline-white);
 }
 .purple-background a:active {
   color: white;
@@ -283,7 +292,7 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: white;
 }
 .darkpurple-background a {
-  border-bottom: 0.075em solid transparent;
+  border-bottom: var(--underline-transparent);
   color: white;
 }
 .darkpurple-background a:link {
@@ -293,10 +302,10 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: white;
 }
 .darkpurple-background a:hover {
-  border-bottom: 0.075em solid white;
+  border-bottom: var(--underline-white);
 }
 .darkpurple-background a:visited:hover {
-  border-bottom: 0.075em solid white;
+  border-bottom: var(--underline-white);
 }
 .darkpurple-background a:active {
   color: white;
@@ -306,7 +315,7 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: white;
 }
 .verydarkpurple-background a {
-  border-bottom: 0.075em solid transparent;
+  border-bottom: var(--underline-transparent);
   color: white;
 }
 .verydarkpurple-background a:link {
@@ -316,10 +325,10 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: white;
 }
 .verydarkpurple-background a:hover {
-  border-bottom: 0.075em solid white;
+  border-bottom: var(--underline-white);
 }
 .verydarkpurple-background a:visited:hover {
-  border-bottom: 0.075em solid white;
+  border-bottom: var(--underline-white);
 }
 .verydarkpurple-background a:active {
   color: white;
@@ -350,7 +359,7 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: white;
 }
 .red-background a {
-  border-bottom: 0.075em solid transparent;
+  border-bottom: var(--underline-transparent);
   color: white;
 }
 .red-background a:link {
@@ -360,10 +369,10 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: white;
 }
 .red-background a:hover {
-  border-bottom: 0.075em solid white;
+  border-bottom: var(--underline-white);
 }
 .red-background a:visited:hover {
-  border-bottom: 0.075em solid white;
+  border-bottom: var(--underline-white);
 }
 .red-background a:active {
   color: white;
@@ -373,7 +382,7 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: white;
 }
 .darkred-background a {
-  border-bottom: 0.075em solid transparent;
+  border-bottom: var(--underline-transparent);
   color: white;
 }
 .darkred-background a:link {
@@ -383,10 +392,10 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: white;
 }
 .darkred-background a:hover {
-  border-bottom: 0.075em solid white;
+  border-bottom: var(--underline-white);
 }
 .darkred-background a:visited:hover {
-  border-bottom: 0.075em solid white;
+  border-bottom: var(--underline-white);
 }
 .darkred-background a:active {
   color: white;
@@ -396,7 +405,7 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: white;
 }
 .verydarkred-background a {
-  border-bottom: 0.075em solid transparent;
+  border-bottom: var(--underline-transparent);
   color: white;
 }
 .verydarkred-background a:link {
@@ -406,10 +415,10 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: white;
 }
 .verydarkred-background a:hover {
-  border-bottom: 0.075em solid white;
+  border-bottom: var(--underline-white);
 }
 .verydarkred-background a:visited:hover {
-  border-bottom: 0.075em solid white;
+  border-bottom: var(--underline-white);
 }
 .verydarkred-background a:active {
   color: white;
@@ -426,7 +435,7 @@ This file contains DLx styles that need to be explicitly specified using classes
 .banner {
   align-items: center;
   background-color: var(--blue);
-  box-shadow: 0rem 0.225em 0.225em var(--gray);
+  box-shadow: var(--shadow-deep);
   color: white;
   flex-direction: row;
   justify-content: space-between;
@@ -435,7 +444,7 @@ This file contains DLx styles that need to be explicitly specified using classes
 .banner h1 {
   font-size: 2em;
   font-weight: 300;
-  padding: 0.25em 0.5em;
+  padding: var(--padding-text);
   white-space: nowrap;
 }
 .bulleted {
@@ -453,11 +462,11 @@ This file contains DLx styles that need to be explicitly specified using classes
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-button);
   cursor: pointer;
-  padding: 0.25em 0.5em;
+  padding: var(--padding-text);
   text-align: center;
 }
 .button a {
-  border-bottom: 0.075em solid transparent;
+  border-bottom: var(--underline-transparent);
   color: white;
 }
 .button a:link {
@@ -467,10 +476,10 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: white;
 }
 .button a:hover {
-  border-bottom: 0.075em solid white;
+  border-bottom: var(--underline-white);
 }
 .button a:visited:hover {
-  border-bottom: 0.075em solid white;
+  border-bottom: var(--underline-white);
 }
 .button a:active {
   color: white;
@@ -495,13 +504,13 @@ This file contains DLx styles that need to be explicitly specified using classes
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-button);
   cursor: pointer;
-  padding: 0.25em 0.5em;
+  padding: var(--padding-text);
   text-align: center;
   background-color: var(--red);
   color: white;
 }
 .button-red a {
-  border-bottom: 0.075em solid transparent;
+  border-bottom: var(--underline-transparent);
   color: white;
 }
 .button-red a:link {
@@ -511,10 +520,10 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: white;
 }
 .button-red a:hover {
-  border-bottom: 0.075em solid white;
+  border-bottom: var(--underline-white);
 }
 .button-red a:visited:hover {
-  border-bottom: 0.075em solid white;
+  border-bottom: var(--underline-white);
 }
 .button-red a:active {
   color: white;
@@ -533,7 +542,7 @@ This file contains DLx styles that need to be explicitly specified using classes
   opacity: 0.40;
 }
 .button-red a {
-  border-bottom: 0.075em solid transparent;
+  border-bottom: var(--underline-transparent);
   color: white;
 }
 .button-red a:link {
@@ -543,10 +552,10 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: white;
 }
 .button-red a:hover {
-  border-bottom: 0.075em solid white;
+  border-bottom: var(--underline-white);
 }
 .button-red a:visited:hover {
-  border-bottom: 0.075em solid white;
+  border-bottom: var(--underline-white);
 }
 .button-red a:active {
   color: white;
@@ -555,15 +564,15 @@ This file contains DLx styles that need to be explicitly specified using classes
   font-style: italic;
 }
 .code {
-  background-color: #fafafa;
+  background-color: var(--codegray);
   border: var(--border);
   border-radius: var(--border-radius);
   color: #383a42;
-  font-family: 'Fira Mono', 'Consolas', 'Monaco', 'DejaVu Mono', 'Courier New', monospace;
+  font-family: var(--font-mono);
   font-size: 0.75em;
   font-style: normal;
   overflow-x: auto;
-  padding: 0.25em 0.5em;
+  padding: var(--padding-text);
   white-space: pre;
 }
 .dfn {
@@ -577,7 +586,7 @@ This file contains DLx styles that need to be explicitly specified using classes
   border: var(--border-gray);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-inset);
-  padding: 0.125em 0.25em;
+  padding: var(--padding-text);
 }
 .field:focus {
   border-color: var(--blue);
@@ -589,8 +598,8 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: var(--red);
 }
 .field[disabled] {
-  background-color: #eaeded;
-  color: #cad2d3;
+  background-color: #EAEDED;
+  color: #CAD2D3;
   cursor: not-allowed;
 }
 .fieldset legend {
@@ -626,11 +635,11 @@ This file contains DLx styles that need to be explicitly specified using classes
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-button);
   cursor: pointer;
-  padding: 0.25em 0.5em;
+  padding: var(--padding-text);
   text-align: center;
 }
 .input[type=button] a {
-  border-bottom: 0.075em solid transparent;
+  border-bottom: var(--underline-transparent);
   color: white;
 }
 .input[type=button] a:link {
@@ -640,10 +649,10 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: white;
 }
 .input[type=button] a:hover {
-  border-bottom: 0.075em solid white;
+  border-bottom: var(--underline-white);
 }
 .input[type=button] a:visited:hover {
-  border-bottom: 0.075em solid white;
+  border-bottom: var(--underline-white);
 }
 .input[type=button] a:active {
   color: white;
@@ -669,7 +678,7 @@ This file contains DLx styles that need to be explicitly specified using classes
   border: var(--border-gray);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-inset);
-  padding: 0.125em 0.25em;
+  padding: var(--padding-text);
 }
 .input[type=date]:focus {
   border-color: var(--blue);
@@ -681,8 +690,8 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: var(--red);
 }
 .input[type=date][disabled] {
-  background-color: #eaeded;
-  color: #cad2d3;
+  background-color: #EAEDED;
+  color: #CAD2D3;
   cursor: not-allowed;
 }
 .input[type=datetime] {
@@ -690,7 +699,7 @@ This file contains DLx styles that need to be explicitly specified using classes
   border: var(--border-gray);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-inset);
-  padding: 0.125em 0.25em;
+  padding: var(--padding-text);
 }
 .input[type=datetime]:focus {
   border-color: var(--blue);
@@ -702,8 +711,8 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: var(--red);
 }
 .input[type=datetime][disabled] {
-  background-color: #eaeded;
-  color: #cad2d3;
+  background-color: #EAEDED;
+  color: #CAD2D3;
   cursor: not-allowed;
 }
 .input[type=datetime-local] {
@@ -711,7 +720,7 @@ This file contains DLx styles that need to be explicitly specified using classes
   border: var(--border-gray);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-inset);
-  padding: 0.125em 0.25em;
+  padding: var(--padding-text);
 }
 .input[type=datetime-local]:focus {
   border-color: var(--blue);
@@ -723,8 +732,8 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: var(--red);
 }
 .input[type=datetime-local][disabled] {
-  background-color: #eaeded;
-  color: #cad2d3;
+  background-color: #EAEDED;
+  color: #CAD2D3;
   cursor: not-allowed;
 }
 .input[type=email] {
@@ -732,7 +741,7 @@ This file contains DLx styles that need to be explicitly specified using classes
   border: var(--border-gray);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-inset);
-  padding: 0.125em 0.25em;
+  padding: var(--padding-text);
 }
 .input[type=email]:focus {
   border-color: var(--blue);
@@ -744,8 +753,8 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: var(--red);
 }
 .input[type=email][disabled] {
-  background-color: #eaeded;
-  color: #cad2d3;
+  background-color: #EAEDED;
+  color: #CAD2D3;
   cursor: not-allowed;
 }
 .input[type=month] {
@@ -753,7 +762,7 @@ This file contains DLx styles that need to be explicitly specified using classes
   border: var(--border-gray);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-inset);
-  padding: 0.125em 0.25em;
+  padding: var(--padding-text);
 }
 .input[type=month]:focus {
   border-color: var(--blue);
@@ -765,8 +774,8 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: var(--red);
 }
 .input[type=month][disabled] {
-  background-color: #eaeded;
-  color: #cad2d3;
+  background-color: #EAEDED;
+  color: #CAD2D3;
   cursor: not-allowed;
 }
 .input[type=number] {
@@ -774,7 +783,7 @@ This file contains DLx styles that need to be explicitly specified using classes
   border: var(--border-gray);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-inset);
-  padding: 0.125em 0.25em;
+  padding: var(--padding-text);
 }
 .input[type=number]:focus {
   border-color: var(--blue);
@@ -786,8 +795,8 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: var(--red);
 }
 .input[type=number][disabled] {
-  background-color: #eaeded;
-  color: #cad2d3;
+  background-color: #EAEDED;
+  color: #CAD2D3;
   cursor: not-allowed;
 }
 .input[type=password] {
@@ -795,7 +804,7 @@ This file contains DLx styles that need to be explicitly specified using classes
   border: var(--border-gray);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-inset);
-  padding: 0.125em 0.25em;
+  padding: var(--padding-text);
 }
 .input[type=password]:focus {
   border-color: var(--blue);
@@ -807,8 +816,8 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: var(--red);
 }
 .input[type=password][disabled] {
-  background-color: #eaeded;
-  color: #cad2d3;
+  background-color: #EAEDED;
+  color: #CAD2D3;
   cursor: not-allowed;
 }
 .input[type=reset] {
@@ -818,13 +827,13 @@ This file contains DLx styles that need to be explicitly specified using classes
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-button);
   cursor: pointer;
-  padding: 0.25em 0.5em;
+  padding: var(--padding-text);
   text-align: center;
   background-color: var(--superdarkgreen);
   color: white;
 }
 .input[type=reset] a {
-  border-bottom: 0.075em solid transparent;
+  border-bottom: var(--underline-transparent);
   color: white;
 }
 .input[type=reset] a:link {
@@ -834,10 +843,10 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: white;
 }
 .input[type=reset] a:hover {
-  border-bottom: 0.075em solid white;
+  border-bottom: var(--underline-white);
 }
 .input[type=reset] a:visited:hover {
-  border-bottom: 0.075em solid white;
+  border-bottom: var(--underline-white);
 }
 .input[type=reset] a:active {
   color: white;
@@ -856,7 +865,7 @@ This file contains DLx styles that need to be explicitly specified using classes
   opacity: 0.40;
 }
 .input[type=reset] a {
-  border-bottom: 0.075em solid transparent;
+  border-bottom: var(--underline-transparent);
   color: white;
 }
 .input[type=reset] a:link {
@@ -866,10 +875,10 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: white;
 }
 .input[type=reset] a:hover {
-  border-bottom: 0.075em solid white;
+  border-bottom: var(--underline-white);
 }
 .input[type=reset] a:visited:hover {
-  border-bottom: 0.075em solid white;
+  border-bottom: var(--underline-white);
 }
 .input[type=reset] a:active {
   color: white;
@@ -879,7 +888,7 @@ This file contains DLx styles that need to be explicitly specified using classes
   border: var(--border-gray);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-inset);
-  padding: 0.125em 0.25em;
+  padding: var(--padding-text);
 }
 .input[type=search]:focus {
   border-color: var(--blue);
@@ -891,8 +900,8 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: var(--red);
 }
 .input[type=search][disabled] {
-  background-color: #eaeded;
-  color: #cad2d3;
+  background-color: #EAEDED;
+  color: #CAD2D3;
   cursor: not-allowed;
 }
 .input[type=submit] {
@@ -903,11 +912,11 @@ This file contains DLx styles that need to be explicitly specified using classes
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-button);
   cursor: pointer;
-  padding: 0.25em 0.5em;
+  padding: var(--padding-text);
   text-align: center;
 }
 .input[type=submit] a {
-  border-bottom: 0.075em solid transparent;
+  border-bottom: var(--underline-transparent);
   color: white;
 }
 .input[type=submit] a:link {
@@ -917,10 +926,10 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: white;
 }
 .input[type=submit] a:hover {
-  border-bottom: 0.075em solid white;
+  border-bottom: var(--underline-white);
 }
 .input[type=submit] a:visited:hover {
-  border-bottom: 0.075em solid white;
+  border-bottom: var(--underline-white);
 }
 .input[type=submit] a:active {
   color: white;
@@ -943,7 +952,7 @@ This file contains DLx styles that need to be explicitly specified using classes
   border: var(--border-gray);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-inset);
-  padding: 0.125em 0.25em;
+  padding: var(--padding-text);
 }
 .input[type=tel]:focus {
   border-color: var(--blue);
@@ -955,8 +964,8 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: var(--red);
 }
 .input[type=tel][disabled] {
-  background-color: #eaeded;
-  color: #cad2d3;
+  background-color: #EAEDED;
+  color: #CAD2D3;
   cursor: not-allowed;
 }
 .input[type=text] {
@@ -964,7 +973,7 @@ This file contains DLx styles that need to be explicitly specified using classes
   border: var(--border-gray);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-inset);
-  padding: 0.125em 0.25em;
+  padding: var(--padding-text);
   display: flex;
 }
 .input[type=text]:focus {
@@ -977,8 +986,8 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: var(--red);
 }
 .input[type=text][disabled] {
-  background-color: #eaeded;
-  color: #cad2d3;
+  background-color: #EAEDED;
+  color: #CAD2D3;
   cursor: not-allowed;
 }
 .input[type=time] {
@@ -986,7 +995,7 @@ This file contains DLx styles that need to be explicitly specified using classes
   border: var(--border-gray);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-inset);
-  padding: 0.125em 0.25em;
+  padding: var(--padding-text);
 }
 .input[type=time]:focus {
   border-color: var(--blue);
@@ -998,8 +1007,8 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: var(--red);
 }
 .input[type=time][disabled] {
-  background-color: #eaeded;
-  color: #cad2d3;
+  background-color: #EAEDED;
+  color: #CAD2D3;
   cursor: not-allowed;
 }
 .input[type=url] {
@@ -1007,7 +1016,7 @@ This file contains DLx styles that need to be explicitly specified using classes
   border: var(--border-gray);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-inset);
-  padding: 0.125em 0.25em;
+  padding: var(--padding-text);
 }
 .input[type=url]:focus {
   border-color: var(--blue);
@@ -1019,8 +1028,8 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: var(--red);
 }
 .input[type=url][disabled] {
-  background-color: #eaeded;
-  color: #cad2d3;
+  background-color: #EAEDED;
+  color: #CAD2D3;
   cursor: not-allowed;
 }
 .input[type=week] {
@@ -1028,7 +1037,7 @@ This file contains DLx styles that need to be explicitly specified using classes
   border: var(--border-gray);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-inset);
-  padding: 0.125em 0.25em;
+  padding: var(--padding-text);
 }
 .input[type=week]:focus {
   border-color: var(--blue);
@@ -1040,8 +1049,8 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: var(--red);
 }
 .input[type=week][disabled] {
-  background-color: #eaeded;
-  color: #cad2d3;
+  background-color: #EAEDED;
+  color: #CAD2D3;
   cursor: not-allowed;
 }
 .italic {
@@ -1053,7 +1062,7 @@ This file contains DLx styles that need to be explicitly specified using classes
   border: 0.035em solid #BBB;
   border-radius: var(--border-radius);
   color: #444;
-  padding: 0.25em 0.5em;
+  padding: var(--padding-text);
   text-align: center;
   text-shadow: 0em 0.075em 0em #FFF;
   box-shadow: 0em 0.15em 0em #BBB, 0em 0.225em 0.075em #999, 0em 0.225em 0em #BBB, inset 0em 0.075em 0.075em #FFF, inset 0em -0.075em 0.225em #CCC;
@@ -1068,7 +1077,7 @@ This file contains DLx styles that need to be explicitly specified using classes
 }
 .link {
   color: var(--blue);
-  border-bottom: 0.075em solid transparent;
+  border-bottom: var(--underline-transparent);
 }
 .link:link {
   color: var(--blue);
@@ -1077,19 +1086,19 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: var(--purple);
 }
 .link:hover {
-  border-bottom: 0.075em solid var(--blue);
+  border-bottom: var(--underline-blue);
 }
 .link:active {
   color: var(--blue);
 }
 .link:visited:hover {
-  border-bottom: 0.075em solid var(--purple);
+  border-bottom: var(--underline-purple);
 }
 .link:visited:active {
   color: var(--purple);
 }
 .link-white {
-  border-bottom: 0.075em solid transparent;
+  border-bottom: var(--underline-transparent);
   color: white;
 }
 .link-white:link {
@@ -1099,10 +1108,10 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: white;
 }
 .link-white:hover {
-  border-bottom: 0.075em solid white;
+  border-bottom: var(--underline-white);
 }
 .link-white:visited:hover {
-  border-bottom: 0.075em solid white;
+  border-bottom: var(--underline-white);
 }
 .link-white:active {
   color: white;
@@ -1116,7 +1125,7 @@ This file contains DLx styles that need to be explicitly specified using classes
   justify-content: space-around;
 }
 .nav ul a {
-  border-bottom: 0.075em solid transparent;
+  border-bottom: var(--underline-transparent);
   color: white;
 }
 .nav ul a:link {
@@ -1126,10 +1135,10 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: white;
 }
 .nav ul a:hover {
-  border-bottom: 0.075em solid white;
+  border-bottom: var(--underline-white);
 }
 .nav ul a:visited:hover {
-  border-bottom: 0.075em solid white;
+  border-bottom: var(--underline-white);
 }
 .nav ul a:active {
   color: white;
@@ -1154,19 +1163,19 @@ This file contains DLx styles that need to be explicitly specified using classes
   content: counter(numbered) '.';
   font-weight: bold;
   margin-left: -2.5em;
-  padding: 0em 0.5em;
+  padding: var(--padding-text);
 }
 .orthographic {
-  font-family: 'Gentium Plus', 'Charis SIL', 'Doulos SIL', 'Cambria', 'Andika', 'Lucida Sans Unicode', 'Times New Roman', 'Georgia', serif;
+  font-family: var(--font-unicode);
   font-size: 1.15em;
 }
 .orthographic::before {
   content: '<';
-  padding-right: 0.15em;
+  padding-right: var(--padding-ipa);
 }
 .orthographic::after {
   content: '>';
-  padding-left: 0.15em;
+  padding-left: var(--padding-ipa);
 }
 .page-title {
   align-self: center;
@@ -1174,32 +1183,32 @@ This file contains DLx styles that need to be explicitly specified using classes
   text-align: center;
 }
 .phonemic {
-  font-family: 'Gentium Plus', 'Charis SIL', 'Doulos SIL', 'Cambria', 'Andika', 'Lucida Sans Unicode', 'Times New Roman', 'Georgia', serif;
+  font-family: var(--font-unicode);
   font-size: 1.15em;
 }
 .phonemic::before {
   content: '/';
-  padding-right: 0.15em;
+  padding-right: var(--padding-ipa);
 }
 .phonemic::after {
   content: '/';
-  padding-left: 0.15em;
+  padding-left: var(--padding-ipa);
 }
 .phonetic {
-  font-family: 'Gentium Plus', 'Charis SIL', 'Doulos SIL', 'Cambria', 'Andika', 'Lucida Sans Unicode', 'Times New Roman', 'Georgia', serif;
+  font-family: var(--font-unicode);
   font-size: 1.15em;
 }
 .phonetic::before {
   content: '[';
-  padding-right: 0.15em;
+  padding-right: var(--padding-ipa);
 }
 .phonetic::after {
   content: ']';
-  padding-left: 0.15em;
+  padding-left: var(--padding-ipa);
 }
 .reference-list a {
   color: var(--blue);
-  border-bottom: 0.075em solid transparent;
+  border-bottom: var(--underline-transparent);
 }
 .reference-list a:link {
   color: var(--blue);
@@ -1208,13 +1217,13 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: var(--purple);
 }
 .reference-list a:hover {
-  border-bottom: 0.075em solid var(--blue);
+  border-bottom: var(--underline-blue);
 }
 .reference-list a:active {
   color: var(--blue);
 }
 .reference-list a:visited:hover {
-  border-bottom: 0.075em solid var(--purple);
+  border-bottom: var(--underline-purple);
 }
 .reference-list a:visited:active {
   color: var(--purple);
@@ -1233,7 +1242,7 @@ This file contains DLx styles that need to be explicitly specified using classes
 }
 .reference-list li {
   display: list-item;
-  padding: 0.25em 0em;
+  padding: var(--padding-text);
 }
 .reference-list li p {
   display: block;
@@ -1242,9 +1251,9 @@ This file contains DLx styles that need to be explicitly specified using classes
 }
 .select {
   border: var(--border-gray);
-  border-radius: 0.25em;
+  border-radius: var(--border-radius);
   box-shadow: var(--shadow-button);
-  padding: 0.25em;
+  padding: var(--padding-text);
 }
 .strong {
   color: var(--verydarkblue);
@@ -1261,7 +1270,7 @@ This file contains DLx styles that need to be explicitly specified using classes
   border: var(--border-gray);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-inset);
-  padding: 0.125em 0.25em;
+  padding: var(--padding-text);
 }
 .textarea:focus {
   border-color: var(--blue);
@@ -1273,11 +1282,11 @@ This file contains DLx styles that need to be explicitly specified using classes
   color: var(--red);
 }
 .textarea[disabled] {
-  background-color: #eaeded;
-  color: #cad2d3;
+  background-color: #EAEDED;
+  color: #CAD2D3;
   cursor: not-allowed;
 }
 .unicode {
-  font-family: 'Gentium Plus', 'Charis SIL', 'Doulos SIL', 'Cambria', 'Andika', 'Lucida Sans Unicode', 'Times New Roman', 'Georgia', serif;
+  font-family: var(--font-unicode);
   font-size: 1.15em;
 }

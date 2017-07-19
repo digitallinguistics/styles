@@ -5,15 +5,30 @@ This file contains DLx styles that need to be explicitly specified using classes
 @import (reference) 'https://digitallinguistics.blob.core.windows.net/less/colors.less';
 
 :root {
+
   --border: 0.075em solid black;
   --border-gray: 0.075em solid var(--gray);
   --border-radius: 0.35em;
+
+  --font: 'Fira Sans', 'Calibri', 'DejaVu Sans', 'Verdana', 'Arial', 'Helvetica', sans-serif;
+  --font-mono: 'Fira Mono', 'Consolas', 'Monaco', 'DejaVu Mono', 'Courier New', monospace;
+  --font-unicode: 'Gentium Plus', 'Charis SIL', 'Doulos SIL', 'Cambria', 'Andika', 'Lucida Sans Unicode', 'Times New Roman', 'Georgia', serif;
+
+  --padding-ipa: 0.15em;
+  --padding-text: 0.25em 0.5em;
+
   --shadow: 0.075em 0.075em 0.15em var(--gray);
   --shadow-button: inset -0.075em -0.075em 0.15em 0em rgba(0,0,0,0.15), var(--shadow);
   --shadow-button-press: 0 0 0 0.075em rgba(0,0,0,0.15) inset, 0 0 0.5em rgba(0,0,0,0.2) inset;
+  --shadow-deep: 0rem 0.225em 0.225em var(--gray);
   --shadow-inset: inset 0.075em 0.075em 0.15em var(--gray);
   --shadow-inset-blue: inset 0.075em 0.075em 0.15em var(--blue);
   --shadow-inset-red: inset 0.075em 0.075em 0.15em var(--darkred);
+
+  --underline-blue: 0.075em solid var(--blue);
+  --underline-purple: 0.075em solid var(--purple);
+  --underline-transparent: 0.075em solid transparent;
+
 }
 
 // COLOR CLASSES
@@ -146,6 +161,7 @@ This file contains DLx styles that need to be explicitly specified using classes
 .lightblue-transparent      { background-color: var(--lightblue-transparent); }
 .verylightblue-transparent  { background-color: var(--verylightblue-transparent); }
 
+
 // PATTERNS
 .abbr {
   font-style: italic;
@@ -155,7 +171,7 @@ This file contains DLx styles that need to be explicitly specified using classes
 
   align-items: center;
   background-color: var(--blue);
-  box-shadow: 0rem 0.225em 0.225em var(--gray);
+  box-shadow: var(--shadow-deep);
   color: white;
   flex-direction: row;
   justify-content: space-between;
@@ -164,7 +180,7 @@ This file contains DLx styles that need to be explicitly specified using classes
   h1 {
     font-size: 2em;
     font-weight: 300;
-    padding: 0.25em 0.5em;
+    padding: var(--padding-text);
     white-space: nowrap;
   }
 
@@ -189,7 +205,7 @@ This file contains DLx styles that need to be explicitly specified using classes
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-button);
   cursor: pointer;
-  padding: 0.25em 0.5em;
+  padding: var(--padding-text);
   text-align: center;
 
   &:active {
@@ -219,15 +235,15 @@ This file contains DLx styles that need to be explicitly specified using classes
 }
 
 .code {
-  background-color: #fafafa;
+  background-color: var(--codegray);
   border: var(--border);
   border-radius: var(--border-radius);
   color: #383a42;
-  font-family: 'Fira Mono', 'Consolas', 'Monaco', 'DejaVu Mono', 'Courier New', monospace;
+  font-family: var(--font-mono);
   font-size: 0.75em;
   font-style: normal;
   overflow-x: auto;
-  padding: 0.25em 0.5em;
+  padding: var(--padding-text);
   white-space: pre;
 }
 
@@ -245,7 +261,7 @@ This file contains DLx styles that need to be explicitly specified using classes
   border: var(--border-gray);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-inset);
-  padding: 0.125em 0.25em;
+  padding: var(--padding-text);
 
   &:focus {
 
@@ -261,8 +277,8 @@ This file contains DLx styles that need to be explicitly specified using classes
   }
 
   &[disabled] {
-    background-color: #eaeded;
-    color: #cad2d3;
+    background-color: #EAEDED;
+    color: #CAD2D3;
     cursor: not-allowed;
   }
 
@@ -386,7 +402,7 @@ This file contains DLx styles that need to be explicitly specified using classes
   border: 0.035em solid #BBB;
   border-radius: var(--border-radius);
 	color: #444;
-  padding: 0.25em 0.5em;
+  padding: var(--padding-text);
 	text-align: center;
 	text-shadow: 0em 0.075em 0em #FFF;
 
@@ -412,22 +428,22 @@ This file contains DLx styles that need to be explicitly specified using classes
 
 .link {
   .blue;
-  border-bottom: 0.075em solid transparent;
+  border-bottom: var(--underline-transparent);
   &:link { .blue; }
   &:visited { .purple; }
-  &:hover { border-bottom: 0.075em solid var(--blue); }
+  &:hover { border-bottom: var(--underline-blue); }
   &:active { .blue; }
-  &:visited:hover { border-bottom: 0.075em solid var(--purple); }
+  &:visited:hover { border-bottom: var(--underline-purple); }
   &:visited:active { .purple; }
 }
 
 .link-white {
-  border-bottom: 0.075em solid transparent;
+  border-bottom: var(--underline-transparent);
   color: white;
   &:link { color: white; }
   &:visited { color: white; }
-  &:hover { border-bottom: 0.075em solid white; }
-  &:visited:hover { border-bottom: 0.075em solid white; }
+  &:hover { border-bottom: var(--underline-white); }
+  &:visited:hover { border-bottom: var(--underline-white); }
   &:active { color: white; }
 }
 
@@ -469,7 +485,7 @@ This file contains DLx styles that need to be explicitly specified using classes
       content: counter(numbered) '.';
       font-weight: bold;
       margin-left: -2.5em;
-      padding: 0em 0.5em;
+      padding: var(--padding-text);
     }
 
   }
@@ -480,11 +496,11 @@ This file contains DLx styles that need to be explicitly specified using classes
   .unicode;
   &::before {
     content: '<';
-    padding-right: 0.15em;
+    padding-right: var(--padding-ipa);
   }
   &::after  {
     content: '>';
-    padding-left: 0.15em;
+    padding-left: var(--padding-ipa);
   }
 }
 
@@ -498,11 +514,11 @@ This file contains DLx styles that need to be explicitly specified using classes
   .unicode;
   &::before {
     content: '/';
-    padding-right: 0.15em;
+    padding-right: var(--padding-ipa);
   }
   &::after  {
     content: '/';
-    padding-left: 0.15em;
+    padding-left: var(--padding-ipa);
   }
 }
 
@@ -510,11 +526,11 @@ This file contains DLx styles that need to be explicitly specified using classes
   .unicode;
   &::before {
     content: '[';
-    padding-right: 0.15em;
+    padding-right: var(--padding-ipa);
   }
   &::after  {
     content: ']';
-    padding-left: 0.15em;
+    padding-left: var(--padding-ipa);
   }
 }
 
@@ -532,7 +548,7 @@ This file contains DLx styles that need to be explicitly specified using classes
 
   li {
     display: list-item;
-    padding: 0.25em 0em;
+    padding: var(--padding-text);
 
     p {
       display: block;
@@ -546,9 +562,9 @@ This file contains DLx styles that need to be explicitly specified using classes
 
 .select {
   border: var(--border-gray);
-  border-radius: 0.25em;
+  border-radius: var(--border-radius);
   box-shadow: var(--shadow-button);
-  padding: 0.25em;
+  padding: var(--padding-text);
 }
 
 .strong {
@@ -568,7 +584,7 @@ This file contains DLx styles that need to be explicitly specified using classes
 }
 
 .unicode {
-  font-family: 'Gentium Plus', 'Charis SIL', 'Doulos SIL', 'Cambria', 'Andika', 'Lucida Sans Unicode', 'Times New Roman', 'Georgia', serif;
+  font-family: var(--font-unicode);
   font-size: 1.15em;
   // QUESTION: Why was this here originally?
   // line-height: 1;
