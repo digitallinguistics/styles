@@ -15,7 +15,7 @@
     "css": "node build/css.js",
     "hbs": "node build/hbs.js",
     "kss": "./node_modules/.bin/kss --config kss.config.json",
-    "less": "node build/less.js",
+    "less": "node build/less.js & lessc less/patterns.less patterns.css",
     "upload": "node build/upload.js"
   },
   "private": true,
