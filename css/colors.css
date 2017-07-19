@@ -1,3 +1,35 @@
 /*
 This file contains LESS variables for each of the colors in the DLx color schema
  */
+:root {
+  --wugblue: #6FD1F6;
+  --verydarkblue: #017CF2;
+  --darkblue: #0F89FF;
+  --blue: #3399FF;
+  --lightblue: #5CAFFF;
+  --verylightblue: #88C4FE;
+  --gray: #F5F2F0;
+  --grey: var(--gray);
+  --verylightgreen: #7FFED1;
+  --lightgreen: #4FFFC1;
+  --green: #23FFB1;
+  --darkgreen: #00FFA5;
+  --verydarkgreen: #00F39D;
+  --superdarkgreen: #00AB6E;
+  --verylightorange: #FFA97F;
+  --lightorange: #FF884F;
+  --orange: #FF6A23;
+  --darkorange: #FF5300;
+  --verylightpurple: #9791FE;
+  --lightpurple: #7068FF;
+  --purple: #4D42FF;
+  --darkpurple: #2A1DFF;
+  --verydarkpurple: #1002F4;
+  --verylightred: #FF9797;
+  --lightred: #E96363;
+  --red: #CA3C3C;
+  --darkred: #AA1F1F;
+  --verydarkred: #830505;
+  --lightblue-transparent: rgba(92, 175, 255, 0.2);
+  --verylightblue-transparent: rgba(136, 196, 254, 0.2);
+}

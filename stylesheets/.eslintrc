@@ -301,7 +301,7 @@
     "object-curly-newline": ["warn", {
       "ObjectExpression": {
         "consistent": true,
-        "minProperties": 4
+        "minProperties": 4,
       },
       "ObjectPattern": {
         "multiline": true

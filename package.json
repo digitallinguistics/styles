@@ -11,7 +11,7 @@
   },
   "repository": "https://github.com/digitallinguistics/styles.git",
   "scripts": {
-    "build": "yarn run hbs & yarn run upload & yarn run less & yarn run css",
+    "build": "npm run hbs & npm run upload & npm run less & npm run css",
     "css": "node build/css.js",
     "hbs": "node build/hbs.js",
     "less": "node build/less.js",
