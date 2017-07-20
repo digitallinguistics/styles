@@ -1,7 +1,0 @@
-{
-
-  "reference-list": {
-    "description": "Styling for a bibliographic reference list. Note that each reference should be wrapped in a <code>&lt;p&gt;</code> tag inside of a <code>&lt;li&gt;</code> tag."
-  }
-
-}

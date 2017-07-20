@@ -83,11 +83,17 @@
 </li>
 <li><p><code>variables.less</code> - High-level CSS variable declarations that are reused across element and component styling, such as common settings for padding, box shadows, underlines, etc.</p>
 </li>
-<li><p><code>elements.less</code> - General element styling (as classes). For example, add the <code>.button</code> class to a <code>&lt;button&gt;</code> element to apply default button styling.</p>
+<li><p><code>elements.less</code> - General element styling (as classes). For example, add the <code>.button</code> class to a <code>&lt;button&gt;</code> element to apply default button styling. Includes the following stylesheets:</p>
+<ul>
+<li><p><code>forms.less</code> - Styling for form elements and similar interactive elements.</p>
+</li>
+<li><p><code>headings.less</code> - Styling for headings.</p>
+</li>
+<li><p><code>inline.less</code> - Styling for inline elements (e.g. <code>&lt;strong&gt;</code>) and classes (e.g. <code>.unicode</code>).</p>
+</li>
+</ul>
 </li>
 <li><p><code>components.less</code> - Discrete, self-contained pieces of UI.</p>
-</li>
-<li><p><code>classes.less</code> - All the DLx styles, as classes</p>
 </li>
 </ul>
 <p>You can also use <code>dlx.less</code> or <code>global.less</code>, which bundle all of the above files together. The <code>dlx.less</code> file simply declares the classes and fonts, while the <code>global.less</code> file applies those classes globally. For example, <code>dlx.less</code> will make a <code>.link</code> class available for you to use in your code, but <code>global.less</code> will apply the <code>.link</code> style to all <code>&lt;a&gt;</code> elements as appropriate, so you do not need to explicitly add <code>class=link</code> to your <code>&lt;a&gt;</code> elements.</p>

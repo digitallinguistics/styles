@@ -1384,6 +1384,7 @@ This file contains LESS variables for each of the colors in the DLx color schema
 .numbered li {
   counter-increment: numbered;
   display: list-item;
+  margin: 0;
   margin-left: 2.5em;
 }
 .numbered li::before {
@@ -1410,6 +1411,44 @@ This file contains LESS variables for each of the colors in the DLx color schema
   display: block;
   overflow-x: auto;
   white-space: pre;
+}
+.reference-list a {
+  background: transparent;
+  color: var(--link-color);
+  border-bottom: var(--underline-transparent);
+  text-decoration: none;
+}
+.reference-list a:visited {
+  --link-color: var(--link-color-visited);
+}
+.reference-list a:hover {
+  border-bottom: var(--underline);
+}
+.reference-list cite {
+  font-style: italic;
+}
+.reference-list h2 {
+  font-size: 1.75em;
+  font-weight: var(--bold);
+  padding-bottom: 0.25em;
+  padding-top: 0.5em;
+}
+.reference-list ol,
+.reference-list ul {
+  list-style: disc outside none;
+  padding: 0.5em 0em;
+  padding-left: 1.5em;
+}
+.reference-list li {
+  display: list-item;
+  padding: var(--padding-text);
+}
+.reference-list li p {
+  display: block;
+  margin: 0;
+  margin-left: 1.5em;
+  padding: var(--padding-text);
+  text-indent: -1.5em;
 }
 * {
   font: inherit;

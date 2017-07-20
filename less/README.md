@@ -12,11 +12,15 @@ LESS stylesheets and their accompanying CSS output are available in this repo's 
 
   - `variables.less` - High-level CSS variable declarations that are reused across element and component styling, such as common settings for padding, box shadows, underlines, etc.
 
-  - `elements.less` - General element styling (as classes). For example, add the `.button` class to a `<button>` element to apply default button styling.
+  - `elements.less` - General element styling (as classes). For example, add the `.button` class to a `<button>` element to apply default button styling. Includes the following stylesheets:
+
+    - `forms.less` - Styling for form elements and similar interactive elements.
+
+    - `headings.less` - Styling for headings.
+
+    - `inline.less` - Styling for inline elements (e.g. `<strong>`) and classes (e.g. `.unicode`).
 
   - `components.less` - Discrete, self-contained pieces of UI.
-
-  - `classes.less` - All the DLx styles, as classes
 
 You can also use `dlx.less` or `global.less`, which bundle all of the above files together. The `dlx.less` file simply declares the classes and fonts, while the `global.less` file applies those classes globally. For example, `dlx.less` will make a `.link` class available for you to use in your code, but `global.less` will apply the `.link` style to all `<a>` elements as appropriate, so you do not need to explicitly add `class=link` to your `<a>` elements.
 

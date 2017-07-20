@@ -1,6 +1,7 @@
 @import (reference) 'https://digitallinguistics.blob.core.windows.net/less/colors.less';
 @import (reference) 'https://digitallinguistics.blob.core.windows.net/less/variables.less';
 @import (reference) 'https://digitallinguistics.blob.core.windows.net/less/inline.less';
+@import (reference) 'https://digitallinguistics.blob.core.windows.net/less/headings.less';
 
 // Components
 //
@@ -176,6 +177,7 @@
 
     counter-increment: numbered;
     display: list-item;
+    margin: 0;
     margin-left: 2.5em;
 
     &::before {
@@ -207,6 +209,43 @@
     display: block;
     overflow-x: auto;
     white-space: pre;
+  }
+
+}
+
+// Reference List
+//
+// Styling for a bibliographic reference list. Note that each reference should be an `<li>` tag containing a `<p>` tag. **NOTE:** You may have to further customize the styling of the `<hX>` element depending on which header you are using.
+//
+// Markup: reference-list.hbs
+//
+// Styleguide Components.reference-list
+.reference-list {
+
+  a { .link; }
+
+  cite { .cite; }
+
+  h2 { .h2; }
+
+  ol, ul {
+    list-style: disc outside none;
+    padding: 0.5em 0em;
+    padding-left: 1.5em;
+  }
+
+  li {
+    display: list-item;
+    padding: var(--padding-text);
+
+    p {
+      display: block;
+      margin: 0;
+      margin-left: 1.5em;
+      padding: var(--padding-text);
+      text-indent: -1.5em;
+    }
+
   }
 
 }
