@@ -461,6 +461,26 @@
   color: #CAD2D3;
   cursor: not-allowed;
 }
+.label {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.label h1,
+.label h2,
+.label h3,
+.label h4,
+.label h5,
+.label h6,
+.label span {
+  font-size: smaller;
+  font-weight: var(--bold);
+  padding: var(--padding-text);
+}
+.label p {
+  padding: var(--padding-text);
+}
 .textarea {
   background-color: transparent;
   border: 0.075em solid var(--gray);

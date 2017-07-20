@@ -1,39 +1,11 @@
 {
 
-  "kbd": {
-    "description": "Used for indicating keyboard input."
-  },
-
-  "label": {
-    "description": "Label elements. If the text inside the element is wrapped in a <code>&lt;span&gt;</code> element, that text will be styled as well."
-  },
-
-  "link": {
-    "description": "The <code>.link</code> class is not automatically applied to anchor elements (<code>&lt;a&gt;</code>). It is, however, automatically applied to any anchor element that sits inside another inline element, such as <code>&lt;abbr&gt;</code> or <code>&lt;strong&gt;</code>, and to any element that sits inside an element whose content is usually inline, such as <code>&lt;p&gt;</code> or <code>&lt;h1&gt;</code>."
-  },
-
-  "link-white": {
-    "description": "A white link rather than the standard blue. Used for dark backgrounds."
-  },
-
   "nav": {
     "description": "A main navigation bar at the top of the page."
   },
 
   "numbered": {
     "description": "For numbered lists. Because DLx often uses ordered lists where list styling is not wanted, the <code>.numbered</code> class is not automatically applied to <code>&lt;ol&gt;</code> elements, and must be applied manually."
-  },
-
-  "orthographic": {
-    "description": "This class should be used when citing an orthographic representation of some data, e.g., when writing about writing systems."
-  },
-
-  "phonemic": {
-    "description": "Used for phonemic representations of data."
-  },
-
-  "phonetic": {
-    "description": "Used for phonetic representations of data."
   },
 
   "reference-list": {
@@ -43,13 +15,5 @@
   "select": {
     "description": "Default styling for <code>&lt;select&gt;</code> elements."
   },
-
-  "strong": {
-    "description": "Used to draw the reader's attention to a term or concept."
-  },
-
-  "unicode": {
-    "description": "Used when a Unicode font is needed. More semantic styles such as <code>.phonetic</code> or <code>.phonemic</code> should be preferred over this one when possible."
-  }
 
 }

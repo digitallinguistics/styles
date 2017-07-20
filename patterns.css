@@ -102,6 +102,8 @@ This file contains LESS variables for each of the colors in the DLx color schema
   --codegray: #FAFAFA;
   --codedarkgray: #383A42;
   --darkgray: gray;
+  --temp: #BBB;
+  --temp2: #999;
   --gray: #CCC;
   --lightgray: #F5F2F0;
   --verylightgreen: #7FFED1;
@@ -363,12 +365,15 @@ This file contains LESS variables for each of the colors in the DLx color schema
   --font: 'Fira Sans', 'Calibri', 'DejaVu Sans', 'Verdana', 'Arial', 'Helvetica', sans-serif;
   --font-mono: 'Fira Mono', 'Consolas', 'Monaco', 'DejaVu Mono', 'Courier New', monospace;
   --font-unicode: 'Gentium Plus', 'Charis SIL', 'Doulos SIL', 'Cambria', 'Andika', 'Lucida Sans Unicode', 'Times New Roman', 'Georgia', serif;
+  --link-color: var(--blue);
+  --link-color-visited: var(--purple);
   --padding-text: 0.25em 0.5em;
   --shadow-color: var(--gray);
   --shadow: 0.075em 0.075em 0.15em var(--shadow-color);
   --shadow-button: inset -0.075em -0.075em 0.15em rgba(0, 0, 0, 0.15), var(--shadow);
   --shadow-deep: 0rem 0.225em 0.225em var(--shadow-color);
   --shadow-inset: inset 0.075em 0.075em 0.15em var(--shadow-color);
+  --underline-transparent: 0.075em solid transparent;
 }
 .button {
   --link-color: white;
@@ -1041,6 +1046,26 @@ This file contains LESS variables for each of the colors in the DLx color schema
   color: #CAD2D3;
   cursor: not-allowed;
 }
+.label {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.label h1,
+.label h2,
+.label h3,
+.label h4,
+.label h5,
+.label h6,
+.label span {
+  font-size: smaller;
+  font-weight: var(--bold);
+  padding: var(--padding-text);
+}
+.label p {
+  padding: var(--padding-text);
+}
 .textarea {
   background-color: transparent;
   border: 0.075em solid var(--gray);
@@ -1151,6 +1176,113 @@ This file contains LESS variables for each of the colors in the DLx color schema
 }
 .italic {
   font-style: italic;
+}
+.kbd {
+  background-color: var(--codegray);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+  border: 0.035em solid #BBB;
+  border-radius: var(--border-radius);
+  color: #444;
+  padding: var(--padding-text);
+  text-align: center;
+  text-shadow: 0em 0.075em 0em white;
+  box-shadow: 0em 0.15em 0em var(--gray), 0.02em 0.225em 0.2em var(--darkgray), inset 0em 0.075em 0.075em white, inset 0em -0.075em 0.225em var(--gray);
+}
+.link {
+  background: transparent;
+  color: var(--link-color);
+  border-bottom: var(--underline-transparent);
+  text-decoration: none;
+  --underline: 0.075em solid var(--link-color);
+}
+.link:link {
+  color: var(--link-color);
+}
+.link:visited {
+  color: var(--link-color-visited);
+}
+.link:hover {
+  border-bottom: var(--underline);
+}
+.link:active {
+  color: var(--link-color);
+}
+.link:visited:hover {
+  border-bottom: var(--underline);
+}
+.link:visited:active {
+  color: var(--link-color-visited);
+}
+.link-white {
+  background: transparent;
+  color: var(--link-color);
+  border-bottom: var(--underline-transparent);
+  text-decoration: none;
+  --underline: 0.075em solid var(--link-color);
+  --link-color: white;
+  --link-color-visited: white;
+}
+.link-white:link {
+  color: var(--link-color);
+}
+.link-white:visited {
+  color: var(--link-color-visited);
+}
+.link-white:hover {
+  border-bottom: var(--underline);
+}
+.link-white:active {
+  color: var(--link-color);
+}
+.link-white:visited:hover {
+  border-bottom: var(--underline);
+}
+.link-white:visited:active {
+  color: var(--link-color-visited);
+}
+.strong {
+  color: var(--verydarkblue);
+  font-weight: var(--bold);
+}
+.orthographic {
+  font-family: var(--font-unicode);
+  font-size: 1.15em;
+}
+.orthographic::before {
+  content: '<';
+  padding-right: var(--padding-ipa);
+}
+.orthographic::after {
+  content: '>';
+  padding-left: var(--padding-ipa);
+}
+.phonemic {
+  font-family: var(--font-unicode);
+  font-size: 1.15em;
+}
+.phonemic::before {
+  content: '/';
+  padding-right: var(--padding-ipa);
+}
+.phonemic::after {
+  content: '/';
+  padding-left: var(--padding-ipa);
+}
+.phonetic {
+  font-family: var(--font-unicode);
+  font-size: 1.15em;
+}
+.phonetic::before {
+  content: '[';
+  padding-right: var(--padding-ipa);
+}
+.phonetic::after {
+  content: ']';
+  padding-left: var(--padding-ipa);
+}
+.unicode {
+  font-family: var(--font-unicode);
+  font-size: 1.15em;
 }
 .banner {
   --link-color: white;

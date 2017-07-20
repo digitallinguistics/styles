@@ -8,67 +8,15 @@
 
   --font-unicode: 'Gentium Plus', 'Charis SIL', 'Doulos SIL', 'Cambria', 'Andika', 'Lucida Sans Unicode', 'Times New Roman', 'Georgia', serif;
 
-  --link-color: var(--blue);
-  --link-color-visited: var(--purple);
-
   --padding-ipa: 0.15em;
   --padding-text: 0.25em 0.5em;
 
   --shadow-button: inset -0.075em -0.075em 0.15em 0em rgba(0,0,0,0.15), var(--shadow);
 
-  --underline-blue: 0.075em solid var(--blue);
-  --underline-purple: 0.075em solid var(--purple);
-  --underline-transparent: 0.075em solid transparent;
-
 }
 
 // PATTERNS
-.kbd {
-
-  background-color: #F7F7F7;
-  background-image: linear-gradient(to top, rgba(0,0,0,0.1), rgba(0,0,0,0));
-  border: 0.035em solid #BBB;
-  border-radius: var(--border-radius);
-	color: #444;
-  padding: var(--padding-text);
-	text-align: center;
-	text-shadow: 0em 0.075em 0em #FFF;
-
-  box-shadow: 0em 0.15em 0em #BBB,
-    0em 0.225em 0.075em #999,
-    0em 0.225em 0em #BBB,
-    inset 0em 0.075em 0.075em #FFF,
-    inset 0em -0.075em 0.225em #CCC;
-
-}
-
-.label {
-
-  align-items: center;
-  flex-direction: row;
-
-  span {
-    font-size: smaller;
-    font-weight: bold;
-  }
-
-}
-
-.link {
-  color: var(--link-color);
-  border-bottom: var(--underline-transparent);
-  &:link { color: var(--link-color); }
-  &:visited { color: var(--link-color-visited); }
-  &:hover { border-bottom: var(--link-color); }
-  &:active { color: var(--link-color); }
-  &:visited:hover { border-bottom: var(--link-color-visited); }
-  &:visited:active { color: var(--link-color-visited); }
-}
-
-.link-white {
-  --link-color: white;
-  --link-color-visited: white;
-}
+.link {}
 
 .nav {
 
@@ -115,42 +63,6 @@
 
 }
 
-.orthographic {
-  .unicode;
-  &::before {
-    content: '<';
-    padding-right: var(--padding-ipa);
-  }
-  &::after  {
-    content: '>';
-    padding-left: var(--padding-ipa);
-  }
-}
-
-.phonemic {
-  .unicode;
-  &::before {
-    content: '/';
-    padding-right: var(--padding-ipa);
-  }
-  &::after  {
-    content: '/';
-    padding-left: var(--padding-ipa);
-  }
-}
-
-.phonetic {
-  .unicode;
-  &::before {
-    content: '[';
-    padding-right: var(--padding-ipa);
-  }
-  &::after  {
-    content: ']';
-    padding-left: var(--padding-ipa);
-  }
-}
-
 .reference-list {
 
   a { .link; }
@@ -184,20 +96,9 @@
   padding: var(--padding-text);
 }
 
-.strong {
-  color: var(--verydarkblue);
-  font-weight: bold;
-}
-
 .summary {
   align-items: center;
   display: flex; // TODO: remove this when flexbox-reset is updated
   flex-direction: row;
   margin-left: -1em;
-}
-
-.unicode {
-  font-family: var(--font-unicode);
-  font-size: 1.15em;
-  // line-height: 1; // QUESTION: Why was this here originally?
 }

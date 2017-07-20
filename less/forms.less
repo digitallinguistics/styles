@@ -292,6 +292,34 @@
 
 }
 
+// Label
+//
+// Label elements. If the text inside the element is wrapped in a `span` or header element, that text will be styled as well.
+//
+// Markup: label.hbs
+//
+// Styleguide Elements.Forms.label
+.label {
+
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  h1, h2, h3, h4, h5, h6,
+  span
+  {
+    font-size: smaller;
+    font-weight: var(--bold);
+    padding: var(--padding-text);
+  }
+
+  p {
+    padding: var(--padding-text);
+  }
+
+}
+
 // Textarea
 //
 // `<textarea>` elements use the same styling as text inputs.

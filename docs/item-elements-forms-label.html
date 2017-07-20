@@ -75,19 +75,19 @@
           the "root" element comes first in this loop, and can be detected using
           the "#if @first" block as seen below.
         -->
-            <header class="kss-section kss-section--depth-3" id="kssref-elements-forms-textarea">
+            <header class="kss-section kss-section--depth-3" id="kssref-elements-forms-label">
 
             <article class="kss-section__content">
-                <p class="kss-section__source">Source: <span>forms.less</span>, line <span>323</span></p>
+                <p class="kss-section__source">Source: <span>forms.less</span>, line <span>295</span></p>
 
-              <a class="kss-section__permalink" href="#kssref-elements-forms-textarea">
+              <a class="kss-section__permalink" href="#kssref-elements-forms-label">
                 <h3 class="kss-section__item kss-section__item--depth-3">
-                  <span class="kss-section__ref">3.1.5</span>
-                  <span class="kss-section__name">Textarea</span>
+                  <span class="kss-section__ref">3.1.4</span>
+                  <span class="kss-section__name">Label</span>
                 </h3>
               </a>
 
-                <div class="kss-section__description"><p><code>&lt;textarea&gt;</code> elements use the same styling as text inputs.</p>
+                <div class="kss-section__description"><p>Label elements. If the text inside the element is wrapped in a <code>span</code> or header element, that text will be styled as well.</p>
 </div>
 
             </article>
@@ -96,13 +96,29 @@
                 <h1 class="kss-modifiers__heading">Example</h1>
 
 
-                <div class="kss-modifiers__example"><textarea class=textarea placeholder='This is a textarea'></textarea>
+                <div class="kss-modifiers__example"><label class=label>
+  <span>Label with <code>&lt;span&gt;</code> or <code>&lt;hX&gt;</code></span>
+  <input class=input type=text>
+</label>
+
+<label class=label>
+  <p>Label without <code>&lt;span&gt;</code> or <code>&lt;hX&gt;</code><p>
+  <input class=input type=text>
+</label>
 </div>
 
               </article>
 
                 <article class="kss-section__markup">
-                  <pre><code class="language-markup">&lt;textarea class&#x3D;textarea placeholder&#x3D;&#x27;This is a textarea&#x27;&gt;&lt;/textarea&gt;
+                  <pre><code class="language-markup">&lt;label class&#x3D;label&gt;
+  &lt;span&gt;Label with &lt;code&gt;&amp;lt;span&amp;gt;&lt;/code&gt; or &lt;code&gt;&amp;lt;hX&amp;gt;&lt;/code&gt;&lt;/span&gt;
+  &lt;input class&#x3D;input type&#x3D;text&gt;
+&lt;/label&gt;
+
+&lt;label class&#x3D;label&gt;
+  &lt;p&gt;Label without &lt;code&gt;&amp;lt;span&amp;gt;&lt;/code&gt; or &lt;code&gt;&amp;lt;hX&amp;gt;&lt;/code&gt;&lt;p&gt;
+  &lt;input class&#x3D;input type&#x3D;text&gt;
+&lt;/label&gt;
 </code></pre>
                 </article>
 

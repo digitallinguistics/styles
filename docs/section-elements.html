@@ -81,8 +81,14 @@
                       </a>
                     </li>
                     <li class="kss-nav__item kss-nav__item--grandchild">
-                      <a href="section-elements.html#kssref-elements-forms-textarea">
+                      <a href="section-elements.html#kssref-elements-forms-label">
                         <span class="kss-nav__ref">3.1.4</span>
+                        <span class="kss-nav__name">Label</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item kss-nav__item--grandchild">
+                      <a href="section-elements.html#kssref-elements-forms-textarea">
+                        <span class="kss-nav__ref">3.1.5</span>
                         <span class="kss-nav__name">Textarea</span>
                       </a>
                     </li>
@@ -162,6 +168,30 @@
                       <a href="section-elements.html#kssref-elements-inline-italic">
                         <span class="kss-nav__ref">3.3.6</span>
                         <span class="kss-nav__name">Italic</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item kss-nav__item--grandchild">
+                      <a href="section-elements.html#kssref-elements-inline-kbd">
+                        <span class="kss-nav__ref">3.3.7</span>
+                        <span class="kss-nav__name">Keyboard</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item kss-nav__item--grandchild">
+                      <a href="section-elements.html#kssref-elements-inline-link">
+                        <span class="kss-nav__ref">3.3.8</span>
+                        <span class="kss-nav__name">Link</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item kss-nav__item--grandchild">
+                      <a href="section-elements.html#kssref-elements-inline-strong">
+                        <span class="kss-nav__ref">3.3.9</span>
+                        <span class="kss-nav__name">Strong</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item kss-nav__item--grandchild">
+                      <a href="section-elements.html#kssref-elements-inline-transcriptions">
+                        <span class="kss-nav__ref">3.3.10</span>
+                        <span class="kss-nav__name">Transcriptions</span>
                       </a>
                     </li>
                 </ul>
@@ -1200,14 +1230,62 @@
                 </article>
 
             </section>
-            <section class="kss-section kss-section--depth-3" id="kssref-elements-forms-textarea">
+            <section class="kss-section kss-section--depth-3" id="kssref-elements-forms-label">
 
             <article class="kss-section__content">
                 <p class="kss-section__source">Source: <span>forms.less</span>, line <span>295</span></p>
 
-              <a class="kss-section__permalink" href="#kssref-elements-forms-textarea">
+              <a class="kss-section__permalink" href="#kssref-elements-forms-label">
                 <h3 class="kss-section__item kss-section__item--depth-3">
                   <span class="kss-section__ref">3.1.4</span>
+                  <span class="kss-section__name">Label</span>
+                </h3>
+              </a>
+
+                <div class="kss-section__description"><p>Label elements. If the text inside the element is wrapped in a <code>span</code> or header element, that text will be styled as well.</p>
+</div>
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Example</h1>
+
+
+                <div class="kss-modifiers__example"><label class=label>
+  <span>Label with <code>&lt;span&gt;</code> or <code>&lt;hX&gt;</code></span>
+  <input class=input type=text>
+</label>
+
+<label class=label>
+  <p>Label without <code>&lt;span&gt;</code> or <code>&lt;hX&gt;</code><p>
+  <input class=input type=text>
+</label>
+</div>
+
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;label class&#x3D;label&gt;
+  &lt;span&gt;Label with &lt;code&gt;&amp;lt;span&amp;gt;&lt;/code&gt; or &lt;code&gt;&amp;lt;hX&amp;gt;&lt;/code&gt;&lt;/span&gt;
+  &lt;input class&#x3D;input type&#x3D;text&gt;
+&lt;/label&gt;
+
+&lt;label class&#x3D;label&gt;
+  &lt;p&gt;Label without &lt;code&gt;&amp;lt;span&amp;gt;&lt;/code&gt; or &lt;code&gt;&amp;lt;hX&amp;gt;&lt;/code&gt;&lt;p&gt;
+  &lt;input class&#x3D;input type&#x3D;text&gt;
+&lt;/label&gt;
+</code></pre>
+                </article>
+
+            </section>
+            <section class="kss-section kss-section--depth-3" id="kssref-elements-forms-textarea">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>forms.less</span>, line <span>323</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-elements-forms-textarea">
+                <h3 class="kss-section__item kss-section__item--depth-3">
+                  <span class="kss-section__ref">3.1.5</span>
                   <span class="kss-section__name">Textarea</span>
                 </h3>
               </a>
@@ -1648,6 +1726,314 @@
 
                 <article class="kss-section__markup">
                   <pre><code class="language-markup">&lt;p&gt;This shows an example of &lt;i class&#x3D;italic&gt;italicized text&lt;/i&gt;.&lt;/p&gt;
+</code></pre>
+                </article>
+
+            </section>
+            <section class="kss-section kss-section--depth-3" id="kssref-elements-inline-kbd">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>inline.less</span>, line <span>85</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-elements-inline-kbd">
+                <h3 class="kss-section__item kss-section__item--depth-3">
+                  <span class="kss-section__ref">3.3.7</span>
+                  <span class="kss-section__name">Keyboard</span>
+                </h3>
+              </a>
+
+                <div class="kss-section__description"><p>Used for indicating keyboard input.</p>
+</div>
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Example</h1>
+
+
+                <div class="kss-modifiers__example"><p>This is an example of a <kbd class=kbd>keyboard input</kbd>. Press <kbd class=kbd>Ctrl + S</kbd> to save.</p>
+</div>
+
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;p&gt;This is an example of a &lt;kbd class&#x3D;kbd&gt;keyboard input&lt;/kbd&gt;. Press &lt;kbd class&#x3D;kbd&gt;Ctrl + S&lt;/kbd&gt; to save.&lt;/p&gt;
+</code></pre>
+                </article>
+
+            </section>
+            <section class="kss-section kss-section--depth-3" id="kssref-elements-inline-link">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>inline.less</span>, line <span>110</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-elements-inline-link">
+                <h3 class="kss-section__item kss-section__item--depth-3">
+                  <span class="kss-section__ref">3.3.8</span>
+                  <span class="kss-section__name">Link</span>
+                </h3>
+              </a>
+
+                <div class="kss-section__description"><p>The <code>.link</code> class styles an anchor (<code>&lt;a&gt;</code>) element as an inline link. Change the CSS <code>--link-color</code> variable to change the link&#39;s color.</p>
+</div>
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Examples</h1>
+
+                  <h2 class="kss-modifiers__name">Default styling</h2>
+
+                <div class="kss-modifiers__example"><p>
+  <a class="link {{modifier_class}}" href="#">This</a> shows a link around a single word, inside a <code>&lt;p&gt;</code> tag.
+</p>
+
+<p style="background-color: var(--blue); padding: var(--padding-text);">
+  <a class="link-white" href="#">This</a> shows a <code>.link-white</code> link with a dark-colored background.
+</p>
+</div>
+
+                  <h2 class="kss-modifiers__name">.link-white</h2>
+
+                  <p class="kss-modifiers__description">Applies white coloring to link (for dark backgrounds)</p>
+
+                  <div class="kss-modifiers__example"><p>
+  <a class="link link-white" href="#">This</a> shows a link around a single word, inside a <code>&lt;p&gt;</code> tag.
+</p>
+
+<p style="background-color: var(--blue); padding: var(--padding-text);">
+  <a class="link-white" href="#">This</a> shows a <code>.link-white</code> link with a dark-colored background.
+</p>
+</div>
+                  <h2 class="kss-modifiers__name">:active</h2>
+
+                  <p class="kss-modifiers__description">When the link is being clicked</p>
+
+                  <div class="kss-modifiers__example"><p>
+  <a class="link pseudo-class-active" href="#">This</a> shows a link around a single word, inside a <code>&lt;p&gt;</code> tag.
+</p>
+
+<p style="background-color: var(--blue); padding: var(--padding-text);">
+  <a class="link-white" href="#">This</a> shows a <code>.link-white</code> link with a dark-colored background.
+</p>
+</div>
+                  <h2 class="kss-modifiers__name">:hover</h2>
+
+                  <p class="kss-modifiers__description">When the link is hovered over</p>
+
+                  <div class="kss-modifiers__example"><p>
+  <a class="link pseudo-class-hover" href="#">This</a> shows a link around a single word, inside a <code>&lt;p&gt;</code> tag.
+</p>
+
+<p style="background-color: var(--blue); padding: var(--padding-text);">
+  <a class="link-white" href="#">This</a> shows a <code>.link-white</code> link with a dark-colored background.
+</p>
+</div>
+                  <h2 class="kss-modifiers__name">:visited</h2>
+
+                  <p class="kss-modifiers__description">When the link has already been visited</p>
+
+                  <div class="kss-modifiers__example"><p>
+  <a class="link pseudo-class-visited" href="#">This</a> shows a link around a single word, inside a <code>&lt;p&gt;</code> tag.
+</p>
+
+<p style="background-color: var(--blue); padding: var(--padding-text);">
+  <a class="link-white" href="#">This</a> shows a <code>.link-white</code> link with a dark-colored background.
+</p>
+</div>
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;p&gt;
+  &lt;a class&#x3D;&quot;link {{modifier_class}}&quot; href&#x3D;&quot;#&quot;&gt;This&lt;/a&gt; shows a link around a single word, inside a &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; tag.
+&lt;/p&gt;
+
+&lt;p style&#x3D;&quot;background-color: var(--blue); padding: var(--padding-text);&quot;&gt;
+  &lt;a class&#x3D;&quot;link-white&quot; href&#x3D;&quot;#&quot;&gt;This&lt;/a&gt; shows a &lt;code&gt;.link-white&lt;/code&gt; link with a dark-colored background.
+&lt;/p&gt;
+</code></pre>
+                </article>
+
+            </section>
+            <section class="kss-section kss-section--depth-3" id="kssref-elements-inline-strong">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>inline.less</span>, line <span>146</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-elements-inline-strong">
+                <h3 class="kss-section__item kss-section__item--depth-3">
+                  <span class="kss-section__ref">3.3.9</span>
+                  <span class="kss-section__name">Strong</span>
+                </h3>
+              </a>
+
+                <div class="kss-section__description"><p>Used to draw the reader&#39;s attention to a term or concept, indicating that it is important.</p>
+</div>
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Example</h1>
+
+
+                <div class="kss-modifiers__example"><p>
+  This is a paragraph with some <strong class=strong>strongly emphasized</strong> text.
+</p>
+</div>
+
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;p&gt;
+  This is a paragraph with some &lt;strong class&#x3D;strong&gt;strongly emphasized&lt;/strong&gt; text.
+&lt;/p&gt;
+</code></pre>
+                </article>
+
+            </section>
+            <section class="kss-section kss-section--depth-3" id="kssref-elements-inline-transcriptions">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>inline.less</span>, line <span>159</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-elements-inline-transcriptions">
+                <h3 class="kss-section__item kss-section__item--depth-3">
+                  <span class="kss-section__ref">3.3.10</span>
+                  <span class="kss-section__name">Transcriptions</span>
+                </h3>
+              </a>
+
+                <div class="kss-section__description"><p>Classes for styling inline transcriptions.</p>
+</div>
+
+            </article>
+
+
+            </section>
+            <section class="kss-section kss-section--depth-4" id="kssref-elements-inline-transcriptions-orthographic">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>inline.less</span>, line <span>166</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-elements-inline-transcriptions-orthographic">
+                <h4 class="kss-section__item kss-section__item--depth-4">
+                  <span class="kss-section__ref">3.3.10.1</span>
+                  <span class="kss-section__name">Orthographic</span>
+                </h4>
+              </a>
+
+                <div class="kss-section__description"><p>This class should be used when citing an orthographic representation of some data, e.g., when writing about writing systems.</p>
+</div>
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Example</h1>
+
+
+                <div class="kss-modifiers__example"><p>This is an example of a sentence with an <span class=orthographic>orthographic representation</span> of some text.</p>
+</div>
+
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;p&gt;This is an example of a sentence with an &lt;span class&#x3D;orthographic&gt;orthographic representation&lt;/span&gt; of some text.&lt;/p&gt;
+</code></pre>
+                </article>
+
+            </section>
+            <section class="kss-section kss-section--depth-4" id="kssref-elements-inline-transcriptions-phonemic">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>inline.less</span>, line <span>189</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-elements-inline-transcriptions-phonemic">
+                <h4 class="kss-section__item kss-section__item--depth-4">
+                  <span class="kss-section__ref">3.3.10.2</span>
+                  <span class="kss-section__name">Phonemic</span>
+                </h4>
+              </a>
+
+                <div class="kss-section__description"><p>Used for phonemic representations of data.</p>
+</div>
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Example</h1>
+
+
+                <div class="kss-modifiers__example"><p>This is an example of a <span class=phonemic>fənimɪk</span> representation of some data.</p>
+</div>
+
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;p&gt;This is an example of a &lt;span class&#x3D;phonemic&gt;fənimɪk&lt;/span&gt; representation of some data.&lt;/p&gt;
+</code></pre>
+                </article>
+
+            </section>
+            <section class="kss-section kss-section--depth-4" id="kssref-elements-inline-transcriptions-phonetic">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>inline.less</span>, line <span>212</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-elements-inline-transcriptions-phonetic">
+                <h4 class="kss-section__item kss-section__item--depth-4">
+                  <span class="kss-section__ref">3.3.10.3</span>
+                  <span class="kss-section__name">Phonetic</span>
+                </h4>
+              </a>
+
+                <div class="kss-section__description"><p>Used for phonetic representations of data.</p>
+</div>
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Example</h1>
+
+
+                <div class="kss-modifiers__example"><p>This is an example of a <span class=phonetic>fəˈnɛtik̚</span> representation of some data.</p>
+</div>
+
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;p&gt;This is an example of a &lt;span class&#x3D;phonetic&gt;fəˈnɛtik̚&lt;/span&gt; representation of some data.&lt;/p&gt;
+</code></pre>
+                </article>
+
+            </section>
+            <section class="kss-section kss-section--depth-4" id="kssref-elements-inline-transcriptions-unicode">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>inline.less</span>, line <span>235</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-elements-inline-transcriptions-unicode">
+                <h4 class="kss-section__item kss-section__item--depth-4">
+                  <span class="kss-section__ref">3.3.10.4</span>
+                  <span class="kss-section__name">Unicode</span>
+                </h4>
+              </a>
+
+                <div class="kss-section__description"><p>Used when a Unicode font is needed. More semantic styles such as <code>.phonetic</code> or <code>.phonemic</code> should be preferred over this one when possible.</p>
+</div>
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Example</h1>
+
+
+                <div class="kss-modifiers__example"><p>This shows an example of <span class=unicode>some text in a Unicode font</span>.</p>
+</div>
+
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;p&gt;This shows an example of &lt;span class&#x3D;unicode&gt;some text in a Unicode font&lt;/span&gt;.&lt;/p&gt;
 </code></pre>
                 </article>
 
