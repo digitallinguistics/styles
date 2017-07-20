@@ -1,6 +1,9 @@
 :root {
 
-  --border: 0.075em solid black;
+  --bold: 600;
+
+  --border-color: black;
+  --border: 0.075em solid var(--border-color);
   --border-radius: 0.35em;
 
   --font: 'Fira Sans', 'Calibri', 'DejaVu Sans', 'Verdana', 'Arial', 'Helvetica', sans-serif;
@@ -9,8 +12,10 @@
 
   --padding-text: 0.25em 0.5em;
 
-  --shadow: 0.075em 0.075em 0.15em var(--gray);
-  --shadow-button: inset -0.075em -0.075em 0.15em 0em rgba(0,0,0,0.15), var(--shadow);
-  --shadow-deep: 0rem 0.225em 0.225em var(--gray);
+  --shadow-color: var(--gray);
+  --shadow: 0.075em 0.075em 0.15em var(--shadow-color);
+  --shadow-button: inset -0.075em -0.075em 0.15em rgba(0,0,0,0.15), var(--shadow);
+  --shadow-deep: 0rem 0.225em 0.225em var(--shadow-color);
+  --shadow-inset: inset 0.075em 0.075em 0.15em var(--shadow-color);
 
 }

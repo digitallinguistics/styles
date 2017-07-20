@@ -1,41 +1,5 @@
 {
 
-  "field": {
-    "description": "Styles an element as a form field. This style is automatically applied to various form elements, such as the <code>&lt;input type=text&gt;</code> element."
-  },
-
-  "fieldset": {
-    "description": "Used for grouping inputs together under a heading (<code>&lt;legend&gt;</code>). Remember that flexbox does not work well with <code>&lt;fieldset&gt;</code>, so you may need to wrap the items inside <code>&lt;fieldset&gt;</code> in a <code>&lt;div&gt;</code>."
-  },
-
-  "hanging": {
-    "description": "For blocks of text with a hanging indent."
-  },
-
-  "h-minor": {
-    "description": "For minor headers (level below sub-subsection)"
-  },
-
-  "h-section": {
-    "description": "Section headers"
-  },
-
-  "h-subsection": {
-    "description": "Subsection headers"
-  },
-
-  "h-subsubsection": {
-    "description": "Sub-subsection headers"
-  },
-
-  "input": {
-    "description": "Adding the <code>.input</code> class to any <code>&lt;input&gt;</code> element will style that element according to its type."
-  },
-
-  "italic": {
-    "description": "Used for general italic styling. Other more semantic classes should be preferred over this one when possible."
-  },
-
   "kbd": {
     "description": "Used for indicating keyboard input."
   },
@@ -64,10 +28,6 @@
     "description": "This class should be used when citing an orthographic representation of some data, e.g., when writing about writing systems."
   },
 
-  "page-title": {
-    "description": "For page titles"
-  },
-
   "phonemic": {
     "description": "Used for phonemic representations of data."
   },
@@ -86,10 +46,6 @@
 
   "strong": {
     "description": "Used to draw the reader's attention to a term or concept."
-  },
-
-  "textarea": {
-    "description": "Uses the <code>&lt;.field&gt;</code> style"
   },
 
   "unicode": {

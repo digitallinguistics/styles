@@ -1,0 +1,83 @@
+@import (reference) 'https://digitallinguistics.blob.core.windows.net/less/colors.less';
+@import (reference) 'https://digitallinguistics.blob.core.windows.net/less/variables.less';
+
+// Inline Elements
+//
+// Styling for inline elements
+//
+// Styleguide Elements.Inline
+
+
+// Abbreviation
+//
+// Default styling for `<abbr>` tags, which should be used on the first mention of an abbreviation. It is often accompanied by a `<dfn>` tag in the same paragraph.
+//
+// Markup: abbr.hbs
+//
+// Styleguide Elements.Inline.abbr
+.abbr {
+  font-style: italic;
+}
+
+// Citation
+//
+// The `<cite>` element is used for titles of publications, etc.
+//
+// Markup: cite.hbs
+//
+// Styleguide Elements.Inline.cite
+.cite {
+  font-style: italic;
+}
+
+// Code Block
+//
+// The `<code>` element is used for inline code blocks (use the `<pre>` element for standalone code blocks).
+//
+// Markup: code.hbs
+//
+// Styleguide Elements.Inline.code
+.code {
+  background-color: var(--codegray);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  color: var(--codedarkgray);
+  font-family: var(--font-mono);
+  font-size: 0.75em;
+  font-style: normal;
+  padding: var(--padding-text);
+  white-space: pre-line;
+}
+
+// Definition
+//
+// A `<dfn>` tag is used the first time an element is defined. The definition of the term should be given in the surrounding text.
+//
+// Markup: dfn.hbs
+//
+// Styleguide Elements.Inline.dfn
+.dfn {
+  font-style: italic;
+}
+
+// Emphasis
+//
+// Used for standard emphasis within text.
+//
+// Markup: em.hbs
+//
+// Styleguide Elements.Inline.em
+.em {
+  font-style: italic;
+}
+
+// Italic
+//
+// Used for general italic styling. Other more semantic classes should be preferred over this one when possible. Commonly used with `<i>` elements (which should also be avoided).
+//
+// Markup: italic.hbs
+//
+// Styleguide Elements.Inline.italic
+.italic {
+  font-style: italic;
+}

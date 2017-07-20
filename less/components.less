@@ -1,5 +1,6 @@
 @import (reference) 'https://digitallinguistics.blob.core.windows.net/less/colors.less';
 @import (reference) 'https://digitallinguistics.blob.core.windows.net/less/variables.less';
+@import (reference) 'https://digitallinguistics.blob.core.windows.net/less/inline.less';
 
 // Components
 //
@@ -19,10 +20,9 @@
 // Styleguide Components.banner
 .banner {
 
+  .blue-background;
   align-items: center;
-  background-color: var(--blue);
   box-shadow: var(--shadow-deep);
-  color: white;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
@@ -49,6 +49,80 @@
 
   li {
     display: list-item;
+  }
+
+}
+
+// Text Field
+//
+// Styles an element as a form field.
+//
+// Markup: field.hbs
+//
+// :disabled - When the field is disabled
+// :focus    - When the field is focused
+//
+// Styleguide Components.field
+.field {
+
+  background-color: transparent;
+  border: 0.075em solid var(--gray);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-inset);
+  padding: var(--padding-text);
+
+  &:focus {
+
+    --shadow-color: var(--blue);
+    border-color: var(--blue);
+    box-shadow: var(--shadow-inset);
+    outline: none;
+
+    &:invalid {
+      --shadow-color: var(--darkred);
+      border-color: var(--darkred);
+      box-shadow: var(--shadow-inset);
+    }
+
+  }
+
+  &:disabled {
+    background-color: #EAEDED;
+    color: #CAD2D3;
+    cursor: not-allowed;
+  }
+
+}
+
+// Hanging Indented Paragraph
+//
+// For blocks of text with a hanging indent.
+//
+// Markup: hanging.hbs
+//
+// Styleguide Components.hanging
+.hanging {
+  margin-left: 1em;
+  text-indent: -1em;
+}
+
+// Pre
+//
+// Used for standalone code blocks (for inline code blocks, see the `<code>` tag). If the `<pre>` element is used by itself, without a `<code>` element inside it, it will simply display as preformatted text. If a `<code>` element is included inside the `<pre>`, however, that element will be `display: block;`.
+//
+// Markup: pre.hbs
+//
+// Styleguide Components.pre
+.pre {
+
+  font-family: var(--font-mono);
+  white-space: pre;
+
+  code {
+    .code;
+    display: block;
+    overflow-x: auto;
+    white-space: pre;
   }
 
 }

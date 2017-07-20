@@ -1,8 +1,10 @@
 .banner {
-  align-items: center;
+  --link-color: white;
+  --link-color-visited: white;
   background-color: var(--blue);
-  box-shadow: var(--shadow-deep);
   color: white;
+  align-items: center;
+  box-shadow: var(--shadow-deep);
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
@@ -18,4 +20,49 @@
 }
 .bulleted li {
   display: list-item;
+}
+.field {
+  background-color: transparent;
+  border: 0.075em solid var(--gray);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-inset);
+  padding: var(--padding-text);
+}
+.field:focus {
+  --shadow-color: var(--blue);
+  border-color: var(--blue);
+  box-shadow: var(--shadow-inset);
+  outline: none;
+}
+.field:focus:invalid {
+  --shadow-color: var(--darkred);
+  border-color: var(--darkred);
+  box-shadow: var(--shadow-inset);
+}
+.field:disabled {
+  background-color: #EAEDED;
+  color: #CAD2D3;
+  cursor: not-allowed;
+}
+.hanging {
+  margin-left: 1em;
+  text-indent: -1em;
+}
+.pre {
+  font-family: var(--font-mono);
+  white-space: pre;
+}
+.pre code {
+  background-color: var(--codegray);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  color: var(--codedarkgray);
+  font-family: var(--font-mono);
+  font-size: 0.75em;
+  font-style: normal;
+  padding: var(--padding-text);
+  white-space: pre-line;
+  display: block;
+  overflow-x: auto;
+  white-space: pre;
 }

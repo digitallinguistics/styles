@@ -1,13 +1,11 @@
 @import (reference) 'https://digitallinguistics.blob.core.windows.net/less/colors.less';
+@import (reference) 'https://digitallinguistics.blob.core.windows.net/less/headings.less';
 
 :root {
 
-  --border: 0.075em solid black;
   --border-gray: 0.075em solid var(--gray);
   --border-radius: 0.35em;
 
-  --font: 'Fira Sans', 'Calibri', 'DejaVu Sans', 'Verdana', 'Arial', 'Helvetica', sans-serif;
-  --font-mono: 'Fira Mono', 'Consolas', 'Monaco', 'DejaVu Mono', 'Courier New', monospace;
   --font-unicode: 'Gentium Plus', 'Charis SIL', 'Doulos SIL', 'Cambria', 'Andika', 'Lucida Sans Unicode', 'Times New Roman', 'Georgia', serif;
 
   --link-color: var(--blue);
@@ -16,13 +14,7 @@
   --padding-ipa: 0.15em;
   --padding-text: 0.25em 0.5em;
 
-  --shadow: 0.075em 0.075em 0.15em var(--gray);
   --shadow-button: inset -0.075em -0.075em 0.15em 0em rgba(0,0,0,0.15), var(--shadow);
-  --shadow-button-press: 0 0 0 0.075em rgba(0,0,0,0.15) inset, 0 0 0.5em rgba(0,0,0,0.2) inset;
-  --shadow-deep: 0rem 0.225em 0.225em var(--gray);
-  --shadow-inset: inset 0.075em 0.075em 0.15em var(--gray);
-  --shadow-inset-blue: inset 0.075em 0.075em 0.15em var(--blue);
-  --shadow-inset-red: inset 0.075em 0.075em 0.15em var(--darkred);
 
   --underline-blue: 0.075em solid var(--blue);
   --underline-purple: 0.075em solid var(--purple);
@@ -31,146 +23,6 @@
 }
 
 // PATTERNS
-.field {
-
-  background-color: white;
-  border: var(--border-gray);
-  border-radius: var(--border-radius);
-  box-shadow: var(--shadow-inset);
-  padding: var(--padding-text);
-
-  &:focus {
-
-    border-color: var(--blue);
-    box-shadow: var(--shadow-inset-blue);
-
-    &:invalid {
-      border-color: var(--darkred);
-      box-shadow: var(--shadow-inset-red);
-      color: var(--red);
-    }
-
-  }
-
-  &[disabled] {
-    background-color: #EAEDED;
-    color: #CAD2D3;
-    cursor: not-allowed;
-  }
-
-}
-
-.fieldset {
-  legend {
-    font-weight: bold;
-  }
-}
-
-.h-minor {
-  font-size: 1.25em;
-}
-
-.h-section {
-  font-size: 1.75em;
-  font-weight: bold;
-  padding-bottom: 0.25em;
-  padding-top: 0.5em;
-}
-
-.h-subsection {
-  font-size: 1.5em;
-  padding-bottom: 0.25em;
-  padding-top: 0.5em;
-}
-
-.h-subsubsection {
-  font-size: 1.5em;
-  font-style: italic;
-}
-
-.hanging {
-  margin-left: 1em;
-  text-indent: -1em;
-}
-
-.input {
-
-  &[type=button] {
-    // .button;
-  }
-
-  &[type=color] {
-    display: block;
-  }
-
-  &[type=date] {
-    .field;
-  }
-
-  &[type=datetime] {
-    .field;
-  }
-
-  &[type=datetime-local] {
-    .field;
-  }
-
-  &[type=email] {
-    .field;
-  }
-
-  &[type=month] {
-    .field;
-  }
-
-  &[type=number] {
-    .field;
-  }
-
-  &[type=password] {
-    .field;
-  }
-
-  &[type=reset] {
-    // .button;
-    .superdarkgreen-background;
-  }
-
-  &[type=search] {
-    .field;
-  }
-
-  &[type=submit] {
-    // .button;
-  }
-
-  &[type=tel] {
-    .field;
-  }
-
-  &[type=text] {
-    .field;
-    display: flex;
-  }
-
-  &[type=time] {
-    .field;
-  }
-
-  &[type=url] {
-    .field;
-  }
-
-  &[type=week] {
-    .field;
-  }
-
-}
-
-.italic {
-  font-style: italic;
-}
-
 .kbd {
 
   background-color: #F7F7F7;
@@ -275,12 +127,6 @@
   }
 }
 
-.page-title {
-  align-self: center;
-  font-size: 2.5em;
-  text-align: center;
-}
-
 .phonemic {
   .unicode;
   &::before {
@@ -309,7 +155,7 @@
 
   a { .link; }
 
-  h1 { .h-section; }
+  h1 { .h2; }
 
   ol, ul {
     list-style: disc outside none;
@@ -348,10 +194,6 @@
   display: flex; // TODO: remove this when flexbox-reset is updated
   flex-direction: row;
   margin-left: -1em;
-}
-
-.textarea {
-  .field;
 }
 
 .unicode {
