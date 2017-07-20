@@ -98,11 +98,11 @@
 	color: #444;
   padding: var(--padding-text);
 	text-align: center;
-	text-shadow: 0em 0.075em 0em white;
+	text-shadow: 0em var(--line-width) white;
 
   box-shadow: 0em 0.15em 0em var(--gray),
     0.02em 0.225em 0.2em var(--darkgray),
-    inset 0em 0.075em 0.075em white,
+    inset 0em var(--line-width) var(--line-width) white,
     inset 0em -0.075em 0.225em var(--gray);
 
 }
@@ -113,10 +113,8 @@
 //
 // Markup: link.hbs
 //
-// .link-white - Applies white coloring to link (for dark backgrounds)
-// :active     - When the link is being clicked
-// :hover      - When the link is hovered over
-// :visited    - When the link has already been visited
+// :hover   - When the link is hovered over
+// :visited - When the link has already been visited
 //
 // Styleguide Elements.Inline.link
 .link {
@@ -126,21 +124,20 @@
   border-bottom: var(--underline-transparent);
   text-decoration: none;
 
-  --underline: 0.075em solid var(--link-color);
+  &:visited {
+    --link-color: var(--link-color-visited);
+  }
 
-  &:link { color: var(--link-color); }
-  &:visited { color: var(--link-color-visited); }
-  &:hover { border-bottom: var(--underline); }
-  &:active { color: var(--link-color); }
-  &:visited:hover { border-bottom: var(--underline); }
-  &:visited:active { color: var(--link-color-visited); }
+  &:hover {
+    border-bottom: var(--underline);
+  }
 
 }
 
 .link-white {
   .link;
   --link-color: white;
-  --link-color-visited: white;
+  &:visited { --link-color: white; }
 }
 
 // Strong

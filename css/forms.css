@@ -481,6 +481,16 @@
 .label p {
   padding: var(--padding-text);
 }
+.select {
+  border: var(--border);
+  --border-color: var(--gray);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-button);
+  padding: var(--padding-text);
+}
+.select:focus {
+  outline: none;
+}
 .textarea {
   background-color: transparent;
   border: 0.075em solid var(--gray);

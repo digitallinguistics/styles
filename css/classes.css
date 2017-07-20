@@ -59,12 +59,6 @@
   margin-left: 1.5em;
   text-indent: -1.5em;
 }
-.select {
-  border: var(--border-gray);
-  border-radius: var(--border-radius);
-  box-shadow: var(--shadow-button);
-  padding: var(--padding-text);
-}
 .summary {
   align-items: center;
   display: flex;

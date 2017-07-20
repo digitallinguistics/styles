@@ -32,60 +32,36 @@
   color: #444;
   padding: var(--padding-text);
   text-align: center;
-  text-shadow: 0em 0.075em 0em white;
-  box-shadow: 0em 0.15em 0em var(--gray), 0.02em 0.225em 0.2em var(--darkgray), inset 0em 0.075em 0.075em white, inset 0em -0.075em 0.225em var(--gray);
+  text-shadow: 0em var(--line-width) white;
+  box-shadow: 0em 0.15em 0em var(--gray), 0.02em 0.225em 0.2em var(--darkgray), inset 0em var(--line-width) var(--line-width) white, inset 0em -0.075em 0.225em var(--gray);
 }
 .link {
   background: transparent;
   color: var(--link-color);
   border-bottom: var(--underline-transparent);
   text-decoration: none;
-  --underline: 0.075em solid var(--link-color);
-}
-.link:link {
-  color: var(--link-color);
 }
 .link:visited {
-  color: var(--link-color-visited);
+  --link-color: var(--link-color-visited);
 }
 .link:hover {
   border-bottom: var(--underline);
-}
-.link:active {
-  color: var(--link-color);
-}
-.link:visited:hover {
-  border-bottom: var(--underline);
-}
-.link:visited:active {
-  color: var(--link-color-visited);
 }
 .link-white {
   background: transparent;
   color: var(--link-color);
   border-bottom: var(--underline-transparent);
   text-decoration: none;
-  --underline: 0.075em solid var(--link-color);
   --link-color: white;
-  --link-color-visited: white;
-}
-.link-white:link {
-  color: var(--link-color);
 }
 .link-white:visited {
-  color: var(--link-color-visited);
+  --link-color: var(--link-color-visited);
 }
 .link-white:hover {
   border-bottom: var(--underline);
 }
-.link-white:active {
-  color: var(--link-color);
-}
-.link-white:visited:hover {
-  border-bottom: var(--underline);
-}
-.link-white:visited:active {
-  color: var(--link-color-visited);
+.link-white:visited {
+  --link-color: white;
 }
 .strong {
   color: var(--verydarkblue);

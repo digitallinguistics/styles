@@ -320,6 +320,22 @@
 
 }
 
+// Select
+//
+// Default styling for `<select>` elements.
+//
+// Markup: select.hbs
+//
+// Styleguide Elements.Forms.select
+.select {
+  border: var(--border);
+  --border-color: var(--gray);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-button);
+  padding: var(--padding-text);
+  &:focus { outline: none; }
+}
+
 // Textarea
 //
 // `<textarea>` elements use the same styling as text inputs.

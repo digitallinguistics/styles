@@ -3,12 +3,14 @@
   --bold: 600;
 
   --border-color: black;
-  --border: 0.075em solid var(--border-color);
+  --border: var(--line-width) solid var(--border-color);
   --border-radius: 0.35em;
 
   --font: 'Fira Sans', 'Calibri', 'DejaVu Sans', 'Verdana', 'Arial', 'Helvetica', sans-serif;
   --font-mono: 'Fira Mono', 'Consolas', 'Monaco', 'DejaVu Mono', 'Courier New', monospace;
   --font-unicode: 'Gentium Plus', 'Charis SIL', 'Doulos SIL', 'Cambria', 'Andika', 'Lucida Sans Unicode', 'Times New Roman', 'Georgia', serif;
+
+  --line-width: 0.075em;
 
   --link-color: var(--blue);
   --link-color-visited: var(--purple);
@@ -16,11 +18,12 @@
   --padding-text: 0.25em 0.5em;
 
   --shadow-color: var(--gray);
-  --shadow: 0.075em 0.075em 0.15em var(--shadow-color);
+  --shadow: var(--line-width) var(--line-width) 0.15em var(--shadow-color);
   --shadow-button: inset -0.075em -0.075em 0.15em rgba(0,0,0,0.15), var(--shadow);
   --shadow-deep: 0rem 0.225em 0.225em var(--shadow-color);
-  --shadow-inset: inset 0.075em 0.075em 0.15em var(--shadow-color);
+  --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
 
-  --underline-transparent: 0.075em solid transparent;
+  --underline: var(--line-width) solid;
+  --underline-transparent: var(--line-width) solid transparent;
 
 }
