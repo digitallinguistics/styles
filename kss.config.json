@@ -8,6 +8,8 @@
   "destination": "docs/",
   "homepage": "README.md",
   "builder": "node_modules/michelangelo/kss_styleguide/custom-template/",
-  "css": ["patterns.css"],
+  "css": [
+    "https://digitallinguistics.blob.core.windows.net/css/patterns.css"
+  ],
   "js": []
 }
