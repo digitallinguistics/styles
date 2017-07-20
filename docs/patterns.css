@@ -1500,3 +1500,7 @@
   overflow-x: auto;
   white-space: pre;
 }
+.kss-modifiers__example img {
+  height: 3rem;
+  width: 3rem;
+}

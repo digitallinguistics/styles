@@ -45,10 +45,24 @@
             </a>
           </li>
           <li class="kss-nav__item">
-            <a class="" href="section-images.html">
+            <a class="kss-state-active" href="section-images.html">
               <span class="kss-nav__ref">2</span>
               <span class="kss-nav__name">Images</span>
             </a>
+                <ul class="kss-nav__subnav">
+                    <li class="kss-nav__item ">
+                      <a href="section-images.html#kssref-images-blog">
+                        <span class="kss-nav__ref">2.1</span>
+                        <span class="kss-nav__name">blog.svg</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item ">
+                      <a href="section-images.html#kssref-images-book-open">
+                        <span class="kss-nav__ref">2.2</span>
+                        <span class="kss-nav__name">book.open.svg</span>
+                      </a>
+                    </li>
+                </ul>
           </li>
           <li class="kss-nav__item">
             <a class="" href="section-colors.html">
@@ -87,19 +101,38 @@
           the "root" element comes first in this loop, and can be detected using
           the "#if @first" block as seen below.
         -->
-            <header class="kss-section kss-section--depth-2" id="kssref-components-numbered">
+            <header class="kss-section kss-section--depth-1" id="kssref-images">
 
             <article class="kss-section__content">
-                <p class="kss-section__source">Source: <span>components.less</span>, line <span>165</span></p>
+                <p class="kss-section__source">Source: <span>images.less</span>, line <span>1</span></p>
 
-              <a class="kss-section__permalink" href="#kssref-components-numbered">
+              <a class="kss-section__permalink" href="#kssref-images">
+                <h1 class="kss-section__item kss-section__item--depth-1">
+                  <span class="kss-section__ref">2</span>
+                  <span class="kss-section__name">Images</span>
+                </h1>
+              </a>
+
+                <div class="kss-section__description"><p>Images and icons used in DLx projects. Many SVG icons are also available in different colors. For example, <code>blog.svg</code> is also available as <code>blog.blue.svg</code>. Sometimes you may need to set positive or negative margins on the image to make it the same size as other icons.</p>
+</div>
+
+            </article>
+
+
+            </header>
+            <section class="kss-section kss-section--depth-2" id="kssref-images-blog">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>images.less</span>, line <span>10</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-images-blog">
                 <h2 class="kss-section__item kss-section__item--depth-2">
-                  <span class="kss-section__ref">6.7</span>
-                  <span class="kss-section__name">Numbered List</span>
+                  <span class="kss-section__ref">2.1</span>
+                  <span class="kss-section__name">blog.svg</span>
                 </h2>
               </a>
 
-                <div class="kss-section__description"><p>For numbered lists.</p>
+                <div class="kss-section__description"><p>Generic blog icon</p>
 </div>
 
             </article>
@@ -108,25 +141,45 @@
                 <h1 class="kss-modifiers__heading">Example</h1>
 
 
-                <div class="kss-modifiers__example"><ol class=numbered>
-  <li>List Item 1</li>
-  <li>List Item 2</li>
-  <li>List Item 3</li>
-</ol>
-</div>
+                <div class="kss-modifiers__example"><img src=../img/blog.svg></div>
 
               </article>
 
                 <article class="kss-section__markup">
-                  <pre><code class="language-markup">&lt;ol class&#x3D;numbered&gt;
-  &lt;li&gt;List Item 1&lt;/li&gt;
-  &lt;li&gt;List Item 2&lt;/li&gt;
-  &lt;li&gt;List Item 3&lt;/li&gt;
-&lt;/ol&gt;
-</code></pre>
+                  <pre><code class="language-markup">&lt;img src&#x3D;../img/blog.svg&gt;</code></pre>
                 </article>
 
-            </header>
+            </section>
+            <section class="kss-section kss-section--depth-2" id="kssref-images-book-open">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>images.less</span>, line <span>20</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-images-book-open">
+                <h2 class="kss-section__item kss-section__item--depth-2">
+                  <span class="kss-section__ref">2.2</span>
+                  <span class="kss-section__name">book.open.svg</span>
+                </h2>
+              </a>
+
+                <div class="kss-section__description"><p>Open book image. Useful as a documentation icon.</p>
+</div>
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Example</h1>
+
+
+                <div class="kss-modifiers__example"><img src=../img/book.open.svg></div>
+
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;img src&#x3D;../img/book.open.svg&gt;</code></pre>
+                </article>
+
+            </section>
     </section>
     <!-- /documentation. -->
 
