@@ -75,20 +75,38 @@
                       </a>
                     </li>
                     <li class="kss-nav__item ">
-                      <a href="section-components.html#kssref-components-field">
+                      <a href="section-components.html#kssref-components-details">
                         <span class="kss-nav__ref">4.3</span>
+                        <span class="kss-nav__name">Details / Summary</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item ">
+                      <a href="section-components.html#kssref-components-field">
+                        <span class="kss-nav__ref">4.4</span>
                         <span class="kss-nav__name">Text Field</span>
                       </a>
                     </li>
                     <li class="kss-nav__item ">
                       <a href="section-components.html#kssref-components-hanging">
-                        <span class="kss-nav__ref">4.4</span>
+                        <span class="kss-nav__ref">4.5</span>
                         <span class="kss-nav__name">Hanging Indented Paragraph</span>
                       </a>
                     </li>
                     <li class="kss-nav__item ">
+                      <a href="section-components.html#kssref-components-nav">
+                        <span class="kss-nav__ref">4.6</span>
+                        <span class="kss-nav__name">Navigation</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item ">
+                      <a href="section-components.html#kssref-components-numbered">
+                        <span class="kss-nav__ref">4.7</span>
+                        <span class="kss-nav__name">Numbered List</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item ">
                       <a href="section-components.html#kssref-components-pre">
-                        <span class="kss-nav__ref">4.5</span>
+                        <span class="kss-nav__ref">4.8</span>
                         <span class="kss-nav__name">Pre</span>
                       </a>
                     </li>
@@ -204,14 +222,66 @@
                 </article>
 
             </section>
-            <section class="kss-section kss-section--depth-2" id="kssref-components-field">
+            <section class="kss-section kss-section--depth-2" id="kssref-components-details">
 
             <article class="kss-section__content">
                 <p class="kss-section__source">Source: <span>components.less</span>, line <span>56</span></p>
 
-              <a class="kss-section__permalink" href="#kssref-components-field">
+              <a class="kss-section__permalink" href="#kssref-components-details">
                 <h2 class="kss-section__item kss-section__item--depth-2">
                   <span class="kss-section__ref">4.3</span>
+                  <span class="kss-section__name">Details / Summary</span>
+                </h2>
+              </a>
+
+                <div class="kss-section__description"><p>A collapsable <code>&lt;details&gt;</code> element, with an optional <code>&lt;summary&gt;</code> element. <strong>NOTE:</strong> Not currently supported on Edge.</p>
+</div>
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Example</h1>
+
+
+                <div class="kss-modifiers__example"><details open>
+
+  <summary>Summary for this Section</summary>
+
+  <ol class=numbered>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ol>
+
+</details>
+</div>
+
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;details open&gt;
+
+  &lt;summary&gt;Summary for this Section&lt;/summary&gt;
+
+  &lt;ol class&#x3D;numbered&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+  &lt;/ol&gt;
+
+&lt;/details&gt;
+</code></pre>
+                </article>
+
+            </section>
+            <section class="kss-section kss-section--depth-2" id="kssref-components-field">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>components.less</span>, line <span>73</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-components-field">
+                <h2 class="kss-section__item kss-section__item--depth-2">
+                  <span class="kss-section__ref">4.4</span>
                   <span class="kss-section__name">Text Field</span>
                 </h2>
               </a>
@@ -304,11 +374,11 @@
             <section class="kss-section kss-section--depth-2" id="kssref-components-hanging">
 
             <article class="kss-section__content">
-                <p class="kss-section__source">Source: <span>components.less</span>, line <span>97</span></p>
+                <p class="kss-section__source">Source: <span>components.less</span>, line <span>116</span></p>
 
               <a class="kss-section__permalink" href="#kssref-components-hanging">
                 <h2 class="kss-section__item kss-section__item--depth-2">
-                  <span class="kss-section__ref">4.4</span>
+                  <span class="kss-section__ref">4.5</span>
                   <span class="kss-section__name">Hanging Indented Paragraph</span>
                 </h2>
               </a>
@@ -337,14 +407,98 @@
                 </article>
 
             </section>
+            <section class="kss-section kss-section--depth-2" id="kssref-components-nav">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>components.less</span>, line <span>128</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-components-nav">
+                <h2 class="kss-section__item kss-section__item--depth-2">
+                  <span class="kss-section__ref">4.6</span>
+                  <span class="kss-section__name">Navigation</span>
+                </h2>
+              </a>
+
+                <div class="kss-section__description"><p>A main navigation bar at the top of the page. The <code>.banner</code> and <code>.nav</code> classes are generally compatible.</p>
+</div>
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Example</h1>
+
+
+                <div class="kss-modifiers__example"><nav class=nav>
+  <ul>
+    <li><a href=#>Nav Link 1</a></li>
+    <li><a href=#>Nav Link 2</a></li>
+    <li><a href=#>Nav Link 3</a></li>
+  </ul>
+</nav>
+</div>
+
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;nav class&#x3D;nav&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href&#x3D;#&gt;Nav Link 1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href&#x3D;#&gt;Nav Link 2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href&#x3D;#&gt;Nav Link 3&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+</code></pre>
+                </article>
+
+            </section>
+            <section class="kss-section kss-section--depth-2" id="kssref-components-numbered">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>components.less</span>, line <span>163</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-components-numbered">
+                <h2 class="kss-section__item kss-section__item--depth-2">
+                  <span class="kss-section__ref">4.7</span>
+                  <span class="kss-section__name">Numbered List</span>
+                </h2>
+              </a>
+
+                <div class="kss-section__description"><p>For numbered lists.</p>
+</div>
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Example</h1>
+
+
+                <div class="kss-modifiers__example"><ol class=numbered>
+  <li>List Item 1</li>
+  <li>List Item 2</li>
+  <li>List Item 3</li>
+</ol>
+</div>
+
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;ol class&#x3D;numbered&gt;
+  &lt;li&gt;List Item 1&lt;/li&gt;
+  &lt;li&gt;List Item 2&lt;/li&gt;
+  &lt;li&gt;List Item 3&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre>
+                </article>
+
+            </section>
             <section class="kss-section kss-section--depth-2" id="kssref-components-pre">
 
             <article class="kss-section__content">
-                <p class="kss-section__source">Source: <span>components.less</span>, line <span>109</span></p>
+                <p class="kss-section__source">Source: <span>components.less</span>, line <span>193</span></p>
 
               <a class="kss-section__permalink" href="#kssref-components-pre">
                 <h2 class="kss-section__item kss-section__item--depth-2">
-                  <span class="kss-section__ref">4.5</span>
+                  <span class="kss-section__ref">4.8</span>
                   <span class="kss-section__name">Pre</span>
                 </h2>
               </a>

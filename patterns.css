@@ -366,12 +366,12 @@ This file contains LESS variables for each of the colors in the DLx color schema
   --line-width: 0.075em;
   --link-color: var(--blue);
   --link-color-visited: var(--purple);
+  --padding-ipa: 0.15em;
   --padding-text: 0.25em 0.5em;
   --shadow-color: var(--gray);
   --shadow: var(--line-width) var(--line-width) 0.15em var(--shadow-color);
   --shadow-button: inset -0.075em -0.075em 0.15em rgba(0, 0, 0, 0.15), var(--shadow);
   --shadow-deep: 0rem 0.225em 0.225em var(--shadow-color);
-  --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
   --underline: var(--line-width) solid;
   --underline-transparent: var(--line-width) solid transparent;
 }
@@ -461,6 +461,7 @@ This file contains LESS variables for each of the colors in the DLx color schema
   display: block;
 }
 .input[type=date] {
+  --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
   background-color: transparent;
   border: 0.075em solid var(--gray);
   border-radius: var(--border-radius);
@@ -468,15 +469,15 @@ This file contains LESS variables for each of the colors in the DLx color schema
   padding: var(--padding-text);
 }
 .input[type=date]:focus {
-  --shadow-color: var(--blue);
   border-color: var(--blue);
   box-shadow: var(--shadow-inset);
   outline: none;
+  --shadow-color: var(--blue);
 }
 .input[type=date]:focus:invalid {
-  --shadow-color: var(--darkred);
   border-color: var(--darkred);
   box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
 }
 .input[type=date]:disabled {
   background-color: #EAEDED;
@@ -484,15 +485,15 @@ This file contains LESS variables for each of the colors in the DLx color schema
   cursor: not-allowed;
 }
 .input[type=date]:focus {
-  --shadow-color: var(--blue);
   border-color: var(--blue);
   box-shadow: var(--shadow-inset);
   outline: none;
+  --shadow-color: var(--blue);
 }
 .input[type=date]:focus:invalid {
-  --shadow-color: var(--darkred);
   border-color: var(--darkred);
   box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
 }
 .input[type=date]:disabled {
   background-color: #EAEDED;
@@ -500,6 +501,7 @@ This file contains LESS variables for each of the colors in the DLx color schema
   cursor: not-allowed;
 }
 .input[type=datetime] {
+  --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
   background-color: transparent;
   border: 0.075em solid var(--gray);
   border-radius: var(--border-radius);
@@ -507,15 +509,15 @@ This file contains LESS variables for each of the colors in the DLx color schema
   padding: var(--padding-text);
 }
 .input[type=datetime]:focus {
-  --shadow-color: var(--blue);
   border-color: var(--blue);
   box-shadow: var(--shadow-inset);
   outline: none;
+  --shadow-color: var(--blue);
 }
 .input[type=datetime]:focus:invalid {
-  --shadow-color: var(--darkred);
   border-color: var(--darkred);
   box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
 }
 .input[type=datetime]:disabled {
   background-color: #EAEDED;
@@ -523,15 +525,15 @@ This file contains LESS variables for each of the colors in the DLx color schema
   cursor: not-allowed;
 }
 .input[type=datetime]:focus {
-  --shadow-color: var(--blue);
   border-color: var(--blue);
   box-shadow: var(--shadow-inset);
   outline: none;
+  --shadow-color: var(--blue);
 }
 .input[type=datetime]:focus:invalid {
-  --shadow-color: var(--darkred);
   border-color: var(--darkred);
   box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
 }
 .input[type=datetime]:disabled {
   background-color: #EAEDED;
@@ -539,6 +541,7 @@ This file contains LESS variables for each of the colors in the DLx color schema
   cursor: not-allowed;
 }
 .input[type=datetime-local] {
+  --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
   background-color: transparent;
   border: 0.075em solid var(--gray);
   border-radius: var(--border-radius);
@@ -546,15 +549,15 @@ This file contains LESS variables for each of the colors in the DLx color schema
   padding: var(--padding-text);
 }
 .input[type=datetime-local]:focus {
-  --shadow-color: var(--blue);
   border-color: var(--blue);
   box-shadow: var(--shadow-inset);
   outline: none;
+  --shadow-color: var(--blue);
 }
 .input[type=datetime-local]:focus:invalid {
-  --shadow-color: var(--darkred);
   border-color: var(--darkred);
   box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
 }
 .input[type=datetime-local]:disabled {
   background-color: #EAEDED;
@@ -562,15 +565,15 @@ This file contains LESS variables for each of the colors in the DLx color schema
   cursor: not-allowed;
 }
 .input[type=datetime-local]:focus {
-  --shadow-color: var(--blue);
   border-color: var(--blue);
   box-shadow: var(--shadow-inset);
   outline: none;
+  --shadow-color: var(--blue);
 }
 .input[type=datetime-local]:focus:invalid {
-  --shadow-color: var(--darkred);
   border-color: var(--darkred);
   box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
 }
 .input[type=datetime-local]:disabled {
   background-color: #EAEDED;
@@ -578,6 +581,7 @@ This file contains LESS variables for each of the colors in the DLx color schema
   cursor: not-allowed;
 }
 .input[type=email] {
+  --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
   background-color: transparent;
   border: 0.075em solid var(--gray);
   border-radius: var(--border-radius);
@@ -585,15 +589,15 @@ This file contains LESS variables for each of the colors in the DLx color schema
   padding: var(--padding-text);
 }
 .input[type=email]:focus {
-  --shadow-color: var(--blue);
   border-color: var(--blue);
   box-shadow: var(--shadow-inset);
   outline: none;
+  --shadow-color: var(--blue);
 }
 .input[type=email]:focus:invalid {
-  --shadow-color: var(--darkred);
   border-color: var(--darkred);
   box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
 }
 .input[type=email]:disabled {
   background-color: #EAEDED;
@@ -601,15 +605,15 @@ This file contains LESS variables for each of the colors in the DLx color schema
   cursor: not-allowed;
 }
 .input[type=email]:focus {
-  --shadow-color: var(--blue);
   border-color: var(--blue);
   box-shadow: var(--shadow-inset);
   outline: none;
+  --shadow-color: var(--blue);
 }
 .input[type=email]:focus:invalid {
-  --shadow-color: var(--darkred);
   border-color: var(--darkred);
   box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
 }
 .input[type=email]:disabled {
   background-color: #EAEDED;
@@ -617,6 +621,7 @@ This file contains LESS variables for each of the colors in the DLx color schema
   cursor: not-allowed;
 }
 .input[type=month] {
+  --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
   background-color: transparent;
   border: 0.075em solid var(--gray);
   border-radius: var(--border-radius);
@@ -624,15 +629,15 @@ This file contains LESS variables for each of the colors in the DLx color schema
   padding: var(--padding-text);
 }
 .input[type=month]:focus {
-  --shadow-color: var(--blue);
   border-color: var(--blue);
   box-shadow: var(--shadow-inset);
   outline: none;
+  --shadow-color: var(--blue);
 }
 .input[type=month]:focus:invalid {
-  --shadow-color: var(--darkred);
   border-color: var(--darkred);
   box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
 }
 .input[type=month]:disabled {
   background-color: #EAEDED;
@@ -640,15 +645,15 @@ This file contains LESS variables for each of the colors in the DLx color schema
   cursor: not-allowed;
 }
 .input[type=month]:focus {
-  --shadow-color: var(--blue);
   border-color: var(--blue);
   box-shadow: var(--shadow-inset);
   outline: none;
+  --shadow-color: var(--blue);
 }
 .input[type=month]:focus:invalid {
-  --shadow-color: var(--darkred);
   border-color: var(--darkred);
   box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
 }
 .input[type=month]:disabled {
   background-color: #EAEDED;
@@ -656,6 +661,7 @@ This file contains LESS variables for each of the colors in the DLx color schema
   cursor: not-allowed;
 }
 .input[type=number] {
+  --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
   background-color: transparent;
   border: 0.075em solid var(--gray);
   border-radius: var(--border-radius);
@@ -663,15 +669,15 @@ This file contains LESS variables for each of the colors in the DLx color schema
   padding: var(--padding-text);
 }
 .input[type=number]:focus {
-  --shadow-color: var(--blue);
   border-color: var(--blue);
   box-shadow: var(--shadow-inset);
   outline: none;
+  --shadow-color: var(--blue);
 }
 .input[type=number]:focus:invalid {
-  --shadow-color: var(--darkred);
   border-color: var(--darkred);
   box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
 }
 .input[type=number]:disabled {
   background-color: #EAEDED;
@@ -679,15 +685,15 @@ This file contains LESS variables for each of the colors in the DLx color schema
   cursor: not-allowed;
 }
 .input[type=number]:focus {
-  --shadow-color: var(--blue);
   border-color: var(--blue);
   box-shadow: var(--shadow-inset);
   outline: none;
+  --shadow-color: var(--blue);
 }
 .input[type=number]:focus:invalid {
-  --shadow-color: var(--darkred);
   border-color: var(--darkred);
   box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
 }
 .input[type=number]:disabled {
   background-color: #EAEDED;
@@ -695,6 +701,7 @@ This file contains LESS variables for each of the colors in the DLx color schema
   cursor: not-allowed;
 }
 .input[type=password] {
+  --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
   background-color: transparent;
   border: 0.075em solid var(--gray);
   border-radius: var(--border-radius);
@@ -702,15 +709,15 @@ This file contains LESS variables for each of the colors in the DLx color schema
   padding: var(--padding-text);
 }
 .input[type=password]:focus {
-  --shadow-color: var(--blue);
   border-color: var(--blue);
   box-shadow: var(--shadow-inset);
   outline: none;
+  --shadow-color: var(--blue);
 }
 .input[type=password]:focus:invalid {
-  --shadow-color: var(--darkred);
   border-color: var(--darkred);
   box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
 }
 .input[type=password]:disabled {
   background-color: #EAEDED;
@@ -718,15 +725,15 @@ This file contains LESS variables for each of the colors in the DLx color schema
   cursor: not-allowed;
 }
 .input[type=password]:focus {
-  --shadow-color: var(--blue);
   border-color: var(--blue);
   box-shadow: var(--shadow-inset);
   outline: none;
+  --shadow-color: var(--blue);
 }
 .input[type=password]:focus:invalid {
-  --shadow-color: var(--darkred);
   border-color: var(--darkred);
   box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
 }
 .input[type=password]:disabled {
   background-color: #EAEDED;
@@ -778,6 +785,7 @@ This file contains LESS variables for each of the colors in the DLx color schema
   color: white;
 }
 .input[type=search] {
+  --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
   background-color: transparent;
   border: 0.075em solid var(--gray);
   border-radius: var(--border-radius);
@@ -785,15 +793,15 @@ This file contains LESS variables for each of the colors in the DLx color schema
   padding: var(--padding-text);
 }
 .input[type=search]:focus {
-  --shadow-color: var(--blue);
   border-color: var(--blue);
   box-shadow: var(--shadow-inset);
   outline: none;
+  --shadow-color: var(--blue);
 }
 .input[type=search]:focus:invalid {
-  --shadow-color: var(--darkred);
   border-color: var(--darkred);
   box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
 }
 .input[type=search]:disabled {
   background-color: #EAEDED;
@@ -801,15 +809,15 @@ This file contains LESS variables for each of the colors in the DLx color schema
   cursor: not-allowed;
 }
 .input[type=search]:focus {
-  --shadow-color: var(--blue);
   border-color: var(--blue);
   box-shadow: var(--shadow-inset);
   outline: none;
+  --shadow-color: var(--blue);
 }
 .input[type=search]:focus:invalid {
-  --shadow-color: var(--darkred);
   border-color: var(--darkred);
   box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
 }
 .input[type=search]:disabled {
   background-color: #EAEDED;
@@ -852,6 +860,7 @@ This file contains LESS variables for each of the colors in the DLx color schema
   color: white;
 }
 .input[type=tel] {
+  --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
   background-color: transparent;
   border: 0.075em solid var(--gray);
   border-radius: var(--border-radius);
@@ -859,15 +868,15 @@ This file contains LESS variables for each of the colors in the DLx color schema
   padding: var(--padding-text);
 }
 .input[type=tel]:focus {
-  --shadow-color: var(--blue);
   border-color: var(--blue);
   box-shadow: var(--shadow-inset);
   outline: none;
+  --shadow-color: var(--blue);
 }
 .input[type=tel]:focus:invalid {
-  --shadow-color: var(--darkred);
   border-color: var(--darkred);
   box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
 }
 .input[type=tel]:disabled {
   background-color: #EAEDED;
@@ -875,15 +884,15 @@ This file contains LESS variables for each of the colors in the DLx color schema
   cursor: not-allowed;
 }
 .input[type=tel]:focus {
-  --shadow-color: var(--blue);
   border-color: var(--blue);
   box-shadow: var(--shadow-inset);
   outline: none;
+  --shadow-color: var(--blue);
 }
 .input[type=tel]:focus:invalid {
-  --shadow-color: var(--darkred);
   border-color: var(--darkred);
   box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
 }
 .input[type=tel]:disabled {
   background-color: #EAEDED;
@@ -891,6 +900,7 @@ This file contains LESS variables for each of the colors in the DLx color schema
   cursor: not-allowed;
 }
 .input[type=text] {
+  --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
   background-color: transparent;
   border: 0.075em solid var(--gray);
   border-radius: var(--border-radius);
@@ -898,15 +908,15 @@ This file contains LESS variables for each of the colors in the DLx color schema
   padding: var(--padding-text);
 }
 .input[type=text]:focus {
-  --shadow-color: var(--blue);
   border-color: var(--blue);
   box-shadow: var(--shadow-inset);
   outline: none;
+  --shadow-color: var(--blue);
 }
 .input[type=text]:focus:invalid {
-  --shadow-color: var(--darkred);
   border-color: var(--darkred);
   box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
 }
 .input[type=text]:disabled {
   background-color: #EAEDED;
@@ -914,15 +924,15 @@ This file contains LESS variables for each of the colors in the DLx color schema
   cursor: not-allowed;
 }
 .input[type=text]:focus {
-  --shadow-color: var(--blue);
   border-color: var(--blue);
   box-shadow: var(--shadow-inset);
   outline: none;
+  --shadow-color: var(--blue);
 }
 .input[type=text]:focus:invalid {
-  --shadow-color: var(--darkred);
   border-color: var(--darkred);
   box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
 }
 .input[type=text]:disabled {
   background-color: #EAEDED;
@@ -930,6 +940,7 @@ This file contains LESS variables for each of the colors in the DLx color schema
   cursor: not-allowed;
 }
 .input[type=time] {
+  --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
   background-color: transparent;
   border: 0.075em solid var(--gray);
   border-radius: var(--border-radius);
@@ -937,15 +948,15 @@ This file contains LESS variables for each of the colors in the DLx color schema
   padding: var(--padding-text);
 }
 .input[type=time]:focus {
-  --shadow-color: var(--blue);
   border-color: var(--blue);
   box-shadow: var(--shadow-inset);
   outline: none;
+  --shadow-color: var(--blue);
 }
 .input[type=time]:focus:invalid {
-  --shadow-color: var(--darkred);
   border-color: var(--darkred);
   box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
 }
 .input[type=time]:disabled {
   background-color: #EAEDED;
@@ -953,15 +964,15 @@ This file contains LESS variables for each of the colors in the DLx color schema
   cursor: not-allowed;
 }
 .input[type=time]:focus {
-  --shadow-color: var(--blue);
   border-color: var(--blue);
   box-shadow: var(--shadow-inset);
   outline: none;
+  --shadow-color: var(--blue);
 }
 .input[type=time]:focus:invalid {
-  --shadow-color: var(--darkred);
   border-color: var(--darkred);
   box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
 }
 .input[type=time]:disabled {
   background-color: #EAEDED;
@@ -969,6 +980,7 @@ This file contains LESS variables for each of the colors in the DLx color schema
   cursor: not-allowed;
 }
 .input[type=url] {
+  --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
   background-color: transparent;
   border: 0.075em solid var(--gray);
   border-radius: var(--border-radius);
@@ -976,15 +988,15 @@ This file contains LESS variables for each of the colors in the DLx color schema
   padding: var(--padding-text);
 }
 .input[type=url]:focus {
-  --shadow-color: var(--blue);
   border-color: var(--blue);
   box-shadow: var(--shadow-inset);
   outline: none;
+  --shadow-color: var(--blue);
 }
 .input[type=url]:focus:invalid {
-  --shadow-color: var(--darkred);
   border-color: var(--darkred);
   box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
 }
 .input[type=url]:disabled {
   background-color: #EAEDED;
@@ -992,15 +1004,15 @@ This file contains LESS variables for each of the colors in the DLx color schema
   cursor: not-allowed;
 }
 .input[type=url]:focus {
-  --shadow-color: var(--blue);
   border-color: var(--blue);
   box-shadow: var(--shadow-inset);
   outline: none;
+  --shadow-color: var(--blue);
 }
 .input[type=url]:focus:invalid {
-  --shadow-color: var(--darkred);
   border-color: var(--darkred);
   box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
 }
 .input[type=url]:disabled {
   background-color: #EAEDED;
@@ -1008,6 +1020,7 @@ This file contains LESS variables for each of the colors in the DLx color schema
   cursor: not-allowed;
 }
 .input[type=week] {
+  --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
   background-color: transparent;
   border: 0.075em solid var(--gray);
   border-radius: var(--border-radius);
@@ -1015,15 +1028,15 @@ This file contains LESS variables for each of the colors in the DLx color schema
   padding: var(--padding-text);
 }
 .input[type=week]:focus {
-  --shadow-color: var(--blue);
   border-color: var(--blue);
   box-shadow: var(--shadow-inset);
   outline: none;
+  --shadow-color: var(--blue);
 }
 .input[type=week]:focus:invalid {
-  --shadow-color: var(--darkred);
   border-color: var(--darkred);
   box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
 }
 .input[type=week]:disabled {
   background-color: #EAEDED;
@@ -1031,15 +1044,15 @@ This file contains LESS variables for each of the colors in the DLx color schema
   cursor: not-allowed;
 }
 .input[type=week]:focus {
-  --shadow-color: var(--blue);
   border-color: var(--blue);
   box-shadow: var(--shadow-inset);
   outline: none;
+  --shadow-color: var(--blue);
 }
 .input[type=week]:focus:invalid {
-  --shadow-color: var(--darkred);
   border-color: var(--darkred);
   box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
 }
 .input[type=week]:disabled {
   background-color: #EAEDED;
@@ -1077,6 +1090,7 @@ This file contains LESS variables for each of the colors in the DLx color schema
   outline: none;
 }
 .textarea {
+  --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
   background-color: transparent;
   border: 0.075em solid var(--gray);
   border-radius: var(--border-radius);
@@ -1084,15 +1098,15 @@ This file contains LESS variables for each of the colors in the DLx color schema
   padding: var(--padding-text);
 }
 .textarea:focus {
-  --shadow-color: var(--blue);
   border-color: var(--blue);
   box-shadow: var(--shadow-inset);
   outline: none;
+  --shadow-color: var(--blue);
 }
 .textarea:focus:invalid {
-  --shadow-color: var(--darkred);
   border-color: var(--darkred);
   box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
 }
 .textarea:disabled {
   background-color: #EAEDED;
@@ -1100,15 +1114,15 @@ This file contains LESS variables for each of the colors in the DLx color schema
   cursor: not-allowed;
 }
 .textarea:focus {
-  --shadow-color: var(--blue);
   border-color: var(--blue);
   box-shadow: var(--shadow-inset);
   outline: none;
+  --shadow-color: var(--blue);
 }
 .textarea:focus:invalid {
-  --shadow-color: var(--darkred);
   border-color: var(--darkred);
   box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
 }
 .textarea:disabled {
   background-color: #EAEDED;
@@ -1293,7 +1307,15 @@ This file contains LESS variables for each of the colors in the DLx color schema
 .bulleted li {
   display: list-item;
 }
+.details summary {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  font-weight: var(--bold);
+  margin-left: -1em;
+}
 .field {
+  --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
   background-color: transparent;
   border: 0.075em solid var(--gray);
   border-radius: var(--border-radius);
@@ -1301,15 +1323,15 @@ This file contains LESS variables for each of the colors in the DLx color schema
   padding: var(--padding-text);
 }
 .field:focus {
-  --shadow-color: var(--blue);
   border-color: var(--blue);
   box-shadow: var(--shadow-inset);
   outline: none;
+  --shadow-color: var(--blue);
 }
 .field:focus:invalid {
-  --shadow-color: var(--darkred);
   border-color: var(--darkred);
   box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
 }
 .field:disabled {
   background-color: #EAEDED;
@@ -1319,6 +1341,57 @@ This file contains LESS variables for each of the colors in the DLx color schema
 .hanging {
   margin-left: 1em;
   text-indent: -1em;
+}
+.nav ul {
+  --link-color: white;
+  --link-color-visited: white;
+  background-color: var(--blue);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 1.25em;
+  list-style: none;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+.nav ul li {
+  padding: 0.5em;
+  white-space: nowrap;
+}
+.nav ul a {
+  background: transparent;
+  color: var(--link-color);
+  border-bottom: var(--underline-transparent);
+  text-decoration: none;
+  --link-color: white;
+  text-align: center;
+}
+.nav ul a:visited {
+  --link-color: var(--link-color-visited);
+}
+.nav ul a:hover {
+  border-bottom: var(--underline);
+}
+.nav ul a:visited {
+  --link-color: white;
+}
+.numbered {
+  counter-reset: numbered;
+  list-style: none;
+}
+.numbered li {
+  counter-increment: numbered;
+  display: list-item;
+  margin-left: 2.5em;
+}
+.numbered li::before {
+  content: counter(numbered) '.';
+  font-weight: bold;
+  margin-left: -2.5em;
+  padding: var(--padding-text);
+  padding: 0.25em 0.5em;
 }
 .pre {
   font-family: var(--font-mono);

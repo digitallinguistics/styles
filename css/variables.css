@@ -9,12 +9,12 @@
   --line-width: 0.075em;
   --link-color: var(--blue);
   --link-color-visited: var(--purple);
+  --padding-ipa: 0.15em;
   --padding-text: 0.25em 0.5em;
   --shadow-color: var(--gray);
   --shadow: var(--line-width) var(--line-width) 0.15em var(--shadow-color);
   --shadow-button: inset -0.075em -0.075em 0.15em rgba(0, 0, 0, 0.15), var(--shadow);
   --shadow-deep: 0rem 0.225em 0.225em var(--shadow-color);
-  --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
   --underline: var(--line-width) solid;
   --underline-transparent: var(--line-width) solid transparent;
 }

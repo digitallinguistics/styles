@@ -84,6 +84,7 @@
   display: block;
 }
 .input[type=date] {
+  --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
   background-color: transparent;
   border: 0.075em solid var(--gray);
   border-radius: var(--border-radius);
@@ -91,15 +92,15 @@
   padding: var(--padding-text);
 }
 .input[type=date]:focus {
-  --shadow-color: var(--blue);
   border-color: var(--blue);
   box-shadow: var(--shadow-inset);
   outline: none;
+  --shadow-color: var(--blue);
 }
 .input[type=date]:focus:invalid {
-  --shadow-color: var(--darkred);
   border-color: var(--darkred);
   box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
 }
 .input[type=date]:disabled {
   background-color: #EAEDED;
@@ -107,6 +108,7 @@
   cursor: not-allowed;
 }
 .input[type=datetime] {
+  --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
   background-color: transparent;
   border: 0.075em solid var(--gray);
   border-radius: var(--border-radius);
@@ -114,15 +116,15 @@
   padding: var(--padding-text);
 }
 .input[type=datetime]:focus {
-  --shadow-color: var(--blue);
   border-color: var(--blue);
   box-shadow: var(--shadow-inset);
   outline: none;
+  --shadow-color: var(--blue);
 }
 .input[type=datetime]:focus:invalid {
-  --shadow-color: var(--darkred);
   border-color: var(--darkred);
   box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
 }
 .input[type=datetime]:disabled {
   background-color: #EAEDED;
@@ -130,6 +132,7 @@
   cursor: not-allowed;
 }
 .input[type=datetime-local] {
+  --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
   background-color: transparent;
   border: 0.075em solid var(--gray);
   border-radius: var(--border-radius);
@@ -137,15 +140,15 @@
   padding: var(--padding-text);
 }
 .input[type=datetime-local]:focus {
-  --shadow-color: var(--blue);
   border-color: var(--blue);
   box-shadow: var(--shadow-inset);
   outline: none;
+  --shadow-color: var(--blue);
 }
 .input[type=datetime-local]:focus:invalid {
-  --shadow-color: var(--darkred);
   border-color: var(--darkred);
   box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
 }
 .input[type=datetime-local]:disabled {
   background-color: #EAEDED;
@@ -153,6 +156,7 @@
   cursor: not-allowed;
 }
 .input[type=email] {
+  --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
   background-color: transparent;
   border: 0.075em solid var(--gray);
   border-radius: var(--border-radius);
@@ -160,15 +164,15 @@
   padding: var(--padding-text);
 }
 .input[type=email]:focus {
-  --shadow-color: var(--blue);
   border-color: var(--blue);
   box-shadow: var(--shadow-inset);
   outline: none;
+  --shadow-color: var(--blue);
 }
 .input[type=email]:focus:invalid {
-  --shadow-color: var(--darkred);
   border-color: var(--darkred);
   box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
 }
 .input[type=email]:disabled {
   background-color: #EAEDED;
@@ -176,6 +180,7 @@
   cursor: not-allowed;
 }
 .input[type=month] {
+  --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
   background-color: transparent;
   border: 0.075em solid var(--gray);
   border-radius: var(--border-radius);
@@ -183,15 +188,15 @@
   padding: var(--padding-text);
 }
 .input[type=month]:focus {
-  --shadow-color: var(--blue);
   border-color: var(--blue);
   box-shadow: var(--shadow-inset);
   outline: none;
+  --shadow-color: var(--blue);
 }
 .input[type=month]:focus:invalid {
-  --shadow-color: var(--darkred);
   border-color: var(--darkred);
   box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
 }
 .input[type=month]:disabled {
   background-color: #EAEDED;
@@ -199,6 +204,7 @@
   cursor: not-allowed;
 }
 .input[type=number] {
+  --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
   background-color: transparent;
   border: 0.075em solid var(--gray);
   border-radius: var(--border-radius);
@@ -206,15 +212,15 @@
   padding: var(--padding-text);
 }
 .input[type=number]:focus {
-  --shadow-color: var(--blue);
   border-color: var(--blue);
   box-shadow: var(--shadow-inset);
   outline: none;
+  --shadow-color: var(--blue);
 }
 .input[type=number]:focus:invalid {
-  --shadow-color: var(--darkred);
   border-color: var(--darkred);
   box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
 }
 .input[type=number]:disabled {
   background-color: #EAEDED;
@@ -222,6 +228,7 @@
   cursor: not-allowed;
 }
 .input[type=password] {
+  --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
   background-color: transparent;
   border: 0.075em solid var(--gray);
   border-radius: var(--border-radius);
@@ -229,15 +236,15 @@
   padding: var(--padding-text);
 }
 .input[type=password]:focus {
-  --shadow-color: var(--blue);
   border-color: var(--blue);
   box-shadow: var(--shadow-inset);
   outline: none;
+  --shadow-color: var(--blue);
 }
 .input[type=password]:focus:invalid {
-  --shadow-color: var(--darkred);
   border-color: var(--darkred);
   box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
 }
 .input[type=password]:disabled {
   background-color: #EAEDED;
@@ -289,6 +296,7 @@
   color: white;
 }
 .input[type=search] {
+  --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
   background-color: transparent;
   border: 0.075em solid var(--gray);
   border-radius: var(--border-radius);
@@ -296,15 +304,15 @@
   padding: var(--padding-text);
 }
 .input[type=search]:focus {
-  --shadow-color: var(--blue);
   border-color: var(--blue);
   box-shadow: var(--shadow-inset);
   outline: none;
+  --shadow-color: var(--blue);
 }
 .input[type=search]:focus:invalid {
-  --shadow-color: var(--darkred);
   border-color: var(--darkred);
   box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
 }
 .input[type=search]:disabled {
   background-color: #EAEDED;
@@ -347,6 +355,7 @@
   color: white;
 }
 .input[type=tel] {
+  --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
   background-color: transparent;
   border: 0.075em solid var(--gray);
   border-radius: var(--border-radius);
@@ -354,15 +363,15 @@
   padding: var(--padding-text);
 }
 .input[type=tel]:focus {
-  --shadow-color: var(--blue);
   border-color: var(--blue);
   box-shadow: var(--shadow-inset);
   outline: none;
+  --shadow-color: var(--blue);
 }
 .input[type=tel]:focus:invalid {
-  --shadow-color: var(--darkred);
   border-color: var(--darkred);
   box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
 }
 .input[type=tel]:disabled {
   background-color: #EAEDED;
@@ -370,6 +379,7 @@
   cursor: not-allowed;
 }
 .input[type=text] {
+  --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
   background-color: transparent;
   border: 0.075em solid var(--gray);
   border-radius: var(--border-radius);
@@ -377,15 +387,15 @@
   padding: var(--padding-text);
 }
 .input[type=text]:focus {
-  --shadow-color: var(--blue);
   border-color: var(--blue);
   box-shadow: var(--shadow-inset);
   outline: none;
+  --shadow-color: var(--blue);
 }
 .input[type=text]:focus:invalid {
-  --shadow-color: var(--darkred);
   border-color: var(--darkred);
   box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
 }
 .input[type=text]:disabled {
   background-color: #EAEDED;
@@ -393,6 +403,7 @@
   cursor: not-allowed;
 }
 .input[type=time] {
+  --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
   background-color: transparent;
   border: 0.075em solid var(--gray);
   border-radius: var(--border-radius);
@@ -400,15 +411,15 @@
   padding: var(--padding-text);
 }
 .input[type=time]:focus {
-  --shadow-color: var(--blue);
   border-color: var(--blue);
   box-shadow: var(--shadow-inset);
   outline: none;
+  --shadow-color: var(--blue);
 }
 .input[type=time]:focus:invalid {
-  --shadow-color: var(--darkred);
   border-color: var(--darkred);
   box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
 }
 .input[type=time]:disabled {
   background-color: #EAEDED;
@@ -416,6 +427,7 @@
   cursor: not-allowed;
 }
 .input[type=url] {
+  --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
   background-color: transparent;
   border: 0.075em solid var(--gray);
   border-radius: var(--border-radius);
@@ -423,15 +435,15 @@
   padding: var(--padding-text);
 }
 .input[type=url]:focus {
-  --shadow-color: var(--blue);
   border-color: var(--blue);
   box-shadow: var(--shadow-inset);
   outline: none;
+  --shadow-color: var(--blue);
 }
 .input[type=url]:focus:invalid {
-  --shadow-color: var(--darkred);
   border-color: var(--darkred);
   box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
 }
 .input[type=url]:disabled {
   background-color: #EAEDED;
@@ -439,6 +451,7 @@
   cursor: not-allowed;
 }
 .input[type=week] {
+  --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
   background-color: transparent;
   border: 0.075em solid var(--gray);
   border-radius: var(--border-radius);
@@ -446,15 +459,15 @@
   padding: var(--padding-text);
 }
 .input[type=week]:focus {
-  --shadow-color: var(--blue);
   border-color: var(--blue);
   box-shadow: var(--shadow-inset);
   outline: none;
+  --shadow-color: var(--blue);
 }
 .input[type=week]:focus:invalid {
-  --shadow-color: var(--darkred);
   border-color: var(--darkred);
   box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
 }
 .input[type=week]:disabled {
   background-color: #EAEDED;
@@ -492,6 +505,7 @@
   outline: none;
 }
 .textarea {
+  --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
   background-color: transparent;
   border: 0.075em solid var(--gray);
   border-radius: var(--border-radius);
@@ -499,15 +513,15 @@
   padding: var(--padding-text);
 }
 .textarea:focus {
-  --shadow-color: var(--blue);
   border-color: var(--blue);
   box-shadow: var(--shadow-inset);
   outline: none;
+  --shadow-color: var(--blue);
 }
 .textarea:focus:invalid {
-  --shadow-color: var(--darkred);
   border-color: var(--darkred);
   box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
 }
 .textarea:disabled {
   background-color: #EAEDED;

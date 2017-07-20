@@ -10,51 +10,6 @@
 // PATTERNS
 .link {}
 
-.nav {
-
-  ul {
-
-    .blue-background;
-    flex-direction: row;
-    flex-wrap: wrap;
-    font-size: 1.25em;
-    justify-content: space-around;
-
-    li {
-      padding: 0.5em;
-      white-space: nowrap;
-    }
-
-    a {
-      text-align: center;
-    }
-
-  }
-
-}
-
-.numbered {
-
-  counter-reset: numbered;
-  list-style: none;
-
-  li {
-
-    counter-increment: numbered;
-    display: list-item;
-    margin-left: 2.5em;
-
-    &::before {
-      content: counter(numbered) '.';
-      font-weight: bold;
-      margin-left: -2.5em;
-      padding: var(--padding-text);
-    }
-
-  }
-
-}
-
 .reference-list {
 
   a { .link; }
@@ -79,11 +34,4 @@
 
   }
 
-}
-
-.summary {
-  align-items: center;
-  display: flex; // TODO: remove this when flexbox-reset is updated
-  flex-direction: row;
-  margin-left: -1em;
 }

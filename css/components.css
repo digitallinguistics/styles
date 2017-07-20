@@ -21,7 +21,15 @@
 .bulleted li {
   display: list-item;
 }
+.details summary {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  font-weight: var(--bold);
+  margin-left: -1em;
+}
 .field {
+  --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
   background-color: transparent;
   border: 0.075em solid var(--gray);
   border-radius: var(--border-radius);
@@ -29,15 +37,15 @@
   padding: var(--padding-text);
 }
 .field:focus {
-  --shadow-color: var(--blue);
   border-color: var(--blue);
   box-shadow: var(--shadow-inset);
   outline: none;
+  --shadow-color: var(--blue);
 }
 .field:focus:invalid {
-  --shadow-color: var(--darkred);
   border-color: var(--darkred);
   box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
 }
 .field:disabled {
   background-color: #EAEDED;
@@ -47,6 +55,57 @@
 .hanging {
   margin-left: 1em;
   text-indent: -1em;
+}
+.nav ul {
+  --link-color: white;
+  --link-color-visited: white;
+  background-color: var(--blue);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 1.25em;
+  list-style: none;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+.nav ul li {
+  padding: 0.5em;
+  white-space: nowrap;
+}
+.nav ul a {
+  background: transparent;
+  color: var(--link-color);
+  border-bottom: var(--underline-transparent);
+  text-decoration: none;
+  --link-color: white;
+  text-align: center;
+}
+.nav ul a:visited {
+  --link-color: var(--link-color-visited);
+}
+.nav ul a:hover {
+  border-bottom: var(--underline);
+}
+.nav ul a:visited {
+  --link-color: white;
+}
+.numbered {
+  counter-reset: numbered;
+  list-style: none;
+}
+.numbered li {
+  counter-increment: numbered;
+  display: list-item;
+  margin-left: 2.5em;
+}
+.numbered li::before {
+  content: counter(numbered) '.';
+  font-weight: bold;
+  margin-left: -2.5em;
+  padding: var(--padding-text);
+  padding: 0.25em 0.5em;
 }
 .pre {
   font-family: var(--font-mono);

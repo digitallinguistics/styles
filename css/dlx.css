@@ -577,44 +577,7 @@ This file contains LESS variables for each of the colors in the DLx color schema
   color: white;
 }
 :root {
-  --border-gray: 0.075em solid var(--gray);
-  --border-radius: 0.35em;
-  --font-unicode: 'Gentium Plus', 'Charis SIL', 'Doulos SIL', 'Cambria', 'Andika', 'Lucida Sans Unicode', 'Times New Roman', 'Georgia', serif;
-  --padding-ipa: 0.15em;
   --padding-text: 0.25em 0.5em;
-  --shadow-button: inset -0.075em -0.075em 0.15em 0em rgba(0, 0, 0, 0.15), var(--shadow);
-}
-.nav ul {
-  --link-color: white;
-  --link-color-visited: white;
-  background-color: var(--blue);
-  color: white;
-  flex-direction: row;
-  flex-wrap: wrap;
-  font-size: 1.25em;
-  justify-content: space-around;
-}
-.nav ul li {
-  padding: 0.5em;
-  white-space: nowrap;
-}
-.nav ul a {
-  text-align: center;
-}
-.numbered {
-  counter-reset: numbered;
-  list-style: none;
-}
-.numbered li {
-  counter-increment: numbered;
-  display: list-item;
-  margin-left: 2.5em;
-}
-.numbered li::before {
-  content: counter(numbered) '.';
-  font-weight: bold;
-  margin-left: -2.5em;
-  padding: var(--padding-text);
 }
 .reference-list h1 {
   font-size: 1.75em;
@@ -636,10 +599,4 @@ This file contains LESS variables for each of the colors in the DLx color schema
   display: block;
   margin-left: 1.5em;
   text-indent: -1.5em;
-}
-.summary {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  margin-left: -1em;
 }

@@ -75,19 +75,19 @@
           the "root" element comes first in this loop, and can be detected using
           the "#if @first" block as seen below.
         -->
-            <header class="kss-section kss-section--depth-2" id="kssref-components-hanging">
+            <header class="kss-section kss-section--depth-2" id="kssref-components-details">
 
             <article class="kss-section__content">
-                <p class="kss-section__source">Source: <span>components.less</span>, line <span>116</span></p>
+                <p class="kss-section__source">Source: <span>components.less</span>, line <span>56</span></p>
 
-              <a class="kss-section__permalink" href="#kssref-components-hanging">
+              <a class="kss-section__permalink" href="#kssref-components-details">
                 <h2 class="kss-section__item kss-section__item--depth-2">
-                  <span class="kss-section__ref">4.5</span>
-                  <span class="kss-section__name">Hanging Indented Paragraph</span>
+                  <span class="kss-section__ref">4.3</span>
+                  <span class="kss-section__name">Details / Summary</span>
                 </h2>
               </a>
 
-                <div class="kss-section__description"><p>For blocks of text with a hanging indent.</p>
+                <div class="kss-section__description"><p>A collapsable <code>&lt;details&gt;</code> element, with an optional <code>&lt;summary&gt;</code> element. <strong>NOTE:</strong> Not currently supported on Edge.</p>
 </div>
 
             </article>
@@ -96,17 +96,33 @@
                 <h1 class="kss-modifiers__heading">Example</h1>
 
 
-                <div class="kss-modifiers__example"><p class=hanging>
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</p>
+                <div class="kss-modifiers__example"><details open>
+
+  <summary>Summary for this Section</summary>
+
+  <ol class=numbered>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ol>
+
+</details>
 </div>
 
               </article>
 
                 <article class="kss-section__markup">
-                  <pre><code class="language-markup">&lt;p class&#x3D;hanging&gt;
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-&lt;/p&gt;
+                  <pre><code class="language-markup">&lt;details open&gt;
+
+  &lt;summary&gt;Summary for this Section&lt;/summary&gt;
+
+  &lt;ol class&#x3D;numbered&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+  &lt;/ol&gt;
+
+&lt;/details&gt;
 </code></pre>
                 </article>
 

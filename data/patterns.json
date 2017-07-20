@@ -1,13 +1,5 @@
 {
 
-  "nav": {
-    "description": "A main navigation bar at the top of the page."
-  },
-
-  "numbered": {
-    "description": "For numbered lists. Because DLx often uses ordered lists where list styling is not wanted, the <code>.numbered</code> class is not automatically applied to <code>&lt;ol&gt;</code> elements, and must be applied manually."
-  },
-
   "reference-list": {
     "description": "Styling for a bibliographic reference list. Note that each reference should be wrapped in a <code>&lt;p&gt;</code> tag inside of a <code>&lt;li&gt;</code> tag."
   }

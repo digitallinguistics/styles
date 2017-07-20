@@ -53,6 +53,23 @@
 
 }
 
+// Details / Summary
+//
+// A collapsable `<details>` element, with an optional `<summary>` element. **NOTE:** Not currently supported on Edge.
+//
+// Markup: details.hbs
+//
+// Styleguide Components.details
+.details {
+  summary {
+    align-items: center;
+    display: flex; // TODO: remove this when flexbox-reset is updated
+    flex-direction: row;
+    font-weight: var(--bold);
+    margin-left: -1em;
+  }
+}
+
 // Text Field
 //
 // Styles an element as a form field.
@@ -65,6 +82,8 @@
 // Styleguide Components.field
 .field {
 
+  --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
+
   background-color: transparent;
   border: 0.075em solid var(--gray);
   border-radius: var(--border-radius);
@@ -73,15 +92,15 @@
 
   &:focus {
 
-    --shadow-color: var(--blue);
     border-color: var(--blue);
     box-shadow: var(--shadow-inset);
     outline: none;
+    --shadow-color: var(--blue);
 
     &:invalid {
-      --shadow-color: var(--darkred);
       border-color: var(--darkred);
       box-shadow: var(--shadow-inset);
+      --shadow-color: var(--darkred);
     }
 
   }
@@ -104,6 +123,71 @@
 .hanging {
   margin-left: 1em;
   text-indent: -1em;
+}
+
+// Navigation
+//
+// A main navigation bar at the top of the page. The `.banner` and `.nav` classes are generally compatible.
+//
+// Markup: nav.hbs
+//
+// Styleguide Components.nav
+.nav {
+
+  ul {
+
+    .blue-background;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 1.25em;
+    list-style: none;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+
+    li {
+      padding: 0.5em;
+      white-space: nowrap;
+    }
+
+    a {
+      .link-white;
+      text-align: center;
+    }
+
+  }
+
+}
+
+// Numbered List
+//
+// For numbered lists.
+//
+// Markup: numbered.hbs
+//
+// Styleguide Components.numbered
+.numbered {
+
+  counter-reset: numbered;
+  list-style: none;
+
+  li {
+
+    counter-increment: numbered;
+    display: list-item;
+    margin-left: 2.5em;
+
+    &::before {
+      content: counter(numbered) '.';
+      font-weight: bold;
+      margin-left: -2.5em;
+      padding: var(--padding-text);
+      padding: 0.25em 0.5em; // fallback for Edge bug; see issue https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/11495448/
+    }
+
+  }
+
 }
 
 // Pre
