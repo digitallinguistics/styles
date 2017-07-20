@@ -4,7 +4,7 @@
   no-extra-parens,
 */
 
-require('../../credentials/styles');
+require('../../credentials/azure-storage');
 
 const fs      = require('fs');
 const storage = require('azure-storage').createBlobService();

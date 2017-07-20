@@ -2,7 +2,7 @@
   no-console
 */
 
-require('../../credentials/styles');
+require('../../credentials/azure-storage');
 
 const fs      = require('fs');
 const path    = require('path');
