@@ -84,6 +84,9 @@ const storeLint = async () => {
   await storeFile(`dev`, `.eslintrc`, `./stylesheets/.eslintrc`, { contentSettings });
   console.log(` - .eslintrc uploaded`);
 
+  await storeFile(`dev`, `.stylelintrc`, `./stylesheets/.stylelintrc`, { contentSettings });
+  console.log(` - .stylelintrc uploaded`);
+
 };
 
 Promise.all([

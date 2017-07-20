@@ -1,5 +1,5 @@
 {
-  "exec": "npm run build & node ../utilities/node/server.js . 3000",
+  "exec": "npm run build & npm run server",
   "ext": "hbs js json less",
   "ignore": [
     "docs"

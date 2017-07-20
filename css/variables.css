@@ -3,9 +3,6 @@
   --border-color: black;
   --border: var(--line-width) solid var(--border-color);
   --border-radius: 0.35em;
-  --font: 'Fira Sans', 'Calibri', 'DejaVu Sans', 'Verdana', 'Arial', 'Helvetica', sans-serif;
-  --font-mono: 'Fira Mono', 'Consolas', 'Monaco', 'DejaVu Mono', 'Courier New', monospace;
-  --font-unicode: 'Gentium Plus', 'Charis SIL', 'Doulos SIL', 'Cambria', 'Andika', 'Lucida Sans Unicode', 'Times New Roman', 'Georgia', serif;
   --line-width: 0.075em;
   --link-color: var(--blue);
   --link-color-visited: var(--purple);

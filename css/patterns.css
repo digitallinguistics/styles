@@ -1,7 +1,10 @@
 :root {
+  --font: 'Fira Sans', 'Calibri', 'DejaVu Sans', 'Verdana', 'Arial', 'Helvetica', sans-serif;
+  --font-mono: 'Fira Mono', 'Consolas', 'Monaco', 'DejaVu Mono', 'Courier New', monospace;
+  --font-unicode: 'Gentium Plus', 'Charis SIL', 'Doulos SIL', 'Cambria', 'Andika', 'Lucida Sans Unicode', 'Times New Roman', 'Georgia', serif;
   --font-display: fallback;
   --font-display-critical: swap;
-  --font-family: var(--font-family);
+  --font-family: 'Fira Sans';
   --font-family-mono: 'Fira Sans Mono';
   --font-family-unicode: 'Gentium Plus';
 }
@@ -89,9 +92,6 @@
   font-style: italic;
   font-weight: 400;
 }
-/*
-This file contains LESS variables for each of the colors in the DLx color schema
- */
 :root {
   --wugblue: #6FD1F6;
   --verydarkblue: #017CF2;
@@ -360,9 +360,6 @@ This file contains LESS variables for each of the colors in the DLx color schema
   --border-color: black;
   --border: var(--line-width) solid var(--border-color);
   --border-radius: 0.35em;
-  --font: 'Fira Sans', 'Calibri', 'DejaVu Sans', 'Verdana', 'Arial', 'Helvetica', sans-serif;
-  --font-mono: 'Fira Mono', 'Consolas', 'Monaco', 'DejaVu Mono', 'Courier New', monospace;
-  --font-unicode: 'Gentium Plus', 'Charis SIL', 'Doulos SIL', 'Cambria', 'Andika', 'Lucida Sans Unicode', 'Times New Roman', 'Georgia', serif;
   --line-width: 0.075em;
   --link-color: var(--blue);
   --link-color-visited: var(--purple);

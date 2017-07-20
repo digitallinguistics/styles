@@ -1,17 +1,3 @@
-@path: 'https://digitallinguistics.blob.core.windows.net/fonts';
-
-:root {
-
-  --font-display: fallback;
-  --font-display-critical: swap;
-
-  --font-family: var(--font-family);
-  --font-family-mono: 'Fira Sans Mono';
-  --font-family-unicode: 'Gentium Plus';
-
-}
-
-
 // Typography
 //
 // These are the primary fonts used in DLx projects. Other fonts may be used as appropriate when representing linguistic data; however, fonts used for actual DLx interfaces should be limited to the ones shown here.
@@ -19,6 +5,24 @@
 // Weight: 1
 //
 // Styleguide Typography
+
+
+@path: 'https://digitallinguistics.blob.core.windows.net/fonts';
+
+:root {
+
+  --font: 'Fira Sans', 'Calibri', 'DejaVu Sans', 'Verdana', 'Arial', 'Helvetica', sans-serif;
+  --font-mono: 'Fira Mono', 'Consolas', 'Monaco', 'DejaVu Mono', 'Courier New', monospace;
+  --font-unicode: 'Gentium Plus', 'Charis SIL', 'Doulos SIL', 'Cambria', 'Andika', 'Lucida Sans Unicode', 'Times New Roman', 'Georgia', serif;
+
+  --font-display: fallback;
+  --font-display-critical: swap;
+
+  --font-family: 'Fira Sans';
+  --font-family-mono: 'Fira Sans Mono';
+  --font-family-unicode: 'Gentium Plus';
+
+}
 
 
 // Fira Sans

@@ -220,9 +220,12 @@ tr {
   display: table-row;
 }
 :root {
+  --font: 'Fira Sans', 'Calibri', 'DejaVu Sans', 'Verdana', 'Arial', 'Helvetica', sans-serif;
+  --font-mono: 'Fira Mono', 'Consolas', 'Monaco', 'DejaVu Mono', 'Courier New', monospace;
+  --font-unicode: 'Gentium Plus', 'Charis SIL', 'Doulos SIL', 'Cambria', 'Andika', 'Lucida Sans Unicode', 'Times New Roman', 'Georgia', serif;
   --font-display: fallback;
   --font-display-critical: swap;
-  --font-family: var(--font-family);
+  --font-family: 'Fira Sans';
   --font-family-mono: 'Fira Sans Mono';
   --font-family-unicode: 'Gentium Plus';
 }
@@ -310,9 +313,6 @@ tr {
   font-style: italic;
   font-weight: 400;
 }
-/*
-This file contains LESS variables for each of the colors in the DLx color schema
- */
 :root {
   --wugblue: #6FD1F6;
   --verydarkblue: #017CF2;
