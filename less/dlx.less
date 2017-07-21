@@ -4,6 +4,52 @@ This file bundles together all the DLx stylesheets into a single LESS/CSS file. 
 
 @path:  'https://digitallinguistics.blob.core.windows.net/less';
 
+// import DLx styles
 @import '@{path}/reset.less';
 @import '@{path}/fonts.less';
+@import '@{path}/images.less';
 @import '@{path}/colors.less';
+@import '@{path}/variables.less';
+@import '@{path}/elements.less';
+@import '@{path}/components.less';
+
+// set initial properties on body
+// (will be inherited by children)
+body {
+  font-family: var(--font);
+  line-height: 1.5;
+}
+
+// form elements
+button   { .button; }
+fieldset { .fieldset; }
+input    { .input; }
+label    { .label; }
+select   { .select; }
+textarea { .textarea; }
+
+// headings
+h1 { .page-title; }
+h2 { .section-header; }
+h3 { .subsection-header; }
+h4 { .subsubsection-header; }
+h5 { .minor-header; }
+
+// inline elements
+abbr   { .abbr; }
+cite   { .cite; }
+code   { .code; }
+dfn    { .dfn; }
+em     { .em; }
+i      { .italic; }
+kbd    { .kbd; }
+strong { .strong; }
+
+// apply .link class when anchor is inline
+// block elements that tend to have inline content
+blockquote, button, caption, dd, dt, figcaption, h1, h2, h3, h4, h5, h6, input, legend, option, output, p, pre, select, textarea,
+// other inline elements
+abbr, acronym, b, bdo, big, br, cite, code, del, dfn, em, i, ins, kbd, mark, q, samp, s, small, span, strike, strong, sub, sup, time, tt, var,
+{
+  a { .link; }
+}

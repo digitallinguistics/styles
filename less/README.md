@@ -22,6 +22,6 @@ LESS stylesheets and their accompanying CSS output are available in this repo's 
 
   - `components.less` - Discrete, self-contained pieces of UI.
 
-You can also use `dlx.less` or `global.less`, which bundle all of the above files together. The `dlx.less` file simply declares the classes and fonts, while the `global.less` file applies those classes globally. For example, `dlx.less` will make a `.link` class available for you to use in your code, but `global.less` will apply the `.link` style to all `<a>` elements as appropriate, so you do not need to explicitly add `class=link` to your `<a>` elements.
+  - `dlx.less` - Bundles together all of the above files and applies their styles. For example, the `.link` style will be applied to all inline links. If you just want to reference a particular stylesheet or rule, include that file individually using LESS's `(reference)` option.
 
 [1]: https://yarnpkg.com/en/package/flexbox-reset
