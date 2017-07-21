@@ -1,20 +1,5 @@
 [
   {
-    "filename": "box.svg",
-    "alt": "box icon",
-    "description": "The box icon is the logo for the DLx app"
-  },
-  {
-    "filename": "browse.svg",
-    "alt": "browse icon",
-    "description": "The browse icon is the logo for the DLx data explorer"
-  },
-  {
-    "filename": "code.svg",
-    "alt": "programming code icon",
-    "description": "Icon representing programming code, e.g. indicating an area with raw JSON data, etc."
-  },
-  {
     "filename": "computer.svg",
     "alt": "computer icon",
     "description": "The computer icon is used for areas concerning developers"
