@@ -576,3 +576,1453 @@ tr {
   background-color: var(--verydarkred);
   color: white;
 }
+:root {
+  --bold: 600;
+  --border-color: black;
+  --border: var(--line-width) solid var(--border-color);
+  --border-radius: 0.35em;
+  --line-width: 0.075em;
+  --link-color: var(--blue);
+  --link-color-visited: var(--purple);
+  --padding-ipa: 0.15em;
+  --padding-text: 0.25em 0.5em;
+  --shadow-color: var(--gray);
+  --shadow: var(--line-width) var(--line-width) 0.15em var(--shadow-color);
+  --shadow-button: inset -0.075em -0.075em 0.15em rgba(0, 0, 0, 0.15), var(--shadow);
+  --shadow-deep: 0rem 0.225em 0.225em var(--shadow-color);
+  --underline: var(--line-width) solid;
+  --underline-transparent: var(--line-width) solid transparent;
+}
+.button {
+  --link-color: white;
+  --link-color-visited: white;
+  background-color: var(--blue);
+  color: white;
+  align-items: center;
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.15), transparent);
+  border: 0;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-button);
+  cursor: pointer;
+  font: inherit;
+  outline: 0;
+  padding: var(--padding-text);
+  text-align: center;
+}
+.button:active {
+  --shadow-button: 0 0 0 0.075em rgba(0, 0, 0, 0.15) inset, 0 0 0.5em rgba(0, 0, 0, 0.2) inset;
+}
+.button:hover,
+.button:focus {
+  background-image: linear-gradient(135deg, transparent, rgba(0, 0, 0, 0.15));
+}
+.button:disabled {
+  background-image: none;
+  box-shadow: none;
+  cursor: not-allowed;
+  opacity: 0.40;
+}
+.button-red {
+  --link-color: white;
+  --link-color-visited: white;
+  background-color: var(--red);
+  color: white;
+}
+.fieldset {
+  border: var(--border);
+  border-radius: var(--border-radius);
+}
+.fieldset legend {
+  font-weight: var(--bold);
+}
+.input[type=button] {
+  --link-color: white;
+  --link-color-visited: white;
+  background-color: var(--blue);
+  color: white;
+  align-items: center;
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.15), transparent);
+  border: 0;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-button);
+  cursor: pointer;
+  font: inherit;
+  outline: 0;
+  padding: var(--padding-text);
+  text-align: center;
+}
+.input[type=button]:active {
+  --shadow-button: 0 0 0 0.075em rgba(0, 0, 0, 0.15) inset, 0 0 0.5em rgba(0, 0, 0, 0.2) inset;
+}
+.input[type=button]:hover,
+.input[type=button]:focus {
+  background-image: linear-gradient(135deg, transparent, rgba(0, 0, 0, 0.15));
+}
+.input[type=button]:disabled {
+  background-image: none;
+  box-shadow: none;
+  cursor: not-allowed;
+  opacity: 0.40;
+}
+.input[type=button]-red {
+  --link-color: white;
+  --link-color-visited: white;
+  background-color: var(--red);
+  color: white;
+}
+.input[type=checkbox] {
+  align-self: center;
+  max-height: 1rem;
+  max-width: 1rem;
+}
+.input[type=color] {
+  display: block;
+}
+.input[type=date] {
+  --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
+  background-color: transparent;
+  border: 0.075em solid var(--gray);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-inset);
+  padding: var(--padding-text);
+}
+.input[type=date]:focus {
+  border-color: var(--blue);
+  box-shadow: var(--shadow-inset);
+  outline: none;
+  --shadow-color: var(--blue);
+}
+.input[type=date]:focus:invalid {
+  border-color: var(--darkred);
+  box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
+}
+.input[type=date]:disabled {
+  background-color: #EAEDED;
+  color: #CAD2D3;
+  cursor: not-allowed;
+}
+.input[type=datetime] {
+  --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
+  background-color: transparent;
+  border: 0.075em solid var(--gray);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-inset);
+  padding: var(--padding-text);
+}
+.input[type=datetime]:focus {
+  border-color: var(--blue);
+  box-shadow: var(--shadow-inset);
+  outline: none;
+  --shadow-color: var(--blue);
+}
+.input[type=datetime]:focus:invalid {
+  border-color: var(--darkred);
+  box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
+}
+.input[type=datetime]:disabled {
+  background-color: #EAEDED;
+  color: #CAD2D3;
+  cursor: not-allowed;
+}
+.input[type=datetime-local] {
+  --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
+  background-color: transparent;
+  border: 0.075em solid var(--gray);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-inset);
+  padding: var(--padding-text);
+}
+.input[type=datetime-local]:focus {
+  border-color: var(--blue);
+  box-shadow: var(--shadow-inset);
+  outline: none;
+  --shadow-color: var(--blue);
+}
+.input[type=datetime-local]:focus:invalid {
+  border-color: var(--darkred);
+  box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
+}
+.input[type=datetime-local]:disabled {
+  background-color: #EAEDED;
+  color: #CAD2D3;
+  cursor: not-allowed;
+}
+.input[type=email] {
+  --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
+  background-color: transparent;
+  border: 0.075em solid var(--gray);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-inset);
+  padding: var(--padding-text);
+}
+.input[type=email]:focus {
+  border-color: var(--blue);
+  box-shadow: var(--shadow-inset);
+  outline: none;
+  --shadow-color: var(--blue);
+}
+.input[type=email]:focus:invalid {
+  border-color: var(--darkred);
+  box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
+}
+.input[type=email]:disabled {
+  background-color: #EAEDED;
+  color: #CAD2D3;
+  cursor: not-allowed;
+}
+.input[type=month] {
+  --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
+  background-color: transparent;
+  border: 0.075em solid var(--gray);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-inset);
+  padding: var(--padding-text);
+}
+.input[type=month]:focus {
+  border-color: var(--blue);
+  box-shadow: var(--shadow-inset);
+  outline: none;
+  --shadow-color: var(--blue);
+}
+.input[type=month]:focus:invalid {
+  border-color: var(--darkred);
+  box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
+}
+.input[type=month]:disabled {
+  background-color: #EAEDED;
+  color: #CAD2D3;
+  cursor: not-allowed;
+}
+.input[type=number] {
+  --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
+  background-color: transparent;
+  border: 0.075em solid var(--gray);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-inset);
+  padding: var(--padding-text);
+}
+.input[type=number]:focus {
+  border-color: var(--blue);
+  box-shadow: var(--shadow-inset);
+  outline: none;
+  --shadow-color: var(--blue);
+}
+.input[type=number]:focus:invalid {
+  border-color: var(--darkred);
+  box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
+}
+.input[type=number]:disabled {
+  background-color: #EAEDED;
+  color: #CAD2D3;
+  cursor: not-allowed;
+}
+.input[type=password] {
+  --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
+  background-color: transparent;
+  border: 0.075em solid var(--gray);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-inset);
+  padding: var(--padding-text);
+}
+.input[type=password]:focus {
+  border-color: var(--blue);
+  box-shadow: var(--shadow-inset);
+  outline: none;
+  --shadow-color: var(--blue);
+}
+.input[type=password]:focus:invalid {
+  border-color: var(--darkred);
+  box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
+}
+.input[type=password]:disabled {
+  background-color: #EAEDED;
+  color: #CAD2D3;
+  cursor: not-allowed;
+}
+.input[type=radio] {
+  align-self: center;
+  max-height: 1rem;
+  max-width: 1rem;
+}
+.input[type=range] {
+  align-self: center;
+}
+.input[type=reset] {
+  background-color: var(--blue);
+  align-items: center;
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.15), transparent);
+  border: 0;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-button);
+  cursor: pointer;
+  font: inherit;
+  outline: 0;
+  padding: var(--padding-text);
+  text-align: center;
+  --link-color: white;
+  --link-color-visited: white;
+  background-color: var(--superdarkgreen);
+  color: white;
+}
+.input[type=reset]:active {
+  --shadow-button: 0 0 0 0.075em rgba(0, 0, 0, 0.15) inset, 0 0 0.5em rgba(0, 0, 0, 0.2) inset;
+}
+.input[type=reset]:hover,
+.input[type=reset]:focus {
+  background-image: linear-gradient(135deg, transparent, rgba(0, 0, 0, 0.15));
+}
+.input[type=reset]:disabled {
+  background-image: none;
+  box-shadow: none;
+  cursor: not-allowed;
+  opacity: 0.40;
+}
+.input[type=reset]-red {
+  --link-color: white;
+  --link-color-visited: white;
+  background-color: var(--red);
+  color: white;
+}
+.input[type=search] {
+  --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
+  background-color: transparent;
+  border: 0.075em solid var(--gray);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-inset);
+  padding: var(--padding-text);
+}
+.input[type=search]:focus {
+  border-color: var(--blue);
+  box-shadow: var(--shadow-inset);
+  outline: none;
+  --shadow-color: var(--blue);
+}
+.input[type=search]:focus:invalid {
+  border-color: var(--darkred);
+  box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
+}
+.input[type=search]:disabled {
+  background-color: #EAEDED;
+  color: #CAD2D3;
+  cursor: not-allowed;
+}
+.input[type=submit] {
+  --link-color: white;
+  --link-color-visited: white;
+  background-color: var(--blue);
+  color: white;
+  align-items: center;
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.15), transparent);
+  border: 0;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-button);
+  cursor: pointer;
+  font: inherit;
+  outline: 0;
+  padding: var(--padding-text);
+  text-align: center;
+}
+.input[type=submit]:active {
+  --shadow-button: 0 0 0 0.075em rgba(0, 0, 0, 0.15) inset, 0 0 0.5em rgba(0, 0, 0, 0.2) inset;
+}
+.input[type=submit]:hover,
+.input[type=submit]:focus {
+  background-image: linear-gradient(135deg, transparent, rgba(0, 0, 0, 0.15));
+}
+.input[type=submit]:disabled {
+  background-image: none;
+  box-shadow: none;
+  cursor: not-allowed;
+  opacity: 0.40;
+}
+.input[type=submit]-red {
+  --link-color: white;
+  --link-color-visited: white;
+  background-color: var(--red);
+  color: white;
+}
+.input[type=tel] {
+  --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
+  background-color: transparent;
+  border: 0.075em solid var(--gray);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-inset);
+  padding: var(--padding-text);
+}
+.input[type=tel]:focus {
+  border-color: var(--blue);
+  box-shadow: var(--shadow-inset);
+  outline: none;
+  --shadow-color: var(--blue);
+}
+.input[type=tel]:focus:invalid {
+  border-color: var(--darkred);
+  box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
+}
+.input[type=tel]:disabled {
+  background-color: #EAEDED;
+  color: #CAD2D3;
+  cursor: not-allowed;
+}
+.input[type=text] {
+  --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
+  background-color: transparent;
+  border: 0.075em solid var(--gray);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-inset);
+  padding: var(--padding-text);
+}
+.input[type=text]:focus {
+  border-color: var(--blue);
+  box-shadow: var(--shadow-inset);
+  outline: none;
+  --shadow-color: var(--blue);
+}
+.input[type=text]:focus:invalid {
+  border-color: var(--darkred);
+  box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
+}
+.input[type=text]:disabled {
+  background-color: #EAEDED;
+  color: #CAD2D3;
+  cursor: not-allowed;
+}
+.input[type=time] {
+  --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
+  background-color: transparent;
+  border: 0.075em solid var(--gray);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-inset);
+  padding: var(--padding-text);
+}
+.input[type=time]:focus {
+  border-color: var(--blue);
+  box-shadow: var(--shadow-inset);
+  outline: none;
+  --shadow-color: var(--blue);
+}
+.input[type=time]:focus:invalid {
+  border-color: var(--darkred);
+  box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
+}
+.input[type=time]:disabled {
+  background-color: #EAEDED;
+  color: #CAD2D3;
+  cursor: not-allowed;
+}
+.input[type=url] {
+  --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
+  background-color: transparent;
+  border: 0.075em solid var(--gray);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-inset);
+  padding: var(--padding-text);
+}
+.input[type=url]:focus {
+  border-color: var(--blue);
+  box-shadow: var(--shadow-inset);
+  outline: none;
+  --shadow-color: var(--blue);
+}
+.input[type=url]:focus:invalid {
+  border-color: var(--darkred);
+  box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
+}
+.input[type=url]:disabled {
+  background-color: #EAEDED;
+  color: #CAD2D3;
+  cursor: not-allowed;
+}
+.input[type=week] {
+  --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
+  background-color: transparent;
+  border: 0.075em solid var(--gray);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-inset);
+  padding: var(--padding-text);
+}
+.input[type=week]:focus {
+  border-color: var(--blue);
+  box-shadow: var(--shadow-inset);
+  outline: none;
+  --shadow-color: var(--blue);
+}
+.input[type=week]:focus:invalid {
+  border-color: var(--darkred);
+  box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
+}
+.input[type=week]:disabled {
+  background-color: #EAEDED;
+  color: #CAD2D3;
+  cursor: not-allowed;
+}
+.label {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.label h1,
+.label h2,
+.label h3,
+.label h4,
+.label h5,
+.label h6,
+.label span {
+  font-size: smaller;
+  font-weight: var(--bold);
+  padding: var(--padding-text);
+}
+.label p {
+  padding: var(--padding-text);
+}
+.select {
+  border: var(--border);
+  --border-color: var(--gray);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-button);
+  padding: var(--padding-text);
+}
+.select:focus {
+  outline: none;
+}
+.textarea {
+  --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
+  background-color: transparent;
+  border: 0.075em solid var(--gray);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-inset);
+  padding: var(--padding-text);
+}
+.textarea:focus {
+  border-color: var(--blue);
+  box-shadow: var(--shadow-inset);
+  outline: none;
+  --shadow-color: var(--blue);
+}
+.textarea:focus:invalid {
+  border-color: var(--darkred);
+  box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
+}
+.textarea:disabled {
+  background-color: #EAEDED;
+  color: #CAD2D3;
+  cursor: not-allowed;
+}
+.h1 {
+  align-self: center;
+  font-size: 2.5em;
+  text-align: center;
+}
+.page-title {
+  align-self: center;
+  font-size: 2.5em;
+  text-align: center;
+}
+.h2 {
+  font-size: 1.75em;
+  font-weight: var(--bold);
+  padding-bottom: 0.25em;
+  padding-top: 0.5em;
+}
+.section-header {
+  font-size: 1.75em;
+  font-weight: var(--bold);
+  padding-bottom: 0.25em;
+  padding-top: 0.5em;
+}
+.h3 {
+  font-size: 1.5em;
+  padding-bottom: 0.25em;
+  padding-top: 0.5em;
+}
+.subsection-header {
+  font-size: 1.5em;
+  padding-bottom: 0.25em;
+  padding-top: 0.5em;
+}
+.h4 {
+  font-size: 1.5em;
+  font-style: italic;
+}
+.subsubsection-header {
+  font-size: 1.5em;
+  font-style: italic;
+}
+.h5 {
+  font-size: 1.25em;
+}
+.minor-header {
+  font-size: 1.25em;
+}
+.abbr {
+  font-style: italic;
+}
+.cite {
+  font-style: italic;
+}
+.code {
+  background-color: var(--codegray);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  color: var(--codedarkgray);
+  font-family: var(--font-mono);
+  font-size: 0.75em;
+  font-style: normal;
+  padding: var(--padding-text);
+  white-space: pre-line;
+}
+.dfn {
+  font-style: italic;
+}
+.em {
+  font-style: italic;
+}
+.italic {
+  font-style: italic;
+}
+.kbd {
+  background-color: var(--codegray);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+  border: 0.035em solid #BBB;
+  border-radius: var(--border-radius);
+  color: #444;
+  padding: var(--padding-text);
+  text-align: center;
+  text-shadow: 0em var(--line-width) white;
+  box-shadow: 0em 0.15em 0em var(--gray), 0.02em 0.225em 0.2em var(--darkgray), inset 0em var(--line-width) var(--line-width) white, inset 0em -0.075em 0.225em var(--gray);
+}
+.link {
+  background: transparent;
+  color: var(--link-color);
+  border-bottom: var(--underline-transparent);
+  text-decoration: none;
+}
+.link:visited {
+  --link-color: var(--link-color-visited);
+}
+.link:hover {
+  border-bottom: var(--underline);
+}
+.link-white {
+  background: transparent;
+  color: var(--link-color);
+  border-bottom: var(--underline-transparent);
+  text-decoration: none;
+  --link-color: white;
+}
+.link-white:visited {
+  --link-color: var(--link-color-visited);
+}
+.link-white:hover {
+  border-bottom: var(--underline);
+}
+.link-white:visited {
+  --link-color: white;
+}
+.strong {
+  color: var(--verydarkblue);
+  font-weight: var(--bold);
+}
+.orthographic {
+  font-family: var(--font-unicode);
+  font-size: 1.15em;
+}
+.orthographic::before {
+  content: '<';
+  padding-right: var(--padding-ipa);
+}
+.orthographic::after {
+  content: '>';
+  padding-left: var(--padding-ipa);
+}
+.phonemic {
+  font-family: var(--font-unicode);
+  font-size: 1.15em;
+}
+.phonemic::before {
+  content: '/';
+  padding-right: var(--padding-ipa);
+}
+.phonemic::after {
+  content: '/';
+  padding-left: var(--padding-ipa);
+}
+.phonetic {
+  font-family: var(--font-unicode);
+  font-size: 1.15em;
+}
+.phonetic::before {
+  content: '[';
+  padding-right: var(--padding-ipa);
+}
+.phonetic::after {
+  content: ']';
+  padding-left: var(--padding-ipa);
+}
+.unicode {
+  font-family: var(--font-unicode);
+  font-size: 1.15em;
+}
+body {
+  font-family: var(--font);
+  line-height: 1.5;
+}
+button {
+  --link-color: white;
+  --link-color-visited: white;
+  background-color: var(--blue);
+  color: white;
+  align-items: center;
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.15), transparent);
+  border: 0;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-button);
+  cursor: pointer;
+  font: inherit;
+  outline: 0;
+  padding: var(--padding-text);
+  text-align: center;
+}
+button:active {
+  --shadow-button: 0 0 0 0.075em rgba(0, 0, 0, 0.15) inset, 0 0 0.5em rgba(0, 0, 0, 0.2) inset;
+}
+button:hover,
+button:focus {
+  background-image: linear-gradient(135deg, transparent, rgba(0, 0, 0, 0.15));
+}
+button:disabled {
+  background-image: none;
+  box-shadow: none;
+  cursor: not-allowed;
+  opacity: 0.40;
+}
+button-red {
+  --link-color: white;
+  --link-color-visited: white;
+  background-color: var(--red);
+  color: white;
+}
+fieldset {
+  border: var(--border);
+  border-radius: var(--border-radius);
+}
+fieldset legend {
+  font-weight: var(--bold);
+}
+input[type=button] {
+  --link-color: white;
+  --link-color-visited: white;
+  background-color: var(--blue);
+  color: white;
+  align-items: center;
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.15), transparent);
+  border: 0;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-button);
+  cursor: pointer;
+  font: inherit;
+  outline: 0;
+  padding: var(--padding-text);
+  text-align: center;
+}
+input[type=button]:active {
+  --shadow-button: 0 0 0 0.075em rgba(0, 0, 0, 0.15) inset, 0 0 0.5em rgba(0, 0, 0, 0.2) inset;
+}
+input[type=button]:hover,
+input[type=button]:focus {
+  background-image: linear-gradient(135deg, transparent, rgba(0, 0, 0, 0.15));
+}
+input[type=button]:disabled {
+  background-image: none;
+  box-shadow: none;
+  cursor: not-allowed;
+  opacity: 0.40;
+}
+input[type=button]-red {
+  --link-color: white;
+  --link-color-visited: white;
+  background-color: var(--red);
+  color: white;
+}
+input[type=checkbox] {
+  align-self: center;
+  max-height: 1rem;
+  max-width: 1rem;
+}
+input[type=color] {
+  display: block;
+}
+input[type=date] {
+  --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
+  background-color: transparent;
+  border: 0.075em solid var(--gray);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-inset);
+  padding: var(--padding-text);
+}
+input[type=date]:focus {
+  border-color: var(--blue);
+  box-shadow: var(--shadow-inset);
+  outline: none;
+  --shadow-color: var(--blue);
+}
+input[type=date]:focus:invalid {
+  border-color: var(--darkred);
+  box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
+}
+input[type=date]:disabled {
+  background-color: #EAEDED;
+  color: #CAD2D3;
+  cursor: not-allowed;
+}
+input[type=datetime] {
+  --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
+  background-color: transparent;
+  border: 0.075em solid var(--gray);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-inset);
+  padding: var(--padding-text);
+}
+input[type=datetime]:focus {
+  border-color: var(--blue);
+  box-shadow: var(--shadow-inset);
+  outline: none;
+  --shadow-color: var(--blue);
+}
+input[type=datetime]:focus:invalid {
+  border-color: var(--darkred);
+  box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
+}
+input[type=datetime]:disabled {
+  background-color: #EAEDED;
+  color: #CAD2D3;
+  cursor: not-allowed;
+}
+input[type=datetime-local] {
+  --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
+  background-color: transparent;
+  border: 0.075em solid var(--gray);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-inset);
+  padding: var(--padding-text);
+}
+input[type=datetime-local]:focus {
+  border-color: var(--blue);
+  box-shadow: var(--shadow-inset);
+  outline: none;
+  --shadow-color: var(--blue);
+}
+input[type=datetime-local]:focus:invalid {
+  border-color: var(--darkred);
+  box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
+}
+input[type=datetime-local]:disabled {
+  background-color: #EAEDED;
+  color: #CAD2D3;
+  cursor: not-allowed;
+}
+input[type=email] {
+  --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
+  background-color: transparent;
+  border: 0.075em solid var(--gray);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-inset);
+  padding: var(--padding-text);
+}
+input[type=email]:focus {
+  border-color: var(--blue);
+  box-shadow: var(--shadow-inset);
+  outline: none;
+  --shadow-color: var(--blue);
+}
+input[type=email]:focus:invalid {
+  border-color: var(--darkred);
+  box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
+}
+input[type=email]:disabled {
+  background-color: #EAEDED;
+  color: #CAD2D3;
+  cursor: not-allowed;
+}
+input[type=month] {
+  --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
+  background-color: transparent;
+  border: 0.075em solid var(--gray);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-inset);
+  padding: var(--padding-text);
+}
+input[type=month]:focus {
+  border-color: var(--blue);
+  box-shadow: var(--shadow-inset);
+  outline: none;
+  --shadow-color: var(--blue);
+}
+input[type=month]:focus:invalid {
+  border-color: var(--darkred);
+  box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
+}
+input[type=month]:disabled {
+  background-color: #EAEDED;
+  color: #CAD2D3;
+  cursor: not-allowed;
+}
+input[type=number] {
+  --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
+  background-color: transparent;
+  border: 0.075em solid var(--gray);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-inset);
+  padding: var(--padding-text);
+}
+input[type=number]:focus {
+  border-color: var(--blue);
+  box-shadow: var(--shadow-inset);
+  outline: none;
+  --shadow-color: var(--blue);
+}
+input[type=number]:focus:invalid {
+  border-color: var(--darkred);
+  box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
+}
+input[type=number]:disabled {
+  background-color: #EAEDED;
+  color: #CAD2D3;
+  cursor: not-allowed;
+}
+input[type=password] {
+  --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
+  background-color: transparent;
+  border: 0.075em solid var(--gray);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-inset);
+  padding: var(--padding-text);
+}
+input[type=password]:focus {
+  border-color: var(--blue);
+  box-shadow: var(--shadow-inset);
+  outline: none;
+  --shadow-color: var(--blue);
+}
+input[type=password]:focus:invalid {
+  border-color: var(--darkred);
+  box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
+}
+input[type=password]:disabled {
+  background-color: #EAEDED;
+  color: #CAD2D3;
+  cursor: not-allowed;
+}
+input[type=radio] {
+  align-self: center;
+  max-height: 1rem;
+  max-width: 1rem;
+}
+input[type=range] {
+  align-self: center;
+}
+input[type=reset] {
+  background-color: var(--blue);
+  align-items: center;
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.15), transparent);
+  border: 0;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-button);
+  cursor: pointer;
+  font: inherit;
+  outline: 0;
+  padding: var(--padding-text);
+  text-align: center;
+  --link-color: white;
+  --link-color-visited: white;
+  background-color: var(--superdarkgreen);
+  color: white;
+}
+input[type=reset]:active {
+  --shadow-button: 0 0 0 0.075em rgba(0, 0, 0, 0.15) inset, 0 0 0.5em rgba(0, 0, 0, 0.2) inset;
+}
+input[type=reset]:hover,
+input[type=reset]:focus {
+  background-image: linear-gradient(135deg, transparent, rgba(0, 0, 0, 0.15));
+}
+input[type=reset]:disabled {
+  background-image: none;
+  box-shadow: none;
+  cursor: not-allowed;
+  opacity: 0.40;
+}
+input[type=reset]-red {
+  --link-color: white;
+  --link-color-visited: white;
+  background-color: var(--red);
+  color: white;
+}
+input[type=search] {
+  --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
+  background-color: transparent;
+  border: 0.075em solid var(--gray);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-inset);
+  padding: var(--padding-text);
+}
+input[type=search]:focus {
+  border-color: var(--blue);
+  box-shadow: var(--shadow-inset);
+  outline: none;
+  --shadow-color: var(--blue);
+}
+input[type=search]:focus:invalid {
+  border-color: var(--darkred);
+  box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
+}
+input[type=search]:disabled {
+  background-color: #EAEDED;
+  color: #CAD2D3;
+  cursor: not-allowed;
+}
+input[type=submit] {
+  --link-color: white;
+  --link-color-visited: white;
+  background-color: var(--blue);
+  color: white;
+  align-items: center;
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.15), transparent);
+  border: 0;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-button);
+  cursor: pointer;
+  font: inherit;
+  outline: 0;
+  padding: var(--padding-text);
+  text-align: center;
+}
+input[type=submit]:active {
+  --shadow-button: 0 0 0 0.075em rgba(0, 0, 0, 0.15) inset, 0 0 0.5em rgba(0, 0, 0, 0.2) inset;
+}
+input[type=submit]:hover,
+input[type=submit]:focus {
+  background-image: linear-gradient(135deg, transparent, rgba(0, 0, 0, 0.15));
+}
+input[type=submit]:disabled {
+  background-image: none;
+  box-shadow: none;
+  cursor: not-allowed;
+  opacity: 0.40;
+}
+input[type=submit]-red {
+  --link-color: white;
+  --link-color-visited: white;
+  background-color: var(--red);
+  color: white;
+}
+input[type=tel] {
+  --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
+  background-color: transparent;
+  border: 0.075em solid var(--gray);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-inset);
+  padding: var(--padding-text);
+}
+input[type=tel]:focus {
+  border-color: var(--blue);
+  box-shadow: var(--shadow-inset);
+  outline: none;
+  --shadow-color: var(--blue);
+}
+input[type=tel]:focus:invalid {
+  border-color: var(--darkred);
+  box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
+}
+input[type=tel]:disabled {
+  background-color: #EAEDED;
+  color: #CAD2D3;
+  cursor: not-allowed;
+}
+input[type=text] {
+  --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
+  background-color: transparent;
+  border: 0.075em solid var(--gray);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-inset);
+  padding: var(--padding-text);
+}
+input[type=text]:focus {
+  border-color: var(--blue);
+  box-shadow: var(--shadow-inset);
+  outline: none;
+  --shadow-color: var(--blue);
+}
+input[type=text]:focus:invalid {
+  border-color: var(--darkred);
+  box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
+}
+input[type=text]:disabled {
+  background-color: #EAEDED;
+  color: #CAD2D3;
+  cursor: not-allowed;
+}
+input[type=time] {
+  --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
+  background-color: transparent;
+  border: 0.075em solid var(--gray);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-inset);
+  padding: var(--padding-text);
+}
+input[type=time]:focus {
+  border-color: var(--blue);
+  box-shadow: var(--shadow-inset);
+  outline: none;
+  --shadow-color: var(--blue);
+}
+input[type=time]:focus:invalid {
+  border-color: var(--darkred);
+  box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
+}
+input[type=time]:disabled {
+  background-color: #EAEDED;
+  color: #CAD2D3;
+  cursor: not-allowed;
+}
+input[type=url] {
+  --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
+  background-color: transparent;
+  border: 0.075em solid var(--gray);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-inset);
+  padding: var(--padding-text);
+}
+input[type=url]:focus {
+  border-color: var(--blue);
+  box-shadow: var(--shadow-inset);
+  outline: none;
+  --shadow-color: var(--blue);
+}
+input[type=url]:focus:invalid {
+  border-color: var(--darkred);
+  box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
+}
+input[type=url]:disabled {
+  background-color: #EAEDED;
+  color: #CAD2D3;
+  cursor: not-allowed;
+}
+input[type=week] {
+  --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
+  background-color: transparent;
+  border: 0.075em solid var(--gray);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-inset);
+  padding: var(--padding-text);
+}
+input[type=week]:focus {
+  border-color: var(--blue);
+  box-shadow: var(--shadow-inset);
+  outline: none;
+  --shadow-color: var(--blue);
+}
+input[type=week]:focus:invalid {
+  border-color: var(--darkred);
+  box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
+}
+input[type=week]:disabled {
+  background-color: #EAEDED;
+  color: #CAD2D3;
+  cursor: not-allowed;
+}
+label {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+label h1,
+label h2,
+label h3,
+label h4,
+label h5,
+label h6,
+label span {
+  font-size: smaller;
+  font-weight: var(--bold);
+  padding: var(--padding-text);
+}
+label p {
+  padding: var(--padding-text);
+}
+select {
+  border: var(--border);
+  --border-color: var(--gray);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-button);
+  padding: var(--padding-text);
+}
+select:focus {
+  outline: none;
+}
+textarea {
+  --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
+  background-color: transparent;
+  border: 0.075em solid var(--gray);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-inset);
+  padding: var(--padding-text);
+}
+textarea:focus {
+  border-color: var(--blue);
+  box-shadow: var(--shadow-inset);
+  outline: none;
+  --shadow-color: var(--blue);
+}
+textarea:focus:invalid {
+  border-color: var(--darkred);
+  box-shadow: var(--shadow-inset);
+  --shadow-color: var(--darkred);
+}
+textarea:disabled {
+  background-color: #EAEDED;
+  color: #CAD2D3;
+  cursor: not-allowed;
+}
+h1 {
+  align-self: center;
+  font-size: 2.5em;
+  text-align: center;
+}
+h2 {
+  font-size: 1.75em;
+  font-weight: var(--bold);
+  padding-bottom: 0.25em;
+  padding-top: 0.5em;
+}
+h3 {
+  font-size: 1.5em;
+  padding-bottom: 0.25em;
+  padding-top: 0.5em;
+}
+h4 {
+  font-size: 1.5em;
+  font-style: italic;
+}
+h5 {
+  font-size: 1.25em;
+}
+abbr {
+  font-style: italic;
+}
+cite {
+  font-style: italic;
+}
+code {
+  background-color: var(--codegray);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  color: var(--codedarkgray);
+  font-family: var(--font-mono);
+  font-size: 0.75em;
+  font-style: normal;
+  padding: var(--padding-text);
+  white-space: pre-line;
+}
+dfn {
+  font-style: italic;
+}
+em {
+  font-style: italic;
+}
+i {
+  font-style: italic;
+}
+kbd {
+  background-color: var(--codegray);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+  border: 0.035em solid #BBB;
+  border-radius: var(--border-radius);
+  color: #444;
+  padding: var(--padding-text);
+  text-align: center;
+  text-shadow: 0em var(--line-width) white;
+  box-shadow: 0em 0.15em 0em var(--gray), 0.02em 0.225em 0.2em var(--darkgray), inset 0em var(--line-width) var(--line-width) white, inset 0em -0.075em 0.225em var(--gray);
+}
+strong {
+  color: var(--verydarkblue);
+  font-weight: var(--bold);
+}
+blockquote a,
+button a,
+caption a,
+dd a,
+dt a,
+figcaption a,
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a,
+input a,
+legend a,
+option a,
+output a,
+p a,
+pre a,
+select a,
+textarea a,
+abbr a,
+acronym a,
+b a,
+bdo a,
+big a,
+br a,
+cite a,
+code a,
+del a,
+dfn a,
+em a,
+i a,
+ins a,
+kbd a,
+mark a,
+q a,
+samp a,
+s a,
+small a,
+span a,
+strike a,
+strong a,
+sub a,
+sup a,
+time a,
+tt a,
+var a {
+  background: transparent;
+  color: var(--link-color);
+  border-bottom: var(--underline-transparent);
+  text-decoration: none;
+}
+blockquote a:visited,
+button a:visited,
+caption a:visited,
+dd a:visited,
+dt a:visited,
+figcaption a:visited,
+h1 a:visited,
+h2 a:visited,
+h3 a:visited,
+h4 a:visited,
+h5 a:visited,
+h6 a:visited,
+input a:visited,
+legend a:visited,
+option a:visited,
+output a:visited,
+p a:visited,
+pre a:visited,
+select a:visited,
+textarea a:visited,
+abbr a:visited,
+acronym a:visited,
+b a:visited,
+bdo a:visited,
+big a:visited,
+br a:visited,
+cite a:visited,
+code a:visited,
+del a:visited,
+dfn a:visited,
+em a:visited,
+i a:visited,
+ins a:visited,
+kbd a:visited,
+mark a:visited,
+q a:visited,
+samp a:visited,
+s a:visited,
+small a:visited,
+span a:visited,
+strike a:visited,
+strong a:visited,
+sub a:visited,
+sup a:visited,
+time a:visited,
+tt a:visited,
+var a:visited {
+  --link-color: var(--link-color-visited);
+}
+blockquote a:hover,
+button a:hover,
+caption a:hover,
+dd a:hover,
+dt a:hover,
+figcaption a:hover,
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover,
+input a:hover,
+legend a:hover,
+option a:hover,
+output a:hover,
+p a:hover,
+pre a:hover,
+select a:hover,
+textarea a:hover,
+abbr a:hover,
+acronym a:hover,
+b a:hover,
+bdo a:hover,
+big a:hover,
+br a:hover,
+cite a:hover,
+code a:hover,
+del a:hover,
+dfn a:hover,
+em a:hover,
+i a:hover,
+ins a:hover,
+kbd a:hover,
+mark a:hover,
+q a:hover,
+samp a:hover,
+s a:hover,
+small a:hover,
+span a:hover,
+strike a:hover,
+strong a:hover,
+sub a:hover,
+sup a:hover,
+time a:hover,
+tt a:hover,
+var a:hover {
+  border-bottom: var(--underline);
+}

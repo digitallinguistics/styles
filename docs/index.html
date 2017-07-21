@@ -107,8 +107,9 @@
 </li>
 <li><p><code>components.less</code> - Discrete, self-contained pieces of UI.</p>
 </li>
+<li><p><code>dlx.less</code> - Bundles together all of the above files and applies their styles. For example, the <code>.link</code> style will be applied to all inline links. If you just want to reference a particular stylesheet or rule, include that file individually using LESS&#39;s <code>(reference)</code> option.</p>
+</li>
 </ul>
-<p>You can also use <code>dlx.less</code> or <code>global.less</code>, which bundle all of the above files together. The <code>dlx.less</code> file simply declares the classes and fonts, while the <code>global.less</code> file applies those classes globally. For example, <code>dlx.less</code> will make a <code>.link</code> class available for you to use in your code, but <code>global.less</code> will apply the <code>.link</code> style to all <code>&lt;a&gt;</code> elements as appropriate, so you do not need to explicitly add <code>class=link</code> to your <code>&lt;a&gt;</code> elements.</p>
 
         </article>
     </section>
