@@ -5,6 +5,7 @@
   color: white;
   align-items: center;
   box-shadow: var(--shadow-deep);
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
@@ -12,8 +13,10 @@
 .banner h1 {
   font-size: 2em;
   font-weight: 300;
+  min-width: 0;
   padding: var(--padding-text);
-  white-space: nowrap;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 .bulleted {
   list-style: disc outside none;
@@ -27,6 +30,9 @@
   flex-direction: row;
   font-weight: var(--bold);
   margin-left: -1em;
+  min-width: 0;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 .field {
   --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
@@ -71,8 +77,11 @@
   padding: 0;
 }
 .nav ul li {
+  min-width: 0;
+  overflow-wrap: break-word;
   padding: 0.5em;
-  white-space: nowrap;
+  text-align: center;
+  word-wrap: break-word;
 }
 .nav ul a {
   background: transparent;

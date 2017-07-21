@@ -13,6 +13,7 @@
   outline: 0;
   padding: var(--padding-text);
   text-align: center;
+  white-space: normal;
 }
 .button:active {
   --shadow-button: 0 0 0 0.075em rgba(0, 0, 0, 0.15) inset, 0 0 0.5em rgba(0, 0, 0, 0.2) inset;
@@ -39,6 +40,8 @@
 }
 .fieldset legend {
   font-weight: var(--bold);
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 .input[type=button] {
   --link-color: white;
@@ -55,6 +58,7 @@
   outline: 0;
   padding: var(--padding-text);
   text-align: center;
+  white-space: normal;
 }
 .input[type=button]:active {
   --shadow-button: 0 0 0 0.075em rgba(0, 0, 0, 0.15) inset, 0 0 0.5em rgba(0, 0, 0, 0.2) inset;
@@ -275,6 +279,7 @@
   --link-color-visited: white;
   background-color: var(--superdarkgreen);
   color: white;
+  white-space: normal;
 }
 .input[type=reset]:active {
   --shadow-button: 0 0 0 0.075em rgba(0, 0, 0, 0.15) inset, 0 0 0.5em rgba(0, 0, 0, 0.2) inset;
@@ -334,6 +339,7 @@
   outline: 0;
   padding: var(--padding-text);
   text-align: center;
+  white-space: normal;
 }
 .input[type=submit]:active {
   --shadow-button: 0 0 0 0.075em rgba(0, 0, 0, 0.15) inset, 0 0 0.5em rgba(0, 0, 0, 0.2) inset;
@@ -489,7 +495,10 @@
 .label span {
   font-size: smaller;
   font-weight: var(--bold);
+  min-width: 0;
   padding: var(--padding-text);
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 .label p {
   padding: var(--padding-text);
@@ -609,6 +618,7 @@
   padding: var(--padding-text);
   text-align: center;
   text-shadow: 0em var(--line-width) white;
+  white-space: nowrap;
   box-shadow: 0em 0.15em 0em var(--gray), 0.02em 0.225em 0.2em var(--darkgray), inset 0em var(--line-width) var(--line-width) white, inset 0em -0.075em 0.225em var(--gray);
 }
 .link {

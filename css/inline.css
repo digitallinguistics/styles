@@ -33,6 +33,7 @@
   padding: var(--padding-text);
   text-align: center;
   text-shadow: 0em var(--line-width) white;
+  white-space: nowrap;
   box-shadow: 0em 0.15em 0em var(--gray), 0.02em 0.225em 0.2em var(--darkgray), inset 0em var(--line-width) var(--line-width) white, inset 0em -0.075em 0.225em var(--gray);
 }
 .link {
