@@ -89,10 +89,23 @@ const storeLint = async () => {
 
 };
 
+const storeJS = async () => {
+
+  const contentSettings = {
+    contentEncoding: `utf8`,
+    contentType:     `application/javascript`,
+  };
+
+  await storeFile(`scripts`, `patterns.js`, `./js/patterns.js`, { contentSettings });
+  console.log(` - patterns.js uploaded`);
+
+};
+
 Promise.all([
   // storeFonts(),
   storeImages(),
   storeLessFiles(),
   storeLint(),
+  storeJS(),
 ])
 .then(() => console.log(` - all files uploaded`));

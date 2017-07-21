@@ -1,12 +1,13 @@
-const colors = document.getElementById(`colors`);
+const colors = document.querySelector(`.kss-colors-container`);
 
 colors.addEventListener(`click`, ev => {
-  if (ev.target.classList.contains(`swatch`)) {
+  if (ev.target.classList.contains(`kss-color`)) {
 
+    const hex       = ev.target.querySelector(`.kss-color__code`);
     const selection = window.getSelection();
     const range     = new Range;
 
-    range.selectNodeContents(ev.target);
+    range.selectNodeContents(hex);
     selection.removeAllRanges();
     selection.addRange(range);
     document.execCommand(`copy`);

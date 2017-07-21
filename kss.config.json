@@ -11,5 +11,7 @@
   "css": [
     "https://digitallinguistics.blob.core.windows.net/css/patterns.css"
   ],
-  "js": []
+  "js": [
+    "https://digitallinguistics.blob.core.windows.net/scripts/patterns.js"
+  ]
 }
