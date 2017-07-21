@@ -20,14 +20,6 @@ All fonts used by DLx projects may be found in the `/fonts` folder, and are avai
 
 * **CSS**: A Stylelint style sheet for linting CSS is available in `stylesheets/.stylelintrc`, or may be download or linked to at `https://cdn.digitallinguistics.io/dev/.stylelintrc`.
 
-## Build Process
-
-The build process requires first uploading the LESS files to the CDN, then once they are live, compiling them to CSS (because the LESS files themselves reference the CDN for imports), and then uploading the CSS files to the CDN.
-
-The build process also produces the DLx pattern library programmatically using [KSS][4]. The pattern library is saved to the `/docs` folder. You can build the pattern library at any time by running `npm run kss`.
-
-These steps can all be accomplished automatically by running `npm run build` from the command line.
-
 ## Want to Contribute?
 
 Check out DLx's [general contributing guidelines][3].
