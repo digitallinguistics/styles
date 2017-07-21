@@ -36,6 +36,7 @@
   outline: 0;
   padding: var(--padding-text);
   text-align: center;
+  white-space: normal;
 
   &:active {
     --shadow-button: 0 0 0 0.075em rgba(0,0,0,0.15) inset, 0 0 0.5em rgba(0,0,0,0.2) inset;
@@ -72,6 +73,8 @@
 
   legend {
     font-weight: var(--bold);
+    overflow-wrap: break-word;
+    word-wrap: break-word;
   }
 
 }
@@ -90,6 +93,7 @@
   // Styleguide Elements.Forms.Inputs.button
   &[type=button] {
     .button;
+    white-space: normal;
   }
 
   // Checkbox Input
@@ -226,6 +230,7 @@
   &[type=reset] {
     .button;
     .superdarkgreen-background;
+    white-space: normal;
   }
 
   // Search Input
@@ -244,6 +249,7 @@
   // Styleguide Elements.Forms.Inputs.submit
   &[type=submit] {
     .button;
+    white-space: normal;
   }
 
   // Telephone Input
@@ -312,7 +318,10 @@
   {
     font-size: smaller;
     font-weight: var(--bold);
+    min-width: 0;
     padding: var(--padding-text);
+    overflow-wrap: break-word;
+    word-wrap: break-word;
   }
 
   p {

@@ -15,7 +15,7 @@
 
 // Banner
 //
-// A site banner at the top of the page.
+// A site banner at the top of the page. When including additional elements inside the banner, you might want to set `margin-left: auto;` on the element to push it to the opposite end of the banner from the `<h1>`.
 //
 // Markup: banner.hbs
 //
@@ -25,6 +25,7 @@
   .blue-background;
   align-items: center;
   box-shadow: var(--shadow-deep);
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
@@ -32,8 +33,10 @@
   h1 {
     font-size: 2em;
     font-weight: 300;
+    min-width: 0;
     padding: var(--padding-text);
-    white-space: nowrap;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
   }
 
 }
@@ -69,6 +72,9 @@
     flex-direction: row;
     font-weight: var(--bold);
     margin-left: -1em;
+    min-width: 0;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
   }
 }
 
@@ -149,8 +155,11 @@
     padding: 0;
 
     li {
+      min-width: 0;
+      overflow-wrap: break-word;
       padding: 0.5em;
-      white-space: nowrap;
+      text-align: center;
+      word-wrap: break-word;
     }
 
     a {

@@ -1,7 +1,5 @@
 const colors = document.getElementById(`colors`);
-const nav    = document.getElementById(`nav`);
 
-// make color swatches copyable
 colors.addEventListener(`click`, ev => {
   if (ev.target.classList.contains(`swatch`)) {
 
@@ -16,8 +14,3 @@ colors.addEventListener(`click`, ev => {
 
   }
 });
-
-// nav menu
-nav.onchange = ev => { window.location = `#${ev.target.value}`; };
-
-hljs.initHighlightingOnLoad();
