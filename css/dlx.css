@@ -632,6 +632,7 @@ tr {
 .fieldset {
   border: var(--border);
   border-radius: var(--border-radius);
+  display: flex;
 }
 .fieldset legend {
   font-weight: var(--bold);
@@ -1095,6 +1096,9 @@ tr {
   overflow-wrap: break-word;
   word-wrap: break-word;
 }
+.label input {
+  margin: 0.25em;
+}
 .label p {
   padding: var(--padding-text);
 }
@@ -1331,6 +1335,7 @@ button-red {
 fieldset {
   border: var(--border);
   border-radius: var(--border-radius);
+  display: flex;
 }
 fieldset legend {
   font-weight: var(--bold);
@@ -1793,6 +1798,9 @@ label span {
   padding: var(--padding-text);
   overflow-wrap: break-word;
   word-wrap: break-word;
+}
+label input {
+  margin: 0.25em;
 }
 label p {
   padding: var(--padding-text);
