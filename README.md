@@ -1,6 +1,6 @@
 # DLx Styles
 
-This repository contains styles and assets for DLx projects.
+This repository contains styles and assets used across DLx projects, and is intended primarily for developers. This project allows DLx developers to apply consistent styling across different sites and projects, and provides a single source of truth for various assets. This works by making the various assets and stylesheets available for linking or download on the DLx CDN.
 
 ## Pattern Library
 
@@ -22,7 +22,7 @@ All fonts used by DLx projects may be found in the `/fonts` folder, and are avai
 
 ## Want to Contribute?
 
-Check out DLx's [general contributing guidelines][3].
+Contributions are welcome! Check out DLx's [general contributing guidelines][3].
 
 ## Maintainers
 
