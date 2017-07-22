@@ -6,21 +6,21 @@
 //
 // Styleguide Typography
 
-
 @path: 'https://digitallinguistics.blob.core.windows.net/fonts';
+
+// Cannot use CSS variables for these - it breaks the @font-face declarations
+@font-family: 'Fira Sans';
+@font-family-mono: 'Fira Sans Mono';
+@font-family-unicode: 'Gentium Plus';
 
 :root {
 
   --font: 'Fira Sans', 'Calibri', 'DejaVu Sans', 'Verdana', 'Arial', 'Helvetica', sans-serif;
-  --font-mono: 'Fira Mono', 'Consolas', 'Monaco', 'DejaVu Mono', 'Courier New', monospace;
+  --font-mono: 'Fira Mono', 'Consolas', 'Monaco', 'DejaVu Sans Mono', 'Courier New', monospace;
   --font-unicode: 'Gentium Plus', 'Charis SIL', 'Doulos SIL', 'Cambria', 'Andika', 'Lucida Sans Unicode', 'Times New Roman', 'Georgia', serif;
 
   --font-display: fallback;
   --font-display-critical: swap;
-
-  --font-family: 'Fira Sans';
-  --font-family-mono: 'Fira Sans Mono';
-  --font-family-unicode: 'Gentium Plus';
 
 }
 
@@ -42,7 +42,7 @@
 //
 // Styleguide Typography.FiraSans.Light
 @font-face {
-  font-family: var(--font-family);
+  font-family: @font-family;
   src:
     local('Fira Sans Light'),
     url('@{path}/FiraSans-Light.woff2') format('woff2'),
@@ -61,7 +61,7 @@
 //
 // Styleguide Typography.FiraSans.LightItalic
 @font-face {
-  font-family: var(--font-family);
+  font-family: @font-family;
   src:
     local('Fira Sans Light Italic'),
     url('@{path}/FiraSans-LightItalic.woff2') format('woff2'),
@@ -80,7 +80,7 @@
 //
 // Styleguide Typography.FiraSans.Regular
 @font-face {
-  font-family: var(--font-family);
+  font-family: @font-family;
   src:
     local('Fira Sans Regular'),
     url('@{path}/FiraSans-Regular.woff2') format('woff2'),
@@ -99,7 +99,7 @@
 //
 // Styleguide Typography.FiraSans.RegularItalic
 @font-face {
-  font-family: var(--font-family);
+  font-family: @font-family;
   src:
     local('Fira Sans Regular Italic'),
     url('@{path}/FiraSans-RegularItalic.woff2') format('woff2'),
@@ -118,7 +118,7 @@
 //
 // Styleguide Typography.FiraSans.Medium
 @font-face {
-  font-family: var(--font-family);
+  font-family: @font-family;
   src:
     local('Fira Sans Medium'),
     url('@{path}/FiraSans-Medium.woff2') format('woff2'),
@@ -137,7 +137,7 @@
 //
 // Styleguide Typography.FiraSans.MediumItalic
 @font-face {
-  font-family: var(--font-family);
+  font-family: @font-family;
   src:
     local('Fira Sans Medium Italic'),
     url('@{path}/FiraSans-MediumItalic.woff2') format('woff2'),
@@ -156,7 +156,7 @@
 //
 // Styleguide Typography.FiraSans.SemiBold
 @font-face {
-  font-family: var(--font-family);
+  font-family: @font-family;
   src:
     local('Fira Sans SemiBold'),
     url('@{path}/FiraSans-SemiBold.woff2') format('woff2'),
@@ -175,7 +175,7 @@
 //
 // Styleguide Typography.FiraSans.SemiBoldItalic
 @font-face {
-  font-family: var(--font-family);
+  font-family: @font-family;
   src:
     local('Fira Sans SemiBold Italic'),
     url('@{path}/FiraSans-SemiBoldItalic.woff2') format('woff2'),
@@ -203,7 +203,7 @@
 //
 // Styleguide Typography.FiraMono.Regular
 @font-face {
-  font-family: var(--font-family-mono);
+  font-family: @font-family-mono;
   src:
     local('Fira Mono Regular'),
     url('@{path}/FiraMono-Regular.woff2') format('woff2'),
@@ -222,7 +222,7 @@
 //
 // Styleguide Typography.FiraMono.Bold
 @font-face {
-  font-family: var(--font-family-mono);
+  font-family: @font-family-mono;
   src:
     local('Fira Mono Bold'),
     url('@{path}/FiraMono-Bold.woff2') format('woff2'),
@@ -250,7 +250,7 @@
 //
 // Styleguide Typography.GentiumPlus.Regular
 @font-face {
-  font-family: var(--font-family-unicode);
+  font-family: @font-family-unicode;
   src:
     local('Gentium Plus Regular'),
     url('@{path}/GentiumPlus-R.woff2') format('woff2'),
@@ -269,7 +269,7 @@
 //
 // Styleguide Typography.GentiumPlus.Italic
 @font-face {
-  font-family: var(--font-family-unicode);
+  font-family: @font-family-unicode;
   src:
     local('Gentium Plus Italic'),
     url('@{path}/GentiumPlus-I.woff2') format('woff2'),
