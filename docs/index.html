@@ -82,8 +82,34 @@
     <!-- documentation. -->
     <section class="kss-documentation">
         <article class="kss-markdown">
-          <h1 id="components">Components</h1>
-<p>This folder contains example markup of components used across DLx projects, with DLx styling applied.</p>
+          <h1 id="dlx-pattern-library">DLx Pattern Library</h1>
+<p>Welcome to the DLx Pattern Library, demonstrating all the CSS styles used across DLx projects, along with example HTML markup and usage notes.</p>
+<h2 id="less-css">LESS / CSS</h2>
+<p>LESS stylesheets and their accompanying CSS output are available in this repo&#39;s <code>less</code> and <code>css</code> folders respectively. These are each made available on the DLx CDN and may be linked to at <code>https://cdn.digitallinguistics.io/less/{filename}</code> or <code>https://cdn.digitallinguistics.io/css/{filename}</code>.</p>
+<ul>
+<li><p><code>reset.less</code> - A CSS reset that should be applied before any DLx styles. If you prefer not to use this reset, certain DLx classes will require extra styling (typically setting them to <code>display: flex;</code>). Uses the <a href="https://yarnpkg.com/en/package/flexbox-reset"><code>flexbox-reset</code> library</a>.</p>
+</li>
+<li><p><code>fonts.less</code> - Font declarations for the various fonts used by DLx.</p>
+</li>
+<li><p><code>colors.less</code> - CSS variables, classes for font colors, and classes for background colors, for each of the colors used in the DLx color schemes.</p>
+</li>
+<li><p><code>variables.less</code> - High-level CSS variable declarations that are reused across element and component styling, such as common settings for padding, box shadows, underlines, etc.</p>
+</li>
+<li><p><code>elements.less</code> - General element styling (as classes). For example, add the <code>.button</code> class to a <code>&lt;button&gt;</code> element to apply default button styling. Includes the following stylesheets:</p>
+<ul>
+<li><p><code>forms.less</code> - Styling for form elements and similar interactive elements.</p>
+</li>
+<li><p><code>headings.less</code> - Styling for headings.</p>
+</li>
+<li><p><code>inline.less</code> - Styling for inline elements (e.g. <code>&lt;strong&gt;</code>) and classes (e.g. <code>.unicode</code>).</p>
+</li>
+</ul>
+</li>
+<li><p><code>components.less</code> - Discrete, self-contained pieces of UI.</p>
+</li>
+<li><p><code>dlx.less</code> - Bundles together all of the above files and applies their styles. For example, the <code>.link</code> style will be applied to all inline links. If you just want to reference a particular stylesheet or rule, include that file individually using LESS&#39;s <code>(reference)</code> option.</p>
+</li>
+</ul>
 
         </article>
     </section>

@@ -6,7 +6,7 @@
     "less/"
   ],
   "destination": "docs/",
-  "homepage": "README.md",
+  "homepage": "../less/README.md",
   "builder": "node_modules/michelangelo/kss_styleguide/custom-template/",
   "css": [
     "https://digitallinguistics.blob.core.windows.net/css/patterns.css"
