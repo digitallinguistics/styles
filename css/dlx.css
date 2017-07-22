@@ -249,7 +249,7 @@ tr {
 }
 @font-face {
   font-family: 'Fira Sans';
-  src: local('Fira Sans Regular Italic'), url('https://digitallinguistics.blob.core.windows.net/fonts/FiraSans-RegularItalic.woff2') format('woff2'), url('https://digitallinguistics.blob.core.windows.net/fonts/FiraSans-RegularItalic.woff') format('woff');
+  src: local('Fira Sans Regular Italic'), url('https://digitallinguistics.blob.core.windows.net/fonts/FiraSans-Italic.woff2') format('woff2'), url('https://digitallinguistics.blob.core.windows.net/fonts/FiraSans-Italic.woff') format('woff');
   font-display: var(--font-display);
   font-style: italic;
   font-weight: 400;
