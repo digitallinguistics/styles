@@ -790,6 +790,9 @@ tr {
   color: #CAD2D3;
   cursor: not-allowed;
 }
+.input[type=file] {
+  align-items: center;
+}
 .input[type=month] {
   --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
   background-color: transparent;
@@ -1506,6 +1509,9 @@ input[type=email]:disabled {
   background-color: #EAEDED;
   color: #CAD2D3;
   cursor: not-allowed;
+}
+input[type=file] {
+  align-items: center;
 }
 input[type=month] {
   --shadow-inset: inset var(--line-width) var(--line-width) 0.15em var(--shadow-color);
