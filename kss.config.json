@@ -9,7 +9,7 @@
   "homepage": "../less/README.md",
   "builder": "node_modules/michelangelo/kss_styleguide/custom-template/",
   "css": [
-    "https://digitallinguistics.blob.core.windows.net/css/patterns.css"
+    "patterns.css"
   ],
   "js": [
     "https://digitallinguistics.blob.core.windows.net/scripts/patterns.js"
