@@ -7,17 +7,24 @@
   box-shadow: var(--shadow-deep);
   display: flex;
   flex-direction: row;
+  font-weight: 300;
   justify-content: space-between;
+  overflow-wrap: break-word;
+  text-align: center;
   width: 100%;
+  word-wrap: break-word;
 }
 .banner h1 {
-  font-size: 2em;
-  font-weight: 300;
+  align-self: center;
+  font-size: 2.5em;
   margin: 0;
   min-width: 0;
   padding: var(--padding-text);
-  overflow-wrap: break-word;
-  word-wrap: break-word;
+  text-align: center;
+}
+.banner p {
+  font-size: larger;
+  padding: var(--padding-text);
 }
 .bulleted {
   list-style: disc outside none;
@@ -77,28 +84,34 @@
   margin: 0;
   padding: 0;
 }
-.nav ul li {
+.nav li {
+  flex-grow: 1;
   min-width: 0;
   overflow-wrap: break-word;
   padding: 0.5em;
   text-align: center;
   word-wrap: break-word;
 }
-.nav ul a {
+.nav a {
   background: transparent;
-  color: var(--link-color);
   border-bottom: var(--underline-transparent);
+  color: var(--link-color);
   text-decoration: none;
   --link-color: white;
   text-align: center;
 }
-.nav ul a:visited {
+.nav a:link {
+  border-bottom: var(--underline-transparent);
+  color: var(--link-color);
+  text-decoration: none;
+}
+.nav a:visited {
   --link-color: var(--link-color-visited);
 }
-.nav ul a:hover {
+.nav a:hover {
   border-bottom: var(--underline);
 }
-.nav ul a:visited {
+.nav a:visited {
   --link-color: white;
 }
 .numbered {
@@ -138,8 +151,13 @@
 }
 .reference-list a {
   background: transparent;
-  color: var(--link-color);
   border-bottom: var(--underline-transparent);
+  color: var(--link-color);
+  text-decoration: none;
+}
+.reference-list a:link {
+  border-bottom: var(--underline-transparent);
+  color: var(--link-color);
   text-decoration: none;
 }
 .reference-list a:visited {

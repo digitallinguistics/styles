@@ -122,9 +122,15 @@
 .link {
 
   background: transparent;
-  color: var(--link-color);
   border-bottom: var(--underline-transparent);
+  color: var(--link-color);
   text-decoration: none;
+
+  &:link {
+    border-bottom: var(--underline-transparent);
+    color: var(--link-color);
+    text-decoration: none;
+  }
 
   &:visited {
     --link-color: var(--link-color-visited);

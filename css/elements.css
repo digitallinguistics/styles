@@ -562,11 +562,17 @@
 .h1 {
   align-self: center;
   font-size: 2.5em;
+  margin: 0;
+  min-width: 0;
+  padding: var(--padding-text);
   text-align: center;
 }
 .page-title {
   align-self: center;
   font-size: 2.5em;
+  margin: 0;
+  min-width: 0;
+  padding: var(--padding-text);
   text-align: center;
 }
 .h2 {
@@ -645,8 +651,13 @@
 }
 .link {
   background: transparent;
-  color: var(--link-color);
   border-bottom: var(--underline-transparent);
+  color: var(--link-color);
+  text-decoration: none;
+}
+.link:link {
+  border-bottom: var(--underline-transparent);
+  color: var(--link-color);
   text-decoration: none;
 }
 .link:visited {
@@ -657,10 +668,15 @@
 }
 .link-white {
   background: transparent;
-  color: var(--link-color);
   border-bottom: var(--underline-transparent);
+  color: var(--link-color);
   text-decoration: none;
   --link-color: white;
+}
+.link-white:link {
+  border-bottom: var(--underline-transparent);
+  color: var(--link-color);
+  text-decoration: none;
 }
 .link-white:visited {
   --link-color: var(--link-color-visited);

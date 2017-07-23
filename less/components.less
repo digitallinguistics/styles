@@ -27,17 +27,20 @@
   box-shadow: var(--shadow-deep);
   display: flex;
   flex-direction: row;
+  font-weight: 300;
   justify-content: space-between;
+  overflow-wrap: break-word;
+  text-align: center;
   width: 100%;
+  word-wrap: break-word;
 
   h1 {
-    font-size: 2em;
-    font-weight: 300;
-    margin: 0;
-    min-width: 0;
+    .page-title;
+  }
+
+  p {
+    font-size: larger;
     padding: var(--padding-text);
-    overflow-wrap: break-word;
-    word-wrap: break-word;
   }
 
 }
@@ -155,19 +158,20 @@
     margin: 0;
     padding: 0;
 
-    li {
-      min-width: 0;
-      overflow-wrap: break-word;
-      padding: 0.5em;
-      text-align: center;
-      word-wrap: break-word;
-    }
+  }
 
-    a {
-      .link-white;
-      text-align: center;
-    }
+  li {
+    flex-grow: 1;
+    min-width: 0;
+    overflow-wrap: break-word;
+    padding: 0.5em;
+    text-align: center;
+    word-wrap: break-word;
+  }
 
+  a {
+    .link-white;
+    text-align: center;
   }
 
 }

@@ -1157,11 +1157,17 @@ tr {
 .h1 {
   align-self: center;
   font-size: 2.5em;
+  margin: 0;
+  min-width: 0;
+  padding: var(--padding-text);
   text-align: center;
 }
 .page-title {
   align-self: center;
   font-size: 2.5em;
+  margin: 0;
+  min-width: 0;
+  padding: var(--padding-text);
   text-align: center;
 }
 .h2 {
@@ -1240,8 +1246,13 @@ tr {
 }
 .link {
   background: transparent;
-  color: var(--link-color);
   border-bottom: var(--underline-transparent);
+  color: var(--link-color);
+  text-decoration: none;
+}
+.link:link {
+  border-bottom: var(--underline-transparent);
+  color: var(--link-color);
   text-decoration: none;
 }
 .link:visited {
@@ -1252,10 +1263,15 @@ tr {
 }
 .link-white {
   background: transparent;
-  color: var(--link-color);
   border-bottom: var(--underline-transparent);
+  color: var(--link-color);
   text-decoration: none;
   --link-color: white;
+}
+.link-white:link {
+  border-bottom: var(--underline-transparent);
+  color: var(--link-color);
+  text-decoration: none;
 }
 .link-white:visited {
   --link-color: var(--link-color-visited);
@@ -1878,6 +1894,9 @@ textarea:disabled {
 h1 {
   align-self: center;
   font-size: 2.5em;
+  margin: 0;
+  min-width: 0;
+  padding: var(--padding-text);
   text-align: center;
 }
 h2 {
@@ -1988,8 +2007,59 @@ time a,
 tt a,
 var a {
   background: transparent;
-  color: var(--link-color);
   border-bottom: var(--underline-transparent);
+  color: var(--link-color);
+  text-decoration: none;
+}
+blockquote a:link,
+button a:link,
+caption a:link,
+dd a:link,
+dt a:link,
+figcaption a:link,
+h1 a:link,
+h2 a:link,
+h3 a:link,
+h4 a:link,
+h5 a:link,
+h6 a:link,
+input a:link,
+legend a:link,
+option a:link,
+output a:link,
+p a:link,
+pre a:link,
+select a:link,
+textarea a:link,
+abbr a:link,
+acronym a:link,
+b a:link,
+bdo a:link,
+big a:link,
+br a:link,
+cite a:link,
+code a:link,
+del a:link,
+dfn a:link,
+em a:link,
+i a:link,
+ins a:link,
+kbd a:link,
+mark a:link,
+q a:link,
+samp a:link,
+s a:link,
+small a:link,
+span a:link,
+strike a:link,
+strong a:link,
+sub a:link,
+sup a:link,
+time a:link,
+tt a:link,
+var a:link {
+  border-bottom: var(--underline-transparent);
+  color: var(--link-color);
   text-decoration: none;
 }
 blockquote a:visited,

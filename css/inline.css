@@ -38,8 +38,13 @@
 }
 .link {
   background: transparent;
-  color: var(--link-color);
   border-bottom: var(--underline-transparent);
+  color: var(--link-color);
+  text-decoration: none;
+}
+.link:link {
+  border-bottom: var(--underline-transparent);
+  color: var(--link-color);
   text-decoration: none;
 }
 .link:visited {
@@ -50,10 +55,15 @@
 }
 .link-white {
   background: transparent;
-  color: var(--link-color);
   border-bottom: var(--underline-transparent);
+  color: var(--link-color);
   text-decoration: none;
   --link-color: white;
+}
+.link-white:link {
+  border-bottom: var(--underline-transparent);
+  color: var(--link-color);
+  text-decoration: none;
 }
 .link-white:visited {
   --link-color: var(--link-color-visited);

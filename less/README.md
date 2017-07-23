@@ -1,7 +1,14 @@
 # DLx Pattern Library
 Welcome to the DLx Pattern Library, demonstrating all the CSS styles used across DLx projects, along with example HTML markup and usage notes.
 
+## Links
+
+- [Website][2]
+- [Developers][3]
+- [Blog][4]
+
 ## LESS / CSS
+
 LESS stylesheets and their accompanying CSS output are available in this repo's `less` and `css` folders respectively. These are each made available on the DLx CDN and may be linked to at `https://cdn.digitallinguistics.io/less/{filename}` or `https://cdn.digitallinguistics.io/css/{filename}`.
 
   - `reset.less` - A CSS reset that should be applied before any DLx styles. If you prefer not to use this reset, certain DLx classes will require extra styling (typically setting them to `display: flex;`). Uses the [`flexbox-reset` library][1].
@@ -25,3 +32,6 @@ LESS stylesheets and their accompanying CSS output are available in this repo's 
   - `dlx.less` - Bundles together all of the above files and applies their styles. For example, the `.link` style will be applied to all inline links. If you just want to reference a particular stylesheet or rule, include that file individually using LESS's `(reference)` option.
 
 [1]: https://yarnpkg.com/en/package/flexbox-reset
+[2]: https://digitallinguistics.io/
+[3]: http://developers.digitallinguistics.io/
+[4]: http://blog.digitallinguistics.io/tag/developers/
