@@ -87,7 +87,21 @@
 // Styleguide Elements.Forms.Inputs
 .input {
 
-  height: auto;
+  &[type=date],
+  &[type=datetime],
+  &[type=datetime-local],
+  &[type=email],
+  &[type=month],
+  &[type=number],
+  &[type=password],
+  &[type=search],
+  &[type=tel],
+  &[type=text],
+  &[type=time],
+  &[type=week],
+  {
+    min-height: 1.5em;
+  }
 
   // Button Input
   //
