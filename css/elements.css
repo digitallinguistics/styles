@@ -44,6 +44,9 @@
   overflow-wrap: break-word;
   word-wrap: break-word;
 }
+.input {
+  height: auto;
+}
 .input[type=button] {
   --link-color: white;
   --link-color-visited: white;
