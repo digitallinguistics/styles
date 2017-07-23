@@ -10,6 +10,9 @@
   --darkgray: gray;
   --gray: #CCC;
   --lightgray: #F5F2F0;
+  --disabled-color: #CAD2D3;
+  --disabled-background: #EAEDED;
+  --placeholder: #757575;
   --verylightgreen: #7FFED1;
   --lightgreen: #4FFFC1;
   --green: #23FFB1;

@@ -57,6 +57,7 @@
 .input[type=time],
 .input[type=week] {
   min-height: 1.5em;
+  min-width: 5em;
 }
 .input[type=button] {
   --link-color: white;
@@ -122,8 +123,8 @@
   --shadow-color: var(--darkred);
 }
 .input[type=date]:disabled {
-  background-color: #EAEDED;
-  color: #CAD2D3;
+  background-color: var(--disabled-background);
+  color: var(--disabled-color);
   cursor: not-allowed;
 }
 .input[type=datetime] {
@@ -146,8 +147,8 @@
   --shadow-color: var(--darkred);
 }
 .input[type=datetime]:disabled {
-  background-color: #EAEDED;
-  color: #CAD2D3;
+  background-color: var(--disabled-background);
+  color: var(--disabled-color);
   cursor: not-allowed;
 }
 .input[type=datetime-local] {
@@ -170,8 +171,8 @@
   --shadow-color: var(--darkred);
 }
 .input[type=datetime-local]:disabled {
-  background-color: #EAEDED;
-  color: #CAD2D3;
+  background-color: var(--disabled-background);
+  color: var(--disabled-color);
   cursor: not-allowed;
 }
 .input[type=email] {
@@ -194,8 +195,8 @@
   --shadow-color: var(--darkred);
 }
 .input[type=email]:disabled {
-  background-color: #EAEDED;
-  color: #CAD2D3;
+  background-color: var(--disabled-background);
+  color: var(--disabled-color);
   cursor: not-allowed;
 }
 .input[type=file] {
@@ -221,8 +222,8 @@
   --shadow-color: var(--darkred);
 }
 .input[type=month]:disabled {
-  background-color: #EAEDED;
-  color: #CAD2D3;
+  background-color: var(--disabled-background);
+  color: var(--disabled-color);
   cursor: not-allowed;
 }
 .input[type=number] {
@@ -245,8 +246,8 @@
   --shadow-color: var(--darkred);
 }
 .input[type=number]:disabled {
-  background-color: #EAEDED;
-  color: #CAD2D3;
+  background-color: var(--disabled-background);
+  color: var(--disabled-color);
   cursor: not-allowed;
 }
 .input[type=password] {
@@ -269,8 +270,8 @@
   --shadow-color: var(--darkred);
 }
 .input[type=password]:disabled {
-  background-color: #EAEDED;
-  color: #CAD2D3;
+  background-color: var(--disabled-background);
+  color: var(--disabled-color);
   cursor: not-allowed;
 }
 .input[type=radio] {
@@ -338,8 +339,8 @@
   --shadow-color: var(--darkred);
 }
 .input[type=search]:disabled {
-  background-color: #EAEDED;
-  color: #CAD2D3;
+  background-color: var(--disabled-background);
+  color: var(--disabled-color);
   cursor: not-allowed;
 }
 .input[type=submit] {
@@ -398,8 +399,8 @@
   --shadow-color: var(--darkred);
 }
 .input[type=tel]:disabled {
-  background-color: #EAEDED;
-  color: #CAD2D3;
+  background-color: var(--disabled-background);
+  color: var(--disabled-color);
   cursor: not-allowed;
 }
 .input[type=text] {
@@ -422,8 +423,8 @@
   --shadow-color: var(--darkred);
 }
 .input[type=text]:disabled {
-  background-color: #EAEDED;
-  color: #CAD2D3;
+  background-color: var(--disabled-background);
+  color: var(--disabled-color);
   cursor: not-allowed;
 }
 .input[type=time] {
@@ -446,8 +447,8 @@
   --shadow-color: var(--darkred);
 }
 .input[type=time]:disabled {
-  background-color: #EAEDED;
-  color: #CAD2D3;
+  background-color: var(--disabled-background);
+  color: var(--disabled-color);
   cursor: not-allowed;
 }
 .input[type=url] {
@@ -470,8 +471,8 @@
   --shadow-color: var(--darkred);
 }
 .input[type=url]:disabled {
-  background-color: #EAEDED;
-  color: #CAD2D3;
+  background-color: var(--disabled-background);
+  color: var(--disabled-color);
   cursor: not-allowed;
 }
 .input[type=week] {
@@ -494,8 +495,8 @@
   --shadow-color: var(--darkred);
 }
 .input[type=week]:disabled {
-  background-color: #EAEDED;
-  color: #CAD2D3;
+  background-color: var(--disabled-background);
+  color: var(--disabled-color);
   cursor: not-allowed;
 }
 .label {
@@ -554,7 +555,7 @@
   --shadow-color: var(--darkred);
 }
 .textarea:disabled {
-  background-color: #EAEDED;
-  color: #CAD2D3;
+  background-color: var(--disabled-background);
+  color: var(--disabled-color);
   cursor: not-allowed;
 }

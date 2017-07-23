@@ -55,8 +55,8 @@
   --shadow-color: var(--darkred);
 }
 .field:disabled {
-  background-color: #EAEDED;
-  color: #CAD2D3;
+  background-color: var(--disabled-background);
+  color: var(--disabled-color);
   cursor: not-allowed;
 }
 .hanging {
@@ -173,4 +173,71 @@
   margin-left: 1.5em;
   padding: var(--padding-text);
   text-indent: -1.5em;
+}
+.textline {
+  align-items: baseline;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.textline h1,
+.textline h2,
+.textline h3,
+.textline h4,
+.textline h5,
+.textline h6,
+.textline span {
+  font-size: smaller;
+  font-weight: var(--bold);
+  min-width: 0;
+  overflow-wrap: break-word;
+  padding: var(--padding-text);
+  word-wrap: break-word;
+}
+.textline > div {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+.textline input {
+  border: 0;
+  border-bottom: var(--border);
+  border-bottom-color: var(--gray);
+  box-shadow: unset;
+  cursor: text;
+  min-height: 1.5em;
+  outline: 0;
+  padding: var(--padding-text);
+}
+.textline input:disabled {
+  background-color: var(--disabled-background);
+  color: var(--disabled-color);
+  cursor: not-allowed;
+}
+.textline input:focus:not(:disabled) {
+  border-bottom-color: var(--blue);
+}
+.textline input:focus:not(:disabled):placeholder {
+  color: var(--blue);
+}
+.textline input:focus:not(:disabled) + p {
+  color: var(--blue);
+}
+.textline input:focus:not(:disabled) + p a {
+  font-weight: var(--bold);
+}
+.textline input:invalid:not(:disabled) {
+  border-bottom-color: var(--darkred);
+  color: var(--red);
+}
+.textline input:invalid:not(:disabled) + p {
+  color: var(--red);
+}
+.textline input + p {
+  color: var(--placeholder);
+  font-size: smaller;
+}
+.textline p {
+  margin: 0;
+  padding: var(--padding-text);
 }

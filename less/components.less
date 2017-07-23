@@ -115,8 +115,8 @@
   }
 
   &:disabled {
-    background-color: #EAEDED;
-    color: #CAD2D3;
+    background-color: var(--disabled-background);
+    color: var(--disabled-color);
     cursor: not-allowed;
   }
 
@@ -257,6 +257,100 @@
       text-indent: -1.5em;
     }
 
+  }
+
+}
+
+// Text Line
+//
+// A text input styled with a simple underline rather than an inset box. A `<p>` tag may also be included immediately following the `<input>` element in order to provide a brief description, explanation, or other help text below the input. **NOTE:** The `:not()` selector causes problems for KSS, so that the :disabled variant below isn't rendering correctly; however, it does render correctly in production.
+//
+// Markup: textline.hbs
+//
+// :disabled - For disabled text inputs
+// :focus    - For focused text inputs
+// :invalid  - For invalid data in text inputs
+//
+// Styleguide Components.textline
+.textline {
+
+  align-items: baseline;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  h1, h2, h3, h4, h5, h6,
+  span
+  {
+    font-size: smaller;
+    font-weight: var(--bold);
+    min-width: 0;
+    overflow-wrap: break-word;
+    padding: var(--padding-text);
+    word-wrap: break-word;
+  }
+
+  > div {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+  }
+
+  input {
+
+    border: 0;
+    border-bottom: var(--border);
+    border-bottom-color: var(--gray);
+    box-shadow: unset;
+    cursor: text;
+    min-height: 1.5em;
+    outline: 0;
+    padding: var(--padding-text);
+
+    &:disabled {
+      background-color: var(--disabled-background);
+      color: var(--disabled-color);
+      cursor: not-allowed;
+    }
+
+    &:focus:not(:disabled) {
+
+      border-bottom-color: var(--blue);
+
+      &:placeholder {
+        color: var(--blue);
+      }
+
+      + p {
+        color: var(--blue);
+        a {
+          font-weight: var(--bold);
+        }
+      }
+
+    }
+
+    &:invalid:not(:disabled) {
+
+      border-bottom-color: var(--darkred);
+      color: var(--red);
+
+      + p {
+        color: var(--red);
+      }
+
+    }
+
+    + p {
+      color: var(--placeholder);
+      font-size: smaller;
+    }
+
+  }
+
+  p {
+    margin: 0;
+    padding: var(--padding-text);
   }
 
 }

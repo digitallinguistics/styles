@@ -128,6 +128,12 @@
                         <span class="kss-nav__name">Reference List</span>
                       </a>
                     </li>
+                    <li class="kss-nav__item ">
+                      <a href="section-components.html#kssref-components-textline">
+                        <span class="kss-nav__ref">6.10</span>
+                        <span class="kss-nav__name">Text Line</span>
+                      </a>
+                    </li>
                 </ul>
           </li>
       </ul>
@@ -635,6 +641,187 @@ It is displayed as a standalone block of code.
   &lt;/ol&gt;
 
 &lt;/section&gt;
+</code></pre>
+                </article>
+
+            </section>
+            <section class="kss-section kss-section--depth-2" id="kssref-components-textline">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>components.less</span>, line <span>264</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-components-textline">
+                <h2 class="kss-section__item kss-section__item--depth-2">
+                  <span class="kss-section__ref">6.10</span>
+                  <span class="kss-section__name">Text Line</span>
+                </h2>
+              </a>
+
+                <div class="kss-section__description"><p>A text input styled with a simple underline rather than an inset box. A <code>&lt;p&gt;</code> tag may also be included immediately following the <code>&lt;input&gt;</code> element in order to provide a brief description, explanation, or other help text below the input. <strong>NOTE:</strong> The <code>:not()</code> selector causes problems for KSS, so that the :disabled variant below isn&#39;t rendering correctly; however, it does render correctly in production.</p>
+</div>
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Examples</h1>
+
+                  <h2 class="kss-modifiers__name">Default styling</h2>
+
+                <div class="kss-modifiers__example"><label class="textline {{modifier_class}}">
+  <span>Label Name</span>
+  <div>
+    <input
+      class="{{modifier_class}}"
+      inputmode=verbatim
+      placeholder='placeholder data'
+      type=text
+    >
+    <p>An abbreviation for this language variety. May contain only letters and numbers.</p>
+  </div>
+</label>
+
+<label class="textline {{modifier_class}}">
+  <span>Label Name</span>
+  <div>
+    <input
+      class="{{modifier_class}}"
+      inputmode=verbatim
+      pattern=[0-9]
+      placeholder='placeholder data'
+      type=text
+      value='Invalid data'
+    >
+    <p>An abbreviation for this language variety. May contain only letters and numbers.</p>
+  </div>
+</label>
+</div>
+
+                  <h2 class="kss-modifiers__name">:disabled</h2>
+
+                  <p class="kss-modifiers__description">For disabled text inputs</p>
+
+                  <div class="kss-modifiers__example"><label class="textline pseudo-class-disabled">
+  <span>Label Name</span>
+  <div>
+    <input
+      class="pseudo-class-disabled"
+      inputmode=verbatim
+      placeholder='placeholder data'
+      type=text
+    >
+    <p>An abbreviation for this language variety. May contain only letters and numbers.</p>
+  </div>
+</label>
+
+<label class="textline pseudo-class-disabled">
+  <span>Label Name</span>
+  <div>
+    <input
+      class="pseudo-class-disabled"
+      inputmode=verbatim
+      pattern=[0-9]
+      placeholder='placeholder data'
+      type=text
+      value='Invalid data'
+    >
+    <p>An abbreviation for this language variety. May contain only letters and numbers.</p>
+  </div>
+</label>
+</div>
+                  <h2 class="kss-modifiers__name">:focus</h2>
+
+                  <p class="kss-modifiers__description">For focused text inputs</p>
+
+                  <div class="kss-modifiers__example"><label class="textline pseudo-class-focus">
+  <span>Label Name</span>
+  <div>
+    <input
+      class="pseudo-class-focus"
+      inputmode=verbatim
+      placeholder='placeholder data'
+      type=text
+    >
+    <p>An abbreviation for this language variety. May contain only letters and numbers.</p>
+  </div>
+</label>
+
+<label class="textline pseudo-class-focus">
+  <span>Label Name</span>
+  <div>
+    <input
+      class="pseudo-class-focus"
+      inputmode=verbatim
+      pattern=[0-9]
+      placeholder='placeholder data'
+      type=text
+      value='Invalid data'
+    >
+    <p>An abbreviation for this language variety. May contain only letters and numbers.</p>
+  </div>
+</label>
+</div>
+                  <h2 class="kss-modifiers__name">:invalid</h2>
+
+                  <p class="kss-modifiers__description">For invalid data in text inputs</p>
+
+                  <div class="kss-modifiers__example"><label class="textline pseudo-class-invalid">
+  <span>Label Name</span>
+  <div>
+    <input
+      class="pseudo-class-invalid"
+      inputmode=verbatim
+      placeholder='placeholder data'
+      type=text
+    >
+    <p>An abbreviation for this language variety. May contain only letters and numbers.</p>
+  </div>
+</label>
+
+<label class="textline pseudo-class-invalid">
+  <span>Label Name</span>
+  <div>
+    <input
+      class="pseudo-class-invalid"
+      inputmode=verbatim
+      pattern=[0-9]
+      placeholder='placeholder data'
+      type=text
+      value='Invalid data'
+    >
+    <p>An abbreviation for this language variety. May contain only letters and numbers.</p>
+  </div>
+</label>
+</div>
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;label class&#x3D;&quot;textline {{modifier_class}}&quot;&gt;
+  &lt;span&gt;Label Name&lt;/span&gt;
+  &lt;div&gt;
+    &lt;input
+      class&#x3D;&quot;{{modifier_class}}&quot;
+      inputmode&#x3D;verbatim
+      placeholder&#x3D;&#x27;placeholder data&#x27;
+      type&#x3D;text
+    &gt;
+    &lt;p&gt;An abbreviation for this language variety. May contain only letters and numbers.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/label&gt;
+
+&lt;label class&#x3D;&quot;textline {{modifier_class}}&quot;&gt;
+  &lt;span&gt;Label Name&lt;/span&gt;
+  &lt;div&gt;
+    &lt;input
+      class&#x3D;&quot;{{modifier_class}}&quot;
+      inputmode&#x3D;verbatim
+      pattern&#x3D;[0-9]
+      placeholder&#x3D;&#x27;placeholder data&#x27;
+      type&#x3D;text
+      value&#x3D;&#x27;Invalid data&#x27;
+    &gt;
+    &lt;p&gt;An abbreviation for this language variety. May contain only letters and numbers.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/label&gt;
 </code></pre>
                 </article>
 

@@ -322,6 +322,9 @@ tr {
   --darkgray: gray;
   --gray: #CCC;
   --lightgray: #F5F2F0;
+  --disabled-color: #CAD2D3;
+  --disabled-background: #EAEDED;
+  --placeholder: #757575;
   --verylightgreen: #7FFED1;
   --lightgreen: #4FFFC1;
   --green: #23FFB1;
@@ -649,6 +652,7 @@ tr {
 .input[type=time],
 .input[type=week] {
   min-height: 1.5em;
+  min-width: 5em;
 }
 .input[type=button] {
   --link-color: white;
@@ -714,8 +718,8 @@ tr {
   --shadow-color: var(--darkred);
 }
 .input[type=date]:disabled {
-  background-color: #EAEDED;
-  color: #CAD2D3;
+  background-color: var(--disabled-background);
+  color: var(--disabled-color);
   cursor: not-allowed;
 }
 .input[type=datetime] {
@@ -738,8 +742,8 @@ tr {
   --shadow-color: var(--darkred);
 }
 .input[type=datetime]:disabled {
-  background-color: #EAEDED;
-  color: #CAD2D3;
+  background-color: var(--disabled-background);
+  color: var(--disabled-color);
   cursor: not-allowed;
 }
 .input[type=datetime-local] {
@@ -762,8 +766,8 @@ tr {
   --shadow-color: var(--darkred);
 }
 .input[type=datetime-local]:disabled {
-  background-color: #EAEDED;
-  color: #CAD2D3;
+  background-color: var(--disabled-background);
+  color: var(--disabled-color);
   cursor: not-allowed;
 }
 .input[type=email] {
@@ -786,8 +790,8 @@ tr {
   --shadow-color: var(--darkred);
 }
 .input[type=email]:disabled {
-  background-color: #EAEDED;
-  color: #CAD2D3;
+  background-color: var(--disabled-background);
+  color: var(--disabled-color);
   cursor: not-allowed;
 }
 .input[type=file] {
@@ -813,8 +817,8 @@ tr {
   --shadow-color: var(--darkred);
 }
 .input[type=month]:disabled {
-  background-color: #EAEDED;
-  color: #CAD2D3;
+  background-color: var(--disabled-background);
+  color: var(--disabled-color);
   cursor: not-allowed;
 }
 .input[type=number] {
@@ -837,8 +841,8 @@ tr {
   --shadow-color: var(--darkred);
 }
 .input[type=number]:disabled {
-  background-color: #EAEDED;
-  color: #CAD2D3;
+  background-color: var(--disabled-background);
+  color: var(--disabled-color);
   cursor: not-allowed;
 }
 .input[type=password] {
@@ -861,8 +865,8 @@ tr {
   --shadow-color: var(--darkred);
 }
 .input[type=password]:disabled {
-  background-color: #EAEDED;
-  color: #CAD2D3;
+  background-color: var(--disabled-background);
+  color: var(--disabled-color);
   cursor: not-allowed;
 }
 .input[type=radio] {
@@ -930,8 +934,8 @@ tr {
   --shadow-color: var(--darkred);
 }
 .input[type=search]:disabled {
-  background-color: #EAEDED;
-  color: #CAD2D3;
+  background-color: var(--disabled-background);
+  color: var(--disabled-color);
   cursor: not-allowed;
 }
 .input[type=submit] {
@@ -990,8 +994,8 @@ tr {
   --shadow-color: var(--darkred);
 }
 .input[type=tel]:disabled {
-  background-color: #EAEDED;
-  color: #CAD2D3;
+  background-color: var(--disabled-background);
+  color: var(--disabled-color);
   cursor: not-allowed;
 }
 .input[type=text] {
@@ -1014,8 +1018,8 @@ tr {
   --shadow-color: var(--darkred);
 }
 .input[type=text]:disabled {
-  background-color: #EAEDED;
-  color: #CAD2D3;
+  background-color: var(--disabled-background);
+  color: var(--disabled-color);
   cursor: not-allowed;
 }
 .input[type=time] {
@@ -1038,8 +1042,8 @@ tr {
   --shadow-color: var(--darkred);
 }
 .input[type=time]:disabled {
-  background-color: #EAEDED;
-  color: #CAD2D3;
+  background-color: var(--disabled-background);
+  color: var(--disabled-color);
   cursor: not-allowed;
 }
 .input[type=url] {
@@ -1062,8 +1066,8 @@ tr {
   --shadow-color: var(--darkred);
 }
 .input[type=url]:disabled {
-  background-color: #EAEDED;
-  color: #CAD2D3;
+  background-color: var(--disabled-background);
+  color: var(--disabled-color);
   cursor: not-allowed;
 }
 .input[type=week] {
@@ -1086,8 +1090,8 @@ tr {
   --shadow-color: var(--darkred);
 }
 .input[type=week]:disabled {
-  background-color: #EAEDED;
-  color: #CAD2D3;
+  background-color: var(--disabled-background);
+  color: var(--disabled-color);
   cursor: not-allowed;
 }
 .label {
@@ -1146,8 +1150,8 @@ tr {
   --shadow-color: var(--darkred);
 }
 .textarea:disabled {
-  background-color: #EAEDED;
-  color: #CAD2D3;
+  background-color: var(--disabled-background);
+  color: var(--disabled-color);
   cursor: not-allowed;
 }
 .h1 {
@@ -1369,6 +1373,7 @@ input[type=text],
 input[type=time],
 input[type=week] {
   min-height: 1.5em;
+  min-width: 5em;
 }
 input[type=button] {
   --link-color: white;
@@ -1434,8 +1439,8 @@ input[type=date]:focus:invalid {
   --shadow-color: var(--darkred);
 }
 input[type=date]:disabled {
-  background-color: #EAEDED;
-  color: #CAD2D3;
+  background-color: var(--disabled-background);
+  color: var(--disabled-color);
   cursor: not-allowed;
 }
 input[type=datetime] {
@@ -1458,8 +1463,8 @@ input[type=datetime]:focus:invalid {
   --shadow-color: var(--darkred);
 }
 input[type=datetime]:disabled {
-  background-color: #EAEDED;
-  color: #CAD2D3;
+  background-color: var(--disabled-background);
+  color: var(--disabled-color);
   cursor: not-allowed;
 }
 input[type=datetime-local] {
@@ -1482,8 +1487,8 @@ input[type=datetime-local]:focus:invalid {
   --shadow-color: var(--darkred);
 }
 input[type=datetime-local]:disabled {
-  background-color: #EAEDED;
-  color: #CAD2D3;
+  background-color: var(--disabled-background);
+  color: var(--disabled-color);
   cursor: not-allowed;
 }
 input[type=email] {
@@ -1506,8 +1511,8 @@ input[type=email]:focus:invalid {
   --shadow-color: var(--darkred);
 }
 input[type=email]:disabled {
-  background-color: #EAEDED;
-  color: #CAD2D3;
+  background-color: var(--disabled-background);
+  color: var(--disabled-color);
   cursor: not-allowed;
 }
 input[type=file] {
@@ -1533,8 +1538,8 @@ input[type=month]:focus:invalid {
   --shadow-color: var(--darkred);
 }
 input[type=month]:disabled {
-  background-color: #EAEDED;
-  color: #CAD2D3;
+  background-color: var(--disabled-background);
+  color: var(--disabled-color);
   cursor: not-allowed;
 }
 input[type=number] {
@@ -1557,8 +1562,8 @@ input[type=number]:focus:invalid {
   --shadow-color: var(--darkred);
 }
 input[type=number]:disabled {
-  background-color: #EAEDED;
-  color: #CAD2D3;
+  background-color: var(--disabled-background);
+  color: var(--disabled-color);
   cursor: not-allowed;
 }
 input[type=password] {
@@ -1581,8 +1586,8 @@ input[type=password]:focus:invalid {
   --shadow-color: var(--darkred);
 }
 input[type=password]:disabled {
-  background-color: #EAEDED;
-  color: #CAD2D3;
+  background-color: var(--disabled-background);
+  color: var(--disabled-color);
   cursor: not-allowed;
 }
 input[type=radio] {
@@ -1650,8 +1655,8 @@ input[type=search]:focus:invalid {
   --shadow-color: var(--darkred);
 }
 input[type=search]:disabled {
-  background-color: #EAEDED;
-  color: #CAD2D3;
+  background-color: var(--disabled-background);
+  color: var(--disabled-color);
   cursor: not-allowed;
 }
 input[type=submit] {
@@ -1710,8 +1715,8 @@ input[type=tel]:focus:invalid {
   --shadow-color: var(--darkred);
 }
 input[type=tel]:disabled {
-  background-color: #EAEDED;
-  color: #CAD2D3;
+  background-color: var(--disabled-background);
+  color: var(--disabled-color);
   cursor: not-allowed;
 }
 input[type=text] {
@@ -1734,8 +1739,8 @@ input[type=text]:focus:invalid {
   --shadow-color: var(--darkred);
 }
 input[type=text]:disabled {
-  background-color: #EAEDED;
-  color: #CAD2D3;
+  background-color: var(--disabled-background);
+  color: var(--disabled-color);
   cursor: not-allowed;
 }
 input[type=time] {
@@ -1758,8 +1763,8 @@ input[type=time]:focus:invalid {
   --shadow-color: var(--darkred);
 }
 input[type=time]:disabled {
-  background-color: #EAEDED;
-  color: #CAD2D3;
+  background-color: var(--disabled-background);
+  color: var(--disabled-color);
   cursor: not-allowed;
 }
 input[type=url] {
@@ -1782,8 +1787,8 @@ input[type=url]:focus:invalid {
   --shadow-color: var(--darkred);
 }
 input[type=url]:disabled {
-  background-color: #EAEDED;
-  color: #CAD2D3;
+  background-color: var(--disabled-background);
+  color: var(--disabled-color);
   cursor: not-allowed;
 }
 input[type=week] {
@@ -1806,8 +1811,8 @@ input[type=week]:focus:invalid {
   --shadow-color: var(--darkred);
 }
 input[type=week]:disabled {
-  background-color: #EAEDED;
-  color: #CAD2D3;
+  background-color: var(--disabled-background);
+  color: var(--disabled-color);
   cursor: not-allowed;
 }
 label {
@@ -1866,8 +1871,8 @@ textarea:focus:invalid {
   --shadow-color: var(--darkred);
 }
 textarea:disabled {
-  background-color: #EAEDED;
-  color: #CAD2D3;
+  background-color: var(--disabled-background);
+  color: var(--disabled-color);
   cursor: not-allowed;
 }
 h1 {
