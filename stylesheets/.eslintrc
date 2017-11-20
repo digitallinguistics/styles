@@ -41,7 +41,7 @@
     "arrow-spacing": ["error", { "before": true, "after": true }],
     "block-scoped-var": "warn",
     "block-spacing": ["error", "always"],
-    "brace-style": ["error", "1tbs", { "allowSingleLine": true }],
+    "brace-style": ["warn", "1tbs", { "allowSingleLine": true }],
     "callback-return": "warn",
     "camelcase": ["warn", { "properties": "always" }],
     "capitalized-comments": "off",
@@ -75,7 +75,7 @@
       "SwitchCase": 1,
       "MemberExpression": "off"
     }],
-    "init-declarations": ["warn", "always"],
+    "init-declarations": ["off"],
     "key-spacing": ["error", {
       "beforeColon": false,
       "afterColon": true,
@@ -98,7 +98,7 @@
     }],
     "max-depth": "warn",
     "max-len": ["warn", {
-      "code": 100,
+      "code": 120,
       "ignoreComments": true,
       "ignoreStrings": true,
       "ignoreTemplateLiterals": true,
@@ -209,9 +209,14 @@
         405,
         408,
         409,
+        410,
         412,
+        413,
         422,
+        429,
+        449,
         500,
+        503,
         1000,
         3000
       ]
@@ -230,7 +235,7 @@
     "no-multi-str": "error",
     "no-multiple-empty-lines": ["warn", { "max": 2 }],
     "no-negated-condition": "warn",
-    "no-nested-ternary": "error",
+    "no-nested-ternary": "warn",
     "no-new": "warn",
     "no-new-func": "error",
     "no-new-object": "warn",

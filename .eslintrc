@@ -1,0 +1,12 @@
+{
+  "extends": "../styles/stylesheets/.eslintrc",
+  "env": {
+    "browser": true
+  },
+  "parserOptions": {
+    "sourceType": "script"
+  },
+  "globals": {
+    "hljs": true
+  }
+}

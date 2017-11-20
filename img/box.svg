@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" baseProfile="full" width="76" height="76" viewBox="0 0 76.00 76.00" enable-background="new 0 0 76.00 76.00" xml:space="preserve">
-	<path fill="#000" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 38,19L 57,28.5L 57,47.5L 38,57L 19,47.5L 19,28.5L 38,19 Z M 22.1667,30.0833L 22.1667,45.9167L 25.3333,47.5L 36.4167,53.0417L 36.4167,37.2083L 22.1667,30.0833 Z M 50.6666,47.5L 53.8333,45.9167L 53.8333,30.0833L 39.5833,37.2083L 39.5833,53.0417L 50.6666,47.5 Z M 38,22.1667L 25.3333,28.5L 38,34.8334L 50.6666,28.5L 38,22.1667 Z "/>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M12.89 1.45l8 4A2 2 0 0 1 22 7.24v9.53a2 2 0 0 1-1.11 1.79l-8 4a2 2 0 0 1-1.79 0l-8-4a2 2 0 0 1-1.1-1.8V7.24a2 2 0 0 1 1.11-1.79l8-4a2 2 0 0 1 1.78 0z"></path>
+  <polyline points="2.32 6.16 12 11 21.68 6.16"></polyline>
+  <line x1="12" y1="22.76" x2="12" y2="11"></line>
 </svg>
