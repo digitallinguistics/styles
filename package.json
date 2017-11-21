@@ -20,11 +20,10 @@
     "server": "node ../utilities/node/server.js . 3000"
   },
   "private": true,
-  "dependencies": {
-    "feather-icons": "^4.0.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "azure-storage": "^2.1.0",
+    "feather-icons": "^4.0.1",
     "handlebars": "^4.0.10",
     "kss": "^3.0.0-beta.18",
     "less": "^2.7.2",
