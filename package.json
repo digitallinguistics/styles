@@ -20,7 +20,9 @@
     "server": "node ../utilities/node/server.js . 3000"
   },
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "feather-icons": "^4.0.1"
+  },
   "devDependencies": {
     "azure-storage": "^2.1.0",
     "handlebars": "^4.0.10",
