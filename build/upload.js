@@ -81,7 +81,6 @@ function uploadLessFile(filepath) {
 
 void async function upload() {
 
-
   // Upload LESS files
   const lessSpinner   = createSpinner(`Uploading LESS files`).start();
   const componentsDir = path.join(__dirname, `../components`);
