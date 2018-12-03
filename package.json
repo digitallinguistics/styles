@@ -12,7 +12,7 @@
   "repository": "https://github.com/digitallinguistics/styles.git",
   "scripts": {
     "build": "npm run upload & npm run kss",
-    "kss": "npm run kss --config kss/kss.config.json",
+    "kss": "./node_modules/.bin/kss --config kss.config.json",
     "upload": "node build/upload.js"
   },
   "engines": {
