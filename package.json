@@ -12,13 +12,14 @@
   "repository": "https://github.com/digitallinguistics/styles.git",
   "scripts": {
     "build": "npm run upload & npm run kss",
-    "kss": "./node_modules/.bin/kss --config kss.config.json",
+    "kss": "npm run kss --config kss.config.json",
     "upload": "node build/upload.js"
   },
   "private": true,
   "dependencies": {},
   "devDependencies": {
     "azure-storage": "^2.10.2",
+    "eslint": "^5.9.0",
     "feather-icons": "^4.9.0",
     "kss": "^3.0.0-beta.23",
     "less": "^3.9.0",
