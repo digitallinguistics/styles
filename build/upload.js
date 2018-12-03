@@ -2,23 +2,111 @@
  * Uploads all the assets to the DLx Azure Storage account
  */
 
-const azure   = require(`azure-storage`);
-const path    = require(`path`);
-const recurse = require(`recursive-readdir`);
+/* eslint-disable
+  max-statements,
+*/
 
-const componentsDir = path.join(__dirname, `../components`);
-const storage       = azure.createBlobService();
+const azure            = require(`azure-storage`);
+const connectionString = require(`../../credentials/azure-storage.js`);
+const createSpinner    = require(`ora`);
+const path             = require(`path`);
+const { promisify }    = require(`util`);
+const recurse          = require(`recursive-readdir`);
+
+const storage           = azure.createBlobService(connectionString);
+const createBlob        = promisify(storage.createBlockBlobFromLocalFile).bind(storage);
+const getBlobProperties = promisify(storage.getBlobProperties).bind(storage);
+
+const fontTypes = {
+  '.ttf':   `font/ttf`,
+  '.woff':  `font/woff`,
+  '.woff2': `font/woff2`,
+};
+
+const imageTypes = {
+  '.ico':  `image/x-icon`,
+  '.jpeg': `image/jpeg`,
+  '.jpg':  `image/jpeg`,
+  '.png':  `image/png`,
+  '.svg':  `image/svg+xml`,
+};
+
+async function uploadFont(filepath) {
+
+  const filename = path.basename(filepath);
+
+  try {
+
+    await getBlobProperties(`fonts`, filename);
+
+  } catch (e) {
+
+    if (e.statusCode === 404) {
+
+      await createBlob(`fonts`, filename, filepath, {
+        contentSettings: {
+          contentType: fontTypes[path.extname(filename)],
+        },
+      });
+
+    } else {
+
+      throw e;
+
+    }
+
+  }
+
+}
+
+function uploadImage(filepath) {
+
+  const filename = path.basename(filepath);
+
+  return createBlob(`img`, filename, filepath, {
+    contentSettings: {
+      contentType: imageTypes[path.extname(filename)],
+    },
+  });
+
+}
+
+function uploadLessFile(filepath) {
+  return createBlob(`less`, path.basename(filepath), filepath, {
+    contentSettings: {
+      contentType: `text/plain`,
+    },
+  });
+}
 
 void async function upload() {
 
-  const filelist  = await recurse(componentsDir);
-  const lessFiles = filelist.filter(filepath => path.extname(filepath) === `.less`);
-  await Promise.all(lessFiles.map(uploadFile));
+
+  // Upload LESS files
+  const lessSpinner   = createSpinner(`Uploading LESS files`).start();
+  const componentsDir = path.join(__dirname, `../components`);
+  const lessFileList  = await recurse(componentsDir);
+  const lessFiles     = lessFileList.filter(filepath => path.extname(filepath) === `.less`);
+  await Promise.all(lessFiles.map(uploadLessFile));
+  const globalsDir    = path.join(__dirname, `../globals`);
+  const globalFiles   = await recurse(globalsDir);
+  await Promise.all(globalFiles.map(uploadLessFile));
+  lessSpinner.succeed(`LESS files uploaded`);
+
+  // Upload images
+  const imageSpinner    = createSpinner(`Uploading images`).start();
+  const imagesDir       = path.join(__dirname, `../img`);
+  const imagesFileList  = await recurse(imagesDir);
+  const imageFiles      = imagesFileList.filter(filepath => Object.keys(imageTypes).includes(path.extname(filepath)));
+  await Promise.all(imageFiles.map(uploadImage));
+  imageSpinner.succeed(`Images uploaded`);
+
+  // Upload fonts
+  const fontsSpinner   = createSpinner(`Uploading fonts`).start();
+  const fontsDir       = path.join(__dirname, `../fonts`);
+  const fontFileList   = await recurse(fontsDir);
+  const fontFiles      = fontFileList.filter(filepath => Object.keys(fontTypes).includes(path.extname(filepath)));
+  await Promise.all(fontFiles.map(uploadFont));
+  fontsSpinner.succeed(`Fonts uploaded`);
 
 }();
-
-// TODO
-// - components
-// - fonts
-// - globals
-// - img
