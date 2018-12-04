@@ -2,12 +2,18 @@
 
 .wugblue         { color: var(--wugblue); }
 
+.verylightblue   { color: var(--verylightblue); }
+.lightblue       { color: var(--lightblue); }
 .blue            { color: var(--blue); }
+.darkblue        { color: var(--darkblue); }
+.verydarkblue    { color: var(--verydarkblue); }
 
-.codegray        { color: var(--codegray); } // same color as Atom One Light's background
-.darkgray        { color: var(--darkgray); }
-.gray            { color: var(--gray); }
+// you sometimes can't see .codegray because it's the same color as Atom One Light's background
+// you somtimes can't see .lightgray because it's the same color as Atom One Light's text selection color
+.codegray        { color: var(--codegray); }
 .lightgray       { color: var(--lightgray); }
+.gray            { color: var(--gray); }
+.darkgray        { color: var(--darkgray); }
 
 .verylightgreen  { color: var(--verylightgreen); }
 .lightgreen      { color: var(--lightgreen); }
@@ -42,15 +48,56 @@
 }
 
 // Blue
-.blue-background {
-  --link-color: white;
+.verylightblue-background {
+  background-color: var(--verylightblue);
+}
+
+.lightblue-background {
+  --link-color:         white;
   --link-color-visited: white;
-  background-color: var(--blue);
-  color: white;
+  background-color:     var(--lightblue);
+  color:                white;
+}
+
+.blue-background {
+  --link-color:         white;
+  --link-color-visited: white;
+  background-color:     var(--blue);
+  color:                white;
+}
+
+.darkblue-background {
+  --link-color:         white;
+  --link-color-visited: white;
+  background-color:     var(--darkblue);
+  color:                white;
+}
+
+.verydarkblue-background {
+  --link-color:         white;
+  --link-color-visited: white;
+  background-color:     var(--verydarkblue);
+  color:                white;
+}
+
+.verylightblue-transparent {
+  background-color: var(--verylightblue-transparent);
+}
+
+.lightblue-transparent {
+  background-color: var(--lightblue-transparent);
 }
 
 .blue-transparent {
   background-color: var(--blue-transparent);
+}
+
+.darkblue-transparent {
+  background-color: var(--darkblue-transparent);
+}
+
+.verydarkblue-transparent {
+  background-color: var(--verydarkblue-transparent);
 }
 
 // Gray
@@ -58,19 +105,19 @@
   background-color: var(--codegray);
 }
 
-.darkgray-background {
-  --link-color: white;
-  --link-color-visited: white;
-  background-color: var(--darkgray);
-  color: white;
+.lightgray-background {
+  background-color: var(--lightgray);
 }
 
 .gray-background {
   background-color: var(--gray);
 }
 
-.lightgray-background {
-  background-color: var(--lightgray);
+.darkgray-background {
+  --link-color:         white;
+  --link-color-visited: white;
+  background-color:     var(--darkgray);
+  color:                white;
 }
 
 // Green
@@ -95,10 +142,10 @@
 }
 
 .superdarkgreen-background {
-  --link-color: white;
+  --link-color:         white;
   --link-color-visited: white;
-  background-color: var(--superdarkgreen);
-  color: white;
+  background-color:     var(--superdarkgreen);
+  color:                white;
 }
 
 // Orange
@@ -115,10 +162,10 @@
 }
 
 .darkorange-background {
-  --link-color: white;
+  --link-color:         white;
   --link-color-visited: white;
-  background-color: var(--darkorange);
-  color: white;
+  background-color:     var(--darkorange);
+  color:                white;
 }
 
 // Purple
@@ -127,31 +174,31 @@
 }
 
 .lightpurple-background {
-  --link-color: white;
+  --link-color:         white;
   --link-color-visited: white;
-  background-color: var(--lightpurple);
-  color: white;
+  background-color:     var(--lightpurple);
+  color:                white;
 }
 
 .purple-background {
-  --link-color: white;
+  --link-color:         white;
   --link-color-visited: white;
-  background-color: var(--purple);
-  color: white;
+  background-color:     var(--purple);
+  color:                white;
 }
 
 .darkpurple-background {
-  --link-color: white;
+  --link-color:         white;
   --link-color-visited: white;
-  background-color: var(--darkpurple);
-  color: white;
+  background-color:     var(--darkpurple);
+  color:                white;
 }
 
 .verydarkpurple-background {
-  --link-color: white;
+  --link-color:         white;
   --link-color-visited: white;
-  background-color: var(--verydarkpurple);
-  color: white;
+  background-color:     var(--verydarkpurple);
+  color:                white;
 }
 
 // Red
@@ -164,22 +211,22 @@
 }
 
 .red-background {
-  --link-color: white;
+  --link-color:         white;
   --link-color-visited: white;
-  background-color: var(--red);
-  color: white;
+  background-color:     var(--red);
+  color:                white;
 }
 
 .darkred-background {
-  --link-color: white;
+  --link-color:         white;
   --link-color-visited: white;
-  background-color: var(--darkred);
-  color: white;
+  background-color:     var(--darkred);
+  color:                white;
 }
 
 .verydarkred-background {
-  --link-color: white;
+  --link-color:         white;
   --link-color-visited: white;
-  background-color: var(--verydarkred);
-  color: white;
+  background-color:     var(--verydarkred);
+  color:                white;
 }
