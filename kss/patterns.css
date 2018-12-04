@@ -1,0 +1,9 @@
+.kss-modifiers__example img {
+  height: 3rem;
+  width:  3rem;
+}
+
+.kss-modifiers__example img.icon-large {
+  height: 10rem;
+  width:  auto;
+}

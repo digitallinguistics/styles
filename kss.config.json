@@ -8,7 +8,9 @@
   "destination": "docs/",
   "homepage": "../README.md",
   "builder": "./node_modules/michelangelo/kss_styleguide/custom-template/",
-  "css": [],
+  "css": [
+    "../kss/patterns.css"
+  ],
   "js": [
     "../kss/patterns.js"
   ]
