@@ -87,6 +87,13 @@
 <li>images: https://cdn.digitallinguistics.io/img/{filename}</li>
 <li>LESS: https://cdn.digitallinguistics.io/less/{filename}</li>
 </ul>
+<p>To use DLx styles in a project, you should import the following LESS files at the root of your project, in order:</p>
+<ul>
+<li><code>fonts.less</code></li>
+<li><code>colors.less</code></li>
+<li><code>variables.less</code></li>
+<li><code>flexbox-reset.less</code></li>
+</ul>
 <h2>LESS</h2>
 <ul>
 <li>
@@ -99,10 +106,13 @@
 <p><strong>Global Styles:</strong> Global styles (colors, variables) are available in the <code>/global</code> folder. You can also import <code>globals.less</code> into your project, which contains all global styles. The available global stylesheets are:</p>
 <ul>
 <li>
-<p><code>colors.less</code>: CSS variables, classes for font colors, and classes for background colors, for each of the colors used in the DLx color schemes.</p>
+<p><code>classes.less</code>: Global CSS classes. Currently just consists of wrapper classes for color variables.</p>
 </li>
 <li>
-<p><code>variables.less</code>: High-level CSS variable declarations that are reused across element and component styling, such as common settings for padding, box shadows, underlines, etc.</p>
+<p><code>colors.less</code>: CSS variables for text and background colors, for each of the colors used in the DLx color schemes. All styles in the project assume that this stylesheet has already been applied, so that global color variables are available.</p>
+</li>
+<li>
+<p><code>variables.less</code>: High-level CSS variable declarations that are reused across element and component styling, such as common settings for padding, box shadows, underlines, etc. All styles in the project assume that this stylesheet has already been applied, so that global styling variables are available.</p>
 </li>
 </ul>
 </li>

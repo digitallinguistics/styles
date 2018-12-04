@@ -11,6 +11,13 @@ All assets and stylesheets are available to download from the DLx CDN:
 * images: https://cdn.digitallinguistics.io/img/{filename}
 * LESS: https://cdn.digitallinguistics.io/less/{filename}
 
+To use DLx styles in a project, you should import the following LESS files at the root of your project, in order:
+
+- `fonts.less`
+- `colors.less`
+- `variables.less`
+- `flexbox-reset.less`
+
 ## LESS
 
 * **CSS Reset:** DLx projects use the [flexbox-reset][1] as a CSS reset. All styles in this project assume that the reset has already been applied.
@@ -19,9 +26,11 @@ All assets and stylesheets are available to download from the DLx CDN:
 
 * **Global Styles:** Global styles (colors, variables) are available in the `/global` folder. You can also import `globals.less` into your project, which contains all global styles. The available global stylesheets are:
 
-    - `colors.less`: CSS variables, classes for font colors, and classes for background colors, for each of the colors used in the DLx color schemes.
+    - `classes.less`: Global CSS classes. Currently just consists of wrapper classes for color variables.
 
-    - `variables.less`: High-level CSS variable declarations that are reused across element and component styling, such as common settings for padding, box shadows, underlines, etc.
+    - `colors.less`: CSS variables for text and background colors, for each of the colors used in the DLx color schemes. All styles in the project assume that this stylesheet has already been applied, so that global color variables are available.
+
+    - `variables.less`: High-level CSS variable declarations that are reused across element and component styling, such as common settings for padding, box shadows, underlines, etc. All styles in the project assume that this stylesheet has already been applied, so that global styling variables are available.
 
 * **Components:** Each component (located in the `/components` folder) has an associated LESS file. You can also import `components.less` into your project, which contains styling for all components.
 
