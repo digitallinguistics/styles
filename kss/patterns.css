@@ -3,7 +3,11 @@
   width:  3rem;
 }
 
-.kss-modifiers__example img.icon-large {
+.kss-modifiers__example .icon-large {
   height: 10rem;
   width:  auto;
+}
+
+.kss-nav {
+  overflow-y: scroll;
 }
