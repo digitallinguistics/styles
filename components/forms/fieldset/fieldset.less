@@ -1,0 +1,20 @@
+// Fieldset
+//
+// Used for grouping inputs together under a heading (<code>&lt;legend&gt;</code>). Remember that flexbox does not work well with <code>&lt;fieldset&gt;</code>, so you may need to wrap the items inside <code>&lt;fieldset&gt;</code> in a <code>&lt;div&gt;</code>.
+//
+// Markup: fieldset.hbs
+//
+// Styleguide Components.Forms.fieldset
+.fieldset {
+
+  border:        var(--border);
+  border-radius: var(--border-radius);
+  display:       flex;
+
+  legend {
+    font-weight:   var(--bold);
+    overflow-wrap: break-word;
+    word-wrap:     break-word;
+  }
+
+}

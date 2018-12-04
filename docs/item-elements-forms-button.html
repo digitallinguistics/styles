@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,300">
     <link rel="stylesheet" href="kss-assets/vendor/prism.css">
     <link rel="stylesheet" href="kss-assets/css/kss.css">
-    <link rel="stylesheet" href="patterns.css">
+    <link rel="stylesheet" href="../kss/patterns.css">
 
   </head>
 
@@ -39,33 +39,33 @@
           </a>
         </li>
           <li class="kss-nav__item">
-            <a class="" href="section-typography.html">
+            <a class="" href="section-elements.html">
               <span class="kss-nav__ref">1</span>
+              <span class="kss-nav__name">Elements</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-typography.html">
+              <span class="kss-nav__ref">2</span>
               <span class="kss-nav__name">Typography</span>
             </a>
           </li>
           <li class="kss-nav__item">
             <a class="" href="section-images.html">
-              <span class="kss-nav__ref">2</span>
+              <span class="kss-nav__ref">3</span>
               <span class="kss-nav__name">Images</span>
             </a>
           </li>
           <li class="kss-nav__item">
             <a class="" href="section-colors.html">
-              <span class="kss-nav__ref">3</span>
+              <span class="kss-nav__ref">4</span>
               <span class="kss-nav__name">Colors</span>
             </a>
           </li>
           <li class="kss-nav__item">
             <a class="" href="section-variables.html">
-              <span class="kss-nav__ref">4</span>
-              <span class="kss-nav__name">Variables</span>
-            </a>
-          </li>
-          <li class="kss-nav__item">
-            <a class="" href="section-elements.html">
               <span class="kss-nav__ref">5</span>
-              <span class="kss-nav__name">Elements</span>
+              <span class="kss-nav__name">Variables</span>
             </a>
           </li>
           <li class="kss-nav__item">
@@ -90,11 +90,11 @@
             <header class="kss-section kss-section--depth-3" id="kssref-elements-forms-button">
 
             <article class="kss-section__content">
-                <p class="kss-section__source">Source: <span>forms.less</span>, line <span>13</span></p>
+                <p class="kss-section__source">Source: <span>form/button/button.less</span>, line <span>1</span></p>
 
               <a class="kss-section__permalink" href="#kssref-elements-forms-button">
                 <h3 class="kss-section__item kss-section__item--depth-3">
-                  <span class="kss-section__ref">5.1.1</span>
+                  <span class="kss-section__ref">1.1.1</span>
                   <span class="kss-section__name">Button</span>
                 </h3>
               </a>
@@ -113,41 +113,41 @@
 <input class="button {{modifier_class}}" type=button value='Input Button'>
 </div>
 
-                  <h2 class="kss-modifiers__name">:active</h2>
-
-                  <p class="kss-modifiers__description">When the button is clicked</p>
-
-                  <div class="kss-modifiers__example"><button class="button pseudo-class-active" type=button>Regular Button</button>
+                  <article class="kss-modifiers__modifier">
+                    <h2 class="kss-modifiers__name">:active</h2>
+                    <p class="kss-modifiers__description">When the button is clicked</p>
+                    <div class="kss-modifiers__example"><button class="button pseudo-class-active" type=button>Regular Button</button>
 <input class="button pseudo-class-active" type=button value='Input Button'>
 </div>
-                  <h2 class="kss-modifiers__name">:disabled</h2>
-
-                  <p class="kss-modifiers__description">When the button is disabled</p>
-
-                  <div class="kss-modifiers__example"><button class="button pseudo-class-disabled" type=button>Regular Button</button>
+                  </article>
+                  <article class="kss-modifiers__modifier">
+                    <h2 class="kss-modifiers__name">:disabled</h2>
+                    <p class="kss-modifiers__description">When the button is disabled</p>
+                    <div class="kss-modifiers__example"><button class="button pseudo-class-disabled" type=button>Regular Button</button>
 <input class="button pseudo-class-disabled" type=button value='Input Button'>
 </div>
-                  <h2 class="kss-modifiers__name">:focus</h2>
-
-                  <p class="kss-modifiers__description">When the button is focused</p>
-
-                  <div class="kss-modifiers__example"><button class="button pseudo-class-focus" type=button>Regular Button</button>
+                  </article>
+                  <article class="kss-modifiers__modifier">
+                    <h2 class="kss-modifiers__name">:focus</h2>
+                    <p class="kss-modifiers__description">When the button is focused</p>
+                    <div class="kss-modifiers__example"><button class="button pseudo-class-focus" type=button>Regular Button</button>
 <input class="button pseudo-class-focus" type=button value='Input Button'>
 </div>
-                  <h2 class="kss-modifiers__name">:hover</h2>
-
-                  <p class="kss-modifiers__description">When the user hovers over the button</p>
-
-                  <div class="kss-modifiers__example"><button class="button pseudo-class-hover" type=button>Regular Button</button>
+                  </article>
+                  <article class="kss-modifiers__modifier">
+                    <h2 class="kss-modifiers__name">:hover</h2>
+                    <p class="kss-modifiers__description">When the user hovers over the button</p>
+                    <div class="kss-modifiers__example"><button class="button pseudo-class-hover" type=button>Regular Button</button>
 <input class="button pseudo-class-hover" type=button value='Input Button'>
 </div>
-                  <h2 class="kss-modifiers__name">.button-red</h2>
-
-                  <p class="kss-modifiers__description">A red button</p>
-
-                  <div class="kss-modifiers__example"><button class="button button-red" type=button>Regular Button</button>
+                  </article>
+                  <article class="kss-modifiers__modifier">
+                    <h2 class="kss-modifiers__name">.button-red</h2>
+                    <p class="kss-modifiers__description">A red button</p>
+                    <div class="kss-modifiers__example"><button class="button button-red" type=button>Regular Button</button>
 <input class="button button-red" type=button value='Input Button'>
 </div>
+                  </article>
               </article>
 
                 <article class="kss-section__markup">
@@ -166,7 +166,7 @@
   <script src="kss-assets/vendor/jquery.js"></script>
   <script src="kss-assets/vendor/prism.js"></script>
   <script src="kss-assets/js/kss.js"></script>
-  <script src="https://digitallinguistics.blob.core.windows.net/scripts/patterns.js"></script>
+  <script src="../kss/patterns.js"></script>
 
   <!-- /scripts. -->
 

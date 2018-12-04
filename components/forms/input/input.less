@@ -1,0 +1,238 @@
+// Input Elements
+//
+// Form input elements. Adding the `.input` clas to any `<input>` element will style that element as appropriate for its input type.
+//
+// Styleguide Components.Forms.Inputs
+.input {
+
+  &[type=date],
+  &[type=datetime],
+  &[type=datetime-local],
+  &[type=email],
+  &[type=month],
+  &[type=number],
+  &[type=password],
+  &[type=search],
+  &[type=tel],
+  &[type=text],
+  &[type=time],
+  &[type=week],
+  {
+    min-height: 1.5em;
+    min-width:  5em;
+  }
+
+  // Button Input
+  //
+  // Markup: input-button.hbs
+  //
+  // Styleguide Components.Forms.Inputs.button
+  &[type=button] {
+    .button;
+    white-space: normal;
+  }
+
+  // Checkbox Input
+  //
+  // Markup: input-checkbox.hbs
+  //
+  // Styleguide Components.Forms.Inputs.checkbox
+  &[type=checkbox] {
+    align-self: center;
+    max-height: 1rem;
+    max-width:  1rem;
+  }
+
+  // Color Input
+  //
+  // Markup: input-color.hbs
+  //
+  // Styleguide Components.Forms.Inputs.color
+  &[type=color] {
+    display: block;
+  }
+
+  // Date Input
+  //
+  // Markup: input-date.hbs
+  //
+  // Styleguide Components.Forms.Inputs.date
+  &[type=date] {
+    .field;
+  }
+
+  // Datetime Input
+  //
+  // Markup: input-datetime.hbs
+  //
+  // Styleguide Components.Forms.Inputs.datetime
+  &[type=datetime] {
+    .field;
+  }
+
+  // Local Datetime Input
+  //
+  // Markup: input-datetime-local.hbs
+  //
+  // Styleguide Components.Forms.Inputs.datetime-local
+  &[type=datetime-local] {
+    .field;
+  }
+
+  // Email Input
+  //
+  // Markup: input-email.hbs
+  //
+  // Styleguide Components.Forms.Inputs.email
+  &[type=email] {
+    .field;
+  }
+
+  // File Input
+  //
+  // You may often want to hide this element entirely, display another element instead (like a button), and use JavaScript to click the file input when the button is pressed.
+  //
+  // Markup: input-file.hbs
+  //
+  // Styleguide Components.Forms.Inputs.file
+  &[type=file] {
+    align-items: center;
+  }
+
+  // Hidden Input
+  //
+  // Markup: input-hidden.hbs
+  //
+  // Styleguide Components.Forms.Inputs.hidden
+  &[type=hidden] {}
+
+  // Image Input
+  //
+  // Markup: input-image.hbs
+  //
+  // Styleguide Components.Forms.Inputs.image
+  &[type=image] {}
+
+  // Month Input
+  //
+  // Markup: input-month.hbs
+  //
+  // Styleguide Components.Forms.Inputs.month
+  &[type=month] {
+    .field;
+  }
+
+  // Number Input
+  //
+  // Markup: input-number.hbs
+  //
+  // Styleguide Components.Forms.Inputs.number
+  &[type=number] {
+    .field;
+  }
+
+  // Password Input
+  //
+  // Markup: input-password.hbs
+  //
+  // Styleguide Components.Forms.Inputs.password
+  &[type=password] {
+    .field;
+  }
+
+  // Radio Input
+  //
+  // Markup: input-radio.hbs
+  //
+  // Styleguide Components.Forms.Inputs.radio
+  &[type=radio] {
+    align-self: center;
+    max-height: 1rem;
+    max-width:  1rem;
+  }
+
+  // Range Input
+  //
+  // Markup: input-range.hbs
+  //
+  // Styleguide Components.Forms.Inputs.range
+  &[type=range] {
+    align-self: center;
+  }
+
+  // Reset Button
+  //
+  // Markup: input-reset.hbs
+  //
+  // Styleguide Components.Forms.Inputs.reset
+  &[type=reset] {
+    .button;
+    .superdarkgreen-background;
+    white-space: normal;
+  }
+
+  // Search Input
+  //
+  // Markup: input-search.hbs
+  //
+  // Styleguide Components.Forms.Inputs.search
+  &[type=search] {
+    .field;
+  }
+
+  // Submit Button
+  //
+  // Markup: input-submit.hbs
+  //
+  // Styleguide Components.Forms.Inputs.submit
+  &[type=submit] {
+    .button;
+    white-space: normal;
+  }
+
+  // Telephone Input
+  //
+  // Markup: input-tel.hbs
+  //
+  // Styleguide Components.Forms.Inputs.tel
+  &[type=tel] {
+    .field;
+  }
+
+  // Text Input
+  //
+  // Markup: input-text.hbs
+  //
+  // Styleguide Components.Forms.Inputs.text
+  &[type=text] {
+    .field;
+  }
+
+  // Time Input
+  //
+  // Markup: input-time.hbs
+  //
+  // Styleguide Components.Forms.Inputs.time
+  &[type=time] {
+    .field;
+  }
+
+  // URL Input
+  //
+  // Markup: input-url.hbs
+  //
+  // Styleguide Components.Forms.Inputs.url
+  &[type=url] {
+    .field;
+  }
+
+  // Week Input
+  //
+  // Markup: input-week.hbs
+  //
+  // Styleguide Components.Forms.Inputs.week
+  &[type=week] {
+    .field;
+  }
+
+}

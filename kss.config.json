@@ -1,17 +1,19 @@
 {
   "title": "DLx Pattern Library",
   "source": [
-    "components/",
-    "elements/",
-    "less/"
+    "./components",
+    "./fonts",
+    "./globals",
+    "./img"
   ],
   "destination": "docs/",
-  "homepage": "../less/README.md",
-  "builder": "node_modules/michelangelo/kss_styleguide/custom-template/",
+  "homepage": "../README.md",
+  "builder": "./node_modules/michelangelo/kss_styleguide/custom-template/",
   "css": [
-    "patterns.css"
+    "../kss/dlx.css",
+    "../kss/patterns.css"
   ],
   "js": [
-    "https://digitallinguistics.blob.core.windows.net/scripts/patterns.js"
+    "../kss/patterns.js"
   ]
 }

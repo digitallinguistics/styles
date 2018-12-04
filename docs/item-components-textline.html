@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,300">
     <link rel="stylesheet" href="kss-assets/vendor/prism.css">
     <link rel="stylesheet" href="kss-assets/css/kss.css">
-    <link rel="stylesheet" href="patterns.css">
+    <link rel="stylesheet" href="../kss/patterns.css">
 
   </head>
 
@@ -39,33 +39,33 @@
           </a>
         </li>
           <li class="kss-nav__item">
-            <a class="" href="section-typography.html">
+            <a class="" href="section-elements.html">
               <span class="kss-nav__ref">1</span>
+              <span class="kss-nav__name">Elements</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-typography.html">
+              <span class="kss-nav__ref">2</span>
               <span class="kss-nav__name">Typography</span>
             </a>
           </li>
           <li class="kss-nav__item">
             <a class="" href="section-images.html">
-              <span class="kss-nav__ref">2</span>
+              <span class="kss-nav__ref">3</span>
               <span class="kss-nav__name">Images</span>
             </a>
           </li>
           <li class="kss-nav__item">
             <a class="" href="section-colors.html">
-              <span class="kss-nav__ref">3</span>
+              <span class="kss-nav__ref">4</span>
               <span class="kss-nav__name">Colors</span>
             </a>
           </li>
           <li class="kss-nav__item">
             <a class="" href="section-variables.html">
-              <span class="kss-nav__ref">4</span>
-              <span class="kss-nav__name">Variables</span>
-            </a>
-          </li>
-          <li class="kss-nav__item">
-            <a class="" href="section-elements.html">
               <span class="kss-nav__ref">5</span>
-              <span class="kss-nav__name">Elements</span>
+              <span class="kss-nav__name">Variables</span>
             </a>
           </li>
           <li class="kss-nav__item">
@@ -90,7 +90,7 @@
             <header class="kss-section kss-section--depth-2" id="kssref-components-textline">
 
             <article class="kss-section__content">
-                <p class="kss-section__source">Source: <span>components.less</span>, line <span>268</span></p>
+                <p class="kss-section__source">Source: <span>form/textline/textline.less</span>, line <span>1</span></p>
 
               <a class="kss-section__permalink" href="#kssref-components-textline">
                 <h2 class="kss-section__item kss-section__item--depth-2">
@@ -99,7 +99,7 @@
                 </h2>
               </a>
 
-                <div class="kss-section__description"><p>A text input styled with a simple underline rather than an inset box. A <code>&lt;p&gt;</code> tag may also be included immediately following the <code>&lt;input&gt;</code> element in order to provide a brief description, explanation, or other help text below the input. <strong>NOTE:</strong> The <code>:not()</code> selector causes problems for KSS, so that the :disabled variant below isn&#39;t rendering correctly; however, it does render correctly in production.</p>
+                <div class="kss-section__description"><p>A text input styled with a simple underline rather than an inset box. A <code>&lt;p&gt;</code> tag may also be included immediately following the <code>&lt;input&gt;</code> element in order to provide a brief description, explanation, or other help text below the input. <strong>NOTE:</strong> The <code>:not()</code> selector causes problems for KSS, so that the :disabled variant below isn't rendering correctly; however, it does render correctly in production.</p>
 </div>
 
             </article>
@@ -138,11 +138,10 @@
 </label>
 </div>
 
-                  <h2 class="kss-modifiers__name">:disabled</h2>
-
-                  <p class="kss-modifiers__description">For disabled text inputs</p>
-
-                  <div class="kss-modifiers__example"><label class="textline pseudo-class-disabled">
+                  <article class="kss-modifiers__modifier">
+                    <h2 class="kss-modifiers__name">:disabled</h2>
+                    <p class="kss-modifiers__description">For disabled text inputs</p>
+                    <div class="kss-modifiers__example"><label class="textline pseudo-class-disabled">
   <span>Label Name</span>
   <div>
     <input
@@ -170,11 +169,11 @@
   </div>
 </label>
 </div>
-                  <h2 class="kss-modifiers__name">:focus</h2>
-
-                  <p class="kss-modifiers__description">For focused text inputs</p>
-
-                  <div class="kss-modifiers__example"><label class="textline pseudo-class-focus">
+                  </article>
+                  <article class="kss-modifiers__modifier">
+                    <h2 class="kss-modifiers__name">:focus</h2>
+                    <p class="kss-modifiers__description">For focused text inputs</p>
+                    <div class="kss-modifiers__example"><label class="textline pseudo-class-focus">
   <span>Label Name</span>
   <div>
     <input
@@ -202,11 +201,11 @@
   </div>
 </label>
 </div>
-                  <h2 class="kss-modifiers__name">:invalid</h2>
-
-                  <p class="kss-modifiers__description">For invalid data in text inputs</p>
-
-                  <div class="kss-modifiers__example"><label class="textline pseudo-class-invalid">
+                  </article>
+                  <article class="kss-modifiers__modifier">
+                    <h2 class="kss-modifiers__name">:invalid</h2>
+                    <p class="kss-modifiers__description">For invalid data in text inputs</p>
+                    <div class="kss-modifiers__example"><label class="textline pseudo-class-invalid">
   <span>Label Name</span>
   <div>
     <input
@@ -234,6 +233,7 @@
   </div>
 </label>
 </div>
+                  </article>
               </article>
 
                 <article class="kss-section__markup">
@@ -277,7 +277,7 @@
   <script src="kss-assets/vendor/jquery.js"></script>
   <script src="kss-assets/vendor/prism.js"></script>
   <script src="kss-assets/js/kss.js"></script>
-  <script src="https://digitallinguistics.blob.core.windows.net/scripts/patterns.js"></script>
+  <script src="../kss/patterns.js"></script>
 
   <!-- /scripts. -->
 

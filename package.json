@@ -1,7 +1,7 @@
 {
   "name": "styles",
   "version": "1.0.0",
-  "description": "A collection of DLx assets and stylesheets",
+  "description": "A collection of DLx assets and styles",
   "homepage": "https://github.com/digitallinguistics/styles",
   "bugs": "https://github.com/digitallinguistics/styles/issues",
   "license": "MIT",
@@ -11,22 +11,25 @@
   },
   "repository": "https://github.com/digitallinguistics/styles.git",
   "scripts": {
-    "build": "npm run kss & npm run upload & npm run less & npm run css",
-    "css": "node build/css.js",
-    "hbs": "node build/hbs.js",
+    "build": "npm run upload && npm run css && npm run kss",
     "kss": "./node_modules/.bin/kss --config kss.config.json",
-    "less": "node build/less.js & lessc less/patterns.less docs/patterns.css",
-    "upload": "node build/upload.js",
-    "server": "node ../utilities/node/server.js . 3000"
+    "css": "lessc kss/dlx.less kss/dlx.css --clean-css",
+    "upload": "node build/upload.js"
+  },
+  "engines": {
+    "node": "11.x"
   },
   "private": true,
   "dependencies": {},
   "devDependencies": {
-    "azure-storage": "^2.1.0",
-    "feather-icons": "^4.0.1",
-    "handlebars": "^4.0.10",
-    "kss": "^3.0.0-beta.18",
-    "less": "^2.7.2",
-    "michelangelo": "^0.6.1"
+    "azure-storage": "^2.10.2",
+    "eslint": "^5.9.0",
+    "feather-icons": "^4.9.0",
+    "kss": "^3.0.0-beta.23",
+    "less": "^3.9.0",
+    "less-plugin-clean-css": "^1.5.1",
+    "michelangelo": "^0.8.0",
+    "ora": "^3.0.0",
+    "recursive-readdir": "^2.2.2"
   }
 }

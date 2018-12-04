@@ -1,7 +1,0 @@
-{
-  "exec": "npm run build & npm run server",
-  "ext": "hbs js json less",
-  "ignore": [
-    "docs"
-  ]
-}

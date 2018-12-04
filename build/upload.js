@@ -1,111 +1,113 @@
+/**
+ * Uploads all the assets to the DLx Azure Storage account
+ */
+
 /* eslint-disable
-  no-console
+  max-statements,
 */
 
-require('../../credentials/azure-storage');
+const azure            = require(`azure-storage`);
+const connectionString = require(`../../credentials/azure-storage.js`);
+const createSpinner    = require(`ora`);
+const path             = require(`path`);
+const { promisify }    = require(`util`);
+const recurse          = require(`recursive-readdir`);
 
-const fs      = require('fs');
-const path    = require('path');
-const storage = require('azure-storage').createBlobService();
-const util    = require('util');
+const storage           = azure.createBlobService(connectionString);
+const createBlob        = promisify(storage.createBlockBlobFromLocalFile).bind(storage);
+const getBlobProperties = promisify(storage.getBlobProperties).bind(storage);
 
-const readdir   = util.promisify(fs.readdir);
-const storeFile = util.promisify(storage.createBlockBlobFromLocalFile).bind(storage);
+const fontTypes = {
+  '.ttf':   `font/ttf`,
+  '.woff':  `font/woff`,
+  '.woff2': `font/woff2`,
+};
 
-const storeFont = async filename => {
+const imageTypes = {
+  '.ico':  `image/x-icon`,
+  '.jpeg': `image/jpeg`,
+  '.jpg':  `image/jpeg`,
+  '.png':  `image/png`,
+  '.svg':  `image/svg+xml`,
+};
 
-  const ext = path.parse(filename).ext;
-  let contentType;
+async function uploadFont(filepath) {
 
-  switch (ext) {
-    case '.ttf': contentType = 'font/ttf'; break;
-    case '.woff': contentType = 'font/woff'; break;
-    case '.woff2': contentType = 'font/woff2'; break;
-    default: contentType = undefined;
+  const filename = path.basename(filepath);
+
+  try {
+
+    await getBlobProperties(`fonts`, filename);
+
+  } catch (e) {
+
+    if (e.statusCode === 404) {
+
+      await createBlob(`fonts`, filename, filepath, {
+        contentSettings: {
+          contentType: fontTypes[path.extname(filename)],
+        },
+      });
+
+    } else {
+
+      throw e;
+
+    }
+
   }
 
-  const contentSettings = { contentType };
-  await storeFile(`fonts`, filename, `fonts/${filename}`, { contentSettings });
+}
 
-};
+function uploadImage(filepath) {
 
-const storeFonts = async () => {
-  const filenames = await readdir(`fonts`, `utf8`);
-  await Promise.all(filenames.map(storeFont));
-  console.log(` - fonts uploaded`);
-};
+  const filename = path.basename(filepath);
 
-const storeImage = async filename => {
+  return createBlob(`img`, filename, filepath, {
+    contentSettings: {
+      contentType: imageTypes[path.extname(filename)],
+    },
+  });
 
-  let contentType;
+}
 
-  switch (path.parse(filename).ext) {
-    case 'ico': contentType = 'image/x-icon'; break;
-    case 'png': contentType = 'image/png'; break;
-    case 'svg': contentType = 'image/svg+xml'; break;
-    default: break;
-  }
+function uploadLessFile(filepath) {
+  return createBlob(`less`, path.basename(filepath), filepath, {
+    contentSettings: {
+      contentType: `text/plain`,
+    },
+  });
+}
 
-  const contentSettings = { contentType };
-  await storeFile(`img`, filename, `img/${filename}`, { contentSettings });
+void async function upload() {
 
-};
+  // Upload LESS files
+  const lessSpinner   = createSpinner(`Uploading LESS files`).start();
+  const componentsDir = path.join(__dirname, `../components`);
+  const lessFileList  = await recurse(componentsDir);
+  const lessFiles     = lessFileList.filter(filepath => path.extname(filepath) === `.less`);
+  await Promise.all(lessFiles.map(uploadLessFile));
+  const globalsDir    = path.join(__dirname, `../globals`);
+  const globalFiles   = await recurse(globalsDir);
+  await Promise.all(globalFiles.map(uploadLessFile));
+  const fontPath      = path.join(__dirname, `../fonts/fonts.less`);
+  await uploadLessFile(fontPath);
+  lessSpinner.succeed(`LESS files uploaded`);
 
-const storeImages = async () => {
-  const filenames = await readdir(`img`, `utf8`);
-  await Promise.all(filenames.map(storeImage));
-  console.log(` - images uploaded`);
-};
+  // Upload images
+  const imageSpinner    = createSpinner(`Uploading images`).start();
+  const imagesDir       = path.join(__dirname, `../img`);
+  const imagesFileList  = await recurse(imagesDir);
+  const imageFiles      = imagesFileList.filter(filepath => Object.keys(imageTypes).includes(path.extname(filepath)));
+  await Promise.all(imageFiles.map(uploadImage));
+  imageSpinner.succeed(`Images uploaded`);
 
-const storeLessFile = async filename => {
+  // Upload fonts
+  const fontsSpinner   = createSpinner(`Uploading fonts`).start();
+  const fontsDir       = path.join(__dirname, `../fonts`);
+  const fontFileList   = await recurse(fontsDir);
+  const fontFiles      = fontFileList.filter(filepath => Object.keys(fontTypes).includes(path.extname(filepath)));
+  await Promise.all(fontFiles.map(uploadFont));
+  fontsSpinner.succeed(`Fonts uploaded`);
 
-  const contentSettings = {
-    contentEncoding: 'utf8',
-    contentType:     'text/css',
-  };
-
-  await storeFile(`less`, filename, `less/${filename}`, { contentSettings });
-
-};
-
-const storeLessFiles = async () => {
-  const filenames = await readdir(`less`, `utf8`);
-  await Promise.all(filenames.map(storeLessFile));
-  console.log(` - LESS files uploaded`);
-};
-
-const storeLint = async () => {
-
-  const contentSettings = {
-    contentEncoding: `utf8`,
-    contentType:     `application/json`,
-  };
-
-  await storeFile(`dev`, `.eslintrc`, `./stylesheets/.eslintrc`, { contentSettings });
-  console.log(` - .eslintrc uploaded`);
-
-  await storeFile(`dev`, `.stylelintrc`, `./stylesheets/.stylelintrc`, { contentSettings });
-  console.log(` - .stylelintrc uploaded`);
-
-};
-
-const storeJS = async () => {
-
-  const contentSettings = {
-    contentEncoding: `utf8`,
-    contentType:     `application/javascript`,
-  };
-
-  await storeFile(`scripts`, `patterns.js`, `./js/patterns.js`, { contentSettings });
-  console.log(` - patterns.js uploaded`);
-
-};
-
-Promise.all([
-  // storeFonts(),
-  storeImages(),
-  storeLessFiles(),
-  storeLint(),
-  storeJS(),
-])
-.then(() => console.log(` - all files uploaded`));
+}();

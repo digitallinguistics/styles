@@ -1,0 +1,47 @@
+// Text Field
+//
+// Styles an element as a form field.
+//
+// Markup: field.hbs
+//
+// :disabled - When the field is disabled
+// :focus    - When the field is focused
+//
+// Styleguide Components.Forms.field
+.field {
+
+  --shadow-inset:
+    inset
+    var(--line-width)
+    var(--line-width)
+    0.15em
+    var(--shadow-color);
+
+  background-color: transparent;
+  border:           0.075em solid var(--gray);
+  border-radius:    var(--border-radius);
+  box-shadow:       var(--shadow-inset);
+  padding:          var(--padding-text);
+
+  &:disabled {
+    background-color: var(--disabled-background);
+    color:            var(--disabled-color);
+    cursor:           not-allowed;
+  }
+
+  &:focus {
+
+    border-color:   var(--blue);
+    box-shadow:     var(--shadow-inset);
+    outline:        none;
+    --shadow-color: var(--blue);
+
+    &:invalid {
+      border-color:   var(--darkred);
+      box-shadow:     var(--shadow-inset);
+      --shadow-color: var(--darkred);
+    }
+
+  }
+
+}
