@@ -2,7 +2,8 @@
   "title": "DLx Pattern Library",
   "source": [
     "./fonts",
-    "./globals"
+    "./globals",
+    "./img"
   ],
   "destination": "docs/",
   "homepage": "../README.md",
