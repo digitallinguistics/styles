@@ -1,0 +1,22 @@
+// Phonemic
+//
+// Used for phonemic representations of data.
+//
+// Markup: phonemic.hbs
+//
+// Styleguide Components.Inline.Transcriptions.phonemic
+.phonemic {
+
+  .unicode;
+
+  &::before {
+    content:       '/';
+    padding-right: var(--padding-ipa);
+  }
+
+  &::after  {
+    content:       '/';
+    padding-left: var(--padding-ipa);
+  }
+
+}
