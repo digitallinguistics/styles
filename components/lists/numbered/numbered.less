@@ -8,21 +8,22 @@
 .numbered {
 
   counter-reset: numbered;
-  list-style: none;
+  list-style:    none;
 
   li {
 
     counter-increment: numbered;
-    display: list-item;
-    margin: 0;
-    margin-left: 2.5em;
+    display:           list-item;
+    margin:            0;
+    margin-left:       2.5em;
 
     &::before {
-      content: counter(numbered) '.';
+      content:     counter(numbered) '.';
       font-weight: bold;
       margin-left: -2.5em;
-      padding: var(--padding-text);
-      padding: 0.25em 0.5em; // fallback for Edge bug; see issue https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/11495448/
+      padding:     var(--padding-text);
+      // fallback for Edge bug; see issue https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/11495448/
+      padding:     0.25em 0.5em;
     }
 
   }
