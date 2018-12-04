@@ -8,19 +8,23 @@
 .label {
 
   align-items: center;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display:     flex;
+  flex-flow:   row wrap;
 
-  h1, h2, h3, h4, h5, h6,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
   span
   {
-    font-size: smaller;
-    font-weight: var(--bold);
-    min-width: 0;
-    padding: var(--padding-text);
+    font-size:     smaller;
+    font-weight:   var(--bold);
+    min-width:     0;
+    padding:       var(--padding-text);
     overflow-wrap: break-word;
-    word-wrap: break-word;
+    word-wrap:     break-word;
   }
 
   input {

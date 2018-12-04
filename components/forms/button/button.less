@@ -14,31 +14,31 @@
 .button {
 
   .blue-background;
-  align-items: center;
-  background-image: linear-gradient(135deg, rgba(255,255,255,0.15), transparent);
-  border: 0;
-  border-radius: var(--border-radius);
-  box-shadow: var(--shadow-button);
-  cursor: pointer;
-  font: inherit;
-  outline: 0;
-  padding: var(--padding-text);
-  text-align: center;
-  white-space: normal;
+  align-items:      center;
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.15), transparent);
+  border:           0;
+  border-radius:    var(--border-radius);
+  box-shadow:       var(--shadow-button);
+  cursor:           pointer;
+  font:             inherit;
+  outline:          0;
+  padding:          var(--padding-text);
+  text-align:       center;
+  white-space:      normal;
 
   &:active {
-    --shadow-button: 0 0 0 0.075em rgba(0,0,0,0.15) inset, 0 0 0.5em rgba(0,0,0,0.2) inset;
+    --shadow-button: 0 0 0 0.075em rgba(0, 0, 0, 0.15) inset, 0 0 0.5em rgba(0, 0, 0, 0.2) inset;
   }
 
   &:hover, &:focus {
-    background-image: linear-gradient(135deg, transparent, rgba(0,0,0,0.15));
+    background-image: linear-gradient(135deg, transparent, rgba(0, 0, 0, 0.15));
   }
 
   &:disabled {
     background-image: none;
-    box-shadow: none;
-    cursor: not-allowed;
-    opacity: 0.40;
+    box-shadow:       none;
+    cursor:           not-allowed;
+    opacity:          0.4;
   }
 
   &-red {
