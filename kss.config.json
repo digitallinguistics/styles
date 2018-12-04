@@ -1,6 +1,7 @@
 {
   "title": "DLx Pattern Library",
   "source": [
+    "./components",
     "./fonts",
     "./globals",
     "./img"
