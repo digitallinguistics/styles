@@ -1,3 +1,9 @@
+@cdn: 'https://cdn.digitallinguistics.io/less';
+
+@import '@{cdn}/cite.less';
+@import '@{cdn}/link.less';
+@import '@{cdn}/section-header.less';
+
 // Reference List
 //
 // Styling for a bibliographic reference list. Note that each reference should be an `<li>` tag containing a `<p>` tag. **NOTE:** You may have to further customize the styling of the `<hX>` element depending on which header you are using. Use `<cite>` for publication titles.
@@ -11,7 +17,7 @@
 
   cite { .cite; }
 
-  h2 { .h2; }
+  h2 { .section-header; }
 
   ol, ul {
     list-style:   disc outside none;
