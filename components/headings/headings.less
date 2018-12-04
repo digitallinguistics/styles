@@ -4,64 +4,10 @@
 //
 // Styleguide Components.Headings
 
+@cdn: 'https://cdn.digitallinguistics.io/less';
 
-// Heading 2: Section Header
-//
-// For major section headers. Also aliased as `.section-header`.
-//
-// Markup: h2.hbs
-//
-// Styleguide Components.Headings.h2
-.h2 {
-  font-size: 1.75em;
-  font-weight: var(--bold);
-  padding-bottom: 0.25em;
-  padding-top: 0.5em;
-}
-
-.section-header { .h2; }
-
-
-// Heading 3: Subsection Header
-//
-// For subsection headers. Also aliased as `.subsection-header`.
-//
-// Markup: h3.hbs
-//
-// Styleguide Components.Headings.h3
-.h3 {
-  font-size: 1.5em;
-  padding-bottom: 0.25em;
-  padding-top: 0.5em;
-}
-
-.subsection-header { .h3; }
-
-
-// Heading 4: Sub-Subsection Header
-//
-// For sub-subsection headers. Also aliased as `.subsubsection-header`.
-//
-// Markup: h4.hbs
-//
-// Styleguide Components.Headings.h4
-.h4 {
-  font-size: 1.5em;
-  font-style: italic;
-}
-
-.subsubsection-header { .h4; }
-
-
-// Heading 5: Minor Header
-//
-// For minor headers (a level below Sub-Subsection Headers). Also aliased as `.minor-header`.
-//
-// Markup: h5.hbs
-//
-// Styleguide: Components.Headings.h5
-.h5 {
-  font-size: 1.25em;
-}
-
-.minor-header { .h5; }
+@import '@{cdn}/page-title.less';
+@import '@{cdn}/section-header.less';
+@import '@{cdn}/subsection-header.less';
+@import '@{cdn}/subsubsection-header.less';
+@import '@{cdn}/minor-header.less';
