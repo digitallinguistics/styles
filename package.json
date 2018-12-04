@@ -11,8 +11,9 @@
   },
   "repository": "https://github.com/digitallinguistics/styles.git",
   "scripts": {
-    "build": "npm run upload && npm run kss",
-    "kss": "lessc kss/dlx.less kss/dlx.css --clean-css && ./node_modules/.bin/kss --config kss.config.json",
+    "build": "npm run upload && npm run css && npm run kss",
+    "kss": "./node_modules/.bin/kss --config kss.config.json",
+    "css": "lessc kss/dlx.less kss/dlx.css --clean-css",
     "upload": "node build/upload.js"
   },
   "engines": {

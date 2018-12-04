@@ -1,4 +1,4 @@
-# [DLx Pattern Library][2]
+# DLx Pattern Library
 
 Welcome to the DLx Pattern Library! This website demonstrates all the CSS styles used across DLx projects, along with example HTML markup and usage notes.
 
