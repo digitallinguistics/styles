@@ -8,4 +8,5 @@ void async function copyFiles() {
   await copyFile(path.join(kssInputDir, `dlx.css`), path.join(kssOutputDir, `dlx.css`));
   await copyFile(path.join(kssInputDir, `patterns.css`), path.join(kssOutputDir, `patterns.css`));
   await copyFile(path.join(kssInputDir, `patterns.js`), path.join(kssOutputDir, `patterns.js`));
+  await copyFile(path.join(kssInputDir, `tunnel.ico`), path.join(kssOutputDir, `tunnel.ico`));
 }();
