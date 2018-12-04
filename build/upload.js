@@ -90,6 +90,8 @@ void async function upload() {
   const globalsDir    = path.join(__dirname, `../globals`);
   const globalFiles   = await recurse(globalsDir);
   await Promise.all(globalFiles.map(uploadLessFile));
+  const fontPath      = path.join(__dirname, `../fonts/fonts.less`);
+  await uploadLessFile(fontPath);
   lessSpinner.succeed(`LESS files uploaded`);
 
   // Upload images
