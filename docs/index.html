@@ -43,6 +43,18 @@
               <span class="kss-nav__name">Typography</span>
             </a>
           </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-colors.html">
+              <span class="kss-nav__ref">2</span>
+              <span class="kss-nav__name">Colors</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-variables.html">
+              <span class="kss-nav__ref">3</span>
+              <span class="kss-nav__name">Variables</span>
+            </a>
+          </li>
       </ul>
     </section>
     <!-- /navigation. -->
@@ -51,49 +63,43 @@
     <!-- documentation. -->
     <section class="kss-documentation">
         <article class="kss-markdown">
-          <h1>DLx Pattern Library</h1>
-<p>Welcome to the DLx Pattern Library, demonstrating all the CSS styles used across DLx projects, along with example HTML markup and usage notes.</p>
+          <h1><a href="https://github.com/digitallinguistics/styles">DLx Pattern Library</a></h1>
+<p>Welcome to the DLx Pattern Library! This website demonstrates all the CSS styles used across DLx projects, along with example HTML markup and usage notes.</p>
+<p><a href="https://github.com/digitallinguistics/styles">View the GitHub repository for this pattern library.</a></p>
 <p>All assets and stylesheets are available to download from the DLx CDN:</p>
-<p>https://cdn.digitallinguistics.io
-https://cdn.digitallinguistics.io/fonts/{filename}
-https://cdn.digitallinguistics.io/img/{filename}
-https://cdn.digitallinguistics.io/less/{filename}</p>
-<h2>LESS / CSS</h2>
-<p>LESS stylesheets and their accompanying CSS output are available in this repo's <code>less</code> and <code>css</code> folders respectively. These are each made available on the DLx CDN and may be linked to at <code>https://cdn.digitallinguistics.io/less/{filename}</code> or <code>https://cdn.digitallinguistics.io/css/{filename}</code>.</p>
+<ul>
+<li>CDN: https://cdn.digitallinguistics.io</li>
+<li>fonts: https://cdn.digitallinguistics.io/fonts/{filename}</li>
+<li>images: https://cdn.digitallinguistics.io/img/{filename}</li>
+<li>LESS: https://cdn.digitallinguistics.io/less/{filename}</li>
+</ul>
+<h2>LESS</h2>
 <ul>
 <li>
-<p><code>reset.less</code> - A CSS reset that should be applied before any DLx styles. If you prefer not to use this reset, certain DLx classes will require extra styling (typically setting them to <code>display: flex;</code>). Uses the <a href="https://yarnpkg.com/en/package/flexbox-reset"><code>flexbox-reset</code> library</a>.</p>
+<p><strong>CSS Reset:</strong> DLx projects use the <a href="https://www.npmjs.com/package/flexbox-reset">flexbox-reset</a> as a CSS reset. All styles in this project assume that the reset has already been applied.</p>
 </li>
 <li>
-<p><code>fonts.less</code> - Font declarations for the various fonts used by DLx.</p>
+<p><strong>Fonts:</strong> Font declarations for fonts used by DLx projects are available in <code>fonts.less</code>.</p>
 </li>
 <li>
-<p><code>colors.less</code> - CSS variables, classes for font colors, and classes for background colors, for each of the colors used in the DLx color schemes.</p>
-</li>
-<li>
-<p><code>variables.less</code> - High-level CSS variable declarations that are reused across element and component styling, such as common settings for padding, box shadows, underlines, etc.</p>
-</li>
-<li>
-<p><code>elements.less</code> - General element styling (as classes). For example, add the <code>.button</code> class to a <code>&lt;button&gt;</code> element to apply default button styling. Includes the following stylesheets:</p>
+<p><strong>Global Styles:</strong> Global styles (colors, variables) are available in the <code>/global</code> folder. You can also import <code>globals.less</code> into your project, which contains all global styles. The available global stylesheets are:</p>
 <ul>
 <li>
-<p><code>forms.less</code> - Styling for form elements and similar interactive elements.</p>
+<p><code>colors.less</code>: CSS variables, classes for font colors, and classes for background colors, for each of the colors used in the DLx color schemes.</p>
 </li>
 <li>
-<p><code>headings.less</code> - Styling for headings.</p>
-</li>
-<li>
-<p><code>inline.less</code> - Styling for inline elements (e.g. <code>&lt;strong&gt;</code>) and classes (e.g. <code>.unicode</code>).</p>
+<p><code>variables.less</code>: High-level CSS variable declarations that are reused across element and component styling, such as common settings for padding, box shadows, underlines, etc.</p>
 </li>
 </ul>
 </li>
 <li>
-<p><code>components.less</code> - Discrete, self-contained pieces of UI.</p>
-</li>
-<li>
-<p><code>dlx.less</code> - Bundles together all of the above files and applies their styles. For example, the <code>.link</code> style will be applied to all inline links. If you just want to reference a particular stylesheet or rule, include that file individually using LESS's <code>(reference)</code> option.</p>
+<p><strong>Components:</strong> Each component (located in the <code>/components</code> folder) has an associated LESS file. You can also import <code>components.less</code> into your project, which contains styling for all components.</p>
 </li>
 </ul>
+<h2>Fonts</h2>
+<p>Fonts used by DLx projects are available in the <code>/fonts</code> folder.</p>
+<h2>Images</h2>
+<p>Images and icons used by DLx projects are available in the <code>/img</code> folder.</p>
 
         </article>
     </section>
@@ -105,7 +111,7 @@ https://cdn.digitallinguistics.io/less/{filename}</p>
   <script src="kss-assets/vendor/jquery.js"></script>
   <script src="kss-assets/vendor/prism.js"></script>
   <script src="kss-assets/js/kss.js"></script>
-  <script src="patterns.js"></script>
+  <script src="../kss/patterns.js"></script>
 
   <!-- /scripts. -->
 

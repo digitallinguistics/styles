@@ -1,13 +1,14 @@
 {
   "title": "DLx Pattern Library",
   "source": [
-    "./fonts"
+    "./fonts",
+    "./globals"
   ],
   "destination": "docs/",
   "homepage": "../README.md",
   "builder": "./node_modules/michelangelo/kss_styleguide/custom-template/",
   "css": [],
   "js": [
-    "patterns.js"
+    "../kss/patterns.js"
   ]
 }
