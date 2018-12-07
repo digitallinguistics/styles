@@ -4,12 +4,12 @@ Welcome to the DLx Pattern Library! This website demonstrates all the CSS styles
 
 [View the GitHub repository for this pattern library.][2]
 
-All assets and stylesheets are available to download from the DLx CDN:
+All assets and stylesheets are available to download from the DLx blob storage:
 
-* CDN: https://cdn.digitallinguistics.io
-* fonts: https://cdn.digitallinguistics.io/fonts/{filename}
-* images: https://cdn.digitallinguistics.io/img/{filename}
-* LESS: https://cdn.digitallinguistics.io/less/{filename}
+* CDN: https://digitallinguistics.blob.core.windows.net
+* fonts: https://digitallinguistics.blob.core.windows.net/fonts/{filename}
+* images: https://digitallinguistics.blob.core.windows.net/img/{filename}
+* LESS: https://digitallinguistics.blob.core.windows.net/less/{filename}
 
 To use DLx styles in a project, you should import the following LESS files at the root of your project, in order:
 
