@@ -13,7 +13,7 @@
   "scripts": {
     "build": "npm run upload && npm run css && npm run kss && npm run copy-files",
     "copy-files": "node build/copyFiles.js",
-    "css": "lessc kss/dlx.less kss/dlx.css --clean-css",
+    "css": "lessc kss/dlx.less kss/dlx.css --clean-css --rewrite-urls=all",
     "kss": "./node_modules/.bin/kss --config kss.config.json",
     "upload": "node build/upload.js"
   },
