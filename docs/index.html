@@ -78,43 +78,36 @@
     <section class="kss-documentation">
         <article class="kss-markdown">
           <h1>DLx Pattern Library</h1>
-<p>Welcome to the DLx Pattern Library! This website demonstrates all the CSS styles used across DLx projects, along with example HTML markup and usage notes.</p>
+<p>Welcome to the DLx Pattern Library! This website demonstrates CSS styles used across DLx projects, along with example HTML markup and usage notes.</p>
 <p><a href="https://github.com/digitallinguistics/styles">View the GitHub repository for this pattern library.</a></p>
-<p>All assets and stylesheets are available to download from the DLx blob storage:</p>
+<p>DLx projects use <a href="https://semantic-ui.com/">Semantic UI</a> to style most of its components, using Semantic UI's default theme and colors. Semantic UI must be installed in your project in order to use these components.</p>
+<p>All DLx assets and stylesheets are available to download from the DLx blob storage:</p>
 <ul>
-<li>CDN: https://digitallinguistics.blob.core.windows.net</li>
-<li>fonts: https://digitallinguistics.blob.core.windows.net/fonts/{filename}</li>
-<li>images: https://digitallinguistics.blob.core.windows.net/img/{filename}</li>
-<li>LESS: https://digitallinguistics.blob.core.windows.net/less/{filename}</li>
+<li>storage: <code>https://digitallinguistics.blob.core.windows.net</code></li>
+<li>fonts: <code>https://digitallinguistics.blob.core.windows.net/fonts/{filename}</code></li>
+<li>images: <code>https://digitallinguistics.blob.core.windows.net/img/{filename}</code></li>
+<li>LESS: <code>https://digitallinguistics.blob.core.windows.net/less/{filename}</code></li>
 </ul>
-<p>To use DLx styles in a project, you should import the following LESS files at the root of your project, in order:</p>
+<p>To use DLx styles in a project, you should import the following LESS files at the root of your project, in order. DLx components assume that these stylesheets have already been applied.</p>
 <ul>
-<li><code>fonts.less</code></li>
-<li><code>colors.less</code></li>
-<li><code>variables.less</code></li>
-<li><code>flexbox-reset.less</code></li>
+<li><code>fonts/fonts.less</code> (DLx)</li>
+<li><code>globals/variables.less</code> (DLx)</li>
+<li><code>globals/colors.less</code> (DLx)</li>
+<li><code>semantic/src/definitions/globals/reset.less</code> (Semantic UI)</li>
 </ul>
 <h2>LESS</h2>
 <ul>
 <li>
-<p><strong>CSS Reset:</strong> DLx projects use the <a href="https://www.npmjs.com/package/flexbox-reset">flexbox-reset</a> as a CSS reset. All styles in this project assume that the reset has already been applied.</p>
-</li>
-<li>
 <p><strong>Fonts:</strong> Font declarations for fonts used by DLx projects are available in <code>fonts.less</code>.</p>
 </li>
 <li>
-<p><strong>Global Styles:</strong> Global styles (colors, variables) are available in the <code>/global</code> folder. You can also import <code>globals.less</code> into your project, which contains all global styles. The available global stylesheets are:</p>
-<ul>
-<li>
-<p><code>classes.less</code>: Global CSS classes. Currently just consists of wrapper classes for color variables.</p>
+<p><strong>Variables:</strong> Global variables are available in the <code>/globals/variables.less</code> file. These are high-level CSS variable declarations that are reused across element and component styling. All styles in the project assume that this stylesheet has already been applied, so that the global CSS variables are available.</p>
 </li>
 <li>
-<p><code>colors.less</code>: CSS variables for text and background colors, for each of the colors used in the DLx color schemes. All styles in the project assume that this stylesheet has already been applied, so that global color variables are available.</p>
+<p><strong>Colors:</strong> Assigns the Semantic UI default color scheme and other DLx colors to global CSS variables (instead of LESS variables).</p>
 </li>
 <li>
-<p><code>variables.less</code>: High-level CSS variable declarations that are reused across element and component styling, such as common settings for padding, box shadows, underlines, etc. All styles in the project assume that this stylesheet has already been applied, so that global styling variables are available.</p>
-</li>
-</ul>
+<p><strong>Reset:</strong> DLx projects use the Semantic UI reset that comes bundled with the Semantic UI installation.</p>
 </li>
 <li>
 <p><strong>Components:</strong> Each component (located in the <code>/components</code> folder) has an associated LESS file. You can also import <code>components.less</code> into your project, which contains styling for all components.</p>

@@ -1,7 +1,3 @@
-* {
-  font: inherit;
-}
-
 .kss-modifiers__example {
   border-collapse: collapse;
   font-family:     var(--font);

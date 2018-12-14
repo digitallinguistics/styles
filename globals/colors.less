@@ -1,146 +1,36 @@
 // Colors
 //
-// The following colors are available as CSS variables and classes. To set the font color, use `.{color}` (e.g. `.wugblue`). To set the background color, use `.{color}-background` (e.g. `.wugblue-background`). Click on any color swatch to copy the hex code for that color.
+// The following colors are available as CSS variables.
 //
 // Weight: 3
 //
 // Styleguide Colors
 
+@import (reference) '../semantic/src/themes/default/globals/site.variables';
 
 :root {
 
-  // Wug Blue
+  --black:  @black;
+  --blue:   @blue;
+  --brown:  @brown;
+  --green:  @green;
+  --gray:   @grey;
+  --olive:  @olive;
+  --orange: @orange;
+  --pink:   @pink;
+  --purple: @purple;
+  --red:    @red;
+  --teal:   @teal;
+  --violet: @violet;
+  --yellow: @yellow;
+
+  // --wugblue
+  //
+  // The color of the DLx wug
   //
   // $wugblue - #6FD1F6; wug blue
   //
-  // Weight: 1
-  //
-  // Styleguide Colors.Wug
+  // Styleguide Colors.wugblue
   --wugblue: #6FD1F6;
-
-  // Blue
-  //
-  // $verylightblue - #60B0FD; very light blue
-  // $lightblue     - #339BFF; light blue
-  // $blue          - #0F89FF; blue
-  // $darkblue      - #0080FC; dark blue
-  // $verydarkblue  - #0158AC; very dark blue
-  //
-  // Weight: 2
-  //
-  // Styleguide Colors.Blue
-  --verylightblue: #60B0FD;
-  --lightblue:     #339BFF;
-  --blue:          #0F89FF;
-  --darkblue:      #0080FC;
-  --verydarkblue:  #0158AC;
-
-  // Gray
-  //
-  // $codegray            - #F5F5F5; code gray
-  // $codedarkgray        - #383A42; dark gray code
-  // $darkgray            - #808080; dark gray
-  // $gray                - #CCC; gray
-  // $lightgray           - #F5F2F0; light gray
-  // $disabled-color      - #CAD2D3; font color for disabled inputs
-  // $disabled-background - #EAEDED; background color for disabled inputs
-  // $placeholder-color   - #757575; color for placeholder text in inputs
-  //
-  // Weight: 3
-  //
-  // Styleguide Colors.Gray
-  --codegray:            #FAFAFA;
-  --codedarkgray:        #383A42;
-  --darkgray:            #757575;
-  --gray:                #CCC;
-  --lightgray:           #F5F2F0;
-  --disabled-color:      #CAD2D3;
-  --disabled-background: #EAEDED;
-  --placeholder-color:   #757575;
-
-  // Green
-  //
-  // $verylightgreen - #7FFED1; very light green
-  // $lightgreen     - #4FFFC1; light green
-  // $green          - #23FFB1; green
-  // $darkgreen      - #00FFA5; dark green
-  // $verydarkgreen  - #00F39D; very dark green
-  // $superdarkgreen - #00AB6E; super dark green
-  //
-  // Weight: 4
-  //
-  // Styleguide Colors.Green
-  --verylightgreen: #7FFED1;
-  --lightgreen:     #4FFFC1;
-  --green:          #23FFB1;
-  --darkgreen:      #00FFA5;
-  --verydarkgreen:  #00F39D;
-  --superdarkgreen: #00AB6E;
-
-  // Orange
-  //
-  // $verylightorange - #FFA97F; very light orange
-  // $lightorange     - #FF884F; light orange
-  // $orange          - #FF6A23; orange
-  // $darkorange      - #FF5300; dark orange
-  //
-  // Weight: 5
-  //
-  // Styleguide Colors.Orange
-  --verylightorange: #FFA97F;
-  --lightorange:     #FF884F;
-  --orange:          #FF6A23;
-  --darkorange:      #FF5300;
-
-  // Purple
-  //
-  // $verylightpurple - #9791FE; very light purple
-  // $lightpurple     - #7068FF; light purple
-  // $purple          - #4D42FF; purple
-  // $darkpurple      - #2A1DFF; dark purple
-  // $verydarkpurple  - #1002F4; very dark purple
-  //
-  // Weight: 6
-  //
-  // Styleguide Colors.Purple
-  --verylightpurple: #9791FE;
-  --lightpurple:     #7068FF;
-  --purple:          #4D42FF;
-  --darkpurple:      #2A1DFF;
-  --verydarkpurple:  #1002F4;
-
-  // Red
-  //
-  // $verylightred - #FF9797; very light red
-  // $lightred     - #E96363; light red
-  // $red          - #CA3C3C; red
-  // $darkred      - #AA1F1F; dark red
-  // $verydarkred  - #830505; very dark red
-  //
-  // Weight: 7
-  //
-  // Styleguide Colors.Red
-  --verylightred: #FF9797;
-  --lightred:     #E96363;
-  --red:          #CA3C3C;
-  --darkred:      #AA1F1F;
-  --verydarkred:  #830505;
-
-  // Transparent
-  //
-  // $verylightblue-transparent - rgba(96, 176, 253, 0.2); very light blue transparent
-  // $lightblue-transparent     - rgba(51, 155, 255, 0.2); light blue transparent
-  // $blue-transparent          - rgba(15, 137, 255, 0.2); blue transparent
-  // $darkblue-transparent      - rgba(0, 128, 252, 0.2); dark blue transparent
-  // $verydarkblue-transparent  - rgba(1, 88, 172, 0.2); very dark blue transparent
-  //
-  // Weight: 8
-  //
-  // Styleguide Colors.Transparent
-  --verylightblue-transparent: rgba(96, 176, 253, 0.2);
-  --lightblue-transparent:     rgba(51, 155, 255, 0.2);
-  --blue-transparent:          rgba(15, 137, 255, 0.2);
-  --darkblue-transparent:      rgba(0, 128, 252, 0.2);
-  --verydarkblue-transparent:  rgba(1, 88, 172, 0.2);
 
 }
