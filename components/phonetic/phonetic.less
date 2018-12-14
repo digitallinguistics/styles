@@ -1,0 +1,24 @@
+@import '../unicode/unicode.less';
+
+// Phonetic
+//
+// Used for phonetic representations of data.
+//
+// Markup: phonetic.hbs
+//
+// Styleguide Components.phonetic
+.phonetic {
+
+  .unicode;
+
+  &::before {
+    content:      '[';
+    padding-right: var(--padding-transcription);
+  }
+
+  &::after  {
+    content:      ']';
+    padding-left: var(--padding-transcription);
+  }
+
+}

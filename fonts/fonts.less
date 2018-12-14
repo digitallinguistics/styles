@@ -9,17 +9,41 @@
 @path: 'https://digitallinguistics.blob.core.windows.net/fonts';
 
 // Cannot use CSS variables for these - it breaks the @font-face declarations
-@font-family: 'Fira Sans';
-@font-family-mono: 'Fira Sans Mono';
-@font-family-unicode: 'Gentium Plus';
+@font-family:         'Fira Sans';
+@font-family-mono:    'Fira Sans Mono';
+@font-family-unicode: 'Charis SIL';
 
 :root {
 
-  --font: 'Fira Sans', 'Calibri', 'DejaVu Sans', 'Verdana', 'Arial', 'Helvetica', sans-serif;
-  --font-mono: 'Fira Mono', 'Consolas', 'Monaco', 'DejaVu Sans Mono', 'Courier New', monospace;
-  --font-unicode: 'Gentium Plus', 'Charis SIL', 'Doulos SIL', 'Cambria', 'Andika', 'Lucida Sans Unicode', 'Times New Roman', 'Georgia', serif;
+  --font:
+    'Fira Sans',
+    'Calibri',
+    'DejaVu Sans',
+    'Verdana',
+    'Arial',
+    'Helvetica',
+    sans-serif;
 
-  --font-display: fallback;
+  --font-mono:
+    'Fira Mono',
+    'Consolas',
+    'Monaco',
+    'DejaVu Sans Mono',
+    'Courier New',
+    monospace;
+
+  --font-unicode:
+    'Charis SIL',
+    'Gentium Plus',
+    'Doulos SIL',
+    'Cambria',
+    'Andika',
+    'Lucida Sans Unicode',
+    'Times New Roman',
+    'Georgia',
+    serif;
+
+  --font-display:          fallback;
   --font-display-critical: swap;
 
 }
@@ -47,8 +71,8 @@
     url('@{path}/FiraSans-Light.woff2') format('woff2'),
     url('@{path}/FiraSans-Light.woff') format('woff');
   font-display: var(--font-display);
-  font-style: normal;
-  font-weight: 300;
+  font-style:   normal;
+  font-weight:  300;
 }
 
 // Fira Sans Light Italic
@@ -66,8 +90,8 @@
     url('@{path}/FiraSans-LightItalic.woff2') format('woff2'),
     url('@{path}/FiraSans-LightItalic.woff') format('woff');
   font-display: var(--font-display);
-  font-style: italic;
-  font-weight: 300;
+  font-style:   italic;
+  font-weight:  300;
 }
 
 // Fira Sans Regular
@@ -85,8 +109,8 @@
     url('@{path}/FiraSans-Regular.woff2') format('woff2'),
     url('@{path}/FiraSans-Regular.woff') format('woff');
   font-display: var(--font-display);
-  font-style: normal;
-  font-weight: 400;
+  font-style:   normal;
+  font-weight:  normal;
 }
 
 // Fira Sans Italic
@@ -104,8 +128,8 @@
     url('@{path}/FiraSans-Italic.woff2') format('woff2'),
     url('@{path}/FiraSans-Italic.woff') format('woff');
   font-display: var(--font-display);
-  font-style: italic;
-  font-weight: 400;
+  font-style:   italic;
+  font-weight:  normal;
 }
 
 // Fira Sans Medium
@@ -123,8 +147,8 @@
     url('@{path}/FiraSans-Medium.woff2') format('woff2'),
     url('@{path}/FiraSans-Medium.woff') format('woff');
   font-display: var(--font-display);
-  font-style: normal;
-  font-weight: 500;
+  font-style:   normal;
+  font-weight:  500;
 }
 
 // Fira Sans Medium Italic
@@ -142,8 +166,8 @@
     url('@{path}/FiraSans-MediumItalic.woff2') format('woff2'),
     url('@{path}/FiraSans-MediumItalic.woff') format('woff');
   font-display: var(--font-display);
-  font-style: italic;
-  font-weight: 500;
+  font-style:   italic;
+  font-weight:  500;
 }
 
 // Fira Sans SemiBold
@@ -161,8 +185,8 @@
     url('@{path}/FiraSans-SemiBold.woff2') format('woff2'),
     url('@{path}/FiraSans-SemiBold.woff') format('woff');
   font-display: var(--font-display);
-  font-style: normal;
-  font-weight: 600;
+  font-style:   normal;
+  font-weight:  600;
 }
 
 // Fira Sans SemiBold Italic
@@ -180,8 +204,8 @@
     url('@{path}/FiraSans-SemiBoldItalic.woff2') format('woff2'),
     url('@{path}/FiraSans-SemiBoldItalic.woff') format('woff');
   font-display: var(--font-display);
-  font-style: italic;
-  font-weight: 600;
+  font-style:   italic;
+  font-weight:  600;
 }
 
 
@@ -208,8 +232,8 @@
     url('@{path}/FiraMono-Regular.woff2') format('woff2'),
     url('@{path}/FiraMono-Regular.woff') format('woff');
   font-display: var(--font-display);
-  font-style: normal;
-  font-weight: 400;
+  font-style:   normal;
+  font-weight:  normal;
 }
 
 // Fira Mono Bold
@@ -227,53 +251,91 @@
     url('@{path}/FiraMono-Bold.woff2') format('woff2'),
     url('@{path}/FiraMono-Bold.woff') format('woff');
   font-display: var(--font-display);
-  font-style: normal;
-  font-weight: 600;
+  font-style:   normal;
+  font-weight:  600;
 }
 
 
-// Gentium Plus
+// Charis SIL
 //
-// The Gentium Plus fonts (developed by SIL) are used for representing linguistic data.
+// The Charis SIL fonts (developed by SIL) are used for representing linguistic transcriptions.
 //
 // Weight: 3
 //
-// Styleguide Typography.GentiumPlus
+// Styleguide Typography.CharisSIL
 
-// Gentium Plus Regular
+// Charis SIL Regular
 //
 // Markup:
-// <p style="font-family: 'Gentium Plus'; font-size: 1.15em;"><strong>Gentium Plus Regular</strong> is used for text that needs to support Unicode characters, such as data input fields. It should typically have <code>font-size: 1.15em;</code> so that it occupies the same line height as Fira Sans.</p>
+// <p style="font-family: 'Charis SIL'; font-size: 1.075em;"><strong>Charis SIL</strong> is used for text that needs to support Unicode characters, such as data input fields. It should typically have <code>font-size: 1.075em;</code> so that it occupies the same line height as Fira Sans.</p>
 //
 // Weight: 1
 //
-// Styleguide Typography.GentiumPlus.Regular
+// Styleguide Typography.CharisSIL.Regular
 @font-face {
   font-family: @font-family-unicode;
   src:
-    local('Gentium Plus Regular'),
-    url('@{path}/GentiumPlus-R.woff2') format('woff2'),
-    url('@{path}/GentiumPlus-R.woff') format('woff');
+    local('Charis SIL Regular'),
+    url('@{path}/CharisSIL-R.woff2') format('woff2'),
+    url('@{path}/CharisSIL-R.woff') format('woff');
   font-display: var(--font-display-critical);
-  font-style: normal;
-  font-weight: 400;
+  font-style:   normal;
+  font-weight:  normal;
 }
 
-// Gentium Plus Regular Italic
+// Charis SIL Italic
 //
 // Markup:
-// <p style="font-family: 'Gentium Plus'; font-size: 1.15em; font-style: italic;"><strong>Gentium Plus Regular Italic</strong> is used for italicized text that requires Unicode support, such as inline citation of data. It should typically have <code>font-size: 1.15em;</code> so that it occupies the same line height as Fira Sans.</p>
+// <p style="font-family: 'Charis SIL'; font-size: 1.075em; font-style: italic;"><strong>Charis SIL Italic</strong> is used for italicized text that requires Unicode support, such as inline presentation of example data.</p>
 //
 // Weight: 2
 //
-// Styleguide Typography.GentiumPlus.Italic
+// Styleguide Typography.CharisSIL.Italic
 @font-face {
   font-family: @font-family-unicode;
   src:
-    local('Gentium Plus Italic'),
-    url('@{path}/GentiumPlus-I.woff2') format('woff2'),
-    url('@{path}/GentiumPlus-I.woff') format('woff');
+    local('Charis SIL Italic'),
+    url('@{path}/CharisSIL-I.woff2') format('woff2'),
+    url('@{path}/CharisSIL-I.woff') format('woff');
   font-display: var(--font-display-critical);
-  font-style: italic;
-  font-weight: 400;
+  font-style:   italic;
+  font-weight:  normal;
+}
+
+// Charis SIL Bold
+//
+// Markup:
+// <p style="font-family: 'Charis SIL'; font-size: 1.075em; font-weight: bold;"><em>Charis SIL Bold</em> is used for bolded text that requires Unicode support.</p>
+//
+// Weight: 3
+//
+// Styleguide Typography.CharisSIL.Bold
+@font-face {
+  font-family: @font-family-unicode;
+  src:
+    local('Charis SIL Bold'),
+    url('@{path}/CharisSIL-B.woff2') format('woff2'),
+    url('@{path}/CharisSIL-B.woff') format('woff');
+  font-display: var(--font-display-critical);
+  font-style:   normal;
+  font-weight:  bold;
+}
+
+// Charis SIL Bold Italic
+//
+// Markup:
+// <p style="font-family: 'Charis SIL'; font-size: 1.075em; font-weight: bold; font-style: italic;"><u>Charis SIL Bold Italic</u> is used for bolded and italicized text that requires Unicode support.</p>
+//
+// Weight: 4
+//
+// Styleguide Typography.CharisSIL.BoldItalic
+@font-face {
+  font-family: @font-family-unicode;
+  src:
+    local('Charis SIL Bold Italic'),
+    url('@{path}/CharisSIL-BI.woff2') format('woff2'),
+    url('@{path}/CharisSIL-BI.woff') format('woff');
+  font-display: var(--font-display-critical);
+  font-style:   italic;
+  font-weight:  bold;
 }

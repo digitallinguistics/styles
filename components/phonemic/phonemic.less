@@ -1,0 +1,24 @@
+@import '../unicode/unicode.less';
+
+// Phonemic
+//
+// Used for phonemic representations of data.
+//
+// Markup: phonemic.hbs
+//
+// Styleguide Components.phonemic
+.phonemic {
+
+  .unicode;
+
+  &::before {
+    content:       '/';
+    padding-right: var(--padding-transcription);
+  }
+
+  &::after  {
+    content:       '/';
+    padding-left: var(--padding-transcription);
+  }
+
+}
