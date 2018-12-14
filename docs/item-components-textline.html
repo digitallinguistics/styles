@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,300">
     <link rel="stylesheet" href="kss-assets/vendor/prism.css">
     <link rel="stylesheet" href="kss-assets/css/kss.css">
-    <link rel="stylesheet" href="../kss/patterns.css">
+    <link rel="stylesheet" href="./dlx.css">
+<link rel="stylesheet" href="./patterns.css">
 
   </head>
 
@@ -39,38 +40,32 @@
           </a>
         </li>
           <li class="kss-nav__item">
-            <a class="" href="section-elements.html">
-              <span class="kss-nav__ref">1</span>
-              <span class="kss-nav__name">Elements</span>
-            </a>
-          </li>
-          <li class="kss-nav__item">
             <a class="" href="section-typography.html">
-              <span class="kss-nav__ref">2</span>
+              <span class="kss-nav__ref">1</span>
               <span class="kss-nav__name">Typography</span>
             </a>
           </li>
           <li class="kss-nav__item">
             <a class="" href="section-images.html">
-              <span class="kss-nav__ref">3</span>
+              <span class="kss-nav__ref">2</span>
               <span class="kss-nav__name">Images</span>
             </a>
           </li>
           <li class="kss-nav__item">
             <a class="" href="section-colors.html">
-              <span class="kss-nav__ref">4</span>
+              <span class="kss-nav__ref">3</span>
               <span class="kss-nav__name">Colors</span>
             </a>
           </li>
           <li class="kss-nav__item">
             <a class="" href="section-variables.html">
-              <span class="kss-nav__ref">5</span>
+              <span class="kss-nav__ref">4</span>
               <span class="kss-nav__name">Variables</span>
             </a>
           </li>
           <li class="kss-nav__item">
             <a class="" href="section-components.html">
-              <span class="kss-nav__ref">6</span>
+              <span class="kss-nav__ref">5</span>
               <span class="kss-nav__name">Components</span>
             </a>
           </li>
@@ -90,178 +85,49 @@
             <header class="kss-section kss-section--depth-2" id="kssref-components-textline">
 
             <article class="kss-section__content">
-                <p class="kss-section__source">Source: <span>form/textline/textline.less</span>, line <span>1</span></p>
+                <p class="kss-section__source">Source: <span>textline/textline.less</span>, line <span>3</span></p>
 
               <a class="kss-section__permalink" href="#kssref-components-textline">
                 <h2 class="kss-section__item kss-section__item--depth-2">
-                  <span class="kss-section__ref">6.10</span>
+                  <span class="kss-section__ref">5.6</span>
                   <span class="kss-section__name">Text Line</span>
                 </h2>
               </a>
 
-                <div class="kss-section__description"><p>A text input styled with a simple underline rather than an inset box. A <code>&lt;p&gt;</code> tag may also be included immediately following the <code>&lt;input&gt;</code> element in order to provide a brief description, explanation, or other help text below the input. <strong>NOTE:</strong> The <code>:not()</code> selector causes problems for KSS, so that the :disabled variant below isn't rendering correctly; however, it does render correctly in production.</p>
+                <div class="kss-section__description"><p>A text input styled with a simple underline rather than a box. A <code>&lt;p&gt;</code> tag may also be included immediately following the <code>&lt;input&gt;</code> element in order to provide a brief description, explanation, or other help text below the input.</p>
 </div>
 
             </article>
 
               <article class="kss-section__modifiers">
-                <h1 class="kss-modifiers__heading">Examples</h1>
+                <h1 class="kss-modifiers__heading">Example</h1>
 
-                  <h2 class="kss-modifiers__name">Default styling</h2>
 
-                <div class="kss-modifiers__example"><label class="textline {{modifier_class}}">
+                <div class="kss-modifiers__example"><label class=textline>
   <span>Label Name</span>
   <div>
     <input
-      class="{{modifier_class}}"
       inputmode=verbatim
       placeholder='placeholder data'
       type=text
     >
-    <p>An abbreviation for this language variety. May contain only letters and numbers.</p>
-  </div>
-</label>
-
-<label class="textline {{modifier_class}}">
-  <span>Label Name</span>
-  <div>
-    <input
-      class="{{modifier_class}}"
-      inputmode=verbatim
-      pattern=[0-9]
-      placeholder='placeholder data'
-      type=text
-      value='Invalid data'
-    >
-    <p>An abbreviation for this language variety. May contain only letters and numbers.</p>
+    <p class='ui tiny info message'>An abbreviation for this language variety. May contain only letters and numbers.</p>
   </div>
 </label>
 </div>
 
-                  <article class="kss-modifiers__modifier">
-                    <h2 class="kss-modifiers__name">:disabled</h2>
-                    <p class="kss-modifiers__description">For disabled text inputs</p>
-                    <div class="kss-modifiers__example"><label class="textline pseudo-class-disabled">
-  <span>Label Name</span>
-  <div>
-    <input
-      class="pseudo-class-disabled"
-      inputmode=verbatim
-      placeholder='placeholder data'
-      type=text
-    >
-    <p>An abbreviation for this language variety. May contain only letters and numbers.</p>
-  </div>
-</label>
-
-<label class="textline pseudo-class-disabled">
-  <span>Label Name</span>
-  <div>
-    <input
-      class="pseudo-class-disabled"
-      inputmode=verbatim
-      pattern=[0-9]
-      placeholder='placeholder data'
-      type=text
-      value='Invalid data'
-    >
-    <p>An abbreviation for this language variety. May contain only letters and numbers.</p>
-  </div>
-</label>
-</div>
-                  </article>
-                  <article class="kss-modifiers__modifier">
-                    <h2 class="kss-modifiers__name">:focus</h2>
-                    <p class="kss-modifiers__description">For focused text inputs</p>
-                    <div class="kss-modifiers__example"><label class="textline pseudo-class-focus">
-  <span>Label Name</span>
-  <div>
-    <input
-      class="pseudo-class-focus"
-      inputmode=verbatim
-      placeholder='placeholder data'
-      type=text
-    >
-    <p>An abbreviation for this language variety. May contain only letters and numbers.</p>
-  </div>
-</label>
-
-<label class="textline pseudo-class-focus">
-  <span>Label Name</span>
-  <div>
-    <input
-      class="pseudo-class-focus"
-      inputmode=verbatim
-      pattern=[0-9]
-      placeholder='placeholder data'
-      type=text
-      value='Invalid data'
-    >
-    <p>An abbreviation for this language variety. May contain only letters and numbers.</p>
-  </div>
-</label>
-</div>
-                  </article>
-                  <article class="kss-modifiers__modifier">
-                    <h2 class="kss-modifiers__name">:invalid</h2>
-                    <p class="kss-modifiers__description">For invalid data in text inputs</p>
-                    <div class="kss-modifiers__example"><label class="textline pseudo-class-invalid">
-  <span>Label Name</span>
-  <div>
-    <input
-      class="pseudo-class-invalid"
-      inputmode=verbatim
-      placeholder='placeholder data'
-      type=text
-    >
-    <p>An abbreviation for this language variety. May contain only letters and numbers.</p>
-  </div>
-</label>
-
-<label class="textline pseudo-class-invalid">
-  <span>Label Name</span>
-  <div>
-    <input
-      class="pseudo-class-invalid"
-      inputmode=verbatim
-      pattern=[0-9]
-      placeholder='placeholder data'
-      type=text
-      value='Invalid data'
-    >
-    <p>An abbreviation for this language variety. May contain only letters and numbers.</p>
-  </div>
-</label>
-</div>
-                  </article>
               </article>
 
                 <article class="kss-section__markup">
-                  <pre><code class="language-markup">&lt;label class&#x3D;&quot;textline {{modifier_class}}&quot;&gt;
+                  <pre><code class="language-markup">&lt;label class&#x3D;textline&gt;
   &lt;span&gt;Label Name&lt;/span&gt;
   &lt;div&gt;
     &lt;input
-      class&#x3D;&quot;{{modifier_class}}&quot;
       inputmode&#x3D;verbatim
       placeholder&#x3D;&#x27;placeholder data&#x27;
       type&#x3D;text
     &gt;
-    &lt;p&gt;An abbreviation for this language variety. May contain only letters and numbers.&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/label&gt;
-
-&lt;label class&#x3D;&quot;textline {{modifier_class}}&quot;&gt;
-  &lt;span&gt;Label Name&lt;/span&gt;
-  &lt;div&gt;
-    &lt;input
-      class&#x3D;&quot;{{modifier_class}}&quot;
-      inputmode&#x3D;verbatim
-      pattern&#x3D;[0-9]
-      placeholder&#x3D;&#x27;placeholder data&#x27;
-      type&#x3D;text
-      value&#x3D;&#x27;Invalid data&#x27;
-    &gt;
-    &lt;p&gt;An abbreviation for this language variety. May contain only letters and numbers.&lt;/p&gt;
+    &lt;p class&#x3D;&#x27;ui tiny info message&#x27;&gt;An abbreviation for this language variety. May contain only letters and numbers.&lt;/p&gt;
   &lt;/div&gt;
 &lt;/label&gt;
 </code></pre>
@@ -277,7 +143,7 @@
   <script src="kss-assets/vendor/jquery.js"></script>
   <script src="kss-assets/vendor/prism.js"></script>
   <script src="kss-assets/js/kss.js"></script>
-  <script src="../kss/patterns.js"></script>
+  <script src="./patterns.js"></script>
 
   <!-- /scripts. -->
 
