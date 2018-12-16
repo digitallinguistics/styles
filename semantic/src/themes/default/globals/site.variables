@@ -6,11 +6,31 @@
        Fonts
 --------------------*/
 
-@fontName          : 'Lato';
-@fontSmoothing     : antialiased;
+// Overrides
+@fontName:      'Fira Sans';
+@fontSmoothing: antialiased;
 
-@headerFont        : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;
-@pageFont          : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+@headerFont:
+  @fontName,
+  'Noto Sans',
+  'Source Sans Pro',
+  'Segoe UI',
+  Roboto,
+  'Lucida Sans Unicode',
+  'Lucida Grande',
+  'DejaVu Sans',
+  sans-serif;
+
+@pageFont:
+  @fontName,
+  'Noto Sans',
+  'Source Sans Pro',
+  'Segoe UI',
+  Roboto,
+  'Lucida Sans Unicode',
+  'Lucida Grande',
+  'DejaVu Sans',
+  sans-serif;
 
 @googleFontName    : @fontName;
 @importGoogleFonts : true;
