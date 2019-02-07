@@ -71,6 +71,18 @@ function uploadImage(filepath) {
 
 }
 
+function uploadLESSFile(filepath) {
+
+  const filename = path.basename(filepath);
+
+  return createBlob(`less`, filename, filepath, {
+    contentSettings: {
+      contentType: `text/css`,
+    },
+  });
+
+}
+
 void async function upload() {
 
   // Upload images
@@ -88,5 +100,16 @@ void async function upload() {
   const fontFiles      = fontFileList.filter(filepath => Object.keys(fontTypes).includes(path.extname(filepath)));
   await Promise.all(fontFiles.map(uploadFont));
   fontsSpinner.succeed(`Fonts uploaded`);
+
+  // Upload LESS files
+  const lessSpinner        = createSpinner(`Uploading LESS files`).start();
+  const globalsDir         = path.join(__dirname, `../globals`);
+  const componentsDir      = path.join(__dirname, `../components`);
+  const globalsFiles       = await recurse(globalsDir);
+  const componentsFileList = await recurse(componentsDir);
+  const componentsFiles    = componentsFileList.filter(filepath => filepath.endsWith(`.less`));
+  const fontFile           = path.join(__dirname, `../fonts/fonts.less`);
+  await Promise.all([...globalsFiles, ...componentsFiles, fontFile].map(uploadLESSFile));
+  lessSpinner.succeed(`LESS files uploaded`);
 
 }();
