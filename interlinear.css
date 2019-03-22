@@ -1,0 +1,136 @@
+/* Styling for article */
+
+:root {
+  counter-reset: examples;
+}
+
+.examples {
+  --example-indent: 2.5em;
+  list-style:       none;
+  padding-left:     var(--example-indent);
+}
+
+.examples .igl {
+  counter-increment: examples;
+  margin-bottom:     1em;
+}
+
+.examples .igl::before {
+  content:     '(' counter(examples) ')';
+  margin-left: calc(var(--example-indent) * -1);
+  position:    absolute;
+}
+
+/* Styling for interlinear gloss */
+
+.igl {
+
+  --font-unicode:
+    'Charis SIL',
+    'Gentium Plus',
+    'Doulos SIL',
+    'Cambria',
+    'Andika',
+    'Lucida Sans Unicode',
+    'Times New Roman',
+    'Georgia',
+    serif;
+
+  --igl-indent:             2.5em;
+  --igl-horizontal-spacing: 1.5em;
+  --igl-vertical-spacing:   0.25em;
+
+  font-family:              var(--font-unicode);
+  line-height:              1.5;
+
+}
+
+.igl::after {
+  clear:   both;
+  height:  0;
+  width:   100%;
+  content: '';
+  display: block;
+}
+
+.igl .source {
+  float:  right;
+  margin: 0;
+}
+
+.igl .source::before {
+  content: '(';
+}
+
+.igl .source::after {
+  content: ')';
+}
+
+.igl em {
+  color:        var(--em-color);
+  font-style:   normal;
+  font-variant: normal;
+  font-weight:  bold;
+}
+
+.igl .gl {
+  cursor:          help;
+  font-variant:    small-caps;
+  text-decoration: none; /* Removes user agent styling of abbr elements */
+}
+
+.igl .tln {
+  float:  left;
+  margin: 0;
+}
+
+.igl .tln::before {
+  content: '‘';
+}
+
+.igl .tln::after {
+  content: '’';
+}
+
+.igl .txn {
+  margin:        0;
+  margin-bottom: var(--igl-vertical-spacing);
+}
+
+.igl .word-gl {
+  margin: 0;
+}
+
+.igl .word-txn {
+  margin: 0;
+}
+
+.igl .words {
+  display:     flex;
+  flex-flow:   row wrap;
+  list-style:  none;
+  margin-left: var(--igl-indent);
+  padding:     0;
+}
+
+.igl .word {
+  margin-bottom: var(--igl-vertical-spacing);
+}
+
+.igl .word:first-child {
+  margin-left: calc(var(--igl-indent) * -1);
+}
+
+.igl .word:not(:last-child) {
+  padding-right: var(--igl-horizontal-spacing);
+}
+
+/* Overrides for Ghost blog styling */
+
+.igl .gl {
+  border-bottom: none;
+}
+
+.igl .words {
+  margin-bottom: 0;
+}
