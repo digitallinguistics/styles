@@ -1,0 +1,107 @@
+// Interlinear Gloss
+//
+// An interlinear glossed example or utterance.
+//
+// Markup: interlinear.hbs
+//
+// Styleguide Components.interlinear
+.igl {
+
+  --igl-indent:             2.5em;
+  --igl-horizontal-spacing: 1.5em;
+  --igl-vertical-spacing:   0.25em;
+
+  font-family: var(--font-unicode);
+  line-height: 1.5;
+
+  &::after {
+    clear:   both;
+    height:  0;
+    width:   100%;
+    content: '';
+    display: block;
+  }
+
+  em {
+    // The --em-color is not set by the .igl class
+    // Users can set this externally
+    color:        var(--em-color);
+    font-style:   normal;
+    font-variant: normal;
+    font-weight:  bold;
+  }
+
+  .gl {
+    cursor:          help;
+    font-variant:    small-caps;
+    text-decoration: none; /* Removes user agent styling of abbr elements */
+  }
+
+  .source {
+
+    float:  right;
+    margin: 0;
+
+    &::before {
+      content: '(';
+    }
+
+    &::after {
+      content: ')';
+    }
+
+  }
+
+  .tln {
+
+    float:  left;
+    margin: 0;
+
+    &::before {
+      content: '‘';
+    }
+
+    &::after {
+      content: '’';
+    }
+
+  }
+
+  .txn {
+    margin:        0;
+    margin-bottom: var(--igl-vertical-spacing);
+  }
+
+  .word {
+
+    margin-bottom: var(--igl-vertical-spacing);
+
+    &:first-child {
+      // stylelint-disable-next-line function-calc-no-invalid
+      margin-left: calc(var(--igl-indent) * -1);
+    }
+
+    &:not(:last-child) {
+      padding-right: var(--igl-horizontal-spacing);
+    }
+
+  }
+
+  .word-gl {
+    margin: 0;
+  }
+
+  .word-txn {
+    margin: 0;
+  }
+
+  .words {
+    display:     flex;
+    flex-flow:   row wrap;
+    list-style:  none;
+    margin:      0;
+    margin-left: var(--igl-indent);
+    padding:     0;
+  }
+
+}
