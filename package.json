@@ -19,18 +19,6 @@
     "kss": "./node_modules/.bin/kss --config kss.config.json",
     "upload": "node build/upload.js"
   },
-  "engines": {
-    "node": "11.x"
-  },
-  "files": [
-    ".stylelintrc.yml",
-    "components",
-    "fonts",
-    "globals",
-    "img",
-    "semantic",
-    "semantic.json"
-  ],
   "dependencies": {},
   "devDependencies": {
     "azure-storage": "^2.10.2",
@@ -43,7 +31,6 @@
     "less-plugin-clean-css": "^1.5.1",
     "michelangelo": "^0.8.0",
     "ora": "^3.0.0",
-    "recursive-readdir": "^2.2.2",
-    "semantic-ui": "^2.4.2"
+    "recursive-readdir": "^2.2.2"
   }
 }
