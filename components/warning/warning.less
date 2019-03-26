@@ -11,7 +11,9 @@
 
   background-color: hsl(var(--warning-hue), 100%, var(--message-background-lightness));
   border-radius:    var(--border-radius);
-  box-shadow:       0 0 0 0.075em hsl(var(--warning-hue), 100%, var(--message-border-lightness));
+  box-shadow:
+    0 0 0 0.075em
+    hsl(var(--warning-hue), var(--message-border-saturation), var(--message-border-lightness));
   color:            hsl(var(--warning-hue), 100%, var(--message-text-lightness));
   padding:          var(--padding-message);
 

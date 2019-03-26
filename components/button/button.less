@@ -1,0 +1,38 @@
+// Button
+//
+// A button
+//
+// Markup: button.hbs
+//
+// .blue   - Blue button
+// .purple - Purple button
+//
+// Styleguide Components.button
+.button {
+
+  background-color: hsl(0, 0%, 85%);
+  border-radius:    var(--border-radius);
+  padding:          0.5em 1em;
+
+  // NB: This declaration must precede the color declarations
+  &:hover {
+    background-color: hsl(0, 0%, 75%);
+  }
+
+  &.blue {
+    background-color: hsl(var(--blue-hue), 100%, var(--color-lightness));
+    color:            white;
+  }
+
+  &.purple {
+    background-color: hsl(var(--purple-hue), 100%, var(--color-lightness));
+    color:            white;
+  }
+
+  // NB: This declaration must follow the color declarations
+  &:hover {
+    --color-lightness: 35%;
+    cursor:            pointer;
+  }
+
+}

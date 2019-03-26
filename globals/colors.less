@@ -8,6 +8,8 @@
 
 :root {
 
+  --color-lightness: 45%;
+
   // --blue
   //
   // Colors:
@@ -16,9 +18,17 @@
   //
   // Styleguide Colors.blue
   --blue-hue:       208;
-  --blue-lightness: 45%;
-  --blue:           hsl(var(--blue-hue), 100%, var(--blue-lightness));
-  --lightBlue:      hsl(var(--blue-hue), 100%, calc(var(--blue-lightness) + 10%));
+  --blue:           hsl(var(--blue-hue), 100%, var(--color-lightness));
+  --lightBlue:      hsl(var(--blue-hue), 100%, calc(var(--color-lightness) + 10%));
+
+  // --purple
+  //
+  // $purple - hsl(268, 100%, 45%); purple
+  //
+  // Styleguide Colors.purple
+  --purple-hue: calc(var(--blue-hue) + 60);
+  --purple:     hsl(var(--purple-hue), 100%, var(--color-lightness));
+  --darkPurple: hsl(var(--purple-hue), 100%, calc(var(--color-lightness) - 10%));
 
   // --wugblue
   //

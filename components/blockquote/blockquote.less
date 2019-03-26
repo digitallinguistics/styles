@@ -7,11 +7,12 @@
 // Styleguide Components.blockquote
 .blockquote {
 
-  background-color: hsl(0, 0%, var(--message-background-lightness));
+  /* NOTE: LESS isn't processing HSL values stored as CSS variables (from variables.less) here */
+  background-color: hsl(0, 0%, 95%);
   border-radius:    var(--border-radius);
-  box-shadow:       0 0 0 0.075em hsl(0, 0%, var(--message-border-lightness));
-  color:            hsl(0, 0%, var(--message-text-lightness));
-  padding:          1em 1.5em;
+  box-shadow:       0 0 0 0.075em hsl(0, 0%, 75%);
+  color:            hsl(0, 0%, 20%);
+  padding:          var(--padding-message);
   quotes:           '“' '”' '‘' '’';
 
   &::before {

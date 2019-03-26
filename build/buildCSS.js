@@ -12,6 +12,7 @@ const cssFilePath    = path.join(__dirname, `../kss/dlx.css`);
 const lessFilePath   = path.join(__dirname, `../kss/dlx.less`);
 
 const lessOptions = {
+  math:    `strict`,
   paths:   [`components`],
   plugins: [cleanCSSPlugin],
 };
