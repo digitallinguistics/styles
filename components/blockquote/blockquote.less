@@ -1,0 +1,26 @@
+// Block Quote
+//
+// For block quotes within a text
+//
+// Markup: blockquote.hbs
+//
+// Styleguide Components.blockquote
+.blockquote {
+
+  background-color: hsl(0, 0%, 95%);
+  border-radius:    0.375em;
+  box-shadow:       0 0 0 0.075em hsl(0, 0%, 85%);
+  padding:          1em 1.5em;
+  quotes:           '“' '”' '‘' '’';
+
+  &::before {
+    content:      open-quote;
+    margin-right: -0.25em;
+  }
+
+  &::after {
+    content:     close-quote;
+    margin-left: -0.25em;
+  }
+
+}
