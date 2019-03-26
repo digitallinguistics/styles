@@ -82,19 +82,19 @@
           the "root" element comes first in this loop, and can be detected using
           the "#if @first" block as seen below.
         -->
-            <header class="kss-section kss-section--depth-2" id="kssref-components-unicode">
+            <header class="kss-section kss-section--depth-2" id="kssref-components-numbered">
 
             <article class="kss-section__content">
-                <p class="kss-section__source">Source: <span>unicode/unicode.less</span>, line <span>1</span></p>
+                <p class="kss-section__source">Source: <span>numbered/numbered.less</span>, line <span>1</span></p>
 
-              <a class="kss-section__permalink" href="#kssref-components-unicode">
+              <a class="kss-section__permalink" href="#kssref-components-numbered">
                 <h2 class="kss-section__item kss-section__item--depth-2">
-                  <span class="kss-section__ref">5.17</span>
-                  <span class="kss-section__name">Unicode</span>
+                  <span class="kss-section__ref">5.11</span>
+                  <span class="kss-section__name">Numbered List</span>
                 </h2>
               </a>
 
-                <div class="kss-section__description"><p>Used when a Unicode font is needed. More semantic styles such as <code>.phonetic</code> or <code>.phonemic</code> should be preferred over this one when possible.</p>
+                <div class="kss-section__description"><p>For numbered lists</p>
 </div>
 
             </article>
@@ -103,13 +103,21 @@
                 <h1 class="kss-modifiers__heading">Example</h1>
 
 
-                <div class="kss-modifiers__example"><p>This shows an example of <span class=unicode>some text in a Unicode font</span>.</p>
+                <div class="kss-modifiers__example"><ol class=numbered style="margin-left: 1.5em;">
+  <li>Item</li>
+  <li>Item</li>
+  <li>Item</li>
+</ol>
 </div>
 
               </article>
 
                 <article class="kss-section__markup">
-                  <pre><code class="language-markup">&lt;p&gt;This shows an example of &lt;span class&#x3D;unicode&gt;some text in a Unicode font&lt;/span&gt;.&lt;/p&gt;
+                  <pre><code class="language-markup">&lt;ol class&#x3D;numbered style&#x3D;&quot;margin-left: 1.5em;&quot;&gt;
+  &lt;li&gt;Item&lt;/li&gt;
+  &lt;li&gt;Item&lt;/li&gt;
+  &lt;li&gt;Item&lt;/li&gt;
+&lt;/ol&gt;
 </code></pre>
                 </article>
 
