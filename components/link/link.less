@@ -1,0 +1,70 @@
+@externalLink: 'https://cdn.digitallinguistics.io/img/external-link.svg';
+
+@import 'globals/colors.less';
+
+// External Link
+//
+// A link to an external website. Apply this style using a pattern similar to: a:not([href*='danielhieber.com'])
+//
+// Markup: link.hbs
+//
+// Styleguide Components.external-link
+.external-link {
+
+  --icon-width: 0.75em;
+  margin-right: var(--icon-width);
+
+  &::after {
+    background-color:    transparent;
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)),
+      url('@{externalLink}');
+    background-repeat:   no-repeat;
+    background-position: center;
+    background-size:     contain;
+    content:             '(external link)';
+    margin-left:         0.1em;
+    overflow:            hidden;
+    position:            absolute;
+    text-indent:         var(--icon-width);
+    white-space:         nowrap;
+    width:               var(--icon-width);
+  }
+
+  &:hover::after {
+    background-image: url('@{externalLink}');
+  }
+
+}
+
+// Link
+//
+// A basic inline link.
+//
+// Markup: link.hbs
+//
+// Styleguide Components.link
+.link {
+
+  --underline-width: 0.075em;
+
+  &:link {
+    border-bottom: var(--underline-width) solid transparent;
+    color:         var(--blue);
+  }
+
+  &:visited {
+    color: var(--blue);
+  }
+
+  &:hover {
+    border-bottom: var(--underline-width) solid currentColor;
+    cursor:        pointer;
+  }
+
+  &:active {
+    border-bottom: calc(var(--underline-width) * 1.5) solid currentColor;
+    font-weight:   bold;
+  }
+
+}
