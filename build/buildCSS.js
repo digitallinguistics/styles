@@ -22,5 +22,4 @@ async function buildCSS() {
   await writeFile(cssFilePath, css, `utf8`);
 }
 
-buildCSS()
-.catch(console.error);
+module.exports = buildCSS;

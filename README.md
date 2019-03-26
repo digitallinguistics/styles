@@ -4,8 +4,6 @@ Welcome to the DLx Pattern Library! This website demonstrates CSS styles used ac
 
 [View the GitHub repository for this pattern library.][2]
 
-DLx projects use [Semantic UI][3] to style most of its components, using Semantic UI's default theme and colors. Semantic UI must be installed in your project in order to use these components.
-
 All DLx assets and stylesheets are available to download from the DLx blob storage:
 
 * storage: `https://digitallinguistics.blob.core.windows.net`
@@ -13,12 +11,12 @@ All DLx assets and stylesheets are available to download from the DLx blob stora
 * images: `https://digitallinguistics.blob.core.windows.net/img/{filename}`
 * LESS: `https://digitallinguistics.blob.core.windows.net/less/{filename}`
 
-To use DLx styles in a project, you should import the following LESS files at the root of your project, in order. DLx components assume that these stylesheets have already been applied.
+To use DLx styles in a project, you should import the following LESS files at the root of your project, in order. The DLx pattern library uses the [flexbox-reset](4). DLx components assume that these stylesheets have already been applied.
 
 - `fonts/fonts.less` (DLx)
 - `globals/variables.less` (DLx)
 - `globals/colors.less` (DLx)
-- `semantic/src/definitions/globals/reset.less` (Semantic UI)
+- `node_modules/flexbox-reset/flexbox-reset.less`
 
 ## LESS
 
@@ -28,7 +26,7 @@ To use DLx styles in a project, you should import the following LESS files at th
 
 * **Colors:** Assigns the Semantic UI default color scheme and other DLx colors to global CSS variables (instead of LESS variables).
 
-* **Reset:** DLx projects use the Semantic UI reset that comes bundled with the Semantic UI installation.
+* **Reset:** DLx projects use the [flexbox-reset][4].
 
 * **Components:** Each component (located in the `/components` folder) has an associated LESS file. You can also import `components.less` into your project, which contains styling for all components.
 
@@ -42,4 +40,5 @@ Images and icons used by DLx projects are available in the `/img` folder.
 
 [1]: https://www.npmjs.com/package/flexbox-reset
 [2]: https://github.com/digitallinguistics/styles
-[3]: https://semantic-ui.com/
+
+[4]: https://www.npmjs.com/package/flexbox-reset

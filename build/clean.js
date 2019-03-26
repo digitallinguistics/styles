@@ -7,7 +7,9 @@ const {
 
 const kssOutputDir = path.join(__dirname, `../docs`);
 
-void async function clean() {
+async function clean() {
   await remove(kssOutputDir);
   await makeDir(kssOutputDir);
-}();
+}
+
+module.exports = clean;
