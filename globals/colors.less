@@ -10,10 +10,15 @@
 
   // --blue
   //
-  //$blue - hsl(208, 100%, 43%); blue
+  // Colors:
+  // $blue      - hsl(208, 100%, 43%); blue
+  // $lightBlue - hsl(208, 100%, 53%); light blue
   //
   // Styleguide Colors.blue
-  --blue: hsl(208, 100%, 43%);
+  --blue-hue:       208;
+  --blue-lightness: 43%;
+  --blue:           hsl(var(--blue-hue), 100%, var(--blue-lightness));
+  --lightBlue:      hsl(var(--blue-hue), 100%, calc(var(--blue-lightness) + 10%));
 
   // --wugblue
   //

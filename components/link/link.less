@@ -1,10 +1,10 @@
-@externalLink: 'https://cdn.digitallinguistics.io/img/external-link.svg';
+@externalLink: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMjQiIGhlaWdodD0iMjQiCnZpZXdCb3g9IjAgMCAyNCAyNCIKc3R5bGU9IiBmaWxsOiMwMDAwMDA7Ij4gICAgPHBhdGggc3R5bGU9ImxpbmUtaGVpZ2h0Om5vcm1hbDt0ZXh0LWluZGVudDowO3RleHQtYWxpZ246c3RhcnQ7dGV4dC1kZWNvcmF0aW9uLWxpbmU6bm9uZTt0ZXh0LWRlY29yYXRpb24tc3R5bGU6c29saWQ7dGV4dC1kZWNvcmF0aW9uLWNvbG9yOiMwMDA7dGV4dC10cmFuc2Zvcm06bm9uZTtibG9jay1wcm9ncmVzc2lvbjp0Yjtpc29sYXRpb246YXV0bzttaXgtYmxlbmQtbW9kZTpub3JtYWwiIGQ9Ik0gMTkuOTgwNDY5IDIuOTkwMjM0NCBBIDEuMDAwMSAxLjAwMDEgMCAwIDAgMTkuODY5MTQxIDMgTCAxNSAzIEEgMS4wMDAxIDEuMDAwMSAwIDEgMCAxNSA1IEwgMTcuNTg1OTM4IDUgTCA4LjI5Mjk2ODggMTQuMjkyOTY5IEEgMS4wMDAxIDEuMDAwMSAwIDEgMCA5LjcwNzAzMTIgMTUuNzA3MDMxIEwgMTkgNi40MTQwNjI1IEwgMTkgOSBBIDEuMDAwMSAxLjAwMDEgMCAxIDAgMjEgOSBMIDIxIDQuMTI2OTUzMSBBIDEuMDAwMSAxLjAwMDEgMCAwIDAgMTkuOTgwNDY5IDIuOTkwMjM0NCB6IE0gNSAzIEMgMy45MDY5MzcyIDMgMyAzLjkwNjkzNzIgMyA1IEwgMyAxOSBDIDMgMjAuMDkzMDYzIDMuOTA2OTM3MiAyMSA1IDIxIEwgMTkgMjEgQyAyMC4wOTMwNjMgMjEgMjEgMjAuMDkzMDYzIDIxIDE5IEwgMjEgMTMgQSAxLjAwMDEgMS4wMDAxIDAgMSAwIDE5IDEzIEwgMTkgMTkgTCA1IDE5IEwgNSA1IEwgMTEgNSBBIDEuMDAwMSAxLjAwMDEgMCAxIDAgMTEgMyBMIDUgMyB6IiBmb250LXdlaWdodD0iNDAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgd2hpdGUtc3BhY2U9Im5vcm1hbCIgb3ZlcmZsb3c9InZpc2libGUiPjwvcGF0aD48L3N2Zz4=';
 
 @import 'globals/colors.less';
 
 // External Link
 //
-// A link to an external website. Apply this style using a pattern similar to: a:not([href*='danielhieber.com'])
+// A link to an external website. Apply this style using a pattern similar to: `a:not([href*='danielhieber.com'])`
 //
 // Markup: link.hbs
 //
@@ -46,8 +46,6 @@
 // Styleguide Components.link
 .link {
 
-  --underline-width: 0.075em;
-
   &:link {
     border-bottom: var(--underline-width) solid transparent;
     color:         var(--blue);
@@ -65,6 +63,7 @@
   &:active {
     border-bottom: calc(var(--underline-width) * 1.5) solid currentColor;
     font-weight:   bold;
+    outline:       none;
   }
 
 }
