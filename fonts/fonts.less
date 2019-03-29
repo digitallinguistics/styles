@@ -47,8 +47,28 @@
     'Times New Roman',
     serif;
 
+  // Set font display values
   --font-display:          fallback;
   --font-display-critical: swap;
+
+  // Set base vales for typography
+  --text-base-size:        1em;
+  --text-scale-ratio:      1.2;
+
+  // Type scale
+  --text-xs: calc(1em / var(--text-scale-ratio) / var(--text-scale-ratio));
+  --text-sm: calc(1em / var(--text-scale-ratio));
+  --text-md: calc(1em * var(--text-scale-ratio));
+  --text-lg: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio));
+  --text-xl: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+
+  // Spacing
+  --space-xxs: 0.375em;
+  --space-xs:  0.5em;
+  --space-sm:  0.75em;
+  --space-md:  1.25em;
+  --space-lg:  2em;
+  --space-xl:  3.25em;
 
 }
 
