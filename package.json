@@ -17,6 +17,7 @@
     "build": "node build && npm run kss && npm run copy-files",
     "copy-files": "node build/copyFiles.js",
     "kss": "./node_modules/.bin/kss --config kss.config.json",
+    "prepare": "npm run build",
     "upload": "node build/upload.js"
   },
   "dependencies": {},
