@@ -6,16 +6,9 @@
   max-statements,
 */
 
-const azure            = require(`azure-storage`);
-const connectionString = require(`../../credentials/azure-storage.js`);
-const createSpinner    = require(`ora`);
-const path             = require(`path`);
-const { promisify }    = require(`util`);
-const recurse          = require(`recursive-readdir`);
-
-const storage           = azure.createBlobService(connectionString);
-const createBlob        = promisify(storage.createBlockBlobFromLocalFile).bind(storage);
-const getBlobProperties = promisify(storage.getBlobProperties).bind(storage);
+const createSpinner = require(`ora`);
+const path          = require(`path`);
+const recurse       = require(`recursive-readdir`);
 
 const fontTypes = {
   '.ttf':   `font/ttf`,
@@ -31,7 +24,7 @@ const imageTypes = {
   '.svg':  `image/svg+xml`,
 };
 
-async function uploadFont(filepath) {
+async function uploadFontOld(filepath) {
 
   const filename = path.basename(filepath);
 
@@ -59,7 +52,7 @@ async function uploadFont(filepath) {
 
 }
 
-function uploadImage(filepath) {
+function uploadImageOld(filepath) {
 
   const filename = path.basename(filepath);
 
@@ -71,7 +64,7 @@ function uploadImage(filepath) {
 
 }
 
-function uploadLESSFile(filepath) {
+function uploadLESSFileOld(filepath) {
 
   const filename = path.basename(filepath);
 
@@ -80,6 +73,10 @@ function uploadLESSFile(filepath) {
       contentType: `text/css`,
     },
   });
+
+}
+
+function uploadLESSFile(filepath) {
 
 }
 

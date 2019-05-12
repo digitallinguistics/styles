@@ -22,7 +22,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "azure-storage": "^2.10.2",
+    "@azure/storage-blob": "^10.3.0",
     "eslint": "^5.16.0",
     "feather-icons": "^4.21.0",
     "flexbox-reset": "^3.0.0",
