@@ -24,7 +24,7 @@ To use DLx styles in a project, you should import the following LESS files at th
 
 * **Variables:** Global variables are available in the `/globals/variables.less` file. These are high-level CSS variable declarations that are reused across element and component styling. All styles in the project assume that this stylesheet has already been applied, so that the global CSS variables are available.
 
-* **Colors:** Assigns the Semantic UI default color scheme and other DLx colors to global CSS variables (instead of LESS variables).
+* **Colors:** Global color scheme.
 
 * **Reset:** DLx projects use the [flexbox-reset][4].
 
