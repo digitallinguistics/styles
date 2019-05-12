@@ -34,3 +34,5 @@ node_modules
 
 # Custom
 Thumbs.db
+credentials.js
+build/credentials.js
