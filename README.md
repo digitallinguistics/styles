@@ -26,7 +26,7 @@ To use DLx styles in a project, you should import the following LESS files at th
 
 * **Colors:** Global color scheme.
 
-* **Reset:** DLx projects use the [flexbox-reset][4].
+* **Reset:** DLx projects use the [flexbox-reset][3].
 
 * **Components:** Each component (located in the `/components` folder) has an associated LESS file. You can also import `components.less` into your project, which contains styling for all components.
 
@@ -40,5 +40,4 @@ Images and icons used by DLx projects are available in the `/img` folder.
 
 [1]: https://www.npmjs.com/package/flexbox-reset
 [2]: https://github.com/digitallinguistics/styles
-
-[4]: https://www.npmjs.com/package/flexbox-reset
+[3]: https://www.npmjs.com/package/flexbox-reset
