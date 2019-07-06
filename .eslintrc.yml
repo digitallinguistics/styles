@@ -1,8 +1,9 @@
-# ESLint v5.16.0
+# ESLint v6.0.1
 parserOptions:
   ecmaVersion: 10
   ecmaFeatures:
     impliedStrict: true
+  sourceType: module
 env:
   browser: true
   es6:     true

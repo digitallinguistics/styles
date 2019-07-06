@@ -20,10 +20,9 @@
     "prepare": "npm run build",
     "upload": "node build/upload.js"
   },
-  "dependencies": {},
   "devDependencies": {
     "@azure/storage-blob": "^10.3.0",
-    "eslint": "^5.16.0",
+    "eslint": "^6.0.1",
     "feather-icons": "^4.21.0",
     "flexbox-reset": "^3.0.0",
     "fs-extra": "^8.0.0",
