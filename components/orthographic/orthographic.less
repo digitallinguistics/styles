@@ -1,4 +1,4 @@
-@import '../unicode/unicode.less';
+@import '../transcription/transcription.less';
 
 // Orthographic
 //
@@ -9,16 +9,16 @@
 // Styleguide Components.orthographic
 .orthographic {
 
-  .unicode;
+  .transcription;
 
   &::before {
     content:       '⟨';
-    padding-right: var(--padding-transcription);
+    padding-right: var(--transcription-padding);
   }
 
   &::after  {
     content:      '⟩';
-    padding-left: var(--padding-transcription);
+    padding-left: var(--transcription-padding);
   }
 
 }
