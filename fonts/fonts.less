@@ -52,9 +52,10 @@
   --font-display:          fallback;
   --font-display-critical: swap;
 
-  // Set base vales for typography
-  --text-base-size:        1em;
-  --text-scale-ratio:      1.2;
+  // Set base values for typography
+  --text-base-size:     1em;
+  --text-border-radius: 0.375em;
+  --text-scale-ratio:   1.2;
 
   // Type scale
   --text-xs: calc(1em / var(--text-scale-ratio) / var(--text-scale-ratio));
@@ -63,13 +64,19 @@
   --text-lg: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio));
   --text-xl: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
 
+  // Padding
+  --text-padding:    0.25em 0.5em;
+  --text-padding-lg: 0.5em 1em;
+
   // Spacing
-  --space-xxs: 0.375em;
-  --space-xs:  0.5em;
-  --space-sm:  0.75em;
-  --space-md:  1.25em;
-  --space-lg:  2em;
-  --space-xl:  3.25em;
+  --space-xxxs: 0.25em;
+  --space-xxs:  0.375em;
+  --space-xs:   0.5em;
+  --space-sm:   0.75em;
+  --space:      1em;
+  --space-md:   1.25em;
+  --space-lg:   2em;
+  --space-xl:   3.25em;
 
 }
 

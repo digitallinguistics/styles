@@ -16,12 +16,12 @@
   .examples {
 
     list-style:   none;
-    padding-top:  1em;
+    padding-top:  var(--text-base-size);
     padding-left: var(--example-indent);
 
     .igl {
       counter-increment: examples;
-      margin-bottom:     1em;
+      margin-bottom:     var(--text-base-size);
     }
 
     .igl::before {
@@ -41,12 +41,12 @@
   }
 
   .section-header {
-    font-size:   1.5em;
+    font-size:   var(--text-lg);
     font-weight: bold;
   }
 
   .title {
-    font-size: 2em;
+    font-size: var(--text-xl);
   }
 
 }
