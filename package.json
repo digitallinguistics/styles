@@ -13,6 +13,9 @@
   "publishConfig": {
     "access": "public"
   },
+  "engines": {
+    "node": "12.x"
+  },
   "scripts": {
     "build": "node build && npm run kss && npm run copy-files",
     "copy-files": "node build/copyFiles.js",
@@ -21,13 +24,13 @@
     "upload": "node build/upload.js"
   },
   "devDependencies": {
-    "@azure/storage-blob": "^10.3.0",
-    "eslint": "^6.0.1",
-    "feather-icons": "^4.22.1",
+    "@azure/storage-blob": "^10.5.0",
+    "eslint": "^6.6.0",
+    "feather-icons": "^4.24.1",
     "flexbox-reset": "^3.0.0",
     "fs-extra": "^8.1.0",
     "kss": "^3.0.0-beta.25",
-    "less": "^3.9.0",
+    "less": "^3.10.3",
     "less-plugin-clean-css": "^1.5.1",
     "michelangelo": "^0.8.0",
     "ora": "^3.4.0",
