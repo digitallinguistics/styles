@@ -1,0 +1,1 @@
+:root{--color-lightness:45%;--blue-hue:208;--blue:hsl(var(--blue-hue), 100%, var(--color-lightness));--lightBlue:hsl(var(--blue-hue), 100%, calc(var(--color-lightness) + 10%));--purple-hue:calc(var(--blue-hue) + 60);--purple:hsl(var(--purple-hue), 100%, var(--color-lightness));--darkPurple:hsl(var(--purple-hue), 100%, calc(var(--color-lightness) - 10%));--wugblue:#6FD1F6}
