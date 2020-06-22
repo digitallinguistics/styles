@@ -1,26 +1,26 @@
-const CleanCSSPlugin = require(`less-plugin-clean-css`);
-const path           = require(`path`);
-const less           = require(`less`);
+const convertLESS = require(`./convertLESS`);
+const path        = require(`path`);
+const recursive   = require(`recursive-readdir`);
 
-const {
-  readFile,
-  writeFile,
-} = require(`fs-extra`);
-
-const cleanCSSPlugin = new CleanCSSPlugin();
-const cssFilePath    = path.join(__dirname, `../kss/dlx.css`);
-const lessFilePath   = path.join(__dirname, `../kss/dlx.less`);
-
-const lessOptions = {
-  math:    `strict`,
-  paths:   [`components`],
-  plugins: [cleanCSSPlugin],
-};
-
+// Top-Level Script
 async function buildCSS() {
-  const lessData = await readFile(lessFilePath, `utf8`);
-  const { css }  = await less.render(lessData, lessOptions);
-  await writeFile(cssFilePath, css, `utf8`);
+  try {
+    const globalsDir         = path.join(__dirname, `../globals`);
+    const componentsDir      = path.join(__dirname, `../components`);
+    const globalsFilesList   = await recursive(globalsDir);
+    const globalsFiles       = globalsFilesList.filter(filepath => filepath.endsWith(`.less`));
+    const componentsFileList = await recursive(componentsDir);
+    const componentsFiles    = componentsFileList.filter(filepath => filepath.endsWith(`.less`));
+    const fontFile           = path.join(__dirname, `../fonts/fonts.less`);
+    const dlxFile            = path.join(__dirname, `../kss/dlx.less`);
+    convertLESS(fontFile);
+    convertLESS(dlxFile);
+    globalsFiles.forEach(convertLESS);
+    componentsFiles.forEach(convertLESS);
+
+  } catch (e) {
+    console.error(e);
+  }
 }
 
 module.exports = buildCSS;
