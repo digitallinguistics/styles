@@ -1,15 +1,6 @@
-const path = require(`path`);
-
-const {
-  mkdirp: makeDir,
-  remove,
-} = require(`fs-extra`);
+const { emptyDir } = require(`fs-extra`);
+const path         = require(`path`);
 
 const kssOutputDir = path.join(__dirname, `../docs`);
 
-async function clean() {
-  await remove(kssOutputDir);
-  await makeDir(kssOutputDir);
-}
-
-module.exports = clean;
+emptyDir(kssOutputDir);
