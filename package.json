@@ -17,11 +17,10 @@
     "node": "12.x"
   },
   "scripts": {
-    "build": "node build && npm run kss && npm run copy-files",
+    "build":      "node build && npm run kss && npm run copy-files",
     "copy-files": "node build/copyFiles.js",
-    "kss": "./node_modules/.bin/kss --config kss.config.json",
-    "prepare": "npm run build",
-    "upload": "node build/upload.js"
+    "kss":        "./node_modules/.bin/kss --config kss.config.json",
+    "upload":     "node build/upload.js"
   },
   "devDependencies": {
     "@azure/storage-blob": "^10.5.0",
