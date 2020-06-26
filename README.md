@@ -2,35 +2,32 @@
 
 Welcome to the DLx Pattern Library! This website demonstrates CSS styles used across DLx projects, along with example HTML markup and usage notes.
 
-[View the GitHub repository for this pattern library.][2]
+[View the GitHub repository for this pattern library.][GitHub]
 
-To use DLx styles in a project, you should import the following LESS files at the root of your project, in order. The DLx pattern library uses the [flexbox-reset](4). DLx components assume that these stylesheets have already been applied.
+## Using the DLx Styles
 
-- `fonts/fonts.less` (DLx)
-- `globals/variables.less` (DLx)
-- `globals/colors.less` (DLx)
+DLx styles are available either as [LESS files][LESS] or standalone CSS files. LESS files must be compiled to CSS before you can use them. See the [LESS website][LESS] for details.
+
+DLx styles use the [flexbox-reset][flexbox-reset] to standardize styling across browsers. It is recommend that you include the reset before other styling. You can install the reset as an [npm package][flexbox-reset], or copy it from one of the following locations:
+
+- `node_modules/flexbox-reset/flexbox-reset.css`
 - `node_modules/flexbox-reset/flexbox-reset.less`
 
-## LESS
+The DLx styles library also uses various global variables, font declarations, and colors. You may also need to include the following files before other styles, depending on which of the global variables you're using:
 
-* **Fonts:** Font declarations for fonts used by DLx projects are available in `fonts.less`.
+* `fonts/fonts.{css|less}`: font declarations
+* `globals/colors.{css|less}`: color variables
+* `globals/variables.{css|less}`: global variables
 
-* **Variables:** Global variables are available in the `/globals/variables.less` file. These are high-level CSS variable declarations that are reused across element and component styling. All styles in the project assume that this stylesheet has already been applied, so that the global CSS variables are available.
+## Components
 
-* **Colors:** Global color scheme.
-
-* **Reset:** DLx projects use the [flexbox-reset][3].
-
-* **Components:** Each component (located in the `/components` folder) has an associated LESS file. You can also import `components.less` into your project, which contains styling for all components.
-
-## Fonts
-
-Fonts used by DLx projects are available in the `/fonts` folder.
+Each component is given a folder within the `/components` folder. Each component has a standalone CSS file, a LESS file, and a sample [Handlebars][Handlebars] file containing example HTML.
 
 ## Images
 
 Images and icons used by DLx projects are available in the `/img` folder.
 
-[1]: https://www.npmjs.com/package/flexbox-reset
-[2]: https://github.com/digitallinguistics/styles
-[3]: https://www.npmjs.com/package/flexbox-reset
+[flexbox-reset]: https://www.npmjs.com/package/flexbox-reset
+[GitHub]:        https://github.com/digitallinguistics/styles
+[Handlebars]:    https://handlebarsjs.com/
+[LESS]:          http://lesscss.org/
