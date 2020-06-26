@@ -1,6 +1,6 @@
 {
   "name": "@digitallinguistics/styles",
-  "version": "0.17.0",
+  "version": "0.18.1",
   "description": "A collection of DLx assets and styles",
   "homepage": "https://github.com/digitallinguistics/styles",
   "bugs": "https://github.com/digitallinguistics/styles/issues",
@@ -17,23 +17,22 @@
     "node": "12.x"
   },
   "scripts": {
-    "build": "node build && npm run kss && npm run copy-files",
-    "copy-files": "node build/copyFiles.js",
-    "kss": "./node_modules/.bin/kss --config kss.config.json",
-    "prepare": "npm run build",
-    "upload": "node build/upload.js"
+    "build": "npm run build-css && npm run build-docs",
+    "build-css": "node build/buildCSS.js",
+    "build-docs": "node build/clearDocs.js && npm run kss && node build/copyFiles.js",
+    "kss": "./node_modules/.bin/kss --config kss.config.json"
   },
   "devDependencies": {
     "@azure/storage-blob": "^10.5.0",
-    "eslint": "^6.6.0",
-    "feather-icons": "^4.24.1",
+    "eslint": "^7.3.1",
+    "feather-icons": "^4.28.0",
     "flexbox-reset": "^3.0.0",
-    "fs-extra": "^8.1.0",
-    "kss": "^3.0.0-beta.25",
-    "less": "^3.10.3",
+    "fs-extra": "^9.0.1",
+    "kss": "^3.0.1",
+    "less": "^3.11.3",
     "less-plugin-clean-css": "^1.5.1",
     "michelangelo": "^0.8.0",
-    "ora": "^3.4.0",
+    "ora": "^4.0.4",
     "recursive-readdir": "^2.2.2"
   }
 }

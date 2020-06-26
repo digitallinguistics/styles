@@ -1,0 +1,1 @@
+.transcription{--transcription-padding:0.15em;font-family:var(--font-unicode)}.phonetic{--transcription-padding:0.15em;font-family:var(--font-unicode)}.phonetic::before{content:'[';padding-right:var(--transcription-padding)}.phonetic::after{content:']';padding-left:var(--transcription-padding)}
