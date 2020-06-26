@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,300">
     <link rel="stylesheet" href="kss-assets/vendor/prism.css">
     <link rel="stylesheet" href="kss-assets/css/kss.css">
-    <link rel="stylesheet" href="./dlx.css">
-<link rel="stylesheet" href="./patterns.css">
+    <link rel="stylesheet" href="./dlx.css"/>
+<link rel="stylesheet" href="./patterns.css"/>
 
   </head>
 
@@ -76,48 +76,12 @@
 
     <!-- documentation. -->
     <section class="kss-documentation">
-        <article class="kss-markdown">
-          <h1>DLx Pattern Library</h1>
-<p>Welcome to the DLx Pattern Library! This website demonstrates CSS styles used across DLx projects, along with example HTML markup and usage notes.</p>
-<p><a href="https://github.com/digitallinguistics/styles">View the GitHub repository for this pattern library.</a></p>
-<p>All DLx assets and stylesheets are available to download from the DLx blob storage:</p>
-<ul>
-<li>storage: <code>https://digitallinguistics.blob.core.windows.net</code></li>
-<li>fonts: <code>https://digitallinguistics.blob.core.windows.net/fonts/{filename}</code></li>
-<li>images: <code>https://digitallinguistics.blob.core.windows.net/img/{filename}</code></li>
-<li>LESS: <code>https://digitallinguistics.blob.core.windows.net/less/{filename}</code></li>
-</ul>
-<p>To use DLx styles in a project, you should import the following LESS files at the root of your project, in order. The DLx pattern library uses the <a href="4">flexbox-reset</a>. DLx components assume that these stylesheets have already been applied.</p>
-<ul>
-<li><code>fonts/fonts.less</code> (DLx)</li>
-<li><code>globals/variables.less</code> (DLx)</li>
-<li><code>globals/colors.less</code> (DLx)</li>
-<li><code>node_modules/flexbox-reset/flexbox-reset.less</code></li>
-</ul>
-<h2>LESS</h2>
-<ul>
-<li>
-<p><strong>Fonts:</strong> Font declarations for fonts used by DLx projects are available in <code>fonts.less</code>.</p>
-</li>
-<li>
-<p><strong>Variables:</strong> Global variables are available in the <code>/globals/variables.less</code> file. These are high-level CSS variable declarations that are reused across element and component styling. All styles in the project assume that this stylesheet has already been applied, so that the global CSS variables are available.</p>
-</li>
-<li>
-<p><strong>Colors:</strong> Global color scheme.</p>
-</li>
-<li>
-<p><strong>Reset:</strong> DLx projects use the <a href="https://www.npmjs.com/package/flexbox-reset">flexbox-reset</a>.</p>
-</li>
-<li>
-<p><strong>Components:</strong> Each component (located in the <code>/components</code> folder) has an associated LESS file. You can also import <code>components.less</code> into your project, which contains styling for all components.</p>
-</li>
-</ul>
-<h2>Fonts</h2>
-<p>Fonts used by DLx projects are available in the <code>/fonts</code> folder.</p>
-<h2>Images</h2>
-<p>Images and icons used by DLx projects are available in the <code>/img</code> folder.</p>
 
-        </article>
+        <!--
+          display each section, in order.
+          the "root" element comes first in this loop, and can be detected using
+          the "#if @first" block as seen below.
+        -->
     </section>
     <!-- /documentation. -->
 
