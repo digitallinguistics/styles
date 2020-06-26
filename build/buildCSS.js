@@ -2,7 +2,7 @@ const convertLESS = require(`./convertLESS`);
 const path        = require(`path`);
 const recursive   = require(`recursive-readdir`);
 
-async function buildCSS() {
+void async function buildCSS() {
   try {
 
     const globalsDir         = path.join(__dirname, `../globals`);
@@ -27,6 +27,4 @@ async function buildCSS() {
     console.error(e);
 
   }
-}
-
-module.exports = buildCSS;
+}();
