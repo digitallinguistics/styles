@@ -4,13 +4,6 @@ Welcome to the DLx Pattern Library! This website demonstrates CSS styles used ac
 
 [View the GitHub repository for this pattern library.][2]
 
-All DLx assets and stylesheets are available to download from the DLx blob storage:
-
-* storage: `https://digitallinguistics.blob.core.windows.net`
-* fonts: `https://digitallinguistics.blob.core.windows.net/fonts/{filename}`
-* images: `https://digitallinguistics.blob.core.windows.net/img/{filename}`
-* LESS: `https://digitallinguistics.blob.core.windows.net/less/{filename}`
-
 To use DLx styles in a project, you should import the following LESS files at the root of your project, in order. The DLx pattern library uses the [flexbox-reset](4). DLx components assume that these stylesheets have already been applied.
 
 - `fonts/fonts.less` (DLx)
