@@ -1,1 +1,1 @@
-.translation{font-family:var(--font-unicode)}.translation::before{content:'‘'}.translation::after{content:'’'}
+.translation::before{content:'‘'}.translation::after{content:'’'}
