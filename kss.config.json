@@ -7,7 +7,7 @@
     "./img"
   ],
   "destination": "docs/",
-  "homepage": "../README.md",
+  "homepage": "./README.md",
   "builder": "./node_modules/michelangelo/kss_styleguide/custom-template/",
   "css": [
     "./dlx.css",

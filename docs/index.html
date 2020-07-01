@@ -76,12 +76,29 @@
 
     <!-- documentation. -->
     <section class="kss-documentation">
+        <article class="kss-markdown">
+          <h1>DLx Pattern Library</h1>
+<p>Welcome to the DLx Pattern Library! This website demonstrates CSS styles used across DLx projects, along with example HTML markup and usage notes.</p>
+<p><a href="https://github.com/digitallinguistics/styles">View the GitHub repository for this pattern library.</a></p>
+<h2>Using the DLx Styles</h2>
+<p>DLx styles are available either as <a href="http://lesscss.org/">LESS files</a> or standalone CSS files. LESS files must be compiled to CSS before you can use them. See the <a href="http://lesscss.org/">LESS website</a> for details.</p>
+<p>DLx styles use the <a href="https://www.npmjs.com/package/flexbox-reset">flexbox-reset</a> to standardize styling across browsers. It is recommend that you include the reset before other styling. You can install the reset as an <a href="https://www.npmjs.com/package/flexbox-reset">npm package</a>, or copy it from one of the following locations:</p>
+<ul>
+<li><code>node_modules/flexbox-reset/flexbox-reset.css</code></li>
+<li><code>node_modules/flexbox-reset/flexbox-reset.less</code></li>
+</ul>
+<p>The DLx styles library also uses various global variables, font declarations, and colors. You may also need to include the following files before other styles, depending on which of the global variables you're using:</p>
+<ul>
+<li><code>fonts/fonts.{css|less}</code>: font declarations</li>
+<li><code>globals/colors.{css|less}</code>: color variables</li>
+<li><code>globals/variables.{css|less}</code>: global variables</li>
+</ul>
+<h2>Components</h2>
+<p>Each component is given a folder within the <code>/components</code> folder. Each component has a standalone CSS file, a LESS file, and a sample <a href="https://handlebarsjs.com/">Handlebars</a> file containing example HTML.</p>
+<h2>Images</h2>
+<p>Images and icons used by DLx projects are available in the <code>/img</code> folder.</p>
 
-        <!--
-          display each section, in order.
-          the "root" element comes first in this loop, and can be detected using
-          the "#if @first" block as seen below.
-        -->
+        </article>
     </section>
     <!-- /documentation. -->
 
