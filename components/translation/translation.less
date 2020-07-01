@@ -1,0 +1,20 @@
+// Translation
+//
+// Used to add single qoutation marks (',') around a translation.
+//
+// Markup: translation.hbs
+//
+// Styleguide Components.translation
+.translation {
+
+  font-family: var(--font-unicode);
+
+  &::before {
+    content: '‘';
+  }
+
+  &::after {
+    content: '’';
+  }
+
+}
