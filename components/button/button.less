@@ -6,6 +6,7 @@
 //
 // .blue   - Blue button
 // .purple - Purple button
+// .red    - Red button
 //
 // Styleguide Components.button
 .button {
@@ -27,6 +28,11 @@
 
   &.purple {
     background-color: hsl(var(--purple-hue), 100%, var(--color-lightness));
+    color:            white;
+  }
+
+  &.red {
+    background-color: hsl(var(--red-hue), 56%, calc(var(--color-lightness) + 9%));
     color:            white;
   }
 
