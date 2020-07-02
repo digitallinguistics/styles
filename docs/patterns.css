@@ -19,3 +19,11 @@
 .kss-nav {
   overflow-y: scroll;
 }
+
+#kssref-components-examples {
+  counter-reset: examples;
+}
+
+#kssref-components-examples .kss-modifiers__example {
+  font-family:   var(--font-unicode);
+}
