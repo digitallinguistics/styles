@@ -15,7 +15,7 @@ void async function buildCSS() {
     const componentsFiles    = componentsFileList.filter(filepath => filepath.endsWith(`.less`));
 
     const fontFile           = path.join(__dirname, `../fonts/fonts.less`);
-    const dlxFile            = path.join(__dirname, `../kss/dlx.less`);
+    const dlxFile            = path.join(__dirname, `../kss/patterns.less`);
 
     convertLESS(fontFile);
     convertLESS(dlxFile);
