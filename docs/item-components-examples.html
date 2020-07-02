@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DLx Pattern Library</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="generator" content="kss-node">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,300">
+    <link rel="stylesheet" href="kss-assets/vendor/prism.css">
+    <link rel="stylesheet" href="kss-assets/css/kss.css">
+    <link rel="stylesheet" href="./dlx.css"/>
+<link rel="stylesheet" href="./patterns.css"/>
+
+  </head>
+
+  <body class="kss-body">
+
+    <!-- header. -->
+    <header class="kss-header">
+      <section class="kss-header__inner">
+        <a class="kss-header__hamburger-trigger">
+          <div class="kss-header__hamburger"></div>
+        </a>
+        <h1 class="kss-header__title kss-title">DLx Pattern Library</h1>
+      </section>
+    </header>
+    <!-- /header. -->
+
+
+    <!-- navigation. -->
+    <section class="kss-navigation">
+      <h1 class="kss-navigation__title kss-title">DLx Pattern Library</h1>
+      <ul class="kss-nav">
+        <li class="kss-nav__item">
+          <a href="index.html">
+            <span class="kss-nav__ref">0</span>
+            <span class="kss-nav__name">Introduction</span>
+          </a>
+        </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-typography.html">
+              <span class="kss-nav__ref">1</span>
+              <span class="kss-nav__name">Typography</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-images.html">
+              <span class="kss-nav__ref">2</span>
+              <span class="kss-nav__name">Images</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-colors.html">
+              <span class="kss-nav__ref">3</span>
+              <span class="kss-nav__name">Colors</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-variables.html">
+              <span class="kss-nav__ref">4</span>
+              <span class="kss-nav__name">Variables</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-components.html">
+              <span class="kss-nav__ref">5</span>
+              <span class="kss-nav__name">Components</span>
+            </a>
+          </li>
+      </ul>
+    </section>
+    <!-- /navigation. -->
+
+
+    <!-- documentation. -->
+    <section class="kss-documentation">
+
+        <!--
+          display each section, in order.
+          the "root" element comes first in this loop, and can be detected using
+          the "#if @first" block as seen below.
+        -->
+            <header class="kss-section kss-section--depth-2" id="kssref-components-examples">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>components/examples/examples.less</span>, line <span>1</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-components-examples">
+                <h2 class="kss-section__item kss-section__item--depth-2">
+                  <span class="kss-section__ref">5.9</span>
+                  <span class="kss-section__name">Examples</span>
+                </h2>
+              </a>
+
+                <div class="kss-section__description"><p>A set of one or more examples in a document. Each set of examples should be an ordered list (<code>&lt;ol&gt;</code>), and each item within that list should have the class <code>.ex</code> (<code>&lt;li class=&quot;ex&quot;&gt;</code>). If the example is also an interlinear gloss, the <code>.igl</code> class must be added as well (<code>&lt;li class=&quot;ex igl&quot;&gt;</code>). You may also need to reset the <code>examples</code> counter at the beginning of the document (<code>counter-reset: examples;</code>; note that the <code>.ling-document</code> class does this for you automatically).</p>
+</div>
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Example</h1>
+
+
+                <div class="kss-modifiers__example"><ol class=examples>
+
+  <li class=ex>
+    <ol class=subexamples>
+      <li><p><span class=transcription>pāpaehcen</span> <span class=translation>he, she, it (an.) falls</span> (AI)</p></li>
+      <li><p><span class=transcription>pāpaehnaen</span> <span clas=translation>it (inan.) falls</span> (II)</p></li>
+    </ol>
+  </li>
+
+  <li class=ex>
+    <ol class=subexamples>
+      <li><p><span class=transcription>na͞ewa͞ew</span> <span class=translation>s/he sees him, her, it (an.)</span> (TA)</p></li>
+      <li><p><span class=transcription>na͞emwah</span> <span class=translation>s/he sees it (inan.)</span> (TI)</p></li>
+    </ol>
+  </li>
+
+</ol>
+
+<p>
+  The following examples should continue numbering from the previous examples:
+</p>
+
+<br>
+
+<ol class=examples>
+
+  <li class=ex>
+    <p><span class=transcription>kōhkawaew</span> (AI) <span class=translation>it (animate; for example, a wagon or canoe) tips over</span></p>
+    <p><strong>Stem:</strong> <span class=transcription>kōhkawae‑</span> [initial <span class=transcription>kōhkā‑</span> <span class=translation>tip over</span> + <span class=transcription>‑āwa͞e</span> <span class=translation>AI final</span>]</p>
+    <p><strong>Secondary final:</strong> <span class=transcription>‑makat</span> <span class=translation>II verb</span></p>
+    <p><strong>New word:</strong> <span class=transcription>kōhkawaemakat</span> (II) <span class=translation>it tips over</span></p>
+  </li>
+
+  <li class=ex>
+    <p><span class=transcription>cēkataham</span> (TI) <span class=translation>he or she sweeps it clear, cleans it with a broom</span></p>
+    <p><strong>Stem:</strong> <span class=transcription>cēkatah‑</span> [initial <span class=transcription>cēk‑</span> <span class=translation>near, next to</span> (?) + <span class=transcription>‑atah</span> <span class=translation>by stick</span>]</p>
+    <p><strong>Secondary final:</strong> <span class=transcription>‑ka͞e</span> <span class=translation>AI verb; indefinite action</span></p>
+    <p><strong>New word:</strong> <span class=transcription>cēkatahekaew</span> (AI1) <span class=translation>he or she sweeps</span></p>
+  </li>
+
+  <li class=ex>
+    <p><span class=transcription>wāqnenam</span> (TI) <span class=translation>he or she throws light on it, lights it up</span></p>
+    <p><strong>Stem:</strong> <span class=transcription>wāqnen‑</span> [initial <span class=transcription>wāqN‑</span> <span class=translation>light</span> + <span class=transcription>‑aen</span> <span class=translation>by hand</span>]</p>
+    <p><strong>Secondary final:</strong> <span class=transcription>‑kan</span> <span class=translation>N; instrument, product, place, etc.</span></p>
+    <p><strong>New word:</strong> <span class=transcription>wāqnenekan</span> (N) <span class=translation>lamp, candle</span></p>
+  </li>
+
+  <li class=ex>
+    <p><span class=transcription>sūniyan</span> (N) <span class=translation>money</span></p>
+    <p><strong>Stem:</strong> <span class=transcription>sūniyan‑</span> [initial <span class=transcription>sōni‑</span> <span class=translation>silver</span> + <span class=transcription>‑ān</span> <span class=translation>N final</span> (?)]</p>
+    <p><strong>Secondary final:</strong> <span class=transcription>‑ikamekw</span> <span class=translation>N; house, building</span></p>
+    <p><strong>New word:</strong> <span class=transcription>sūniyanikamek</span> (N) <span class=translation>bank</span></p>
+  </li>
+
+</ol>
+</div>
+
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;ol class&#x3D;examples&gt;
+
+  &lt;li class&#x3D;ex&gt;
+    &lt;ol class&#x3D;subexamples&gt;
+      &lt;li&gt;&lt;p&gt;&lt;span class&#x3D;transcription&gt;pāpaehcen&lt;/span&gt; &lt;span class&#x3D;translation&gt;he, she, it (an.) falls&lt;/span&gt; (AI)&lt;/p&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;p&gt;&lt;span class&#x3D;transcription&gt;pāpaehnaen&lt;/span&gt; &lt;span clas&#x3D;translation&gt;it (inan.) falls&lt;/span&gt; (II)&lt;/p&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+
+  &lt;li class&#x3D;ex&gt;
+    &lt;ol class&#x3D;subexamples&gt;
+      &lt;li&gt;&lt;p&gt;&lt;span class&#x3D;transcription&gt;na͞ewa͞ew&lt;/span&gt; &lt;span class&#x3D;translation&gt;s/he sees him, her, it (an.)&lt;/span&gt; (TA)&lt;/p&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;p&gt;&lt;span class&#x3D;transcription&gt;na͞emwah&lt;/span&gt; &lt;span class&#x3D;translation&gt;s/he sees it (inan.)&lt;/span&gt; (TI)&lt;/p&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+
+&lt;/ol&gt;
+
+&lt;p&gt;
+  The following examples should continue numbering from the previous examples:
+&lt;/p&gt;
+
+&lt;br&gt;
+
+&lt;ol class&#x3D;examples&gt;
+
+  &lt;li class&#x3D;ex&gt;
+    &lt;p&gt;&lt;span class&#x3D;transcription&gt;kōhkawaew&lt;/span&gt; (AI) &lt;span class&#x3D;translation&gt;it (animate; for example, a wagon or canoe) tips over&lt;/span&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;Stem:&lt;/strong&gt; &lt;span class&#x3D;transcription&gt;kōhkawae‑&lt;/span&gt; [initial &lt;span class&#x3D;transcription&gt;kōhkā‑&lt;/span&gt; &lt;span class&#x3D;translation&gt;tip over&lt;/span&gt; + &lt;span class&#x3D;transcription&gt;‑āwa͞e&lt;/span&gt; &lt;span class&#x3D;translation&gt;AI final&lt;/span&gt;]&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;Secondary final:&lt;/strong&gt; &lt;span class&#x3D;transcription&gt;‑makat&lt;/span&gt; &lt;span class&#x3D;translation&gt;II verb&lt;/span&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;New word:&lt;/strong&gt; &lt;span class&#x3D;transcription&gt;kōhkawaemakat&lt;/span&gt; (II) &lt;span class&#x3D;translation&gt;it tips over&lt;/span&gt;&lt;/p&gt;
+  &lt;/li&gt;
+
+  &lt;li class&#x3D;ex&gt;
+    &lt;p&gt;&lt;span class&#x3D;transcription&gt;cēkataham&lt;/span&gt; (TI) &lt;span class&#x3D;translation&gt;he or she sweeps it clear, cleans it with a broom&lt;/span&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;Stem:&lt;/strong&gt; &lt;span class&#x3D;transcription&gt;cēkatah‑&lt;/span&gt; [initial &lt;span class&#x3D;transcription&gt;cēk‑&lt;/span&gt; &lt;span class&#x3D;translation&gt;near, next to&lt;/span&gt; (?) + &lt;span class&#x3D;transcription&gt;‑atah&lt;/span&gt; &lt;span class&#x3D;translation&gt;by stick&lt;/span&gt;]&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;Secondary final:&lt;/strong&gt; &lt;span class&#x3D;transcription&gt;‑ka͞e&lt;/span&gt; &lt;span class&#x3D;translation&gt;AI verb; indefinite action&lt;/span&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;New word:&lt;/strong&gt; &lt;span class&#x3D;transcription&gt;cēkatahekaew&lt;/span&gt; (AI1) &lt;span class&#x3D;translation&gt;he or she sweeps&lt;/span&gt;&lt;/p&gt;
+  &lt;/li&gt;
+
+  &lt;li class&#x3D;ex&gt;
+    &lt;p&gt;&lt;span class&#x3D;transcription&gt;wāqnenam&lt;/span&gt; (TI) &lt;span class&#x3D;translation&gt;he or she throws light on it, lights it up&lt;/span&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;Stem:&lt;/strong&gt; &lt;span class&#x3D;transcription&gt;wāqnen‑&lt;/span&gt; [initial &lt;span class&#x3D;transcription&gt;wāqN‑&lt;/span&gt; &lt;span class&#x3D;translation&gt;light&lt;/span&gt; + &lt;span class&#x3D;transcription&gt;‑aen&lt;/span&gt; &lt;span class&#x3D;translation&gt;by hand&lt;/span&gt;]&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;Secondary final:&lt;/strong&gt; &lt;span class&#x3D;transcription&gt;‑kan&lt;/span&gt; &lt;span class&#x3D;translation&gt;N; instrument, product, place, etc.&lt;/span&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;New word:&lt;/strong&gt; &lt;span class&#x3D;transcription&gt;wāqnenekan&lt;/span&gt; (N) &lt;span class&#x3D;translation&gt;lamp, candle&lt;/span&gt;&lt;/p&gt;
+  &lt;/li&gt;
+
+  &lt;li class&#x3D;ex&gt;
+    &lt;p&gt;&lt;span class&#x3D;transcription&gt;sūniyan&lt;/span&gt; (N) &lt;span class&#x3D;translation&gt;money&lt;/span&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;Stem:&lt;/strong&gt; &lt;span class&#x3D;transcription&gt;sūniyan‑&lt;/span&gt; [initial &lt;span class&#x3D;transcription&gt;sōni‑&lt;/span&gt; &lt;span class&#x3D;translation&gt;silver&lt;/span&gt; + &lt;span class&#x3D;transcription&gt;‑ān&lt;/span&gt; &lt;span class&#x3D;translation&gt;N final&lt;/span&gt; (?)]&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;Secondary final:&lt;/strong&gt; &lt;span class&#x3D;transcription&gt;‑ikamekw&lt;/span&gt; &lt;span class&#x3D;translation&gt;N; house, building&lt;/span&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;New word:&lt;/strong&gt; &lt;span class&#x3D;transcription&gt;sūniyanikamek&lt;/span&gt; (N) &lt;span class&#x3D;translation&gt;bank&lt;/span&gt;&lt;/p&gt;
+  &lt;/li&gt;
+
+&lt;/ol&gt;
+</code></pre>
+                </article>
+
+            </header>
+    </section>
+    <!-- /documentation. -->
+
+
+
+  <!-- scripts. -->
+  <script src="kss-assets/vendor/jquery.js"></script>
+  <script src="kss-assets/vendor/prism.js"></script>
+  <script src="kss-assets/js/kss.js"></script>
+  <script src="./patterns.js"></script>
+
+  <!-- /scripts. -->
+
+  </body>
+</html>
