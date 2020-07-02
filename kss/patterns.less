@@ -1,0 +1,37 @@
+@import '../fonts/fonts.less';
+@import '../globals/colors.less';
+@import '../components/components.less';
+
+.kss-modifiers__example {
+  border-collapse: collapse;
+  font-family:     var(--font);
+  line-height:     1.5;
+  text-decoration: none;
+  vertical-align:  baseline;
+}
+
+.kss-modifiers__example img {
+  height: 3rem;
+  width:  3rem;
+}
+
+.kss-modifiers__example .icon-large {
+  height: 10rem;
+  width:  auto;
+}
+
+.kss-nav {
+  overflow-y: scroll;
+}
+
+#kssref-components-examples {
+  counter-reset: examples;
+}
+
+#kssref-components-examples .kss-modifiers__example {
+  font-family: var(--font-unicode);
+}
+
+#kssref-components-examples .kss-modifiers__example .txn {
+  font-style: italic;
+}
