@@ -36,3 +36,4 @@ node_modules
 Thumbs.db
 credentials.js
 build/credentials.js
+docs
