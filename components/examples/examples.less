@@ -17,35 +17,6 @@
   list-style-position: outside;
   list-style-type:     none;
 
-  // Example
-  //
-  // Each example should be given the `.ex` class.
-  //
-  // Styleguide Components.examples.example
-  .ex {
-
-    counter-increment: examples;
-    margin-bottom:     1em;
-    margin-left:       var(--example-indent);
-
-    &::before {
-      content:     '(' counter(examples) ')';
-      margin-left: calc(var(--example-indent) * -1);
-      position:    absolute;
-    }
-
-  }
-
-  // Example Header
-  //
-  // Examples may have headers containing information about the example (such as the language of the example).
-  //
-  // Styleguide Components.examples.ex-header
-  .ex-header {
-    text-decoration:         underline;
-    text-underline-position: under;
-  }
-
   // Subexamples
   //
   // Examples may have subexamples consisting of an embedded ordered list.

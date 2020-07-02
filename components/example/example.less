@@ -1,0 +1,47 @@
+// Example
+//
+// Each example should be given the `.ex` class. To number examples, wrap them in `<ol class=examples>` and make each example a `<li class=ex>`. See the Examples section.
+//
+// Styleguide Components.example
+.ex {
+
+  counter-increment: examples;
+  margin-bottom:     1em;
+  margin-left:       var(--example-indent);
+
+  &::before {
+    content:     '(' counter(examples) ')';
+    margin-left: calc(var(--example-indent) * -1);
+    position:    absolute;
+  }
+
+}
+
+// Example Header
+//
+// Examples may have headers containing information about the example (such as the language of the example).
+//
+// Styleguide Components.example.ex-header
+.ex-header {
+  text-decoration:         underline;
+  text-underline-position: under;
+}
+
+// Example Source
+//
+// The source of the example.
+//
+// Styleguide Components.example.source
+.ex-source {
+
+  float: right;
+
+  &::before {
+    content: '(';
+  }
+
+  &::after {
+    content: ')';
+  }
+
+}
