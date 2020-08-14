@@ -13,8 +13,17 @@
 @font-family-mono:    'Fira Sans Mono';
 @font-family-unicode: 'Charis SIL';
 
+// Variables
+//
+// Styleguide Typography.variables
+
 :root {
 
+  // --font
+  //
+  // The default, sans-serif font used by DLx (Fira Sans), with various fallback fonts.
+  //
+  // Styleguide Typography.variables.font
   --font:
     'Fira Sans',
     'Noto Sans',
@@ -27,6 +36,11 @@
     'Open Sans',
     sans-serif;
 
+  // --font-mono
+  //
+  // The monospace font used by DLx (Fira Mono), with various fallbacks.
+  //
+  // Styleguide Typography.variables.font-mono
   --font-mono:
     'Fira Mono',
     'Consolas',
@@ -35,6 +49,11 @@
     'Courier New',
     monospace;
 
+  // --font-unicode
+  //
+  // The default Unicode font used by DLx (Charis SIL), with various fallbacks.
+  //
+  // Styleguide Typography.variables.font-unicode
   --font-unicode:
     'Charis SIL',
     'Gentium Plus',
@@ -48,28 +67,93 @@
     'Times New Roman',
     serif;
 
-  // Set font display values
+  // Font display values
   --font-display:          fallback;
   --font-display-critical: swap;
 
-  // Set base values for typography
+  // Base values for typography
+
+  // --text-base-size
+  //
+  // Font size to use on the html/body tags. Set to `1em`.
+  //
+  // Styleguide Typography.variables.text-base-size
   --text-base-size:     1em;
+
+  // --text-border-radius
+  //
+  // The border radius value to use when adding a border radius to inline text.
+  //
+  // Styleguide Typography.variables.text-border-radius
   --text-border-radius: 0.375em;
+
+  // --text-scale-ratio
+  //
+  // The ratio by which each successive font size is scaled to the next.
+  //
+  // Styleguide Typography.variables.text-scale-ratio
   --text-scale-ratio:   1.2;
 
-  // Type scale
+  // Scaled Type
+  //
+  // Values for scaling font consistently.
+  //
+  // Styleguide Typography.scales
+
+  // --text-xs
+  //
+  // Extra Small Text
+  //
+  // Styleguide Typography.scales.text-xs
   --text-xs:   calc(1em / var(--text-scale-ratio) / var(--text-scale-ratio));
+
+  // --text-sm
+  //
+  // Small Text
+  //
+  // Styleguide Typography.scales.text-sm
   --text-sm:   calc(1em / var(--text-scale-ratio));
+
+  // --text-md
+  //
+  // Medium Text
+  //
+  // Styleguide Typography.scales.text-md
   --text-md:   calc(1em * var(--text-scale-ratio));
+
+  // --text-lg
+  //
+  // Large Text
+  //
+  // Styleguide Typography.scales.text-lg
   --text-lg:   calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio));
+
+  // --text-xl
+  //
+  // Extra Large Text
+  //
+  // Styleguide Typography.scales.text-xl
   --text-xl:   calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+
+  // --text-xxl
+  //
+  // XXL Text
+  //
+  // Styleguide Typography.scales.text-xxl
   --text-xxl:  calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+
+  // --text-xxxl
+  //
+  // XXXL Text
+  //
+  // Styleguide Typography.scales.text-
   --text-xxxl: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+
 
   // Padding
   --text-padding:    0.25em 0.5em;
   --text-padding-lg: 0.5em 1em;
-  
+
 }
 
 // Fira Sans
