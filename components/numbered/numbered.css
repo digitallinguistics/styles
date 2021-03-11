@@ -1,1 +1,0 @@
-.numbered{counter-reset:numbered;list-style:none}.numbered li{counter-increment:numbered;display:list-item;position:relative}.numbered li::before{display:inline-block;content:counter(numbered) '.';left:-1.5em;position:absolute}
