@@ -1,0 +1,173 @@
+// Typography
+//
+// This section contains recommended serif fonts with good Unicode support. The `fonts.less` / `fonts.css` file contains @font-face declarations for the Linux Libertine font. You can swap out the font names for your font of choice. All recommend fonts are located in the `/fonts` folder in `.woff2` format (which is supported by all major modern browers).
+//
+// Styleguide Typography
+
+@font-unicode-sans:
+  'Noto Sans',
+  'Source Sans Pro',
+  'Andika',
+  'Lucida Sans Unicode',
+  sans-serif;
+
+@font-unicode-serif:
+  'Linux Libertine',
+  'Charis SIL',
+  'Gentium Plus',
+  'Doulos SIL',
+  'Source Serif Pro',
+  'Noto Serif',
+  'Times New Roman',
+  serif;
+
+// Variables
+//
+// Styleguide Typography.Variables
+//
+// Weight: 1
+
+:root {
+
+  // --font-unicode-sans
+  //
+  // A list of sans-serif Unicode fonts.
+  //
+  // Styleguide Typography.Variables.--font-unicode-sans
+  --font-unicode-sans: @font-unicode-sans;
+
+  // --font-unicode-serif
+  //
+  // A list of serif Unicode fonts.
+  //
+  // Styleguide Typography.Variables.--font-unicode-serif
+  --font-unicode-serif: @font-unicode-serif;
+
+}
+
+// Linux Libertine
+//
+// This is the main recommended font for representing linguistic data in Unicode.
+//
+// Weight: 2
+//
+// Styleguide Typography.Linux Libertine
+
+// Linux Libertine Regular
+//
+// Markup:
+// <p style="font-family: 'Linux Libertine';">àáâãäåāăąǎǟǡȧǻȁȃḁẚạảầấẩẫậắằẳẵặ ḃḅḇ ćĉċčḉ ďḋḍḏḑḓ èéêëēĕėęěȅȩȇḕḗḙḛḝẹẻẽềếểễệ ḟ ĝğġģǧǵḡ ĥȟḣḥḧḩḫẖ ìíîȉǐïįīịĩḭḯỉȋĭ ĵǰ ķǩḱḳḵ ĺļľḻŀḷḹḽ ḿṁṃ ñńņňŉǹṅṇṉṋ òóôõöōŏőǒǫǭȍȏȫȭȯȱṍṏṑṓọỏồốổỗộớờởỡợ ṕṗ ŕŗřȑȓṙṛṝṟ śŝşšșṡṣṥṧṩ ţťțṫṭṯṱẗ ùúûüũūŭůűųǔǖǘǚǜȕȗṳṵṷṹṻụủứừửữự ṽṿ ŵẁẃẅẇẉẘ ẋẍ ýÿŷȳẏẙỳỵỷỹ źżžẑẓẕǯ ǣǽ ǿ ẛ</p>
+//
+// Weight: 1
+//
+// Styleguide Typography.Linux Libertine.Regular
+@font-face {
+  font-family: 'Linux Libertine';
+  src:
+    local('Linux Libertine'), local('LinLibertine_R'),
+    url(/fonts/LinLibertine.woff2) format('woff2');
+  font-weight: normal;
+  font-style:  normal;
+}
+
+// Linux Libertine Bold
+//
+// Markup:
+// <p style="font-family: 'Linux Libertine'; font-weight: bold;">àáâãäåāăąǎǟǡȧǻȁȃḁẚạảầấẩẫậắằẳẵặ ḃḅḇ ćĉċčḉ ďḋḍḏḑḓ èéêëēĕėęěȅȩȇḕḗḙḛḝẹẻẽềếểễệ ḟ ĝğġģǧǵḡ ĥȟḣḥḧḩḫẖ ìíîȉǐïįīịĩḭḯỉȋĭ ĵǰ ķǩḱḳḵ ĺļľḻŀḷḹḽ ḿṁṃ ñńņňŉǹṅṇṉṋ òóôõöōŏőǒǫǭȍȏȫȭȯȱṍṏṑṓọỏồốổỗộớờởỡợ ṕṗ ŕŗřȑȓṙṛṝṟ śŝşšșṡṣṥṧṩ ţťțṫṭṯṱẗ ùúûüũūŭůűųǔǖǘǚǜȕȗṳṵṷṹṻụủứừửữự ṽṿ ŵẁẃẅẇẉẘ ẋẍ ýÿŷȳẏẙỳỵỷỹ źżžẑẓẕǯ ǣǽ ǿ ẛ</p>
+//
+// Weight: 2
+//
+// Styleguide Typography.Linux Libertine.Bold
+@font-face {
+  font-family: 'Linux Libertine';
+  src:
+    local('Linux Libertine Bold'), local('LinLibertine_RB'),
+    url(/fonts/LinLibertineB.woff2) format('woff2');
+  font-weight: bold;
+  font-style:  normal;
+}
+
+// Linux Libertine Bold Italic
+//
+// Markup:
+// <p style="font-family: 'Linux Libertine'; font-style: italic; font-weight: bold;">àáâãäåāăąǎǟǡȧǻȁȃḁẚạảầấẩẫậắằẳẵặ ḃḅḇ ćĉċčḉ ďḋḍḏḑḓ èéêëēĕėęěȅȩȇḕḗḙḛḝẹẻẽềếểễệ ḟ ĝğġģǧǵḡ ĥȟḣḥḧḩḫẖ ìíîȉǐïįīịĩḭḯỉȋĭ ĵǰ ķǩḱḳḵ ĺļľḻŀḷḹḽ ḿṁṃ ñńņňŉǹṅṇṉṋ òóôõöōŏőǒǫǭȍȏȫȭȯȱṍṏṑṓọỏồốổỗộớờởỡợ ṕṗ ŕŗřȑȓṙṛṝṟ śŝşšșṡṣṥṧṩ ţťțṫṭṯṱẗ ùúûüũūŭůűųǔǖǘǚǜȕȗṳṵṷṹṻụủứừửữự ṽṿ ŵẁẃẅẇẉẘ ẋẍ ýÿŷȳẏẙỳỵỷỹ źżžẑẓẕǯ ǣǽ ǿ ẛ</p>
+//
+// Weight: 3
+//
+// Styleguide Typography.Linux Libertine.Bold Italic
+@font-face {
+  font-family: 'Linux Libertine';
+  src:
+    local('Linux Libertine Bold Italic'), local('LinLibertine_RBI'),
+    url(/fonts/LinLibertineBI.woff2) format('woff2');
+  font-weight: bold;
+  font-style:  italic;
+}
+
+// Linux Libertine Display
+//
+// Markup:
+// <p style="font-family: 'Linux Libertine Display';">àáâãäåāăąǎǟǡȧǻȁȃḁẚạảầấẩẫậắằẳẵặ ḃḅḇ ćĉċčḉ ďḋḍḏḑḓ èéêëēĕėęěȅȩȇḕḗḙḛḝẹẻẽềếểễệ ḟ ĝğġģǧǵḡ ĥȟḣḥḧḩḫẖ ìíîȉǐïįīịĩḭḯỉȋĭ ĵǰ ķǩḱḳḵ ĺļľḻŀḷḹḽ ḿṁṃ ñńņňŉǹṅṇṉṋ òóôõöōŏőǒǫǭȍȏȫȭȯȱṍṏṑṓọỏồốổỗộớờởỡợ ṕṗ ŕŗřȑȓṙṛṝṟ śŝşšșṡṣṥṧṩ ţťțṫṭṯṱẗ ùúûüũūŭůűųǔǖǘǚǜȕȗṳṵṷṹṻụủứừửữự ṽṿ ŵẁẃẅẇẉẘ ẋẍ ýÿŷȳẏẙỳỵỷỹ źżžẑẓẕǯ ǣǽ ǿ ẛ</p>
+//
+// Weight: 3
+//
+// Styleguide Typography.Linux Libertine.Display
+@font-face {
+  font-family: 'Linux Libertine Display';
+  src:
+    local('Linux Libertine Display'), local('LinLibertine_DR'),
+    url(/fonts/LinLibertineDisplay.woff2) format('woff2');
+  font-weight: normal;
+  font-style:  normal;
+}
+
+// Linux Libertine Italic
+//
+// Markup:
+// <p style="font-family: 'Linux Libertine'; font-style: italic;">àáâãäåāăąǎǟǡȧǻȁȃḁẚạảầấẩẫậắằẳẵặ ḃḅḇ ćĉċčḉ ďḋḍḏḑḓ èéêëēĕėęěȅȩȇḕḗḙḛḝẹẻẽềếểễệ ḟ ĝğġģǧǵḡ ĥȟḣḥḧḩḫẖ ìíîȉǐïįīịĩḭḯỉȋĭ ĵǰ ķǩḱḳḵ ĺļľḻŀḷḹḽ ḿṁṃ ñńņňŉǹṅṇṉṋ òóôõöōŏőǒǫǭȍȏȫȭȯȱṍṏṑṓọỏồốổỗộớờởỡợ ṕṗ ŕŗřȑȓṙṛṝṟ śŝşšșṡṣṥṧṩ ţťțṫṭṯṱẗ ùúûüũūŭůűųǔǖǘǚǜȕȗṳṵṷṹṻụủứừửữự ṽṿ ŵẁẃẅẇẉẘ ẋẍ ýÿŷȳẏẙỳỵỷỹ źżžẑẓẕǯ ǣǽ ǿ ẛ</p>
+//
+// Weight: 3
+//
+// Styleguide Typography.Linux Libertine.Italic
+@font-face {
+  font-family: 'Linux Libertine';
+  src:
+    local('Linux Libertine Italic'), local('LinLibertine_RI'),
+    url(/fonts/LinLibertineI.woff2) format('woff2');
+  font-weight: normal;
+  font-style:  italic;
+}
+
+// Linux Libertine Semibold
+//
+// Markup:
+// <p style="font-family: 'Linux Libertine'; font-weight: 600;">àáâãäåāăąǎǟǡȧǻȁȃḁẚạảầấẩẫậắằẳẵặ ḃḅḇ ćĉċčḉ ďḋḍḏḑḓ èéêëēĕėęěȅȩȇḕḗḙḛḝẹẻẽềếểễệ ḟ ĝğġģǧǵḡ ĥȟḣḥḧḩḫẖ ìíîȉǐïįīịĩḭḯỉȋĭ ĵǰ ķǩḱḳḵ ĺļľḻŀḷḹḽ ḿṁṃ ñńņňŉǹṅṇṉṋ òóôõöōŏőǒǫǭȍȏȫȭȯȱṍṏṑṓọỏồốổỗộớờởỡợ ṕṗ ŕŗřȑȓṙṛṝṟ śŝşšșṡṣṥṧṩ ţťțṫṭṯṱẗ ùúûüũūŭůűųǔǖǘǚǜȕȗṳṵṷṹṻụủứừửữự ṽṿ ŵẁẃẅẇẉẘ ẋẍ ýÿŷȳẏẙỳỵỷỹ źżžẑẓẕǯ ǣǽ ǿ ẛ</p>
+//
+// Weight: 3
+//
+// Styleguide Typography.Linux Libertine.Semibold
+@font-face {
+  font-family: 'Linux Libertine';
+  src:
+    local('Linux Libertine Semibold'), local('LinLibertine_RZ'),
+    url(/fonts/LinLibertineZ.woff2) format('woff2');
+  font-weight: 600;
+  font-style:  normal;
+}
+
+// Linux Libertine Semibold Italic
+//
+// Markup:
+// <p style="font-family: 'Linux Libertine'; font-style: italic; font-weight: 600;">àáâãäåāăąǎǟǡȧǻȁȃḁẚạảầấẩẫậắằẳẵặ ḃḅḇ ćĉċčḉ ďḋḍḏḑḓ èéêëēĕėęěȅȩȇḕḗḙḛḝẹẻẽềếểễệ ḟ ĝğġģǧǵḡ ĥȟḣḥḧḩḫẖ ìíîȉǐïįīịĩḭḯỉȋĭ ĵǰ ķǩḱḳḵ ĺļľḻŀḷḹḽ ḿṁṃ ñńņňŉǹṅṇṉṋ òóôõöōŏőǒǫǭȍȏȫȭȯȱṍṏṑṓọỏồốổỗộớờởỡợ ṕṗ ŕŗřȑȓṙṛṝṟ śŝşšșṡṣṥṧṩ ţťțṫṭṯṱẗ ùúûüũūŭůűųǔǖǘǚǜȕȗṳṵṷṹṻụủứừửữự ṽṿ ŵẁẃẅẇẉẘ ẋẍ ýÿŷȳẏẙỳỵỷỹ źżžẑẓẕǯ ǣǽ ǿ ẛ</p>
+//
+// Weight: 3
+//
+// Styleguide Typography.Linux Libertine.Semibold Italic
+@font-face {
+  font-family: 'Linux Libertine';
+  src:
+    local('Linux Libertine Semibold Italic'), local('LinLibertine_RZI'),
+    url(/fonts/LinLibertineZI.woff2) format('woff2');
+  font-weight: 600;
+  font-style:  italic;
+}

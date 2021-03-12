@@ -19,7 +19,7 @@
   "type": "module",
   "scripts": {
     "prebuild": "node build/emptyDocs.js",
-    "build": "kss --config kss.config.json & lessc components/components.less docs/components.css",
+    "build": "kss --config kss.config.json & lessc components/components.less docs/components.css & lessc fonts/fonts.less docs/fonts.css",
     "postbuild": "node build/copyFiles.js"
   },
   "devDependencies": {

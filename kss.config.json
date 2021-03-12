@@ -1,8 +1,14 @@
 {
   "builder":     "./node_modules/michelangelo/kss_styleguide/custom-template/",
-  "css":         "./components.css",
+  "css":         [
+    "./fonts.css",
+    "./components.css"
+  ],
   "destination": "docs/",
   "homepage":    "./README.md",
-  "source":      "./components",
-  "title":       "DLx Pattern Library"
+  "source":      [
+    "./components",
+    "./fonts"
+  ],
+  "title": "DLx Pattern Library"
 }
