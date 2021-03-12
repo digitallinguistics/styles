@@ -4,11 +4,9 @@ import path              from 'path';
 
 const { copyFile } = fs.promises;
 
-const currentDir    = path.dirname(fileURLToPath(import.meta.url));
-const componentsDir = path.join(currentDir, `../components`);
-const outDir        = path.join(currentDir, `../docs`);
+const currentDir = path.dirname(fileURLToPath(import.meta.url));
 
 copyFile(
-  path.join(componentsDir, `components.css`),
-  path.join(outDir, `components.css`),
+  path.join(currentDir, `../images/tunnel.ico`),
+  path.join(currentDir, `../docs/favicon.ico`),
 );

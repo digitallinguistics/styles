@@ -20,7 +20,7 @@
   "scripts": {
     "prebuild": "node build/emptyDocs.js",
     "build": "kss --config kss.config.json & lessc components/components.less docs/components.css",
-    "xpostbuild": "node build/copyFiles.js"
+    "postbuild": "node build/copyFiles.js"
   },
   "devDependencies": {
     "eslint": "^7.21.0",
