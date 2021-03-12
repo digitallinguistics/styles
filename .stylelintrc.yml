@@ -1,12 +1,12 @@
 # Stylelint 9.10.1
 rules:
 
-  # blacklists / whitelists / regexp
+  # allow lists / regexp
   custom-media-pattern: null
   custom-property-pattern: null
   selector-class-pattern: null
   selector-id-pattern: null
-  unit-blacklist:
+  unit-disallowed-list:
     -
       - cm
       - in

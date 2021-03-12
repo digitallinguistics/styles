@@ -16,6 +16,17 @@
   "engines": {
     "node": ">=14.x"
   },
-  "scripts": {},
-  "devDependencies": {}
+  "type": "module",
+  "scripts": {
+    "prebuild": "node build/emptyDocs.js",
+    "build": "kss --config kss.config.json & lessc components/components.less docs/components.css",
+    "xpostbuild": "node build/copyFiles.js"
+  },
+  "devDependencies": {
+    "eslint": "^7.21.0",
+    "fs-extra": "^9.1.0",
+    "kss": "^3.0.1",
+    "michelangelo": "^0.8.0",
+    "stylelint": "^13.12.0"
+  }
 }
