@@ -1,13 +1,20 @@
+@import 'emphasis/emphasis.less';
 @import 'fonts/fonts.less';
 
 // Transcription
 //
-// Any written representation of speech or sign. Always be sure to include the `lang` attribute on transcriptions.
+// Any written representation of speech or sign. Always be sure to include the `lang` attribute on transcriptions. `<b>` and `<em>` tags within transcriptions are styled with the `.em` class by default (see the [example emphasis](#kssref-components-emphasis) component).
 //
 // Markup: transcription.html
 //
 // Styleguide components.transcription
 .txn,
 .transcription {
+
   font-family: var(--font-unicode-serif);
+
+  b, em, .em {
+    .em;
+  }
+
 }

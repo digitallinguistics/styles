@@ -1,4 +1,5 @@
 @import 'fonts/fonts.less';
+@import (reference) 'emphasis/emphasis.less';
 @import (reference) 'example/example.less';
 @import (reference) 'gloss/gloss.less';
 @import (reference) 'transcription/transcription.less';
@@ -44,6 +45,46 @@
   // --igl-indent
   //
   // The amount to indent analysis lines. The transcription and translation lines (the first and last lines) will be left unindented. Default: `0em`.
+  //
+  // Markup:
+  // <div class=igl style="--igl-indent: 0em;">
+  //   <p class=ex-header><code>.igl { --igl-indent: 0em; }</code></p>
+  //   <p class=txn lang=ctm>siksi<em>nk</em> his heːčtiʔi</p>
+  //   <ol class=words>
+  //     <li class=word>
+  //       <span class=w-m lang=ctm>siksi‑<em>nk</em></span>
+  //       <span class=w-gl>eagle‑<abbr title=unknown>??</abbr></span>
+  //     </li>
+  //     <li class=word>
+  //       <span class=w-m lang=ctm>his</span>
+  //       <span class=w-gl><abbr title=responsive>resp</abbr></span>
+  //     </li>
+  //     <li class=word>
+  //       <span class=w-m lang=ctm>heːčt‑iʔi</span>
+  //       <span class=w-gl>call‑<abbr title=non-first>nf</abbr>;<abbr title=singular>sg</abbr></span>
+  //     </li>
+  //   </ol>
+  //   <p class=tln>an eagle met him</p>
+  // </div>
+  // <div class=igl style="--igl-indent: 1em;">
+  //   <p class=ex-header><code>.igl { --igl-indent: 1em; }</code></p>
+  //   <p class=txn lang=ctm>siksi<em>nk</em> his heːčtiʔi</p>
+  //   <ol class=words>
+  //     <li class=word>
+  //       <span class=w-m lang=ctm>siksi‑<em>nk</em></span>
+  //       <span class=w-gl>eagle‑<abbr title=unknown>??</abbr></span>
+  //     </li>
+  //     <li class=word>
+  //       <span class=w-m lang=ctm>his</span>
+  //       <span class=w-gl><abbr title=responsive>resp</abbr></span>
+  //     </li>
+  //     <li class=word>
+  //       <span class=w-m lang=ctm>heːčt‑iʔi</span>
+  //       <span class=w-gl>call‑<abbr title=non-first>nf</abbr>;<abbr title=singular>sg</abbr></span>
+  //     </li>
+  //   </ol>
+  //   <p class=tln>an eagle met him</p>
+  // </div>
   //
   // Styleguide components.interlinear.--igl-indent
   --igl-indent: 0em;
@@ -99,6 +140,46 @@
   //
   // The amount of space to place above and below the words / morphemes in the analysis lines. Default: `0.25em`.
   //
+  // Markup:
+  // <div class=igl style="--igl-vertical-spacing: 0em;">
+  //   <p class=ex-header><code>.igl { --igl-vertical-spacing: 0em; }</code></p>
+  //   <p class=txn lang=ctm>siksi<em>nk</em> his heːčtiʔi</p>
+  //   <ol class=words>
+  //     <li class=word>
+  //       <span class=w-m lang=ctm>siksi‑<em>nk</em></span>
+  //       <span class=w-gl>eagle‑<abbr title=unknown>??</abbr></span>
+  //     </li>
+  //     <li class=word>
+  //       <span class=w-m lang=ctm>his</span>
+  //       <span class=w-gl><abbr title=responsive>resp</abbr></span>
+  //     </li>
+  //     <li class=word>
+  //       <span class=w-m lang=ctm>heːčt‑iʔi</span>
+  //       <span class=w-gl>call‑<abbr title=non-first>nf</abbr>;<abbr title=singular>sg</abbr></span>
+  //     </li>
+  //   </ol>
+  //   <p class=tln>an eagle met him</p>
+  // </div>
+  // <div class=igl style="--igl-vertical-spacing: 1em;">
+  //   <p class=ex-header><code>.igl { --igl-vertical-spacing: 1em; }</code></p>
+  //   <p class=txn lang=ctm>siksi<em>nk</em> his heːčtiʔi</p>
+  //   <ol class=words>
+  //     <li class=word>
+  //       <span class=w-m lang=ctm>siksi‑<em>nk</em></span>
+  //       <span class=w-gl>eagle‑<abbr title=unknown>??</abbr></span>
+  //     </li>
+  //     <li class=word>
+  //       <span class=w-m lang=ctm>his</span>
+  //       <span class=w-gl><abbr title=responsive>resp</abbr></span>
+  //     </li>
+  //     <li class=word>
+  //       <span class=w-m lang=ctm>heːčt‑iʔi</span>
+  //       <span class=w-gl>call‑<abbr title=non-first>nf</abbr>;<abbr title=singular>sg</abbr></span>
+  //     </li>
+  //   </ol>
+  //   <p class=tln>an eagle met him</p>
+  // </div>
+  //
   // Styleguide components.interlinear.--igl-vertical-spacing
   --igl-vertical-spacing: 0.25em;
 
@@ -107,24 +188,23 @@
 
   // Grammatical Glosses
   //
-  // Grammatical glosses are displayed in small caps and indicated with either the `.gl` or `.gloss` classes, or by wrapping the gloss in an `<abbr>` tag. Best practice is to include a `title` attribute on grammatical glosses, indicating the term that the gloss stands for; this allows the user to hover over the gloss for its definition.
+  // Grammatical glosses are displayed in small caps and indicated with either the `.gl` or `.gloss` classes, or by wrapping the gloss in an `<abbr>` tag. Best practice is to include a `title` attribute on grammatical glosses, indicating the term that the gloss stands for; this allows the user to hover over the gloss for its definition. See the [grammatical gloss](#kssref-components-gloss) component.
   //
   // Styleguide components.interlinear.glosses
   abbr, .gl, .gloss { .gl; }
 
   // Example Emphasis
   //
-  // Emphasis is indicated using either `<em>` or `<b>` tags (both are semantically valid for this use case), or the `.em` class.
+  // Emphasis is indicated using either `<em>` or `<b>` tags (both are semantically valid for this use case), or the `.em` class. See the [example emphasis](#kssref-components-emphasis) component.
   //
   // Styleguide components.interlinear.emphasis
   b, em, .em {
-    color:       var(--em-color);
-    font-weight: bold;
+    .em;
   }
 
   // Example Header
   //
-  // Example headers (containing information about the interlinear example) are given the `.ex-header` class and styled with an underline.
+  // Example headers (containing information about the interlinear example) are given the `.ex-header` class and styled with an underline. See the [example component](#kssref-components-example) for a demonstration of an example header in use.
   //
   // Styleguide components.interlinear.ex-header
   .ex-header {
@@ -134,7 +214,7 @@
 
   // Example Source
   //
-  // The source of an example is indicated with the `.ex-source` class and styled with enclosing parentheses.
+  // The source of an example is indicated with the `.ex-source` class and styled with enclosing parentheses. See the [example component](#kssref-components-example) for a demonstration of an example source in use.
   //
   // Styleguide components.interlinear.ex-source
   .ex-source { .ex-source; }
