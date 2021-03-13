@@ -1,24 +1,24 @@
-@import 'components/transcription/transcription.less';
+@import (reference) 'transcription/transcription.less';
 
-// Phonemic
+// Phonemic Transcription
 //
-// Used for phonemic representations of data.
+// Used for phonemic transcriptions of data, displayed between slashes `//`. Adjust the space between the phonemic transcription and the surrounding brackets using the `--txn-padding` variable.
 //
-// Markup: phonemic.hbs
+// Markup: phonemic.html
 //
-// Styleguide Components.phonemic
-.phon {
+// Styleguide components.phonemic
+.phon, .phonemic {
 
   .txn;
 
   &::before {
     content:       '/';
-    padding-right: var(--transcription-padding);
+    padding-right: var(--txn-padding);
   }
 
   &::after  {
     content:       '/';
-    padding-left: var(--transcription-padding);
+    padding-left: var(--txn-padding);
   }
 
 }

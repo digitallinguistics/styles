@@ -1,24 +1,29 @@
-@import 'components/transcription/transcription.less';
+@import (reference) 'emphasis/emphasis.less';
+@import (reference) 'transcription/transcription.less';
 
-// Orthographic
+// Orthographic Transcription
 //
-// This class should be used when citing an orthographic representation of some data, e.g., when writing about writing systems.
+// Used for orthographic transcriptions of some data, such as when discussing a writing system. Wrapped in angle brackets by default. Adjust the space between the orthographic transcription and the surrounding brackets using the `--txn-padding` variable.
 //
-// Markup: orthographic.hbs
+// Markup: orthographic.html
 //
-// Styleguide Components.orthographic
-.ortho {
+// Styleguide components.orthographic
+.ortho, .orthographic {
 
   .txn;
 
+  b, em, .em, .emphasis {
+    .em;
+  }
+
   &::before {
     content:       '⟨';
-    padding-right: var(--transcription-padding);
+    padding-right: var(--txn-padding);
   }
 
   &::after  {
     content:      '⟩';
-    padding-left: var(--transcription-padding);
+    padding-left: var(--txn-padding);
   }
 
 }

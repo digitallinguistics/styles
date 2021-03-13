@@ -1,30 +1,62 @@
-const convertLESS = require(`./convertLESS`);
-const path        = require(`path`);
-const recursive   = require(`recursive-readdir`);
+import createSpinner     from 'ora';
+import CSSCleaner        from 'clean-css';
+import { fileURLToPath } from 'url';
+import fs                from 'fs';
+import less              from 'less';
+import path              from 'path';
+import recurse           from 'recursive-readdir';
+
+const { readFile, writeFile } = fs.promises;
+
+const currentDir = path.dirname(fileURLToPath(import.meta.url));
+
+const bundlePath    = path.join(currentDir, `../dlx.less`);
+const componentsDir = path.join(currentDir, `../components`);
+const typographyDir = path.join(currentDir, `../typography`);
+
+const cleanCSSOptions = {};
+
+const cssCleaner = new CSSCleaner(cleanCSSOptions);
+
+const lessOptions = {
+  math:  `strict`,
+  paths: [`components`, `typography`],
+};
+
+function ignore(filePath, stats) {
+  if (stats.isDirectory()) return false;
+  return path.extname(filePath) !== `.less`;
+}
+
+async function convertFile(lessFilePath) {
+  const lessData             = await readFile(lessFilePath, `utf8`);
+  const { css }              = await less.render(lessData, lessOptions);
+  const { styles: cleanCSS } = cssCleaner.minify(css);
+  const dirname              = path.dirname(lessFilePath);
+  const filename             = path.basename(lessFilePath, `.less`);
+  const cssFilePath          = path.join(dirname, `${filename}.css`);
+  await writeFile(cssFilePath, cleanCSS, `utf8`);
+}
+
+async function convertFolder(dir) {
+  const fileList = await recurse(dir, [ignore]);
+  return Promise.all(fileList.map(filePath => convertFile(filePath)));
+}
 
 void async function buildCSS() {
+
+  const spinner = createSpinner(`Building CSS files.`).start();
+
   try {
-
-    const globalsDir         = path.join(__dirname, `../globals`);
-    const componentsDir      = path.join(__dirname, `../components`);
-
-    const globalsFilesList   = await recursive(globalsDir);
-    const globalsFiles       = globalsFilesList.filter(filepath => filepath.endsWith(`.less`));
-
-    const componentsFileList = await recursive(componentsDir);
-    const componentsFiles    = componentsFileList.filter(filepath => filepath.endsWith(`.less`));
-
-    const fontFile           = path.join(__dirname, `../fonts/fonts.less`);
-    const dlxFile            = path.join(__dirname, `../kss/patterns.less`);
-
-    convertLESS(fontFile);
-    convertLESS(dlxFile);
-    globalsFiles.forEach(convertLESS);
-    componentsFiles.forEach(convertLESS);
-
+    await Promise.all([
+      convertFile(bundlePath),
+      convertFolder(typographyDir),
+      convertFolder(componentsDir),
+    ]);
   } catch (e) {
-
-    console.error(e);
-
+    return spinner.fail(e.message);
   }
+
+  spinner.succeed(`CSS files built.`);
+
 }();

@@ -1,7 +1,7 @@
 {
   "name": "@digitallinguistics/styles",
-  "version": "0.19.0",
-  "description": "A collection of DLx assets and styles",
+  "version": "1.0.0",
+  "description": "A collection of patterns for styling linguistic data on the web",
   "homepage": "https://github.com/digitallinguistics/styles",
   "bugs": "https://github.com/digitallinguistics/styles/issues",
   "license": "MIT",
@@ -14,24 +14,24 @@
     "access": "public"
   },
   "engines": {
-    "node": ">=12.x"
+    "node": ">=14.x"
   },
+  "type": "module",
   "scripts": {
-    "build": "npm run build-css && npm run build-docs",
+    "build": "npm run build-css & npm run build-docs",
     "build-css": "node build/buildCSS.js",
-    "build-docs": "node build/clearDocs.js && npm run kss && node build/copyFiles.js",
-    "kss": "./node_modules/.bin/kss --config kss.config.json"
+    "prebuild-docs": "node build/emptyDocs.js",
+    "build-docs": "kss --config kss/kss.config.json & lessc --include-path=components dlx.less docs/dlx.css & lessc kss/docs.less docs/docs.css",
+    "postbuild-docs": "node build/copyFiles.js"
   },
   "devDependencies": {
-    "@azure/storage-blob": "^10.5.0",
-    "eslint": "^7.3.1",
-    "feather-icons": "^4.28.0",
-    "fs-extra": "^9.0.1",
+    "eslint": "^7.21.0",
+    "fs-extra": "^9.1.0",
     "kss": "^3.0.1",
-    "less": "^3.11.3",
-    "less-plugin-clean-css": "^1.5.1",
+    "less": "^4.1.1",
     "michelangelo": "^0.8.0",
-    "ora": "^4.0.4",
-    "recursive-readdir": "^2.2.2"
+    "ora": "^5.3.0",
+    "recursive-readdir": "^2.2.2",
+    "stylelint": "^13.12.0"
   }
 }

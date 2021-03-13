@@ -1,40 +1,61 @@
+@import 'typography/fonts.less';
+@import (reference) 'emphasis/emphasis.less';
+@import (reference) 'example/example.less';
+
 // Examples
 //
-// A set of one or more examples in a document. Each set of examples should be an ordered list (`<ol>`), and each item within that list should have the class `.ex` (`<li class="ex">`). If the example is also an interlinear gloss, the `.igl` class must be added as well (`<li class="ex igl">`). You may also need to reset the `examples` counter at the beginning of the document (`counter-reset: examples;`; note that the `.ling-document` class does this for you automatically).
+// A set of one or more linguistic examples. By convention, examples in linguistics publications are numbered (1), (2), (3), etc. To number the examples, wrap them in an `<ol class=examples>` tag, and place each example in a `<li class=ex>` element. All content within an example displays in a serif Unicode font by default; you may need to override the font family for individual elements. `<b>` and `<em>` tags within examples are styled with the `.em` class by default (see the [example emphasis](#kssref-components-emphasis) component).
 //
-// Markup: examples.hbs
+// Markup: examples.html
 //
-// Styleguide Components.examples
-.examples {
+// Styleguide components.examples
+.exs, .examples {
 
-  // Example Indent
+  // --example-indent
   //
-  // How far each example should be indented from the left edge.
+  // How far to indent each example. Controlling this value is useful when the number of examples on your page reaches multiple place values. Default: `1.5em`.
   //
-  // Styleguide Components.examples.example-indent
-  --example-indent: 2.5em;
+  // Markup:
+  // <ol class=examples style="counter-reset: examples 100;">
+  //   <li class='ex A' style="--example-indent: 1.5em;">This is an example with <code>--example-indent</code> set to <code>1.5em</code>.</li>
+  //   <li class='ex B' style="--example-indent: 2.5em;">This is an example with <code>--example-indent</code> set to <code>2.5em</code>.</li>
+  // </ol>
+  //
+  // Styleguide components.examples.--example-indent
+  --example-indent: 1.5em;
 
-  list-style-position: outside;
-  list-style-type:     none;
+  .ex-header { .ex-header; }
+  .ex-source { .ex-source; }
 
-  ol {
-    margin:  0;
-    padding: 0;
+  font-family:     var(--font-unicode-serif);
+  list-style-type: none;
+  margin:          0em;
+  padding:         0em;
+
+  b, em, .em, .emphasis {
+    .em;
   }
 
-  p {
-    margin:  0;
-    padding: 0;
+  .ex, .example {
+
+    .ex;
+    counter-increment:   examples;
+    margin-block-end:    1em;
+    margin-inline-start: var(--example-indent);
+    position:            relative;
+
+    &::before {
+      content:             '(' counter(examples) ')';
+      margin-inline-start: calc(var(--example-indent) * -1);
+      position:            absolute;
+    }
+
   }
 
-  // Subexamples
-  //
-  // Examples may have subexamples consisting of an embedded ordered list.
-  //
-  // Styleguide Components.examples.subexamples
-  .subexamples {
+  .subexs, .subexamples {
 
-    margin-left:         1.25em;
+    margin-inline-start: 1.25em;
+    padding:             0em;
     list-style-position: outside;
     list-style-type:     lower-alpha;
 

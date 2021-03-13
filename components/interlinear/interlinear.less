@@ -1,101 +1,264 @@
-@import 'components/transcription/transcription.less';
-@import 'components/translation/translation.less';
+@import 'typography/fonts.less';
+@import (reference) 'emphasis/emphasis.less';
+@import (reference) 'example/example.less';
+@import (reference) 'gloss/gloss.less';
+@import (reference) 'transcription/transcription.less';
+@import (reference) 'translation/translation.less';
 
 // Interlinear Gloss
 //
-// An interlinear glossed example or utterance. In addition to transcription (`<p class=txn>`) and translation (`<p class=tln>`) lines, you can choose to add analysis lines grouped by words (`<ol class=words>`) or morphemes (`<ol class=morphemes>`).
+// An interlinear glossed example or utterance. All content contained within an interlinear example is displayed in a serif Unicode font by default; you may need to override the font family for individual elements. In addition to transcription (`<p class=txn>`) and translation (`<p class=tln>`) lines, you can choose to add analysis lines divided into words (`<ol class=words>`) and/or morphemes (`<ol class=morphemes>`). Be sure to add the `lang` attribute to any lines containing transcriptions of data in the target language. Analysis lines can be `<span>`s or `<div>`s according to your preference. If one word / morpheme has an analysis line, all of the words / morphemes in the example should have those same analysis lines, even if those tags are sometimes empty. It is highly recommended that glosses be divided by non-breaking hyphens (U+2011, or `&#8209;` in HTML) rather than regular hyphens so that glosses do not break across lines. Several CSS variables are made available for you to customize the appearance of the interlinear examples.
 //
-// Markup: interlinear.hbs
+// Markup: interlinear.html
 //
-// Styleguide Components.interlinear
-.igl {
+// Styleguide components.interlinear
+.igl,
+.interlinear {
+
+  // --em-color
+  //
+  // Set the color of emphasized text by giving a value to the `--em-color` variable.
+  //
+  // Markup:
+  // <div class=igl style="--em-color: red;">
+  //   <p class=ex-header><code>.igl { --em-color: red; }</code></p>
+  //   <p class=txn lang=ctm>siksi<em>nk</em> his heːčtiʔi</p>
+  //   <ol class=words>
+  //     <li class=word>
+  //       <span class=w-m lang=ctm>siksi‑<em>nk</em></span>
+  //       <span class=w-gl>eagle‑<abbr title=unknown>??</abbr></span>
+  //     </li>
+  //     <li class=word>
+  //       <span class=w-m lang=ctm>his</span>
+  //       <span class=w-gl><abbr title=responsive>resp</abbr></span>
+  //     </li>
+  //     <li class=word>
+  //       <span class=w-m lang=ctm>heːčt‑iʔi</span>
+  //       <span class=w-gl>call‑<abbr title=non-first>nf</abbr>;<abbr title=singular>sg</abbr></span>
+  //     </li>
+  //   </ol>
+  //   <p class=tln>an eagle met him</p>
+  // </div>
+  //
+  // Styleguide components.interlinear.--em-color
 
   // --igl-indent
   //
-  // The amount to indent the words / morpheme breakdowns. The transcription and translation lines (the first and last lines) will be left unindented.
+  // The amount to indent analysis lines. The transcription and translation lines (the first and last lines) will be left unindented. Default: `0em`.
   //
-  // Styleguide Components.interlinear.igl-indent
-  --igl-indent: 0;
+  // Markup:
+  // <div class=igl style="--igl-indent: 0em;">
+  //   <p class=ex-header><code>.igl { --igl-indent: 0em; }</code></p>
+  //   <p class=txn lang=ctm>siksi<em>nk</em> his heːčtiʔi</p>
+  //   <ol class=words>
+  //     <li class=word>
+  //       <span class=w-m lang=ctm>siksi‑<em>nk</em></span>
+  //       <span class=w-gl>eagle‑<abbr title=unknown>??</abbr></span>
+  //     </li>
+  //     <li class=word>
+  //       <span class=w-m lang=ctm>his</span>
+  //       <span class=w-gl><abbr title=responsive>resp</abbr></span>
+  //     </li>
+  //     <li class=word>
+  //       <span class=w-m lang=ctm>heːčt‑iʔi</span>
+  //       <span class=w-gl>call‑<abbr title=non-first>nf</abbr>;<abbr title=singular>sg</abbr></span>
+  //     </li>
+  //   </ol>
+  //   <p class=tln>an eagle met him</p>
+  // </div>
+  // <div class=igl style="--igl-indent: 1em;">
+  //   <p class=ex-header><code>.igl { --igl-indent: 1em; }</code></p>
+  //   <p class=txn lang=ctm>siksi<em>nk</em> his heːčtiʔi</p>
+  //   <ol class=words>
+  //     <li class=word>
+  //       <span class=w-m lang=ctm>siksi‑<em>nk</em></span>
+  //       <span class=w-gl>eagle‑<abbr title=unknown>??</abbr></span>
+  //     </li>
+  //     <li class=word>
+  //       <span class=w-m lang=ctm>his</span>
+  //       <span class=w-gl><abbr title=responsive>resp</abbr></span>
+  //     </li>
+  //     <li class=word>
+  //       <span class=w-m lang=ctm>heːčt‑iʔi</span>
+  //       <span class=w-gl>call‑<abbr title=non-first>nf</abbr>;<abbr title=singular>sg</abbr></span>
+  //     </li>
+  //   </ol>
+  //   <p class=tln>an eagle met him</p>
+  // </div>
+  //
+  // Styleguide components.interlinear.--igl-indent
+  --igl-indent: 0em;
 
   // --igl-horizontal-spacing
   //
-  // The amount of space to place between words / morphemes in the analysis lines.
+  // The amount of space to place between words / morphemes in the analysis lines. Default: `1.25em`.
   //
-  // Styleguide Components.interlinear.igl-horizontal-spacing
+  // Markup:
+  // <div class=igl style="--igl-horizontal-spacing: 0.25em;">
+  //   <p class=ex-header><code>.igl { --igl-horizontal-spacing: 0.25em; }</code></p>
+  //   <p class=txn lang=ctm>siksi<em>nk</em> his heːčtiʔi</p>
+  //   <ol class=words>
+  //     <li class=word>
+  //       <span class=w-m lang=ctm>siksi‑<em>nk</em></span>
+  //       <span class=w-gl>eagle‑<abbr title=unknown>??</abbr></span>
+  //     </li>
+  //     <li class=word>
+  //       <span class=w-m lang=ctm>his</span>
+  //       <span class=w-gl><abbr title=responsive>resp</abbr></span>
+  //     </li>
+  //     <li class=word>
+  //       <span class=w-m lang=ctm>heːčt‑iʔi</span>
+  //       <span class=w-gl>call‑<abbr title=non-first>nf</abbr>;<abbr title=singular>sg</abbr></span>
+  //     </li>
+  //   </ol>
+  //   <p class=tln>an eagle met him</p>
+  // </div>
+  // <div class=igl style="--igl-horizontal-spacing: 1.25em;">
+  //   <p class=ex-header><code>.igl { --igl-horizontal-spacing: 1.25em; }</code></p>
+  //   <p class=txn lang=ctm>siksi<em>nk</em> his heːčtiʔi</p>
+  //   <ol class=words>
+  //     <li class=word>
+  //       <span class=w-m lang=ctm>siksi‑<em>nk</em></span>
+  //       <span class=w-gl>eagle‑<abbr title=unknown>??</abbr></span>
+  //     </li>
+  //     <li class=word>
+  //       <span class=w-m lang=ctm>his</span>
+  //       <span class=w-gl><abbr title=responsive>resp</abbr></span>
+  //     </li>
+  //     <li class=word>
+  //       <span class=w-m lang=ctm>heːčt‑iʔi</span>
+  //       <span class=w-gl>call‑<abbr title=non-first>nf</abbr>;<abbr title=singular>sg</abbr></span>
+  //     </li>
+  //   </ol>
+  //   <p class=tln>an eagle met him</p>
+  // </div>
+  //
+  // Styleguide components.interlinear.--igl-horizontal-spacing
   --igl-horizontal-spacing: 1.25em;
-  --igl-horizontal-spacing: var(--space-md);
 
   // --igl-vertical-spacing
   //
-  // The amount of space to place above and below the words / morphemes in the analysis lines.
+  // The amount of space to place above and below the words / morphemes in the analysis lines. Default: `0.25em`.
   //
-  // Styleguide Components.interlinear.igl-vertical-spacing
+  // Markup:
+  // <div class=igl style="--igl-vertical-spacing: 0em;">
+  //   <p class=ex-header><code>.igl { --igl-vertical-spacing: 0em; }</code></p>
+  //   <p class=txn lang=ctm>siksi<em>nk</em> his heːčtiʔi</p>
+  //   <ol class=words>
+  //     <li class=word>
+  //       <span class=w-m lang=ctm>siksi‑<em>nk</em></span>
+  //       <span class=w-gl>eagle‑<abbr title=unknown>??</abbr></span>
+  //     </li>
+  //     <li class=word>
+  //       <span class=w-m lang=ctm>his</span>
+  //       <span class=w-gl><abbr title=responsive>resp</abbr></span>
+  //     </li>
+  //     <li class=word>
+  //       <span class=w-m lang=ctm>heːčt‑iʔi</span>
+  //       <span class=w-gl>call‑<abbr title=non-first>nf</abbr>;<abbr title=singular>sg</abbr></span>
+  //     </li>
+  //   </ol>
+  //   <p class=tln>an eagle met him</p>
+  // </div>
+  // <div class=igl style="--igl-vertical-spacing: 1em;">
+  //   <p class=ex-header><code>.igl { --igl-vertical-spacing: 1em; }</code></p>
+  //   <p class=txn lang=ctm>siksi<em>nk</em> his heːčtiʔi</p>
+  //   <ol class=words>
+  //     <li class=word>
+  //       <span class=w-m lang=ctm>siksi‑<em>nk</em></span>
+  //       <span class=w-gl>eagle‑<abbr title=unknown>??</abbr></span>
+  //     </li>
+  //     <li class=word>
+  //       <span class=w-m lang=ctm>his</span>
+  //       <span class=w-gl><abbr title=responsive>resp</abbr></span>
+  //     </li>
+  //     <li class=word>
+  //       <span class=w-m lang=ctm>heːčt‑iʔi</span>
+  //       <span class=w-gl>call‑<abbr title=non-first>nf</abbr>;<abbr title=singular>sg</abbr></span>
+  //     </li>
+  //   </ol>
+  //   <p class=tln>an eagle met him</p>
+  // </div>
+  //
+  // Styleguide components.interlinear.--igl-vertical-spacing
   --igl-vertical-spacing: 0.25em;
-  --igl-vertical-spacing: var(--space-xxxs);
 
-  display:     block;
-  font-family: var(--font-unicode);
+  font-family: var(--font-unicode-serif);
   line-height: 1.5;
 
-  p {
-    margin:  0;
-    padding: 0;
-  }
-
-  &::after {
-    clear:   both;
-    content: '';
-    display: block;
-    height:  0;
-    width:   100%;
-  }
-
-  // Grammatical Gloss
+  // Grammatical Glosses
   //
-  // The `<abbr>` tag is used for grammatical glosses, in small caps.
+  // Grammatical glosses are displayed in small caps and indicated with either the `.gl` or `.gloss` classes, or by wrapping the gloss in an `<abbr>` tag. Best practice is to include a `title` attribute on grammatical glosses, indicating the term that the gloss stands for; this allows the user to hover over the gloss for its definition. See the [grammatical gloss](#kssref-components-gloss) component.
   //
-  // Styleguide Components.interlinear.gloss
-  abbr {
-    cursor:          help;
-    font-variant:    small-caps;
-    text-decoration: none; /* Removes user agent styling of abbr elements */
-  }
+  // Styleguide components.interlinear.glosses
+  abbr, .gl, .gloss { .gl; }
 
   // Example Emphasis
   //
-  // You can emphasize any portion of an interlinear example with the `<em>` tag.
+  // Emphasis is indicated using either `<em>` or `<b>` tags (both are semantically valid for this use case), or the `.em` class. See the [example emphasis](#kssref-components-emphasis) component.
   //
-  // Styleguide Components.interlinear.emphasis
-  em {
-    // The --em-color is not set by the .igl class
-    // Users can set this externally
-    color:        var(--em-color);
-    font-style:   normal;
-    font-variant: normal;
-    font-weight:  bold;
+  // Styleguide components.interlinear.emphasis
+  b, em, .em, .emphasis {
+    .em;
   }
 
-  li + li {
-    margin-left: var(--igl-horizontal-spacing);
+  // Example Header
+  //
+  // Example headers (containing information about the interlinear example) are given the `.ex-header` class and styled with an underline. See the [example component](#kssref-components-example) for a demonstration of an example header in use.
+  //
+  // Styleguide components.interlinear.ex-header
+  .ex-header {
+    .ex-header;
+    margin-block-end: var(--igl-vertical-spacing);
   }
 
-  .txn {
-    margin-bottom: var(--igl-vertical-spacing);
+  // Example Source
+  //
+  // The source of an example is indicated with the `.ex-source` class and styled with enclosing parentheses. See the [example component](#kssref-components-example) for a demonstration of an example source in use.
+  //
+  // Styleguide components.interlinear.ex-source
+  .ex-source { .ex-source; }
+
+  .morphemes,
+  .words {
+    display:             flex;
+    flex-flow:           row wrap;
+    list-style:          none;
+    margin:              0em;
+    margin-inline-start: var(--igl-indent);
+    padding:             0em;
   }
 
   .morpheme,
   .word {
-    margin-bottom: var(--igl-vertical-spacing);
+    display:          flex;
+    flex-direction:   column;
+    margin-block-end: var(--igl-vertical-spacing);
   }
 
-  .morphemes,
-  .words {
-    display:     flex;
-    flex-flow:   row wrap;
-    list-style:  none;
-    margin:      0;
-    margin-left: var(--igl-indent);
-    padding:     0;
+  .morpheme > *,
+  .word > * {
+    margin:  0em;
+    padding: 0em;
+  }
+
+  li + li,
+  .morpheme + .morpheme,
+  .word + .word {
+    margin-inline-start: var(--igl-horizontal-spacing);
+  }
+
+  .txn, .transcription {
+    .txn;
+    margin:           0em;
+    margin-block-end: var(--igl-vertical-spacing);
+    padding:          0em;
+  }
+
+  .tln, .translation {
+    .tln;
+    margin:  0em;
+    padding: 0em;
   }
 
 }

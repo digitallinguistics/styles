@@ -1,1 +1,1 @@
-.txn{--transcription-padding:0.15em;font-family:var(--font-unicode)}
+:root{--font-unicode-sans:'Noto Sans','Source Sans Pro','Andika','Lucida Sans Unicode',sans-serif;--font-unicode-serif:'Linux Libertine','Charis SIL','Gentium Plus','Doulos SIL','Source Serif Pro','Noto Serif','Times New Roman',serif}.transcription,.txn{--txn-padding:0.15em;font-family:var(--font-unicode-serif)}.transcription .em,.transcription .emphasis,.transcription b,.transcription em,.txn .em,.txn .emphasis,.txn b,.txn em{color:var(--em-color);font-weight:700}

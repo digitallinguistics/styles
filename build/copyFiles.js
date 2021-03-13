@@ -1,11 +1,23 @@
-const { copyFile } = require(`fs-extra`);
-const path         = require(`path`);
+import { fileURLToPath } from 'url';
+import fs                from 'fs-extra';
+import path              from 'path';
 
-const kssInputDir  = path.join(__dirname, `../kss`);
-const kssOutputDir = path.join(__dirname, `../docs`);
+const { copy, ensureDir } = fs;
+
+const currentDir = path.dirname(fileURLToPath(import.meta.url));
 
 void async function copyFiles() {
-  await copyFile(path.join(kssInputDir, `patterns.css`), path.join(kssOutputDir, `patterns.css`));
-  await copyFile(path.join(kssInputDir, `patterns.js`), path.join(kssOutputDir, `patterns.js`));
-  await copyFile(path.join(kssInputDir, `tunnel.ico`), path.join(kssOutputDir, `favicon.ico`));
+
+  await copy(
+    path.join(currentDir, `../images/tunnel.ico`),
+    path.join(currentDir, `../docs/favicon.ico`),
+  );
+
+  await ensureDir(currentDir, `../docs/fonts/LinuxLibertine`);
+
+  await copy(
+    path.join(currentDir, `../typography/LinuxLibertine`),
+    path.join(currentDir, `../docs/fonts/LinuxLibertine`),
+  );
+
 }();

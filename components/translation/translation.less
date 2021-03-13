@@ -1,18 +1,21 @@
 // Translation
 //
-// Used to add single quotation marks around a translation.
+// Translations in single quotes. While the HTML specification states that the `<q>` may only be used when you're quoting a source, it nonetheless may be acceptable to use a `<q>` tag for translations in technical linguistics texts. Browsers will add quotes to `<q>` tags by default, providing a convenient fallback if your CSS fails to load.
 //
-// Markup: translation.hbs
+// Markup: translation.html
 //
-// Styleguide Components.translation
-.tln {
+// Styleguide components.translation
+.tln,
+.translation {
+
+  quotes: '‘' '’' '“' '”';
 
   &::before {
-    content: '‘';
+    content: open-quote;
   }
 
   &::after {
-    content: '’';
+    content: close-quote;
   }
 
 }

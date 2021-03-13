@@ -1,27 +1,57 @@
-# DLx Pattern Library
+# Digital Linguistics (DLx) Pattern Library
 
-Welcome to the DLx Pattern Library! This website demonstrates CSS styles used across DLx projects, along with example HTML markup and usage notes.
+Welcome to the Digital Linguistics (DLx) pattern library! This website demonstrates how to style linguistic data for presentation on the web using HTML and CSS. This project contains CSS styles and example HTML for various kinds of linguistic components—interlinear glossed examples, transcriptions, grammatical glosses, etc.
 
-[View the GitHub repository for this pattern library.][GitHub]
+[View the GitHub repository for this library.][GitHub]
 
 ## Using the DLx Styles
 
-DLx styles are available either as [LESS files][LESS] or standalone CSS files. LESS files must be compiled to CSS before you can use them. See the [LESS website][LESS] for details.
+To use the DLx styles in your project, start by including the CSS file(s) for the component(s) that you want to use in a `<link rel=stylesheet>` tag. For example, if you wanted to use the styling for an interlinear gloss, you would include the `interlinear.css` file in your HTML `<head>` tag like so:
 
-The DLx styles library uses various global variables, font declarations, and colors. You may also need to include the following files before other styles, depending on which of the global variables you're using:
+```html
+<link rel=stylesheet href=interlinear.css>
+```
 
-* `fonts/fonts.{css|less}`: font declarations
-* `globals/colors.{css|less}`: color variables
-* `globals/variables.{css|less}`: global variables
+Next, make sure your HTML is formatted correctly so that the DLx styles will work. Each component in the pattern library has example markup showing how the HTML should be structured. For example, here is some valid HTML that uses the `.interlinear` class.
 
-## Components
+```html
+<div class=igl>
 
-Each component is given a folder within the `/components` folder. Each component has a standalone CSS file, a LESS file, and a sample [Handlebars][Handlebars] file containing example HTML.
+  <p class=ex-header>Chitimacha (isolate)</p>
 
-## Images
+  <p class=txn lang=ctm>siksi<em>nk</em> his heːčtiʔi</p>
 
-Images and icons used by DLx projects are available in the `/img` folder.
+  <ol class=words>
 
-[GitHub]:        https://github.com/digitallinguistics/styles
-[Handlebars]:    https://handlebarsjs.com/
-[LESS]:          http://lesscss.org/
+    <li class=word>
+      <span class=w-m lang=ctm>siksi‑<em>nk</em></span>
+      <span class=w-gl>eagle‑<abbr title=unknown>??</abbr></span>
+    </li>
+
+    <li class=word>
+      <span class=w-m lang=ctm>his</span>
+      <span class=w-gl><abbr title=responsive>resp</abbr></span>
+    </li>
+
+    <li class=word>
+      <span class=w-m lang=ctm>heːčt‑iʔi</span>
+      <span class=w-gl>call‑<abbr title=non-first>nf</abbr>;<abbr title=singular>sg</abbr></span>
+    </li>
+
+  </ol>
+
+  <p class=tln>an eagle met him</p>
+
+  <p class=ex-source>Swadesh 1939b: A1b.1</p>
+
+</div>
+```
+
+That's all there is to it! Each component has its own standalone CSS file with no dependencies, so you do not need to use the entire set of DLx styles unless you want to. You can use all the DLx styles at once by including the `dlx.css` file in your project instead of files for individual components. This will automatically apply styling for many components, and make the rest of the DLx CSS classes available for use in your HTML.
+
+## Notes
+
+* DLx styles are available either as standalone CSS files or [LESS files][LESS] files. LESS files must be compiled to CSS before you can use them, whereas CSS files can be used in your HTML project as is. See the [LESS website][LESS] for details on compiling LESS to CSS.
+
+[GitHub]: https://github.com/digitallinguistics/styles/
+[LESS]:   http://lesscss.org/

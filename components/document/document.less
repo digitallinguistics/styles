@@ -1,53 +1,43 @@
-// Linguistics Document
+@import 'typography/fonts.less';
+@import (reference) 'abbreviation/abbreviation.less';
+@import (reference) 'cite/cite.less';
+@import (reference) 'definition/definition.less';
+@import (reference) 'example/example.less';
+@import (reference) 'examples/examples.less';
+@import (reference) 'gloss/gloss.less';
+@import (reference) 'inline-example/inline-example.less';
+@import (reference) 'interlinear/interlinear.less';
+@import (reference) 'orthographic/orthographic.less';
+@import (reference) 'phonemic/phonemic.less';
+@import (reference) 'phonetic/phonetic.less';
+@import (reference) 'transcription/transcription.less';
+
+// Document
 //
-// A linguistics paper, article, or chapter.
+// A linguistics article, book chapter, abstract, book, etc. The `.ling-document` class applies various component styles to its contents. It also applies a counter reset for linguistic examples, and uses a serif Unicode font by default.
 //
-// Markup: document.hbs
+// Markup: document.html
 //
-// Styleguide Components.document
+// Styleguide components.document
 .ling-document {
 
   counter-reset: examples;
-  font-family:   var(--font-unicode);
+  font-family:   var(--font-unicode-serif);
 
-  // Captions
-  //
-  // Captions for figures and tables.
-  //
-  // Styleguide Components.document.caption
-  .caption {
-    padding: 0.25em 0.5em;
-  }
-
-  // Document Header
-  //
-  // The header of the document (e.g. chapter or article title and author information)
-  //
-  // Styleguide Components.document.header
-  .header {
-    align-items: center;
-    display:     flex;
-    flex-flow:   column nowrap;
-    text-align:  center;
-  }
-
-  // Section Header
-  //
-  // A section (or subsection) header
-  //
-  // Styleguide Components.document.section-header
-  .section-header {
-    font-size:   var(--text-lg);
-    font-weight: bold;
-  }
-
-  // Document Title
-  //
-  // The title of the document
-  //
-  // Styleguide Components.document.title
-  .title {
-    font-size: var(--text-xl);
-  }
+  abbr, .abbr, .abbreviation { .abbr; }
+  cite, .cite                { .cite; }
+  dfn, .dfn, .definition     { .dfn; }
+  .ex, .example              { .ex; }
+  .ex-header                 { .ex-header; }
+  .ex-source                 { .ex-source; }
+  .exs, .examples            { .examples; }
+  .fon, .phonetic            { .fon; }
+  .gl, .gloss                { .gl; }
+  .inex, .inline-ex          { .inex; }
+  .igl, .interlinear         { .igl; }
+  .ortho, .orthographic      { .ortho; }
+  .phon, .phonemic           { .phon; }
+  i, .txn, .transcription    { .txn; }
+  q, .tln, .translation      { .tln; }
 
 }

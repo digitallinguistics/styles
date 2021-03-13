@@ -1,1 +1,1 @@
-.tln::before{content:'‘'}.tln::after{content:'’'}
+.tln,.translation{quotes:'‘' '’' '“' '”'}.tln::before,.translation::before{content:open-quote}.tln::after,.translation::after{content:close-quote}

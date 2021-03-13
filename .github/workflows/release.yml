@@ -2,7 +2,6 @@ name: release
 
 on:
   release:
-    types: [published]
 
 jobs:
 
@@ -10,41 +9,36 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-      - name: checkout
+      - name: checkout repo
         uses: actions/checkout@v2
 
       - name: set up Node for npm
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
-          node-version: '12.x'
-          registry-url: https://registry.npmjs.org/
+          node-version: '14.x'
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: cache dependencies
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key:  ${{ hashFiles('**/package-lock.json') }}
 
       - name: install dependencies
+        if:   steps.cache.outputs.cache-hit != 'true'
         run:  npm ci
-
-      - name: build
-        run:  npm run build
 
       - name: publish to npm
         run:  npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-      - name: set up Node for GitHub
-        uses: actions/setup-node@v1
+      - name: set up Node for GitHub Package Registry
+        uses: actions/setup-node@v2
         with:
-          node-version: '12.x'
-          registry-url: https://npm.pkg.github.com/
+          node-version: '14.x'
+          registry-url: 'https://npm.pkg.github.com'
           scope:        '@digitallinguistics'
 
-      - name: publish to GitHub Packages
+      - name: publish to GitHub Package Registry
         run:  npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          cname:        styles.digitallinguistics.io
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir:  ./docs
