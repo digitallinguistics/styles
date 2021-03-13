@@ -1,0 +1,38 @@
+// Example
+//
+// Linguistic examples may contain any type of linguistic data. Each example should be given the `.ex` class. By convention, examples in linguistics publications are numbered (1), (2), (3), etc. To add numbering to examples, wrap them in an `<ol class=examples>` tag and place each example inside a `<li class=ex>` tag. See the Examples section for more information.
+//
+// Styleguide components.example
+
+// Example Header
+//
+// Examples may have headers containing information about the example (such as the language of the example).
+//
+// Styleguide components.example.ex-header
+.ex-header {
+  margin:                  0em;
+  padding:                 0em;
+  text-decoration:         underline;
+  text-underline-position: under;
+}
+
+// Example Source
+//
+// Examples may have a source, containing information about where the example is from (the speaker, location in the text, geographic region, etc.).
+//
+// Styleguide components.example.source
+.ex-source {
+
+  float:   right;
+  margin:  0em;
+  padding: 0em;
+
+  &::before {
+    content: '(';
+  }
+
+  &::after {
+    content: ')';
+  }
+
+}

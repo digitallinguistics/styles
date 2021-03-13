@@ -1,0 +1,124 @@
+@import 'fonts/fonts.less';
+@import (reference) 'example/example.less';
+@import (reference) 'gloss/gloss.less';
+@import (reference) 'transcription/transcription.less';
+@import (reference) 'translation/translation.less';
+
+// Interlinear Gloss
+//
+// An interlinear glossed example or utterance. All content contained within an interlinear example is displayed in a serif Unicode font by default; you may need to override the font family for individual elements. In addition to transcription (`<p class=txn>`) and translation (`<p class=tln>`) lines, you can choose to add analysis lines divided into words (`<ol class=words>`) and/or morphemes (`<ol class=morphemes>`). Analysis lines can be `<span>`s or `<div>`s according to your preference. If one word / morpheme has an analysis line, all of the words / morphemes in the example should have those same analysis lines, even if those tags are sometimes empty. It is highly recommended that glosses be divided by non-breaking hyphens (U+2011, or `&#8209;` in HTML) rather than regular hyphens so that glosses do not break across lines. Several CSS variables are made available for you to customize the appearance of the interlinear examples.
+//
+// Markup: interlinear.html
+//
+// Styleguide components.interlinear
+.igl,
+.interlinear {
+
+  // --em-color
+  //
+  // Set the color of emphasized text by giving a value to the `--em-color` variable.
+  //
+  // Styleguide components.interlinear.--em-color
+
+  // --igl-indent
+  //
+  // The amount to indent analysis lines. The transcription and translation lines (the first and last lines) will be left unindented. Default: 0em.
+  //
+  // Styleguide components.interlinear.--igl-indent
+  --igl-indent: 0em;
+
+  // --igl-horizontal-spacing
+  //
+  // The amount of space to place between words / morphemes in the analysis lines. Default: 1.25em.
+  //
+  // Styleguide components.interlinear.--igl-horizontal-spacing
+  --igl-horizontal-spacing: 1.25em;
+
+  // --igl-vertical-spacing
+  //
+  // The amount of space to place above and below the words / morphemes in the analysis lines. Default: 0.25em.
+  //
+  // Styleguide components.interlinear.--igl-vertical-spacing
+  --igl-vertical-spacing: 0.25em;
+
+  display:     flow-root; // clearfix
+  font-family: var(--font-unicode-serif);
+  line-height: 1.5;
+
+  // Grammatical Glosses
+  //
+  // Grammatical glosses are displayed in small caps and indicated with either the `.gl` or `.gloss` classes, or by wrapping the gloss in an `<abbr>` tag. Best practice is to include a `title` attribute on grammatical glosses, indicating the term that the gloss stands for; this allows the user to hover over the gloss for its definition.
+  //
+  // Styleguide components.interlinear.glosses
+  abbr, .gl, .gloss { .gl; }
+
+  // Example Emphasis
+  //
+  // Emphasis is indicated using either `<em>` or `<b>` tags (both are semantically valid for this use case), or the `.em` class.
+  //
+  // Styleguide components.interlinear.emphasis
+  b, em, .em {
+    color:       var(--em-color);
+    font-weight: bold;
+  }
+
+  // Example Header
+  //
+  // Example headers (containing information about the interlinear example) are given the `.ex-header` class and styled with an underline.
+  //
+  // Styleguide components.interlinear.ex-header
+  .ex-header {
+    .ex-header;
+    margin-bottom: var(--igl-vertical-spacing);
+  }
+
+  // Example Source
+  //
+  // The source of an example is indicated with the `.ex-source` class and styled with enclosing parentheses.
+  //
+  // Styleguide components.interlinear.ex-source
+  .ex-source { .ex-source; }
+
+  .morphemes,
+  .words {
+    display:     flex;
+    flex-flow:   row wrap;
+    list-style:  none;
+    margin:      0em;
+    margin-left: var(--igl-indent);
+    padding:     0em;
+  }
+
+  .morpheme,
+  .word {
+    display:        flex;
+    flex-direction: column;
+    margin-bottom:  var(--igl-vertical-spacing);
+  }
+
+  .morpheme > *,
+  .word > * {
+    margin:  0em;
+    padding: 0em;
+  }
+
+  li + li,
+  .morpheme + .morpheme,
+  .word + .word {
+    margin-left: var(--igl-horizontal-spacing);
+  }
+
+  .txn, .transcription {
+    .txn;
+    margin:        0em;
+    margin-bottom: var(--igl-vertical-spacing);
+    padding:       0em;
+  }
+
+  .tln, .translation {
+    .tln;
+    margin:  0em;
+    padding: 0em;
+  }
+
+}
