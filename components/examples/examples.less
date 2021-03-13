@@ -15,17 +15,9 @@
   // How far to indent each example. Controlling this value is useful when the number of examples on your page reaches multiple place values. Default: `1.5em`.
   //
   // Markup:
-  // <style>
-  //   .A {
-  //     --example-indent: 1.5em;
-  //   }
-  //   .B {
-  //     --example-indent: 2.5em;
-  //   }
-  // </style>
   // <ol class=examples style="counter-reset: examples 100;">
-  //   <li class='ex A'>This is an example with <code>--example-indent</code> set to <code>1.5em</code>.</li>
-  //   <li class='ex B'>This is an example with <code>--example-indent</code> set to <code>2.5em</code>.</li>
+  //   <li class='ex A' style="--example-indent: 1.5em;">This is an example with <code>--example-indent</code> set to <code>1.5em</code>.</li>
+  //   <li class='ex B' style="--example-indent: 2.5em;">This is an example with <code>--example-indent</code> set to <code>2.5em</code>.</li>
   // </ol>
   //
   // Styleguide components.examples.--example-indent
@@ -43,15 +35,28 @@
 
     .ex;
 
-    counter-increment: examples;
-    margin-bottom:     1em;
-    margin-left:       var(--example-indent);
-    position:          relative;
+    counter-increment:   examples;
+    margin-block-end:    1em;
+    margin-inline-start: var(--example-indent);
+    position:            relative;
 
     &::before {
-      content:           '(' counter(examples) ')';
-      margin-left:       calc(var(--example-indent) * -1);
-      position:          absolute;
+      content:             '(' counter(examples) ')';
+      margin-inline-start: calc(var(--example-indent) * -1);
+      position:            absolute;
+    }
+
+  }
+
+  .subexamples {
+
+    margin-inline-start: 1.25em;
+    padding:             0em;
+    list-style-position: outside;
+    list-style-type:     lower-alpha;
+
+    li {
+      display: list-item;
     }
 
   }

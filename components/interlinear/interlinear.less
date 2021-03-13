@@ -129,7 +129,7 @@
   // Styleguide components.interlinear.ex-header
   .ex-header {
     .ex-header;
-    margin-bottom: var(--igl-vertical-spacing);
+    margin-block-end: var(--igl-vertical-spacing);
   }
 
   // Example Source
@@ -141,19 +141,19 @@
 
   .morphemes,
   .words {
-    display:     flex;
-    flex-flow:   row wrap;
-    list-style:  none;
-    margin:      0em;
-    margin-left: var(--igl-indent);
-    padding:     0em;
+    display:             flex;
+    flex-flow:           row wrap;
+    list-style:          none;
+    margin:              0em;
+    margin-inline-start: var(--igl-indent);
+    padding:             0em;
   }
 
   .morpheme,
   .word {
-    display:        flex;
-    flex-direction: column;
-    margin-bottom:  var(--igl-vertical-spacing);
+    display:          flex;
+    flex-direction:   column;
+    margin-block-end: var(--igl-vertical-spacing);
   }
 
   .morpheme > *,
@@ -165,14 +165,14 @@
   li + li,
   .morpheme + .morpheme,
   .word + .word {
-    margin-left: var(--igl-horizontal-spacing);
+    margin-inline-start: var(--igl-horizontal-spacing);
   }
 
   .txn, .transcription {
     .txn;
-    margin:        0em;
-    margin-bottom: var(--igl-vertical-spacing);
-    padding:       0em;
+    margin:           0em;
+    margin-block-end: var(--igl-vertical-spacing);
+    padding:          0em;
   }
 
   .tln, .translation {
