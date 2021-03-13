@@ -2,6 +2,7 @@ name: release
 
 on:
   release:
+    [created]
 
 jobs:
 
