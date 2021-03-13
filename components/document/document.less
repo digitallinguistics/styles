@@ -1,0 +1,36 @@
+@import (reference) 'abbreviation/abbreviation.less';
+@import (reference) 'cite/cite.less';
+@import (reference) 'definition/definition.less';
+@import (reference) 'example/example.less';
+@import (reference) 'fonts/fonts.less';
+@import (reference) 'gloss/gloss.less';
+@import (reference) 'inline-example/inline-example.less';
+@import (reference) 'interlinear/interlinear.less';
+@import (reference) 'transcription/transcription.less';
+
+// Document
+//
+// A linguistics article, book chapter, abstract, book, etc. The `.ling-document` class applies various component styles to its contents. It also applies a counter reset for linguistic examples, and uses a serif Unicode font by default.
+//
+// Markup: document.html
+//
+// Styleguide components.document
+.ling-document {
+
+  counter-reset: examples;
+  font-family:   var(--font-unicode-serif);
+
+  abbr, .abbr, .abbreviation { .abbr; }
+  cite, .cite                { .cite; }
+  dfn, .dfn, .definition     { .dfn; }
+  .ex, .example              { .ex; }
+  .ex-header                 { .ex-header; }
+  .ex-source                 { .ex-source; }
+  .exs, .examples            { .examples; }
+  .gl, .gloss                { .gl; }
+  .inex, .inline-ex          { .inex; }
+  .igl, .interlinear         { .igl; }
+  i, .txn, .transcription    { .txn; }
+  q, .tln, .translation      { .tln; }
+
+}
