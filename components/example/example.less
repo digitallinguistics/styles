@@ -1,12 +1,21 @@
+@import (reference) 'fonts/fonts.less';
+
 // Example
 //
-// Linguistic examples may contain any type of linguistic data. Each example should be given the `.ex` class. By convention, examples in linguistics publications are numbered (1), (2), (3), etc. To add numbering to examples, wrap them in an `<ol class=examples>` tag and place each example inside a `<li class=ex>` tag. See the Examples section for more information.
+// Linguistic examples may contain any type of linguistic data. Each example should be given the `.ex` class. All content within an example displays in a serif Unicode font by default; you may need to override the font family for individual elements. To add numbering to examples, wrap them in an `<ol class=examples>` tag and place each example inside a `<li class=ex>` tag. See the [Examples](#kssref-components-examples) section for more information.
+//
+// Markup: example.html
 //
 // Styleguide components.example
+.ex {
+  display:     flow-root;
+  font-family: var(--font-unicode-serif);
+  line-height: 1.5;
+}
 
 // Example Header
 //
-// Examples may have headers containing information about the example (such as the language of the example).
+// Examples may have headers containing information about the example (such as the language of the example). See the [Example component](#kssref-components-example) for a demonstration of a header being used in an example.
 //
 // Styleguide components.example.ex-header
 .ex-header {
@@ -18,7 +27,7 @@
 
 // Example Source
 //
-// Examples may have a source, containing information about where the example is from (the speaker, location in the text, geographic region, etc.).
+// Examples may have a source, containing information about where the example is from (the speaker, location in the text, geographic region, etc.). See the [Example component](#kssref-components-example) for a demonstration of a source being used in an example.
 //
 // Styleguide components.example.source
 .ex-source {

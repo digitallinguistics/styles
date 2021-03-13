@@ -1,0 +1,59 @@
+@import (reference) 'example/example.less';
+@import (reference) 'fonts/fonts.less';
+
+// Examples
+//
+// A set of one or more linguistic examples. By convention, examples in linguistics publications are numbered (1), (2), (3), etc. To number the examples, wrap them in an `<ol class=examples>` tag, and place each example in a `<li class=ex>` element. All content within an example displays in a serif Unicode font by default; you may need to override the font family for individual elements.
+//
+// Markup: examples.html
+//
+// Styleguide components.examples
+.examples {
+
+  // --example-indent
+  //
+  // How far to indent each example. Controlling this value is useful when the number of examples on your page reaches multiple place values. Default: `1.5em`.
+  //
+  // Markup:
+  // <style>
+  //   .A {
+  //     --example-indent: 1.5em;
+  //   }
+  //   .B {
+  //     --example-indent: 2.5em;
+  //   }
+  // </style>
+  // <ol class=examples style="counter-reset: examples 100;">
+  //   <li class='ex A'>This is an example with <code>--example-indent</code> set to <code>1.5em</code>.</li>
+  //   <li class='ex B'>This is an example with <code>--example-indent</code> set to <code>2.5em</code>.</li>
+  // </ol>
+  //
+  // Styleguide components.examples.--example-indent
+  --example-indent: 1.5em;
+
+  .ex-header { .ex-header; }
+  .ex-source { .ex-source; }
+
+  font-family:     var(--font-unicode-serif);
+  list-style-type: none;
+  margin:          0em;
+  padding:         0em;
+
+  .ex {
+
+    .ex;
+
+    counter-increment: examples;
+    margin-bottom:     1em;
+    margin-left:       var(--example-indent);
+    position:          relative;
+
+    &::before {
+      content:           '(' counter(examples) ')';
+      margin-left:       calc(var(--example-indent) * -1);
+      position:          absolute;
+    }
+
+  }
+
+}

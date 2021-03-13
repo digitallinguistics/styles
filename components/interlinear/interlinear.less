@@ -18,30 +18,90 @@
   //
   // Set the color of emphasized text by giving a value to the `--em-color` variable.
   //
+  // Markup:
+  // <div class=igl style="--em-color: red;">
+  //   <p class=ex-header><code>.igl { --em-color: red; }</code></p>
+  //   <p class=txn lang=ctm>siksi<em>nk</em> his heːčtiʔi</p>
+  //   <ol class=words>
+  //     <li class=word>
+  //       <span class=w-m lang=ctm>siksi‑<em>nk</em></span>
+  //       <span class=w-gl>eagle‑<abbr title=unknown>??</abbr></span>
+  //     </li>
+  //     <li class=word>
+  //       <span class=w-m lang=ctm>his</span>
+  //       <span class=w-gl><abbr title=responsive>resp</abbr></span>
+  //     </li>
+  //     <li class=word>
+  //       <span class=w-m lang=ctm>heːčt‑iʔi</span>
+  //       <span class=w-gl>call‑<abbr title=non-first>nf</abbr>;<abbr title=singular>sg</abbr></span>
+  //     </li>
+  //   </ol>
+  //   <p class=tln>an eagle met him</p>
+  // </div>
+  //
   // Styleguide components.interlinear.--em-color
 
   // --igl-indent
   //
-  // The amount to indent analysis lines. The transcription and translation lines (the first and last lines) will be left unindented. Default: 0em.
+  // The amount to indent analysis lines. The transcription and translation lines (the first and last lines) will be left unindented. Default: `0em`.
   //
   // Styleguide components.interlinear.--igl-indent
   --igl-indent: 0em;
 
   // --igl-horizontal-spacing
   //
-  // The amount of space to place between words / morphemes in the analysis lines. Default: 1.25em.
+  // The amount of space to place between words / morphemes in the analysis lines. Default: `1.25em`.
+  //
+  // Markup:
+  // <div class=igl style="--igl-horizontal-spacing: 0.25em;">
+  //   <p class=ex-header><code>.igl { --igl-horizontal-spacing: 0.25em; }</code></p>
+  //   <p class=txn lang=ctm>siksi<em>nk</em> his heːčtiʔi</p>
+  //   <ol class=words>
+  //     <li class=word>
+  //       <span class=w-m lang=ctm>siksi‑<em>nk</em></span>
+  //       <span class=w-gl>eagle‑<abbr title=unknown>??</abbr></span>
+  //     </li>
+  //     <li class=word>
+  //       <span class=w-m lang=ctm>his</span>
+  //       <span class=w-gl><abbr title=responsive>resp</abbr></span>
+  //     </li>
+  //     <li class=word>
+  //       <span class=w-m lang=ctm>heːčt‑iʔi</span>
+  //       <span class=w-gl>call‑<abbr title=non-first>nf</abbr>;<abbr title=singular>sg</abbr></span>
+  //     </li>
+  //   </ol>
+  //   <p class=tln>an eagle met him</p>
+  // </div>
+  // <div class=igl style="--igl-horizontal-spacing: 1.25em;">
+  //   <p class=ex-header><code>.igl { --igl-horizontal-spacing: 1.25em; }</code></p>
+  //   <p class=txn lang=ctm>siksi<em>nk</em> his heːčtiʔi</p>
+  //   <ol class=words>
+  //     <li class=word>
+  //       <span class=w-m lang=ctm>siksi‑<em>nk</em></span>
+  //       <span class=w-gl>eagle‑<abbr title=unknown>??</abbr></span>
+  //     </li>
+  //     <li class=word>
+  //       <span class=w-m lang=ctm>his</span>
+  //       <span class=w-gl><abbr title=responsive>resp</abbr></span>
+  //     </li>
+  //     <li class=word>
+  //       <span class=w-m lang=ctm>heːčt‑iʔi</span>
+  //       <span class=w-gl>call‑<abbr title=non-first>nf</abbr>;<abbr title=singular>sg</abbr></span>
+  //     </li>
+  //   </ol>
+  //   <p class=tln>an eagle met him</p>
+  // </div>
   //
   // Styleguide components.interlinear.--igl-horizontal-spacing
   --igl-horizontal-spacing: 1.25em;
 
   // --igl-vertical-spacing
   //
-  // The amount of space to place above and below the words / morphemes in the analysis lines. Default: 0.25em.
+  // The amount of space to place above and below the words / morphemes in the analysis lines. Default: `0.25em`.
   //
   // Styleguide components.interlinear.--igl-vertical-spacing
   --igl-vertical-spacing: 0.25em;
 
-  display:     flow-root; // clearfix
   font-family: var(--font-unicode-serif);
   line-height: 1.5;
 
