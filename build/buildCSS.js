@@ -12,7 +12,7 @@ const currentDir = path.dirname(fileURLToPath(import.meta.url));
 
 const bundlePath    = path.join(currentDir, `../dlx.less`);
 const componentsDir = path.join(currentDir, `../components`);
-const fontsDir      = path.join(currentDir, `../fonts`);
+const typographyDir = path.join(currentDir, `../typography`);
 
 const cleanCSSOptions = {};
 
@@ -20,7 +20,7 @@ const cssCleaner = new CSSCleaner(cleanCSSOptions);
 
 const lessOptions = {
   math:  `strict`,
-  paths: [`components`, `fonts`],
+  paths: [`components`, `typography`],
 };
 
 function ignore(filePath, stats) {
@@ -50,7 +50,7 @@ void async function buildCSS() {
   try {
     await Promise.all([
       convertFile(bundlePath),
-      convertFolder(fontsDir),
+      convertFolder(typographyDir),
       convertFolder(componentsDir),
     ]);
   } catch (e) {
