@@ -1,4 +1,5 @@
 import createSpinner     from 'ora';
+import CSSCleaner        from 'clean-css';
 import { fileURLToPath } from 'url';
 import fs                from 'fs';
 import less              from 'less';
@@ -13,6 +14,10 @@ const bundlePath    = path.join(currentDir, `../dlx.less`);
 const componentsDir = path.join(currentDir, `../components`);
 const fontsDir      = path.join(currentDir, `../fonts`);
 
+const cleanCSSOptions = {};
+
+const cssCleaner = new CSSCleaner(cleanCSSOptions);
+
 const lessOptions = {
   math:  `strict`,
   paths: [`components`, `fonts`],
@@ -24,12 +29,13 @@ function ignore(filePath, stats) {
 }
 
 async function convertFile(lessFilePath) {
-  const lessData    = await readFile(lessFilePath, `utf8`);
-  const { css }     = await less.render(lessData, lessOptions);
-  const dirname     = path.dirname(lessFilePath);
-  const filename    = path.basename(lessFilePath, `.less`);
-  const cssFilePath = path.join(dirname, `${filename}.css`);
-  await writeFile(cssFilePath, css, `utf8`);
+  const lessData             = await readFile(lessFilePath, `utf8`);
+  const { css }              = await less.render(lessData, lessOptions);
+  const { styles: cleanCSS } = cssCleaner.minify(css);
+  const dirname              = path.dirname(lessFilePath);
+  const filename             = path.basename(lessFilePath, `.less`);
+  const cssFilePath          = path.join(dirname, `${filename}.css`);
+  await writeFile(cssFilePath, cleanCSS, `utf8`);
 }
 
 async function convertFolder(dir) {

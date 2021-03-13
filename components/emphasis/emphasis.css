@@ -1,5 +1,1 @@
-.em,
-.emphasis {
-  color: var(--em-color);
-  font-weight: bold;
-}
+.em,.emphasis{color:var(--em-color);font-weight:700}
