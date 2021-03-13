@@ -1,0 +1,24 @@
+@import (reference) 'transcription/transcription.less';
+
+// Phonetic Transcription
+//
+// Used for phonetic transcriptions of data, displayed between square brackets `[]`. Adjust the space between the phonetic transcription and the surrounding brackets using the `--txn-padding` variable.
+//
+// Markup: phonetic.html
+//
+// Styleguide components.phonetic
+.fon, .phonetic {
+
+  .txn;
+
+  &::before {
+    content:      '[';
+    padding-right: var(--txn-padding);
+  }
+
+  &::after  {
+    content:      ']';
+    padding-left: var(--txn-padding);
+  }
+
+}
