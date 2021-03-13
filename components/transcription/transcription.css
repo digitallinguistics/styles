@@ -1,0 +1,25 @@
+.em,
+.emphasis {
+  color: var(--em-color);
+  font-weight: bold;
+}
+:root {
+  --font-unicode-sans: 'Noto Sans', 'Source Sans Pro', 'Andika', 'Lucida Sans Unicode', sans-serif;
+  --font-unicode-serif: 'Linux Libertine', 'Charis SIL', 'Gentium Plus', 'Doulos SIL', 'Source Serif Pro', 'Noto Serif', 'Times New Roman', serif;
+}
+.txn,
+.transcription {
+  --txn-padding: 0.15em;
+  font-family: var(--font-unicode-serif);
+}
+.txn b,
+.transcription b,
+.txn em,
+.transcription em,
+.txn .em,
+.transcription .em,
+.txn .emphasis,
+.transcription .emphasis {
+  color: var(--em-color);
+  font-weight: bold;
+}

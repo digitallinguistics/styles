@@ -1,0 +1,28 @@
+.inex,
+.inline-ex {
+  --txn-padding: 0.15em;
+  font-family: var(--font-unicode-serif);
+  font-style: italic;
+}
+.inex b,
+.inline-ex b,
+.inex em,
+.inline-ex em,
+.inex .em,
+.inline-ex .em,
+.inex .emphasis,
+.inline-ex .emphasis {
+  color: var(--em-color);
+  font-weight: bold;
+}
+.inex b,
+.inline-ex b,
+.inex em,
+.inline-ex em,
+.inex .em,
+.inline-ex .em,
+.inex .emphasis,
+.inline-ex .emphasis {
+  color: var(--em-color);
+  font-weight: bold;
+}

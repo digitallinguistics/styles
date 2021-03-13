@@ -1,0 +1,26 @@
+.fon,
+.phonetic {
+  --txn-padding: 0.15em;
+  font-family: var(--font-unicode-serif);
+}
+.fon b,
+.phonetic b,
+.fon em,
+.phonetic em,
+.fon .em,
+.phonetic .em,
+.fon .emphasis,
+.phonetic .emphasis {
+  color: var(--em-color);
+  font-weight: bold;
+}
+.fon::before,
+.phonetic::before {
+  content: '[';
+  padding-right: var(--txn-padding);
+}
+.fon::after,
+.phonetic::after {
+  content: ']';
+  padding-left: var(--txn-padding);
+}

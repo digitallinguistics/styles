@@ -1,0 +1,138 @@
+:root {
+  --font-unicode-sans: 'Noto Sans', 'Source Sans Pro', 'Andika', 'Lucida Sans Unicode', sans-serif;
+  --font-unicode-serif: 'Linux Libertine', 'Charis SIL', 'Gentium Plus', 'Doulos SIL', 'Source Serif Pro', 'Noto Serif', 'Times New Roman', serif;
+}
+.igl,
+.interlinear {
+  --igl-indent: 0em;
+  --igl-horizontal-spacing: 1.25em;
+  --igl-vertical-spacing: 0.25em;
+  font-family: var(--font-unicode-serif);
+  line-height: 1.5;
+}
+.igl abbr,
+.interlinear abbr,
+.igl .gl,
+.interlinear .gl,
+.igl .gloss,
+.interlinear .gloss {
+  font-variant: small-caps;
+  text-decoration: none;
+}
+.igl b,
+.interlinear b,
+.igl em,
+.interlinear em,
+.igl .em,
+.interlinear .em,
+.igl .emphasis,
+.interlinear .emphasis {
+  color: var(--em-color);
+  font-weight: bold;
+}
+.igl .ex-header,
+.interlinear .ex-header {
+  margin: 0em;
+  padding: 0em;
+  text-decoration: underline;
+  text-underline-position: under;
+  margin-block-end: var(--igl-vertical-spacing);
+}
+.igl .ex-source,
+.interlinear .ex-source {
+  float: right;
+  float: inline-end;
+  margin: 0em;
+  padding: 0em;
+}
+.igl .ex-source::before,
+.interlinear .ex-source::before {
+  content: '(';
+}
+.igl .ex-source::after,
+.interlinear .ex-source::after {
+  content: ')';
+}
+.igl .morphemes,
+.interlinear .morphemes,
+.igl .words,
+.interlinear .words {
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
+  margin: 0em;
+  margin-inline-start: var(--igl-indent);
+  padding: 0em;
+}
+.igl .morpheme,
+.interlinear .morpheme,
+.igl .word,
+.interlinear .word {
+  display: flex;
+  flex-direction: column;
+  margin-block-end: var(--igl-vertical-spacing);
+}
+.igl .morpheme > *,
+.interlinear .morpheme > *,
+.igl .word > *,
+.interlinear .word > * {
+  margin: 0em;
+  padding: 0em;
+}
+.igl li + li,
+.interlinear li + li,
+.igl .morpheme + .morpheme,
+.interlinear .morpheme + .morpheme,
+.igl .word + .word,
+.interlinear .word + .word {
+  margin-inline-start: var(--igl-horizontal-spacing);
+}
+.igl .txn,
+.interlinear .txn,
+.igl .transcription,
+.interlinear .transcription {
+  --txn-padding: 0.15em;
+  font-family: var(--font-unicode-serif);
+  margin: 0em;
+  margin-block-end: var(--igl-vertical-spacing);
+  padding: 0em;
+}
+.igl .txn b,
+.interlinear .txn b,
+.igl .transcription b,
+.interlinear .transcription b,
+.igl .txn em,
+.interlinear .txn em,
+.igl .transcription em,
+.interlinear .transcription em,
+.igl .txn .em,
+.interlinear .txn .em,
+.igl .transcription .em,
+.interlinear .transcription .em,
+.igl .txn .emphasis,
+.interlinear .txn .emphasis,
+.igl .transcription .emphasis,
+.interlinear .transcription .emphasis {
+  color: var(--em-color);
+  font-weight: bold;
+}
+.igl .tln,
+.interlinear .tln,
+.igl .translation,
+.interlinear .translation {
+  quotes: '‘' '’' '“' '”';
+  margin: 0em;
+  padding: 0em;
+}
+.igl .tln::before,
+.interlinear .tln::before,
+.igl .translation::before,
+.interlinear .translation::before {
+  content: open-quote;
+}
+.igl .tln::after,
+.interlinear .tln::after,
+.igl .translation::after,
+.interlinear .translation::after {
+  content: close-quote;
+}

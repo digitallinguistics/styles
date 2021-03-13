@@ -1,0 +1,95 @@
+.exs,
+.examples {
+  --example-indent: 1.5em;
+  font-family: var(--font-unicode-serif);
+  list-style-type: none;
+  margin: 0em;
+  padding: 0em;
+}
+.exs .ex-header,
+.examples .ex-header {
+  margin: 0em;
+  padding: 0em;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+.exs .ex-source,
+.examples .ex-source {
+  float: right;
+  float: inline-end;
+  margin: 0em;
+  padding: 0em;
+}
+.exs .ex-source::before,
+.examples .ex-source::before {
+  content: '(';
+}
+.exs .ex-source::after,
+.examples .ex-source::after {
+  content: ')';
+}
+.exs b,
+.examples b,
+.exs em,
+.examples em,
+.exs .em,
+.examples .em,
+.exs .emphasis,
+.examples .emphasis {
+  color: var(--em-color);
+  font-weight: bold;
+}
+.exs .ex,
+.examples .ex,
+.exs .example,
+.examples .example {
+  display: flow-root;
+  font-family: var(--font-unicode-serif);
+  line-height: 1.5;
+  counter-increment: examples;
+  margin-block-end: 1em;
+  margin-inline-start: var(--example-indent);
+  position: relative;
+}
+.exs .ex b,
+.examples .ex b,
+.exs .example b,
+.examples .example b,
+.exs .ex em,
+.examples .ex em,
+.exs .example em,
+.examples .example em,
+.exs .ex .em,
+.examples .ex .em,
+.exs .example .em,
+.examples .example .em,
+.exs .ex .emphasis,
+.examples .ex .emphasis,
+.exs .example .emphasis,
+.examples .example .emphasis {
+  color: var(--em-color);
+  font-weight: bold;
+}
+.exs .ex::before,
+.examples .ex::before,
+.exs .example::before,
+.examples .example::before {
+  content: '(' counter(examples) ')';
+  margin-inline-start: calc(var(--example-indent) * -1);
+  position: absolute;
+}
+.exs .subexs,
+.examples .subexs,
+.exs .subexamples,
+.examples .subexamples {
+  margin-inline-start: 1.25em;
+  padding: 0em;
+  list-style-position: outside;
+  list-style-type: lower-alpha;
+}
+.exs .subexs li,
+.examples .subexs li,
+.exs .subexamples li,
+.examples .subexamples li {
+  display: list-item;
+}

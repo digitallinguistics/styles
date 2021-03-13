@@ -1,0 +1,35 @@
+.ex,
+.example {
+  display: flow-root;
+  font-family: var(--font-unicode-serif);
+  line-height: 1.5;
+}
+.ex b,
+.example b,
+.ex em,
+.example em,
+.ex .em,
+.example .em,
+.ex .emphasis,
+.example .emphasis {
+  color: var(--em-color);
+  font-weight: bold;
+}
+.ex-header {
+  margin: 0em;
+  padding: 0em;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+.ex-source {
+  float: right;
+  float: inline-end;
+  margin: 0em;
+  padding: 0em;
+}
+.ex-source::before {
+  content: '(';
+}
+.ex-source::after {
+  content: ')';
+}

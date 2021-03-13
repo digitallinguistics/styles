@@ -1,0 +1,37 @@
+.ortho,
+.orthographic {
+  --txn-padding: 0.15em;
+  font-family: var(--font-unicode-serif);
+}
+.ortho b,
+.orthographic b,
+.ortho em,
+.orthographic em,
+.ortho .em,
+.orthographic .em,
+.ortho .emphasis,
+.orthographic .emphasis {
+  color: var(--em-color);
+  font-weight: bold;
+}
+.ortho b,
+.orthographic b,
+.ortho em,
+.orthographic em,
+.ortho .em,
+.orthographic .em,
+.ortho .emphasis,
+.orthographic .emphasis {
+  color: var(--em-color);
+  font-weight: bold;
+}
+.ortho::before,
+.orthographic::before {
+  content: '⟨';
+  padding-right: var(--txn-padding);
+}
+.ortho::after,
+.orthographic::after {
+  content: '⟩';
+  padding-left: var(--txn-padding);
+}
