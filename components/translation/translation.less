@@ -1,10 +1,14 @@
 // Translation
 //
-// Translations in single quotes. Do not use `<q>` tags for translations; `<q>` is reserved for inline quotes from another source, and browsers will automatically add styles to this tag that are not compatible with how translations are represented in linguistics.
+// Translations in single quotes. While the HTML specification states that the `<q>` may only be used when you're quoting a source, it nonetheless may be acceptable to use a `<q>` tag for translations in technical linguistics texts. Browsers will add quotes to `<q>` tags by default, providing a convenient fallback if your CSS fails to load.
+//
+// Markup: translation.html
 //
 // Styleguide components.translation
 .tln,
 .translation {
+
+  quotes: none;
 
   &::before {
     content: '‘';
