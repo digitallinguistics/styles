@@ -30,6 +30,8 @@ jobs:
 
       - name: publish to npm
         run:  npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: set up Node for GitHub Package Registry
         uses: actions/setup-node@v2
