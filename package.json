@@ -1,6 +1,6 @@
 {
   "name": "@digitallinguistics/styles",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A collection of patterns for styling linguistic data on the web",
   "homepage": "https://github.com/digitallinguistics/styles",
   "bugs": "https://github.com/digitallinguistics/styles/issues",
@@ -18,10 +18,10 @@
   },
   "type": "module",
   "scripts": {
-    "build":          "npm run build-css & npm run build-docs",
-    "build-css":      "node build/buildCSS.js",
-    "prebuild-docs":  "node build/emptyDocs.js",
-    "build-docs":     "kss --config kss/kss.config.json & lessc --include-path=components dlx.less docs/dlx.css & lessc kss/docs.less docs/docs.css",
+    "build": "npm run build-css & npm run build-docs",
+    "build-css": "node build/buildCSS.js",
+    "prebuild-docs": "node build/emptyDocs.js",
+    "build-docs": "kss --config kss/kss.config.json & lessc --include-path=components dlx.less docs/dlx.css & lessc kss/docs.less docs/docs.css",
     "postbuild-docs": "node build/copyFiles.js"
   },
   "devDependencies": {
