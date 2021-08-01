@@ -17,6 +17,11 @@
     "node": ">=14.x"
   },
   "type": "module",
+  "files": [
+    "components",
+    "dlx.css",
+    "dlx.less"
+  ],
   "scripts": {
     "build": "npm run build-css & npm run build-docs",
     "build-css": "node build/buildCSS.js",
