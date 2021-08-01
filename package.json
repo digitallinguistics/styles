@@ -20,7 +20,9 @@
   "files": [
     "components",
     "dlx.css",
-    "dlx.less"
+    "dlx.less",
+    "typography/*.css",
+    "typography/*.less"
   ],
   "scripts": {
     "build": "npm run build-css & npm run build-docs",
