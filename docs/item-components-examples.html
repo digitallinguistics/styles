@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DLx Pattern Library</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="generator" content="kss-node">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,300">
+    <link rel="stylesheet" href="kss-assets/vendor/prism.css">
+    <link rel="stylesheet" href="kss-assets/css/kss.css">
+    <link rel="stylesheet" href="./dlx.css"/>
+<link rel="stylesheet" href="./docs.css"/>
+
+  </head>
+
+  <body class="kss-body">
+
+    <!-- header. -->
+    <header class="kss-header">
+      <section class="kss-header__inner">
+        <a class="kss-header__hamburger-trigger">
+          <div class="kss-header__hamburger"></div>
+        </a>
+        <h1 class="kss-header__title kss-title">DLx Pattern Library</h1>
+      </section>
+    </header>
+    <!-- /header. -->
+
+
+    <!-- navigation. -->
+    <section class="kss-navigation">
+      <h1 class="kss-navigation__title kss-title">DLx Pattern Library</h1>
+      <ul class="kss-nav">
+        <li class="kss-nav__item">
+          <a href="index.html">
+            <span class="kss-nav__ref">0</span>
+            <span class="kss-nav__name">Introduction</span>
+          </a>
+        </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-typography.html">
+              <span class="kss-nav__ref">1</span>
+              <span class="kss-nav__name">Typography</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-components.html">
+              <span class="kss-nav__ref">2</span>
+              <span class="kss-nav__name">Components</span>
+            </a>
+          </li>
+      </ul>
+    </section>
+    <!-- /navigation. -->
+
+
+    <!-- documentation. -->
+    <section class="kss-documentation">
+
+        <!--
+          display each section, in order.
+          the "root" element comes first in this loop, and can be detected using
+          the "#if @first" block as seen below.
+        -->
+            <header class="kss-section kss-section--depth-2" id="kssref-components-examples">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>../components/examples/examples.less</span>, line <span>5</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-components-examples">
+                <h2 class="kss-section__item kss-section__item--depth-2">
+                  <span class="kss-section__ref">2.7</span>
+                  <span class="kss-section__name">Examples</span>
+                </h2>
+              </a>
+
+                <div class="kss-section__description"><p>A set of one or more linguistic examples. By convention, examples in linguistics publications are numbered (1), (2), (3), etc. To number the examples, wrap them in an <code>&lt;ol class=examples&gt;</code> tag, and place each example in a <code>&lt;li class=ex&gt;</code> element. All content within an example displays in a serif Unicode font by default; you may need to override the font family for individual elements. <code>&lt;b&gt;</code> and <code>&lt;em&gt;</code> tags within examples are styled with the <code>.em</code> class by default (see the <a href="#kssref-components-emphasis">example emphasis</a> component).</p>
+</div>
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Example</h1>
+
+
+                <div class="kss-modifiers__example"><ol class=examples style="counter-reset: examples;">
+
+  <li class=ex>
+
+    <p class=ex-header>Plains Cree (Algonquian)</p>
+
+    <table>
+      <tr>
+        <td class=txn lang=crk>asam</td>
+        <td class=tln>feed him/her/it</td>
+      </tr>
+      <tr>
+        <td class=txn lang=crk>asām</td>
+        <td class=tln>a snowshoe</td>
+      </tr>
+      <tr>
+        <td class=txn lang=crk>askihk</td>
+        <td class=tln>a pail</td>
+      </tr>
+      <tr>
+        <td class=txn lang=crk>askīhk</td>
+        <td class=tln>on the land/earth</td>
+      </tr>
+    </table>
+
+    <p class=ex-source>Okimāsis. 2018. <cite>Cree: Language of the Plains / nehiyawewin: paskwāwi-pīkiskwēwin</cite></p>
+
+  </li>
+
+  <li class='ex igl'>
+
+    <p class=ex-header>Chitimacha (isolate)</p>
+
+    <p class=txn lang=ctm>siksi<em>nk</em> his heːčtiʔi</p>
+
+    <ol class=words>
+
+      <li class=word>
+        <span class=w-m lang=ctm>siksi‑<em>nk</em></span>
+        <span class=w-gl>eagle‑<abbr title=unknown>??</abbr></span>
+      </li>
+
+      <li class=word>
+        <span class=w-m lang=ctm>his</span>
+        <span class=w-gl><abbr title=responsive>resp</abbr></span>
+      </li>
+
+      <li class=word>
+        <span class=w-m lang=ctm>heːčt‑iʔi</span>
+        <span class=w-gl>call‑<abbr title=non-first>nf</abbr>;<abbr title=singular>sg</abbr></span>
+      </li>
+
+    </ol>
+
+    <p class=tln>an eagle met him</p>
+
+    <p class=ex-source>Swadesh 1939b: A1b.1</p>
+
+  </li>
+
+  <li class=ex>
+    <p class=ex-header>Menominee (Algonquian)</p>
+    <ol class=subexamples>
+      <li><p><i class=txn lang=mez>pāpaehcen</i> <q class=tln>he, she, it (anim.) falls</q> (AI)</p></li>
+      <li><p><i class=txn lang=mez>pāpaehnaen</i> <q clas=translation>it (inan.) falls</q> (II)</p></li>
+    </ol>
+  </li>
+
+  <li class=ex>
+    <p class=ex-header>Menominee (Algonquian)</p>
+    <ol class=subexamples>
+      <li><p><i class=txn lang=mez>na͞ewa͞ew</i> <q class=tln>s/he sees him, her, it (anim.)</q> (TA)</p></li>
+      <li><p><i class=txn lang=mez>na͞emwah</i> <q class=tln>s/he sees it (inan.)</q> (TI)</p></li>
+    </ol>
+  </li>
+
+</ol>
+</div>
+
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;ol class&#x3D;examples style&#x3D;&quot;counter-reset: examples;&quot;&gt;
+
+  &lt;li class&#x3D;ex&gt;
+
+    &lt;p class&#x3D;ex-header&gt;Plains Cree (Algonquian)&lt;/p&gt;
+
+    &lt;table&gt;
+      &lt;tr&gt;
+        &lt;td class&#x3D;txn lang&#x3D;crk&gt;asam&lt;/td&gt;
+        &lt;td class&#x3D;tln&gt;feed him/her/it&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td class&#x3D;txn lang&#x3D;crk&gt;asām&lt;/td&gt;
+        &lt;td class&#x3D;tln&gt;a snowshoe&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td class&#x3D;txn lang&#x3D;crk&gt;askihk&lt;/td&gt;
+        &lt;td class&#x3D;tln&gt;a pail&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td class&#x3D;txn lang&#x3D;crk&gt;askīhk&lt;/td&gt;
+        &lt;td class&#x3D;tln&gt;on the land/earth&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;
+
+    &lt;p class&#x3D;ex-source&gt;Okimāsis. 2018. &lt;cite&gt;Cree: Language of the Plains / nehiyawewin: paskwāwi-pīkiskwēwin&lt;/cite&gt;&lt;/p&gt;
+
+  &lt;/li&gt;
+
+  &lt;li class&#x3D;&#x27;ex igl&#x27;&gt;
+
+    &lt;p class&#x3D;ex-header&gt;Chitimacha (isolate)&lt;/p&gt;
+
+    &lt;p class&#x3D;txn lang&#x3D;ctm&gt;siksi&lt;em&gt;nk&lt;/em&gt; his heːčtiʔi&lt;/p&gt;
+
+    &lt;ol class&#x3D;words&gt;
+
+      &lt;li class&#x3D;word&gt;
+        &lt;span class&#x3D;w-m lang&#x3D;ctm&gt;siksi‑&lt;em&gt;nk&lt;/em&gt;&lt;/span&gt;
+        &lt;span class&#x3D;w-gl&gt;eagle‑&lt;abbr title&#x3D;unknown&gt;??&lt;/abbr&gt;&lt;/span&gt;
+      &lt;/li&gt;
+
+      &lt;li class&#x3D;word&gt;
+        &lt;span class&#x3D;w-m lang&#x3D;ctm&gt;his&lt;/span&gt;
+        &lt;span class&#x3D;w-gl&gt;&lt;abbr title&#x3D;responsive&gt;resp&lt;/abbr&gt;&lt;/span&gt;
+      &lt;/li&gt;
+
+      &lt;li class&#x3D;word&gt;
+        &lt;span class&#x3D;w-m lang&#x3D;ctm&gt;heːčt‑iʔi&lt;/span&gt;
+        &lt;span class&#x3D;w-gl&gt;call‑&lt;abbr title&#x3D;non-first&gt;nf&lt;/abbr&gt;;&lt;abbr title&#x3D;singular&gt;sg&lt;/abbr&gt;&lt;/span&gt;
+      &lt;/li&gt;
+
+    &lt;/ol&gt;
+
+    &lt;p class&#x3D;tln&gt;an eagle met him&lt;/p&gt;
+
+    &lt;p class&#x3D;ex-source&gt;Swadesh 1939b: A1b.1&lt;/p&gt;
+
+  &lt;/li&gt;
+
+  &lt;li class&#x3D;ex&gt;
+    &lt;p class&#x3D;ex-header&gt;Menominee (Algonquian)&lt;/p&gt;
+    &lt;ol class&#x3D;subexamples&gt;
+      &lt;li&gt;&lt;p&gt;&lt;i class&#x3D;txn lang&#x3D;mez&gt;pāpaehcen&lt;/i&gt; &lt;q class&#x3D;tln&gt;he, she, it (anim.) falls&lt;/q&gt; (AI)&lt;/p&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;p&gt;&lt;i class&#x3D;txn lang&#x3D;mez&gt;pāpaehnaen&lt;/i&gt; &lt;q clas&#x3D;translation&gt;it (inan.) falls&lt;/q&gt; (II)&lt;/p&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+
+  &lt;li class&#x3D;ex&gt;
+    &lt;p class&#x3D;ex-header&gt;Menominee (Algonquian)&lt;/p&gt;
+    &lt;ol class&#x3D;subexamples&gt;
+      &lt;li&gt;&lt;p&gt;&lt;i class&#x3D;txn lang&#x3D;mez&gt;na͞ewa͞ew&lt;/i&gt; &lt;q class&#x3D;tln&gt;s/he sees him, her, it (anim.)&lt;/q&gt; (TA)&lt;/p&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;p&gt;&lt;i class&#x3D;txn lang&#x3D;mez&gt;na͞emwah&lt;/i&gt; &lt;q class&#x3D;tln&gt;s/he sees it (inan.)&lt;/q&gt; (TI)&lt;/p&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+
+&lt;/ol&gt;
+</code></pre>
+                </article>
+
+            </header>
+    </section>
+    <!-- /documentation. -->
+
+
+
+  <!-- scripts. -->
+  <script src="kss-assets/vendor/jquery.js"></script>
+  <script src="kss-assets/vendor/prism.js"></script>
+  <script src="kss-assets/js/kss.js"></script>
+  
+  <!-- /scripts. -->
+
+  </body>
+</html>
