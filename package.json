@@ -37,7 +37,7 @@
     "kss": "^3.0.1",
     "less": "^4.1.1",
     "michelangelo": "^0.8.0",
-    "ora": "^5.4.1",
+    "ora": "^6.0.0",
     "recursive-readdir": "^2.2.2",
     "stylelint": "^13.13.1"
   }
