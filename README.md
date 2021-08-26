@@ -53,5 +53,7 @@ That's all there is to it! Each component has its own standalone CSS file with n
 
 * DLx styles are available either as standalone CSS files or [LESS files][LESS] files. LESS files must be compiled to CSS before you can use them, whereas CSS files can be used in your HTML project as is. See the [LESS website][LESS] for details on compiling LESS to CSS.
 
+* If you want transcriptions and other linguistic data to display in a different font that supports IPA characters, you can also include `typography.css` (or `typography.less`) in your project. Alternatively, you can assign your own values for `--font-unicode-sans` and `--font-unicode-serif`. The typography file is already included in the `dlx.css` / `dlx.less` bundle.
+
 [GitHub]: https://github.com/digitallinguistics/styles/
 [LESS]:   http://lesscss.org/

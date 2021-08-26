@@ -36,6 +36,7 @@ node_modules
 .DS_Store
 .DS_Store?
 
-# Custom
+# Project
+.idea
 Thumbs.db
 nodemon.json
