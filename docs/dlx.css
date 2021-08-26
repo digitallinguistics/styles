@@ -292,6 +292,7 @@ This file bundles all the DLx styles into a single file.
   display: flex;
   flex-direction: column;
   margin-block-end: var(--igl-vertical-spacing);
+  margin-block-start: var(--igl-vertical-spacing);
 }
 .ling-document .igl .morpheme > *,
 .ling-document .interlinear .morpheme > *,
@@ -315,7 +316,6 @@ This file bundles all the DLx styles into a single file.
   --txn-padding: 0.15em;
   font-family: var(--font-unicode-serif);
   margin: 0em;
-  margin-block-end: var(--igl-vertical-spacing);
   padding: 0em;
 }
 .ling-document .igl .txn b,
@@ -693,6 +693,7 @@ This file bundles all the DLx styles into a single file.
   display: flex;
   flex-direction: column;
   margin-block-end: var(--igl-vertical-spacing);
+  margin-block-start: var(--igl-vertical-spacing);
 }
 .igl .morpheme > *,
 .interlinear .morpheme > *,
@@ -716,7 +717,6 @@ This file bundles all the DLx styles into a single file.
   --txn-padding: 0.15em;
   font-family: var(--font-unicode-serif);
   margin: 0em;
-  margin-block-end: var(--igl-vertical-spacing);
   padding: 0em;
 }
 .igl .txn b,

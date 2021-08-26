@@ -101,7 +101,12 @@
 <p>That's all there is to it! Each component has its own standalone CSS file with no dependencies, so you do not need to use the entire set of DLx styles unless you want to. You can use all the DLx styles at once by including the <code>dlx.css</code> file in your project instead of files for individual components. This will automatically apply styling for many components, and make the rest of the DLx CSS classes available for use in your HTML.</p>
 <h2>Notes</h2>
 <ul>
-<li>DLx styles are available either as standalone CSS files or <a href="http://lesscss.org/">LESS files</a> files. LESS files must be compiled to CSS before you can use them, whereas CSS files can be used in your HTML project as is. See the <a href="http://lesscss.org/">LESS website</a> for details on compiling LESS to CSS.</li>
+<li>
+<p>DLx styles are available either as standalone CSS files or <a href="http://lesscss.org/">LESS files</a> files. LESS files must be compiled to CSS before you can use them, whereas CSS files can be used in your HTML project as is. See the <a href="http://lesscss.org/">LESS website</a> for details on compiling LESS to CSS.</p>
+</li>
+<li>
+<p>If you want transcriptions and other linguistic data to display in a different font that supports IPA characters, you can also include <code>typography.css</code> (or <code>typography.less</code>) in your project. Alternatively, you can assign your own values for <code>--font-unicode-sans</code> and <code>--font-unicode-serif</code>. The typography file is already included in the <code>dlx.css</code> / <code>dlx.less</code> bundle.</p>
+</li>
 </ul>
 
         </article>
