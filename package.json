@@ -4,7 +4,7 @@
   "description": "A collection of patterns for styling linguistic data on the web",
   "homepage": "https://github.com/digitallinguistics/styles",
   "bugs": "https://github.com/digitallinguistics/styles/issues",
-  "license": "MIT",
+  "license": "ISC",
   "author": {
     "name": "Daniel W. Hieber",
     "url": "https://danielhieber.com"
