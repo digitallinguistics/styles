@@ -42,6 +42,6 @@
     "michelangelo": "^0.8.0",
     "ora": "^6.1.0",
     "recursive-readdir": "^2.2.2",
-    "stylelint": "^14.8.3"
+    "stylelint": "^15.10.1"
   }
 }
