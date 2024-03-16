@@ -1,3 +1,4 @@
+@import (reference) 'abbreviation/abbreviation.less';
 @import (reference) 'emphasis/emphasis.less';
 @import (reference) 'gloss/gloss.less';
 @import (reference) 'transcription/transcription.less';
@@ -190,7 +191,10 @@
   // Grammatical glosses are displayed in small caps and indicated with either the `.gl` or `.gloss` classes, or by wrapping the gloss in an `<abbr>` tag. Best practice is to include a `title` attribute on grammatical glosses, indicating the term that the gloss stands for; this allows the user to hover over the gloss for its definition. See the [grammatical gloss](#kssref-components-gloss) component.
   //
   // Styleguide components.interlinear.glosses
-  abbr, .gl, .gloss { .gl; }
+  abbr, .abbr, .abbreviation, .gl, .gloss {
+    .abbr;
+    .gl;
+  }
 
   // Example Emphasis
   //
