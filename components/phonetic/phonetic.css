@@ -1,1 +1,0 @@
-.fon,.phonetic{--txn-padding:0.15em;font-family:var(--font-unicode-serif)}.fon .em,.fon .emphasis,.fon b,.fon em,.phonetic .em,.phonetic .emphasis,.phonetic b,.phonetic em{color:var(--em-color);font-weight:700}.fon::before,.phonetic::before{content:'[';padding-right:var(--txn-padding)}.fon::after,.phonetic::after{content:']';padding-left:var(--txn-padding)}
