@@ -1,0 +1,14 @@
+q, .q, .inline-tln {
+
+  display: inline;
+  quotes : '‘' '’' '“' '”';
+
+  &::before {
+    content: open-quote;
+  }
+
+  &::after {
+    content: close-quote;
+  }
+
+}

@@ -218,6 +218,11 @@
     margin-block: 0em;
   }
 
+  // This gets the element immediately before the example source to display as inline, so that the source floats correctly.
+  :has(+ .ex-source) {
+    display: inline;
+  }
+
   .lit, .literal {
     margin : 0em;
     padding: 0em;
@@ -261,7 +266,7 @@
 
   .tln, .translation {
     .tln;
-    margin:  0em;
+    margin : 0em;
     padding: 0em;
   }
 
