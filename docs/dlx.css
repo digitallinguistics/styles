@@ -10,33 +10,12 @@ This file bundles all the DLx styles into a single file.
 .cite {
   font-style: italic;
 }
-.dfn,
-.definition {
-  font-style: italic;
-}
 .ling-document {
   counter-reset: examples;
   font-family: var(--font-unicode-serif);
 }
-.ling-document abbr,
-.ling-document .abbr,
-.ling-document .abbreviation {
-  cursor: help;
-  text-decoration: dotted underline;
-  text-underline-position: under;
-}
-.ling-document cite,
-.ling-document .cite {
-  font-style: italic;
-}
-.ling-document dfn,
-.ling-document .dfn,
-.ling-document .definition {
-  font-style: italic;
-}
 .ling-document .ex,
 .ling-document .example {
-  display: flow-root;
   font-family: var(--font-unicode-serif);
   line-height: 1.5;
 }
@@ -47,21 +26,19 @@ This file bundles all the DLx styles into a single file.
 .ling-document .ex .em,
 .ling-document .example .em,
 .ling-document .ex .emphasis,
-.ling-document .example .emphasis {
+.ling-document .example .emphasis,
+.ling-document .ex strong,
+.ling-document .example strong {
   color: var(--em-color);
   font-weight: bold;
 }
 .ling-document .ex-header {
-  margin: 0em;
-  padding: 0em;
   text-decoration: underline;
   text-underline-position: under;
 }
 .ling-document .ex-source {
   float: right;
   float: inline-end;
-  margin: 0em;
-  padding: 0em;
 }
 .ling-document .ex-source::before {
   content: '(';
@@ -74,13 +51,9 @@ This file bundles all the DLx styles into a single file.
   --example-indent: 1.5em;
   font-family: var(--font-unicode-serif);
   list-style-type: none;
-  margin: 0em;
-  padding: 0em;
 }
 .ling-document .exs .ex-header,
 .ling-document .examples .ex-header {
-  margin: 0em;
-  padding: 0em;
   text-decoration: underline;
   text-underline-position: under;
 }
@@ -88,8 +61,6 @@ This file bundles all the DLx styles into a single file.
 .ling-document .examples .ex-source {
   float: right;
   float: inline-end;
-  margin: 0em;
-  padding: 0em;
 }
 .ling-document .exs .ex-source::before,
 .ling-document .examples .ex-source::before {
@@ -114,7 +85,6 @@ This file bundles all the DLx styles into a single file.
 .ling-document .examples .ex,
 .ling-document .exs .example,
 .ling-document .examples .example {
-  display: flow-root;
   font-family: var(--font-unicode-serif);
   line-height: 1.5;
   counter-increment: examples;
@@ -137,7 +107,11 @@ This file bundles all the DLx styles into a single file.
 .ling-document .exs .ex .emphasis,
 .ling-document .examples .ex .emphasis,
 .ling-document .exs .example .emphasis,
-.ling-document .examples .example .emphasis {
+.ling-document .examples .example .emphasis,
+.ling-document .exs .ex strong,
+.ling-document .examples .ex strong,
+.ling-document .exs .example strong,
+.ling-document .examples .example strong {
   color: var(--em-color);
   font-weight: bold;
 }
@@ -219,7 +193,9 @@ This file bundles all the DLx styles into a single file.
 .ling-document .inex .em,
 .ling-document .inline-ex .em,
 .ling-document .inex .emphasis,
-.ling-document .inline-ex .emphasis {
+.ling-document .inline-ex .emphasis,
+.ling-document .inex strong,
+.ling-document .inline-ex strong {
   color: var(--em-color);
   font-weight: bold;
 }
@@ -247,14 +223,14 @@ This file bundles all the DLx styles into a single file.
 .ling-document .igl .em,
 .ling-document .interlinear .em,
 .ling-document .igl .emphasis,
-.ling-document .interlinear .emphasis {
+.ling-document .interlinear .emphasis,
+.ling-document .igl strong,
+.ling-document .interlinear strong {
   color: var(--em-color);
   font-weight: bold;
 }
 .ling-document .igl .ex-header,
 .ling-document .interlinear .ex-header {
-  margin: 0em;
-  padding: 0em;
   text-decoration: underline;
   text-underline-position: under;
   margin-block-end: var(--igl-vertical-spacing);
@@ -263,8 +239,6 @@ This file bundles all the DLx styles into a single file.
 .ling-document .interlinear .ex-source {
   float: right;
   float: inline-end;
-  margin: 0em;
-  padding: 0em;
 }
 .ling-document .igl .ex-source::before,
 .ling-document .interlinear .ex-source::before {
@@ -341,6 +315,7 @@ This file bundles all the DLx styles into a single file.
 .ling-document .interlinear .tln,
 .ling-document .igl .translation,
 .ling-document .interlinear .translation {
+  display: inline;
   quotes: '‘' '’' '“' '”';
   margin: 0em;
   padding: 0em;
@@ -444,6 +419,7 @@ This file bundles all the DLx styles into a single file.
 .ling-document q,
 .ling-document .tln,
 .ling-document .translation {
+  display: inline;
   quotes: '‘' '’' '“' '”';
 }
 .ling-document q::before,
@@ -463,7 +439,6 @@ This file bundles all the DLx styles into a single file.
 }
 .ex,
 .example {
-  display: flow-root;
   font-family: var(--font-unicode-serif);
   line-height: 1.5;
 }
@@ -474,21 +449,19 @@ This file bundles all the DLx styles into a single file.
 .ex .em,
 .example .em,
 .ex .emphasis,
-.example .emphasis {
+.example .emphasis,
+.ex strong,
+.example strong {
   color: var(--em-color);
   font-weight: bold;
 }
 .ex-header {
-  margin: 0em;
-  padding: 0em;
   text-decoration: underline;
   text-underline-position: under;
 }
 .ex-source {
   float: right;
   float: inline-end;
-  margin: 0em;
-  padding: 0em;
 }
 .ex-source::before {
   content: '(';
@@ -501,13 +474,9 @@ This file bundles all the DLx styles into a single file.
   --example-indent: 1.5em;
   font-family: var(--font-unicode-serif);
   list-style-type: none;
-  margin: 0em;
-  padding: 0em;
 }
 .exs .ex-header,
 .examples .ex-header {
-  margin: 0em;
-  padding: 0em;
   text-decoration: underline;
   text-underline-position: under;
 }
@@ -515,8 +484,6 @@ This file bundles all the DLx styles into a single file.
 .examples .ex-source {
   float: right;
   float: inline-end;
-  margin: 0em;
-  padding: 0em;
 }
 .exs .ex-source::before,
 .examples .ex-source::before {
@@ -541,7 +508,6 @@ This file bundles all the DLx styles into a single file.
 .examples .ex,
 .exs .example,
 .examples .example {
-  display: flow-root;
   font-family: var(--font-unicode-serif);
   line-height: 1.5;
   counter-increment: examples;
@@ -564,7 +530,11 @@ This file bundles all the DLx styles into a single file.
 .exs .ex .emphasis,
 .examples .ex .emphasis,
 .exs .example .emphasis,
-.examples .example .emphasis {
+.examples .example .emphasis,
+.exs .ex strong,
+.examples .ex strong,
+.exs .example strong,
+.examples .example strong {
   color: var(--em-color);
   font-weight: bold;
 }
@@ -620,7 +590,9 @@ This file bundles all the DLx styles into a single file.
 .inex .em,
 .inline-ex .em,
 .inex .emphasis,
-.inline-ex .emphasis {
+.inline-ex .emphasis,
+.inex strong,
+.inline-ex strong {
   color: var(--em-color);
   font-weight: bold;
 }
@@ -648,14 +620,14 @@ This file bundles all the DLx styles into a single file.
 .igl .em,
 .interlinear .em,
 .igl .emphasis,
-.interlinear .emphasis {
+.interlinear .emphasis,
+.igl strong,
+.interlinear strong {
   color: var(--em-color);
   font-weight: bold;
 }
 .igl .ex-header,
 .interlinear .ex-header {
-  margin: 0em;
-  padding: 0em;
   text-decoration: underline;
   text-underline-position: under;
   margin-block-end: var(--igl-vertical-spacing);
@@ -664,8 +636,6 @@ This file bundles all the DLx styles into a single file.
 .interlinear .ex-source {
   float: right;
   float: inline-end;
-  margin: 0em;
-  padding: 0em;
 }
 .igl .ex-source::before,
 .interlinear .ex-source::before {
@@ -742,6 +712,7 @@ This file bundles all the DLx styles into a single file.
 .interlinear .tln,
 .igl .translation,
 .interlinear .translation {
+  display: inline;
   quotes: '‘' '’' '“' '”';
   margin: 0em;
   padding: 0em;
@@ -865,6 +836,7 @@ This file bundles all the DLx styles into a single file.
 }
 .tln,
 .translation {
+  display: inline;
   quotes: '‘' '’' '“' '”';
 }
 .tln::before,
