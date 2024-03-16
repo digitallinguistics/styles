@@ -1,5 +1,4 @@
 @import (reference) 'emphasis/emphasis.less';
-@import (reference) 'example/example.less';
 @import (reference) 'gloss/gloss.less';
 @import (reference) 'transcription/transcription.less';
 @import (reference) 'translation/translation.less';
@@ -182,6 +181,7 @@
   // Styleguide components.interlinear.--igl-vertical-spacing
   --igl-vertical-spacing: 0.25em;
 
+  display    : block;
   font-family: var(--font-unicode-serif);
   line-height: 1.5;
 
@@ -197,26 +197,22 @@
   // Emphasis is indicated using either `<em>` or `<b>` tags (both are semantically valid for this use case), or the `.em` class. See the [example emphasis](#kssref-components-emphasis) component.
   //
   // Styleguide components.interlinear.emphasis
-  b, em, .em, .emphasis {
+  b, em, .em, .emphasis, strong {
     .em;
   }
 
   // Example Header
   //
-  // Example headers (containing information about the interlinear example) are given the `.ex-header` class and styled with an underline. See the [example component](#kssref-components-example) for a demonstration of an example header in use.
+  // Example headers (containing information about the interlinear example) are given the `.ex-header` class and styled with an underline. See the [example header component](#kssref-components-example-header) for a demonstration of an example header in use.
   //
   // Styleguide components.interlinear.ex-header
   .ex-header {
-    .ex-header;
     margin-block-end: var(--igl-vertical-spacing);
   }
 
-  // Example Source
-  //
-  // The source of an example is indicated with the `.ex-source` class and styled with enclosing parentheses. See the [example component](#kssref-components-example) for a demonstration of an example source in use.
-  //
-  // Styleguide components.interlinear.ex-source
-  .ex-source { .ex-source; }
+  .ex-source {
+    margin-block: 0em;
+  }
 
   .morphemes,
   .words {
