@@ -38,5 +38,5 @@ node_modules
 
 # Project
 .idea
-Thumbs.db
 nodemon.json
+Thumbs.db
