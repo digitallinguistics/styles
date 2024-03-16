@@ -1,6 +1,3 @@
-@import (reference) 'emphasis/emphasis.less';
-@import (reference) 'example/example.less';
-
 // Examples
 //
 // A set of one or more linguistic examples. By convention, examples in linguistics publications are numbered (1), (2), (3), etc. To number the examples, wrap them in an `<ol class=examples>` tag, and place each example in a `<li class=ex>` element. All content within an example displays in a serif Unicode font by default; you may need to override the font family for individual elements. `<b>` and `<em>` tags within examples are styled with the `.em` class by default (see the [example emphasis](#kssref-components-emphasis) component).
@@ -23,29 +20,27 @@
   // Styleguide components.examples.--example-indent
   --example-indent: 1.5em;
 
-  .ex-header { .ex-header; }
-  .ex-source { .ex-source; }
+  // --example-margin
+  //
+  // How much spacing to place before and after each example in the list. Defaults to 1em.
+  //
+  // Styleguide components.examples.--example-margin
+  --example-margin: 1em;
 
-  font-family:     var(--font-unicode-serif);
   list-style-type: none;
-  margin:          0em;
-  padding:         0em;
-
-  b, em, .em, .emphasis {
-    .em;
-  }
 
   .ex, .example {
 
-    .ex;
-    counter-increment:   examples;
-    margin-block-end:    1em;
+    counter-increment  : examples;
+    display            : list-item;
+    margin-block       : var(--example-margin);
     margin-inline-start: var(--example-indent);
-    position:            relative;
+    position           : relative;
 
     &::before {
       content:             '(' counter(examples) ')';
       margin-inline-start: calc(var(--example-indent) * -1);
+      margin-inline-end:   var(--example-indent);
       position:            absolute;
     }
 
@@ -53,10 +48,12 @@
 
   .subexs, .subexamples {
 
-    margin-inline-start: 1.25em;
-    padding:             0em;
+    display            : inline-block;
+    margin-inline-start: var(--example-indent);
+    padding            : 0em;
     list-style-position: outside;
-    list-style-type:     lower-alpha;
+    list-style-type    : lower-alpha;
+    vertical-align     : top;
 
     li {
       display: list-item;
