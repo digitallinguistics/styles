@@ -1,42 +1,97 @@
-@import (reference) 'abbreviation/abbreviation.less';
-@import (reference) 'cite/cite.less';
-@import (reference) 'definition/definition.less';
-@import (reference) 'example/example.less';
-@import (reference) 'examples/examples.less';
-@import (reference) 'gloss/gloss.less';
-@import (reference) 'inline-example/inline-example.less';
-@import (reference) 'interlinear/interlinear.less';
-@import (reference) 'orthographic/orthographic.less';
-@import (reference) 'phonemic/phonemic.less';
-@import (reference) 'phonetic/phonetic.less';
-@import (reference) 'transcription/transcription.less';
-
 // Document
 //
-// A linguistics article, book chapter, abstract, book, etc. The `.ling-document` class applies various component styles to its contents. It also applies a counter reset for linguistic examples, and uses a serif Unicode font by default.
+// A linguistics article, book chapter, abstract, book, etc. Most of the styles in this file handle counters for examples, figures, etc. The sectioning hierarchy is: ling-document > section > subsection > subsubsection > paragraph > subparagraph. Note that the `.paragraph` class is different than the `.p` class. `.paragraph` is for sectioning, while `.p` is specifically for styling `<p>` elements within a ling-document.
 //
 // Markup: document.html
 //
 // Styleguide components.document
 .ling-document {
 
-  counter-reset: examples;
+  counter-reset: examples figures sections;
   font-family:   var(--font-unicode-serif);
 
-  abbr, .abbr, .abbreviation { .abbr; }
-  cite, .cite                { .cite; }
-  dfn, .dfn, .definition     { .dfn; }
-  .ex, .example              { .ex; }
-  .ex-header                 { .ex-header; }
-  .ex-source                 { .ex-source; }
-  .exs, .examples            { .examples; }
-  .fon, .phonetic            { .fon; }
-  .gl, .gloss                { .gl; }
-  .inex, .inline-ex          { .inex; }
-  .igl, .interlinear         { .igl; }
-  .ortho, .orthographic      { .ortho; }
-  .phon, .phonemic           { .phon; }
-  i, .txn, .transcription    { .txn; }
-  q, .tln, .translation      { .tln; }
+  p a { .link; }
+
+  figcaption::before {
+    content          : 'Figure ' counter(figures) ':';
+    font-weight      : bold;
+    margin-inline-end: var(--counter-margin);
+  }
+
+  .figure {
+    counter-increment: figures;
+  }
+
+  h2 {
+
+    counter-increment: sections;
+
+    &::before {
+      content          : counter(sections) '.';
+      margin-inline-end: var(--counter-margin);
+    }
+
+  }
+
+  h3 {
+
+    counter-increment: subsections;
+
+    &::before {
+      content          : counter(sections) '.' counter(subsections) '.';
+      margin-inline-end: var(--counter-margin);
+    }
+
+  }
+
+  h4 {
+
+    counter-increment: subsubsections;
+
+    &::before {
+      content          : counter(sections) '.' counter(subsections) '.' counter(subsubsections) '.';
+      margin-inline-end: var(--counter-margin);
+    }
+
+  }
+
+  h5 {
+
+    counter-increment: paragraphs;
+
+    &::before {
+      content          : counter(sections) '.' counter(subsections) '.' counter(subsubsections) '.' counter(paragraphs) '.';
+      margin-inline-end: var(--counter-margin);
+    }
+
+  }
+
+  h6 {
+
+    counter-increment: subparagraphs;
+
+    &::before {
+      content          : counter(sections) '.' counter(subsections) '.' counter(subsubsections) '.' counter(paragraphs) '.' counter(subparagraphs) '.';
+      margin-inline-end: var(--counter-margin);
+    }
+
+  }
+
+  .paragraph {
+    counter-reset: subparagraphs;
+  }
+
+  .section {
+    counter-reset: subsections;
+  }
+
+  .subsection {
+    counter-reset: subsubsections;
+  }
+
+  .subsubsection {
+    counter-reset: paragraphs;
+  }
 
 }
+
