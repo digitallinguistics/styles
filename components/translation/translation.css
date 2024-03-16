@@ -1,1 +1,0 @@
-.tln,.translation{display:inline;quotes:'‘' '’' '“' '”'}.tln::before,.translation::before{content:open-quote}.tln::after,.translation::after{content:close-quote}
