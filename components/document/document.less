@@ -10,8 +10,6 @@
   counter-reset: examples figures sections;
   font-family:   var(--font-unicode-serif);
 
-  p a { .link; }
-
   figcaption::before {
     content          : 'Figure ' counter(figures) ':';
     font-weight      : bold;
@@ -75,6 +73,10 @@
       margin-inline-end: var(--counter-margin);
     }
 
+  }
+
+  p {
+    margin: 0.5em 0em;
   }
 
   .paragraph {
