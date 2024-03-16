@@ -1,19 +1,32 @@
 // Emphasis
 //
-// Emphasis is indicated in examples and interlinear glossed examples with the`.em` class. In [interlinear glosses](#kssref-components-interlinear), [examples](#kssref-components-example), or [lists of examples](#kssref-components-examples), `<b>` and `<em>` tags are automatically given emphasis styling.
+// These classes are intended for use in prose. The emphasis styles applied within interlinear examples are slightly different, and are applied with the `.igl` or `.interlinear` classes instead. For prose emphasis, you probably want to add style rules that are scoped to the paragraph or other containing element, like this: `p em { .em; }`.
 //
 // Markup: emphasis.html
 //
 // Styleguide components.emphasis
-.em, .emphasis {
-  color:       var(--em-color);
+
+// <b>
+.attn, .attention {
   font-weight: bold;
 }
 
+// <em>
+.em, .emphasis {
+  font-style: italic;
+}
+
+// <i>
+.i, .idiomatic {
+  font-style: italic;
+}
+
+// <strong>
 .strong {
   font-weight: bold;
 }
 
+// <u>
 .u, .underline {
   text-decoration: underline;
 }

@@ -8,7 +8,10 @@
 .tln,
 .translation {
 
-  quotes: '‘' '’' '“' '”';
+  cursor     : copy;
+  display    : inline;
+  quotes     : '‘' '’' '“' '”';
+  user-select: all;
 
   &::before {
     content: open-quote;
@@ -17,5 +20,4 @@
   &::after {
     content: close-quote;
   }
-
 }
