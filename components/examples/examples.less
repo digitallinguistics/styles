@@ -29,11 +29,15 @@
 
   list-style-type: none;
 
+  // Placing this here lowers its specificity, allowing for other display options in 2-column formats, etc.
+  li {
+    display: list-item;
+  }
+
   .ex, .example {
 
     counter-increment  : examples;
     counter-reset      : subexamples;
-    display            : list-item;
     margin-block       : var(--example-margin);
     margin-inline-start: var(--example-indent);
     position           : relative;
@@ -47,6 +51,22 @@
 
   }
 
+  .two-col {
+    li {
+      column-gap           : 1em;
+      display              : grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .three-col {
+    li {
+      column-gap           : 1em;
+      display              : grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
   .subexs, .subexamples {
 
     display            : inline-block;
@@ -56,7 +76,7 @@
 
     li {
       counter-increment: subexamples;
-      display          : list-item;
+      padding-block-end: 0.5em;
     }
 
     li::before {
