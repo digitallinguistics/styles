@@ -41,3 +41,5 @@ node_modules
 nodemon.json
 Thumbs.db
 docs
+**/*.css
+dlx.css
