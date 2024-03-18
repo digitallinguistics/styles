@@ -29,6 +29,9 @@ jobs:
         if:   steps.cache.outputs.cache-hit != 'true'
         run:  npm ci
 
+      - name: build
+        run:  npm run build
+
       - name: publish to npm
         run:  npm publish
         env:
@@ -45,3 +48,10 @@ jobs:
         run:  npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          cname:        styles.digitallinguistics.io
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir:  ./docs
