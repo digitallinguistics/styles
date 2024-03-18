@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DLx Styles Library</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="generator" content="kss-node">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,300">
+    <link rel="stylesheet" href="kss-assets/vendor/prism.css">
+    <link rel="stylesheet" href="kss-assets/css/kss.css">
+    <link rel="stylesheet" href="./dlx.css"/>
+<link rel="stylesheet" href="./docs.css"/>
+
+  </head>
+
+  <body class="kss-body">
+
+    <!-- header. -->
+    <header class="kss-header">
+      <section class="kss-header__inner">
+        <a class="kss-header__hamburger-trigger">
+          <div class="kss-header__hamburger"></div>
+        </a>
+        <h1 class="kss-header__title kss-title">DLx Styles Library</h1>
+      </section>
+    </header>
+    <!-- /header. -->
+
+
+    <!-- navigation. -->
+    <section class="kss-navigation">
+      <h1 class="kss-navigation__title kss-title">DLx Styles Library</h1>
+      <ul class="kss-nav">
+        <li class="kss-nav__item">
+          <a href="index.html">
+            <span class="kss-nav__ref">0</span>
+            <span class="kss-nav__name">Introduction</span>
+          </a>
+        </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-typography.html">
+              <span class="kss-nav__ref">1</span>
+              <span class="kss-nav__name">Typography</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-components.html">
+              <span class="kss-nav__ref">2</span>
+              <span class="kss-nav__name">Components</span>
+            </a>
+          </li>
+      </ul>
+    </section>
+    <!-- /navigation. -->
+
+
+    <!-- documentation. -->
+    <section class="kss-documentation">
+
+        <!--
+          display each section, in order.
+          the "root" element comes first in this loop, and can be detected using
+          the "#if @first" block as seen below.
+        -->
+            <header class="kss-section kss-section--depth-3" id="kssref-components-interlinear---igl-horizontal-spacing">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>../components/interlinear/interlinear.less</span>, line <span>91</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-components-interlinear---igl-horizontal-spacing">
+                <h3 class="kss-section__item kss-section__item--depth-3">
+                  <span class="kss-section__ref">2.11.2</span>
+                  <span class="kss-section__name">--igl-horizontal-spacing</span>
+                </h3>
+              </a>
+
+                <div class="kss-section__description"><p>The amount of space to place between words / morphemes in the analysis lines. Default: <code>1.25em</code>.</p>
+</div>
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Example</h1>
+
+
+                <div class="kss-modifiers__example"><div class=igl style="--igl-horizontal-spacing: 0.25em;">
+  <p class=ex-header><code>.igl { --igl-horizontal-spacing: 0.25em; }</code></p>
+  <p class=txn lang=ctm>siksi<em>nk</em> his heːčtiʔi</p>
+  <ol class=words>
+    <li class=word>
+      <span class=w-m lang=ctm>siksi‑<em>nk</em></span>
+      <span class=w-gl>eagle‑<abbr title=unknown>??</abbr></span>
+    </li>
+    <li class=word>
+      <span class=w-m lang=ctm>his</span>
+      <span class=w-gl><abbr title=responsive>resp</abbr></span>
+    </li>
+    <li class=word>
+      <span class=w-m lang=ctm>heːčt‑iʔi</span>
+      <span class=w-gl>call‑<abbr title=non-first>nf</abbr>;<abbr title=singular>sg</abbr></span>
+    </li>
+  </ol>
+  <p class=tln>an eagle met him</p>
+</div>
+<div class=igl style="--igl-horizontal-spacing: 1.25em;">
+  <p class=ex-header><code>.igl { --igl-horizontal-spacing: 1.25em; }</code></p>
+  <p class=txn lang=ctm>siksi<em>nk</em> his heːčtiʔi</p>
+  <ol class=words>
+    <li class=word>
+      <span class=w-m lang=ctm>siksi‑<em>nk</em></span>
+      <span class=w-gl>eagle‑<abbr title=unknown>??</abbr></span>
+    </li>
+    <li class=word>
+      <span class=w-m lang=ctm>his</span>
+      <span class=w-gl><abbr title=responsive>resp</abbr></span>
+    </li>
+    <li class=word>
+      <span class=w-m lang=ctm>heːčt‑iʔi</span>
+      <span class=w-gl>call‑<abbr title=non-first>nf</abbr>;<abbr title=singular>sg</abbr></span>
+    </li>
+  </ol>
+  <p class=tln>an eagle met him</p>
+</div></div>
+
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;div class&#x3D;igl style&#x3D;&quot;--igl-horizontal-spacing: 0.25em;&quot;&gt;
+  &lt;p class&#x3D;ex-header&gt;&lt;code&gt;.igl { --igl-horizontal-spacing: 0.25em; }&lt;/code&gt;&lt;/p&gt;
+  &lt;p class&#x3D;txn lang&#x3D;ctm&gt;siksi&lt;em&gt;nk&lt;/em&gt; his heːčtiʔi&lt;/p&gt;
+  &lt;ol class&#x3D;words&gt;
+    &lt;li class&#x3D;word&gt;
+      &lt;span class&#x3D;w-m lang&#x3D;ctm&gt;siksi‑&lt;em&gt;nk&lt;/em&gt;&lt;/span&gt;
+      &lt;span class&#x3D;w-gl&gt;eagle‑&lt;abbr title&#x3D;unknown&gt;??&lt;/abbr&gt;&lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li class&#x3D;word&gt;
+      &lt;span class&#x3D;w-m lang&#x3D;ctm&gt;his&lt;/span&gt;
+      &lt;span class&#x3D;w-gl&gt;&lt;abbr title&#x3D;responsive&gt;resp&lt;/abbr&gt;&lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li class&#x3D;word&gt;
+      &lt;span class&#x3D;w-m lang&#x3D;ctm&gt;heːčt‑iʔi&lt;/span&gt;
+      &lt;span class&#x3D;w-gl&gt;call‑&lt;abbr title&#x3D;non-first&gt;nf&lt;/abbr&gt;;&lt;abbr title&#x3D;singular&gt;sg&lt;/abbr&gt;&lt;/span&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+  &lt;p class&#x3D;tln&gt;an eagle met him&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class&#x3D;igl style&#x3D;&quot;--igl-horizontal-spacing: 1.25em;&quot;&gt;
+  &lt;p class&#x3D;ex-header&gt;&lt;code&gt;.igl { --igl-horizontal-spacing: 1.25em; }&lt;/code&gt;&lt;/p&gt;
+  &lt;p class&#x3D;txn lang&#x3D;ctm&gt;siksi&lt;em&gt;nk&lt;/em&gt; his heːčtiʔi&lt;/p&gt;
+  &lt;ol class&#x3D;words&gt;
+    &lt;li class&#x3D;word&gt;
+      &lt;span class&#x3D;w-m lang&#x3D;ctm&gt;siksi‑&lt;em&gt;nk&lt;/em&gt;&lt;/span&gt;
+      &lt;span class&#x3D;w-gl&gt;eagle‑&lt;abbr title&#x3D;unknown&gt;??&lt;/abbr&gt;&lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li class&#x3D;word&gt;
+      &lt;span class&#x3D;w-m lang&#x3D;ctm&gt;his&lt;/span&gt;
+      &lt;span class&#x3D;w-gl&gt;&lt;abbr title&#x3D;responsive&gt;resp&lt;/abbr&gt;&lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li class&#x3D;word&gt;
+      &lt;span class&#x3D;w-m lang&#x3D;ctm&gt;heːčt‑iʔi&lt;/span&gt;
+      &lt;span class&#x3D;w-gl&gt;call‑&lt;abbr title&#x3D;non-first&gt;nf&lt;/abbr&gt;;&lt;abbr title&#x3D;singular&gt;sg&lt;/abbr&gt;&lt;/span&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+  &lt;p class&#x3D;tln&gt;an eagle met him&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+                </article>
+
+            </header>
+    </section>
+    <!-- /documentation. -->
+
+
+
+  <!-- scripts. -->
+  <script src="kss-assets/vendor/jquery.js"></script>
+  <script src="kss-assets/vendor/prism.js"></script>
+  <script src="kss-assets/js/kss.js"></script>
+  
+  <!-- /scripts. -->
+
+  </body>
+</html>

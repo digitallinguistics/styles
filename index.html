@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DLx Styles Library</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="generator" content="kss-node">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,300">
+    <link rel="stylesheet" href="kss-assets/vendor/prism.css">
+    <link rel="stylesheet" href="kss-assets/css/kss.css">
+    <link rel="stylesheet" href="./dlx.css"/>
+<link rel="stylesheet" href="./docs.css"/>
+
+  </head>
+
+  <body class="kss-body">
+
+    <!-- header. -->
+    <header class="kss-header">
+      <section class="kss-header__inner">
+        <a class="kss-header__hamburger-trigger">
+          <div class="kss-header__hamburger"></div>
+        </a>
+        <h1 class="kss-header__title kss-title">DLx Styles Library</h1>
+      </section>
+    </header>
+    <!-- /header. -->
+
+
+    <!-- navigation. -->
+    <section class="kss-navigation">
+      <h1 class="kss-navigation__title kss-title">DLx Styles Library</h1>
+      <ul class="kss-nav">
+        <li class="kss-nav__item">
+          <a href="index.html">
+            <span class="kss-nav__ref">0</span>
+            <span class="kss-nav__name">Introduction</span>
+          </a>
+        </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-typography.html">
+              <span class="kss-nav__ref">1</span>
+              <span class="kss-nav__name">Typography</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-components.html">
+              <span class="kss-nav__ref">2</span>
+              <span class="kss-nav__name">Components</span>
+            </a>
+          </li>
+      </ul>
+    </section>
+    <!-- /navigation. -->
+
+
+    <!-- documentation. -->
+    <section class="kss-documentation">
+        <article class="kss-markdown">
+          <h1>Digital Linguistics (DLx) Pattern Library</h1>
+<p>Welcome to the Digital Linguistics (DLx) pattern library! This website demonstrates how to style linguistic data for presentation on the web using HTML and CSS. This project contains CSS styles and example HTML for various kinds of linguistic components—interlinear glossed examples, transcriptions, grammatical glosses, etc.</p>
+<p><a href="https://github.com/digitallinguistics/styles/">View the GitHub repository for this library.</a></p>
+<h2>Using the DLx Styles</h2>
+<p>To use the DLx styles in your project, start by including the CSS file(s) for the component(s) that you want to use in a <code>&lt;link rel=stylesheet&gt;</code> tag. For example, if you wanted to use the styling for an interlinear gloss, you would include the <code>interlinear.css</code> file in your HTML <code>&lt;head&gt;</code> tag like so:</p>
+<pre class="hljs"><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">stylesheet</span> <span class="hljs-attr">href</span>=<span class="hljs-string">interlinear.css</span>&gt;</span>
+</code></pre>
+<p>Next, make sure your HTML is formatted correctly so that the DLx styles will work. Each component in the pattern library has example markup showing how the HTML should be structured. For example, here is some valid HTML that uses the <code>.interlinear</code> class.</p>
+<pre class="hljs"><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">igl</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">ex-header</span>&gt;</span>Chitimacha (isolate)<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">txn</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">ctm</span>&gt;</span>siksi<span class="hljs-tag">&lt;<span class="hljs-name">em</span>&gt;</span>nk<span class="hljs-tag">&lt;/<span class="hljs-name">em</span>&gt;</span> his heːčtiʔi<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">ol</span> <span class="hljs-attr">class</span>=<span class="hljs-string">words</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">word</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">w-m</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">ctm</span>&gt;</span>siksi‑<span class="hljs-tag">&lt;<span class="hljs-name">em</span>&gt;</span>nk<span class="hljs-tag">&lt;/<span class="hljs-name">em</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">w-gl</span>&gt;</span>eagle‑<span class="hljs-tag">&lt;<span class="hljs-name">abbr</span> <span class="hljs-attr">title</span>=<span class="hljs-string">unknown</span>&gt;</span>??<span class="hljs-tag">&lt;/<span class="hljs-name">abbr</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">word</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">w-m</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">ctm</span>&gt;</span>his<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">w-gl</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">abbr</span> <span class="hljs-attr">title</span>=<span class="hljs-string">responsive</span>&gt;</span>resp<span class="hljs-tag">&lt;/<span class="hljs-name">abbr</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">word</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">w-m</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">ctm</span>&gt;</span>heːčt‑iʔi<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">w-gl</span>&gt;</span>call‑<span class="hljs-tag">&lt;<span class="hljs-name">abbr</span> <span class="hljs-attr">title</span>=<span class="hljs-string">non-first</span>&gt;</span>nf<span class="hljs-tag">&lt;/<span class="hljs-name">abbr</span>&gt;</span>;<span class="hljs-tag">&lt;<span class="hljs-name">abbr</span> <span class="hljs-attr">title</span>=<span class="hljs-string">singular</span>&gt;</span>sg<span class="hljs-tag">&lt;/<span class="hljs-name">abbr</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">tln</span>&gt;</span>an eagle met him<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">ex-source</span>&gt;</span>Swadesh 1939b: A1b.1<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<p>That's all there is to it! Each component has its own standalone CSS file with no dependencies, so you do not need to use the entire set of DLx styles unless you want to. You can use all the DLx styles at once by including the <code>dlx.css</code> file in your project instead of files for individual components. This will automatically apply styling for many components, and make the rest of the DLx CSS classes available for use in your HTML.</p>
+<h2>Notes</h2>
+<ul>
+<li>
+<p>DLx styles are available either as standalone CSS files or <a href="http://lesscss.org/">LESS files</a> files. LESS files must be compiled to CSS before you can use them, whereas CSS files can be used in your HTML project as is. See the <a href="http://lesscss.org/">LESS website</a> for details on compiling LESS to CSS.</p>
+</li>
+<li>
+<p>If you want transcriptions and other linguistic data to display in a different font that supports IPA characters, you can also include <code>typography.css</code> (or <code>typography.less</code>) in your project. Alternatively, you can assign your own values for <code>--font-unicode-sans</code> and <code>--font-unicode-serif</code>. The typography file is already included in the <code>dlx.css</code> / <code>dlx.less</code> bundle.</p>
+</li>
+</ul>
+
+        </article>
+    </section>
+    <!-- /documentation. -->
+
+
+
+  <!-- scripts. -->
+  <script src="kss-assets/vendor/jquery.js"></script>
+  <script src="kss-assets/vendor/prism.js"></script>
+  <script src="kss-assets/js/kss.js"></script>
+  
+  <!-- /scripts. -->
+
+  </body>
+</html>
