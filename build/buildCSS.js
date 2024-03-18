@@ -1,4 +1,3 @@
-import createSpinner     from 'ora'
 import CSSCleaner        from 'clean-css'
 import { fileURLToPath } from 'url'
 import fs                from 'fs'
@@ -45,18 +44,10 @@ async function convertFolder(dir) {
 
 void async function buildCSS() {
 
-  const spinner = createSpinner(`Building CSS files.`).start()
-
-  try {
-    await Promise.all([
-      convertFile(bundlePath),
-      convertFolder(typographyDir),
-      convertFolder(componentsDir),
-    ])
-  } catch (e) {
-    return spinner.fail(e.message)
-  }
-
-  spinner.succeed(`CSS files built.`)
+  await Promise.all([
+    convertFile(bundlePath),
+    convertFolder(typographyDir),
+    convertFolder(componentsDir),
+  ])
 
 }()
