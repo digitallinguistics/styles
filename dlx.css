@@ -159,18 +159,6 @@ This file bundles all the DLx styles into a single file.
   margin-inline-end: var(--example-indent);
   position: absolute;
 }
-.exs .two-col li,
-.examples .two-col li {
-  column-gap: 1em;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-.exs .three-col li,
-.examples .three-col li {
-  column-gap: 1em;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
 .exs .subexs,
 .examples .subexs,
 .exs .subexamples,
@@ -194,6 +182,16 @@ This file bundles all the DLx styles into a single file.
   content: counter(subexamples, lower-alpha) '.';
   margin-inline-start: -1.5em;
   position: absolute;
+}
+.two-col li {
+  column-gap: 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.three-col li {
+  column-gap: 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 .gl,
 .gloss {
