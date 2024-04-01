@@ -19,8 +19,13 @@ This file bundles all the DLx styles into a single file.
   font-weight: bold;
 }
 .ling-document {
-  counter-reset: examples figures sections;
+  counter-reset: examples figures sections tables;
   font-family: var(--font-unicode-serif);
+}
+.ling-document caption::before {
+  content: 'Table ' counter(tables) ':';
+  font-weight: bold;
+  margin-inline-end: var(--counter-margin);
 }
 .ling-document figcaption::before {
   content: 'Figure ' counter(figures) ':';
