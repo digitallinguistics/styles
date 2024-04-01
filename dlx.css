@@ -85,6 +85,9 @@ This file bundles all the DLx styles into a single file.
 .ling-document .subsubsection {
   counter-reset: paragraphs;
 }
+.ling-document .table {
+  counter-increment: tables;
+}
 .attn,
 .attention {
   font-weight: bold;
