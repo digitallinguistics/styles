@@ -1,0 +1,66 @@
+/* typography/font.css */
+@font-face {
+  font-family: "Libertinus Serif";
+  font-style: normal;
+  font-weight: normal;
+  src:
+    local("Libertinus Serif"),
+    local("Libertinus Serif Regular"),
+    url(https://cdn.jsdelivr.net/gh/lutetiensis/libertinus@master/releases/Libertinus-7.000-r14-gbc8b13/static/WOFF2/LibertinusSerif-Regular.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Libertinus Serif";
+  font-style: italic;
+  font-weight: normal;
+  src: local("Libertinus Serif Italic"), url(https://cdn.jsdelivr.net/gh/lutetiensis/libertinus@master/releases/Libertinus-7.000-r14-gbc8b13/static/WOFF2/LibertinusSerif-Italic.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Libertinus Serif";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Libertinus Serif Semibold"), url(https://cdn.jsdelivr.net/gh/lutetiensis/libertinus@master/releases/Libertinus-7.000-r14-gbc8b13/static/WOFF2/LibertinusSerif-Semibold.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Libertinus Serif";
+  font-style: italic;
+  font-weight: 600;
+  src: local("Libertinus Serif Semibold Italic"), url(https://cdn.jsdelivr.net/gh/lutetiensis/libertinus@master/releases/Libertinus-7.000-r14-gbc8b13/static/WOFF2/LibertinusSerif-SemiboldItalic.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Libertinus Serif";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Libertinus Serif Bold"), url(https://cdn.jsdelivr.net/gh/lutetiensis/libertinus@master/releases/Libertinus-7.000-r14-gbc8b13/static/WOFF2/LibertinusSerif-Bold.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Libertinus Serif";
+  font-style: italic;
+  font-weight: 700;
+  src: local("Libertinus Serif Bold Italic"), url(https://cdn.jsdelivr.net/gh/lutetiensis/libertinus@master/releases/Libertinus-7.000-r14-gbc8b13/static/WOFF2/LibertinusSerif-BoldItalic.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Libertinus Serif Display";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Libertinus Serif Display"), url(https://cdn.jsdelivr.net/gh/lutetiensis/libertinus@master/releases/Libertinus-7.000-r14-gbc8b13/static/WOFF2/LibertinusSerifDisplay-Regular.woff2) format("woff2");
+}
+
+/* typography/typography.css */
+:root {
+  --font-unicode-sans:
+    "Noto Sans",
+    "Andika",
+    "Lucida Sans Unicode",
+    sans-serif;
+  --font-unicode-serif:
+    "Libertinus Serif",
+    "Linux Libertine",
+    "Gentium Plus",
+    "Charis SIL",
+    "Doulos SIL",
+    "Noto Serif",
+    "Times New Roman",
+    serif;
+}
+
+/* dlx.css */
