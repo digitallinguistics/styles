@@ -1,3 +1,10 @@
-import config from '@digitallinguistics/eslint-config'
+import config  from '@digitallinguistics/eslint-config'
+import globals from 'globals'
 
-export default [...config]
+const projectConfig = {
+  languageOptions: {
+    globals: { ...globals.nodeBuiltin },
+  },
+}
+
+export default [...config, projectConfig]
