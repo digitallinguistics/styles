@@ -1,0 +1,1 @@
+.ortho,.orthographic{--txn-padding:0.15em;font-family:var(--font-unicode-serif)}.ortho::before,.orthographic::before{content:'⟨';padding-right:var(--txn-padding)}.ortho::after,.orthographic::after{content:'⟩';padding-left:var(--txn-padding)}

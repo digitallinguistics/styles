@@ -1,0 +1,1 @@
+.phon,.phonemic{--txn-padding:0.15em;font-family:var(--font-unicode-serif)}.phon::before,.phonemic::before{content:'/';padding-right:var(--txn-padding)}.phon::after,.phonemic::after{content:'/';padding-left:var(--txn-padding)}
