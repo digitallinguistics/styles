@@ -62,6 +62,8 @@ Other excellent sources for fonts are:
 | ------------------------------ | ----- | ------------------------------------------ |
 | [Aboriginal Sans][Aboriginal]  | ❌     | North American Syllabics + Cherokee        |
 | [Aboriginal Serif][Aboriginal] | ✅     |                                            |
+| [Alegreya]                     | ✅     | Often used for classical languages.        |
+| [Alegreya Sans][Alegreya]      | ❌     | Often used for classical languages.        |
 | [Andika]                       | ❌     | Designed for beginning readers.            |
 | [Charis SIL]                   | ✅     |                                            |
 | [Common Serif]                 | ✅     | Fork of the Libertinus Serif project.      |
@@ -76,6 +78,7 @@ Other excellent sources for fonts are:
 
 <!-- LINKS -->
 [Aboriginal]:      https://www.languagegeek.com/font/fontdownload.html#Full_Unicode
+[Alegreya]:        https://huertatipografica.com/en/fonts/alegreya-ht-pro
 [Andika]:          https://software.sil.org/andika/
 [Charis SIL]:      https://software.sil.org/charis/
 [Common Serif]:    https://github.com/StefanPeev/Common-Serif
