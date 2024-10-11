@@ -1,1 +1,0 @@
-.in-tln,.inline-tln,.q{display:inline;quotes:'‘' '’' '“' '”'}.in-tln::before,.inline-tln::before,.q::before{content:open-quote}.in-tln::after,.inline-tln::after,.q::after{content:close-quote}
