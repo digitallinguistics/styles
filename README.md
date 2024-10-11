@@ -51,9 +51,39 @@ That's all there is to it! Each component has its own standalone CSS file with n
 
 ## Fonts
 
-The styles library also includes a number of fonts which work well for displaying Unicode characters, located in the `typography/` folder. A sample font declaration file is included in `Libertinus.css`.
+Below is a list of suggested fonts which work well for displaying Unicode characters. The `typography/typography.css` file declares two CSS variables (`--font-unicode-sans` and `--font-unicode-serif`) with suggested `font-family` values. A sample font declaration file is also included in `font.css`, using the Libertinus Serif font as an example.
 
-Some of the components in the styles library apply a Unicode font using the CSS variables `--font-unicode-sans` and `--font-unicode-serif`. These variables are defined in the `typography.css` file, but you can define them with your own preferred values in your own codebase.
+Other excellent sources for fonts are:
+
+- [LanguageGeek]
+- [SIL]
+
+| Font                           | Serif | Notes                                      |
+| ------------------------------ | ----- | ------------------------------------------ |
+| [Aboriginal Sans][Aboriginal]  | ❌     | North American Syllabics + Cherokee        |
+| [Aboriginal Serif][Aboriginal] | ✅     |                                            |
+| [Andika]                       | ❌     | Designed for beginning readers.            |
+| [Charis SIL]                   | ✅     |                                            |
+| [Common Serif]                 | ✅     | Fork of the Libertinus Serif project.      |
+| [Doulos SIL]                   | ✅     | Designed to be similar to Times New Roman. |
+| [Gentium]                      | ✅     |                                            |
+| [Libertinus]                   | ✅     | Fork of the Linux Libertine project.       |
+| [Linux Libertine]              | ✅     |                                            |
+| Lucida Sans Unicode            | ❌     | Installed on Windows computers by default  |
+| [Noto Sans][Noto]              | ❌     |                                            |
+| [Noto Serif][Noto]             | ✅     |
+| Times New Roman                | ✅     | Installed on most computers by default.    |
 
 <!-- LINKS -->
-[GitHub]: https://github.com/digitallinguistics/styles/
+[Aboriginal]:      https://www.languagegeek.com/font/fontdownload.html#Full_Unicode
+[Andika]:          https://software.sil.org/andika/
+[Charis SIL]:      https://software.sil.org/charis/
+[Common Serif]:    https://github.com/StefanPeev/Common-Serif
+[Doulos SIL]:      https://software.sil.org/doulos/
+[Gentium]:         https://software.sil.org/gentium/
+[GitHub]:          https://github.com/digitallinguistics/styles/
+[LanguageGeek]:    https://www.languagegeek.com/font/fontdownload.html
+[Libertinus]:      https://github.com/alerque/libertinus
+[Linux Libertine]: https://www.fontsquirrel.com/fonts/linux-libertine
+[Noto]:            https://fonts.google.com/noto
+[SIL]:             https://software.sil.org/fonts/

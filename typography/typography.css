@@ -1,0 +1,19 @@
+:root {
+
+  --font-unicode-sans:
+    'Noto Sans',
+    'Andika',
+    'Lucida Sans Unicode',
+    sans-serif;
+
+  --font-unicode-serif:
+    'Libertinus Serif',
+    'Linux Libertine',
+    'Gentium Plus',
+    'Charis SIL',
+    'Doulos SIL',
+    'Noto Serif',
+    'Times New Roman',
+    serif;
+
+}
