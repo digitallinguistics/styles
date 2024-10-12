@@ -1,0 +1,52 @@
+*:where(:not(iframe, canvas, details, img, summary, svg, svg *, symbol *, video)) {
+  all    : unset;
+  display: revert;
+}
+
+:focus-visible {
+  outline: revert;
+}
+
+:where([hidden]) {
+  display: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:where(article, aside, body, dialog, div, dl, fieldset, figure, footer, form, header, hgroup, html, iframe, li, main, menu, nav, ol, search, section, ul) {
+  display       : flex;
+  flex-direction: column;
+}
+
+:where(blockquote, q) {
+
+  quotes: none;
+
+  &::before,
+  &::after {
+    content: '';
+    content: none;
+  }
+
+}
+
+:where(ol, ul, menu) {
+  list-style: none;
+}
+
+::placeholder {
+  color: unset;
+}
+
+html {
+  box-sizing:       border-box;
+  text-size-adjust: none;
+}
+
+table {
+  border-collapse: collapse;
+}
