@@ -1,10 +1,83 @@
+/* Styles for Docs Site */
 @import 'styles/colors.css';
 @import 'styles/fonts.css';
 @import 'styles/typography.css';
 @import 'styles/reset.css';
 
+:root {
+  --p-margin: 0.75em;
+}
+
+a {
+
+  cursor:      pointer;
+  font-weight: 500;
+
+  &:link {
+
+    color: var(--blue);
+
+    @media (prefers-color-scheme: dark) {
+      color: var(--blue-4);
+    }
+
+  }
+
+  &:visited {
+
+    color: var(--purple);
+
+    @media (prefers-color-scheme: dark) {
+      color: var(--purple-4);
+    }
+
+  }
+
+  &:hover {
+    text-decoration-line: underline;
+  }
+
+}
+
+code {
+  background-color: #EEE;
+  font-family:      var(--font-mono);
+}
+
+:is(h1, h2, h3, h4, h5, h6) {
+  font-weight:         bold;
+  padding-block-start: 0.5em;
+}
+
+h1 {
+  font-size: xxx-large;
+}
+
+h2 {
+  font-size: xx-large;
+}
+
+h3 {
+  font-size: x-large;
+}
+
+h4 {
+  font-size: large;
+}
+
+h5 {
+  font-size: medium;
+}
+
+h6 {
+  font-size:       medium;
+  font-weight:     normal;
+  text-decoration: underline
+}
+
 html {
 
+  align-items:               center;
   font-family:               var(--font);
   font-size:                 100%;
   line-height:               1.5;
@@ -20,4 +93,46 @@ html {
     scroll-behavior: auto;
   }
 
+}
+
+li {
+  display: list-item;
+}
+
+main {
+  display:         block;
+  max-inline-size: var(--measure);
+  padding:         1em;
+}
+
+p {
+  margin: var(--p-margin) 0;
+}
+
+pre {
+  background-color: #EEE;
+  border-radius:    0.25em;
+  overflow-x:       auto;
+  padding:          1em;
+  white-space:      pre;
+}
+
+table {
+  margin: auto;
+}
+
+:is(td, th) {
+  border:  1px solid #CCC;
+  padding: 0.5em;
+}
+
+th {
+  background-color: #EEE;
+  font-weight:      bold;
+}
+
+ul {
+  list-style:          disc outside none;
+  margin-block:        var(--p-margin);
+  margin-inline-start: 1.5em;
 }

@@ -1,4 +1,38 @@
 :root {
+
   --off-black: #121212;
   --off-white: #EEE;
+
+  /* Primary */
+  --blue-hue:        216;
+  --blue-saturation: 100%;
+
+  /* Secondary */
+  --purple-hue:        261;
+  --purple-saturation: 50%;
+
+  --blue-1: hsl(var(--blue-hue), var(--blue-saturation), 90%);
+  --blue-2: hsl(var(--blue-hue), var(--blue-saturation), 80%);
+  --blue-3: hsl(var(--blue-hue), var(--blue-saturation), 70%);
+  --blue-4: hsl(var(--blue-hue), var(--blue-saturation), 60%);
+  --blue-5: hsl(var(--blue-hue), var(--blue-saturation), 50%);
+  --blue-6: hsl(var(--blue-hue), var(--blue-saturation), 40%);
+  --blue-7: hsl(var(--blue-hue), var(--blue-saturation), 30%);
+  --blue-8: hsl(var(--blue-hue), var(--blue-saturation), 20%);
+  --blue-9: hsl(var(--blue-hue), var(--blue-saturation), 10%);
+
+  --purple-1: hsl(var(--purple-hue), var(--purple-saturation), 90%);
+  --purple-2: hsl(var(--purple-hue), var(--purple-saturation), 80%);
+  --purple-3: hsl(var(--purple-hue), var(--purple-saturation), 70%);
+  --purple-4: hsl(var(--purple-hue), var(--purple-saturation), 60%);
+  --purple-5: hsl(var(--purple-hue), var(--purple-saturation), 50%);
+  --purple-6: hsl(var(--purple-hue), var(--purple-saturation), 40%);
+  --purple-7: hsl(var(--purple-hue), var(--purple-saturation), 30%);
+  --purple-8: hsl(var(--purple-hue), var(--purple-saturation), 20%);
+  --purple-9: hsl(var(--purple-hue), var(--purple-saturation), 10%);
+
+  /* Defaults */
+  --blue:   var(--blue-5);
+  --purple: var(--purple-5);
+
 }

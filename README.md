@@ -59,22 +59,22 @@ Other excellent sources for fonts are:
 - [SIL]
 
 | Font                           | Serif | Notes                                      |
-| ------------------------------ | ----- | ------------------------------------------ |
-| [Aboriginal Sans][Aboriginal]  | ❌     | North American Syllabics + Cherokee        |
-| [Aboriginal Serif][Aboriginal] | ✅     |                                            |
-| [Alegreya]                     | ✅     | Often used for classical languages.        |
-| [Alegreya Sans][Alegreya]      | ❌     | Often used for classical languages.        |
-| [Andika]                       | ❌     | Designed for beginning readers.            |
-| [Charis SIL]                   | ✅     |                                            |
-| [Common Serif]                 | ✅     | Fork of the Libertinus Serif project.      |
-| [Doulos SIL]                   | ✅     | Designed to be similar to Times New Roman. |
-| [Gentium]                      | ✅     |                                            |
-| [Libertinus]                   | ✅     | Fork of the Linux Libertine project.       |
-| [Linux Libertine]              | ✅     |                                            |
-| Lucida Sans Unicode            | ❌     | Installed on Windows computers by default  |
-| [Noto Sans][Noto]              | ❌     |                                            |
-| [Noto Serif][Noto]             | ✅     |
-| Times New Roman                | ✅     | Installed on most computers by default.    |
+| ------------------------------ | :---: | ------------------------------------------ |
+| [Aboriginal Sans][Aboriginal]  |   ❌   | North American Syllabics + Cherokee        |
+| [Aboriginal Serif][Aboriginal] |   ✔️   |                                            |
+| [Alegreya]                     |   ✔️   | Often used for classical languages.        |
+| [Alegreya Sans][Alegreya]      |   ❌   | Often used for classical languages.        |
+| [Andika]                       |   ❌   | Designed for beginning readers.            |
+| [Charis SIL]                   |   ✔️   |                                            |
+| [Common Serif]                 |   ✔️   | Fork of the Libertinus Serif project.      |
+| [Doulos SIL]                   |   ✔️   | Designed to be similar to Times New Roman. |
+| [Gentium]                      |   ✔️   |                                            |
+| [Libertinus]                   |   ✔️   | Fork of the Linux Libertine project.       |
+| [Linux Libertine]              |   ✔️   |                                            |
+| Lucida Sans Unicode            |   ❌   | Installed on Windows computers by default. |
+| [Noto Sans][Noto]              |   ❌   |                                            |
+| [Noto Serif][Noto]             |   ✔️   |
+| Times New Roman                |   ✔️   | Installed on most computers by default.    |
 
 <!-- LINKS -->
 [Aboriginal]:      https://www.languagegeek.com/font/fontdownload.html#Full_Unicode
