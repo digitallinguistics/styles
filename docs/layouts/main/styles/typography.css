@@ -1,0 +1,34 @@
+:root {
+
+  --font:
+    'Fira Sans',
+    'Roboto',
+    'Open Sans',
+    'Lato',
+    'Noto Sans',
+    'Verdana',
+    sans-serif;
+
+  --font-unicode:
+    'Libertinus Serif',
+    'Linux Libertine',
+    'Gentium Plus',
+    'Charis SIL',
+    'Doulos SIL',
+    'Noto Serif',
+    'Times New Roman',
+    serif;
+
+  --font-mono:
+    'Fira Code',
+    'Fira Mono',
+    'Cascadia Code',
+    'Roboto Mono',
+    'Inconsolata',
+    'Consolas',
+    'Courier New',
+    monospace;
+
+  --measure: 45em;
+
+}
