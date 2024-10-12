@@ -1,7 +1,5 @@
-import buildDocs    from './buildDocs.js'
-import bundleCSS    from './bundleCSS.js'
-import emptyDocsDir from './emptyDocsDir.js'
+import buildDocs    from './docs/index.js'
+import buildLibrary from './library/index.js'
 
-await bundleCSS()
-await emptyDocsDir()
+await buildLibrary()
 await buildDocs()
