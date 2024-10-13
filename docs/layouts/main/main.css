@@ -5,6 +5,7 @@
 @import 'styles/fonts.css';
 @import 'styles/typography.css';
 @import 'styles/reset.css';
+@import 'styles/prism.css';
 
 /* Components for Main Layout */
 @import 'components/Nav/Nav.css';
@@ -51,7 +52,7 @@ body {
   max-inline-size: 100%;
 }
 
-code {
+p code {
   background-color: #EEE;
   font-family:      var(--font-mono);
 }
