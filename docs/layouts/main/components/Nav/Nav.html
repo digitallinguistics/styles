@@ -1,0 +1,11 @@
+<nav class=nav>
+
+  <h2 class=visually-hidden>Main Navigation</h2>
+
+  <button aria-hidden=true class=menu-button data-hook=menu-button>
+    <svg aria-hidden=true class=menu-icon><use href=#menu></svg>
+  </button>
+
+  {{ collections.all | eleventyNavigation | eleventyNavigationToHtml }}
+
+</nav>

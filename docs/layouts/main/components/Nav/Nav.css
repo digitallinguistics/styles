@@ -1,0 +1,28 @@
+.nav {
+
+  background-color:           white;
+  border-bottom-right-radius: var(--border-radius);
+  box-shadow:                 1px 1px 3px #CCC;
+  inset-inline-start:         0;
+  max-block-size:             100vh;
+  overflow-y:                 auto;
+  position:                   fixed;
+
+  @media (prefers-color-scheme: dark) {
+    background-color: var(--off-black);
+  }
+
+  .menu-icon {
+    --icon-size: 1.5em;
+    cursor:      pointer;
+    height:      var(--icon-size);
+    margin:      1em;
+    width:       var(--icon-size);
+  }
+
+  & ul {
+    list-style: none;
+    margin:     0em 1em 1em 1em;
+  }
+
+}

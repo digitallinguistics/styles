@@ -1,8 +1,13 @@
-/* Styles for Docs Site */
+/* Global Styles */
+@import 'styles/variables.css';
+@import 'styles/utilities.css';
 @import 'styles/colors.css';
 @import 'styles/fonts.css';
 @import 'styles/typography.css';
 @import 'styles/reset.css';
+
+/* Components for Main Layout */
+@import 'components/Nav/Nav.css';
 
 :root {
   --p-margin: 0.75em;
@@ -37,6 +42,13 @@ a {
     text-decoration-line: underline;
   }
 
+}
+
+body {
+  align-items:     center;
+  display:         flex;
+  inline-size:     100%;
+  max-inline-size: 100%;
 }
 
 code {
@@ -100,9 +112,10 @@ li {
 }
 
 main {
-  display:         block;
-  max-inline-size: var(--measure);
-  padding:         1em;
+  display:            block;
+  margin-block-start: 2.5em;                      /* This adds clearance for the menu button. */
+  max-inline-size:    min(var(--measure), 100%);
+  padding:            1em;
 }
 
 p {
@@ -111,7 +124,7 @@ p {
 
 pre {
   background-color: #EEE;
-  border-radius:    0.25em;
+  border-radius:    var(--border-radius);
   overflow-x:       auto;
   padding:          1em;
   white-space:      pre;

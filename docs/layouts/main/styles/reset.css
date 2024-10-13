@@ -17,7 +17,7 @@
   box-sizing: inherit;
 }
 
-:where(article, aside, body, dialog, div, dl, fieldset, figure, footer, form, header, hgroup, html, iframe, li, main, menu, nav, ol, search, section, ul) {
+:where(article, aside, body, button, dialog, div, dl, fieldset, figure, footer, form, header, hgroup, html, iframe, li, main, menu, nav, ol, search, section, ul) {
   display       : flex;
   flex-direction: column;
 }

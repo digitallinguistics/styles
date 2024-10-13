@@ -1,4 +1,7 @@
 {
-  "layout":    "main/main",
-  "permalink": "/"
+  "eleventyNavigation": {
+    "order": 0
+  },
+  "permalink": "/",
+  "title": "Home"
 }
