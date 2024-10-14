@@ -2,6 +2,7 @@ import * as cases  from 'change-case'
 
 const order = [
   `abbreviation`,   // Abbreviations
+  `definition`,     // Definitions
   `inline-example`, // Inline Examples
   `interlinear`,    // Interlinear Examples
   `cite`,           // Title Citations
