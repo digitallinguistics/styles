@@ -55,10 +55,6 @@ body {
   max-inline-size: 100%;
 }
 
-cite {
-  font-style: italic;
-}
-
 :is(li, p) code {
 
   background-color: #EEE;
@@ -135,13 +131,6 @@ li {
   display: list-item;
 }
 
-.ling-doc {
-  border:        1px solid #CCC;
-  border-radius: var(--border-radius);
-  box-shadow:    1px 1px 3px #CCC;
-  padding:       1em;
-}
-
 main {
   display:            block;
   margin-block-start: 2.5em;                      /* This adds clearance for the menu button. */
@@ -164,6 +153,13 @@ pre {
   overflow-x:       auto;
   padding:          1em;
   white-space:      pre;
+}
+
+.output {
+  border:        1px solid #CCC;
+  border-radius: var(--border-radius);
+  box-shadow:    1px 1px 3px #CCC;
+  padding:       1em;
 }
 
 summary {

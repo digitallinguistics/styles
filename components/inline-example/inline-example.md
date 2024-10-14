@@ -8,7 +8,7 @@ Inline examples are linguistic data that are mentioned in running text. (See the
 
 ## Example
 
-<div class=ling-doc>
+<div class=output>
 {% include './inline-example.html' %}
 </div>
 

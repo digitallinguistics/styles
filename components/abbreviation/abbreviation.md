@@ -10,7 +10,7 @@ A style for normal abbreviations within text. For grammatical glossing abbreviat
 
 Notice how you can hover over the abbreviation in this example to see its description from the `title` attribute.
 
-<div class=ling-doc>
+<div class=output>
 {% include './abbreviation.html' %}
 </div>
 
@@ -22,7 +22,6 @@ It is a good idea to include a `title` element on the `<abbr>` tag with a descri
 
   <summary>(Show/Hide HTML)</summary>
 
-<!-- NB: First line gets indented if you indent code blocks. -->
 ```html
 {% include './abbreviation.html' %}
 ```
@@ -37,7 +36,6 @@ It is a good idea to include a `title` element on the `<abbr>` tag with a descri
 
   <summary>(Show/Hide CSS)</summary>
 
-<!-- NB: First line gets indented if you indent code blocks. -->
 ```css
 {% include './abbreviation.css' %}
 ```

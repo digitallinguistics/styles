@@ -16,6 +16,7 @@ export default function configure(config) {
   config.addPlugin(navigation)
   config.addPlugin(syntaxHighlighting)
   config.addTransform(`minify-html`, minifyHTML)
+  config.addWatchTarget(`**/*.less`)
   config.on(`eleventy.before`, buildLibrary)
   config.on(`eleventy.before`, emptyDocsDir)
 
