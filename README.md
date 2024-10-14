@@ -1,6 +1,6 @@
 # Digital Linguistics (DLx) Pattern Library
 
-Welcome to the Digital Linguistics (DLx) pattern library! This repository contains CSS styles and HTML samples demonstrating how to style linguistic data and documents for presentation on the web.
+This repository contains CSS styles and HTML samples demonstrating how to style linguistic data and documents for presentation on the web.
 
 If you would prefer to write your linguistic documents in Markdown rather than HTML, check out the [`ling-md`][ling-md] library.
 
