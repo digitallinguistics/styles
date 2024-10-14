@@ -55,6 +55,8 @@ If you are importing styles for individual component, their CSS is _not_ applied
 
 However, if you import the bundled version of this library (`dlx.bundle.css`), all you have to do is add the `.ling-doc` class to an element, and all the DLx styles will be applied and scoped to that element automatically. (Note that this bundle does not include the font declarations in `font.css`.)
 
+The examples in this documentation use the bundled version of the library, so class names are added to elements only when necessary (such as with the interlinear example above).
+
 ## Fonts
 
 Below is a list of suggested fonts which work well for displaying Unicode characters. The `typography/typography.css` file declares two CSS variables (`--font-unicode-sans` and `--font-unicode-serif`) with suggested `font-family` values. A sample font declaration file is also included in `font.css`, using the Libertinus Serif font as an example.
@@ -90,6 +92,7 @@ Alternatively, you can just use a `font-size-adjust` declaration
 
 Examples used to demonstrate styling of each component come from the following sources:
 
+- Hieber, Daniel W. 2019. "Semantic alignment in Chitimacha". <cite>International Journal of American Linguistics</cite> 85(3): 313–363. DOI: [10.1086/703239](https://doi.org/10.1086/703239).
 - Hieber, Daniel W. 2024. "Chitimacha". In Carmen Dagostino, Marianne Mithun, & Keren Rice (eds.), <cite>The languages and linguistics of indigenous North America: A comprehensive guide</cite>, Vol. 2 (The World of Linguistics 13.2), pp. 1519–1543. De Gruyter Mouton.
 
 <!-- LINKS -->

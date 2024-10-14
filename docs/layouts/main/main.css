@@ -55,6 +55,10 @@ body {
   max-inline-size: 100%;
 }
 
+cite {
+  font-style: italic;
+}
+
 :is(li, p) code {
 
   background-color: #EEE;
