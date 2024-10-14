@@ -2,9 +2,18 @@
 
 Welcome to the Digital Linguistics (DLx) pattern library! This repository contains CSS styles and HTML samples demonstrating how to style linguistic data and documents for presentation on the web.
 
-[View the GitHub repository for this library.][GitHub]
-
 If you would prefer to write your linguistic documents in Markdown rather than HTML, check out the [`ling-md`][ling-md] library.
+
+- [View the GitHub repository for this library.][GitHub]
+- [Report a problem | Request a feature][issues]
+
+## Contents
+
+- [Components](#components)
+- [Using the DLx Styles](#using-the-dlx-styles)
+  - [Scoping \& Applying Styles](#scoping--applying-styles)
+- [Fonts](#fonts)
+- [Sources](#sources)
 
 ## Components
 
@@ -105,6 +114,7 @@ Examples used to demonstrate styling of each component come from the following s
 [font-size-adjust]: https://developer.mozilla.org/en-US/docs/Web/CSS/font-size-adjust
 [Gentium]:          https://software.sil.org/gentium/
 [GitHub]:           https://github.com/digitallinguistics/styles/
+[issues]:           https://github.com/digitallinguistics/styles/issues
 [LanguageGeek]:     https://www.languagegeek.com/font/fontdownload.html
 [Libertinus]:       https://github.com/alerque/libertinus
 [ling-md]:          https://github.com/digitallinguistics/ling-md/

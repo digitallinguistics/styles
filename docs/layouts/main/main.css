@@ -55,6 +55,10 @@ body {
   max-inline-size: 100%;
 }
 
+cite {
+  font-style: italic;
+}
+
 :is(li, p) code {
 
   background-color: #EEE;
@@ -127,9 +131,42 @@ html {
 
 }
 
+i {
+  font-style: italic;
+}
+
+/* Lists */
+
+:is(ol, ul) {
+  margin-block:        var(--p-margin);
+  margin-inline-start: 1.5em;
+}
+
+:is(ol, ul) :is(ol, ul) {
+  margin-block:    0;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+ol ol {
+  list-style-type: lower-alpha;
+}
+
+ul {
+  list-style: disc outside none;
+}
+
+ul ul {
+  list-style-type: circle;
+}
+
 li {
   display: list-item;
 }
+
+/* End Lists */
 
 main {
   display:            block;
@@ -180,10 +217,4 @@ table {
 th {
   background-color: #EEE;
   font-weight:      bold;
-}
-
-ul {
-  list-style:          disc outside none;
-  margin-block:        var(--p-margin);
-  margin-inline-start: 1.5em;
 }

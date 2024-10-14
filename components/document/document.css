@@ -1,12 +1,6 @@
-// Document
-//
-// A linguistics article, book chapter, abstract, book, etc. Most of the styles in this file handle counters for examples, figures, etc. The sectioning hierarchy is: ling-document > section > subsection > subsubsection > paragraph > subparagraph. Note that the `.paragraph` class is different than the `.p` class. `.paragraph` is for sectioning, while `.p` is specifically for styling `<p>` elements within a ling-document.
-//
-// Markup: document.html
-//
-// Styleguide components.document
 .ling-doc {
 
+  display:       block;
   counter-reset: examples figures sections tables;
   font-family:   var(--font-unicode-serif);
 
@@ -82,7 +76,7 @@
   }
 
   p {
-    margin: 0.5em 0em;
+    margin-block: 0.5em;
   }
 
   .paragraph {

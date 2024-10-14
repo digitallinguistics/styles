@@ -3,6 +3,7 @@ import * as cases  from 'change-case'
 const order = [
   `abbreviation`,   // Abbreviations
   `definition`,     // Definitions
+  `document`,       // Document
   `inline-example`, // Inline Examples
   `interlinear`,    // Interlinear Examples
   `cite`,           // Title Citations
