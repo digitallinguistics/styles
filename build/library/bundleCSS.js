@@ -1,7 +1,8 @@
-import esbuild from 'esbuild'
-import path    from 'node:path'
+import esbuild        from 'esbuild'
+import { lessLoader } from 'esbuild-plugin-less'
+import path           from 'node:path'
 
-const cssPath = path.resolve(import.meta.dirname, `../../dlx.css`)
+const cssPath = path.resolve(import.meta.dirname, `../../dlx.less`)
 const outfile = path.resolve(import.meta.dirname, `../../dlx.bundle.css`)
 
 export default function bundleCSS() {
@@ -10,5 +11,6 @@ export default function bundleCSS() {
     entryPoints: [cssPath],
     minify:      true,
     outfile,
+    plugins:     [lessLoader()],
   })
 }

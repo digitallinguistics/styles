@@ -1,53 +1,59 @@
 # Digital Linguistics (DLx) Pattern Library
 
-Welcome to the Digital Linguistics (DLx) pattern library! This website demonstrates how to style linguistic data for presentation on the web using HTML and CSS. This project contains CSS styles and example HTML for various kinds of linguistic components—interlinear glossed examples, transcriptions, grammatical glosses, etc.
+Welcome to the Digital Linguistics (DLx) pattern library! This repository contains CSS styles and HTML samples demonstrating how to style linguistic data and documents for presentation on the web.
 
 [View the GitHub repository for this library.][GitHub]
 
+If you would prefer to write your linguistic documents in Markdown rather than HTML, check out the [`ling-md`][ling-md] library.
+
+## Components
+
+Styles are available for the following types of components commonly found in linguistic documents:
+
+<!-- Hide the 'Home' option in the components list. -->
+<style>
+.body-nav li:first-child {
+  display: none;
+}
+</style>
+
+<nav class=body-nav>
+  {{ collections.all | eleventyNavigation | eleventyNavigationToHtml }}
+</nav>
+
 ## Using the DLx Styles
 
-To use the DLx styles in your project, start by including the CSS file(s) for the component(s) that you want to use in a `<link rel=stylesheet>` tag. For example, if you wanted to use the styling for an interlinear gloss, you would include the `interlinear.css` file in your HTML `<head>` tag like so:
+You can use the DLx styles in your project by either installing this library (instructions below), or simply copying the code for the components you want to use from the [GitHub repo][GitHub].
+
+To install the DLx styles in your project, use a Node package manager like `npm`:
+
+```cmd
+npm install --save-dev @digitallinguistics/styles
+```
+
+Then include the CSS file(s) for the component(s) that you want to use in a `<link rel=stylesheet>` tag. For example, if you wanted to use the styling for an interlinear gloss, you would include the `interlinear.css` file in your HTML `<head>` tag like so:
 
 ```html
+<!-- If you copied the file into your project. -->
 <link rel=stylesheet href=interlinear.css>
+
+<!-- If you installed the library. -->
+<link rel=stylesheet href=node_modules/@digitallinguistics/styles/components/interlinear/interlinear.css>
 ```
 
-Next, make sure your HTML is formatted correctly so that the DLx styles will work. Each component in the pattern library has example markup showing how the HTML should be structured. For example, here is some valid HTML that uses the `.igl` ('interlinear gloss') class.
+Next, make sure your HTML is formatted correctly so that the DLx styles will work. Each component in this library has example markup showing how the HTML should be structured. For example, here is some HTML that uses the `.igl` ('interlinear gloss') class.
 
 ```html
-<div class=igl>
-
-  <p class=ex-header>Chitimacha (isolate)</p>
-
-  <p class=txn lang=ctm>siksi<b>nk</b> his heːčtiʔi</p>
-
-  <ol class=words>
-
-    <li class=word>
-      <span class=m lang=ctm>siksi‑<b>nk</b></span>
-      <span class=glosses>eagle‑<abbr class=gl title=unknown>??</abbr></span>
-    </li>
-
-    <li class=word>
-      <span class=m lang=ctm>his</span>
-      <span class=glosses><abbr class=gl title=responsive>resp</abbr></span>
-    </li>
-
-    <li class=word>
-      <span class=m lang=ctm>heːčt‑iʔi</span>
-      <span class=glosses>call‑<abbr class=gl title=non-first>nf</abbr>;<abbr class=gl title=singular>sg</abbr></span>
-    </li>
-
-  </ol>
-
-  <p class=tln>an eagle met him</p>
-
-  <p class=ex-source>Swadesh 1939b: A1b.1</p>
-
-</div>
+{% include './components/interlinear/interlinear.html' %}
 ```
 
-That's all there is to it! Each component has its own standalone CSS file with no dependencies, so you do not need to use the entire set of DLx styles unless you want to. You can use all the DLx styles at once by including the `dlx.css` file in your project instead of files for individual components. This will automatically apply styling for many components, and make the rest of the DLx CSS classes available for use in your HTML.
+Each component has its own standalone CSS file with no dependencies, so you do not need to use the entire set of DLx styles unless you want to.
+
+### Scoping & Applying Styles
+
+If you are importing styles for individual component, their CSS is _not_ applied automatically. Each CSS file in this library only declares a class; you have to apply that class to your HTML yourself, either by using the `class` attribute in your HTML, or by using a CSS preprocessor such as [SASS] to mix in the DLx classes. The reason for this is because you typically want to scope the DLx styles. For example, you may not want every `<i>` element to display in a Unicode font—just the ones inside the `.ling-doc` class.
+
+However, if you import the bundled version of this library (`dlx.bundle.css`), all you have to do is add the `.ling-doc` class to an element, and all the DLx styles will be applied and scoped to that element automatically. (Note that this bundle does not include the font declarations in `font.css`.)
 
 ## Fonts
 
@@ -57,6 +63,10 @@ Other excellent sources for fonts are:
 
 - [LanguageGeek]
 - [SIL]
+
+If you are using different fonts on the same page, you may want to include a [`size-adjust`][size-adjust] declaration in your font declarations or a [`font-size-adjust`][font-size-adjust] declaration in your main styles as well, in order to adjust the size of one font to match the other.
+
+Alternatively, you can just use a `font-size-adjust` declaration
 
 | Font                           | Serif | Notes                                      |
 | ------------------------------ | :---: | ------------------------------------------ |
@@ -73,20 +83,30 @@ Other excellent sources for fonts are:
 | [Linux Libertine]              |   ✔️   |                                            |
 | Lucida Sans Unicode            |   ❌   | Installed on Windows computers by default. |
 | [Noto Sans][Noto]              |   ❌   |                                            |
-| [Noto Serif][Noto]             |   ✔️   |
+| [Noto Serif][Noto]             |   ✔️   |                                            |
 | Times New Roman                |   ✔️   | Installed on most computers by default.    |
 
+## Sources
+
+Examples used to demonstrate styling of each component come from the following sources:
+
+- Hieber, Daniel W. 2024. "Chitimacha". In Carmen Dagostino, Marianne Mithun, & Keren Rice (eds.), <cite>The languages and linguistics of indigenous North America: A comprehensive guide</cite>, Vol. 2 (The World of Linguistics 13.2), pp. 1519–1543. De Gruyter Mouton.
+
 <!-- LINKS -->
-[Aboriginal]:      https://www.languagegeek.com/font/fontdownload.html#Full_Unicode
-[Alegreya]:        https://huertatipografica.com/en/fonts/alegreya-ht-pro
-[Andika]:          https://software.sil.org/andika/
-[Charis SIL]:      https://software.sil.org/charis/
-[Common Serif]:    https://github.com/StefanPeev/Common-Serif
-[Doulos SIL]:      https://software.sil.org/doulos/
-[Gentium]:         https://software.sil.org/gentium/
-[GitHub]:          https://github.com/digitallinguistics/styles/
-[LanguageGeek]:    https://www.languagegeek.com/font/fontdownload.html
-[Libertinus]:      https://github.com/alerque/libertinus
-[Linux Libertine]: https://www.fontsquirrel.com/fonts/linux-libertine
-[Noto]:            https://fonts.google.com/noto
-[SIL]:             https://software.sil.org/fonts/
+[Aboriginal]:       https://www.languagegeek.com/font/fontdownload.html#Full_Unicode
+[Alegreya]:         https://huertatipografica.com/en/fonts/alegreya-ht-pro
+[Andika]:           https://software.sil.org/andika/
+[Charis SIL]:       https://software.sil.org/charis/
+[Common Serif]:     https://github.com/StefanPeev/Common-Serif
+[Doulos SIL]:       https://software.sil.org/doulos/
+[font-size-adjust]: https://developer.mozilla.org/en-US/docs/Web/CSS/font-size-adjust
+[Gentium]:          https://software.sil.org/gentium/
+[GitHub]:           https://github.com/digitallinguistics/styles/
+[LanguageGeek]:     https://www.languagegeek.com/font/fontdownload.html
+[Libertinus]:       https://github.com/alerque/libertinus
+[ling-md]:          https://github.com/digitallinguistics/ling-md/
+[Linux Libertine]:  https://www.fontsquirrel.com/fonts/linux-libertine
+[Noto]:             https://fonts.google.com/noto
+[SASS]:             https://sass-lang.com/
+[SIL]:              https://software.sil.org/fonts/
+[size-adjust]:      https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/size-adjust

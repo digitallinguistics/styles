@@ -1,0 +1,6 @@
+.inex, .in-ex, .inline-example {
+  cursor:      copy;
+  font-family: var(--font-unicode);
+  font-style:  italic;
+  user-select: all;
+}

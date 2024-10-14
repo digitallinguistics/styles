@@ -1,5 +1,9 @@
 :root {
 
+  --font-unicode:
+    var(--font-unicode-serif),
+    var(--font-unicode-sans);
+
   --font-unicode-sans:
     'Noto Sans',
     'Andika',

@@ -8,6 +8,7 @@ const result = await esbuild.build({
   entryPoints: [cssPath],
   external:    [`/fonts/*`],
   minify:      true,
+  nodePaths:   [`components`],
   write:       false,
 })
 

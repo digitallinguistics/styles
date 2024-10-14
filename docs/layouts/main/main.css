@@ -10,6 +10,9 @@
 /* Components for Main Layout */
 @import 'components/Nav/Nav.css';
 
+/* DLx Styles */
+@import '../../../dlx.bundle.css';
+
 :root {
   --p-margin: 0.75em;
 }
@@ -52,9 +55,25 @@ body {
   max-inline-size: 100%;
 }
 
-p code {
+:is(li, p) code {
+
   background-color: #EEE;
   font-family:      var(--font-mono);
+
+  /* Prism's Okaidia theme colors */
+  @media (prefers-color-scheme: dark) {
+    background-color: #272822;
+    color:            #F8F8F2;
+  }
+
+}
+
+details {
+  display: flex;
+}
+
+em {
+  font-style: italic;
 }
 
 :is(h1, h2, h3, h4, h5, h6) {
@@ -112,11 +131,23 @@ li {
   display: list-item;
 }
 
+.ling-doc {
+  border:        1px solid #CCC;
+  border-radius: var(--border-radius);
+  box-shadow:    1px 1px 3px #CCC;
+  padding:       1em;
+}
+
 main {
   display:            block;
   margin-block-start: 2.5em;                      /* This adds clearance for the menu button. */
   max-inline-size:    min(var(--measure), 100%);
   padding:            1em;
+}
+
+.note {
+  color:       red;
+  font-weight: bold;
 }
 
 p {
@@ -129,6 +160,12 @@ pre {
   overflow-x:       auto;
   padding:          1em;
   white-space:      pre;
+}
+
+summary {
+  cursor:              pointer;
+  display:             list-item;
+  list-style-position: outside;
 }
 
 table {
