@@ -1,5 +1,5 @@
 ---
-title: Citation
+title: Title Citations
 ---
 
 # {{ title }}
