@@ -1,5 +1,7 @@
 .ling-doc {
 
+  --counter-margin: 0.5em;
+
   display:       block;
   counter-reset: examples figures sections tables;
   font-family:   var(--font-unicode-serif);

@@ -17,7 +17,7 @@ If you would prefer to write your linguistic documents in Markdown rather than H
 
 ## Components
 
-Styles are available for the following types of components commonly found in linguistic documents:
+Styles are available for the following types of components commonly found in linguistic documents. Styles for more generic elements that don't have specific considerations in linguistics, such as headings, footnotes, etc. are not included in this library. You should style those elements as you see fit.
 
 <!-- Hide the 'Home' option in the components list. -->
 <style>

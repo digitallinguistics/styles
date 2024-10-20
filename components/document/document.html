@@ -1,32 +1,74 @@
 <style>
-.ling-doc {
-  .author {
-    display: block;
-  }
-  & header {
-    text-align: center;
-  }
-  h1 {
-    font-size: xxx-large;
-  }
-  h2 {
-    font-size: xx-large;
-  }
-  h3 {
-    font-size: x-large;
-  }
-  h4 {
-    font-size: large;
-  }
-  h5 {
-    font-size: medium;
-  }
-  h6 {
-    font-size: small;
-  }
-}
-</style>
+  /* These styles are an example of the types of styles you will want
+     to apply to a `.ling-doc` in addition to the ones provided by this library. */
+  .ling-doc {
+    .author {
+      display: block;
+    }
 
+    p code {
+      background-color: transparent;
+    }
+
+    & header {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: xxx-large;
+    }
+
+    h2 {
+      font-size: xx-large;
+    }
+
+    h3 {
+      font-size: x-large;
+    }
+
+    h4 {
+      font-size: large;
+    }
+
+    h5 {
+      font-size: medium;
+    }
+
+    h6 {
+      font-size: small;
+    }
+
+    .references-list {
+      display: block;
+      list-style-type: none;
+      margin-inline: 0;
+
+      & li {
+        margin-block: 0.5em;
+        margin-inline-start: 1.5em;
+        text-indent: -1.5em;
+      }
+    }
+
+    sup {
+      font-size: smaller;
+      vertical-align: super;
+    }
+
+    .unnumbered {
+      text-align: center;
+
+      &::before {
+        content: '';
+        margin: 0;
+      }
+    }
+  }
+
+  .output {
+    padding: 2.5em;
+  }
+</style>
 <article class=ling-doc>
   <header>
     <h1>Semantic alignment in Chitimacha</h1>
@@ -35,15 +77,118 @@
       <p>University of California, Santa Barbara</p>
     </div>
   </header>
+  <section class=section>
+    <h2>Introduction</h2>
+    <p>This paper describes the alignment pattern for verbal person markers in Chitimacha (ISO
+      639-3: <code>ctm</code>; Glottolog: <code>chit1248</code>), a language isolate of
+      Louisiana.<sup id=fn-ref-1><a href=#fn-1>[1]</a></sup> In accord with Mithun (<a
+        href=#Mithun1991>1991</a>: 537, <a href=#Mithun1999>1999</a>: 388, <a
+        href=#Mithun2008>2008</a>: 328–329), Chitimacha is generally thought to follow an
+      agent-patient alignment pattern in the first person on the basis of a handful of examples
+      published in a brief grammatical sketch by Swadesh (<a href=#Swadesh1946>1946</a>). These
+      examples are shown in <a href=#ex:1>(1)</a> and <a href=#ex:2>(2)</a>, with glosses and
+      analysis from Mithun (<a href=#Mithun2008>2008</a>: 328–329).</p>
+    <ol></ol>
+  </section>
+  <section class=section>
+    <h2>Background & Data</h2>
+    <p>The Chitimacha language was spoken in Louisiana until the death of its last native speaker in
+      1940. […]</p>
+  </section>
+  <section class=section>
+    <h2>Overview of Chitimacha Grammar</h2>
+    <p>The following description of Chitimacha grammar is necessarily quite brief, and in some
+      places tentative. […]</p>
+  </section>
+  <section class=section>
+    <h2>Previous Analyses of Verbal Person-Marking</h2>
+    <p>The first researcher to discuss verbal person-marking in Chitimacha is John R. Swanton, […]
+    </p>
+  </section>
+  <section class=section>
+    <h2>Verbal Alignment in Chitimacha</h2>
+    <p>This section provides a thorough description of the alignment of verbal person markers in
+      Chitimacha, […]</p>
+    <section class=subsection>
+      <h3>Non-First Persons</h3>
+      <p>Examples <a href=#ex:42>(42)</a> through <a href=#ex:45>(45)</a> demonstrate that
+        non–first-person subjects are marked by <i>‑i</i> in the singular. […]</p>
+    </section>
+    <section class=subsection>
+      <h3>Intransitives</h3>
+      <p>Instransitive first-person verbs whose single argument performs, effects, instigates, or
+        controls the action are marked with <i>‑iki</i> (singular) or <i>‑naka</i> (plural), which I
+        call <dfn>agent suffixes</dfn>. […]</p>
+    </section>
+    <section class=subsection>
+      <h3>Transitives</h3>
+      <p>Transitive verbs adhere to the same alignment pattern as intransitives. […]</p>
+    </section>
+    <section class=subsection>
+      <h3>Ditransitives</h3>
+      <p>Chitimacha has very few nonderived ditransitives, and the majority of ditransitive clauses
+        are derived from transitives or intransitives via affixes such as the benefactive <i>‑aʔ</i>
+        or causative <i>‑pa</i>. […]</p>
+      <section class=subsubsection>
+        <h4>Subsubsection Header</h4>
+        <p>Magna nisi consequat pariatur consequat nulla est labore tempor Lorem culpa esse
+          incididunt reprehenderit nulla. Aute consectetur ipsum aliqua elit id mollit dolor
+          aliquip. Incididunt cupidatat culpa sunt ullamco commodo officia tempor sunt elit minim.
+          Mollit ea cupidatat duis dolor nostrud ad cillum. Ea ipsum ea tempor eu.</p>
+        <section class=paragraph>
+          <h5>Paragraph Header</h5>
+          <p>In minim ad officia esse deserunt. Lorem nostrud anim labore ea proident id mollit
+            nostrud incididunt duis in veniam. Cillum do anim do consequat sint ut et. Incididunt
+            sit cupidatat anim est sit. Eiusmod tempor enim deserunt deserunt consequat sit ea
+            reprehenderit nisi Lorem et ex dolor. Nisi cupidatat minim ullamco in ea dolore irure
+            magna officia. Ut aute proident labore duis culpa ad eu dolore culpa laboris.</p>
+          <section class=subparagraph>
+            <h6>Subparagraph Header</h6>
+            <p>In nostrud cillum irure eiusmod ut quis excepteur officia. Nulla voluptate dolor ex
+              deserunt magna mollit. Minim consectetur ut cillum labore aute ipsum. Culpa esse eu
+              voluptate laborum est sit deserunt sint Lorem irure ex aliquip aute. Qui aute laborum
+              irure aliqua excepteur laborum Lorem ipsum. Amet Lorem id dolore labore quis
+              adipisicing culpa ullamco nulla laborum non ex.</p>
+          </section>
+        </section>
+      </section>
+    </section>
+  </section>
+  <section>
+    <h2 class=unnumbered>References</h2>
+    <ol class=references-list>
+      <li id=Mithun1991>Mithun, Marianne. 1991. Active/agentive case marking and its motivations.
+        <cite>Language</cite> 67(3): 510–546. DOI: <a
+          href=https://doi.org/10.1353/lan.1991.0015>10.1353/lan.1991.0015</a>.</li>
+      <li id=Mithun1999>⸻. 1999. <cite>The languages of native North America</cite> (Cambridge
+        Language Surveys). Cambridge University Press.</li>
+      <li id=Mithun2008>⸻. 2008. The emergence of agentive systems in core argument marking. In Mark
+        Donohue & Søren Wichmann (eds.), <cite>The typology of semantic alignment</cite>, pp.
+        297–333. Oxford University Press.</li>
+      <li id=Swadesh1946>Swadesh, Morris. 1946. Chitimacha. In Cornelius Osgood (ed.),
+        <cite>Linguistic structures of Native America</cite> (Viking Publications in Anthropology
+        6), pp. 312–336. Viking Fund.</li>
+    </ol>
+  </section>
+  <section>
+    <h2 class=unnumbered>Notes</h2>
+    <ol>
+      <li id=fn-1>An earlier version of this paper was presented at the 2014 Winter Meeting of the
+        Society for the Study of the Indigenous Languages of the Americas (<abbr>SSILA</abbr>) in
+        Minneapolis. <a href=#fn-ref-1><span class=visually-hidden>return to text</span><span
+            aria-hidden>↩️</span></a></li>
+    </ol>
+  </section>
   <!-- TODO -->
   <!--
-    - numbered examples (non-interlinear)
     - numbered figures
     - numbered sections
     - numbered tables
     - table captions
     - figure captions
     - paragraph spacing
+    - different types of emphasis
+    - numbered examples (non-interlinear)
     - abbreviation (partial)
     - cite (partial)
     - definition (partial)
