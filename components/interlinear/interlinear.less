@@ -228,6 +228,7 @@
 
   .morphemes,
   .words {
+    column-gap:          var(--igl-horizontal-spacing);
     display:             flex;
     flex-flow:           row wrap;
     list-style:          none;
@@ -250,12 +251,6 @@
     padding: 0em;
   }
 
-  li + li,
-  .morpheme + .morpheme,
-  .word + .word {
-    margin-inline-start: var(--igl-horizontal-spacing);
-  }
-
   .tln, .translation {
     .tln;
     margin : 0em;
@@ -274,10 +269,6 @@
 
   u, .u, .underline {
     text-decoration: underline;
-  }
-
-  .words {
-    font-size: smaller;
   }
 
 }
