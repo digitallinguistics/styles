@@ -137,7 +137,7 @@
 
   // --igl-vertical-spacing
   //
-  // The amount of space to place above and below the words / morphemes in the analysis lines. Default: `0.25em`.
+  // The amount of space to place between words / morphemes in the analysis lines. This only applies when an example wraps onto more than one line. Default: `0.25em`.
   //
   // Markup:
   // <div class=igl style="--igl-vertical-spacing: 0em;">
@@ -206,15 +206,6 @@
     font-weight: bold;
   }
 
-  // Example Header
-  //
-  // Example headers (containing information about the interlinear example) are given the `.ex-header` class and styled with an underline. See the [example header component](#kssref-components-example-header) for a demonstration of an example header in use.
-  //
-  // Styleguide components.interlinear.ex-header
-  .ex-header {
-    margin-block-end: var(--igl-vertical-spacing);
-  }
-
   .ex-source {
     margin-block: 0em;
   }
@@ -232,7 +223,6 @@
     display:             flex;
     flex-flow:           row wrap;
     list-style:          none;
-    margin-block:        var(--igl-vertical-spacing);
     margin-inline-start: var(--igl-indent);
     padding:             0em;
     row-gap:             var(--igl-vertical-spacing);
@@ -240,10 +230,8 @@
 
   .morpheme,
   .word {
-    display:            flex;
-    flex-direction:     column;
-    margin-block-end:   var(--igl-vertical-spacing);
-    margin-block-start: var(--igl-vertical-spacing);
+    display:        flex;
+    flex-direction: column;
   }
 
   .morpheme > *,
